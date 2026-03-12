@@ -1,0 +1,1256 @@
+[
+  {
+    "pdf": "7707_s23_qp_12.pdf",
+    "paper_stem": "7707_s23_qp_12",
+    "paper_info": {
+      "year": 2023,
+      "session": "May/June",
+      "paper": "12"
+    },
+    "missing_count": 8,
+    "missing_questions": [
+      1,
+      4,
+      15,
+      20,
+      22,
+      25,
+      29,
+      35
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_s23_qp_12/7707_s23_qp_12_page02.png"
+      },
+      {
+        "page_num": 3,
+        "questions": [
+          4
+        ],
+        "image_path": "extracted_images/7707_s23_qp_12/7707_s23_qp_12_page03.png"
+      },
+      {
+        "page_num": 6,
+        "questions": [
+          15
+        ],
+        "image_path": "extracted_images/7707_s23_qp_12/7707_s23_qp_12_page06.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          20
+        ],
+        "image_path": "extracted_images/7707_s23_qp_12/7707_s23_qp_12_page08.png"
+      },
+      {
+        "page_num": 9,
+        "questions": [
+          22
+        ],
+        "image_path": "extracted_images/7707_s23_qp_12/7707_s23_qp_12_page09.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          25
+        ],
+        "image_path": "extracted_images/7707_s23_qp_12/7707_s23_qp_12_page10.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          29
+        ],
+        "image_path": "extracted_images/7707_s23_qp_12/7707_s23_qp_12_page11.png"
+      },
+      {
+        "page_num": 13,
+        "questions": [
+          35
+        ],
+        "image_path": "extracted_images/7707_s23_qp_12/7707_s23_qp_12_page13.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w25_qp_13.pdf",
+    "paper_stem": "7707_w25_qp_13",
+    "paper_info": {
+      "year": 2025,
+      "session": "Oct/Nov",
+      "paper": "13"
+    },
+    "missing_count": 8,
+    "missing_questions": [
+      1,
+      2,
+      7,
+      9,
+      12,
+      20,
+      27,
+      29
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1,
+          2
+        ],
+        "image_path": "extracted_images/7707_w25_qp_13/7707_w25_qp_13_page02.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          7,
+          9
+        ],
+        "image_path": "extracted_images/7707_w25_qp_13/7707_w25_qp_13_page04.png"
+      },
+      {
+        "page_num": 5,
+        "questions": [
+          12
+        ],
+        "image_path": "extracted_images/7707_w25_qp_13/7707_w25_qp_13_page05.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          20
+        ],
+        "image_path": "extracted_images/7707_w25_qp_13/7707_w25_qp_13_page08.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          27
+        ],
+        "image_path": "extracted_images/7707_w25_qp_13/7707_w25_qp_13_page10.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          29
+        ],
+        "image_path": "extracted_images/7707_w25_qp_13/7707_w25_qp_13_page11.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s21_qp_12.pdf",
+    "paper_stem": "7707_s21_qp_12",
+    "paper_info": {
+      "year": 2021,
+      "session": "May/June",
+      "paper": "12"
+    },
+    "missing_count": 7,
+    "missing_questions": [
+      1,
+      2,
+      10,
+      21,
+      25,
+      28,
+      31
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1,
+          2
+        ],
+        "image_path": "extracted_images/7707_s21_qp_12/7707_s21_qp_12_page02.png"
+      },
+      {
+        "page_num": 5,
+        "questions": [
+          10
+        ],
+        "image_path": "extracted_images/7707_s21_qp_12/7707_s21_qp_12_page05.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          21
+        ],
+        "image_path": "extracted_images/7707_s21_qp_12/7707_s21_qp_12_page08.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          25
+        ],
+        "image_path": "extracted_images/7707_s21_qp_12/7707_s21_qp_12_page10.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          28
+        ],
+        "image_path": "extracted_images/7707_s21_qp_12/7707_s21_qp_12_page11.png"
+      },
+      {
+        "page_num": 12,
+        "questions": [
+          31
+        ],
+        "image_path": "extracted_images/7707_s21_qp_12/7707_s21_qp_12_page12.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s22_qp_11.pdf",
+    "paper_stem": "7707_s22_qp_11",
+    "paper_info": {
+      "year": 2022,
+      "session": "May/June",
+      "paper": "11"
+    },
+    "missing_count": 7,
+    "missing_questions": [
+      1,
+      2,
+      8,
+      9,
+      25,
+      29,
+      32
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1,
+          2
+        ],
+        "image_path": "extracted_images/7707_s22_qp_11/7707_s22_qp_11_page02.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          8,
+          9
+        ],
+        "image_path": "extracted_images/7707_s22_qp_11/7707_s22_qp_11_page04.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          25
+        ],
+        "image_path": "extracted_images/7707_s22_qp_11/7707_s22_qp_11_page10.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          29
+        ],
+        "image_path": "extracted_images/7707_s22_qp_11/7707_s22_qp_11_page11.png"
+      },
+      {
+        "page_num": 12,
+        "questions": [
+          32
+        ],
+        "image_path": "extracted_images/7707_s22_qp_11/7707_s22_qp_11_page12.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s24_qp_11.pdf",
+    "paper_stem": "7707_s24_qp_11",
+    "paper_info": {
+      "year": 2024,
+      "session": "May/June",
+      "paper": "11"
+    },
+    "missing_count": 7,
+    "missing_questions": [
+      1,
+      2,
+      7,
+      20,
+      21,
+      24,
+      29
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1,
+          2
+        ],
+        "image_path": "extracted_images/7707_s24_qp_11/7707_s24_qp_11_page02.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          7
+        ],
+        "image_path": "extracted_images/7707_s24_qp_11/7707_s24_qp_11_page04.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          20,
+          21
+        ],
+        "image_path": "extracted_images/7707_s24_qp_11/7707_s24_qp_11_page08.png"
+      },
+      {
+        "page_num": 9,
+        "questions": [
+          24
+        ],
+        "image_path": "extracted_images/7707_s24_qp_11/7707_s24_qp_11_page09.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          29
+        ],
+        "image_path": "extracted_images/7707_s24_qp_11/7707_s24_qp_11_page11.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w20_qp_12.pdf",
+    "paper_stem": "7707_w20_qp_12",
+    "paper_info": {
+      "year": 2020,
+      "session": "Oct/Nov",
+      "paper": "12"
+    },
+    "missing_count": 7,
+    "missing_questions": [
+      1,
+      2,
+      4,
+      15,
+      20,
+      24,
+      28
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1,
+          2
+        ],
+        "image_path": "extracted_images/7707_w20_qp_12/7707_w20_qp_12_page02.png"
+      },
+      {
+        "page_num": 3,
+        "questions": [
+          4
+        ],
+        "image_path": "extracted_images/7707_w20_qp_12/7707_w20_qp_12_page03.png"
+      },
+      {
+        "page_num": 6,
+        "questions": [
+          15
+        ],
+        "image_path": "extracted_images/7707_w20_qp_12/7707_w20_qp_12_page06.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          20
+        ],
+        "image_path": "extracted_images/7707_w20_qp_12/7707_w20_qp_12_page08.png"
+      },
+      {
+        "page_num": 9,
+        "questions": [
+          24
+        ],
+        "image_path": "extracted_images/7707_w20_qp_12/7707_w20_qp_12_page09.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          28
+        ],
+        "image_path": "extracted_images/7707_w20_qp_12/7707_w20_qp_12_page11.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w21_qp_12.pdf",
+    "paper_stem": "7707_w21_qp_12",
+    "paper_info": {
+      "year": 2021,
+      "session": "Oct/Nov",
+      "paper": "12"
+    },
+    "missing_count": 7,
+    "missing_questions": [
+      1,
+      6,
+      7,
+      8,
+      13,
+      20,
+      26
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_w21_qp_12/7707_w21_qp_12_page02.png"
+      },
+      {
+        "page_num": 3,
+        "questions": [
+          6
+        ],
+        "image_path": "extracted_images/7707_w21_qp_12/7707_w21_qp_12_page03.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          7,
+          8
+        ],
+        "image_path": "extracted_images/7707_w21_qp_12/7707_w21_qp_12_page04.png"
+      },
+      {
+        "page_num": 6,
+        "questions": [
+          13
+        ],
+        "image_path": "extracted_images/7707_w21_qp_12/7707_w21_qp_12_page06.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          20
+        ],
+        "image_path": "extracted_images/7707_w21_qp_12/7707_w21_qp_12_page08.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          26
+        ],
+        "image_path": "extracted_images/7707_w21_qp_12/7707_w21_qp_12_page10.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s21_qp_11.pdf",
+    "paper_stem": "7707_s21_qp_11",
+    "paper_info": {
+      "year": 2021,
+      "session": "May/June",
+      "paper": "11"
+    },
+    "missing_count": 6,
+    "missing_questions": [
+      1,
+      2,
+      16,
+      19,
+      28,
+      30
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1,
+          2
+        ],
+        "image_path": "extracted_images/7707_s21_qp_11/7707_s21_qp_11_page02.png"
+      },
+      {
+        "page_num": 7,
+        "questions": [
+          16
+        ],
+        "image_path": "extracted_images/7707_s21_qp_11/7707_s21_qp_11_page07.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          19
+        ],
+        "image_path": "extracted_images/7707_s21_qp_11/7707_s21_qp_11_page08.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          28,
+          30
+        ],
+        "image_path": "extracted_images/7707_s21_qp_11/7707_s21_qp_11_page11.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s25_qp_11.pdf",
+    "paper_stem": "7707_s25_qp_11",
+    "paper_info": {
+      "year": 2025,
+      "session": "May/June",
+      "paper": "11"
+    },
+    "missing_count": 6,
+    "missing_questions": [
+      1,
+      17,
+      18,
+      20,
+      21,
+      30
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_s25_qp_11/7707_s25_qp_11_page02.png"
+      },
+      {
+        "page_num": 7,
+        "questions": [
+          17,
+          18
+        ],
+        "image_path": "extracted_images/7707_s25_qp_11/7707_s25_qp_11_page07.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          20,
+          21
+        ],
+        "image_path": "extracted_images/7707_s25_qp_11/7707_s25_qp_11_page08.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          30
+        ],
+        "image_path": "extracted_images/7707_s25_qp_11/7707_s25_qp_11_page11.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s20_qp_12.pdf",
+    "paper_stem": "7707_s20_qp_12",
+    "paper_info": {
+      "year": 2020,
+      "session": "May/June",
+      "paper": "12"
+    },
+    "missing_count": 5,
+    "missing_questions": [
+      1,
+      8,
+      25,
+      28,
+      35
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_s20_qp_12/7707_s20_qp_12_page02.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          8
+        ],
+        "image_path": "extracted_images/7707_s20_qp_12/7707_s20_qp_12_page04.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          25
+        ],
+        "image_path": "extracted_images/7707_s20_qp_12/7707_s20_qp_12_page10.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          28
+        ],
+        "image_path": "extracted_images/7707_s20_qp_12/7707_s20_qp_12_page11.png"
+      },
+      {
+        "page_num": 13,
+        "questions": [
+          35
+        ],
+        "image_path": "extracted_images/7707_s20_qp_12/7707_s20_qp_12_page13.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s22_qp_12.pdf",
+    "paper_stem": "7707_s22_qp_12",
+    "paper_info": {
+      "year": 2022,
+      "session": "May/June",
+      "paper": "12"
+    },
+    "missing_count": 5,
+    "missing_questions": [
+      1,
+      7,
+      20,
+      22,
+      28
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_s22_qp_12/7707_s22_qp_12_page02.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          7
+        ],
+        "image_path": "extracted_images/7707_s22_qp_12/7707_s22_qp_12_page04.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          20
+        ],
+        "image_path": "extracted_images/7707_s22_qp_12/7707_s22_qp_12_page08.png"
+      },
+      {
+        "page_num": 9,
+        "questions": [
+          22
+        ],
+        "image_path": "extracted_images/7707_s22_qp_12/7707_s22_qp_12_page09.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          28
+        ],
+        "image_path": "extracted_images/7707_s22_qp_12/7707_s22_qp_12_page11.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s23_qp_11.pdf",
+    "paper_stem": "7707_s23_qp_11",
+    "paper_info": {
+      "year": 2023,
+      "session": "May/June",
+      "paper": "11"
+    },
+    "missing_count": 5,
+    "missing_questions": [
+      1,
+      6,
+      16,
+      21,
+      26
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_s23_qp_11/7707_s23_qp_11_page02.png"
+      },
+      {
+        "page_num": 3,
+        "questions": [
+          6
+        ],
+        "image_path": "extracted_images/7707_s23_qp_11/7707_s23_qp_11_page03.png"
+      },
+      {
+        "page_num": 7,
+        "questions": [
+          16
+        ],
+        "image_path": "extracted_images/7707_s23_qp_11/7707_s23_qp_11_page07.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          21
+        ],
+        "image_path": "extracted_images/7707_s23_qp_11/7707_s23_qp_11_page08.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          26
+        ],
+        "image_path": "extracted_images/7707_s23_qp_11/7707_s23_qp_11_page10.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s24_qp_12.pdf",
+    "paper_stem": "7707_s24_qp_12",
+    "paper_info": {
+      "year": 2024,
+      "session": "May/June",
+      "paper": "12"
+    },
+    "missing_count": 5,
+    "missing_questions": [
+      1,
+      17,
+      21,
+      23,
+      26
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_s24_qp_12/7707_s24_qp_12_page02.png"
+      },
+      {
+        "page_num": 7,
+        "questions": [
+          17
+        ],
+        "image_path": "extracted_images/7707_s24_qp_12/7707_s24_qp_12_page07.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          21
+        ],
+        "image_path": "extracted_images/7707_s24_qp_12/7707_s24_qp_12_page08.png"
+      },
+      {
+        "page_num": 9,
+        "questions": [
+          23
+        ],
+        "image_path": "extracted_images/7707_s24_qp_12/7707_s24_qp_12_page09.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          26
+        ],
+        "image_path": "extracted_images/7707_s24_qp_12/7707_s24_qp_12_page10.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w21_qp_13.pdf",
+    "paper_stem": "7707_w21_qp_13",
+    "paper_info": {
+      "year": 2021,
+      "session": "Oct/Nov",
+      "paper": "13"
+    },
+    "missing_count": 5,
+    "missing_questions": [
+      1,
+      5,
+      6,
+      9,
+      32
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_w21_qp_13/7707_w21_qp_13_page02.png"
+      },
+      {
+        "page_num": 3,
+        "questions": [
+          5,
+          6
+        ],
+        "image_path": "extracted_images/7707_w21_qp_13/7707_w21_qp_13_page03.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          9
+        ],
+        "image_path": "extracted_images/7707_w21_qp_13/7707_w21_qp_13_page04.png"
+      },
+      {
+        "page_num": 12,
+        "questions": [
+          32
+        ],
+        "image_path": "extracted_images/7707_w21_qp_13/7707_w21_qp_13_page12.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w22_qp_13.pdf",
+    "paper_stem": "7707_w22_qp_13",
+    "paper_info": {
+      "year": 2022,
+      "session": "Oct/Nov",
+      "paper": "13"
+    },
+    "missing_count": 5,
+    "missing_questions": [
+      1,
+      24,
+      27,
+      32,
+      34
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_w22_qp_13/7707_w22_qp_13_page02.png"
+      },
+      {
+        "page_num": 9,
+        "questions": [
+          24
+        ],
+        "image_path": "extracted_images/7707_w22_qp_13/7707_w22_qp_13_page09.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          27
+        ],
+        "image_path": "extracted_images/7707_w22_qp_13/7707_w22_qp_13_page10.png"
+      },
+      {
+        "page_num": 12,
+        "questions": [
+          32
+        ],
+        "image_path": "extracted_images/7707_w22_qp_13/7707_w22_qp_13_page12.png"
+      },
+      {
+        "page_num": 13,
+        "questions": [
+          34
+        ],
+        "image_path": "extracted_images/7707_w22_qp_13/7707_w22_qp_13_page13.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w23_qp_12.pdf",
+    "paper_stem": "7707_w23_qp_12",
+    "paper_info": {
+      "year": 2023,
+      "session": "Oct/Nov",
+      "paper": "12"
+    },
+    "missing_count": 5,
+    "missing_questions": [
+      1,
+      8,
+      11,
+      26,
+      27
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_w23_qp_12/7707_w23_qp_12_page02.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          8
+        ],
+        "image_path": "extracted_images/7707_w23_qp_12/7707_w23_qp_12_page04.png"
+      },
+      {
+        "page_num": 5,
+        "questions": [
+          11
+        ],
+        "image_path": "extracted_images/7707_w23_qp_12/7707_w23_qp_12_page05.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          26,
+          27
+        ],
+        "image_path": "extracted_images/7707_w23_qp_12/7707_w23_qp_12_page10.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w23_qp_13.pdf",
+    "paper_stem": "7707_w23_qp_13",
+    "paper_info": {
+      "year": 2023,
+      "session": "Oct/Nov",
+      "paper": "13"
+    },
+    "missing_count": 5,
+    "missing_questions": [
+      1,
+      6,
+      15,
+      23,
+      29
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_w23_qp_13/7707_w23_qp_13_page02.png"
+      },
+      {
+        "page_num": 3,
+        "questions": [
+          6
+        ],
+        "image_path": "extracted_images/7707_w23_qp_13/7707_w23_qp_13_page03.png"
+      },
+      {
+        "page_num": 6,
+        "questions": [
+          15
+        ],
+        "image_path": "extracted_images/7707_w23_qp_13/7707_w23_qp_13_page06.png"
+      },
+      {
+        "page_num": 9,
+        "questions": [
+          23
+        ],
+        "image_path": "extracted_images/7707_w23_qp_13/7707_w23_qp_13_page09.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          29
+        ],
+        "image_path": "extracted_images/7707_w23_qp_13/7707_w23_qp_13_page11.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s20_qp_11.pdf",
+    "paper_stem": "7707_s20_qp_11",
+    "paper_info": {
+      "year": 2020,
+      "session": "May/June",
+      "paper": "11"
+    },
+    "missing_count": 4,
+    "missing_questions": [
+      1,
+      7,
+      10,
+      15
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_s20_qp_11/7707_s20_qp_11_page02.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          7
+        ],
+        "image_path": "extracted_images/7707_s20_qp_11/7707_s20_qp_11_page04.png"
+      },
+      {
+        "page_num": 5,
+        "questions": [
+          10
+        ],
+        "image_path": "extracted_images/7707_s20_qp_11/7707_s20_qp_11_page05.png"
+      },
+      {
+        "page_num": 6,
+        "questions": [
+          15
+        ],
+        "image_path": "extracted_images/7707_s20_qp_11/7707_s20_qp_11_page06.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_s25_qp_12.pdf",
+    "paper_stem": "7707_s25_qp_12",
+    "paper_info": {
+      "year": 2025,
+      "session": "May/June",
+      "paper": "12"
+    },
+    "missing_count": 4,
+    "missing_questions": [
+      1,
+      2,
+      20,
+      27
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1,
+          2
+        ],
+        "image_path": "extracted_images/7707_s25_qp_12/7707_s25_qp_12_page02.png"
+      },
+      {
+        "page_num": 8,
+        "questions": [
+          20
+        ],
+        "image_path": "extracted_images/7707_s25_qp_12/7707_s25_qp_12_page08.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          27
+        ],
+        "image_path": "extracted_images/7707_s25_qp_12/7707_s25_qp_12_page10.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w22_qp_12.pdf",
+    "paper_stem": "7707_w22_qp_12",
+    "paper_info": {
+      "year": 2022,
+      "session": "Oct/Nov",
+      "paper": "12"
+    },
+    "missing_count": 4,
+    "missing_questions": [
+      1,
+      5,
+      32,
+      34
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_w22_qp_12/7707_w22_qp_12_page02.png"
+      },
+      {
+        "page_num": 3,
+        "questions": [
+          5
+        ],
+        "image_path": "extracted_images/7707_w22_qp_12/7707_w22_qp_12_page03.png"
+      },
+      {
+        "page_num": 12,
+        "questions": [
+          32
+        ],
+        "image_path": "extracted_images/7707_w22_qp_12/7707_w22_qp_12_page12.png"
+      },
+      {
+        "page_num": 13,
+        "questions": [
+          34
+        ],
+        "image_path": "extracted_images/7707_w22_qp_12/7707_w22_qp_12_page13.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w24_qp_12.pdf",
+    "paper_stem": "7707_w24_qp_12",
+    "paper_info": {
+      "year": 2024,
+      "session": "Oct/Nov",
+      "paper": "12"
+    },
+    "missing_count": 4,
+    "missing_questions": [
+      1,
+      3,
+      13,
+      16
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1,
+          3
+        ],
+        "image_path": "extracted_images/7707_w24_qp_12/7707_w24_qp_12_page02.png"
+      },
+      {
+        "page_num": 6,
+        "questions": [
+          13
+        ],
+        "image_path": "extracted_images/7707_w24_qp_12/7707_w24_qp_12_page06.png"
+      },
+      {
+        "page_num": 7,
+        "questions": [
+          16
+        ],
+        "image_path": "extracted_images/7707_w24_qp_12/7707_w24_qp_12_page07.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w24_qp_13.pdf",
+    "paper_stem": "7707_w24_qp_13",
+    "paper_info": {
+      "year": 2024,
+      "session": "Oct/Nov",
+      "paper": "13"
+    },
+    "missing_count": 4,
+    "missing_questions": [
+      1,
+      4,
+      6,
+      28
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_w24_qp_13/7707_w24_qp_13_page02.png"
+      },
+      {
+        "page_num": 3,
+        "questions": [
+          4,
+          6
+        ],
+        "image_path": "extracted_images/7707_w24_qp_13/7707_w24_qp_13_page03.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          28
+        ],
+        "image_path": "extracted_images/7707_w24_qp_13/7707_w24_qp_13_page11.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w20_qp_13.pdf",
+    "paper_stem": "7707_w20_qp_13",
+    "paper_info": {
+      "year": 2020,
+      "session": "Oct/Nov",
+      "paper": "13"
+    },
+    "missing_count": 3,
+    "missing_questions": [
+      1,
+      26,
+      29
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1
+        ],
+        "image_path": "extracted_images/7707_w20_qp_13/7707_w20_qp_13_page02.png"
+      },
+      {
+        "page_num": 10,
+        "questions": [
+          26
+        ],
+        "image_path": "extracted_images/7707_w20_qp_13/7707_w20_qp_13_page10.png"
+      },
+      {
+        "page_num": 11,
+        "questions": [
+          29
+        ],
+        "image_path": "extracted_images/7707_w20_qp_13/7707_w20_qp_13_page11.png"
+      }
+    ]
+  },
+  {
+    "pdf": "7707_w25_qp_12.pdf",
+    "paper_stem": "7707_w25_qp_12",
+    "paper_info": {
+      "year": 2025,
+      "session": "Oct/Nov",
+      "paper": "12"
+    },
+    "missing_count": 3,
+    "missing_questions": [
+      1,
+      2,
+      8
+    ],
+    "pages": [
+      {
+        "page_num": 2,
+        "questions": [
+          1,
+          2
+        ],
+        "image_path": "extracted_images/7707_w25_qp_12/7707_w25_qp_12_page02.png"
+      },
+      {
+        "page_num": 4,
+        "questions": [
+          8
+        ],
+        "image_path": "extracted_images/7707_w25_qp_12/7707_w25_qp_12_page04.png"
+      }
+    ]
+  }
+]

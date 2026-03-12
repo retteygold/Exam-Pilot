@@ -1,0 +1,549 @@
+{
+  "fixes": {
+    "renumbered": 169,
+    "id_changed": 169,
+    "question_text_normalized": 0,
+    "option_text_normalized": 189
+  },
+  "papers": {
+    "7707_s20_qp_11.pdf": {
+      "years": [
+        2020
+      ],
+      "papers": [
+        "11"
+      ],
+      "question_count": 31,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        7,
+        10,
+        15
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s20_qp_12.pdf": {
+      "years": [
+        2020
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 30,
+      "qnums_min": 2,
+      "qnums_max": 34,
+      "duplicates": [],
+      "missing": [
+        1,
+        8,
+        25,
+        28,
+        35
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s21_qp_11.pdf": {
+      "years": [
+        2021
+      ],
+      "papers": [
+        "11"
+      ],
+      "question_count": 29,
+      "qnums_min": 3,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        2,
+        16,
+        19,
+        28,
+        30
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s21_qp_12.pdf": {
+      "years": [
+        2021
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 28,
+      "qnums_min": 3,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        2,
+        10,
+        21,
+        25,
+        28,
+        31
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s22_qp_11.pdf": {
+      "years": [
+        2022
+      ],
+      "papers": [
+        "11"
+      ],
+      "question_count": 28,
+      "qnums_min": 3,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        2,
+        8,
+        9,
+        25,
+        29,
+        32
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s22_qp_12.pdf": {
+      "years": [
+        2022
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 30,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        7,
+        20,
+        22,
+        28
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s23_qp_11.pdf": {
+      "years": [
+        2023
+      ],
+      "papers": [
+        "11"
+      ],
+      "question_count": 30,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        6,
+        16,
+        21,
+        26
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s23_qp_12.pdf": {
+      "years": [
+        2023
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 27,
+      "qnums_min": 2,
+      "qnums_max": 34,
+      "duplicates": [],
+      "missing": [
+        1,
+        4,
+        15,
+        20,
+        22,
+        25,
+        29,
+        35
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s24_qp_11.pdf": {
+      "years": [
+        2024
+      ],
+      "papers": [
+        "11"
+      ],
+      "question_count": 28,
+      "qnums_min": 3,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        2,
+        7,
+        20,
+        21,
+        24,
+        29
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s24_qp_12.pdf": {
+      "years": [
+        2024
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 30,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        17,
+        21,
+        23,
+        26
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_s25_qp_11.pdf": {
+      "years": [
+        2025
+      ],
+      "papers": [
+        "11"
+      ],
+      "question_count": 29,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        17,
+        18,
+        20,
+        21,
+        30
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 16
+    },
+    "7707_s25_qp_12.pdf": {
+      "years": [
+        2025
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 31,
+      "qnums_min": 3,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        2,
+        20,
+        27
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w20_qp_12.pdf": {
+      "years": [
+        2020
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 28,
+      "qnums_min": 3,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        2,
+        4,
+        15,
+        20,
+        24,
+        28
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w20_qp_13.pdf": {
+      "years": [
+        2020
+      ],
+      "papers": [
+        "13"
+      ],
+      "question_count": 32,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        26,
+        29
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 16
+    },
+    "7707_w21_qp_12.pdf": {
+      "years": [
+        2021
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 28,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        6,
+        7,
+        8,
+        13,
+        20,
+        26
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w21_qp_13.pdf": {
+      "years": [
+        2021
+      ],
+      "papers": [
+        "13"
+      ],
+      "question_count": 30,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        5,
+        6,
+        9,
+        32
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w22_qp_12.pdf": {
+      "years": [
+        2022
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 31,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        5,
+        32,
+        34
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w22_qp_13.pdf": {
+      "years": [
+        2022
+      ],
+      "papers": [
+        "13"
+      ],
+      "question_count": 30,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        24,
+        27,
+        32,
+        34
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w23_qp_12.pdf": {
+      "years": [
+        2023
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 30,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        8,
+        11,
+        26,
+        27
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w23_qp_13.pdf": {
+      "years": [
+        2023
+      ],
+      "papers": [
+        "13"
+      ],
+      "question_count": 30,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        6,
+        15,
+        23,
+        29
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w24_qp_12.pdf": {
+      "years": [
+        2024
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 31,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        3,
+        13,
+        16
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 16
+    },
+    "7707_w24_qp_13.pdf": {
+      "years": [
+        2024
+      ],
+      "papers": [
+        "13"
+      ],
+      "question_count": 31,
+      "qnums_min": 2,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        4,
+        6,
+        28
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w25_qp_12.pdf": {
+      "years": [
+        2025
+      ],
+      "papers": [
+        "12"
+      ],
+      "question_count": 32,
+      "qnums_min": 3,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        2,
+        8
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    },
+    "7707_w25_qp_13.pdf": {
+      "years": [
+        2025
+      ],
+      "papers": [
+        "13"
+      ],
+      "question_count": 27,
+      "qnums_min": 3,
+      "qnums_max": 35,
+      "duplicates": [],
+      "missing": [
+        1,
+        2,
+        7,
+        9,
+        12,
+        20,
+        27,
+        29
+      ],
+      "bad_options": 0,
+      "images_found": true,
+      "image_pages": 12
+    }
+  },
+  "total_questions": 711,
+  "total_papers": 24
+}

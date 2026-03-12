@@ -1,0 +1,40 @@
+{
+  "1": {
+    "page": 2,
+    "image": "extracted_images\\7707_s23_qp_12\\7707_s23_qp_12_page02.png",
+    "extracted_text": "Error: tesseract is not installed or it's not in your PATH. See README file for more information."
+  },
+  "4": {
+    "page": 3,
+    "image": "extracted_images\\7707_s23_qp_12\\7707_s23_qp_12_page03.png",
+    "extracted_text": "Error: tesseract is not installed or it's not in your PATH. See README file for more information."
+  },
+  "15": {
+    "page": 6,
+    "image": "extracted_images\\7707_s23_qp_12\\7707_s23_qp_12_page06.png",
+    "extracted_text": "Error: tesseract is not installed or it's not in your PATH. See README file for more information."
+  },
+  "20": {
+    "page": 8,
+    "image": "extracted_images\\7707_s23_qp_12\\7707_s23_qp_12_page08.png",
+    "extracted_text": "Error: tesseract is not installed or it's not in your PATH. See README file for more information."
+  },
+  "22": {
+    "page": 9,
+    "image": "extracted_images\\7707_s23_qp_12\\7707_s23_qp_12_page09.png",
+    "extracted_text": "Error: tesseract is not installed or it's not in your PATH. See README file for more information."
+  },
+  "25": {
+    "page": 10,
+    "image": "extracted_images\\7707_s23_qp_12\\7707_s23_qp_12_page10.png",
+    "extracted_text": "Error: tesseract is not installed or it's not in your PATH. See README file for more information."
+  },
+  "29": {
+    "page": 11,
+    "image": "extracted_images\\7707_s23_qp_12\\7707_s23_qp_12_page11.png",
+    "extracted_text": "Error: tesseract is not installed or it's not in your PATH. See README file for more information."
+  },
+  "35": {
+    "error": "Image not found: extracted_images\\7707_s23_qp_12\\7707_s23_qp_12_page13.png"
+  }
+}
