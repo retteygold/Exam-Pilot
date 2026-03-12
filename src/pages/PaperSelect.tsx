@@ -21,7 +21,7 @@ interface Paper {
 export function PaperSelect() {
   const navigate = useNavigate()
   const startExam = useExamStore((state: { startExam: (questions: Question[], mode: 'practice' | 'exam', paper: string) => void }) => state.startExam)
-  const { profile, getRecommendedDifficulty, canAccessExam } = useUserStore()
+  const { profile, getRecommendedDifficulty } = useUserStore()
   
   const [papers, setPapers] = useState<Paper[]>([])
   const [questions, setQuestions] = useState<Question[]>([])

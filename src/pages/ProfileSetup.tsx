@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { User, Calendar, GraduationCap, Target, BookOpen, ArrowRight, ChevronRight } from 'lucide-react'
+import { User, Calendar, GraduationCap, Target, BookOpen, ArrowRight } from 'lucide-react'
 import { useUserStore } from '../store/userStore'
 
 export function ProfileSetup() {
@@ -12,7 +12,7 @@ export function ProfileSetup() {
     gender: '',
     age: '',
     grade: '',
-    skillLevel: '',
+    skillLevel: '' as '' | 'Beginner' | 'Intermediate' | 'Advanced',
     exam: ''
   })
 

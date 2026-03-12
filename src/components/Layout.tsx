@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { BookOpen, BarChart3, Home, ChevronLeft, FileText } from 'lucide-react'
+import { BarChart3, Home, ChevronLeft, FileText } from 'lucide-react'
 
 interface LayoutProps {
   children: React.ReactNode

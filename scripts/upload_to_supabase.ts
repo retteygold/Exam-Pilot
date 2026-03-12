@@ -6,9 +6,12 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-// Use service role key for admin operations
-const supabaseUrl = 'https://nyenjhmfrhhtfmruyfpj.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im55ZW5qaG1mcmhodGZtcnV5ZnBqIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Mjg5NDI1MCwiZXhwIjoyMDg4NDcwMjUwfQ.DtyxF9xe7bPfksh2pm8QDDHiZYFrpYRxheAkDv_e1gE'
+const supabaseUrl = process.env.SUPABASE_URL
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY
+
+if (!supabaseUrl || !supabaseKey) {
+  throw new Error('Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in environment')
+}
 
 const supabase = createClient(supabaseUrl, supabaseKey)
 

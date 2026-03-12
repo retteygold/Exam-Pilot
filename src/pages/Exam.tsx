@@ -1,6 +1,6 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Clock, ChevronLeft, ChevronRight, Check, X, Flag } from 'lucide-react'
+import { Clock, ChevronLeft, ChevronRight, Check, X } from 'lucide-react'
 import { useExamStore } from '../store/examStore'
 
 export function Exam() {
@@ -15,8 +15,6 @@ export function Exam() {
     nextQuestion,
     prevQuestion,
     finishExam,
-    getScore,
-    getTimeSpent
   } = useExamStore()
 
   const [selected, setSelected] = useState<number | null>(null)
