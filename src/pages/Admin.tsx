@@ -2,8 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import type { ClipboardEvent } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types'
-
 import { canUseSupabaseQuestions, deleteQuestion, fetchQuestionsByIdLike, fetchRecentQuestions, upsertQuestion } from '../services/questionsSupabase'
+import { Search, Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check } from 'lucide-react'
 
 function makeEmptyQuestion(): Question {
   return {
@@ -42,6 +42,7 @@ export function Admin() {
   const [results, setResults] = useState<Question[]>([])
   const [selected, setSelected] = useState<Question | null>(null)
   const [saveStatus, setSaveStatus] = useState<string | null>(null)
+  const [showImageSection, setShowImageSection] = useState(false)
 
   const canUseSupabase = useMemo(() => canUseSupabaseQuestions(), [])
 
@@ -123,6 +124,7 @@ export function Admin() {
     const q = makeEmptyQuestion()
     setSelected(q)
     setSaveStatus(null)
+    setShowImageSection(false)
   }
 
   const save = async () => {
@@ -150,6 +152,7 @@ export function Admin() {
 
   const remove = async () => {
     if (!selected?.id) return
+    if (!confirm('Delete this question?')) return
     setLoading(true)
     setSaveStatus(null)
     try {
@@ -221,17 +224,10 @@ export function Admin() {
     await uploadImageFile(file)
   }
 
-  const onPasteAreaClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    // Focus the div to ensure it can receive paste events
-    e.currentTarget.focus()
-  }
-
   if (!canUseSupabase) {
     return (
       <div className="p-4">
-        <div className="p-4 bg-slate-800 rounded-xl">
-          Supabase env vars are missing.
-        </div>
+        <div className="p-4 bg-slate-800 rounded-xl text-center">Supabase not configured</div>
       </div>
     )
   }
@@ -239,40 +235,16 @@ export function Admin() {
   if (!sessionEmail) {
     return (
       <div className="min-h-screen flex items-center justify-center p-4">
-        <div className="w-full max-w-md">
+        <div className="w-full max-w-sm">
           <div className="text-center mb-6">
-            <div className="w-24 h-24 mx-auto mb-4">
-              <img 
-                src="/storyset/Health professional team-amico.svg" 
-                alt="Admin" 
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <h1 className="text-2xl font-bold">Admin Dashboard</h1>
-            <p className="text-slate-400 text-sm">Manage questions and content</p>
+            <h1 className="text-2xl font-bold mb-2">Admin Login</h1>
+            <p className="text-slate-400 text-sm">Manage exam questions</p>
           </div>
           <div className="p-6 bg-slate-800 rounded-2xl space-y-4">
-            <input
-              className="w-full p-3 rounded-xl bg-slate-700"
-              placeholder="Email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <input
-              className="w-full p-3 rounded-xl bg-slate-700"
-              placeholder="Password"
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <input className="w-full p-3 rounded-xl bg-slate-700" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input className="w-full p-3 rounded-xl bg-slate-700" placeholder="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
             {authError && <div className="text-sm text-red-400">{authError}</div>}
-            <button
-              disabled={loading}
-              className="w-full p-3 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50"
-              onClick={signIn}
-            >
-              Sign in
-            </button>
+            <button disabled={loading} className="w-full p-3 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 font-semibold" onClick={signIn}>Sign In</button>
           </div>
         </div>
       </div>
@@ -280,278 +252,247 @@ export function Admin() {
   }
 
   return (
-    <div className="p-4 space-y-4">
-      <div className="p-4 bg-slate-800 rounded-2xl flex items-center justify-between">
+    <div className="min-h-screen bg-slate-900">
+      {/* Top Bar - Sticky */}
+      <div className="p-4 bg-slate-800 border-b border-slate-700 flex items-center justify-between sticky top-0 z-10">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10">
-            <img 
-              src="/storyset/Doctors-rafiki.svg" 
-              alt="" 
-              className="w-full h-full object-contain opacity-80"
-            />
-          </div>
-          <div>
-            <div className="font-semibold">Admin</div>
-            <div className="text-xs text-slate-400">{sessionEmail}</div>
-          </div>
+          <h1 className="font-bold text-lg">Admin</h1>
+          <span className="text-xs text-slate-400">{sessionEmail}</span>
         </div>
-        <button
-          disabled={loading}
-          className="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 disabled:opacity-50"
-          onClick={signOut}
-        >
-          Sign out
-        </button>
-      </div>
-
-      {/* How To Use - Instructions */}
-      <div className="p-4 bg-emerald-900/30 border border-emerald-700/50 rounded-2xl space-y-2">
-        <div className="font-semibold text-emerald-400 flex items-center gap-2">
-          <span>How to Edit Questions</span>
-        </div>
-        <ol className="text-sm text-slate-300 space-y-1 list-decimal list-inside">
-          <li><strong>Search</strong> for a question by ID (e.g., <code>0610-y2024-p11-q2</code>) or click <strong>Recent</strong></li>
-          <li>Click the question in the <strong>Results</strong> list to select it</li>
-          <li>Edit the <strong>Question text</strong> or <strong>Options</strong> (A, B, C, D)</li>
-          <li>Change <strong>Correct Answer</strong> (0=A, 1=B, 2=C, 3=D)</li>
-          <li>Click <strong>Save</strong> to save changes</li>
-        </ol>
-        <div className="mt-3 p-3 bg-slate-800/50 rounded-xl">
-          <div className="font-medium text-amber-400 text-sm mb-1">Quick Image Add (Snipping Tool)</div>
-          <div className="text-xs text-slate-400">
-            1. Use Snipping Tool to copy image → 2. Click on this page → 3. Press <strong>Ctrl+V</strong> to paste → 4. Click Save
-          </div>
+        <div className="flex items-center gap-2">
+          {saveStatus && <span className="text-sm px-3 py-1 rounded-full bg-slate-700">{saveStatus}</span>}
+          <button disabled={loading} onClick={signOut} className="px-3 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-sm">Logout</button>
         </div>
       </div>
 
-      <div className="p-4 bg-slate-800 rounded-2xl space-y-3">
-        <div className="flex gap-2">
-          <input
-            className="flex-1 p-3 rounded-xl bg-slate-700"
-            placeholder="Search by question id (e.g. 0610-y2024-p11-q2)"
-            value={queryId}
-            onChange={(e) => setQueryId(e.target.value)}
-          />
-          <button
-            disabled={loading}
-            className="px-4 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50"
-            onClick={search}
-          >
-            Search
-          </button>
-        </div>
-        <div className="flex gap-2">
-          <button
-            disabled={loading}
-            className="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 disabled:opacity-50"
-            onClick={loadRecent}
-          >
-            Recent
-          </button>
-          <button
-            disabled={loading}
-            className="px-4 py-2 rounded-xl bg-slate-700 hover:bg-slate-600 disabled:opacity-50"
-            onClick={createNew}
-          >
-            New
-          </button>
-          {saveStatus && <div className="text-sm text-slate-300 self-center">{saveStatus}</div>}
-        </div>
-      </div>
+      <div className="p-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
+        {/* Left Panel - Search & List */}
+        <div className="lg:col-span-4 space-y-3">
+          {/* Search Box */}
+          <div className="p-3 bg-slate-800 rounded-xl space-y-2">
+            <div className="flex gap-2">
+              <input
+                className="flex-1 p-2 rounded-lg bg-slate-700 text-sm"
+                placeholder="Search question ID..."
+                value={queryId}
+                onChange={(e) => setQueryId(e.target.value)}
+                onKeyDown={(e) => e.key === 'Enter' && search()}
+              />
+              <button disabled={loading} onClick={search} className="px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-500"><Search className="w-4 h-4"/></button>
+            </div>
+            <div className="flex gap-2">
+              <button disabled={loading} onClick={loadRecent} className="flex-1 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-sm">Recent</button>
+              <button disabled={loading} onClick={createNew} className="flex-1 py-2 rounded-lg bg-green-600/50 hover:bg-green-500/50 text-sm flex items-center justify-center gap-1"><Plus className="w-4 h-4"/> New</button>
+            </div>
+          </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="md:col-span-1 p-4 bg-slate-800 rounded-2xl">
-          <div className="text-sm font-semibold mb-2">Results</div>
-          <div className="space-y-2 max-h-[60vh] overflow-y-auto pr-1">
-            {results.length === 0 && (
-              <div className="text-sm text-slate-500 text-center py-4">No questions found. Search or click Recent.</div>
-            )}
-            {results.map((q) => (
-              <button
-                key={q.id}
-                onClick={() => setSelected(q)}
-                className={`w-full text-left p-3 rounded-xl transition-colors ${
-                  selected?.id === q.id ? 'bg-blue-500/20 border border-blue-500/50' : 'bg-slate-700 hover:bg-slate-600'
-                }`}
-              >
-                <div className="flex items-center justify-between">
-                  <div className="text-sm font-semibold truncate">{q.id}</div>
-                  {!q.imageRequired && !q.imagePath && (
-                    <div className="text-[10px] px-1.5 py-0.5 rounded bg-red-500/20 text-red-400">NO IMG</div>
-                  )}
-                </div>
-                <div className="flex items-center gap-2 mt-1">
-                  <div className="text-xs text-slate-400">{q.subject}</div>
-                  {q.imagePath && <div className="text-[10px] px-1.5 py-0.5 rounded bg-green-500/20 text-green-400">IMG</div>}
-                </div>
-              </button>
-            ))}
+          {/* Question List */}
+          <div className="bg-slate-800 rounded-xl overflow-hidden">
+            <div className="p-3 border-b border-slate-700 font-medium text-sm">Questions ({results.length})</div>
+            <div className="max-h-[calc(100vh-280px)] overflow-y-auto">
+              {results.length === 0 && (
+                <div className="p-4 text-center text-sm text-slate-500">No questions. Search or click Recent.</div>
+              )}
+              {results.map((q) => (
+                <button
+                  key={q.id}
+                  onClick={() => { setSelected(q); setShowImageSection(false); }}
+                  className={"w-full text-left p-3 border-b border-slate-700/50 hover:bg-slate-700/50 transition-colors " + (selected?.id === q.id ? 'bg-blue-500/20 border-l-4 border-l-blue-500' : '')}
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-medium truncate">{q.id || 'No ID'}</span>
+                    {q.imagePath ? <Image className="w-4 h-4 text-green-400"/> : <span className="text-[10px] text-red-400">NO IMG</span>}
+                  </div>
+                  <div className="text-xs text-slate-400 mt-1">{q.subject}</div>
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div className="md:col-span-2 p-4 bg-slate-800 rounded-2xl space-y-3 max-h-[80vh] overflow-y-auto">
-          <div className="text-sm font-semibold">Editor</div>
+        {/* Right Panel - Editor */}
+        <div className="lg:col-span-8">
           {!selected ? (
-            <div className="text-sm text-slate-400">Select a question or create a new one.</div>
+            <div className="p-8 bg-slate-800 rounded-xl text-center text-slate-400">Select a question to edit</div>
           ) : (
-            <>
-              {/* Question ID */}
-              <div>
-                <label className="text-xs text-slate-400 block mb-1">Question ID</label>
-                <input
-                  className="w-full p-3 rounded-xl bg-slate-700"
-                  value={selected.id}
-                  onChange={(e) => setSelected({ ...selected, id: e.target.value })}
-                  placeholder="e.g. 0610-y2024-p11-q2"
-                />
-              </div>
-
-              {/* Subject & Topic */}
-              <div className="grid grid-cols-2 gap-2">
-                <div>
-                  <label className="text-xs text-slate-400 block mb-1">Subject</label>
-                  <select
-                    className="w-full p-3 rounded-xl bg-slate-700"
-                    value={selected.subject}
-                    onChange={(e) => setSelected({ ...selected, subject: e.target.value })}
-                  >
-                    <option value="biology">O-Level Biology (5090)</option>
-                    <option value="igcse_biology">IGCSE Biology (0610)</option>
-                    <option value="accounting">Accounting (7707)</option>
-                  </select>
+            <div className="bg-slate-800 rounded-xl overflow-hidden">
+              {/* Editor Header */}
+              <div className="p-4 border-b border-slate-700 flex items-center justify-between bg-slate-800 sticky top-[73px] z-10">
+                <div className="flex items-center gap-3">
+                  <span className="font-semibold">{selected.id ? 'Edit' : 'New'}</span>
+                  {selected.imagePath && <span className="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-400">Has Image</span>}
                 </div>
-                <div>
-                  <label className="text-xs text-slate-400 block mb-1">Topic</label>
-                  <input
-                    className="w-full p-3 rounded-xl bg-slate-700"
-                    value={selected.topic}
-                    onChange={(e) => setSelected({ ...selected, topic: e.target.value })}
-                    placeholder="e.g. photosynthesis"
-                  />
-                </div>
-              </div>
-
-              {/* Question Text */}
-              <div>
-                <label className="text-xs text-slate-400 block mb-1">Question Text</label>
-                <textarea
-                  className="w-full p-3 rounded-xl bg-slate-700 min-h-[100px]"
-                  value={selected.question}
-                  onChange={(e) => setSelected({ ...selected, question: e.target.value })}
-                  placeholder="Type the question here..."
-                />
-              </div>
-
-              {/* Options A-D */}
-              <div className="space-y-2">
-                <label className="text-xs text-slate-400 block">Options (A, B, C, D)</label>
-                {['A', 'B', 'C', 'D'].map((letter, idx) => (
-                  <div key={idx} className="flex items-center gap-2">
-                    <span className="w-6 text-sm font-semibold text-slate-400">{letter}.</span>
-                    <input
-                      className="flex-1 p-3 rounded-xl bg-slate-700"
-                      value={selected.options?.[idx] || ''}
-                      onChange={(e) => {
-                        const next = [...(selected.options || ['', '', '', ''])]
-                        next[idx] = e.target.value
-                        setSelected({ ...selected, options: next })
-                      }}
-                      placeholder={`Option ${letter}`}
-                    />
-                  </div>
-                ))}
-              </div>
-
-              {/* Correct Answer & Marks */}
-              <div className="grid grid-cols-2 gap-2">
-                <div>
-                  <label className="text-xs text-slate-400 block mb-1">Correct Answer (0=A, 1=B, 2=C, 3=D)</label>
-                  <select
-                    className="w-full p-3 rounded-xl bg-slate-700"
-                    value={selected.correctAnswer}
-                    onChange={(e) => setSelected({ ...selected, correctAnswer: Number(e.target.value) })}
-                  >
-                    <option value={0}>A (0)</option>
-                    <option value={1}>B (1)</option>
-                    <option value={2}>C (2)</option>
-                    <option value={3}>D (3)</option>
-                  </select>
-                </div>
-                <div>
-                  <label className="text-xs text-slate-400 block mb-1">Marks</label>
-                  <input
-                    className="w-full p-3 rounded-xl bg-slate-700"
-                    type="number"
-                    value={selected.marks}
-                    onChange={(e) => setSelected({ ...selected, marks: Number(e.target.value) })}
-                  />
-                </div>
-              </div>
-
-              {/* Image Section - Simplified */}
-              <div className="p-4 bg-slate-700/50 rounded-xl space-y-3">
-                <div className="flex items-center justify-between">
-                  <div className="text-sm font-semibold">Image</div>
-                  {selected.imageRequired && (
-                    <div className="text-xs px-2 py-1 rounded bg-green-500/20 text-green-400">Has Image</div>
+                <div className="flex gap-2">
+                  <button disabled={loading} onClick={save} className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 font-semibold flex items-center gap-2">
+                    <Save className="w-4 h-4"/> Save
+                  </button>
+                  {selected.id && (
+                    <button disabled={loading} onClick={remove} className="px-3 py-2 rounded-lg bg-red-600/50 hover:bg-red-600">
+                      <Trash2 className="w-4 h-4"/>
+                    </button>
                   )}
                 </div>
-                
-                {/* Paste Area - Focusable */}
-                <div 
-                  tabIndex={0}
-                  className="p-6 border-2 border-dashed border-slate-600 rounded-xl text-center hover:border-blue-500 focus:border-blue-500 focus:outline-none transition-colors cursor-pointer bg-slate-800/50"
-                  onClick={onPasteAreaClick}
-                  onPaste={onPaste}
-                >
-                  <div className="text-3xl mb-2">📋</div>
-                  <div className="text-sm text-slate-300 font-medium">Click here, then press <strong>Ctrl+V</strong> to paste image</div>
-                  <div className="text-xs text-slate-500 mt-2">Use Snipping Tool → Copy → Click this box → Ctrl+V</div>
+              </div>
+
+              {/* Editor Form */}
+              <div className="p-4 space-y-4 max-h-[calc(100vh-200px)] overflow-y-auto">
+                {/* ID & Subject */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="text-xs text-slate-400 block mb-1">Question ID</label>
+                    <input
+                      className="w-full p-3 rounded-lg bg-slate-700"
+                      value={selected.id}
+                      onChange={(e) => setSelected({ ...selected, id: e.target.value })}
+                      placeholder="0610-y2024-p11-q2"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-xs text-slate-400 block mb-1">Subject</label>
+                    <select
+                      className="w-full p-3 rounded-lg bg-slate-700"
+                      value={selected.subject}
+                      onChange={(e) => setSelected({ ...selected, subject: e.target.value })}
+                    >
+                      <option value="biology">O-Level Biology (5090)</option>
+                      <option value="igcse_biology">IGCSE Biology (0610)</option>
+                      <option value="accounting">Accounting (7707)</option>
+                    </select>
+                  </div>
                 </div>
 
-                {/* Or Upload */}
-                <div className="text-xs text-slate-500 text-center">or</div>
-                <input
-                  className="w-full text-sm"
-                  type="file"
-                  accept="image/*"
-                  onChange={(e) => {
-                    const f = e.target.files?.[0]
-                    if (f) uploadImageFile(f)
-                  }}
-                />
+                {/* Question Text */}
+                <div>
+                  <label className="text-xs text-slate-400 block mb-1">Question Text</label>
+                  <textarea
+                    className="w-full p-3 rounded-lg bg-slate-700 min-h-[80px]"
+                    value={selected.question}
+                    onChange={(e) => setSelected({ ...selected, question: e.target.value })}
+                    placeholder="Type the question here..."
+                  />
+                </div>
 
-                {/* Image Preview */}
-                {selected.imagePath && (
-                  <div className="mt-2">
-                    <img 
-                      src={selected.imagePath} 
-                      alt="Question" 
-                      className="max-h-40 rounded-lg border border-slate-600"
+                {/* Options */}
+                <div className="space-y-2">
+                  <label className="text-xs text-slate-400 block">Options (A, B, C, D)</label>
+                  {['A', 'B', 'C', 'D'].map((letter, idx) => (
+                    <div key={idx} className="flex items-center gap-2">
+                      <span className="w-6 text-sm font-semibold text-slate-400">{letter}.</span>
+                      <input
+                        className="flex-1 p-2 rounded-lg bg-slate-700 text-sm"
+                        value={selected.options?.[idx] || ''}
+                        onChange={(e) => {
+                          const next = [...(selected.options || ['', '', '', ''])]
+                          next[idx] = e.target.value
+                          setSelected({ ...selected, options: next })
+                        }}
+                      />
+                      <button
+                        onClick={() => setSelected({ ...selected, correctAnswer: idx })}
+                        className={"w-8 h-8 rounded-lg flex items-center justify-center " + (selected.correctAnswer === idx ? 'bg-green-500 text-white' : 'bg-slate-700 text-slate-400')}
+                      >
+                        <Check className="w-4 h-4"/>
+                      </button>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Marks & Topic */}
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <label className="text-xs text-slate-400 block mb-1">Marks</label>
+                    <input
+                      type="number"
+                      className="w-full p-3 rounded-lg bg-slate-700"
+                      value={selected.marks}
+                      onChange={(e) => setSelected({ ...selected, marks: Number(e.target.value) })}
                     />
-                    <div className="text-xs text-slate-400 mt-1 break-all">{selected.imagePath}</div>
                   </div>
-                )}
-              </div>
+                  <div>
+                    <label className="text-xs text-slate-400 block mb-1">Topic</label>
+                    <input
+                      className="w-full p-3 rounded-lg bg-slate-700"
+                      value={selected.topic}
+                      onChange={(e) => setSelected({ ...selected, topic: e.target.value })}
+                      placeholder="e.g. photosynthesis"
+                    />
+                  </div>
+                </div>
 
-              {/* Save/Delete Buttons */}
-              <div className="flex gap-2 pt-2">
-                <button
-                  disabled={loading}
-                  className="flex-1 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 font-semibold"
-                  onClick={save}
-                >
-                  💾 Save Question
-                </button>
-                <button
-                  disabled={loading}
-                  className="px-4 py-3 rounded-xl bg-red-600/50 hover:bg-red-600 disabled:opacity-50"
-                  onClick={remove}
-                >
-                  🗑️
-                </button>
+                {/* Explanation */}
+                <div>
+                  <label className="text-xs text-slate-400 block mb-1">Explanation</label>
+                  <textarea
+                    className="w-full p-3 rounded-lg bg-slate-700 min-h-[60px]"
+                    value={selected.explanation}
+                    onChange={(e) => setSelected({ ...selected, explanation: e.target.value })}
+                    placeholder="Explanation for the correct answer..."
+                  />
+                </div>
+
+                {/* Image Section - Collapsible */}
+                <div className="border border-slate-700 rounded-xl overflow-hidden">
+                  <button
+                    onClick={() => setShowImageSection(!showImageSection)}
+                    className="w-full p-3 flex items-center justify-between bg-slate-700/50 hover:bg-slate-700"
+                  >
+                    <div className="flex items-center gap-2">
+                      <Image className="w-4 h-4" />
+                      <span className="font-medium text-sm">Image</span>
+                      {selected.imagePath && <span className="text-xs text-green-400">(Uploaded)</span>}
+                    </div>
+                    {showImageSection ? <ChevronUp className="w-4 h-4"/> : <ChevronDown className="w-4 h-4"/>}
+                  </button>
+                  
+                  {showImageSection && (
+                    <div className="p-4 space-y-3">
+                      {/* Paste Area */}
+                      <div
+                        tabIndex={0}
+                        onPaste={onPaste}
+                        className="p-4 border-2 border-dashed border-slate-600 rounded-lg text-center hover:border-blue-500 focus:border-blue-500 focus:outline-none cursor-pointer bg-slate-800/50"
+                      >
+                        <div className="text-2xl mb-1">📋</div>
+                        <div className="text-sm text-slate-300">Click here → Press Ctrl+V to paste</div>
+                        <div className="text-xs text-slate-500">Use Snipping Tool → Copy → Ctrl+V</div>
+                      </div>
+
+                      {/* File Upload */}
+                      <div className="flex items-center gap-2">
+                        <input
+                          type="file"
+                          accept="image/*"
+                          onChange={(e) => { const f = e.target.files?.[0]; if (f) uploadImageFile(f); }}
+                          className="flex-1 text-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-slate-700 file:text-sm"
+                        />
+                      </div>
+
+                      {/* Image Preview */}
+                      {selected.imagePath && (
+                        <div className="mt-2">
+                          <img src={selected.imagePath} alt="" className="max-h-32 rounded-lg border border-slate-600" />
+                          <div className="text-xs text-slate-400 mt-1 break-all">{selected.imagePath}</div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+
+                {/* Bottom Save Button - Always Visible */}
+                <div className="sticky bottom-0 pt-4 pb-2 bg-slate-800">
+                  <div className="flex gap-2">
+                    <button disabled={loading} onClick={save} className="flex-1 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 font-semibold flex items-center justify-center gap-2">
+                      <Save className="w-5 h-5"/> Save Question
+                    </button>
+                    {selected.id && (
+                      <button disabled={loading} onClick={remove} className="px-4 py-3 rounded-xl bg-red-600/50 hover:bg-red-600">
+                        <Trash2 className="w-5 h-5"/>
+                      </button>
+                    )}
+                  </div>
+                </div>
               </div>
-            </>
+            </div>
           )}
         </div>
       </div>
