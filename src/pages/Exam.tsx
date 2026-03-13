@@ -157,8 +157,13 @@ export function Exam() {
                   <img
                     src={question.imagePath}
                     alt="Question figure"
-                    className="w-full max-h-[420px] object-contain rounded-lg border border-slate-700"
+                    className="w-full max-h-[420px] object-contain rounded-lg border border-slate-700 bg-slate-800"
                     loading="lazy"
+                    onError={(e) => {
+                      console.error('Image failed to load:', question.imagePath)
+                      e.currentTarget.style.display = 'none'
+                    }}
+                    onLoad={() => console.log('Image loaded successfully:', question.imagePath)}
                   />
                 </div>
               )}
