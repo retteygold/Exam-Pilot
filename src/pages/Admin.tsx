@@ -133,17 +133,44 @@ export function Admin() {
       setSaveStatus('ID is required')
       return
     }
+    const savedId = selected.id // Remember the ID we just saved
 
     setLoading(true)
     setSaveStatus(null)
     try {
-      await upsertQuestion({
+      const questionToSave = {
         ...selected,
-        imageRequired: Boolean(selected.imageRequired || selected.imagePath),
-      })
-      setSaveStatus('Saved')
-      await search()
+        imageRequired: Boolean(selected.imagePath),
+      }
+      console.log('Saving question:', savedId, 'with imagePath:', questionToSave.imagePath)
+      await upsertQuestion(questionToSave)
+      setSaveStatus('Saved!')
+      
+      // Refresh the list and re-select the same question
+      if (queryId.trim()) {
+        const qs = await fetchQuestionsByIdLike(queryId.trim())
+        setResults(qs)
+        // Find and re-select the question we just saved
+        const updated = qs.find(q => q.id === savedId)
+        if (updated) {
+          console.log('Re-selecting updated question with imagePath:', updated.imagePath)
+          setSelected(updated)
+        } else {
+          setSelected(qs[0] || null)
+        }
+      } else {
+        const qs = await fetchRecentQuestions(20)
+        setResults(qs)
+        const updated = qs.find(q => q.id === savedId)
+        if (updated) {
+          console.log('Re-selecting updated question with imagePath:', updated.imagePath)
+          setSelected(updated)
+        } else {
+          setSelected(qs[0] || null)
+        }
+      }
     } catch (e: any) {
+      console.error('Save error:', e)
       setSaveStatus(e?.message || 'Save failed')
     } finally {
       setLoading(false)
