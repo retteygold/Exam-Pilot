@@ -299,7 +299,7 @@ export function Admin() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div className="md:col-span-1 p-4 bg-slate-800 rounded-2xl">
           <div className="text-sm font-semibold mb-2">Results</div>
-          <div className="space-y-2 max-h-[60vh] overflow-y-auto">
+          <div className="space-y-2 max-h-[60vh] overflow-y-auto pr-1">
             {results.map((q) => (
               <button
                 key={q.id}
@@ -309,13 +309,16 @@ export function Admin() {
                 }`}
               >
                 <div className="text-sm font-semibold">{q.id}</div>
-                <div className="text-xs text-slate-400">{q.subject}</div>
+                <div className="flex items-center gap-2">
+                  <div className="text-xs text-slate-400">{q.subject}</div>
+                  {q.imageRequired && <div className="text-[10px] px-1.5 py-0.5 rounded bg-yellow-500/20 text-yellow-400">IMG</div>}
+                </div>
               </button>
             ))}
           </div>
         </div>
 
-        <div className="md:col-span-2 p-4 bg-slate-800 rounded-2xl space-y-3">
+        <div className="md:col-span-2 p-4 bg-slate-800 rounded-2xl space-y-3 max-h-[80vh] overflow-y-auto">
           <div className="text-sm font-semibold">Editor</div>
           {!selected ? (
             <div className="text-sm text-slate-400">Select a question or create a new one.</div>
@@ -429,7 +432,12 @@ export function Admin() {
               </div>
 
               <div className="p-4 bg-slate-700/50 rounded-xl space-y-2">
-                <div className="text-sm font-semibold">Image</div>
+                <div className="flex items-center justify-between">
+                  <div className="text-sm font-semibold">Image</div>
+                  {selected.imageRequired && (
+                    <div className="text-xs px-2 py-1 rounded bg-yellow-500/20 text-yellow-400">imageRequired: true</div>
+                  )}
+                </div>
                 <div className="text-xs text-slate-300">Paste an image here (Ctrl+V) or upload a file.</div>
                 <input
                   className="w-full"

@@ -1,5 +1,6 @@
 import fs from 'fs'
 import path from 'path'
+import { fileURLToPath } from 'url'
 import { createClient } from '@supabase/supabase-js'
 
 const supabaseUrl = process.env.SUPABASE_URL
@@ -12,8 +13,11 @@ if (!supabaseUrl || !supabaseKey) {
 const supabase = createClient(supabaseUrl, supabaseKey)
 
 function loadQuestions(jsonPath) {
+  console.log(`Checking: ${jsonPath} - exists: ${fs.existsSync(jsonPath)}`)
   if (!fs.existsSync(jsonPath)) return []
   const raw = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'))
+  const count = raw.questions?.length || 0
+  console.log(`Loaded ${count} questions from ${jsonPath}`)
   return raw.questions || []
 }
 
@@ -42,7 +46,9 @@ function mapToDb(q) {
 }
 
 async function main() {
-  const root = process.cwd()
+  const __filename = fileURLToPath(import.meta.url)
+  const __dirname = path.dirname(__filename)
+  const root = path.join(__dirname, '..')
   const sources = [
     path.join(root, 'public', 'questions.json'),
     path.join(root, 'public', 'biology_questions.json'),
@@ -50,14 +56,24 @@ async function main() {
   ]
 
   const all = sources.flatMap(loadQuestions).map(mapToDb)
-  console.log(`Total questions: ${all.length}`)
+  // Deduplicate by ID to prevent upsert conflicts
+  const uniqueById = new Map()
+  for (const q of all) {
+    if (!uniqueById.has(q.id)) {
+      uniqueById.set(q.id, q)
+    } else {
+      console.log(`Duplicate ID skipped: ${q.id}`)
+    }
+  }
+  const unique = Array.from(uniqueById.values())
+  console.log(`Total questions: ${all.length}, Unique: ${unique.length}`)
 
   const batchSize = 500
-  for (let i = 0; i < all.length; i += batchSize) {
-    const batch = all.slice(i, i + batchSize)
+  for (let i = 0; i < unique.length; i += batchSize) {
+    const batch = unique.slice(i, i + batchSize)
     const { error } = await supabase.from('questions').upsert(batch, { onConflict: 'id' })
     if (error) throw error
-    console.log(`Uploaded ${i + batch.length}/${all.length}`)
+    console.log(`Uploaded ${i + batch.length}/${unique.length}`)
   }
 
   console.log('Done')
