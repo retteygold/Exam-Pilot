@@ -37,3 +37,7 @@ coverage/
 .cache/
 .parcel-cache/
 *.tsbuildinfo
+
+# Python
+__pycache__/
+*.pyc
