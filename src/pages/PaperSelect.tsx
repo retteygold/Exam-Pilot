@@ -28,17 +28,18 @@ export function PaperSelect() {
   const [loading, setLoading] = useState(true)
   const [selectedMode, setSelectedMode] = useState<'practice' | 'exam'>('practice')
   const [recommendedDifficulty, setRecommendedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium')
-  const [selectedSubject, setSelectedSubject] = useState<'accounting' | 'biology'>('accounting')
+  const [selectedSubject, setSelectedSubject] = useState<'accounting' | 'biology' | 'igcse_biology'>('accounting')
   const [subjectData, setSubjectData] = useState<{[key: string]: {total: number, verified: number}}>({})
 
   useEffect(() => {
     setRecommendedDifficulty(getRecommendedDifficulty())
     
-    // Load both subjects
+    // Load all subjects
     Promise.all([
       fetch(`/questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []})),
-      fetch(`/biology_questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []}))
-    ]).then(([accountingData, biologyData]) => {
+      fetch(`/biology_questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []})),
+      fetch(`/igcse_biology_0610_questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []}))
+    ]).then(([accountingData, biologyData, igcseBioData]) => {
       const stats: {[key: string]: {total: number, verified: number}} = {}
       
       // Process Accounting
@@ -54,9 +55,16 @@ export function PaperSelect() {
         total: bioQuestions.length,
         verified: bioQuestions.filter((q: Question) => q.verified).length
       }
+
+      // Process IGCSE Biology 0610
+      const igcseBioQuestions = (igcseBioData.questions || []).map((q: Question) => ({...q, _subject: 'igcse_biology'}))
+      stats.igcse_biology = {
+        total: igcseBioQuestions.length,
+        verified: igcseBioQuestions.filter((q: Question) => q.verified).length
+      }
       
       // Combine
-      const combined = [...accQuestions, ...bioQuestions]
+      const combined = [...accQuestions, ...bioQuestions, ...igcseBioQuestions]
       
       const filtered = combined.filter((q: Question) => {
         const questionDifficulty = q.difficulty || 'medium'
@@ -75,20 +83,20 @@ export function PaperSelect() {
       filtered.forEach((q: Question) => {
         const source = q.source || {}
         const subject = (q.subject || 'accounting').toLowerCase()
-        const code = subject === 'accounting' ? '7707' : '5090'
+        const code = subject === 'accounting' ? '7707' : subject === 'biology' ? '5090' : '0610'
         const key = `${subject}_${source.pdf || 'unknown'}_${source.year}_${source.session}_${source.paper}`
         
         if (!paperMap.has(key)) {
           paperMap.set(key, {
             id: key,
             subject: subject,
-            subjectName: subject === 'accounting' ? 'Accounting' : 'Biology',
+            subjectName: subject === 'accounting' ? 'Accounting' : subject === 'biology' ? 'Biology' : 'Biology',
             code: code,
             year: source.year || 2020,
             session: source.session || 'May/June',
             paper: source.paper || '11',
             totalQuestions: 0,
-            timeAllowed: subject === 'accounting' ? 45 : 60,
+            timeAllowed: subject === 'accounting' ? 45 : subject === 'biology' ? 60 : 45,
             verifiedCount: 0
           })
         }
@@ -193,6 +201,22 @@ export function PaperSelect() {
               {subjectData.biology?.total || 0} questions • {subjectData.biology?.verified || 0} verified
             </div>
           </button>
+
+          <button
+            onClick={() => setSelectedSubject('igcse_biology')}
+            className={`p-4 rounded-xl text-left transition-colors ${
+              selectedSubject === 'igcse_biology'
+                ? 'bg-emerald-500 text-white'
+                : 'bg-slate-700 hover:bg-slate-600'
+            }`}
+          >
+            <Beaker className="w-5 h-5 mb-2" />
+            <div className="font-semibold">Biology</div>
+            <div className="text-xs opacity-60 mt-1">
+              {subjectData.igcse_biology?.total || 0} questions • {subjectData.igcse_biology?.verified || 0} verified
+            </div>
+            <div className="text-[10px] opacity-60 mt-1">IGCSE • 0610</div>
+          </button>
         </div>
       </div>
       <div className="p-4 bg-slate-800 rounded-2xl">
@@ -287,7 +311,7 @@ export function PaperSelect() {
         </div>
         <div className="p-4 bg-slate-800 rounded-xl text-center">
           <Award className="w-5 h-5 mx-auto mb-2 text-amber-400" />
-          <div className="text-2xl font-bold">{selectedSubject === 'accounting' ? '7707' : '5090'}</div>
+          <div className="text-2xl font-bold">{selectedSubject === 'accounting' ? '7707' : selectedSubject === 'biology' ? '5090' : '0610'}</div>
           <div className="text-xs text-slate-400">Code</div>
         </div>
       </div>

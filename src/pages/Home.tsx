@@ -84,6 +84,11 @@ export function Home() {
             <div className="font-semibold">Biology</div>
             <div className="text-xs text-slate-400">5090 - O Level</div>
           </div>
+          <div className="p-4 bg-slate-800 rounded-xl">
+            <Beaker className="w-5 h-5 text-emerald-400 mb-2" />
+            <div className="font-semibold">Biology</div>
+            <div className="text-xs text-slate-400">0610 - IGCSE</div>
+          </div>
         </div>
       </div>
     </div>
