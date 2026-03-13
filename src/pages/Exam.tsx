@@ -255,53 +255,58 @@ export function Exam() {
         </div>
       </div>
 
-      {/* Footer Actions */}
-      <div className="p-4 bg-slate-800 border-t border-slate-700">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={prevQuestion}
-            disabled={currentIndex === 0}
-            className="p-3 bg-slate-700 rounded-xl disabled:opacity-50 hover:bg-slate-600 transition-colors"
-          >
-            <ChevronLeft className="w-5 h-5" />
-          </button>
-
-          {!hasAnswered ? (
+      {/* Footer Actions - Fixed for mobile visibility */}
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-slate-800 border-t border-slate-700 pb-safe z-40">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center gap-3">
             <button
-              onClick={handleSubmit}
-              disabled={selected === null}
-              className="flex-1 py-3 bg-blue-500 hover:bg-blue-600 disabled:opacity-50 rounded-xl font-semibold transition-colors"
+              onClick={prevQuestion}
+              disabled={currentIndex === 0}
+              className="p-3 bg-slate-700 rounded-xl disabled:opacity-50 hover:bg-slate-600 transition-colors"
             >
-              {isLast ? 'Finish' : 'Submit & Next'}
+              <ChevronLeft className="w-5 h-5" />
             </button>
-          ) : (
+
+            {!hasAnswered ? (
+              <button
+                onClick={handleSubmit}
+                disabled={selected === null}
+                className="flex-1 py-3 bg-blue-500 hover:bg-blue-600 disabled:opacity-50 rounded-xl font-semibold transition-colors"
+              >
+                {isLast ? 'Finish' : 'Submit & Next'}
+              </button>
+            ) : (
+              <button
+                onClick={isLast ? handleFinish : nextQuestion}
+                className="flex-1 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-semibold transition-colors"
+              >
+                {isLast ? 'Finish Exam' : 'Next Question'}
+              </button>
+            )}
+
             <button
-              onClick={isLast ? handleFinish : nextQuestion}
-              className="flex-1 py-3 bg-blue-500 hover:bg-blue-600 rounded-xl font-semibold transition-colors"
+              onClick={nextQuestion}
+              disabled={isLast}
+              className="p-3 bg-slate-700 rounded-xl disabled:opacity-50 hover:bg-slate-600 transition-colors"
             >
-              {isLast ? 'Finish Exam' : 'Next Question'}
+              <ChevronRight className="w-5 h-5" />
+            </button>
+          </div>
+
+          {/* Finish Button */}
+          {examMode === 'exam' && answeredCount > 0 && (
+            <button
+              onClick={() => setShowConfirm(true)}
+              className="w-full mt-3 py-2 text-sm text-slate-400 hover:text-white transition-colors"
+            >
+              Finish Early ({answeredCount}/{questions.length} answered)
             </button>
           )}
-
-          <button
-            onClick={nextQuestion}
-            disabled={isLast}
-            className="p-3 bg-slate-700 rounded-xl disabled:opacity-50 hover:bg-slate-600 transition-colors"
-          >
-            <ChevronRight className="w-5 h-5" />
-          </button>
         </div>
-
-        {/* Finish Button */}
-        {examMode === 'exam' && answeredCount > 0 && (
-          <button
-            onClick={() => setShowConfirm(true)}
-            className="w-full mt-3 py-2 text-sm text-slate-400 hover:text-white transition-colors"
-          >
-            Finish Early ({answeredCount}/{questions.length} answered)
-          </button>
-        )}
       </div>
+
+      {/* Spacer for fixed footer */}
+      <div className="h-24" />
 
       {/* Confirm Modal */}
       {showConfirm && (

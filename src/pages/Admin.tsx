@@ -216,30 +216,42 @@ export function Admin() {
 
   if (!sessionEmail) {
     return (
-      <div className="p-4 max-w-md mx-auto">
-        <div className="p-6 bg-slate-800 rounded-2xl space-y-4">
-          <div className="text-lg font-semibold">Admin Login</div>
-          <input
-            className="w-full p-3 rounded-xl bg-slate-700"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            className="w-full p-3 rounded-xl bg-slate-700"
-            placeholder="Password"
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          {authError && <div className="text-sm text-red-400">{authError}</div>}
-          <button
-            disabled={loading}
-            className="w-full p-3 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50"
-            onClick={signIn}
-          >
-            Sign in
-          </button>
+      <div className="min-h-screen flex items-center justify-center p-4">
+        <div className="w-full max-w-md">
+          <div className="text-center mb-6">
+            <div className="w-24 h-24 mx-auto mb-4">
+              <img 
+                src="/storyset/Health professional team-amico.svg" 
+                alt="Admin" 
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <h1 className="text-2xl font-bold">Admin Dashboard</h1>
+            <p className="text-slate-400 text-sm">Manage questions and content</p>
+          </div>
+          <div className="p-6 bg-slate-800 rounded-2xl space-y-4">
+            <input
+              className="w-full p-3 rounded-xl bg-slate-700"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              className="w-full p-3 rounded-xl bg-slate-700"
+              placeholder="Password"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            {authError && <div className="text-sm text-red-400">{authError}</div>}
+            <button
+              disabled={loading}
+              className="w-full p-3 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50"
+              onClick={signIn}
+            >
+              Sign in
+            </button>
+          </div>
         </div>
       </div>
     )
@@ -248,9 +260,18 @@ export function Admin() {
   return (
     <div className="p-4 space-y-4" onPaste={onPaste}>
       <div className="p-4 bg-slate-800 rounded-2xl flex items-center justify-between">
-        <div>
-          <div className="font-semibold">Admin</div>
-          <div className="text-xs text-slate-400">{sessionEmail}</div>
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10">
+            <img 
+              src="/storyset/Doctors-rafiki.svg" 
+              alt="" 
+              className="w-full h-full object-contain opacity-80"
+            />
+          </div>
+          <div>
+            <div className="font-semibold">Admin</div>
+            <div className="text-xs text-slate-400">{sessionEmail}</div>
+          </div>
         </div>
         <button
           disabled={loading}
