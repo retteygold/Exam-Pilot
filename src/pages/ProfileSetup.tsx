@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ArrowRight, Star, Zap, Medal, Crown, BookOpen } from 'lucide-react'
+import { Star, Zap, Medal, Crown, BookOpen } from 'lucide-react'
 import { useUserStore } from '../store/userStore'
 
 const quotes = [

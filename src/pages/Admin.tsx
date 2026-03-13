@@ -177,7 +177,7 @@ export function Admin() {
 
       console.log('Uploading to bucket:', bucket, 'path:', path)
       
-      const { error: uploadError, data } = await supabase.storage.from(bucket).upload(path, file, {
+      const { error: uploadError } = await supabase.storage.from(bucket).upload(path, file, {
         upsert: true,
         contentType: file.type || 'image/png',
       })
