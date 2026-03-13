@@ -7,12 +7,18 @@ import { PaperSelect } from './pages/PaperSelect'
 import { Exam } from './pages/Exam'
 import { Results } from './pages/Results'
 import { Stats } from './pages/Stats'
+import { Admin } from './pages/Admin'
 
 function App() {
   const isSetupComplete = useUserStore((state: { isSetupComplete: boolean }) => state.isSetupComplete)
 
   return (
     <Routes>
+      <Route 
+        path="/admin"
+        element={<Admin />}
+      />
+
       {/* Profile setup - shown first if not complete */}
       <Route 
         path="/setup" 

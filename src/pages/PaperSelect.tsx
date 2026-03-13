@@ -4,6 +4,7 @@ import { BookOpen, Clock, Target, Award, FileText, Calendar, User, Beaker, Calcu
 import { useExamStore } from '../store/examStore'
 import { useUserStore } from '../store/userStore'
 import type { Question } from '../types'
+import { canUseSupabaseQuestions, fetchAllQuestionsFromSupabase } from '../services/questionsSupabase'
 
 interface Paper {
   id: string
@@ -33,59 +34,43 @@ export function PaperSelect() {
 
   useEffect(() => {
     setRecommendedDifficulty(getRecommendedDifficulty())
-    
-    // Load all subjects
-    Promise.all([
-      fetch(`/questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []})),
-      fetch(`/biology_questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []})),
-      fetch(`/igcse_biology_0610_questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []}))
-    ]).then(([accountingData, biologyData, igcseBioData]) => {
+ 
+    const compute = (allQuestions: Question[]) => {
       const stats: {[key: string]: {total: number, verified: number}} = {}
-      
-      // Process Accounting
-      const accQuestions = (accountingData.questions || []).map((q: Question) => ({...q, _subject: 'accounting'}))
-      stats.accounting = {
-        total: accQuestions.length,
-        verified: accQuestions.filter((q: Question) => q.verified).length
-      }
-      
-      // Process Biology
-      const bioQuestions = (biologyData.questions || []).map((q: Question) => ({...q, _subject: 'biology'}))
-      stats.biology = {
-        total: bioQuestions.length,
-        verified: bioQuestions.filter((q: Question) => q.verified).length
-      }
+      const bySubject: {[key: string]: Question[]} = {}
+      allQuestions.forEach((q) => {
+        const s = (q.subject || 'accounting').toLowerCase()
+        bySubject[s] = bySubject[s] || []
+        bySubject[s].push(q)
+      })
 
-      // Process IGCSE Biology 0610
-      const igcseBioQuestions = (igcseBioData.questions || []).map((q: Question) => ({...q, _subject: 'igcse_biology'}))
-      stats.igcse_biology = {
-        total: igcseBioQuestions.length,
-        verified: igcseBioQuestions.filter((q: Question) => q.verified).length
-      }
-      
-      // Combine
-      const combined = [...accQuestions, ...bioQuestions, ...igcseBioQuestions]
-      
-      const filtered = combined.filter((q: Question) => {
+      ;(['accounting', 'biology', 'igcse_biology'] as const).forEach((s) => {
+        const list = bySubject[s] || []
+        stats[s] = {
+          total: list.length,
+          verified: list.filter((q) => q.verified).length
+        }
+      })
+
+      const filtered = allQuestions.filter((q: Question) => {
         const questionDifficulty = q.difficulty || 'medium'
-        const difficultyMatch = selectedMode === 'exam' ? true : 
+        const difficultyMatch = selectedMode === 'exam' ? true :
           recommendedDifficulty === 'easy' ? questionDifficulty === 'easy' :
           recommendedDifficulty === 'hard' ? questionDifficulty !== 'easy' :
           true
         return difficultyMatch
       })
-      
+
       setQuestions(filtered)
       setSubjectData(stats)
-      
-      // Group by paper
+
       const paperMap = new Map<string, Paper>()
       filtered.forEach((q: Question) => {
         const source = q.source || {}
         const subject = (q.subject || 'accounting').toLowerCase()
         const code = subject === 'accounting' ? '7707' : subject === 'biology' ? '5090' : '0610'
         const key = `${subject}_${source.pdf || 'unknown'}_${source.year}_${source.session}_${source.paper}`
-        
+
         if (!paperMap.has(key)) {
           paperMap.set(key, {
             id: key,
@@ -100,14 +85,36 @@ export function PaperSelect() {
             verifiedCount: 0
           })
         }
-        
+
         const paper = paperMap.get(key)!
         paper.totalQuestions++
         if (q.verified) paper.verifiedCount++
       })
-      
+
       setPapers(Array.from(paperMap.values()).sort((a, b) => b.year - a.year))
       setLoading(false)
+    }
+
+    if (canUseSupabaseQuestions()) {
+      fetchAllQuestionsFromSupabase()
+        .then((qs) => compute(qs))
+        .catch(() => {
+          setLoading(false)
+        })
+      return
+    }
+
+    Promise.all([
+      fetch(`/questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []})),
+      fetch(`/biology_questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []})),
+      fetch(`/igcse_biology_0610_questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []}))
+    ]).then(([accountingData, biologyData, igcseBioData]) => {
+      const combined = [
+        ...(accountingData.questions || []),
+        ...(biologyData.questions || []),
+        ...(igcseBioData.questions || []),
+      ] as Question[]
+      compute(combined)
     })
   }, [getRecommendedDifficulty, recommendedDifficulty, selectedMode])
 

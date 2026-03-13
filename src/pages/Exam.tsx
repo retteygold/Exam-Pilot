@@ -151,6 +151,17 @@ export function Exam() {
               <p className="text-xs text-slate-500 mt-1">
                 Image path: {question.imagePath}
               </p>
+
+              {question.imagePath && (
+                <div className="mt-3">
+                  <img
+                    src={question.imagePath}
+                    alt="Question figure"
+                    className="w-full max-h-[420px] object-contain rounded-lg border border-slate-700"
+                    loading="lazy"
+                  />
+                </div>
+              )}
             </div>
           )}
 
