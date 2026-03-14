@@ -1,0 +1,6207 @@
+{
+  "metadata": {
+    "subject": "AS Chemistry (WCH)",
+    "total_questions": 221,
+    "description": "221 AS/A-Level MCQs",
+    "years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "verified": false,
+    "verified_count": 0
+  },
+  "questions": [
+    {
+      "id": "wch12-y2024-u2-q15a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the white solid, X?",
+      "options": [
+        "lithium chloride",
+        "calcium chloride",
+        "strontium bromide",
+        "barium bromide"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2019-unit2-2019-06-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "15(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q15b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What causes the flame colour to be red?",
+      "options": [
+        "electrons absorb blue and green light as they are promoted",
+        "electrons emit red light as they are promoted",
+        "blue and green light is absorbed as electrons return to lower energy levels",
+        "red light is emitted as electrons return to lower energy levels (Total for Question 15 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. *P61475A0928* 10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2019-unit2-2019-06-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "15(b)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q16a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which property is not due to hydrogen bonding?",
+      "options": [
+        "ice has a lower density than water at 0°C",
+        "hydrogen fluoride has a higher boiling temperature than hydrogen chloride",
+        "H—H bond enthalpy is greater than Si—H bond enthalpy",
+        "alcohols are less volatile than alkanes with a similar molar mass"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2019-unit2-2019-06-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "16(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q16b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which diagram best represents a hydrogen bond between two water molecules? (1) 180° O H H H A O H 180° O H H H B O H 104.5° H C O O H H H H 104.5° O H D H O H (Total for Question 16 = 2 marks) *P61475A01028* 11",
+      "options": [
+        "b ÷ c",
+        "d ÷ a",
+        "e ÷ a",
+        "e ÷ b (Total for Question 17 = 1 mark)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2019-unit2-2019-06-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "16(b)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is a disproportionation reaction?",
+      "options": [
+        "Reaction 1",
+        "Reaction 2",
+        "Reaction 3",
+        "Reaction 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2019-unit2-2019-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is an acid-base reaction?",
+      "options": [
+        "Reaction 1",
+        "Reaction 2",
+        "Reaction 3",
+        "Reaction 4 (Total for Question 5 = 2 marks)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2019-unit2-2019-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q9a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the concentration, in mol dm−3, of barium nitrate in the solution?",
+      "options": [
+        "0.05",
+        "0.50",
+        "1.00",
+        "2.00"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2019-unit2-2019-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "9(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which reaction is possible?",
+      "options": [
+        "reducing propan-1-ol to propanal",
+        "oxidising propan-1-ol to propanal",
+        "reducing propanal to propanone",
+        "oxidising propan-1-ol to propanone"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2019-unit2-2019-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch11-y2020-u1-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What would you see when this reaction is carried out?",
+      "options": [
+        "blue solution turns colourless",
+        "effervescence",
+        "no visible change",
+        "white precipitate"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit1-2020-01-WCH11-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch11-y2020-u1-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the ionic equation for this reaction?",
+      "options": [
+        "Ba+(aq) + SO–(aq) (cid:111) BaSO (s)",
+        "Na+(aq) + Cl–(aq) (cid:111) NaCl(aq)",
+        "Ba2+(aq) + SO2–(aq) (cid:111) BaSO (s)",
+        "Ba2+(aq) + SO2–(aq) + Na+(aq) + Cl–(aq) (cid:111) BaSO (s) + NaCl(aq)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit1-2020-01-WCH11-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch11-y2020-u1-q4d",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the atom economy (by mass) for the formation of BaSO in this reaction? 4",
+      "options": [
+        "33.3%",
+        "62.2%",
+        "66.6%",
+        "80.0% (Total for Question 10 = 4 marks) 6 *P60271A0624*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit1-2020-01-WCH11-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "4(d)"
+      }
+    },
+    {
+      "id": "wch11-y2020-u1-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these is the best name for this type of reaction?",
+      "options": [
+        "addition",
+        "displacement",
+        "neutralisation",
+        "substitution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit1-2020-10-WCH11-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch11-y2020-u1-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the ionic half-equation for a process that takes place during this reaction?",
+      "options": [
+        "Cu2+ + e– → Cu+",
+        "Cu+ + e– → Cu",
+        "Zn → Zn+ + e–",
+        "Zn → Zn2+ + 2e– (Total for Question 2 = 2 marks) 3 *P62590A0324*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit1-2020-10-WCH11-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch11-y2020-u1-q20a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the A of the element? r",
+      "options": [
+        "42.0",
+        "48.0",
+        "63.6",
+        "64.0"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit1-2020-10-WCH11-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "20(a)"
+      }
+    },
+    {
+      "id": "wch11-y2020-u1-q20b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which species could be responsible for the peak at m / z = 32.5?",
+      "options": [
+        "32S+",
+        "63Cu2+",
+        "65Cu2+",
+        "98Tc3+ (Total for Question 6 = 2 marks) 5 *P62590A0524*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit1-2020-10-WCH11-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "20(b)"
+      }
+    },
+    {
+      "id": "wch11-y2020-u1-q1a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the molecular formula for the fifth molecule in this sequence?",
+      "options": [
+        "CH O 4",
+        "C H O",
+        "C H O",
+        "C H O"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit1-2020-10-WCH11-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(a)"
+      }
+    },
+    {
+      "id": "wch11-y2020-u1-q7b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the name of this type of sequence?",
+      "options": [
+        "functional group",
+        "homologous series",
+        "homolytic series",
+        "skeletal formulae (Total for Question 8 = 2 marks) 6 *P62590A0624*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit1-2020-10-WCH11-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "7(b)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is correct?",
+      "options": [
+        "iodide ions oxidise chlorine",
+        "iodide ions reduce chlorine",
+        "chlorine reduces iodide ions",
+        "chlorine is neither oxidised nor reduced"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-01-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is correct for silver iodide? (1) Solubility in concentrated Colour of precipitate aqueous ammonia",
+      "options": [
+        "yellow insoluble",
+        "yellow soluble",
+        "cream insoluble",
+        "cream soluble"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-01-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q11a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What type of reaction occurs in this preparation?",
+      "options": [
+        "addition",
+        "elimination",
+        "reduction",
+        "substitution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-01-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "11(a)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the final volume of the mixture of gases in dm3 at r.t.p.?",
+      "options": [
+        "9.60",
+        "11.2",
+        "21.6",
+        "23.2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-01-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which m / z peak would not be expected in the mass spectrum of propanone?",
+      "options": [
+        "15",
+        "29",
+        "43",
+        "58"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-01-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What type of reaction occurs?",
+      "options": [
+        "displacement",
+        "disproportionation",
+        "elimination",
+        "hydrolysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-10-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q8a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these compounds could be Q?",
+      "options": [
+        "barium nitrate",
+        "lithium nitrate",
+        "magnesium nitrate",
+        "rubidium nitrate"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-10-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "8(a)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q8b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which colour and test results are correct for nitrogen dioxide gas? (1) Colour of Colour change of nitrogen dioxide damp litmus paper",
+      "options": [
+        "brown blue to red",
+        "brown red to blue",
+        "colourless blue to red",
+        "colourless red to blue (Total for Question 8 = 2 marks)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-10-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "8(b)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q10a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which symbol represents the enthalpy change for the reaction R → P?",
+      "options": [
+        "u",
+        "v",
+        "w",
+        "x"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-10-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "10(a)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q10b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which symbol represents the activation energy of the reaction P → R?",
+      "options": [
+        "u",
+        "v",
+        "w",
+        "x"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-10-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "10(b)"
+      }
+    },
+    {
+      "id": "wch12-y2020-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the total volume (at r.t.p.) of carbon dioxide formed? [M(MgCO ) = 84.3 Molar volume of a gas at r.t.p. = 24.0 dm3 mol–1] r 3",
+      "options": [
+        "2.40 dm3",
+        "1.20 dm3",
+        "2400 dm3",
+        "1200 dm3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit2-2020-10-WCH12-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2020-u4-q1a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these, when mixed with water, produces the solution with the lowest pH?",
+      "options": [
+        "compound 1",
+        "compound 2",
+        "compound 3",
+        "compound 4 *P60472A0232* 3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit4-2020-01-WCH14-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "1(a)"
+      }
+    },
+    {
+      "id": "wch14-y2020-u4-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is not correct?",
+      "options": [
+        "the reaction is third order overall",
+        "the units of the rate of the reaction are mol dm−3 s−1",
+        "the rate of the reaction increases when the pressure is increased",
+        "when the concentration of nitrogen monoxide doubles and the concentration of oxygen quadruples, the rate increases by a factor of 8"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit4-2020-01-WCH14-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch14-y2020-u4-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the units of the rate constant, k, for this reaction?",
+      "options": [
+        "dm9 mol−3 s−1",
+        "mol3 dm−9 s−1",
+        "mol2 dm−6 s−1",
+        "dm6 mol−2 s−1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit4-2020-01-WCH14-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch14-y2020-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of the following is true?",
+      "options": [
+        "the units for the rate constant are dm3 mol−1 s−1",
+        "the reaction is a first order reaction overall",
+        "the units for the rate are dm3 mol −1 s−1",
+        "doubling the concentrations of propanone and of iodine quadruples the rate"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit4-2020-10-WCH14-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2020-u4-q3b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of the following is not true?",
+      "options": [
+        "the reaction rate increases if the temperature is raised",
+        "the rate constant increases if the temperature is raised",
+        "the addition of a small amount of sodium hydroxide decreases the reaction rate",
+        "the rate is unchanged when the hydrogen ion concentration is doubled (Total for Question 4 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 6 *P64620A0632*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2020-unit4-2020-10-WCH14-01-qp.pdf",
+        "year": 2020,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q16a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these is an overall equation for this reaction?",
+      "options": [
+        "C H + Br → C H Br",
+        "C H + Br → C H Br",
+        "C H + Br → C H Br + H",
+        "C H + Br → C H Br + HBr"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-01-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "16(a)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q5b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is not correct about this reaction system?",
+      "options": [
+        "only the initiation step involves homolytic bond fission",
+        "only some bromine is converted to free radicals in the initiation step",
+        "propagation forms more product than termination",
+        "further substitution reactions are likely to occur"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-01-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "5(b)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q5d",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which alkane could be formed in a termination step in this reaction system? (1) A B C D (Total for Question 16 = 4 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 7 *P67752A0724*",
+      "options": [
+        "developing biodegradable polymers",
+        "exporting polymer waste",
+        "removing toxic waste gases produced by the incineration of polymers",
+        "reusing products made from polymers (Total for Question 17 = 1 mark) TOTAL FOR SECTION A = 20 MARKS 8 *P67752A0824* SECTION B Answer ALL the questions. Write your answers in the spaces provided."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-01-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "5(d)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q1a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is this concentration of sulfur in ppm?",
+      "options": [
+        "0.00001",
+        "0.01",
+        "10",
+        "10 000"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-10-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(a)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which process occurs in region R?",
+      "options": [
+        "the sample is vaporised using a heater",
+        "electrons are removed from molecules or atoms and positive ions are formed",
+        "electrons are added to the molecules or atoms and negative ions are formed",
+        "ions are accelerated by an electric field"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-10-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q3b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is correct for region T?",
+      "options": [
+        "ions with a greater mass have a smaller deflection",
+        "ions with a greater mass have a greater deflection",
+        "ions with a greater charge have a smaller deflection",
+        "ions are speeded up by a magnetic field (Total for Question 3 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 4 *P69462A0424*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-10-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the relative formula mass of the double salt? [A values: H = 1.0 N = 14.0 O = 16.0 S = 32.1 Fe = 55.8] r",
+      "options": [
+        "277.9",
+        "284.0",
+        "392.0",
+        "447.8"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-10-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q4c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the total number of ions present in 0.1 mol of the double salt? [Avogadro constant (L) = 6.02 × 1023 mol−1]",
+      "options": [
+        "1.80 × 1023",
+        "2.41 × 1023",
+        "3.01 × 1023",
+        "6.62 × 1023 (Total for Question 7 = 3 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 8 *P69462A0824*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-10-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "4(c)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q10a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which process occurs in the initiation step?",
+      "options": [
+        "Cl Cl",
+        "Cl Cl",
+        "Cl Cl",
+        "Cl Cl"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-10-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "10(a)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q10b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these molecules could not be formed in a termination step?",
+      "options": [
+        "C H",
+        "CH Cl 3",
+        "CH Cl",
+        "HCl (Total for Question 10 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 10 *P69462A01024*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-10-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "10(b)"
+      }
+    },
+    {
+      "id": "wch11-y2021-u1-q11a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the skeletal formula of E-2-chlorobut-2-ene? (1) Cl A B Cl C Cl D Cl",
+      "options": [
+        "3",
+        "4",
+        "10",
+        "11 (Total for Question 11 = 2 marks) TOTAL FOR SECTION A = 20 MARKS 11 *P69462A01124* SECTION B Answer ALL the questions. Write your answers in the spaces provided."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit1-2021-10-WCH11-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "11(a)"
+      }
+    },
+    {
+      "id": "wch12-y2021-u2-q6a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these would not be seen?",
+      "options": [
+        "misty fumes",
+        "black solid",
+        "yellow solid",
+        "dense white smoke"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit2-2021-01-WCH12-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "6(a)"
+      }
+    },
+    {
+      "id": "wch12-y2021-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What type of reaction occurs?",
+      "options": [
+        "addition",
+        "elimination",
+        "hydrolysis",
+        "substitution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit2-2021-01-WCH12-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch12-y2021-u2-q9a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these halogenoalkanes reacts the fastest?",
+      "options": [
+        "CH CHICH",
+        "CH CHBrCH",
+        "CH CHClCH",
+        "CH CHFCH"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit2-2021-06-WCH12-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "9(a)"
+      }
+    },
+    {
+      "id": "wch12-y2021-u2-q3b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these halogenoalkanes reacts the fastest?",
+      "options": [
+        "CH CHBrCH(CH )CH",
+        "CH CH CBr(CH )CH",
+        "CH CH(CH Br)CH CH",
+        "CH CH CH CH CH Br"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit2-2021-06-WCH12-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "wch12-y2021-u2-q7a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "How should the reaction shown be classified?",
+      "options": [
+        "addition",
+        "oxidation",
+        "polymerisation",
+        "substitution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit2-2021-10-WCH12-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "7(a)"
+      }
+    },
+    {
+      "id": "wch12-y2021-u2-q7b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "How should the reaction shown be classified? (1) OH O",
+      "options": [
+        "addition",
+        "oxidation",
+        "reduction",
+        "substitution (Total for Question 7 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 6 *P67128A0628*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit2-2021-10-WCH12-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "7(b)"
+      }
+    },
+    {
+      "id": "wch12-y2021-u2-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What values of x, y and z are needed to balance the equation? (1) x y z",
+      "options": [
+        "5 6 8",
+        "10 3 4",
+        "5 3 8",
+        "10 6 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit2-2021-10-WCH12-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch12-y2021-u2-q4b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the reducing agent in the reaction?",
+      "options": [
+        "H+",
+        "C O2–",
+        "MnO– 4",
+        "SO2– 4 (Total for Question 10 = 2 marks)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit2-2021-10-WCH12-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "4(b)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q9a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the pH of a 0.100 mol dm−3 solution of chloroethanoic acid?",
+      "options": [
+        "0.27",
+        "1.95",
+        "2.90",
+        "3.90"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-01-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "9(a)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which region of the graph represents the most effective buffer solution?",
+      "options": [
+        "region T",
+        "region U",
+        "region V",
+        "region W"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-01-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q3b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these is the best indicator to use in this titration? [Refer to the Data Booklet]",
+      "options": [
+        "methyl red",
+        "phenol red",
+        "phenolphthalein",
+        "thymol blue 7 *P67746A0728*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-01-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which acidic solution was used in the titration?",
+      "options": [
+        "0.1 mol dm–3 CH COOH 3",
+        "1.0 mol dm–3 CH COOH 3",
+        "0.1 mol dm–3 HCl",
+        "1.0 mol dm–3 HCl"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-06-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q4b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which basic solution was used in the titration?",
+      "options": [
+        "NH 3",
+        "LiOH",
+        "Ba(OH) 2",
+        "NaOH 5 *P64626A0532*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-06-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "4(b)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q8a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the number of chiral centres in a molecule of menthol?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-06-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "8(a)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q9b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What reaction occurs when PHBV biodegrades to its monomers?",
+      "options": [
+        "condensation",
+        "hydrolysis",
+        "hydration",
+        "hydrogenation (Total for Question 9 = 2 marks) 10 *P64626A01032*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-06-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "9(b)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the rate equation for this reaction?",
+      "options": [
+        "rate = k",
+        "rate = k[NH ] 3",
+        "rate = k[NH ]2 3",
+        "rate = k[N ][H ]3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-10-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the units of the rate constant, k, for this zero order reaction?",
+      "options": [
+        "no units",
+        "s−1",
+        "mol dm−3 s−1",
+        "dm3 mol−1 s−1 3 *P67130A0328*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-10-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch14-y2021-u4-q7a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these is the electron affinity of chlorine?",
+      "options": [
+        "y",
+        "y/2",
+        "(w + y)",
+        "(w + y)/2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit4-2021-10-WCH14-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "7(a)"
+      }
+    },
+    {
+      "id": "wch15-y2021-u5-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the cell diagram for this cell?",
+      "options": [
+        "Fe(s) | Fe2+(aq) || Sn(s) | Sn2+(aq)",
+        "Fe2+(aq) | Fe(s) || Sn2+(aq) | Sn(s)",
+        "Fe(s) | Fe2+(aq) || Sn2+(aq) | Sn(s)",
+        "Fe2+(aq) | Fe(s) || Sn(s) | Sn2+(aq)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit5-2021-01-WCH15-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch15-y2021-u5-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the shapes of these complexes?",
+      "options": [
+        "both complexes are square planar",
+        "both complexes are tetrahedral",
+        "Pt(NH ) Cl is tetrahedral and CrCl− is square planar",
+        "Pt(NH ) Cl is square planar and CrCl− is tetrahedral"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit5-2021-01-WCH15-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch15-y2021-u5-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What metals should be used for the electrodes in the cell for this reaction? (1) Metals used for the electrode Fe3+/ Fe2+ electrode system Ti2+/ Ti electrode system",
+      "options": [
+        "iron titanium",
+        "iron platinum",
+        "platinum titanium",
+        "platinum platinum"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit5-2021-06-WCH15-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch15-y2021-u5-q13a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which structure best represents alanine at high pH? (1) NH",
+      "options": [
+        "H C C C 3 O H NH",
+        "H C C C 3 O H NH +",
+        "H C C C 3 O H NH +",
+        "H C C C 3 O H"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit5-2021-06-WCH15-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "13(a)"
+      }
+    },
+    {
+      "id": "wch15-y2021-u5-q100a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which material should be used for each electrode? (1) Electrode 1 Electrode 2",
+      "options": [
+        "Na Cr O Cr O",
+        "H Cr 2",
+        "Pt Cr",
+        "Pt Pt 3 *P67131A0332*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2021-unit5-2021-10-WCH15-01-qp.pdf",
+        "year": 2021,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "100(a)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q1a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the formula of the compound formed from X and Y?",
+      "options": [
+        "XY",
+        "X Y 2",
+        "XY 2",
+        "X Y"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-01-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(a)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q10a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the equation for the reaction?",
+      "options": [
+        "C H + Br ® C H Br + H",
+        "C H + Br ® C H Br + HBr",
+        "C H + Br ® 2CH Br",
+        "C H + Br ® CH + CH Br"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-01-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "10(a)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q6a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the number of electrons in a scandium ion, Sc+ ?",
+      "options": [
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-06-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "6(a)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q11a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these substances could be metals?",
+      "options": [
+        "N only",
+        "L and M only",
+        "M and N only",
+        "L, M and N only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-06-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "11(a)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the most significant hazard associated with the pollutant CO(g)?",
+      "options": [
+        "it is a major contributor to the formation of acid rain",
+        "it strongly absorbs infrared radiation",
+        "it is toxic at low concentrations",
+        "it is the main cause of ozone layer depletion"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-10-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q8a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the role of ultraviolet radiation in the reaction?",
+      "options": [
+        "to break the Br Br bond only",
+        "to break a C H bond only",
+        "to break a C C bond only",
+        "to break both the Br Br and a C H bond"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-10-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "8(a)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q8c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the overall equation for the reaction of octane with bromine?",
+      "options": [
+        "C H + Br → C H Br + H",
+        "C H + Br → C H Br + HBr",
+        "C H + Br → 2C H Br",
+        "C H + 3Br → 2C H Br + 4HBr"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-10-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "8(c)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q10a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "In which region of this mass spectrometer are the ions accelerated? (1) P Q electromagnet vaporised to vacuum sample pump R S amplifier chart recorder",
+      "options": [
+        "region P",
+        "region Q",
+        "region R",
+        "region S"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-10-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "10(a)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q11a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which element has only one p orbital containing a pair of electrons?",
+      "options": [
+        "element U",
+        "element V",
+        "element W",
+        "element X"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-10-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "11(a)"
+      }
+    },
+    {
+      "id": "wch11-y2022-u1-q11b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which element is the least reactive?",
+      "options": [
+        "element S",
+        "element X",
+        "element Y",
+        "element Z"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit1-2022-10-WCH11-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "11(b)"
+      }
+    },
+    {
+      "id": "wch12-y2022-u2-q8a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these alkanes has the highest boiling temperature?",
+      "options": [
+        "butane",
+        "hexane",
+        "pentane",
+        "propane"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit2-2022-01-WCH12-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "8(a)"
+      }
+    },
+    {
+      "id": "wch12-y2022-u2-q8b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these alkanes has the lowest boiling temperature? (1) A B C D (Total for Question 8 = 2 marks)",
+      "options": [
+        "butan‑1‑ol",
+        "ethanoic acid",
+        "hexane",
+        "water (Total for Question 9 = 1 mark) Use this space for any rough working. Anything you write in this space will gain no credit. 6 *P69501A0628*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit2-2022-01-WCH12-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "8(b)"
+      }
+    },
+    {
+      "id": "wch12-y2022-u2-q5a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the equation for this reaction?",
+      "options": [
+        "Ca + H O → CaO + H",
+        "Ca + 2H O → CaO + 2H",
+        "Ca + H O → CaOH + ½H",
+        "Ca + 2H O → Ca(OH) + H"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit2-2022-06-WCH12-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "5(a)"
+      }
+    },
+    {
+      "id": "wch12-y2022-u2-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which element is oxidised and which is reduced when calcium reacts with water? (1) Element oxidised Element reduced",
+      "options": [
+        "calcium hydrogen",
+        "calcium oxygen",
+        "hydrogen calcium",
+        "hydrogen oxygen (Total for Question 5 = 2 marks)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit2-2022-06-WCH12-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch12-y2022-u2-q9a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the colour change of the indicator at the end-point of this titration?",
+      "options": [
+        "red to orange",
+        "red to yellow",
+        "yellow to orange",
+        "yellow to red"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit2-2022-06-WCH12-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "9(a)"
+      }
+    },
+    {
+      "id": "wch12-y2022-u2-q14a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the reagent for Reaction 1?",
+      "options": [
+        "acidified potassium manganate(VII)",
+        "aqueous bromine",
+        "concentrated phosphoric(V) acid",
+        "phosphorus(V) chloride 9 *P70965A0928*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit2-2022-06-WCH12-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "14(a)"
+      }
+    },
+    {
+      "id": "wch12-y2022-u2-q17a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is correct?",
+      "options": [
+        "position X represents the mean energy of the particles",
+        "activation energy, E , is the mean energy of the particles that react a",
+        "t he area under the curve to the right of the activation energy, E , a represents the number of particles with enough energy to react",
+        "adding a catalyst moves the activation energy, E , to the right a"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit2-2022-10-WCH12-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "17(a)"
+      }
+    },
+    {
+      "id": "wch14-y2022-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which will increase when the temperature is lowered?",
+      "options": [
+        "the mole fraction of carbon dioxide",
+        "the partial pressure of carbon monoxide",
+        "the rate of the backward reaction",
+        "the value of K for the forward reaction p"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit4-2022-01-WCH14-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2022-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which method would be most suitable for following this reaction?",
+      "options": [
+        "colorimetry",
+        "timing how long the solution takes to go cloudy",
+        "quenching and titrating with an acid",
+        "quenching and titrating with starch solution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit4-2022-06-WCH14-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2022-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of the following statements is not true?",
+      "options": [
+        "the lattice energy of strontium iodide is exothermic",
+        "the first electron affinity of iodine is −295 kJ mol−1",
+        "the second ionisation energy of strontium is +1614 kJ mol−1",
+        "t he standard enthalpy change of atomisation of strontium is +164 kJ mol−1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit4-2022-10-WCH14-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2022-u4-q3c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the units of the equilibrium constant, K , for this reaction? p",
+      "options": [
+        "atm−1",
+        "atm",
+        "dm3 mol−1",
+        "mol dm−3 (Total for Question 6 = 3 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 7 *P71863A0732*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit4-2022-10-WCH14-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q3b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which complex is tetrahedral?",
+      "options": [
+        "[Pt(NH ) Cl ]",
+        "[Cu(H O) (OH) ]",
+        "[Cu(NH ) (H O) ]2+",
+        "[CoCl ]2− 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-01-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q3c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which complex contains a bidentate ligand?",
+      "options": [
+        "[Co(NH CH CH NHCH CH NH ) ]3+",
+        "[Cu(NH ) (H O) ]2+",
+        "[Ni(NH CH CH NH ) ]2+",
+        "[Mn(EDTA)]2− (Total for Question 1 = 3 marks) Use this space for rough working. Anything you write in this space will gain no credit. 3 *P69508A0332*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-01-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The electrolyte in the fuel cell is acidic. What is the half‑equation at the anode?",
+      "options": [
+        "½O (g) + 2H+(aq) + 2e− → H O(l)",
+        "H O(l) → ½O (g) + 2H+(aq) + 2e−",
+        "H (g) → 2H+(aq) + 2e− 2",
+        "2H+(aq) + 2e− → H (g) 2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-01-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q1a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which silver compound could be used as the electrolyte in the left‑hand half‑cell?",
+      "options": [
+        "silver nitrate",
+        "silver hydroxide",
+        "silver chloride",
+        "silver carbonate"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-01-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "1(a)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q2d",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the value of E in volts? cell",
+      "options": [
+        "−1.80",
+        "−0.20",
+        "+0.20",
+        "+1.80 (e) Which is the cell diagram for this cell, using the conventional representation of half‑cells?"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-01-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(d)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the number of peaks in the 13C NMR spectrum of methylbenzene?",
+      "options": [
+        "seven",
+        "six",
+        "five",
+        "four"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-01-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What type of reaction takes place?",
+      "options": [
+        "nucleophilic addition",
+        "nucleophilic substitution",
+        "electrophilic addition",
+        "electrophilic substitution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-01-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q2c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the colour change at the end‑point of the titration?",
+      "options": [
+        "colourless to pale yellow",
+        "pale yellow to colourless",
+        "colourless to blue‑black",
+        "blue‑black to colourless (Total for Question 8 = 3 marks) 11 *P69508A01132*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-01-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(c)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which term best describes the type of catalyst for the reaction in (a)?",
+      "options": [
+        "autocatalyst",
+        "biocatalyst",
+        "heterogeneous",
+        "homogeneous 3 *P70956A0332*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-06-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the half-equation at the negative electrode?",
+      "options": [
+        "H (g) + 2OH−(aq) → 2H O(l) + 2e−",
+        "2H O(l) + 2e− → H (g) + 2OH−(aq)",
+        "O (g) + 2H O(l) + 4e− → 4OH−(aq)",
+        "4OH−(aq) → O (g) + 2H O(l) + 4e−"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-06-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q9a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which solvent is used in this preparation?",
+      "options": [
+        "ethanol",
+        "ether",
+        "pentane",
+        "propanone"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-06-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "9(a)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q9b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Why are anti-bumping granules added to the flask?",
+      "options": [
+        "to lower the boiling temperature of the solvent",
+        "to prevent the solvent evaporating",
+        "because the solvent is highly flammable",
+        "to ensure the solvent boils smoothly"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-06-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "9(b)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What materials will be used for the electrodes in this cell? (1) Cr O2− , Cr3+ TiO2+ , Ti3+",
+      "options": [
+        "chromium titanium",
+        "chromium platinum",
+        "platinum titanium",
+        "platinum platinum"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-10-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch15-y2022-u5-q12a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the systematic name of isoleucine?",
+      "options": [
+        "2‑amino‑3‑ethylbutanoic acid",
+        "2‑amino‑3‑methylpentanoic acid",
+        "3‑amino‑2‑ethylbutanoic acid",
+        "3‑amino‑2‑methylpentanoic acid"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2022-unit5-2022-10-WCH15-01-qp.pdf",
+        "year": 2022,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "12(a)"
+      }
+    },
+    {
+      "id": "wch11-y2023-u1-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the formula of the carbide ion?",
+      "options": [
+        "C– 2",
+        "C+ 2",
+        "C2– 2",
+        "C2+ 2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit1-2023-10-WCH11-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch11-y2023-u1-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these steps is most likely to occur in the reaction? H H H",
+      "options": [
+        "H C C C+ :Cl– H H H H H H",
+        "H C C C+ :Cl– H H H :Cl– H H +",
+        "H C C C H H H H :Cl– H H +",
+        "H C C C H H H H"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit1-2023-10-WCH11-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch12-y2023-u2-q17a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Why does the distribution of energies start at the origin, (0,0)?",
+      "options": [
+        "some molecules have no energy",
+        "all molecules possess some energy",
+        "the temperature is 0 K",
+        "some molecules do not have enough energy to react"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit2-2023-01-WCH12-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "17(a)"
+      }
+    },
+    {
+      "id": "wch12-y2023-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which reagent is used for this reaction?",
+      "options": [
+        "50 % sulfuric acid",
+        "ethanolic potassium hydroxide",
+        "phosphoric(V) acid",
+        "red phosphorus"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit2-2023-06-WCH12-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch12-y2023-u2-q11a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the effect of a decrease in temperature?",
+      "options": [
+        "rate increases and yield decreases",
+        "rate increases and yield increases",
+        "rate decreases and yield decreases",
+        "rate decreases and yield increases"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit2-2023-10-WCH12-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "11(a)"
+      }
+    },
+    {
+      "id": "wch12-y2023-u2-q11b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the effect of an increase in pressure?",
+      "options": [
+        "rate increases and yield decreases",
+        "rate increases and yield increases",
+        "rate decreases and yield decreases",
+        "rate decreases and yield increases (Total for Question 11 = 2 marks)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit2-2023-10-WCH12-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "11(b)"
+      }
+    },
+    {
+      "id": "wch12-y2023-u2-q13a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of these is a tertiary alcohol?",
+      "options": [
+        "1‑methylcyclopentanol",
+        "2‑methylcyclopentanol",
+        "2‑methylbutan‑1‑ol",
+        "3‑methylpentan‑2‑ol"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit2-2023-10-WCH12-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "13(a)"
+      }
+    },
+    {
+      "id": "wch12-y2023-u2-q13b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which reagent reacts with tertiary alcohols?",
+      "options": [
+        "acidified aqueous potassium dichromate(VI)",
+        "bromine water",
+        "phosphorus(V) chloride",
+        "sodium carbonate solution (Total for Question 13 = 2 marks)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit2-2023-10-WCH12-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "13(b)"
+      }
+    },
+    {
+      "id": "wch14-y2023-u4-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which pair of rate equations could be correct for this reaction? (1) Equation 1 Equation 2",
+      "options": [
+        "rate = k[NO]2[O ] rate = k[NO]2[O ]",
+        "rate = k[NO]2[O ] rate = k[NO][O ]½",
+        "rate = k[NO ]2 rate = k[NO ]2",
+        "rate = k[NO ]2 rate = k[NO ]"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit4-2023-01-WCH14-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch14-y2023-u4-q7a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which energy change in the cycle does y represent?",
+      "options": [
+        "the first electron affinity of oxygen",
+        "the second electron affinity of oxygen",
+        "the sum of the first and second electron affinities of oxygen",
+        "t he sum of the enthalpy change of atomisation of oxygen and the first and second electron affinities of oxygen"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit4-2023-01-WCH14-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "7(a)"
+      }
+    },
+    {
+      "id": "wch14-y2023-u4-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the equilibrium constant expression for this reaction? (1) [Fe O ]×[H ]4",
+      "options": [
+        "K = 3 4 2 c [Fe]3 ×[H O]4 2 [Fe O ]×[H ]4",
+        "K = 3 4 2 c [H O]4 2 [H ]4",
+        "K = 2 c [Fe]3 ×[H O]4 2 [H ]4",
+        "K = 2 c [H O]4 2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit4-2023-01-WCH14-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch14-y2023-u4-q12a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the pH of a saturated solution of magnesium hydroxide at 25 °C?",
+      "options": [
+        "9.7",
+        "10.0",
+        "10.3",
+        "12.0"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit4-2023-01-WCH14-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "12(a)"
+      }
+    },
+    {
+      "id": "wch14-y2023-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "How many curly arrows are needed to complete the mechanism?",
+      "options": [
+        "4",
+        "5",
+        "6",
+        "8"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit4-2023-06-WCH14-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2023-u4-q3b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the IUPAC name for the organic product?",
+      "options": [
+        "amino ethanone",
+        "ethanamide",
+        "ethanoyl amine",
+        "methanamide (Total for Question 9 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 8 *P71942A0832*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit4-2023-06-WCH14-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "wch14-y2023-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which graph shows a reaction that is zero order with respect to reactant Q? (1) [Q] A Time Rate B [Q] [Q] C Time Rate D [Q]",
+      "options": [
+        "10 s",
+        "20 s",
+        "40 s",
+        "400 s (Total for Question 3 = 2 marks) *P75068A0436* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit4-2023-10-WCH14-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2023-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which reagent is required for Reaction 1?",
+      "options": [
+        "acidified potassium dichromate(VI)",
+        "concentrated sulfuric acid",
+        "hydrogen with a nickel catalyst",
+        "lithium tetrahydridoaluminate(III)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit4-2023-10-WCH14-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2023-u4-q13a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the R value for compound X? f",
+      "options": [
+        "0.33",
+        "0.38",
+        "0.60",
+        "0.62 14 15 *P75068A01536* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit4-2023-10-WCH14-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "13(a)"
+      }
+    },
+    {
+      "id": "wch15-y2023-u5-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the coordination number of chromium(III) in this complex ion?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit5-2023-01-WCH15-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch15-y2023-u5-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the overall charge on this complex ion?",
+      "options": [
+        "0",
+        "+1",
+        "+2",
+        "+3 (Total for Question 2 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 3 *P71888A0332*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit5-2023-01-WCH15-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch15-y2023-u5-q12a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What type of reaction occurs with a Grignard reagent?",
+      "options": [
+        "electrophilic addition",
+        "free radical substitution",
+        "oxidation",
+        "nucleophilic addition"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit5-2023-01-WCH15-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "12(a)"
+      }
+    },
+    {
+      "id": "wch15-y2023-u5-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the reagents and condition for Step 1?",
+      "options": [
+        "NaNO and HCl at 5 °C 2",
+        "NaNO and HCl at 5 °C 3",
+        "NaNO and HCl at 50 °C 2",
+        "NaNO and HCl at 50 °C 3 11 *P71888A01132*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit5-2023-01-WCH15-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch15-y2023-u5-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "How is Step 2 carried out?",
+      "options": [
+        "Sn, concentrated HCl(aq) and NaOH(aq) are added together",
+        "Sn, dilute HCl(aq) and NaOH(aq) are added together",
+        "S n and concentrated HCl(aq) are added first, then NaOH(aq) is added at the end",
+        "S n and dilute HCl(aq) are added first, then NaOH(aq) is added at the end 8 9 *P72995A0932* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2023-unit5-2023-10-WCH15-01-qp.pdf",
+        "year": 2023,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q1a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which element has atoms with a full outer shell of electrons?",
+      "options": [
+        "element P",
+        "element Q",
+        "element R",
+        "element S"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-01-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(a)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q1b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which element could be X in a gaseous covalent compound with the formula HX?",
+      "options": [
+        "element P",
+        "element Q",
+        "element R",
+        "element S"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-01-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(b)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q1c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which element could be Y in an ionic compound with the formula YF ? 2",
+      "options": [
+        "element P",
+        "element Q",
+        "element R",
+        "element S"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-01-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(c)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the molecular formula of limonene?",
+      "options": [
+        "C H",
+        "C H",
+        "C H",
+        "C H"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-06-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q6a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the electronic configuration of an atom of calcium?",
+      "options": [
+        "[Ne] 3s1",
+        "[Ar] 4s1",
+        "[Ne] 3s2",
+        "[Ar] 4s2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-06-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "6(a)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q6b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the electronic configuration of a Cr3+ ion?",
+      "options": [
+        "[Ar] 3d24s1",
+        "[Ar] 3d3",
+        "[Ar] 3d4",
+        "[Ar] 3d5 (Total for Question 6 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. *P75778A0628* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-06-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "6(b)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q7a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the expected bond angle in a boron trichloride molecule, BCl ? 3",
+      "options": [
+        "90°",
+        "107°",
+        "109.5°",
+        "120°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-06-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "7(a)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q7b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the expected bond angle in an ammonium ion?",
+      "options": [
+        "90°",
+        "104.5°",
+        "107°",
+        "109.5°"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-06-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "7(b)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q7c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the expected bond angle in an oxygen difluoride molecule, OF ? 2",
+      "options": [
+        "90°",
+        "104.5°",
+        "109.5°",
+        "180° (Total for Question 7 = 3 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 6 7 *P75778A0728* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-06-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "7(c)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q11a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which ions are shown in order of decreasing ionic radius?",
+      "options": [
+        "Na+ > Mg2+ > Al3+",
+        "Mg2+ > Na+ > Al3+",
+        "Al3+ > Na+ > Mg2+",
+        "Al3+ > Mg2+ > Na+"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-06-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "11(a)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q11b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which ions are shown in order of increasing ionic radius?",
+      "options": [
+        "F– < O2– < N3–",
+        "F– < N3– < O2–",
+        "O2– < N3– < F–",
+        "N3– < O2– < F– (Total for Question 11 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 8 9 *P75778A0928* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-06-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "11(b)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q9b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of the particles would be deflected by an electric field?",
+      "options": [
+        "electrons only",
+        "electrons and protons only",
+        "neutrons and protons only",
+        "electrons, neutrons and protons (Total for Question 9 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. *P78212A0628* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-10-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "9(b)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q10a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is not correct for these Period 3 elements?",
+      "options": [
+        "atoms of Cl(g) have the highest first ionisation energy",
+        "ions of Cl–(g) and S2–(g) have the same ionic radius",
+        "atoms of Na(g) have the largest atomic radius",
+        "atoms of P(g) have the most unpaired electrons"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-10-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "10(a)"
+      }
+    },
+    {
+      "id": "wch11-y2024-u1-q15a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the general formula of cyclic alkenes such as cyclohexene?",
+      "options": [
+        "C H n 2n – 4",
+        "C H n 2n – 2",
+        "C H n 2n",
+        "C H n 2n + 2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit1-2024-10-WCH11-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "15(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which isomer has the highest boiling temperature? (1) A B C D",
+      "options": [
+        "pentane",
+        "cyclopentane",
+        "butan‑1‑ol",
+        "butane‑1,4‑diol (Total for Question 4 = 2 marks) *P75779RA0428* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-06-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q1a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which letter represents the mean energy of the molecules?",
+      "options": [
+        "letter P",
+        "letter Q",
+        "letter R",
+        "letter S"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-06-WCH12-01R-qp.pdf",
+        "year": 2024,
+        "session": "Jun",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "1(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q1b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What happens to the curve when the temperature is decreased?",
+      "options": [
+        "the peak becomes higher and further to the right",
+        "the peak becomes higher and further to the left",
+        "the peak becomes lower and further to the right",
+        "the peak becomes lower and further to the left (Total for Question 1 = 2 marks) 2 3 *P78392A0332* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-06-WCH12-01R-qp.pdf",
+        "year": 2024,
+        "session": "Jun",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "1(b)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which change in property will not affect the rate of this reaction?",
+      "options": [
+        "concentration of hydrochloric acid",
+        "particle size of calcium carbonate",
+        "pressure of the system",
+        "temperature of hydrochloric acid"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-06-WCH12-01R-qp.pdf",
+        "year": 2024,
+        "session": "Jun",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q1a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What happens to the curve when the temperature is increased?",
+      "options": [
+        "the peak becomes higher and further to the right",
+        "the peak becomes higher and further to the left",
+        "the peak becomes lower and further to the right",
+        "the peak becomes lower and further to the left"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "1(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q1b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "How does the diagram change if a catalyst is added?",
+      "options": [
+        "the activation energy moves to the right and the peak stays the same",
+        "t he activation energy moves to the left and the peak moves to the right",
+        "the activation energy moves to the left and the peak stays the same",
+        "the activation energy stays the same and the peak moves to the right (Total for Question 1 = 2 marks) 2 3 *P83221A0328* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "1(b)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What would be the effect of lowering the temperature?",
+      "options": [
+        "rate increases, yield increases",
+        "rate increases, yield decreases",
+        "rate decreases, yield increases",
+        "rate decreases, yield decreases"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What would be the effect of increasing the pressure?",
+      "options": [
+        "rate increases, yield increases",
+        "rate increases, yield decreases",
+        "rate decreases, yield increases",
+        "rate decreases, yield decreases"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q13a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the role of the hydroxide ion in this reaction?",
+      "options": [
+        "reducing agent",
+        "nucleophile",
+        "electrophile",
+        "base"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "13(a)"
+      }
+    },
+    {
+      "id": "wch12-y2024-u2-q13b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which mechanism shows the correct movement of electrons in this reaction? (1) :OH– H H A H C C Cl H H H H H C C Cl B H H :OH– H H H C C Cl C H H :OH– H H H C C Cl D H H :OH– (Total for Question 13 = 2 marks) *P83221A0828* D O NOT WRITE IN THIS AREA",
+      "options": [
+        "propan-1-ol",
+        "propan-2-ol",
+        "propanal",
+        "propanone"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit2-2024-10-WCH12-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "13(b)"
+      }
+    },
+    {
+      "id": "wch14-y2024-u4-q1b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the units of the equilibrium constant, K , for this reaction? p",
+      "options": [
+        "atm",
+        "atm–1",
+        "atm4",
+        "atm–4 (Total for Question 1 = 2 marks)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit4-2024-01-WCH14-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "1(b)"
+      }
+    },
+    {
+      "id": "wch14-y2024-u4-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of the following statements about the catalyst is not correct?",
+      "options": [
+        "it lowers the activation energy of the reaction",
+        "it has no effect on the equilibrium constant for the reaction",
+        "it alters the enthalpy change of the reaction",
+        "it reduces the energy cost of the reaction"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit4-2024-01-WCH14-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch14-y2024-u4-q11b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which reagent gives a positive result when added to carvone?",
+      "options": [
+        "ammoniacal silver nitrate (Tollens’ reagent)",
+        "aqueous sodium carbonate",
+        "iodine in the presence of an alkali",
+        "2,4‑dinitrophenylhydrazine"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit4-2024-01-WCH14-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "11(b)"
+      }
+    },
+    {
+      "id": "wch14-y2024-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "How many chiral centres are present in nandrolone?",
+      "options": [
+        "six",
+        "seven",
+        "eight",
+        "nine"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit4-2024-10-WCH14-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2024-u4-q14a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What solvent is used in this reaction?",
+      "options": [
+        "ethanol",
+        "ether",
+        "ethyl ethanoate",
+        "water"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit4-2024-10-WCH14-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "14(a)"
+      }
+    },
+    {
+      "id": "wch14-y2024-u4-q14b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the organic product that forms? (1) O A OH B O C OH D (Total for Question 14 = 2 marks)",
+      "options": [
+        "HO(CH ) OH",
+        "HO(CH ) COCl",
+        "HO(CH ) CH CH",
+        "HO(CH ) CH Cl"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit4-2024-10-WCH14-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "14(b)"
+      }
+    },
+    {
+      "id": "wch15-y2024-u5-q1a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which electrodes are used for this cell? (1) electrode 1 electrode 2",
+      "options": [
+        "platinum platinum",
+        "platinum chromium",
+        "zinc chromium",
+        "zinc platinum 2 3 *P73457RA0336* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit5-2024-01-WCH15-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "1(a)"
+      }
+    },
+    {
+      "id": "wch15-y2024-u5-q2c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What can be deduced from the fact that, for this reaction, E is positive? cell",
+      "options": [
+        "ΔS and ln K are positive total",
+        "ΔS and ln K are negative total",
+        "ΔS is positive and ln K is negative total",
+        "ΔS is negative and ln K is positive total (Total for Question 1 = 3 marks) Use this space for any rough working. Anything you write in this space will gain no credit. *P73457RA0436* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit5-2024-01-WCH15-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(c)"
+      }
+    },
+    {
+      "id": "wch15-y2024-u5-q10a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of the esters have five peaks in their 13C NMR spectrum?",
+      "options": [
+        "P only",
+        "Q and R only",
+        "R and S only",
+        "Q, R and S only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit5-2024-01-WCH15-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "10(a)"
+      }
+    },
+    {
+      "id": "wch15-y2024-u5-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which shows the changes in the oxidation states for iron and manganese? (1) Iron Manganese",
+      "options": [
+        "II → III VII → II",
+        "II → III VII → IV",
+        "III → II II → VII",
+        "III → II III → IV"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit5-2024-06-WCH15-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch15-y2024-u5-q10a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which form of aspartic acid is formed at pH 12? (1) NH+ H O– 3 O",
+      "options": [
+        "C C C C O OH H H NH H HO 2 O",
+        "C C C C O O– H H NH H O– 2 O",
+        "C C C C O O– H H NH+ H HO 3 O",
+        "C C C C O OH H H"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit5-2024-06-WCH15-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "10(a)"
+      }
+    },
+    {
+      "id": "wch15-y2024-u5-q12a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which metal is involved in the formation of a Grignard reagent?",
+      "options": [
+        "chromium",
+        "copper",
+        "magnesium",
+        "manganese"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit5-2024-06-WCH15-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "12(a)"
+      }
+    },
+    {
+      "id": "wch15-y2024-u5-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the best explanation for the high activation energy of this reaction?",
+      "options": [
+        "the peroxodisulfate ion is a weak oxidising agent",
+        "the iodide ion is a weak reducing agent",
+        "peroxodisulfate ions and iodide ions are both negatively charged",
+        "the reaction involves three reactant ions"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2024-unit5-2024-10-WCH15-01-qp.pdf",
+        "year": 2024,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch11-y2025-u1-q1b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which element has the atomic number 15 and mass number 31?",
+      "options": [
+        "Ga",
+        "P",
+        "Pd",
+        "S"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit1-2025-10-WCH11-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(b)"
+      }
+    },
+    {
+      "id": "wch11-y2025-u1-q1c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the number of electrons in the selenide ion 80 Se2– ? 34",
+      "options": [
+        "34",
+        "36",
+        "80",
+        "82 (Total for Question 1 = 3 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 2 3 *P84360A0324* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit1-2025-10-WCH11-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(c)"
+      }
+    },
+    {
+      "id": "wch11-y2025-u1-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is used to accelerate ions in a mass spectrometer?",
+      "options": [
+        "beam of electrons",
+        "electric field",
+        "magnetic field",
+        "vaporisation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit1-2025-10-WCH11-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch11-y2025-u1-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the ionic equation for this reaction?",
+      "options": [
+        "Sr2+(s) + 2NO–(aq) → Sr(NO ) (aq)",
+        "CO2–(s) + 2H+(aq) → CO (g) + H O(l)",
+        "SrCO (s) + 2H+(aq) → Sr2+(aq) + CO (g) + H O(l)",
+        "SrCO (s) + 2HNO (aq) → Sr2+(aq) + 2NO– + CO (g) + H O(l)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit1-2025-10-WCH11-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch11-y2025-u1-q13a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which drawing of curly half-arrows shows initiation?",
+      "options": [
+        "Cl Cl",
+        "Cl Cl",
+        "Cl Cl",
+        "Cl Cl"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit1-2025-10-WCH11-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "13(a)"
+      }
+    },
+    {
+      "id": "wch11-y2025-u1-q13b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which equation is not a possible propagation step in the reaction?",
+      "options": [
+        "CH + Cl• → CH Cl + H•",
+        "CH + Cl• → CH • + HCl",
+        "CH • + Cl → CH Cl + Cl•",
+        "CH Cl + Cl• → CH Cl• + HCl"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit1-2025-10-WCH11-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "13(b)"
+      }
+    },
+    {
+      "id": "wch11-y2025-u1-q3c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What differentiates a termination step from a propagation step?",
+      "options": [
+        "covalent bonds are formed",
+        "heterolytic fission occurs",
+        "no free radicals are formed",
+        "ultraviolet radiation is not needed (Total for Question 13 = 3 marks) TOTAL FOR SECTION A = 20 MARKS 8 9 *P84360A0924* D O NOT WRITE IN THIS AREA SECTION B Answer ALL the questions. Write your answers in the spaces provided."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit1-2025-10-WCH11-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q7a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the best estimate for the boiling temperature of HBr?",
+      "options": [
+        "59°C",
+        "–20°C",
+        "–67°C",
+        "–90°C"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-01-WCH12-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "7(a)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q12a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the concentration of the sodium hydroxide solution?",
+      "options": [
+        "0.176 mol dm–3",
+        "0.239 mol dm–3",
+        "0.351 mol dm–3",
+        "0.702 mol dm–3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-01-WCH12-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "12(a)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q12b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the percentage error in the titre? [The burette is accurate to 0.05 cm3 per reading]",
+      "options": [
+        "0.10%",
+        "0.34%",
+        "0.40%",
+        "0.68% (Total for Question 12 = 2 marks)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-01-WCH12-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "12(b)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the maximum volume of gas formed at 600 K and 101 000 Pa? [ pV = nRT R = 8.31 J mol–1 K–1 ]",
+      "options": [
+        "0.025 m3",
+        "0.099 m3",
+        "0.123 m3",
+        "0.247 m3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-01-WCH12-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q3b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the percentage yield if 25.0 g of magnesium oxide is produced? [ M MgO = 40.3 ] r",
+      "options": [
+        "13.6 %",
+        "16.9 %",
+        "31.0 %",
+        "62.0 % (Total for Question 16 = 2 marks) TOTAL FOR SECTION A = 20 MARKS *P78456RA01024* D O NOT WRITE IN THIS AREA SECTION B Answer ALL the questions. Write your answers in the spaces provided."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-01-WCH12-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of the following statements must be correct?",
+      "options": [
+        "the reactions stop",
+        "the sum of the masses of sulfur(IV) oxide and oxygen is equal to the mass of sulfur(VI) oxide",
+        "the rate of formation of sulfur(VI) oxide is equal to the rate of its decomposition",
+        "the concentration of sulfur(IV) oxide is equal to the concentration of sulfur(VI) oxide"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-06-WCH12-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "How does the use of a catalyst affect the equilibrium?",
+      "options": [
+        "only the rate of the forward reaction increases",
+        "the position of equilibrium moves to the right",
+        "the position of equilibrium moves to the left",
+        "there is no effect on the position of equilibrium (Total for Question 11 = 2 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 6 7 *P78743A0724* 12: This question is about organic compounds containing "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-06-WCH12-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the change in oxidation number for each chromium atom?",
+      "options": [
+        "decrease by 12",
+        "decrease by 6",
+        "decrease by 3",
+        "increase by 5"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-10-WCH12-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is correct?",
+      "options": [
+        "iodide ions oxidise chlorine",
+        "iodide ions reduce chlorine",
+        "chlorine reduces iodide ions",
+        "chlorine is neither oxidised nor reduced"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-10-WCH12-01A-qp.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch12-y2025-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which m / z peak would not be expected in the mass spectrum of propanone?",
+      "options": [
+        "15",
+        "29",
+        "43",
+        "58"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit2-2025-10-WCH12-01A-qp.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the numerical value of K at 25°C using Equation 2? p",
+      "options": [
+        "2.0 × 1012",
+        "2.0 × 1022",
+        "2.0 × 1024",
+        "4.0 × 1024"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-01-WCH14-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the expression for the equilibrium constant, K ? p (1) (cid:31) (cid:30)",
+      "options": [
+        "K = p 2 (cid:31) pSO (cid:30) (cid:29) (cid:31) pO (cid:30)",
+        "K = p 2 (cid:31)SO (cid:29) (cid:27)(cid:31)O (cid:29) (cid:30) 2(cid:28) (cid:30) 2(cid:28) (cid:31) (cid:30)2 pSO 3",
+        "K = p (cid:31) (cid:30)2 (cid:31) (cid:30) pSO (cid:29) pO",
+        "K = p (cid:31) (cid:30)2 pSO 3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-06-WCH14-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement about this equilibrium is correct?",
+      "options": [
+        "increasing the pressure increases the value of K p",
+        "decreasing the pressure decreases the equilibrium yield of SO 3",
+        "adding a catalyst increases the equilibrium yield of SO 3",
+        "adding a catalyst increases the value of K p"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-06-WCH14-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q2c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the relationship between the equilibrium constant, K, and ΔS ? total",
+      "options": [
+        "ΔS = R ln K total",
+        "ln ΔS = R K total",
+        "ΔS = R log K total",
+        "log ΔS = R K total (Total for Question 13 = 3 marks) TOTAL FOR SECTION A = 20 MARKS 8 9 *P78745A0928* BLANK PAGE *P78745A01028* D O NOT WRITE IN THIS AREA SECTION B Answer ALL the questions. Write your answers in the spaces provided. 14: This questio"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-06-WCH14-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(c)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q6a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is correct for the reactions of primary halogenoalkanes?",
+      "options": [
+        "S 1 because they readily form a carbocation N",
+        "S 1 because they have little steric hindrance N",
+        "S 2 because they readily form a carbocation N",
+        "S 2 because they have little steric hindrance N"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-10-WCH14-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "6(a)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q7a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which will react with 2,4-dinitrophenylhydrazine?",
+      "options": [
+        "compound P only",
+        "compounds P and Q only",
+        "compounds R and S only",
+        "all four compounds"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-10-WCH14-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "7(a)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q7b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which contain a chiral carbon atom?",
+      "options": [
+        "compound P only",
+        "compounds P and R only",
+        "compounds Q, R and S only",
+        "all four compounds"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-10-WCH14-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "7(b)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the rate equation for this reaction?",
+      "options": [
+        "rate = k",
+        "rate = k[NH ] 3",
+        "rate = k[NH ]2 3",
+        "rate = k[N ][H ]3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-10-WCH14-01A-qp.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the units of the rate constant, k, for this zero order reaction?",
+      "options": [
+        "no units",
+        "s–1",
+        "mol dm–3 s–1",
+        "dm3 mol–1 s–1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-10-WCH14-01A-qp.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "wch14-y2025-u4-q9a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of the following statements is not true?",
+      "options": [
+        "the lattice energy of strontium iodide is exothermic",
+        "the first electron affinity of iodine is –295 kJ mol–1",
+        "the second ionisation energy of strontium is +1614 kJ mol–1",
+        "the standard enthalpy change of atomisation of strontium is +164 kJ mol–1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit4-2025-10-WCH14-01A-qp.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "9(a)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which compound is an optically active amino acid?",
+      "options": [
+        "compound W",
+        "compound X",
+        "compound Y",
+        "compound Z"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-01-WCH15-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q17a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What will be the structure of asparagine in an aqueous solution at pH 2? (1) O NH 2 C",
+      "options": [
+        "CH 2 H N C COOH 2 H O NH 2 C",
+        "CH 2 + – H N C COO 3 H H+ O NH 2 C",
+        "CH 2 + H N C COOH 3 H O NH 2 C",
+        "CH 2 + H N C COOH 3 H 10 11 *P78459A01132* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-01-WCH15-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "17(a)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What colour change is seen at the end-point?",
+      "options": [
+        "pale pink to pale green",
+        "purple to pale pink",
+        "pale green to pale pink",
+        "pale pink to purple 2 3 *P78746A0332*"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-06-WCH15-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q4b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the concentration, in mol dm−3, of the Fe2+ ions in the solution?",
+      "options": [
+        "1.90 × 10−1",
+        "7.58 × 10−3",
+        "4.74 × 10−3",
+        "1.90 × 10−4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-06-WCH15-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "4(b)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q3d",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the percentage of carbon, by mass, in the final product? (1) [M of the final product = 165] r",
+      "options": [
+        "58.2%",
+        "65.5%",
+        "72.7%",
+        "80.0% (Total for Question 11 = 4 marks) *P78746A0832* D O NOT WRITE IN THIS AREA 12: A substituted benzene compound has the general formula C H . n 2n−6 When completely combusted, 0.025 mol of the compound produced 11.0 g of CO . 2 Which could be the"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-06-WCH15-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(d)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which describes this p orbital overlap to form π‑bonds only?",
+      "options": [
+        "head‑on overlap which is in the plane of the ring",
+        "head‑on overlap which is both above and below the plane of the ring",
+        "sideways overlap which is in the plane of the ring",
+        "sideways overlap which is both above and below the plane of the ring"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-10-WCH15-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which reagent is used to react with benzene to form phenylethanone?",
+      "options": [
+        "CH COOH 3",
+        "CH COCH",
+        "CH COCl 3",
+        "CH CONH"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-10-WCH15-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q3c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the electrophile for this reaction? (1) O– A H C C",
+      "options": [
+        "246",
+        "492",
+        "2934",
+        "5867"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-10-WCH15-01-qp.pdf",
+        "year": 2025,
+        "session": "Jan",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which describes this p orbital overlap to form π‑bonds only?",
+      "options": [
+        "head‑on overlap which is in the plane of the ring",
+        "head‑on overlap which is both above and below the plane of the ring",
+        "sideways overlap which is in the plane of the ring",
+        "sideways overlap which is both above and below the plane of the ring"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-10-WCH15-01A-qp.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which reagent is used to react with benzene to form phenylethanone?",
+      "options": [
+        "CH COOH 3",
+        "CH COCH",
+        "CH COCl 3",
+        "CH CONH"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-10-WCH15-01A-qp.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "wch15-y2025-u5-q3c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the electrophile for this reaction? (1) O– A H C C",
+      "options": [
+        "246",
+        "492",
+        "2934",
+        "5867"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "2025-unit5-2025-10-WCH15-01A-qp.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u1-q1b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which element has the atomic number 15 and mass number 31?",
+      "options": [
+        "Ga",
+        "P",
+        "Pd",
+        "S"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(b)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u1-q1c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the number of electrons in the selenide ion 80 Se2– ? 34",
+      "options": [
+        "34",
+        "36",
+        "80",
+        "82 (Total for Question 1 = 3 marks) Use this space for any rough working. Anything you write in this space will gain no credit. 2 3 *P84360A0324* D O NOT WRITE IN THIS AREA"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "1(c)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u1-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is used to accelerate ions in a mass spectrometer?",
+      "options": [
+        "beam of electrons",
+        "electric field",
+        "magnetic field",
+        "vaporisation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u1-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the ionic equation for this reaction?",
+      "options": [
+        "Sr2+(s) + 2NO–(aq) → Sr(NO ) (aq)",
+        "CO2–(s) + 2H+(aq) → CO (g) + H O(l)",
+        "SrCO (s) + 2H+(aq) → Sr2+(aq) + CO (g) + H O(l)",
+        "SrCO (s) + 2HNO (aq) → Sr2+(aq) + 2NO– + CO (g) + H O(l)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u1-q13a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which drawing of curly half-arrows shows initiation?",
+      "options": [
+        "Cl Cl",
+        "Cl Cl",
+        "Cl Cl",
+        "Cl Cl"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "13(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u1-q13b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which equation is not a possible propagation step in the reaction?",
+      "options": [
+        "CH + Cl• → CH Cl + H•",
+        "CH + Cl• → CH • + HCl",
+        "CH • + Cl → CH Cl + Cl•",
+        "CH Cl + Cl• → CH Cl• + HCl"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "13(b)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u1-q3c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What differentiates a termination step from a propagation step?",
+      "options": [
+        "covalent bonds are formed",
+        "heterolytic fission occurs",
+        "no free radicals are formed",
+        "ultraviolet radiation is not needed (Total for Question 13 = 3 marks) TOTAL FOR SECTION A = 20 MARKS 8 9 *P84360A0924* D O NOT WRITE IN THIS AREA SECTION B Answer ALL the questions. Write your answers in the spaces provided."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "1",
+        "paper": "1",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u2-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the change in oxidation number for each chromium atom?",
+      "options": [
+        "decrease by 12",
+        "decrease by 6",
+        "decrease by 3",
+        "increase by 5"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u2-q2a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is correct?",
+      "options": [
+        "iodide ions oxidise chlorine",
+        "iodide ions reduce chlorine",
+        "chlorine reduces iodide ions",
+        "chlorine is neither oxidised nor reduced"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "2(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u2-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which m / z peak would not be expected in the mass spectrum of propanone?",
+      "options": [
+        "15",
+        "29",
+        "43",
+        "58"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "2",
+        "paper": "2",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u4-q6a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is correct for the reactions of primary halogenoalkanes?",
+      "options": [
+        "S 1 because they readily form a carbocation N",
+        "S 1 because they have little steric hindrance N",
+        "S 2 because they readily form a carbocation N",
+        "S 2 because they have little steric hindrance N"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "6(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u4-q7a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which will react with 2,4-dinitrophenylhydrazine?",
+      "options": [
+        "compound P only",
+        "compounds P and Q only",
+        "compounds R and S only",
+        "all four compounds"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "7(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u4-q7b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which contain a chiral carbon atom?",
+      "options": [
+        "compound P only",
+        "compounds P and R only",
+        "compounds Q, R and S only",
+        "all four compounds"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "7(b)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u4-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the rate equation for this reaction?",
+      "options": [
+        "rate = k",
+        "rate = k[NH ] 3",
+        "rate = k[NH ]2 3",
+        "rate = k[N ][H ]3"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u4-q2b",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the units of the rate constant, k, for this zero order reaction?",
+      "options": [
+        "no units",
+        "s–1",
+        "mol dm–3 s–1",
+        "dm3 mol–1 s–1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u4-q9a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which of the following statements is not true?",
+      "options": [
+        "the lattice energy of strontium iodide is exothermic",
+        "the first electron affinity of iodine is –295 kJ mol–1",
+        "the second ionisation energy of strontium is +1614 kJ mol–1",
+        "the standard enthalpy change of atomisation of strontium is +164 kJ mol–1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "4",
+        "paper": "4",
+        "question_number": "9(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u5-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which describes this p orbital overlap to form π‑bonds only?",
+      "options": [
+        "head‑on overlap which is in the plane of the ring",
+        "head‑on overlap which is both above and below the plane of the ring",
+        "sideways overlap which is in the plane of the ring",
+        "sideways overlap which is both above and below the plane of the ring"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u5-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which reagent is used to react with benzene to form phenylethanone?",
+      "options": [
+        "CH COOH 3",
+        "CH COCH",
+        "CH COCl 3",
+        "CH CONH"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u5-q3c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the electrophile for this reaction? (1) O– A H C C",
+      "options": [
+        "246",
+        "492",
+        "2934",
+        "5867"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u5-q3a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which describes this p orbital overlap to form π‑bonds only?",
+      "options": [
+        "head‑on overlap which is in the plane of the ring",
+        "head‑on overlap which is both above and below the plane of the ring",
+        "sideways overlap which is in the plane of the ring",
+        "sideways overlap which is both above and below the plane of the ring"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u5-q4a",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which reagent is used to react with benzene to form phenylethanone?",
+      "options": [
+        "CH COOH 3",
+        "CH COCH",
+        "CH COCl 3",
+        "CH CONH"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "4(a)"
+      }
+    },
+    {
+      "id": "as_chemistry-y2025-u5-q3c",
+      "subject": "as_chemistry",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which is the electrophile for this reaction? (1) O– A H C C",
+      "options": [
+        "246",
+        "492",
+        "2934",
+        "5867"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "year": 2025,
+        "session": "Oct",
+        "unit": "5",
+        "paper": "5",
+        "question_number": "3(c)"
+      }
+    }
+  ]
+}

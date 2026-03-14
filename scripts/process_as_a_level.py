@@ -32,25 +32,60 @@ def clean(text):
     text = re.sub(r'©\s*\d{4}\s*Pearson.*? Ltd\.?', '', text)
     return text
 
-def extract_mcqs(text, filename):
+def _parse_session(filename_lower):
+    if re.search(r'[-_](01|jan)[-_]', filename_lower):
+        return 'Jan'
+    if re.search(r'[-_](06|jun)[-_]', filename_lower):
+        return 'Jun'
+    if re.search(r'[-_](10|oct)[-_]', filename_lower):
+        return 'Oct'
+    if 'october' in filename_lower:
+        return 'Oct'
+    if 'june' in filename_lower:
+        return 'Jun'
+    if 'january' in filename_lower:
+        return 'Jan'
+    return 'Unknown'
+
+
+def _parse_unit(filename):
+    m = re.search(r'Unit\s+(\d)', filename, re.I)
+    if m:
+        return m.group(1)
+    m = re.search(r'unit(\d)', filename, re.I)
+    if m:
+        return m.group(1)
+    m = re.match(r'wbi11-(\d{2})', filename.lower())
+    if m:
+        return m.group(1).lstrip('0') or '1'
+    return '1'
+
+
+def _parse_year(filename):
+    m = re.search(r'(\d{4})', filename)
+    if not m:
+        return 2024
+    y = int(m.group(1))
+    if 2020 <= y <= 2030:
+        return y
+    return 2024
+
+
+def extract_mcqs(text, filename, subject_slug, default_year_group):
     questions = []
     lines = text.split('\n')
-    
-    # Get paper info from filename
-    year = 2024
-    unit = '1'
-    y_match = re.search(r'(\d{4})', filename)
-    if y_match:
-        y = int(y_match.group(1))
-        if 2020 <= y <= 2030:
-            year = y
-    u_match = re.search(r'Unit\s+(\d)', filename, re.I)
-    if u_match:
-        unit = u_match.group(1)
-    else:
-        u2_match = re.match(r'wbi11-(\d{2})', filename.lower())
-        if u2_match:
-            unit = u2_match.group(1).lstrip('0') or '1'
+
+    filename_lower = filename.lower()
+
+    year = _parse_year(filename)
+    unit = _parse_unit(filename)
+    session = _parse_session(filename_lower)
+
+    # Extract paper code (e.g. WBI11, WCH11) if present
+    code = None
+    code_match = re.search(r'\b([A-Z]{3}\d{2})\b', filename)
+    if code_match:
+        code = code_match.group(1)
     
     i = 0
     while i < len(lines):
@@ -117,10 +152,11 @@ def extract_mcqs(text, filename):
                         break
                 
                 if q_num > 0 and q_text and all(options.values()):
+                    code_prefix = (code or subject_slug).lower()
                     questions.append({
-                        'id': f"wbi11-y{year}-u{unit}-q{q_num}{part}",
-                        'subject': 'as_biology',
-                        'yearGroup': 'year12',
+                        'id': f"{code_prefix}-y{year}-u{unit}-q{q_num}{part}",
+                        'subject': subject_slug,
+                        'yearGroup': default_year_group,
                         'difficulty': 'medium',
                         'topic': 'general',
                         'marks': 1,
@@ -134,7 +170,7 @@ def extract_mcqs(text, filename):
                         'source': {
                             'pdf': filename,
                             'year': year,
-                            'session': 'Oct' if 'oct' in filename.lower() else 'Jun',
+                            'session': session,
                             'unit': unit,
                             'paper': unit,
                             'question_number': f"{q_num}({part})"
@@ -148,43 +184,60 @@ def extract_mcqs(text, filename):
 
 def process_all():
     base_dir = Path("E:/Apps/past-paper/gcse-prep-app/database/Cambridge_AS-A-Level")
-    all_qs = []
-    
-    pdfs = []
-    for subj_dir in base_dir.iterdir():
-        if subj_dir.is_dir():
-            for pdf in subj_dir.glob("*.pdf"):
-                name = pdf.name.lower()
-                if ('qp' in name or 'que' in name) and 'ms' not in name and 'rms' not in name:
-                    pdfs.append(pdf)
-    
-    print(f"Found {len(pdfs)} PDFs")
-    
-    for pdf in sorted(pdfs):
-        print(f"Processing: {pdf.name}")
-        text = extract_text(pdf)
-        text = clean(text)
-        qs = extract_mcqs(text, pdf.name)
-        print(f"  -> {len(qs)} MCQs")
-        all_qs.extend(qs)
-    
-    out = {
-        'metadata': {
-            'subject': 'AS Biology (WBI11)',
-            'total_questions': len(all_qs),
-            'description': f'{len(all_qs)} AS-A-Level MCQs',
-            'years': sorted(set(q['source']['year'] for q in all_qs)),
-            'verified': False,
-            'verified_count': 0
+    subject_configs = {
+        'Biology WBI11': {
+            'subject_slug': 'as_biology',
+            'year_group': 'year12',
+            'output': 'as_biology_wbi11_questions_new.json',
+            'title': 'AS Biology (WBI11)'
         },
-        'questions': all_qs
+        'Chemistry': {
+            'subject_slug': 'as_chemistry',
+            'year_group': 'year12',
+            'output': 'as_chemistry_wch_questions_new.json',
+            'title': 'AS Chemistry (WCH)'
+        },
     }
-    
-    out_path = Path("E:/Apps/past-paper/gcse-prep-app/public/as_biology_wbi11_questions_new.json")
-    with open(out_path, 'w', encoding='utf-8') as f:
-        json.dump(out, f, indent=2, ensure_ascii=False)
-    
-    print(f"\n✓ Saved {len(all_qs)} questions to {out_path}")
+
+    for folder_name, cfg in subject_configs.items():
+        subj_dir = base_dir / folder_name
+        if not subj_dir.exists():
+            print(f"Skipping missing folder: {subj_dir}")
+            continue
+
+        pdfs = []
+        for pdf in subj_dir.glob("*.pdf"):
+            name = pdf.name.lower()
+            if ('qp' in name or 'que' in name) and 'ms' not in name and 'rms' not in name:
+                pdfs.append(pdf)
+
+        all_qs = []
+        print(f"\n{folder_name}: Found {len(pdfs)} question papers")
+        for pdf in sorted(pdfs):
+            print(f"Processing: {pdf.name}")
+            text = extract_text(pdf)
+            text = clean(text)
+            qs = extract_mcqs(text, pdf.name, cfg['subject_slug'], cfg['year_group'])
+            print(f"  -> {len(qs)} MCQs")
+            all_qs.extend(qs)
+
+        out = {
+            'metadata': {
+                'subject': cfg['title'],
+                'total_questions': len(all_qs),
+                'description': f"{len(all_qs)} AS/A-Level MCQs",
+                'years': sorted(set(q['source']['year'] for q in all_qs)),
+                'verified': False,
+                'verified_count': 0
+            },
+            'questions': all_qs
+        }
+
+        out_path = Path("E:/Apps/past-paper/gcse-prep-app/public") / cfg['output']
+        with open(out_path, 'w', encoding='utf-8') as f:
+            json.dump(out, f, indent=2, ensure_ascii=False)
+
+        print(f"\n✓ Saved {len(all_qs)} questions to {out_path}")
 
 if __name__ == '__main__':
     process_all()
