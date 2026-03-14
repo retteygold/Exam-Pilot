@@ -1,70 +1,45 @@
 #!/usr/bin/env python3
 """
-OCR-based PDF question extractor.
-Converts PDF pages to JPEG images and uses Tesseract OCR to extract text.
-Then parses MCQ questions from the extracted text.
+OCR-based PDF question extractor using PyMuPDF (no poppler needed).
+Renders PDF pages to images and uses Tesseract OCR.
 """
 
 import os
 import re
 import json
-import subprocess
+import fitz  # PyMuPDF
 from pathlib import Path
 from PIL import Image
-import pdf2image
 import pytesseract
+import io
 
-# Configure paths
-POPPLER_PATH = r"C:\Users\maushaz.MADIHAA\Downloads\Release-25.12.0-0\poppler-25.12.0\Library\bin"
+# Tesseract path
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-def pdf_to_images(pdf_path, output_dir, dpi=200):
-    """Convert PDF pages to JPEG images."""
-    print(f"Converting {os.path.basename(pdf_path)} to images...")
-    
-    # Ensure output directory exists
-    temp_images_dir = Path(output_dir) / 'temp_images'
-    temp_images_dir.mkdir(parents=True, exist_ok=True)
-    
-    try:
-        # Convert PDF to images with explicit paths
-        image_paths = pdf2image.convert_from_path(
-            pdf_path,
-            dpi=dpi,
-            fmt='jpeg',
-            output_folder=str(temp_images_dir),
-            paths_only=True,
-            poppler_path=POPPLER_PATH if os.path.exists(POPPLER_PATH) else None
-        )
-        
-        # Filter to only return files that actually exist
-        valid_paths = [p for p in image_paths if os.path.exists(p)]
-        print(f"  Created {len(valid_paths)} images")
-        return valid_paths
-    except Exception as e:
-        print(f"  Error converting PDF: {e}")
-        return []
+def pdf_page_to_image(doc, page_num, zoom=2):
+    """Convert PDF page to PIL Image using PyMuPDF."""
+    page = doc[page_num]
+    mat = fitz.Matrix(zoom, zoom)
+    pix = page.get_pixmap(matrix=mat)
+    img_data = pix.tobytes("png")
+    img = Image.open(io.BytesIO(img_data))
+    return img
 
-def ocr_image(image_path):
+def ocr_image(img):
     """Extract text from image using Tesseract OCR."""
-    text = pytesseract.image_to_string(Image.open(image_path))
+    text = pytesseract.image_to_string(img)
     return text
 
 def parse_questions_from_text(text, paper_info):
-    """Parse MCQ questions from OCR text - handles AS/A-Level format with question parts."""
+    """Parse MCQ questions from OCR text."""
     questions = []
     lines = text.split('\n')
     
-    # Improved patterns for AS/A-Level format
-    # Matches: "1", "1.", "1)", "1 (a)", "1(a)", "1 a)", "1a)", "1 a."
-    question_pattern = re.compile(r'^(\d{1,2})\s*(?:\(?([a-z])\)?)?[\.\)\s]*\s*(.+)', re.IGNORECASE)
-    # Matches options: "A.", "A)", "A ", " A " at start of line
-    option_pattern = re.compile(r'^[\s]*([A-D])[\.\)\s]+\s*(.+)', re.IGNORECASE)
-    # Alternative option pattern for inline options
-    inline_option_pattern = re.compile(r'\s([A-D])[\.\)]\s*([^A-D\n]+?)(?=\s[A-D][\.\)]|$)', re.IGNORECASE)
+    # Patterns for question detection
+    question_pattern = re.compile(r'^(\d{1,2})[\s\.\)]\s*(.+)', re.IGNORECASE)
+    option_pattern = re.compile(r'^[\s]*([A-D])[\s\.\)]\s*(.+)', re.IGNORECASE)
     
-    current_question_num = None
-    current_question_part = None
+    current_question = None
     current_options = []
     question_text_lines = []
     
@@ -78,11 +53,10 @@ def parse_questions_from_text(text, paper_info):
         # Check if this is a question start
         q_match = question_pattern.match(line)
         if q_match:
-            # Save previous question if exists and has 4 options
-            if current_question_num and len(current_options) == 4:
-                q_id = f"{current_question_num}{current_question_part or ''}"
+            # Save previous question if exists
+            if current_question and len(current_options) == 4:
                 questions.append({
-                    'id': f"{paper_info['subject']}-y{paper_info['year']}-p{paper_info['paper']}-q{q_id}",
+                    'id': f"{paper_info['subject']}-y{paper_info['year']}-p{paper_info['paper']}-q{current_question}",
                     'subject': paper_info['subject'],
                     'yearGroup': paper_info['year_group'],
                     'difficulty': 'medium',
@@ -100,58 +74,31 @@ def parse_questions_from_text(text, paper_info):
                         'year': paper_info['year'],
                         'session': paper_info.get('session', 'Unknown'),
                         'paper': paper_info['paper'],
-                        'question_number': q_id
+                        'question_number': str(current_question)
                     }
                 })
             
             # Start new question
-            current_question_num = q_match.group(1)
-            current_question_part = q_match.group(2)  # Could be 'a', 'b', etc.
-            question_text = q_match.group(3)
-            question_text_lines = [question_text]
+            current_question = q_match.group(1)
+            question_text_lines = [q_match.group(2)]
             current_options = []
-            
-            # Check for inline options in the same line (e.g., "1. What is X? A. option1 B. option2...")
-            inline_opts = inline_option_pattern.findall(question_text)
-            if inline_opts and len(inline_opts) >= 2:
-                # Remove inline options from question text
-                clean_text = question_text
-                for opt_letter, opt_text in inline_opts:
-                    clean_text = clean_text.replace(f"{opt_letter}.{opt_text}", "").replace(f"{opt_letter}){opt_text}", "")
-                    current_options.append((opt_letter.upper(), opt_text.strip()))
-                question_text_lines = [clean_text.strip()]
         
-        # Check if this is an option on its own line
+        # Check if this is an option
         opt_match = option_pattern.match(line)
-        if opt_match and current_question_num:
+        if opt_match and current_question:
             option_letter = opt_match.group(1).upper()
             option_text = opt_match.group(2)
-            # Avoid duplicates
-            if not any(opt[0] == option_letter for opt in current_options):
-                current_options.append((option_letter, option_text))
-        elif current_question_num and not q_match:
-            # Continue question text (but check for inline options first)
-            inline_opts = inline_option_pattern.findall(line)
-            if inline_opts and len(current_options) < 4:
-                for opt_letter, opt_text in inline_opts:
-                    if not any(opt[0] == opt_letter.upper() for opt in current_options):
-                        current_options.append((opt_letter.upper(), opt_text.strip()))
-                # Remove option text from the line
-                clean_line = line
-                for opt_letter, opt_text in inline_opts:
-                    clean_line = re.sub(rf'\s{opt_letter}[\.\)]\s*{re.escape(opt_text)}', '', clean_line, flags=re.IGNORECASE)
-                if clean_line.strip():
-                    question_text_lines.append(clean_line.strip())
-            else:
-                question_text_lines.append(line)
+            current_options.append((option_letter, option_text))
+        elif current_question and not q_match:
+            # Continue question text
+            question_text_lines.append(line)
         
         i += 1
     
     # Don't forget the last question
-    if current_question_num and len(current_options) == 4:
-        q_id = f"{current_question_num}{current_question_part or ''}"
+    if current_question and len(current_options) == 4:
         questions.append({
-            'id': f"{paper_info['subject']}-y{paper_info['year']}-p{paper_info['paper']}-q{q_id}",
+            'id': f"{paper_info['subject']}-y{paper_info['year']}-p{paper_info['paper']}-q{current_question}",
             'subject': paper_info['subject'],
             'yearGroup': paper_info['year_group'],
             'difficulty': 'medium',
@@ -169,7 +116,7 @@ def parse_questions_from_text(text, paper_info):
                 'year': paper_info['year'],
                 'session': paper_info.get('session', 'Unknown'),
                 'paper': paper_info['paper'],
-                'question_number': q_id
+                'question_number': str(current_question)
             }
         })
     
@@ -189,12 +136,14 @@ def extract_paper_info(pdf_path, subject, year_group):
     
     # Extract session
     session = 'Unknown'
-    if 's' in pdf_name.lower() or 'summer' in pdf_name.lower() or 'may' in pdf_name.lower():
+    if 's' in pdf_name.lower() or 'summer' in pdf_name.lower() or 'may' in pdf_name.lower() or 'jun' in pdf_name.lower():
         session = 'May/June'
-    elif 'w' in pdf_name.lower() or 'winter' in pdf_name.lower() or 'nov' in pdf_name.lower():
+    elif 'w' in pdf_name.lower() or 'winter' in pdf_name.lower() or 'nov' in pdf_name.lower() or 'oct' in pdf_name.lower():
         session = 'Oct/Nov'
-    elif 'm' in pdf_name.lower() or 'march' in pdf_name.lower():
+    elif 'm' in pdf_name.lower() or 'march' in pdf_name.lower() or 'mar' in pdf_name.lower():
         session = 'March'
+    elif 'jan' in pdf_name.lower():
+        session = 'January'
     
     return {
         'pdf_name': pdf_name,
@@ -205,62 +154,47 @@ def extract_paper_info(pdf_path, subject, year_group):
         'session': session
     }
 
-def process_pdf(pdf_path, subject, year_group, output_dir):
-    """Process a single PDF file."""
+def process_pdf(pdf_path, subject, year_group):
+    """Process a single PDF file using PyMuPDF."""
     paper_info = extract_paper_info(pdf_path, subject, year_group)
     
-    # Create temp directory for images
-    temp_dir = Path(output_dir) / 'temp_images'
-    temp_dir.mkdir(exist_ok=True)
-    
     try:
-        # Convert PDF to images
-        images = pdf_to_images(pdf_path, str(temp_dir))
-        
+        # Open PDF with PyMuPDF
+        doc = fitz.open(pdf_path)
         all_questions = []
-        for img_path in images:
-            # OCR each image
-            text = ocr_image(img_path)
+        
+        for page_num in range(len(doc)):
+            # Convert page to image
+            img = pdf_page_to_image(doc, page_num)
+            # OCR the image
+            text = ocr_image(img)
             # Parse questions from text
             questions = parse_questions_from_text(text, paper_info)
             all_questions.extend(questions)
-            
-            # Clean up image
-            os.remove(img_path)
         
+        doc.close()
         return all_questions
     except Exception as e:
-        print(f"Error processing {pdf_path}: {e}")
+        print(f"  Error: {e}")
         return []
-    finally:
-        # Clean up temp directory
-        if temp_dir.exists():
-            import shutil
-            shutil.rmtree(temp_dir, ignore_errors=True)
 
 def process_subject_folder(folder_path, subject, year_group, output_json):
     """Process all PDFs in a subject folder."""
     folder = Path(folder_path)
     if not folder.exists():
         print(f"Folder not found: {folder}")
-        return
+        return 0
     
     pdf_files = list(folder.rglob('*.pdf'))
     print(f"Found {len(pdf_files)} PDFs in {folder}")
     
     all_questions = []
-    temp_output = Path(output_json).parent / 'temp_ocr_output'
-    temp_output.mkdir(exist_ok=True)
     
     for i, pdf_path in enumerate(pdf_files, 1):
-        print(f"\n[{i}/{len(pdf_files)}] Processing: {pdf_path.name}")
-        questions = process_pdf(str(pdf_path), subject, year_group, str(temp_output))
+        print(f"\n[{i}/{len(pdf_files)}] {pdf_path.name}")
+        questions = process_pdf(str(pdf_path), subject, year_group)
         print(f"  Extracted {len(questions)} questions")
         all_questions.extend(questions)
-    
-    # Clean up temp directory
-    import shutil
-    shutil.rmtree(temp_output, ignore_errors=True)
     
     # Save to JSON
     output_data = {
@@ -287,8 +221,6 @@ def process_subject_folder(folder_path, subject, year_group, output_json):
     return len(all_questions)
 
 if __name__ == '__main__':
-    import sys
-    
     # Define subjects to process
     subjects = [
         {
