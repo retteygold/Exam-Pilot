@@ -433,7 +433,7 @@ export function Admin() {
             <div className="p-3 border-b border-slate-700 font-medium text-sm">
               Papers ({Object.keys(grouped).length})
             </div>
-            <div className="max-h-[calc(100vh-480px)] overflow-y-auto">
+            <div className="max-h-[50vh] lg:max-h-[calc(100vh-480px)] overflow-y-auto">
               {Object.keys(grouped).length === 0 && (
                 <div className="p-4 text-center text-sm text-slate-500">No papers match filters</div>
               )}
@@ -479,7 +479,7 @@ export function Admin() {
           ) : (
             <div className="bg-slate-800 rounded-xl overflow-hidden">
               {/* Editor Header */}
-              <div className="p-4 border-b border-slate-700 flex items-center justify-between bg-slate-800 sticky top-[73px] z-10">
+              <div className="p-4 border-b border-slate-700 flex items-center justify-between bg-slate-800 lg:sticky lg:top-[73px] z-10">
                 <div className="flex items-center gap-3">
                   <span className="font-semibold">{selected.id ? 'Edit' : 'New'}</span>
                   {selected.imagePath && <span className="text-xs px-2 py-1 rounded-full bg-green-500/20 text-green-400">Has Image</span>}
@@ -497,7 +497,7 @@ export function Admin() {
               </div>
 
               {/* Editor Form */}
-              <div className="p-4 space-y-4 max-h-[calc(100vh-200px)] overflow-y-auto">
+              <div className="p-4 space-y-4 lg:max-h-[calc(100vh-200px)] overflow-y-auto">
                 {/* ID & Subject */}
                 <div className="grid grid-cols-2 gap-3">
                   <div>
@@ -647,7 +647,7 @@ export function Admin() {
                 </div>
 
                 {/* Bottom Save Button - Always Visible */}
-                <div className="sticky bottom-0 pt-4 pb-2 bg-slate-800">
+                <div className="lg:sticky lg:bottom-0 pt-4 pb-2 bg-slate-800">
                   <div className="flex gap-2">
                     <button disabled={loading} onClick={save} className="flex-1 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 font-semibold flex items-center justify-center gap-2">
                       <Save className="w-5 h-5"/> Save Question
