@@ -1,14 +1,15 @@
 {
   "metadata": {
     "subject": "IGCSE Biology (0610)",
-    "total_questions": 40,
-    "description": "40 IGCSE Biology MCQs from June 2024 Paper 11",
+    "total_questions": 136,
+    "description": "136 IGCSE Biology MCQs from past papers (2024-2025)",
     "years": [
-      2024
+      2024,
+      2025
     ],
     "verified": false,
     "verified_count": 40,
-    "accuracy": "40 answers verified from official mark schemes"
+    "accuracy": "40 answers verified from mark schemes, 96 auto-extracted"
   },
   "questions": [
     {
@@ -39,229 +40,13 @@
       }
     },
     {
-      "id": "0610-y2024-p11-q2",
-      "subject": "igcse_biology",
-      "yearGroup": "year10",
-      "difficulty": "medium",
-      "topic": "general",
-      "marks": 1,
-      "question": "The photograph shows an elephant hawk-moth. Using the features visible in the photograph, to which group of arthropods does the elephant hawk-moth belong?",
-      "options": [
-        "arachnids",
-        "crustaceans",
-        "insects",
-        "myriapods"
-      ],
-      "correctAnswer": 2,
-      "explanation": "",
-      "examStyle": true,
-      "timeLimit": 45,
-      "verified": true,
-      "source": {
-        "pdf": "520441-june-2024-question-paper-11.pdf",
-        "year": 2024,
-        "session": "May/June",
-        "paper": "11",
-        "question_number": "2"
-      }
-    },
-    {
-      "id": "0610-y2024-p11-q3",
-      "subject": "igcse_biology",
-      "yearGroup": "year10",
-      "difficulty": "medium",
-      "topic": "general",
-      "marks": 1,
-      "question": "What does the term species mean?",
-      "options": [
-        "a group of animals that reproduce asexually",
-        "a group of organisms that can reproduce to produce fertile offspring",
-        "all the plants that live in the same area at the same time",
-        "a group of vertebrates that reproduce sexually 3"
-      ],
-      "correctAnswer": 1,
-      "explanation": "",
-      "examStyle": true,
-      "timeLimit": 45,
-      "verified": true,
-      "source": {
-        "pdf": "520441-june-2024-question-paper-11.pdf",
-        "year": 2024,
-        "session": "May/June",
-        "paper": "11",
-        "question_number": "3"
-      }
-    },
-    {
-      "id": "0610-y2024-p11-q4",
-      "subject": "igcse_biology",
-      "yearGroup": "year10",
-      "difficulty": "medium",
-      "topic": "general",
-      "marks": 1,
-      "question": "The image shows an animal. The length of the animal in the image is 36 mm. The actual length of the animal is 12 mm. What is the magnification of the image? A ×0.3 B ×3 C ×43.2 D ×432",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correctAnswer": 1,
-      "explanation": "",
-      "examStyle": true,
-      "timeLimit": 45,
-      "verified": true,
-      "source": {
-        "pdf": "520441-june-2024-question-paper-11.pdf",
-        "year": 2024,
-        "session": "May/June",
-        "paper": "11",
-        "question_number": "4"
-      }
-    },
-    {
-      "id": "0610-y2024-p11-q5",
-      "subject": "igcse_biology",
-      "yearGroup": "year10",
-      "difficulty": "medium",
-      "topic": "general",
-      "marks": 1,
-      "question": "The diagram shows a plant cell. Which features show that it is a plant cell?",
-      "options": [
-        "It has a cell wall and a vacuole.",
-        "It has a nucleus and cytoplasm.",
-        "It has a nucleus but no chloroplasts.",
-        "It has chloroplasts but no vacuole. [Turn over 4"
-      ],
-      "correctAnswer": 0,
-      "explanation": "",
-      "examStyle": true,
-      "timeLimit": 45,
-      "verified": true,
-      "source": {
-        "pdf": "520441-june-2024-question-paper-11.pdf",
-        "year": 2024,
-        "session": "May/June",
-        "paper": "11",
-        "question_number": "5"
-      }
-    },
-    {
-      "id": "0610-y2024-p11-q6",
-      "subject": "igcse_biology",
-      "yearGroup": "year10",
-      "difficulty": "medium",
-      "topic": "general",
-      "marks": 1,
-      "question": "A scientist investigates the effect of two types of antibiotics on bacteria. The table shows the results. type of antibiotic effect on bacteria penicillin cells burst tetracycline stops protein synthesis Which cell structure does each antibiotic affect? A Penicillin affects the cell wall and tetracycline affects the ribosomes. B Penicillin affects the nucleus and tetracycline affects the cytoplasm. C Penicillin affects the ribosomes and tetracycline affects the cell wall. D Penicillin affects the vacuole and tetracycline affects the nucleus. 5",
-      "options": [
-        "A",
-        "B",
-        "C",
-        "D"
-      ],
-      "correctAnswer": 0,
-      "explanation": "",
-      "examStyle": true,
-      "timeLimit": 45,
-      "verified": true,
-      "source": {
-        "pdf": "520441-june-2024-question-paper-11.pdf",
-        "year": 2024,
-        "session": "May/June",
-        "paper": "11",
-        "question_number": "6"
-      }
-    },
-    {
-      "id": "0610-y2024-p11-q7",
-      "subject": "igcse_biology",
-      "yearGroup": "year10",
-      "difficulty": "medium",
-      "topic": "general",
-      "marks": 1,
-      "question": "The diagram shows a section through an alveolus and through a capillary. wall of the alveolus air red capillary blood cells wall capillary X Y NOT TO low carbon dioxide SCALE concentration high carbon dioxide concentration How does carbon dioxide move from Y to X?",
-      "options": [
-        "by active transport",
-        "by diffusion",
-        "by osmosis",
-        "by transpiration"
-      ],
-      "correctAnswer": 1,
-      "explanation": "",
-      "examStyle": true,
-      "timeLimit": 45,
-      "verified": true,
-      "source": {
-        "pdf": "520441-june-2024-question-paper-11.pdf",
-        "year": 2024,
-        "session": "May/June",
-        "paper": "11",
-        "question_number": "7"
-      }
-    },
-    {
-      "id": "0610-y2024-p11-q8",
-      "subject": "igcse_biology",
-      "yearGroup": "year10",
-      "difficulty": "medium",
-      "topic": "general",
-      "marks": 1,
-      "question": "In which row will the diffusion of ions into a cell be the quickest? ion concentration ion concentration surface area of width of in the external in the cell the cell thecellmembrane solution",
-      "options": [
-        "high low large thin",
-        "low high small thick",
-        "high low small thick",
-        "low high large thin [Turn over 6"
-      ],
-      "correctAnswer": 3,
-      "explanation": "",
-      "examStyle": true,
-      "timeLimit": 45,
-      "verified": true,
-      "source": {
-        "pdf": "520441-june-2024-question-paper-11.pdf",
-        "year": 2024,
-        "session": "May/June",
-        "paper": "11",
-        "question_number": "8"
-      }
-    },
-    {
-      "id": "0610-y2024-p11-q9",
-      "subject": "igcse_biology",
-      "yearGroup": "year10",
-      "difficulty": "medium",
-      "topic": "general",
-      "marks": 1,
-      "question": "Large biological molecules are made of smaller molecules. Which row correctly matches the large molecule with the smaller molecules? large molecule smaller molecules",
-      "options": [
-        "cellulose fatty acids",
-        "fat amino acids",
-        "protein amino acids",
-        "starch fatty acids"
-      ],
-      "correctAnswer": 2,
-      "explanation": "",
-      "examStyle": true,
-      "timeLimit": 45,
-      "verified": true,
-      "source": {
-        "pdf": "520441-june-2024-question-paper-11.pdf",
-        "year": 2024,
-        "session": "May/June",
-        "paper": "11",
-        "question_number": "9"
-      }
-    },
-    {
       "id": "0610-y2024-p11-q10",
       "subject": "igcse_biology",
       "yearGroup": "year10",
       "difficulty": "medium",
       "topic": "general",
       "marks": 1,
-      "question": "A student tests a solution for protein. Which row shows the correct food test and a positive result? colour seen with a name of test positive result A Benedict’s test blue-black B Benedict’s test purple C biuret test blue-black D biuret test purple",
+      "question": "A student tests a solution for protein. Which row shows the correct food test and a positive result? colour seen with a name of test positive result A Benedict\u2019s test blue-black B Benedict\u2019s test purple C biuret test blue-black D biuret test purple",
       "options": [
         "A",
         "B",
@@ -317,10 +102,10 @@
       "marks": 1,
       "question": "Which statement about enzyme action is correct?",
       "options": [
-        "The shape of the enzyme’s active site is complementary to all proteins.",
-        "The shape of the enzyme’s active site is complementary to the substrate.",
-        "The shape of the substrate’s active site is complementary to the product.",
-        "The shape of the substrate’s active site is complementary to the enzyme. 7"
+        "The shape of the enzyme\u2019s active site is complementary to all proteins.",
+        "The shape of the enzyme\u2019s active site is complementary to the substrate.",
+        "The shape of the substrate\u2019s active site is complementary to the product.",
+        "The shape of the substrate\u2019s active site is complementary to the enzyme. 7"
       ],
       "correctAnswer": 1,
       "explanation": "",
@@ -525,6 +310,33 @@
       }
     },
     {
+      "id": "0610-y2024-p11-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The photograph shows an elephant hawk-moth. Using the features visible in the photograph, to which group of arthropods does the elephant hawk-moth belong?",
+      "options": [
+        "arachnids",
+        "crustaceans",
+        "insects",
+        "myriapods"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 45,
+      "verified": true,
+      "source": {
+        "pdf": "520441-june-2024-question-paper-11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "11",
+        "question_number": "2"
+      }
+    },
+    {
       "id": "0610-y2024-p11-q20",
       "subject": "igcse_biology",
       "yearGroup": "year10",
@@ -560,10 +372,10 @@
       "marks": 1,
       "question": "What is the pathway taken by water from the soil to the leaf?",
       "options": [
-        "root hair cells → root cortex → mesophyll → xylem",
-        "root hair cells → root cortex → xylem → mesophyll",
-        "root cortex→ root hair cells → mesophyll → xylem",
-        "root cortex → root hair cells→ xylem → mesophyll"
+        "root hair cells \u2192 root cortex \u2192 mesophyll \u2192 xylem",
+        "root hair cells \u2192 root cortex \u2192 xylem \u2192 mesophyll",
+        "root cortex\u2192 root hair cells \u2192 mesophyll \u2192 xylem",
+        "root cortex \u2192 root hair cells\u2192 xylem \u2192 mesophyll"
       ],
       "correctAnswer": 1,
       "explanation": "",
@@ -585,7 +397,7 @@
       "difficulty": "medium",
       "topic": "general",
       "marks": 1,
-      "question": "What are methods for monitoring the activity of the heart? measuring listeningtosounds ECG pulse rate of valves closing A ✓ ✗ ✗ key B ✗ ✓ ✓ ✓ = yes C ✓ ✗ ✓ ✗ = no D ✓ ✓ ✓",
+      "question": "What are methods for monitoring the activity of the heart? measuring listeningtosounds ECG pulse rate of valves closing A \u2713 \u2717 \u2717 key B \u2717 \u2713 \u2713 \u2713 = yes C \u2713 \u2717 \u2713 \u2717 = no D \u2713 \u2713 \u2713",
       "options": [
         "A",
         "B",
@@ -695,10 +507,10 @@
       "marks": 1,
       "question": "What is the word equation for aerobic respiration?",
       "options": [
-        "carbon dioxide + glucose → oxygen + water",
-        "carbon dioxide + water → oxygen + glucose",
-        "oxygen + glucose → carbon dioxide + water",
-        "oxygen + water → carbon dioxide + glucose [Turn over 12"
+        "carbon dioxide + glucose \u2192 oxygen + water",
+        "carbon dioxide + water \u2192 oxygen + glucose",
+        "oxygen + glucose \u2192 carbon dioxide + water",
+        "oxygen + water \u2192 carbon dioxide + glucose [Turn over 12"
       ],
       "correctAnswer": 2,
       "explanation": "",
@@ -792,6 +604,33 @@
         "session": "May/June",
         "paper": "11",
         "question_number": "29"
+      }
+    },
+    {
+      "id": "0610-y2024-p11-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What does the term species mean?",
+      "options": [
+        "a group of animals that reproduce asexually",
+        "a group of organisms that can reproduce to produce fertile offspring",
+        "all the plants that live in the same area at the same time",
+        "a group of vertebrates that reproduce sexually 3"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 45,
+      "verified": true,
+      "source": {
+        "pdf": "520441-june-2024-question-paper-11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "11",
+        "question_number": "3"
       }
     },
     {
@@ -936,7 +775,7 @@
       "difficulty": "medium",
       "topic": "general",
       "marks": 1,
-      "question": "Many mammals have coloured fur and many birds have coloured feathers. Which uses of colour could help males survive long enough to pass on their features to their offspring? hiding from hiding from warning animals animals which animals which that they are might eat them they could eat poisonous A ✓ ✓ ✓ key B ✓ ✓ ✗ ✓ = yes C ✗ ✓ ✗ ✗ = no D ✓ ✗ ✓ [Turn over 16",
+      "question": "Many mammals have coloured fur and many birds have coloured feathers. Which uses of colour could help males survive long enough to pass on their features to their offspring? hiding from hiding from warning animals animals which animals which that they are might eat them they could eat poisonous A \u2713 \u2713 \u2713 key B \u2713 \u2713 \u2717 \u2713 = yes C \u2717 \u2713 \u2717 \u2717 = no D \u2713 \u2717 \u2713 [Turn over 16",
       "options": [
         "A",
         "B",
@@ -1065,6 +904,33 @@
       }
     },
     {
+      "id": "0610-y2024-p11-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The image shows an animal. The length of the animal in the image is 36 mm. The actual length of the animal is 12 mm. What is the magnification of the image? A \u00d70.3 B \u00d73 C \u00d743.2 D \u00d7432",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 45,
+      "verified": true,
+      "source": {
+        "pdf": "520441-june-2024-question-paper-11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "11",
+        "question_number": "4"
+      }
+    },
+    {
       "id": "0610-y2024-p11-q40",
       "subject": "igcse_biology",
       "yearGroup": "year10",
@@ -1089,6 +955,2733 @@
         "session": "May/June",
         "paper": "11",
         "question_number": "40"
+      }
+    },
+    {
+      "id": "0610-y2024-p11-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows a plant cell. Which features show that it is a plant cell?",
+      "options": [
+        "It has a cell wall and a vacuole.",
+        "It has a nucleus and cytoplasm.",
+        "It has a nucleus but no chloroplasts.",
+        "It has chloroplasts but no vacuole. [Turn over 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 45,
+      "verified": true,
+      "source": {
+        "pdf": "520441-june-2024-question-paper-11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "11",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2024-p11-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "A scientist investigates the effect of two types of antibiotics on bacteria. The table shows the results. type of antibiotic effect on bacteria penicillin cells burst tetracycline stops protein synthesis Which cell structure does each antibiotic affect? A Penicillin affects the cell wall and tetracycline affects the ribosomes. B Penicillin affects the nucleus and tetracycline affects the cytoplasm. C Penicillin affects the ribosomes and tetracycline affects the cell wall. D Penicillin affects the vacuole and tetracycline affects the nucleus. 5",
+      "options": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 45,
+      "verified": true,
+      "source": {
+        "pdf": "520441-june-2024-question-paper-11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "11",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2024-p11-q7",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows a section through an alveolus and through a capillary. wall of the alveolus air red capillary blood cells wall capillary X Y NOT TO low carbon dioxide SCALE concentration high carbon dioxide concentration How does carbon dioxide move from Y to X?",
+      "options": [
+        "by active transport",
+        "by diffusion",
+        "by osmosis",
+        "by transpiration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 45,
+      "verified": true,
+      "source": {
+        "pdf": "520441-june-2024-question-paper-11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "11",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "0610-y2024-p11-q8",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "In which row will the diffusion of ions into a cell be the quickest? ion concentration ion concentration surface area of width of in the external in the cell the cell thecellmembrane solution",
+      "options": [
+        "high low large thin",
+        "low high small thick",
+        "high low small thick",
+        "low high large thin [Turn over 6"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 45,
+      "verified": true,
+      "source": {
+        "pdf": "520441-june-2024-question-paper-11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "11",
+        "question_number": "8"
+      }
+    },
+    {
+      "id": "0610-y2024-p11-q9",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Large biological molecules are made of smaller molecules. Which row correctly matches the large molecule with the smaller molecules? large molecule smaller molecules",
+      "options": [
+        "cellulose fatty acids",
+        "fat amino acids",
+        "protein amino acids",
+        "starch fatty acids"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 45,
+      "verified": true,
+      "source": {
+        "pdf": "520441-june-2024-question-paper-11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "11",
+        "question_number": "9"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q10",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows an experiment to investigate the effect of increasing light intensity on the rate of photosynthesis in an aquatic plant. The rate is found by measuring the rate of bubble release by the plant.",
+      "options": [
+        "s the light intensity increases, the rate of bubble release increases and then becomes constant. bubble light Whichstatementdescribeswhytherateofbubblereleasebecomesconstantathighlightintensities? A Carbon dioxide concentration becomes a limiting fac",
+        "Light intensity becomes a limiting factor.",
+        "Oxygen availability becomes a limiting factor.",
+        "Water availability becomes a limiting factor."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "10"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q11",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows a section through the leaf of a flowering plant. 1 2 3 4 Where does photosynthesis take place?",
+      "options": [
+        "and 2",
+        "and 4",
+        "and 3",
+        "and 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "11"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q15",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which row shows correct information about three digestive enzymes in humans? lipase maltase trypsin",
+      "options": [
+        "acts in acidic acts in the secreted by the conditions stomach pancreas",
+        "secreted by the secreted in the acts in acidic pancreas mouth conditions",
+        "secreted by the acts in alkaline secreted in the small intestine conditions stomach",
+        "acts in the small acts in the small acts in alkaline intestine intestine conditions"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "15"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q16",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which substance found in a healthy diet helps to prevent constipation?",
+      "options": [
+        "fat",
+        "fibre",
+        "minerals",
+        "vitamins"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "16"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q17",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "When is the transpiration rate of a well-watered plant highest?",
+      "options": [
+        "on a cool, dry, windy day",
+        "on a cool, wet, windy day",
+        "on a hot, dry, windy day",
+        "on a hot, wet, windy day"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "17"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q18",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is correct for a flowering plant during photosynthesis?",
+      "options": [
+        "The flowers, fruits, leaves and roots are all sources of sucrose.",
+        "The fruits are a source of sucrose and the flowers are a sink.",
+        "The leaves are a source of sucrose and the fruits are a sink.",
+        "The roots are a source of sucrose and the leaves are a sink."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "18"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q19",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is an advantage of having a double circulatory system?",
+      "options": [
+        "Ituseslessenergybecausebloodflowsthroughtheheartonlyonceineachcircuitaround the body.",
+        "Concentration gradients of solutes and gases are kept low.",
+        "Deoxygenated and oxygenated blood are separated to allow a high rate of oxygen supply to the tissues.",
+        "It maintains high-pressure blood flow to the lungs and low-pressure blood flow to the body."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "19"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which types of organisms are used in genetic modification because they have plasmids?",
+      "options": [
+        "arachnids",
+        "bacteria",
+        "myriapods",
+        "ferns"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q21",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "One of the symptoms of the disease cholera is diarrhoea. This is due to water loss by osmosis caused by the cholera toxin. What is the effect of cholera toxins that results in diarrhoea?",
+      "options": [
+        "secretion of chloride ions out of the small intestine lowering the water potential",
+        "secretion of chloride ions out of the small intestine raising the water potential",
+        "secretion of chloride ions into the small intestine lowering the water potential",
+        "secretion of chloride ions into the small intestine raising the water potential"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "21"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q22",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement about immunity is correct?",
+      "options": [
+        "A part of the antibody molecule has the same shape as the antigen it acts on.",
+        "Babies develop passive immunity from the antibodies they receive in breast milk.",
+        "Phagocytes produce antibodies.",
+        "Vaccines contain weakened antibodies."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "22"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q23",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the functions of the diaphragm and the cilia in the human gas exchange system? diaphragm cilia",
+      "options": [
+        "contracts to cause breathing in carry mucus to the throat",
+        "contracts to cause breathing out trap bacteria from the air",
+        "relaxes to cause breathing in filter dust from the air",
+        "relaxes to cause breathing out produce mucus"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "23"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q24",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Vigorous exercise can cause an oxygen debt. Which process removes the oxygen debt?",
+      "options": [
+        "aerobic respiration of lactic acid in the liver",
+        "a decrease in breathing rate",
+        "a decrease in heart rate",
+        "an increase in blood supply to the skin"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "24"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q25",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "In healthy people, which substance is completely reabsorbed into the blood from the kidney nephrons?",
+      "options": [
+        "glucose",
+        "salts",
+        "urea",
+        "water"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "25"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q26",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Whatwouldbethepupilsizeandlensshapeofapersonreadingamobilephonetextmessagein a brightly lit room? pupil size lens shape",
+      "options": [
+        "large fat",
+        "large thin",
+        "small fat",
+        "small thin"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "26"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q27",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What describes how the body maintains a constant internal temperature on a hot day?",
+      "options": [
+        "Vasoconstriction increases blood flow to the skin surface capillaries.",
+        "Vasoconstriction decreases blood flow to the skin surface capillaries.",
+        "Vasodilation increases blood flow to the skin surface capillaries.",
+        "Vasodilation decreases blood flow to the skin surface capillaries."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "27"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q28",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What would lead to a decrease in blood glucose concentration?",
+      "options": [
+        "increased release of adrenaline",
+        "increased release of amylase",
+        "increased release of glucagon",
+        "increased release of insulin"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "28"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q29",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement about antibiotics is correct?",
+      "options": [
+        "Antibiotics do not affect bacteria but kill viruses.",
+        "Antibiotics do not affect bacteria or viruses.",
+        "Antibiotics kill bacteria and kill viruses.",
+        "Antibiotics kill bacteria but do not affect viruses."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "29"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The list shows some of the structures contained in cells. \u2022 cytoplasm \u2022 cell membrane \u2022 cell wall \u2022 chloroplast How many of these structures are found in the cells of all living organisms?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q30",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows the carpel of a flower just after pollination. X What is the name of the part labelled X?",
+      "options": [
+        "filament",
+        "ovule",
+        "pollen tube",
+        "stigma"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "30"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q31",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The table shows the percentage of sperm with different abnormalities in samples from a person with normal fertility and two people with low fertility. person with person P with person Q with normal fertility low fertility low fertility percentage of sperm with 2 25 2 no acrosome percentage of sperm with 11 11 35 deformed flagellum percentage of sperm with 4 4 30 few mitochondria What are the cause",
+      "options": [
+        "too many sperm cannot too many sperm cannot digest jelly coat of egg cell digest jelly coat of egg cell",
+        "too many sperm cannot too many sperm cannot digest jelly coat of egg cell move to oviduct",
+        "too many sperm cannot too many sperm cannot move to oviduct digest jelly coat of egg cell",
+        "too many sperm cannot too many sperm cannot move to oviduct move to oviduct"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "31"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q32",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which word is used to describe stem cells?",
+      "options": [
+        "gametes",
+        "haploid",
+        "homozygous",
+        "unspecialised"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "32"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q35",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are correct statements about meiosis? produces involved in repair genetically of damaged identical cells tissues",
+      "options": [
+        "yes yes",
+        "yes no",
+        "no yes",
+        "no no"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "35"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q37",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the main source of energy input to biological systems?",
+      "options": [
+        "glucose",
+        "oxygen",
+        "plants",
+        "the Sun"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "37"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q38",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which organisms remove nitrate ions from soil?",
+      "options": [
+        "denitrifying bacteria and nitrogen-fixing bacteria in root nodules",
+        "denitrifying bacteria and plants",
+        "nitrifying bacteria and plants",
+        "nitrogen-fixing bacteria in root nodules"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "38"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Villi filter urea from the blood. Which two statements explain the role of the villi in humans?",
+      "options": [
+        "and 2",
+        "and 3",
+        "and 4",
+        "and 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q40",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is an example of the use of genetic modification in agriculture?",
+      "options": [
+        "choosingcattletobreedsothatallelesforhighmilkyieldwillbepassedontotheiroffspring",
+        "increasing food production by using insecticides to improve quality and yield",
+        "inserting genes into crop plants to improve the nutritional qualities of the plant",
+        "selecting crop plants with desirable characteristicsand crossing these to produce the next generation Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "40"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Samples of plant cells from the same species are immersed in three different liquids. The low concentrationsucrosesolutionhasahigherwaterpotentialthantheplantcellcytoplasm.Thehigh concentration sucrose solution has a lower water potential than the plant cell cytoplasm. What is the state of the cells in the different liquids? low concentration high concentration distilled water sucrose solution suc",
+      "options": [
+        "turgid plasmolysed flaccid",
+        "flaccid turgid plasmolysed",
+        "flaccid plasmolysed flaccid",
+        "turgid turgid plasmolysed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which process requires energy from respiration?",
+      "options": [
+        "active transport",
+        "diffusion",
+        "osmosis",
+        "transpiration"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2024-p21-q7",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "ThediagramshowsthestickyendoftheDN",
+      "options": [
+        "G T G What is the correct sequence of the missing bases? A CAGTG",
+        "GTGAC",
+        "GTCAC",
+        "CACTG"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520442-june-2024-question-paper-21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "21",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "0610-y2024-p31-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "block 2 blocks 4 blocks 8 blocks NOT TO SC",
+      "options": [
+        "6 278 240 255 258",
+        "8 112 120 98 110",
+        "10 79 85 81",
+        "12 56 48 52 52 (i) Calculate the mean time for all the blocks to turn yellow in test\u2011tube C. Give your answer to the nearest whole number. Space for working. ................................................................ [2] (ii) Using the results "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520443-june-2024-question-paper-31.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2024-p31-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Enzymes are biological catalysts. (a) Describe what is meant by a catalyst. ................................................................................................................................................... ................................................................................................................................................... ............................",
+      "options": [
+        "and",
+        ", were recorded at different temperatures. Fig. 2.1 shows the results. A B rate of enzyme activity 0 20 40 60 80 100 temperature / \u00b0C Fig. 2.1 5 (i)",
+        "ompare the effect of temperature on the rate of enzyme activity for enzymes A and B. Use data from Fig. 2.1 to support your answer. ......................................................................................................................",
+        "raw three lines from the box on the left to make three correct sentences. are involved in all metabolic reactions. are only made of the elements carbon and hydrogen. are necessary to sustain life. Enzymes are needed for the loss of water vapour from "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520443-june-2024-question-paper-31.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows some of the processes carried out by living organisms. carbon dioxide in the atmosphere P Q light energy green chicken plant P Q Q waste waste products products Which two characteristics of living organisms are represented by arrows P and Q?",
+      "options": [
+        "excretion and sensitivity",
+        "nutrition and excretion",
+        "respiration and growth",
+        "sensitivity and reproduction"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q10",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Enzyme R digests protein in the stomach. Four test-tubes are set up. Each contains the same amounts of protein and enzyme R. The test-tubes are kept at different levels of pH and temperature, as shown in the table. In which test-tube will protein digestion be quickest? pH temperature/\u00b0C",
+      "options": [
+        "20",
+        "35",
+        "20",
+        "35"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "10"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q12",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which stage of nutrition takes place when food molecules become part of a body cell?",
+      "options": [
+        "absorption",
+        "assimilation",
+        "digestion",
+        "ingestion"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "12"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q13",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows human teeth in the mouth. 1 2 3 4 Which types of teeth can be used to grind food?",
+      "options": [
+        "1, 2, 3 and 4",
+        "2, 3 and 4 only",
+        "and 4 only",
+        "only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "13"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q14",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are functions of the hydrochloric acid in gastric juice? giving the optimum pH killing bacteria for gastric enzymes",
+      "options": [
+        "(cid:22) (cid:22) key",
+        "(cid:22) (cid:26) (cid:22)= yes",
+        "(cid:26) (cid:22) (cid:26) = no",
+        "(cid:26) (cid:26)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "14"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q16",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement describes a function of xylem in a plant stem?",
+      "options": [
+        "transport of amino acids",
+        "transport of carbon dioxide",
+        "transport of mineral ions",
+        "transport of sucrose"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "16"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q17",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which row shows the components of the human circulatory system? blood vessels one-way valves pump",
+      "options": [
+        "(cid:22) (cid:22) (cid:26) key",
+        "(cid:26) (cid:26) (cid:22) (cid:22)= yes",
+        "(cid:22) (cid:26) (cid:22) (cid:26) = no",
+        "(cid:22) (cid:22) (cid:22)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "17"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q18",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is a function of white blood cells?",
+      "options": [
+        "antibody production",
+        "blood clotting",
+        "transport of oxygen",
+        "transport of urea"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "18"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The scientific name for a domesticated llama is Lama glama. The scientific name for a domesticated sheep is Ovis aries. What is the genus name for the llama and the species name for the sheep? genus name species name for the llama for the sheep",
+      "options": [
+        "glama aries",
+        "glama Ovis",
+        "Lama aries",
+        "Lama Ovis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q21",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which substance is a gas needed for aerobic respiration?",
+      "options": [
+        "carbon dioxide",
+        "glucose",
+        "oxygen",
+        "water"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "21"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q22",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which substance is produced during anaerobic respiration in yeast?",
+      "options": [
+        "alcohol",
+        "glucose",
+        "lactic acid",
+        "water"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "22"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q23",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Where in the human body is urea excreted?",
+      "options": [
+        "bladder",
+        "kidneys",
+        "liver",
+        "lungs"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "23"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q24",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the route taken by an electrical impulse in a simple reflex arc?",
+      "options": [
+        "effector \uf0ae motor neurone \uf0ae relay neurone \uf0ae sensory neurone \uf0ae receptor",
+        "effector \uf0ae sensory neurone \uf0ae relay neurone \uf0ae motor neurone \uf0ae receptor",
+        "receptor \uf0ae motor neurone \uf0ae relay neurone \uf0ae sensory neurone \uf0ae effector",
+        "receptor \uf0ae sensory neurone \uf0ae relay neurone \uf0ae motor neurone \uf0ae effector"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "24"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q25",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the function of the iris?",
+      "options": [
+        "It carries impulses from the eye to the brain.",
+        "It controls the amount of light entering the pupil.",
+        "It focuses the light onto the retina.",
+        "It refracts light entering the eye."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "25"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q26",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Tropic responses can be positive or negative. When a plant grows towards the stimulus, the response is positive (+). When a plant grows away from the stimulus, the response is negative (\u2013). The diagram shows a plant exhibiting tropic responses. N light from one side M Which row states the tropic responses occurring at position M and at position N? position M position N gravitropism phototropism gr",
+      "options": [
+        "+ + \u2013 \u2013",
+        "+ \u2013 \u2013 +",
+        "\u2013 + + \u2013",
+        "\u2013 \u2013 + +"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "26"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q28",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which structure is pollen transferred from and to during pollination?",
+      "options": [
+        "from anther to ovary",
+        "from anther to stigma",
+        "from stigma to ovary",
+        "from stigma to ovule"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "28"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q29",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "In addition to a suitable temperature, what else is always necessary for seed germination?",
+      "options": [
+        "carbon dioxide and sunlight",
+        "mineral ions",
+        "sunlight and water",
+        "water and oxygen"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "29"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The photograph shows an arthropod, Formica fusca. What is the reason for placing Formica fusca into the correct group?",
+      "options": [
+        "It is an arachnid, because the body is in segments.",
+        "It is a crustacean, because the legs have joints.",
+        "It is an insect, because there are three pairs of legs.",
+        "It is a myriapod, because there are two antennae."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q30",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What happens to the lining of the human uterus in the days before the release of an egg cell?",
+      "options": [
+        "It breaks down.",
+        "It is lost from the body.",
+        "It thickens.",
+        "It thins."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "30"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q31",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which term is defined as a length of DN",
+      "options": [
+        "a gene",
+        "an amino acid",
+        "an X chromosome",
+        "a Y chromosome"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "31"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q32",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Polydactyly is an inherited condition that can occur in cats. It results in the affected offspring having extra toes. The allele for polydactyly is dominant and is represented by the letter T. The allele for not having polydactyly is recessive and is represented by the letter t.",
+      "options": [
+        "cat with the genotype Tt is bred with a cat with the genotype tt. What is the probability of the offspring having polydactyly? A 25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "32"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q34",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows a food web. leopard baboon impala scorpion locust grass",
+      "options": [
+        "t which trophic levels is the leopard feeding? A first and second",
+        "second and third",
+        "second and fourth",
+        "third and fifth"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "34"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q35",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Pythons were accidentally introduced to a region in the 1990s. Since then, they have reproduced in the wild and become a pest. The number of pythons removed from the wild can give an indication of the population size, as shown. 500 400 number 300 of pythons removed 200 100 0 1997 1998 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 year Which phase of the population growth curve of pyt",
+      "options": [
+        "death",
+        "exponential (log)",
+        "lag",
+        "stationary"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "35"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q36",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement describes a disadvantage of growing crop plants as a monoculture?",
+      "options": [
+        "There is a decrease in biodiversity.",
+        "There is a decrease in the chance of a disease destroying the crop.",
+        "There is a decrease in the use of herbicides.",
+        "There is a decrease in the use of insecticides."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "36"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q37",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are the effects of deforestation on the environment? increased carbon decreased destruction of dioxide levels in flooding local food webs atmosphere",
+      "options": [
+        "(cid:22) (cid:26) (cid:26) key",
+        "(cid:26) (cid:26) (cid:22) (cid:22)= yes",
+        "(cid:22) (cid:22) (cid:26) (cid:26) = no",
+        "(cid:26) (cid:22) (cid:22)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "37"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q38",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement about non-biodegradable plastics in aquatic environments is correct?",
+      "options": [
+        "As non-biodegradable plastics decompose in aquatic environments, they release carbon dioxide.",
+        "Extremely small fragments of non-biodegradable plastics can move up the food chain.",
+        "Non-biodegradable plastics in aquatic environments cause an increase in the growth of producers.",
+        "Non-biodegradable plastics in aquatic environments decompose quickly."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "38"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The photomicrograph shows part of an animal cell. X What is the structure labelled X?",
+      "options": [
+        "chloroplast",
+        "mitochondrion",
+        "ribosome",
+        "vacuole"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q40",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Why are bacteria useful in biotechnology and genetic modification?",
+      "options": [
+        "They can cause decomposition.",
+        "They can make complex molecules.",
+        "They have a cell wall.",
+        "They have a slow reproduction rate."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "40"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Where are carbohydrates made in a green leaf?",
+      "options": [
+        "cell vacuoles",
+        "chloroplasts",
+        "phloem",
+        "xylem"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the formula for calculating the magnification of specimens?",
+      "options": [
+        "actual size \uf0b8 image size",
+        "actual size \uf0b4 image size",
+        "image size \u2013 actual size",
+        "image size \uf0b8 actual size"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q7",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What increases the rate of diffusion of oxygen into a cell?",
+      "options": [
+        "decreasing the concentration gradient",
+        "decreasing the surface area",
+        "increasing the diffusion distance",
+        "increasing the temperature"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "0610-y2025-p12-q8",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The apparatus shown is used to demonstrate osmosis. dialysis tubing acting as a partially permeable membrane solution K solution L The mass of the dialysis tubing and contents was 11.2g at the start of the demonstration and 9.4g at the end. Which solutions would cause this change in mass? solution K solution L",
+      "options": [
+        "10% salt solution 5% salt solution",
+        "5% salt solution 10% salt solution",
+        "5% salt solution water",
+        "10% salt solution water"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_12.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "12",
+        "question_number": "8"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The relationships of four species of bacteria, P, Q, R and S, were compared. \u25cf Species P and Q have a more recent common ancestor than either species has with species R. \u25cf Species S developed recently from species P. Which species has the least similar base sequences in their DN",
+      "options": [
+        "P",
+        "Q",
+        "R",
+        "S"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q11",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The photomicrograph shows part of the lower surface of a leaf. X What is the structure labelled X?",
+      "options": [
+        "guard cell",
+        "palisade mesophyll cell",
+        "spongy mesophyll cell",
+        "xylem vessel"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "11"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q13",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows the four types of human tooth. 1 2 3 4 incisor canine premolar molar Which teeth are used for grinding food?",
+      "options": [
+        "and 2",
+        "and 4",
+        "and 3",
+        "and 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "13"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q14",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which substance causes the change in pH when food enters the small intestine?",
+      "options": [
+        "amylase",
+        "bile",
+        "gastric juice",
+        "trypsin"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "14"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q15",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which conditions cause the highest rate of transpiration?",
+      "options": [
+        "high temperature, high wind speed and high humidity",
+        "high temperature, high wind speed and low humidity",
+        "low temperature, low wind speed and low humidity",
+        "low temperature, low wind speed and high humidity"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "15"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q16",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows a heart defect that some babies are born with. The arrows indicate direction of blood flow. heart defect Which statement explains why this heart defect might cause the baby to have poor growth?",
+      "options": [
+        "Blood flows to the lungs at high pressure increasing rate of gas exchange.",
+        "Blood flows to the lungs at low pressure decreasing rate of gas exchange.",
+        "Mixing of blood results in less oxygen available for respiration.",
+        "Mixing of blood results in more glucose available for respiration."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "16"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q17",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows the effect of vaccination on the human body. Three components in the diagram are represented by numbers. 1 immune response 2 3 can provide passive provide long-term immunity to others immunity Which components are memory cells?",
+      "options": [
+        "only",
+        "and 3",
+        "only",
+        "only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "17"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q18",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What helps to keep the trachea open during breathing?",
+      "options": [
+        "cartilage",
+        "cilia",
+        "external intercostal muscles",
+        "larynx"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "18"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q19",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Yeast can respire aerobically and anaerobically. For each molecule of glucose used in yeast, how many more molecules of carbon dioxide gas are produced by aerobic respiration compared with anaerobic respiration?",
+      "options": [
+        "more",
+        "more",
+        "more",
+        "more"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "19"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows an arthropod. pedipalp legs To which group does it belong?",
+      "options": [
+        "arachnids",
+        "crustaceans",
+        "insects",
+        "myriapods"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q20",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "In a healthy human, in which blood vessel would you find the lowest concentration of urea?",
+      "options": [
+        "hepatic artery",
+        "hepatic vein",
+        "renal artery",
+        "renal vein"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "20"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q22",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The liver and the pancreas work together to control the concentration of glucose in the blood. Which statement is correct?",
+      "options": [
+        "The liver converts the small molecule glucose into the large molecule glucagon.",
+        "The liver releases the hormone insulin when blood glucose concentration is too high.",
+        "The pancreas does not respond to an increase in blood glucose concentration.",
+        "The pancreas responds to a fall in the blood glucose concentration by increasing the release of the hormone glucagon."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "22"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q23",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "In the dark, plant shoots grow upwards and roots grow downwards. What causes these responses? gravitropism phototropism",
+      "options": [
+        "no no",
+        "no yes",
+        "yes no",
+        "yes yes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "23"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q24",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the reason why antibiotics should be used only when essential?",
+      "options": [
+        "It increases the artificial selection of antibiotic resistant bacteria.",
+        "It increases the natural selection of antibiotic resistant bacteria.",
+        "It reduces the artificial selection of antibiotic resistant bacteria.",
+        "It reduces the natural selection of antibiotic resistant bacteria."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "24"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q25",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which row describes self-pollination? pollen transferred from pollen transferred from an pollen transferred an anther to the stigma anther to the stigma of a from an anther to of a different flower on flower on a different plant the stigma of the the same plant of the same species same flower",
+      "options": [
+        "(cid:22) (cid:22) (cid:26) key",
+        "(cid:22) (cid:26) (cid:22) (cid:22)= yes",
+        "(cid:26) (cid:26) (cid:22) (cid:26) = no",
+        "(cid:26) (cid:22) (cid:22)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "25"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q27",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement correctly describes the effect of a hormone in a human menstrual cycle that lasts for 28 days?",
+      "options": [
+        "FSH causes maturation of an egg up to day 21.",
+        "LH stimulates the release of an egg on day 14.",
+        "Oestrogen maintains the uterus lining between days 14 and 28.",
+        "Progesterone causes the repair and thickening of the uterus lining between days 4 to 14."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "27"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q28",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is the main hormone responsible for the development of male secondary sexual characteristics?",
+      "options": [
+        "adrenaline",
+        "insulin",
+        "oestrogen",
+        "testosterone"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "28"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q29",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which term is defined as a length of DN",
+      "options": [
+        "amino acid",
+        "chromosome",
+        "gene",
+        "mutation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "29"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which structures are found in both plant cells and bacterial cells? cell membrane cell wall plasmid ribosomes",
+      "options": [
+        "yes yes yes no",
+        "no yes yes yes",
+        "yes no yes yes",
+        "yes yes no yes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q30",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement about the sex chromosomes is correct?",
+      "options": [
+        "Men and women can inherit characteristics controlled by genes on the X chromosome.",
+        "Men and women can inherit characteristics controlled by genes on the Y chromosome.",
+        "Only men can inherit characteristics controlled by genes on the X chromosome.",
+        "Only women can inherit characteristics controlled by genes on the Y chromosome."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "30"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q33",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What are sources of genetic variation in populations?",
+      "options": [
+        "meiosis, mutation, random mating",
+        "meiosis, random mating, asexual reproduction",
+        "mitosis, mutation, random fertilisation",
+        "mitosis, random fertilisation, asexual reproduction"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "33"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q34",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The food chain shows how energy is transferred to a human. lettuce \uf0ae snails \uf0ae duck \uf0ae human Where did the energy in the lettuce come from?",
+      "options": [
+        "snails",
+        "soil",
+        "the Sun",
+        "water"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "34"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q36",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which organisms can be sources of energy for decomposers? producers herbivores carnivores",
+      "options": [
+        "(cid:22) (cid:22) (cid:22) key",
+        "(cid:22) (cid:26) (cid:26) (cid:22)= yes",
+        "(cid:26) (cid:22) (cid:22) (cid:26) = no",
+        "(cid:26) (cid:26) (cid:26)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "36"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q38",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What can cause an increase in the size of a rabbit population?",
+      "options": [
+        "an increase in a disease that affects rabbits",
+        "an increase in available food for the rabbits",
+        "an increase in pollution in the habitat of the rabbits",
+        "an increase in predation of rabbits"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "38"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q39",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "How does eutrophication lead to the death of fish?",
+      "options": [
+        "A sudden increase in the number of bacteria increases the spread of disease.",
+        "Algae respire instead of photosynthesise.",
+        "Decomposer bacteria lower the oxygen concentration in the water.",
+        "Fertilisers reduce the availability of nitrates in the water."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "39"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "increased fossil fuel combustion Which processes increase the concentration of carbon dioxide in the atmosphere?",
+      "options": [
+        "and 3",
+        "and 4",
+        "and 3",
+        "and 4"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows four mesophyll cells, W, X, Y and Z. Water moves through these cells. W X Y Z Which arrow shows the direction of movement of water through these cells? water potential/kPa direction of water movement W X Y Z",
+      "options": [
+        "\uf0ae \u2013600 \u2013450 \u2013350 \u2013250",
+        "\uf0ae \u2013350 \u2013400 \u2013450 \u2013600",
+        "\uf0ac \u2013400 \u2013450 \u2013500 \u2013550",
+        "\uf0ac \u2013200 \u2013300 \u2013350 \u2013450"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q7",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "haploid Which terms are used only when describing sexual reproduction in plants?",
+      "options": [
+        "and 7",
+        "and 4",
+        "and 6",
+        "and 5"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q8",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which chemical element is found in proteins but not in carbohydrates?",
+      "options": [
+        "carbon",
+        "hydrogen",
+        "nitrogen",
+        "oxygen"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "8"
+      }
+    },
+    {
+      "id": "0610-y2025-p22-q9",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement describes enzymes?",
+      "options": [
+        "Enzymes are carbohydrates.",
+        "Enzymes are involved in metabolic reactions.",
+        "Enzymes decrease the rate of reaction.",
+        "Enzymes have the same shape of active site as their substrate."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_22.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "22",
+        "question_number": "9"
+      }
+    },
+    {
+      "id": "0610-y2025-p32-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 3.1 shows blood flow through a human heart. The arrows show the direction of blood flow .",
+      "options": [
+        "B C septum Fig. 3.1 (i) On Fig. 3.1, draw a label line and the letter X to identify the muscular wall of the left ventricle. [1] (ii) Describe the path taken by blood as it moves from A to",
+        "in Fig. 3.1. ........................................................................................................................................... .................................................................................................",
+        "shown in Fig. 3.1. ..................................................................................................................................... [1] (cid:293)(cid:229)(cid:213)(cid:213)(cid:245)(cid:277)(cid:229)(cid:213)(cid:181)(cid:261)(ci",
+        "raw lines to link each activity with its ECG. Draw three lines. One has been done for you. activity ECG resting during vigorous physical activity one minute after physical activity one hour after physical activity Fig. 3.3 [2] (cid:293)(cid:277)(cid:"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_32.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "32",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2025-p32-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "/ tonnes per B unit area 2",
+      "options": [
+        "1940 1960 1980 2000 2020 year Fig. 6.1 (i) Selective breeding of barley plants has increased the yield of barley. Identify the period, A,",
+        "or",
+        ", when the largest increase in yield occurred. Explain how you made your choice. period ............................................ explanation .........................................................................................................",
+        "Pollination and fertilisation occurs. E Seeds form. F The process is repeated over many generations. Arrange the statements in the correct order to describe the process of selective breeding in barley plants. Two have been done for you. A B [2] (iv) "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_32.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "32",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2025-p42-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) The internal body temperature of a person was recorded. Fig. 2.1 shows the results. 39 38 internal F body 37 temperature / \u00b0C 36 35 time Fig. 2.1 (i) Using the information in Fig. 2.1, calculate the temperature range for the internal body temperature of the person. State the units. .................................................................................................................",
+      "options": [
+        ".......................................................................................................................................",
+        "....................................................................................................................................... [2] [Total: 11] (cid:300)(cid:217)(cid:266)(cid:174)(cid:288)(cid:180)(cid:237)(cid:200)(cid:245)(cid:207)(cid:298",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_42.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "42",
+        "question_number": "2"
       }
     }
   ]
