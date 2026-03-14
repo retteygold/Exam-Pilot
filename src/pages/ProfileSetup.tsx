@@ -19,6 +19,14 @@ const rewards = [
   { step: 5, icon: Crown, title: 'Exam Champion', color: 'text-emerald-400' }
 ]
 
+const availableSubjects = [
+  { id: 'biology', name: 'O-Level Biology (5090)', grades: ['Grade 9', 'Grade 10'], icon: '🧬' },
+  { id: 'igcse_biology', name: 'IGCSE Biology (0610)', grades: ['Grade 9', 'Grade 10', 'Grade 11'], icon: '🧫' },
+  { id: 'accounting', name: 'Accounting (7707)', grades: ['Grade 11', 'Grade 12'], icon: '📊' },
+]
+
+const ageOptions = ['13-14', '15-16', '17-18', '19+']
+
 const images = [
   '/storyset/Researchers-amico.svg',
   '/storyset/Online Doctor-pana.svg',
@@ -122,7 +130,7 @@ export function ProfileSetup() {
 
           {step === 2 && (
             <div className='grid grid-cols-2 gap-3'>
-              {['12-13','14-15','16-17','18+'].map(o => (
+              {ageOptions.map(o => (
                 <button key={o} onClick={() => updateField('age', o)}
                   className={'p-4 rounded-2xl border-2 transition-all ' + (profile.age === o ? 'border-blue-500 bg-blue-500/20' : 'border-slate-700 bg-slate-800 hover:border-slate-600')}>
                   <div className='font-semibold'>{o}</div>
@@ -134,7 +142,7 @@ export function ProfileSetup() {
 
           {step === 3 && (
             <div className='space-y-3'>
-              {['Grade 8','Grade 9','Grade 10'].map(o => (
+              {['Grade 8', 'Grade 9', 'Grade 10', 'Grade 11', 'Grade 12'].map(o => (
                 <button key={o} onClick={() => updateField('grade', o)}
                   className={'w-full p-4 rounded-2xl border-2 text-left transition-all flex items-center gap-4 ' + (profile.grade === o ? 'border-blue-500 bg-blue-500/20' : 'border-slate-700 bg-slate-800 hover:border-slate-600')}>
                   <BookOpen className='w-6 h-6 text-blue-400' />
@@ -158,12 +166,18 @@ export function ProfileSetup() {
           {step === 5 && (
             <div className='space-y-3'>
               <div className='p-3 bg-emerald-900/30 border border-emerald-700/50 rounded-xl mb-4 text-center text-sm text-emerald-300'>
-                You are almost there! Choose your exam!
+                Choose your exam based on available subjects!
               </div>
-              {['biology','igcse_biology','accounting'].map(o => (
-                <button key={o} onClick={() => updateField('exam', o)}
-                  className={'w-full p-4 rounded-2xl border-2 text-left transition-all ' + (profile.exam === o ? 'border-blue-500 bg-blue-500/20' : 'border-slate-700 bg-slate-800 hover:border-slate-600')}>
-                  <div className='font-semibold text-lg capitalize'>{o.replace('_', ' ')}</div>
+              {availableSubjects.map(subj => (
+                <button key={subj.id} onClick={() => updateField('exam', subj.id)}
+                  className={'w-full p-4 rounded-2xl border-2 text-left transition-all ' + (profile.exam === subj.id ? 'border-blue-500 bg-blue-500/20' : 'border-slate-700 bg-slate-800 hover:border-slate-600')}>
+                  <div className='flex items-center gap-3'>
+                    <span className='text-2xl'>{subj.icon}</span>
+                    <div>
+                      <div className='font-semibold text-lg'>{subj.name}</div>
+                      <div className='text-xs text-slate-400'>Grades: {subj.grades.join(', ')}</div>
+                    </div>
+                  </div>
                 </button>
               ))}
             </div>
