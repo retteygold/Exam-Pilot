@@ -2,6 +2,11 @@ import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { createClient } from '@supabase/supabase-js'
+import dotenv from 'dotenv'
+
+// Load .env file
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+dotenv.config({ path: path.join(__dirname, '../.env') })
 
 const supabaseUrl = process.env.SUPABASE_URL
 const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY
@@ -55,6 +60,7 @@ async function main() {
     path.join(root, 'public', 'igcse_biology_0610_questions.json'),
     path.join(root, 'public', 'igcse_biology_0610_questions_new.json'),
     path.join(root, 'public', 'as_biology_wbi11_questions_new.json'),
+    path.join(root, 'public', 'as_biology_wbi11_questions_ocr.json'),
     path.join(root, 'public', 'as_chemistry_wch_questions_new.json'),
     path.join(root, 'public', 'as_a_level_questions_new.json'),
   ]
