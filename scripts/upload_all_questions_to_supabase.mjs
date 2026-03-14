@@ -53,6 +53,10 @@ async function main() {
     path.join(root, 'public', 'questions.json'),
     path.join(root, 'public', 'biology_questions.json'),
     path.join(root, 'public', 'igcse_biology_0610_questions.json'),
+    path.join(root, 'public', 'igcse_biology_0610_questions_new.json'),
+    path.join(root, 'public', 'as_biology_wbi11_questions_new.json'),
+    path.join(root, 'public', 'as_chemistry_wch_questions_new.json'),
+    path.join(root, 'public', 'as_a_level_questions_new.json'),
   ]
 
   const all = sources.flatMap(loadQuestions).map(mapToDb)
@@ -75,6 +79,14 @@ async function main() {
     if (error) throw error
     console.log(`Uploaded ${i + batch.length}/${unique.length}`)
   }
+
+  const [{ count: totalCount, error: totalErr }, { count: verifiedCount, error: verErr }] = await Promise.all([
+    supabase.from('questions').select('id', { count: 'exact', head: true }),
+    supabase.from('questions').select('id', { count: 'exact', head: true }).eq('verified', true),
+  ])
+  if (totalErr) throw totalErr
+  if (verErr) throw verErr
+  console.log(`Supabase totals: ${totalCount ?? 'unknown'} questions, ${verifiedCount ?? 'unknown'} verified`)
 
   console.log('Done')
 }
