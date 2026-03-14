@@ -33,7 +33,7 @@ export function Layout({ children }: LayoutProps) {
   const isHome = location.pathname === '/'
 
   return (
-    <div className="flex flex-col h-full bg-slate-900">
+    <div className="app-frame flex flex-col h-full bg-slate-900">
       {/* Header */}
       <header className="flex items-center justify-between px-4 py-3 bg-slate-800 border-b border-slate-700 shrink-0">
         <div className="flex items-center gap-3">

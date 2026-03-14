@@ -19,6 +19,25 @@ interface Paper {
   verifiedCount: number
 }
 
+const SUBJECT_META: Record<string, { name: string; code: string; timeAllowed: number; badge?: string }> = {
+  accounting: { name: 'Accounting', code: '7707', timeAllowed: 45, badge: 'O-Level' },
+  o_level_accounting: { name: 'Accounting', code: '7707', timeAllowed: 45, badge: 'O-Level' },
+  biology: { name: 'Biology', code: '5090', timeAllowed: 60, badge: 'O-Level' },
+  o_level_biology: { name: 'Biology', code: '5090', timeAllowed: 60, badge: 'O-Level' },
+  igcse_biology: { name: 'Biology', code: '0610', timeAllowed: 45, badge: 'IGCSE' },
+  as_biology: { name: 'Biology', code: 'WBI11', timeAllowed: 75, badge: 'AS' },
+  as_economics: { name: 'Economics', code: '9708', timeAllowed: 75, badge: 'AS' },
+  as_mathematics: { name: 'Mathematics', code: '9709', timeAllowed: 75, badge: 'AS' },
+  as_physics: { name: 'Physics', code: '9702', timeAllowed: 75, badge: 'AS' },
+}
+
+function normalizeSubjectKey(subject: string | undefined | null): string {
+  const s = (subject || 'accounting').toLowerCase()
+  if (s === 'o-level_accounting') return 'o_level_accounting'
+  if (s === 'o-level_biology') return 'o_level_biology'
+  return s
+}
+
 export function PaperSelect() {
   const navigate = useNavigate()
   const startExam = useExamStore((state: { startExam: (questions: Question[], mode: 'practice' | 'exam', paper: string) => void }) => state.startExam)
@@ -45,14 +64,14 @@ export function PaperSelect() {
       const stats: {[key: string]: {total: number, verified: number}} = {}
       const bySubject: {[key: string]: Question[]} = {}
       allQuestions.forEach((q) => {
-        const s = (q.subject || 'accounting').toLowerCase()
+        const s = normalizeSubjectKey(q.subject)
         bySubject[s] = bySubject[s] || []
         bySubject[s].push(q)
       })
 
-      ;(['accounting', 'biology', 'igcse_biology'] as const).forEach((s) => {
+      ;(Object.keys(SUBJECT_META) as Array<keyof typeof SUBJECT_META>).forEach((s) => {
         const list = bySubject[s] || []
-        stats[s] = {
+        stats[String(s)] = {
           total: list.length,
           verified: list.filter((q) => q.verified).length
         }
@@ -73,21 +92,22 @@ export function PaperSelect() {
       const paperMap = new Map<string, Paper>()
       filtered.forEach((q: Question) => {
         const source = q.source || {}
-        const subject = (q.subject || 'accounting').toLowerCase()
-        const code = subject === 'accounting' ? '7707' : subject === 'biology' ? '5090' : '0610'
+        const subject = normalizeSubjectKey(q.subject)
+        const meta = SUBJECT_META[subject] || { name: subject, code: subject, timeAllowed: 60 }
+        const code = meta.code
         const key = `${subject}_${source.pdf || 'unknown'}_${source.year}_${source.session}_${source.paper}`
 
         if (!paperMap.has(key)) {
           paperMap.set(key, {
             id: key,
             subject: subject,
-            subjectName: subject === 'accounting' ? 'Accounting' : subject === 'biology' ? 'Biology' : 'Biology',
+            subjectName: meta.name,
             code: code,
             year: source.year || 2020,
             session: source.session || 'May/June',
             paper: source.paper || '11',
             totalQuestions: 0,
-            timeAllowed: subject === 'accounting' ? 45 : subject === 'biology' ? 60 : 45,
+            timeAllowed: meta.timeAllowed,
             verifiedCount: 0
           })
         }
@@ -127,14 +147,14 @@ export function PaperSelect() {
   const handleStart = (paper: Paper) => {
     const paperQuestions = questions.filter((q: Question) => {
       const source = q.source || {}
-      const subject = (q.subject || 'accounting').toLowerCase()
+      const subject = normalizeSubjectKey(q.subject)
       const key = `${subject}_${source.pdf || 'unknown'}_${source.year}_${source.session}_${source.paper}`
       return key === paper.id
     })
     
     if (paperQuestions.length === 0) return
-    
-    const subjectName = selectedSubject === 'accounting' ? 'Accounting' : 'Biology'
+
+    const subjectName = paper.subjectName
     startExam(paperQuestions, selectedMode, `${subjectName} ${paper.code} Paper ${paper.paper} ${paper.year}`)
     navigate('/exam')
   }
@@ -200,9 +220,9 @@ export function PaperSelect() {
         <h2 className="text-lg font-semibold mb-4">Select Subject</h2>
         <div className="grid grid-cols-2 gap-3">
           <button
-            onClick={() => setSelectedSubject('accounting')}
+            onClick={() => setSelectedSubject('o_level_accounting')}
             className={`p-4 rounded-xl text-left transition-colors ${
-              selectedSubject === 'accounting'
+              selectedSubject === 'o_level_accounting'
                 ? 'bg-blue-500 text-white'
                 : 'bg-slate-700 hover:bg-slate-600'
             }`}
@@ -210,14 +230,15 @@ export function PaperSelect() {
             <Calculator className="w-5 h-5 mb-2" />
             <div className="font-semibold">Accounting</div>
             <div className="text-xs opacity-60 mt-1">
-              {subjectData.accounting?.total || 0} questions • {subjectData.accounting?.verified || 0} verified
+              {subjectData.o_level_accounting?.total || 0} questions • {subjectData.o_level_accounting?.verified || 0} verified
             </div>
+            <div className="text-[10px] opacity-60 mt-1">O-Level • 7707</div>
           </button>
           
           <button
-            onClick={() => setSelectedSubject('biology')}
+            onClick={() => setSelectedSubject('o_level_biology')}
             className={`p-4 rounded-xl text-left transition-colors ${
-              selectedSubject === 'biology'
+              selectedSubject === 'o_level_biology'
                 ? 'bg-green-500 text-white'
                 : 'bg-slate-700 hover:bg-slate-600'
             }`}
@@ -225,8 +246,9 @@ export function PaperSelect() {
             <Beaker className="w-5 h-5 mb-2" />
             <div className="font-semibold">Biology</div>
             <div className="text-xs opacity-60 mt-1">
-              {subjectData.biology?.total || 0} questions • {subjectData.biology?.verified || 0} verified
+              {subjectData.o_level_biology?.total || 0} questions • {subjectData.o_level_biology?.verified || 0} verified
             </div>
+            <div className="text-[10px] opacity-60 mt-1">O-Level • 5090</div>
           </button>
 
           <button
@@ -243,6 +265,70 @@ export function PaperSelect() {
               {subjectData.igcse_biology?.total || 0} questions • {subjectData.igcse_biology?.verified || 0} verified
             </div>
             <div className="text-[10px] opacity-60 mt-1">IGCSE • 0610</div>
+          </button>
+
+          <button
+            onClick={() => setSelectedSubject('as_biology')}
+            className={`p-4 rounded-xl text-left transition-colors ${
+              selectedSubject === 'as_biology'
+                ? 'bg-purple-500 text-white'
+                : 'bg-slate-700 hover:bg-slate-600'
+            }`}
+          >
+            <Beaker className="w-5 h-5 mb-2" />
+            <div className="font-semibold">Biology</div>
+            <div className="text-xs opacity-60 mt-1">
+              {subjectData.as_biology?.total || 0} questions • {subjectData.as_biology?.verified || 0} verified
+            </div>
+            <div className="text-[10px] opacity-60 mt-1">AS • WBI11</div>
+          </button>
+
+          <button
+            onClick={() => setSelectedSubject('as_mathematics')}
+            className={`p-4 rounded-xl text-left transition-colors ${
+              selectedSubject === 'as_mathematics'
+                ? 'bg-indigo-500 text-white'
+                : 'bg-slate-700 hover:bg-slate-600'
+            }`}
+          >
+            <Calculator className="w-5 h-5 mb-2" />
+            <div className="font-semibold">Mathematics</div>
+            <div className="text-xs opacity-60 mt-1">
+              {subjectData.as_mathematics?.total || 0} questions • {subjectData.as_mathematics?.verified || 0} verified
+            </div>
+            <div className="text-[10px] opacity-60 mt-1">AS • 9709</div>
+          </button>
+
+          <button
+            onClick={() => setSelectedSubject('as_physics')}
+            className={`p-4 rounded-xl text-left transition-colors ${
+              selectedSubject === 'as_physics'
+                ? 'bg-cyan-500 text-white'
+                : 'bg-slate-700 hover:bg-slate-600'
+            }`}
+          >
+            <Beaker className="w-5 h-5 mb-2" />
+            <div className="font-semibold">Physics</div>
+            <div className="text-xs opacity-60 mt-1">
+              {subjectData.as_physics?.total || 0} questions • {subjectData.as_physics?.verified || 0} verified
+            </div>
+            <div className="text-[10px] opacity-60 mt-1">AS • 9702</div>
+          </button>
+
+          <button
+            onClick={() => setSelectedSubject('as_economics')}
+            className={`p-4 rounded-xl text-left transition-colors ${
+              selectedSubject === 'as_economics'
+                ? 'bg-amber-500 text-white'
+                : 'bg-slate-700 hover:bg-slate-600'
+            }`}
+          >
+            <BookOpen className="w-5 h-5 mb-2" />
+            <div className="font-semibold">Economics</div>
+            <div className="text-xs opacity-60 mt-1">
+              {subjectData.as_economics?.total || 0} questions • {subjectData.as_economics?.verified || 0} verified
+            </div>
+            <div className="text-[10px] opacity-60 mt-1">AS • 9708</div>
           </button>
         </div>
       </div>
@@ -347,7 +433,7 @@ export function PaperSelect() {
       {/* Papers List */}
       <div>
         <h2 className="text-lg font-semibold mb-4">
-          {selectedSubject === 'accounting' ? 'Accounting' : 'Biology'} Papers ({filteredPapers.length})
+          {(SUBJECT_META[selectedSubject]?.name || 'All Subjects')} Papers ({filteredPapers.length})
         </h2>
         <div className="space-y-3">
           {filteredPapers.map((paper) => (
@@ -359,9 +445,9 @@ export function PaperSelect() {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl ${
-                    paper.subject === 'accounting' ? 'bg-blue-500/20' : 'bg-green-500/20'
+                    paper.subject.includes('accounting') ? 'bg-blue-500/20' : paper.subject.includes('math') ? 'bg-indigo-500/20' : paper.subject.includes('economics') ? 'bg-amber-500/20' : paper.subject.includes('physics') ? 'bg-cyan-500/20' : 'bg-green-500/20'
                   }`}>
-                    {paper.subject === 'accounting' ? '📊' : '🧬'}
+                    {paper.subject.includes('accounting') ? '📊' : paper.subject.includes('math') ? '📐' : paper.subject.includes('economics') ? '📈' : paper.subject.includes('physics') ? '⚛️' : '🧬'}
                   </div>
                   <div>
                     <div className="font-semibold">
@@ -405,7 +491,7 @@ export function PaperSelect() {
         </div>
         <div className="p-4 bg-slate-800 rounded-xl text-center">
           <Award className="w-5 h-5 mx-auto mb-2 text-amber-400" />
-          <div className="text-2xl font-bold">{selectedSubject === 'accounting' ? '7707' : selectedSubject === 'biology' ? '5090' : '0610'}</div>
+          <div className="text-2xl font-bold">{SUBJECT_META[selectedSubject]?.code || 'ALL'}</div>
           <div className="text-xs text-slate-400">Code</div>
         </div>
       </div>
