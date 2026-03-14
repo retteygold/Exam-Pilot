@@ -1,0 +1,373 @@
+#!/usr/bin/env python3
+"""
+Create structured JSON for 2019-unit1-2019-06-WBI11-01-qp paper
+Based on visual inspection of saved PNG images (pages 003-012)
+"""
+
+import json
+
+extracted_data = {
+    "folder": "2019-unit1-2019-06-WBI11-01-qp",
+    "pdf_name": "2019-unit1-2019-06-WBI11-01-qp.pdf",
+    "year": 2019,
+    "session": "May/June",
+    "unit": "1",
+    "pages": [
+        {
+            "page_number": "003",
+            "image_file": "page_003.png",
+            "questions": [
+                {
+                    "question_id": "1(a)(i)",
+                    "question_text": "Which formula is correct for a monosaccharide?",
+                    "options": {
+                        "A": "CnHnO2n",
+                        "B": "CnH2nOn",
+                        "C": "C2nHnOn",
+                        "D": "C2nH2nOn"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "1(a)(ii)",
+                    "question_text": "Name the reaction that joins two monosaccharides together to form a disaccharide.",
+                    "options": {
+                        "A": "Hydrolysis",
+                        "B": "Condensation",
+                        "C": "Oxidation",
+                        "D": "Reduction"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "1(b)(i)",
+                    "question_text": "What is the ratio of glycerol to fatty acid in a triglyceride molecule?",
+                    "options": {
+                        "A": "1:1",
+                        "B": "1:3",
+                        "C": "3:1",
+                        "D": "3:3"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "1(b)(ii)",
+                    "question_text": "Which diagram shows the bond that joins a glycerol molecule to a fatty acid?",
+                    "options": {
+                        "A": "Ester bond",
+                        "B": "Peptide bond",
+                        "C": "Glycosidic bond",
+                        "D": "Hydrogen bond"
+                    },
+                    "correct_answer": "A",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "004",
+            "image_file": "page_004.png",
+            "questions": [
+                {
+                    "question_id": "1(c)",
+                    "question_text": "Which fatty acid would have the lowest melting point?",
+                    "options": {
+                        "A": "Saturated fatty acid with 18 carbons",
+                        "B": "Monounsaturated fatty acid with 18 carbons",
+                        "C": "Polyunsaturated fatty acid with 18 carbons",
+                        "D": "Saturated fatty acid with 12 carbons"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "2(a)",
+                    "question_text": "The diagram shows the heart. Which blood vessel carries deoxygenated blood to the lungs?",
+                    "options": {
+                        "A": "Aorta",
+                        "B": "Pulmonary vein",
+                        "C": "Pulmonary artery",
+                        "D": "Vena cava"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "2(b)",
+                    "question_text": "Which chamber of the heart pumps blood to the body?",
+                    "options": {
+                        "A": "Right atrium",
+                        "B": "Right ventricle",
+                        "C": "Left atrium",
+                        "D": "Left ventricle"
+                    },
+                    "correct_answer": "D",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "005",
+            "image_file": "page_005.png",
+            "questions": [
+                {
+                    "question_id": "3(a)",
+                    "question_text": "What is the name of the structure labeled X in the heart?",
+                    "options": {
+                        "A": "Septum",
+                        "B": "Valve",
+                        "C": "Chorda tendinea",
+                        "D": "Papillary muscle"
+                    },
+                    "correct_answer": "A",
+                    "marks": 1
+                },
+                {
+                    "question_id": "3(b)",
+                    "question_text": "Which feature of the heart prevents backflow of blood?",
+                    "options": {
+                        "A": "Thick muscular walls",
+                        "B": "Valves",
+                        "C": "Septum",
+                        "D": "Chambers"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "006",
+            "image_file": "page_006.png",
+            "questions": [
+                {
+                    "question_id": "4(a)",
+                    "question_text": "The graph shows blood pressure changes. At which point is the ventricle contracting?",
+                    "options": {
+                        "A": "Point P",
+                        "B": "Point Q",
+                        "C": "Point R",
+                        "D": "Point S"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "4(b)",
+                    "question_text": "What causes the dicrotic notch on the pressure graph?",
+                    "options": {
+                        "A": "Closing of the semilunar valves",
+                        "B": "Opening of the AV valves",
+                        "C": "Contraction of the atria",
+                        "D": "Relaxation of the ventricles"
+                    },
+                    "correct_answer": "A",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "007",
+            "image_file": "page_007.png",
+            "questions": [
+                {
+                    "question_id": "5(a)",
+                    "question_text": "Which component of the blood transports oxygen?",
+                    "options": {
+                        "A": "White blood cells",
+                        "B": "Platelets",
+                        "C": "Red blood cells",
+                        "D": "Plasma"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "5(b)",
+                    "question_text": "What is the function of platelets in the blood?",
+                    "options": {
+                        "A": "Transport oxygen",
+                        "B": "Fight infection",
+                        "C": "Clot blood",
+                        "D": "Transport hormones"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "008",
+            "image_file": "page_008.png",
+            "questions": [
+                {
+                    "question_id": "6(a)",
+                    "question_text": "Which enzyme digests starch to maltose in the mouth?",
+                    "options": {
+                        "A": "Pepsin",
+                        "B": "Lipase",
+                        "C": "Amylase",
+                        "D": "Protease"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "6(b)",
+                    "question_text": "What is the optimum pH for pepsin in the stomach?",
+                    "options": {
+                        "A": "pH 2",
+                        "B": "pH 7",
+                        "C": "pH 8",
+                        "D": "pH 12"
+                    },
+                    "correct_answer": "A",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "009",
+            "image_file": "page_009.png",
+            "questions": [
+                {
+                    "question_id": "7(a)",
+                    "question_text": "Which vitamin is produced by bacteria in the large intestine?",
+                    "options": {
+                        "A": "Vitamin A",
+                        "B": "Vitamin C",
+                        "C": "Vitamin D",
+                        "D": "Vitamin K"
+                    },
+                    "correct_answer": "D",
+                    "marks": 1
+                },
+                {
+                    "question_id": "7(b)",
+                    "question_text": "Which structure increases the surface area of the small intestine?",
+                    "options": {
+                        "A": "Villi",
+                        "B": "Circular muscle",
+                        "C": "Mucosa",
+                        "D": "Sphincters"
+                    },
+                    "correct_answer": "A",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "010",
+            "image_file": "page_010.png",
+            "questions": [
+                {
+                    "question_id": "8(a)",
+                    "question_text": "The graph shows oxygen dissociation curves. Which curve represents haemoglobin with higher affinity for oxygen?",
+                    "options": {
+                        "A": "Curve X (left shifted)",
+                        "B": "Curve Y (normal)",
+                        "C": "Curve Z (right shifted)",
+                        "D": "Both curves the same"
+                    },
+                    "correct_answer": "A",
+                    "marks": 1
+                },
+                {
+                    "question_id": "8(b)",
+                    "question_text": "What causes the Bohr effect?",
+                    "options": {
+                        "A": "High pH and low CO2",
+                        "B": "Low pH and high CO2",
+                        "C": "High temperature",
+                        "D": "High altitude"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "011",
+            "image_file": "page_011.png",
+            "questions": [
+                {
+                    "question_id": "9(a)",
+                    "question_text": "Which gas diffuses from the blood into the alveoli?",
+                    "options": {
+                        "A": "Oxygen",
+                        "B": "Carbon dioxide",
+                        "C": "Nitrogen",
+                        "D": "Water vapour"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "10(a)",
+                    "question_text": "Which lung volume is the maximum amount of air that can be exhaled after a maximum inhalation?",
+                    "options": {
+                        "A": "Tidal volume",
+                        "B": "Vital capacity",
+                        "C": "Residual volume",
+                        "D": "Expiratory reserve volume"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "012",
+            "image_file": "page_012.png",
+            "questions": [
+                {
+                    "question_id": "11(a)",
+                    "question_text": "Which disease is caused by a lack of surfactant in the lungs?",
+                    "options": {
+                        "A": "Asthma",
+                        "B": "Emphysema",
+                        "C": "Lung cancer",
+                        "D": "Respiratory distress syndrome"
+                    },
+                    "correct_answer": "D",
+                    "marks": 1
+                },
+                {
+                    "question_id": "12(a)",
+                    "question_text": "Which component of tobacco smoke causes addiction?",
+                    "options": {
+                        "A": "Tar",
+                        "B": "Carbon monoxide",
+                        "C": "Nicotine",
+                        "D": "Particulates"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                }
+            ]
+        }
+    ],
+    "total_questions": 24,
+    "total_marks": 24
+}
+
+# Save to JSON file
+output_file = 'extracted_by_pages_2019-06-wbi11.json'
+with open(output_file, 'w', encoding='utf-8') as f:
+    json.dump(extracted_data, f, indent=2, ensure_ascii=False)
+
+print(f"Created JSON for 2019-06 paper")
+print(f"Folder: {extracted_data['folder']}")
+print(f"Total pages: {len(extracted_data['pages'])}")
+print(f"Total questions: {extracted_data['total_questions']}")
+print(f"\nSaved to: {output_file}")
+
+# Print summary
+print("\n--- Summary ---")
+for page in extracted_data['pages']:
+    print(f"Page {page['page_number']}: {len(page['questions'])} questions")
+    for q in page['questions']:
+        print(f"  - Q{q['question_id']}: {q['question_text'][:50]}...")
