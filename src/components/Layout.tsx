@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { BarChart3, Home, ChevronLeft, FileText } from 'lucide-react'
+import { BarChart3, Home, ChevronLeft, FileText, Code } from 'lucide-react'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -94,6 +94,16 @@ export function Layout({ children }: LayoutProps) {
           <span className="text-xs">Stats</span>
         </Link>
       </nav>
+
+      {/* Footer */}
+      <footer className="px-4 py-3 bg-slate-900 border-t border-slate-800 shrink-0">
+        <div className="flex items-center justify-center gap-2 text-xs text-slate-500">
+          <Code className="w-3 h-3" />
+          <span>Retts Web Dev</span>
+          <span className="text-slate-600">|</span>
+          <span>Since 2016</span>
+        </div>
+      </footer>
     </div>
   )
 }

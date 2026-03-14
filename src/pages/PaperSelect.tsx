@@ -29,7 +29,13 @@ export function PaperSelect() {
   const [loading, setLoading] = useState(true)
   const [selectedMode, setSelectedMode] = useState<'practice' | 'exam'>('practice')
   const [recommendedDifficulty, setRecommendedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium')
-  const [selectedSubject, setSelectedSubject] = useState<'accounting' | 'biology' | 'igcse_biology'>('accounting')
+  
+  // Filters
+  const [selectedSubject, setSelectedSubject] = useState<string>('all')
+  const [selectedYear, setSelectedYear] = useState<string>('all')
+  const [selectedPaper, setSelectedPaper] = useState<string>('all')
+  const [showVerifiedOnly, setShowVerifiedOnly] = useState(false)
+  
   const [subjectData, setSubjectData] = useState<{[key: string]: {total: number, verified: number}}>({})
 
   useEffect(() => {
@@ -133,9 +139,23 @@ export function PaperSelect() {
     navigate('/exam')
   }
 
-  // Filter papers by selected subject
-  const filteredPapers = papers.filter(p => p.subject === selectedSubject)
-  const currentStats = subjectData[selectedSubject] || { total: 0, verified: 0 }
+  // Get unique filter values from all papers
+  const subjects = ['all', ...Array.from(new Set(papers.map(p => p.subject)))]
+  const years = ['all', ...Array.from(new Set(papers.map(p => p.year.toString()))).sort((a: string, b: string) => parseInt(b) - parseInt(a))]
+  const paperNumbers = ['all', ...Array.from(new Set(papers.map(p => p.paper)))]
+  
+  // Apply filters
+  const filteredPapers = papers.filter(p => {
+    if (selectedSubject !== 'all' && p.subject !== selectedSubject) return false
+    if (selectedYear !== 'all' && p.year.toString() !== selectedYear) return false
+    if (selectedPaper !== 'all' && p.paper !== selectedPaper) return false
+    if (showVerifiedOnly && p.verifiedCount === 0) return false
+    return true
+  })
+  
+  // Calculate stats for selected filters
+  const totalQuestions = filteredPapers.reduce((sum, p) => sum + p.totalQuestions, 0)
+  const totalVerified = filteredPapers.reduce((sum, p) => sum + p.verifiedCount, 0)
 
   if (loading) {
     return (
@@ -257,6 +277,73 @@ export function PaperSelect() {
         </div>
       </div>
 
+      {/* Filters */}
+      <div className="p-4 bg-slate-800 rounded-2xl">
+        <h2 className="text-lg font-semibold mb-4">Filters</h2>
+        <div className="grid grid-cols-2 gap-3 mb-3">
+          {/* Subject Filter */}
+          <select 
+            className="p-3 rounded-lg bg-slate-700 text-sm"
+            value={selectedSubject}
+            onChange={(e) => setSelectedSubject(e.target.value)}
+          >
+            <option value="all">All Subjects</option>
+            {subjects.filter(s => s !== 'all').map(s => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+          
+          {/* Year Filter */}
+          <select 
+            className="p-3 rounded-lg bg-slate-700 text-sm"
+            value={selectedYear}
+            onChange={(e) => setSelectedYear(e.target.value)}
+          >
+            <option value="all">All Years</option>
+            {years.filter(y => y !== 'all').map(y => (
+              <option key={y} value={y}>{y}</option>
+            ))}
+          </select>
+          
+          {/* Paper Filter */}
+          <select 
+            className="p-3 rounded-lg bg-slate-700 text-sm"
+            value={selectedPaper}
+            onChange={(e) => setSelectedPaper(e.target.value)}
+          >
+            <option value="all">All Papers</option>
+            {paperNumbers.filter(p => p !== 'all').map(p => (
+              <option key={p} value={p}>Paper {p}</option>
+            ))}
+          </select>
+          
+          {/* Verified Toggle */}
+          <label className="flex items-center gap-2 p-3 rounded-lg bg-slate-700 cursor-pointer">
+            <input 
+              type="checkbox" 
+              checked={showVerifiedOnly}
+              onChange={(e) => setShowVerifiedOnly(e.target.checked)}
+              className="rounded bg-slate-600"
+            />
+            <span className="text-sm">Verified only</span>
+          </label>
+        </div>
+        <div className="flex items-center justify-between text-sm">
+          <span className="text-slate-400">{filteredPapers.length} papers • {totalQuestions} questions • {totalVerified} verified</span>
+          <button 
+            onClick={() => {
+              setSelectedSubject('all')
+              setSelectedYear('all')
+              setSelectedPaper('all')
+              setShowVerifiedOnly(false)
+            }}
+            className="text-blue-400 hover:text-blue-300"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+
       {/* Papers List */}
       <div>
         <h2 className="text-lg font-semibold mb-4">
@@ -313,7 +400,7 @@ export function PaperSelect() {
         </div>
         <div className="p-4 bg-slate-800 rounded-xl text-center">
           <Target className="w-5 h-5 mx-auto mb-2 text-emerald-400" />
-          <div className="text-2xl font-bold">{currentStats.total}</div>
+          <div className="text-2xl font-bold">{totalQuestions}</div>
           <div className="text-xs text-slate-400">Questions</div>
         </div>
         <div className="p-4 bg-slate-800 rounded-xl text-center">
