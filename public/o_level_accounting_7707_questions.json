@@ -1,13 +1,1094 @@
 {
   "metadata": {
-    "subject": "o_level_accounting",
-    "total_questions": 0,
-    "description": "0 o_level_accounting MCQs from past papers (OCR extracted)",
-    "years": [],
+    "subject": "O-Level Accounting",
+    "total_questions": 42,
+    "years": [
+      2024
+    ],
     "verified": false,
     "verified_count": 0,
-    "accuracy": "Auto-extracted via OCR - verification needed",
-    "ocr_extracted": true
+    "description": "42 O-Level Accounting MCQs from past papers"
   },
-  "questions": []
+  "questions": [
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "drawings made by the owner during the year wages paid to employees during the year A 1,2and3 B 1and4 C 2and3only D 2and4 20 On 31 December 2019 John had net assets of $2000 and capital of $2000. On 1 January 2020, goods costing $140 were sold on credit for $220. What was the effect of this transaction on the statement of financial position? net assets capital $ $ 80 decrease 80 decrease 80 increase 80 increase 220 decrease 220 decrease 00o DW D> 220 increase 220 increase © UCLES 2020 7707/1 4/M/J/20 [Turn over --- Page 8 --- 21 At the end of his financial year, Raminder made an adjustment for ",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s20_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Chippo owns a manufacturing business which produces product S. She provided the following information for the year ended 30 April 2020. Revenue 254000 Purchases of raw materials 46500 Purchases of finished goods 59000 Wages of factory operatives 38250 Royalties paid to the inventor of product S 7690 Factory general expenses 4500 Factory fuel and power 5325 Rent and insurance 28000 Factory machinery at cost 60000 Provision for depreciation of factory machinery 21600 Inventory at 1 May 2019: raw materials 3120 work in progress 5400 finished goods 8220 Additional information 1 Factory machinery i",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s20_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Gok is a wholesaler. He prepares his financial statements to the end of February each year. At 29 February 2020, Gok’s ledger account balances included the following. Revenue 420000 Purchases 311400 Sales returns 12000 Discount allowed 9000 Wages 12360 Rent and rates 11750 General expenses 4220 Irrecoverable debts 8600 Insurance 4500 Telephone expenses 4565 Inventory at 1 March 2019 26700 Drawings 9500 Fixtures and equipment at cost 120000 Provision for depreciation of fixtures and equipment 43200 Additional information Gok did not have time to count and value his inventory at 29 February 2020",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s20_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q2",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "atrade union seeking a wage increase for the employees 3 the business manager making decisions about how to increase profits the trader deciding if drawings could be increased A 1,3 and4 B ‘tand2onlyy C 2,3and4 D = 2and3 only ©UCLES 2021 7707/11 /M/J/21 --- Page 11 --- 33 Sabeena runs a retail business. She plans to close her business in a few weeks’ time. How should her fixtures and fittings be valued in the statement of financial position? A at book value Bat expected sales value C_atoriginal cost Dat replacement cost 34 Why should a trader match his costs for a financial year with the reven",
+      "options": [
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s21_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q32",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Sally's business has reached the overdraft limit set by the bank of $1500 and is not able to pay its debts when they fall due. Sally is considering the following proposals. asking the bank to increase the bank overdraft limit to $2000 borrowing $2000 from a relative and paying the money back in six months obtaining a loan from the bank of $2000 repayable in two years paying $2000 from Sally’s personal bank account into the business bank account Which proposals will improve the working capital of the business? 1 and2 ©UCLES 2021 B 1and4 C 2and3 D 3and4 7707/12/M/J/21 [Turn over --- Page 10 --- ",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s21_qp_12.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "32"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "TC Limited is a manufacturing company. The company’s year end is 31 January. On 31 January 2021, the company’s ledger account balances included the following. Inventory at 1 February 2020 Raw materials 7500 Work in progress 11220 Finished goods 925 Purchases Raw materials 91400 Finished goods 6850 Wages Factory operatives 52000 Factory supervisor 23100 Rent and rates 19620 Insurance 4600 General factory expenses 4200 Carriage inwards on raw materials 6280 Factory equipment at cost 90000 Provision for depreciation of factory equipment 30960 Additional information 1 Inventory at 31 January 2021 ",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s21_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(a)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(i) Name the ledger to which each of the following would be posted. Name the accounting principle which is being applied when figures from the petty cash State two purposes of issuing this statement to Leo. Advise Leo whether he should go ahead with this change. Justify your answer by providing Prepare the rent payable account for the year ended 28 February 2021. Balance the account Prepare the provision for doubtful debts account for the year ended 28 February 2021. Name the accounting principle applied when the income statement is adjusted for rent (i) Explain how the realisation principle i",
+      "options": [
+        "087",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s21_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(a)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(a)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Prepare the statement of changes in equity for HV Limited for the year ended 31 March 2021. Calculate the return on capital employed for the year ended 31 March 2021. Prepare the subscriptions account for the year ended 31 December 2020. Balance the",
+      "options": [
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s21_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(a)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Naomi opened a manufacturing business on 1 October 2019. She provided the following information. On 1 October 2019 $ Cost of factory machinery 80000 Cost of office equipment 12500 Cost of loose tools 800 During the year ended 30 September 2020 $ Revenue 184 200 Purchase of raw materials 42100 Purchase of finished goods 16800 Wages and salaries Factory workers 46 220 Factory supervisor 15940 Office staff 31680 General expenses Factory 8620 Office 1890 Rent and rates 8400 Royalties 3900 At 30 September 2020 $ Inventory Raw materials 11200 Work in progress 1680 Finished goods 4500 Loose tools at ",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s21_qp_24.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q32",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Maya had annual revenue of $100 000. In year 1, her gross margin was 45% and her profit margin was 5%. In year 2, her gross margin was 40% and her profit margin was 3%. What happened to Maya’s cost of sales and expenses in year 2? cost of sales expenses A decreased decreased B decreased increased c increased decreased D increased increased 33 Why would a bank manager be interested in the financial statements of a business? A tocalculate and assess the trade payables turnover B__ to check that the correct amount of tax is being paid C_ to ensure that employees are being paid the correct hourly ",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s22_qp_12.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "32"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(b)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Prepare the purchases returns journal for January 2022. Prepare the account for Nadia, for January 2022, as it would appear in the books of Nakul. Advise Nakul whether or not he should take longer to pay his suppliers. Justify your answer Prepare Fatima’s income statement for the year ended 31 March 2022. Prepare Fatima’s capital account for the year ended 31 March 2022. Balance the account Advise Fatima whether or not to agree to the bank loan. Justify your answer. Prepare the journal entry to record the purchase of these hairdryers. A narrative is required. Complete the table by placing a ti",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s22_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(b)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3(a)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Mosi is a trader. The totals of his trial balance at 30 April 2022 did not agree and the difference was placed in a suspense account. Mosi later discovered the following errors. Commission received, $96, had been debited to the discount received account. The entry to the bank account was correctly made. 2 The total of the sales journal for April 2022, $1258, was transferred to the sales account as $2185. 3 A cheque payment for motor expenses, $77, had been omitted from the book-keeping records. 4 Apayment by electronic transfer, $135, was recorded as a payment in the petty cash book. 5 An invo",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s22_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q31",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "bank 392 4 purchases 250 discount 8 balance c/d 150 650 650 Which statement is correct? A On 1 January, Abdul owed Hanif $400. On 4 January, Hanif purchased goods, $250, from Abdul. On 31 January, Abdul allowed Hanif $8 trade discount. 0 0o DW On 31 January, Hanif owed Abdul $150. Which items are shown on a statement of account? A bank charges credit notes debit notes 0 oO DW trade discounts A trader issues an invoice for goods sold on credit. The full price of the goods is $2500. The trader allows a trade discount of 15%, and offers a cash discount of 4% for prompt payment. Which amount is re",
+      "options": [
+        "17",
+        "18",
+        "19",
+        "20"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s23_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "31"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q2",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "drawings made by each partner during the year 3 the closing balance on each partner’s capital account the division of residual profit between the partners A 1,2and3 B 1and4 C 2and3only D 4only 24 Xand Y are in partnership with capital of $50 000 and $30 000 respectively. The partnership agreement provides that profits are to be shared in proportion to capital invested and each partner is entitled to 10% interest on capital. Profit for the year was $37 000. What was the total amount credited to Y’s current account at the end of the year? A $10875 B  $13875 C $18125 D $23125 25 What is an advant",
+      "options": [
+        "26",
+        "27",
+        "28",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s23_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3(a)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Eshe is a trader. She has prepared a trial balance at 31 March 2023. The totals did not agree and the difference was placed in a suspense account. Eshe later discovered the errors shown in the following table. REQUIRED Complete the table to show the entries required to correct each error. The first one has been completed as an example. Entries required to correct the error Error Debit Credit Account $ Account $ A payment for rent, $300, had been | Rent paid 300 Insurance 300 debited to the insurance account. Credit sales to Raymond of $105 | veces | cece | cette [cece had been debited to the s",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s23_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3(b)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The Favourite Book Club was formed several years ago. The subscription amount of $52 per annum has remained unchanged since the club started. All subscriptions are paid by cheque or credit transfer. The treasurer provided the following information. At At 1 January 31 December 2022 2022 $ $ Subscriptions in advance 260 156 Subscriptions in arrears 468 1040 Insurance paid in advance 348 366 Cash at bank 68 114 For the year to 31 December 2022: Receipts $ Subscriptions received 5356 Payments Rent paid 2080 Insurance paid 732 General expenses paid 2498 The club had 128 members in 2021 and 120 in 2",
+      "options": [
+        "2023",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s23_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3(ii)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Advise the treasurer whether she should fund the purchase of the computer equipment by increasing the subscription amount. Justify your answer by making points for and against increasing the subscription amount. Calculations are not required. esscsstsesstssesesiisssstisessassisesssssiisessnsiieesssiisesssstimeetsstisessssisssssiieessstistessssutsetisiseesanseeesneees [5] State the meaning of the following terms: receipts and payments account essessteesessisessesittessstisssssstseesssiisessssiiessssissessniussssintiessssiisssinnestsssieesssiieeesesieeeeeeneeese [1] accumulated fund essessteeses",
+      "options": [
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s23_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(ii)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q11",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "On31 May the bank statement of a business showed a positive bank balance of $1790. Comparing the bank statement with the cash book the following items were discovered. The bank had charged $35 in error. Unpresented cheques totalled $550. Uncredited deposits totalled $250. What was the cash book balance? A $1455 B $1490 C $1525 D $2125 12 What would not be included in a sales ledger control account? A cash sales recorded in the cash book B cheques received from credit customers recorded in the cash book C goods sold on credit recorded in the sales journal irrecoverable debts written off recorde",
+      "options": [
+        "1.",
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s24_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "11"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "proposed final dividend for the year ended 30 June 2019 paid on 31 October 2019 transfer to general reserve on 30 June 2020 A 1,3 and4 B 1 and 3 only C 2,3and4 D 2and4 only 25 Acompany’s financial year ends on 31 March. On 31 March 2021 trade receivables were $45 000. On 31 March 2022 trade receivables were $41 000. An irrecoverable debt of $1000 is yet to be written off at 31 March 2022. The provision for doubtful debts is to be maintained at 5%. What is the effect of the irrecoverable debt and the adjustment to the provision for doubtful debts on the profit for the year ended 31 March 2022? ",
+      "options": [
+        "4.",
+        "3.",
+        "29",
+        "30"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s24_qp_12.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(c)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Prepare the journal entry to write off the amount owing by Rachel. A narrative is required. Calculate: the total amount of money which Addo received from trade receivables during April 2024. the total amount of cash discount which Addo allowed in April 2024. Prepare Addo’s sales ledger control account for April 2024. Advise Addo whether or not he should make these changes to his credit terms. Justify your Prepare the journal entries required to correct these five errors. Narratives are not required. Calculate the corrected bank balance at 31 March 2024. Calculate the corrected profit for the y",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s24_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(c)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Partners’ current account balances are shown in the statement of financial position. 4 Partners’ salaries are shown as an expense in the income statement. A tand2 B 2and3 C 2and4 D 3and4 24 R Limited provided the following information. At 1 January 2024 ordinary share capital 350000 retained earnings 46000 general reserve 37000 For year ended 31 December 2024 profit for the year 32000 dividends paid 20000 What was the value of total equity at the end of the year? A  $408000 B  $428000 C $445000 D $465000 25 Aclub included the balance on its accumulated fund in its statement of financial positi",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s25_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q2",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The total of the discount allowed column in the cash book, $300, had been credited to the discount received account. What was Sameer’s corrected profit for the year? A $2450 B $2750 Cc $5700 D $6000 ©UCLES 2025 06_7707_12_2025_1.1 [Turn over --- Page 4 --- 10 Miguel's cash book showed a debit bank balance of $4220. He later discovered the following errors. 1 Acheque for $200, issued for the purchase of office equipment, had been recorded in error in the office expenses account. 2 Bank charges of $30 had been recorded in the cash book as $70. What was the effect of these errors on his statement",
+      "options": [
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s25_qp_12.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q32",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Which statement is a limitation of the comparison of the accounting ratios of different businesses? A Accounting records include a value for the skills of the workforce. Businesses may have the same accounting policies. C_ Businesses may have different sales prices. The available information may not relate to a typical year. ©UCLES 2025 06_7707_12_2025_1.1 --- Page 11 --- 33 Maluti has a trading business that has a bank overdraft and makes a profit. Why would the government be most interested in the financial statements of Maluti? to compile business statistics to estimate trade payable days f",
+      "options": [
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s25_qp_12.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "32"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(c)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Calculate the amount for the bank balance which Kadima would show in his statement of Advise Kadima whether or not he should make the above changes. Justify your answer by",
+      "options": [
+        "38175",
+        "52000",
+        "75000",
+        "14250"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s25_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(c)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(d)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Prepare the appropriation account for Farah and Salma for the year ended 28 February 2025. Prepare Farah’s current account for the year ended 28 February 2025. Balance the account State two reasons why Salma should not take more drawings. Advise Farah and Salma whether or not they should make the above changes. Justify your",
+      "options": [
+        "10",
+        "16000",
+        "7000",
+        "12220"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_s25_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(d)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q22",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "In addition to a share of the profit a partner receives interest on capital, a salary and is charged interest on drawings. How are these recorded in the ledger accounts of the partner? interest on capital salary interest on drawings A credit capital account credit current account debit capital account B credit current account debit capital account credit current account c credit current account credit current account debit current account D debit current account debit current account credit current account 23 A sports club provided the following information. subscriptions for the year 26 800 p",
+      "options": [
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w20_qp_12.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "22"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(e)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Identify the section of Dev’s statement of financial position at 31 August 2020 in which the State one advantage and one disadvantage to Dev of this proposal. Advise Dev whether or not he should form a limited company. Justify your answer with two",
+      "options": [
+        "24320",
+        "8190",
+        "2750",
+        "5220"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w20_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(e)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3(c)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Administrative expenses included rates of $1200 for the six months ending 31 March 2021. 4 Distribution costs of $800 were outstanding at 30 September 2020. 5  Non-current assets should be depreciated by 10% per annum using the reducing balance method. 6 Irrecoverable debts of $500 are to be written off. 7 The directors wish to maintain the provision for doubtful debts at 2% of trade receivables. © UCLES 2020 7707/22/0/N/20 --- Page 9 --- REQUIRED Calculate the cost of sales for the year ended 30 September 2020. © UCLES 2020 7707/22/0/N/20 [Turn over --- Page 10 --- Prepare the income statemen",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w20_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(f)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Prepare the following accounts for the year ended 30 September 2020. Advise Sariah whether or not she should form a partnership with Emy. Justify your answer Calculate the corrected balance of the bank columns in the cash book at 31 July 2020. Prepare a bank reconciliation statement at 31 July 2020. Clearly identify the bank statement Suggest one effect of each of the following proposals. Hire new non-current assets instead of purchasing them. Delay paying credit suppliers. Prepare the rent and rates account for the year ended 31 July 2020. Balance the account and Identify the sections of the ",
+      "options": [
+        "2020",
+        "10",
+        "2019",
+        "4500"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w20_qp_23.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(f)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q22",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The issued share capital of CD Limited consists of ordinary shares. Retained earnings were $86 000 on 1 September 2020 and $88 500 on 31 August 2021. The company made a profit during the year of $26 000 and made a transfer to general reserve of $5000. What was the total ordinary share dividend paid during the year? A $18500 B  $23500 C $28500 D $33500 23 A sports club was formed on 1 August 2020. During the year ended 31 July 2021 the club purchased equipment costing $5000, paying by cheque. In which of the club’s financial statements did this appear? receipts and payments | income and expendi",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w21_qp_13.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "22"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(a)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Name the book of prime entry which Ayesha would use to obtain the following information Suggest two reasons why the sales ledger control account had a credit balance of $420 on Calculate the gross profit and profit for the year. (i) Calculate the gross margin. Advise Jabir whether he should allow his credit customers an extra 14 days above his current Calculate the trade payables turnover. Round up your answer to the next whole day. Advise Jabir whether he should increase his current monthly purchases by 20% to earn the Prepare the manufacturing account of KA Limited for the year ended 31 July",
+      "options": [
+        "2021",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w21_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(a)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-qNone(d)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Prepare the income statement for the year ended 31 August 2021. The inventory on Name the accounting principle Shiv should apply when recording the $900 he had used for a Discuss the implications of Shiv valuing the inventory on 31 August 2021 at selling price. Complete the table by inserting a tick (“) to show how each item of expenditure should be Advise Jas whether she should rent or purchase a warehouse. Justify your answer. Prepare the following accounts for the year ended 31 December 2020. Balance each account Prepare the fixtures disposal account for the year ended 31 December 2020.",
+      "options": [
+        "2020",
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w21_qp_23.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(d)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q32",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "A trader provided the following information. year 1 year 2 gross profit $40 000 $75 000 gross margin 35% 35% profit margin 11% 22% What would explain these changes? A anincrease in selling price and a decrease in sales quantity B_anincrease in selling price and an increase in expenses C_anincrease in sales quantity and a decrease in selling price an increase in sales quantity and a decrease in expenses 33 A business renewed an insurance policy. The total amount paid was charged as an expense in the income statement for the year even though half related to the next financial year. Which account",
+      "options": [
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w22_qp_12.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "32"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "wages paid to people working on the maintenance of the machinery in the factory wages paid to people working on the assembly line putting labels on the cans A 1,2and4 B 1and3 C 2and3 D 2and4 only 29 Thembi manufactures wooden toys. She provided the following information for the financial year ended 31 August 2022. prime cost 35000 factory overheads 17000 work in progress: opening inventory 1400 closing inventory 2300 What was the cost of production of finished goods? A $49700 B $51100 C $52000 D $52900 ©UCLES 2022 7707/13/0/N/22 [Turn over --- Page 10 --- 30 Chan provided the following informa",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w22_qp_13.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3(e)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "MG has been in business for a number of years as a furniture manufacturer. On 31 August 2022 the bank column of his cash book showed the business had $25600 in the bank account. The bank statement on this date showed a credit balance of $24815. The following transactions were included only in the cash book. Cheque paid to JW 680 Cheque received from TH 910 In addition, an error had been identified. A standing order for rates of $205 had incorrectly been recorded in the cash book as $255. The following transactions were included only on the bank statement. Dishonoured cheque received from RJ 42",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w22_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(e)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q12",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The balance of the bank column in a trader’s cash book was $520 debit. The trader later discovered that the following items did not appear on his bank statement. What was the balance on the trader’s bank statement? A $130 credit B_ $130 debit C $910 credit 13 Why does a trader prepare a sales ledger control account? cheque not yet presented $80 cheque not yet credited $470 to determine when interest should be charged on overdue accounts to identify irrecoverable debts that should be written off to locate incorrect postings in the sales ledger to obtain totals to enter in the books of prime ent",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w23_qp_12.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "12"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q12",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Alicia’s cash book showed a debit balance of $100 on her bank account. She compared her cash book to the bank statement and updated the cash book for the following items. credit transfer to a credit supplier 80 credit transfer from a credit customer 112 bank interest paid 19 What was the debit balance on the bank account after the cash book was updated? A $49 B $73 C $113 D $151 13 The balance of cash at bank shown in the cash book is $1200. The bank statement at the same date shows the balance to be $1440. What could explain the difference? A_ payment to a supplier, $120, entered on the wrong",
+      "options": [
+        "78000",
+        "11000",
+        "20000",
+        "9000"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w23_qp_13.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "12"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q7",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Lionel withdrew $1000 each month from the business cash, for personal use. The remaining cash drawn from the bank was used to pay wages. © UCLES 2023 7707/22/0/N/23 --- Page 11 --- REQUIRED",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w23_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3(c)",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Rates and insurance is to be apportioned 3/5 to the factory and 2/5 to the office. Insurance of $4440 has been paid for the year to 31 December 2023. 4 At 31 July 2023, a factory repair, $644, was unpaid and no adjustment had been made. 5 Factory equipment is depreciated at 25% per annum using the reducing balance method. © UCLES 2023 7707/23/O/N/23 --- Page 9 --- REQUIRED Prepare Hilary's manufacturing account for the year ended 31 July 2023. Hilary Manufacturing Account for the year ended 31 July 2023 © UCLES 2023 7707/23/O/N/23 [Turn over --- Page 10 --- Calculate Hilary’s gross profit for ",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w23_qp_23.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "drawings made by the owner overdrawn balance at the bank A tand2 B 1and3 C 2and4 D 3and4 8 A trader had prepared her year-end financial statements. She later discovered that an adjustment to reduce the provision for doubtful debts by $100 had not been made. How did this error affect the trader’s statement of financial position? current assets capital $ $ A overstated 100 overstated 100 B overstated 100 understated 100 c understated 100 overstated 100 D understated 100 understated 100 9 A trader's draft income statement showed a profit for the year of $24 500. The following errors were later di",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w24_qp_12.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The irrecoverable debts were posted from the general journal. A 1and2 B 1and3 C 2and3 D 3only 15 At the beginning of the year on 1 January, Zac paid $420 for an equipment repair. He entered this amount in the equipment account. At the end of the year on 31 December, depreciation of 20% per annum was charged on the balance of the equipment account, using the straight-line method. What was the overall effect on the book value of the equipment on 31 December? A $84 understated B $336 overstated C $420 overstated D $504 understated ©UCLES 2025 11_7707_12_2025 --- Page 7 --- 16 Why does a business ",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w25_qp_12.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_accounting-y2024-u1-q3",
+      "subject": "o_level_accounting",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "to safeguard his personal assets from suppliers A 1and2 B 1only C 2and3 D 3only 22 Why is it important for a sole trader to prepare a statement of financial position for the business? A __ to know the net worth of the business at a certain date to list all revenues and expenses of the business to measure the profitability of business sales 0 oO DW to record all cash receipts and payments 23 X and Y have set up a partnership sharing profits in the ratio 2:1. The profit for the first year of trading was $33 000. X is entitled to interest on capital of $2000, and Y receives a partner's salary of ",
+      "options": [
+        "170",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "7707_w25_qp_13.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3"
+      }
+    }
+  ]
 }

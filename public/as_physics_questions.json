@@ -1,13 +1,296 @@
 {
   "metadata": {
-    "subject": "as_physics",
-    "total_questions": 0,
-    "description": "0 as_physics MCQs from past papers (OCR extracted)",
-    "years": [],
+    "subject": "AS Physics",
+    "total_questions": 11,
+    "years": [
+      2025
+    ],
     "verified": false,
     "verified_count": 0,
-    "accuracy": "Auto-extracted via OCR - verification needed",
-    "ocr_extracted": true
+    "description": "11 AS Physics MCQs from past papers"
   },
-  "questions": []
+  "questions": [
+    {
+      "id": "as_physics-y2025-u1-q0(ii)",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "5 + 0.4 (Total for Question 7 = 1 mark) P 7 8 8 3 1A @ 4 2 8 Onn --- Page 5 --- The table shows information about two wires made from different metals. Wire Length Cross-sectional area Young modulus of metal P L E Q L 2E A tensile force applied to P produces an extension Ax. The same tensile force is applied to Q. Which of the following is the extension of Q? (Total for Question 8 = 1 mark) P78 8 3 140528 Turn over > --- Page 6 --- 9 The acceleration-time graph for the motion of an object is shown. Acceleration Time Which of the following could be the displacement-time graph for the motion of ",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "0(ii)"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-q0(b)",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "State the principle of conservation of momentum. Rock A has a mass of 43 kg and a velocity of 7.8ms'. Rock B has a mass of 56kg and moves in the same direction as rock energy of rock B is 4.1 x 10°J. Rock B collides with rock A. After the collision, rock B continues to move in the same direction with a momentum of 530kgms\". Calculate the new velocity of rock A. New velocity of rock A= (Total for Question 14 = 6 marks) P78 8 3 1A 601 2 2 8 Onn",
+      "options": [
+        "A. The kinetic",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "0(b)"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "63 x 10-4 (Total for Question 4 = 1 mark) a NINN 0M A A A P78 8 3.2403 28 Turn over > --- Page 4 --- Two points on a wave have a phase difference of 25°. Which of the following expressions gives the phase difference in radians? 25x 20 25x 1 25, (Total for Question 5 = 1 mark) A bat is an animal that locates objects using a pulse-echo technique. A bat emits a pulse of sound waves that travel to an object. The bat detects the reflected pulse 4 ms later. speed of sound = 340ms' Which of the following expressions gives the distance, in metres, between the bat and the object? A 2x340x4x 10° 2x4x10%",
+      "options": [
+        "360",
+        "25",
+        "180",
+        "340"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "55x 10° Deduce which of these metals the wire was made from. diameter of wire = 0.24mm (Total for Question 13 = 5 marks) Turnover » --- Page 12 --- 14 A student used a semicircular glass block to investigate the refraction of light. He directed a ray of light onto the glass block, as shown. glass block",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "00 V The graph shows how the resistance of the thermistor varies with temperature. Resistance /Q 309 0 10 20 30 40 50 60 70 80 90 100 Temperature / °C",
+      "options": [
+        "60",
+        "50",
+        "40",
+        "20"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "9"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-qNone(ii)",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The student recorded the following measurements. Calculate the mean value of d. Determine the percentage uncertainty in the mean value of d. The student moved the microwave receiver towards point P. The microwave receiver Explain why there are positions of minimum intensity. The student located the first position where the intensity was a minimum. The student suggested that the wavelength / of the microwaves is given by Calculate the frequency f of the microwaves. The student increased the value of D. The student switched on the power supply and the voltmeter displayed the The student adjusted",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "None(ii)"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "70 2.58 Complete the table in the answer book with the corresponding values of 1/2. Plot a graph of V, on the y-axis against 1/A on the x-axis. Determine the value of the Planck constant given by the student’s data. The student states that the value for the Planck constant obtained from the graph is accurate. Evaluate the student’s statement. (2) (Total for Question 4 = 15 marks) TOTAL FOR PAPER = 50 MARKS P87442A 7 Om --- Page 8 --- List of data, formulae and relationships Acceleration of free fall g=98lm s° (close to Earth’s surface) Electron charge e=-1.60* 10°C Electron mass m,= 9.11 x 10°",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-qNone(b)",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "At one point during the flight, the magnetic field of the Earth was at an angle of 65° The magnetic field of the Earth had a flux density of 5.5 x 10°T. The distance XY across the wingtips was 68.4 m. The shape of the magnetic field of the Earth is shown below.",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "None(b)"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-q1(le)",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "37 x 10\" x 3.15 x 10” (Total for Question 4 = 1 mark) 5 A mass is hung from a spring attached to a fixed support. The mass is partially merged in a beaker of water, as shown. sul fixed support spring mass The mass is displaced vertically and released. Which of the following best describes the oscillation of the mass after it is released? Cc damped forced free resonant (Total for Question 5 = 1 mark) P78 8 354 03.3 6 Turn over > --- Page 4 --- 6 Star X and star Y have the same luminosity. The distance of star Y from the Earth is d. When viewed from Earth, the intensity of star X is four times t",
+      "options": [
+        "13",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "1(le)"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-q1(b)",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Show that v, = 2GM --- Page 11 --- Sagittarius A* is a black hole at the centre of our galaxy. Nothing can escape from a black hole, not even light. Calculate the maximum radius of Sagittarius A*. mass of Sun M, = 1.99 x 10°kg mass of Sagittarius A* = 4.30 x 10°M, Maximum radius of Sagittarius A* = (Total for Question 13 = 4 marks) P7883 580113 6 Turn over > --- Page 12 --- A spherical balloon has a diameter of 11.5 cm. The temperature of the air inside the balloon is 22°C. The balloon is placed in a beaker of hot water at a temperature of 95°C, as shown. Va balloon |_— beaker hot water NY The",
+      "options": [
+        "11",
+        "14",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "1(b)"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-q60(iii)",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "00 Plot a graph of In / against ¢ on the grid. Use the table in the answer book to record your processed data. You should keep the values of J in mA. 6 P87445A | il --- Page 7 --- Determine the value of R using the graph. Explain how using a data logger instead of using an ammeter and stopwatch would improve the investigation. Q) (Total for Question 3 = 15 marks) P87445A 7 Omi Turnover > --- Page 8 --- 4 A student investigated the vibration of a metal wire using the apparatus shown. a.c. power supply Not to scale electrical wooden / connector blocks magnets metal wire electrical connector pull",
+      "options": [
+        "23",
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "60(iii)"
+      }
+    }
+  ]
 }

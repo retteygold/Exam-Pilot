@@ -1,13 +1,247 @@
 {
   "metadata": {
-    "subject": "as_economics",
-    "total_questions": 0,
-    "description": "0 as_economics MCQs from past papers (OCR extracted)",
-    "years": [],
+    "subject": "AS Economics",
+    "total_questions": 9,
+    "years": [
+      2025
+    ],
     "verified": false,
     "verified_count": 0,
-    "accuracy": "Auto-extracted via OCR - verification needed",
-    "ocr_extracted": true
+    "description": "9 AS Economics MCQs from past papers"
   },
-  "questions": []
+  "questions": [
+    {
+      "id": "as_economics-y2025-u1-q69",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "9 Ceteris paribus, calculate the price elasticity of demand for music concert tickets. Show your workings. (Total for Question 10 = 4 marks) DO:NOT-WRITE IN THIS:AREA --- Page 11 --- DO:'NOT-WRITE IN THIS:AREA. 11 In 2024 global production of cotton increased by 1.2 million bales to 117.3 million bales. Over the same period the global price of cotton decreased from $78.44 to $65.35. Ceteris paribus, explain the likely impact of these changes on consumer surplus in the cotton market. Illustrate your answer with a supply and demand diagram. (Total for Question 11 = 4 marks) TOTAL FOR SECTION B =",
+      "options": [
+        "2024",
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "69"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-qNone(rupees)",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "demanded supplied",
+      "options": [
+        "15",
+        "29",
+        "40",
+        "46"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "None(rupees)"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-q1",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "20 Calculate the rate of inflation for this person between Year 1 and Year 2. Show your workings. You may wish to use the extra columns in the table. (Total for Question 9 = 4 marks) P78 8 17 A @ 8 2 8 DO:NOT-WRITE IN THIS:AREA --- Page 9 --- DO:'NOT-WRITE IN THIS:AREA. 10 The table shows the value of exports and imports of goods and services for Botswana in 2021 and 2022. Exports ($m) Imports ($m) With reference to the table, explain the impact of these changes in the value of exports and imports on the circular flow of income. (Total for Question 10 = 4 marks) P78 8 1 7A @ 9 2 8 Turnover » -",
+      "options": [
+        "80",
+        "20",
+        "2021",
+        "7475"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-q91",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "8 Cc (Total for Question 6 = 1 mark) TOTAL FOR SECTION A = 6 MARKS P87428A Om Turnover » --- Page 6 --- SECTION B Answer ALL questions in this section in the Answer Booklet. 7 The chart shows the annual rate of inflation in Bulgaria as measured by the consumer price index (CPI)*, September 2024 to March 2025. 41 4.0 4.0",
+      "options": [
+        "11",
+        "108.9",
+        "118.2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "91"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-q18(e)",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "8 Q3 Q4 Ql Q2 Q3 2023 2023 2024 2024 2024 With reference to the chart, explain one likely effect of this trend in the savings ratio on the circular flow of income in Germany. (Total for Question 8 = 4 marks) The table below shows the nominal GDP and population for Brazil in 2021 and 2023. GDP Population GDP per capita Year (USS billion) (billion) (uss) 2021 1609.6 0.2136 2023 1892.4 0.2197 With reference to the table, calculate the change in GDP per capita between 2021 and 2023. Show your workings in the Answer Booklet. (Total for Question 9 = 4 marks) P87428A 7 Omi Turnover > --- Page 8 --- 1",
+      "options": [
+        "02",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "18(e)"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-qNone(d)",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "With reference to Figure 1, calculate the percentage change in average diesel With reference to Extract A, explain the type of integration that would result from With reference to Extract A, analyse two likely benefits of the merger between With reference to Extract B, examine two reasons why some businesses made",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "None(d)"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-qNone(c)",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "With reference to Figure 1, calculate the change in India’s real GDP growth rate With reference to Figure 2, explain what is meant by ‘rate of inflation’ With reference to Extract A, examine two external shocks that could constrain",
+      "options": [
+        "100",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "None(c)"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-qNone(d)",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "With reference to the last paragraph of Extract B, analyse two likely effects of a",
+      "options": [
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "None(d)"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-q5",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "0 -5.78% 2019 2020 2021 2022 2023 2024 2025* *denotes forecast Figure 2 Annual rate of inflation, as measured by consumer price index (CPI), 2019 to 2025* Ss 2021 2022 2024 2025* *denotes forecast 2 P87430A Um --- Page 11 --- Extract A External shocks in the global economy According to India’s central bank, external shocks were the most significant constraints to the country’s rate of economic growth in 2025. These external shocks included the threat of protectionism by the USA, rising commodity prices and supply chain shocks. If the USA imposes high tariffs on goods produced in India it would",
+      "options": [
+        "100",
+        "74"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "5"
+      }
+    }
+  ]
 }

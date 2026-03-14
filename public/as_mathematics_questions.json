@@ -1,13 +1,370 @@
 {
   "metadata": {
-    "subject": "as_mathematics",
-    "total_questions": 0,
-    "description": "0 as_mathematics MCQs from past papers (OCR extracted)",
-    "years": [],
+    "subject": "AS Mathematics",
+    "total_questions": 14,
+    "years": [
+      2025
+    ],
     "verified": false,
     "verified_count": 0,
-    "accuracy": "Auto-extracted via OCR - verification needed",
-    "ocr_extracted": true
+    "description": "14 AS Mathematics MCQs from past papers"
   },
-  "questions": []
+  "questions": [
+    {
+      "id": "as_mathematics-y2025-u1-qNone(d)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Find w in terms of uw. Find the two possible values of k. Find the acceleration of P. Find the speed of P when ¢ = 3 seconds. Show that b-—c=3 Find the two possible F, forces.",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - M1 QP.pdf",
+        "year": 2025,
+        "session": "January",
+        "unit": "1",
+        "question_number": "None(d)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q7(d)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Two trains, A and B, start together from rest, at time ¢ = 0, at a station and move along parallel straight horizontal tracks. Both trains come to rest at the next station after 180s. . . _ 2 2 Train A moves with constant acceleration = ms for 30s, then moves at constant speed for 120s and then moves with constant deceleration for the final 30s. Train B moves with constant acceleration for 90s and then moves with constant deceleration for the final 90s. Sketch, on the same axes, the speedtime graphs for the motion of the two trains between the two stations. Find the acceleration of train B for",
+      "options": [
+        "2000",
+        "2038"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - M1A QP.pdf",
+        "year": 2025,
+        "session": "January",
+        "unit": "1",
+        "question_number": "7(d)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q4(c)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "In this question you may assume, without proof, that the distance of the centre of 4r mass of a uniform semicircular lamina of radius r from its diameter is — Figure 2 e uniform lamina ABDE is a rectangle with AB = 2a and AE = 8a. e uniform lamina BCD is a semicircle with diameter BD = 8a. e points P and R lie on BD with BP = RD = 2a. e uniform lamina POR is a semicircle with diameter PR = 4a. ie mass per unit area of the lamina ABDE is equal to the mass per unit area of the lamina BCD. The uniform template ABCDE, shown shaded in Figure 2, is formed by joining the amina ABDE to the lamina BCD ",
+      "options": [
+        "10",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - M2 QP.pdf",
+        "year": 2025,
+        "session": "January",
+        "unit": "1",
+        "question_number": "4(c)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q8(b)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Three particles A, B and C, each of mass m, lie at rest in a straight line L on a smooth horizontal surface, with B between A and C. Particles A and B are projected directly towards each other with speeds Su and 4u respectively. At the same instant, particle C is projected directly away from B with speed 3u. In the subsequent motion, A, B and C move along L. Particles A and B collide directly. The coefficient of restitution between A and B is e. Find the speed of A immediately after the collision, the speed of B immediately after the collision. Given that the direction of motion of A is revers",
+      "options": [
+        "2000",
+        "2038"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - M2A QP.pdf",
+        "year": 2025,
+        "session": "January",
+        "unit": "1",
+        "question_number": "8(b)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-qNone(ii)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Find the size of the largest angle of the triangle, in degrees, to one decimal place. find the length of the shortest side, in cm, to one decimal place. Using the laws of indices, solve Find the real roots of the equation",
+      "options": [
+        "3.",
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - P1 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "None(ii)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q0(ii)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "5 Use your answer to part (b)(i) to estimate 7 0s | 2* dx + 2\" dx 05 4 6 9 A 0 6 3 2 Onn --- Page 7 --- NIN 08 A A oo Turnover » P 81269 A @ 7 3 2 --- Page 8 --- P 8 1269 A @ 8 3 2 NM _— --- Page 9 --- (Total for Question 3 is 7 marks) NIN M08 A A oo Om Turnover » | P 81269 A ® 9 3 2 --- Page 10 --- In this question you must show all stages of your working. Solutions relying on calculator technology are not acceptable. f(x) = 4x° + 13x° — 10x + 8",
+      "options": [
+        "2.",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - P2 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "0(ii)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q8(c)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Accurve has equation y= (x + 2) (4—x) The finite region R is bounded by the curve and the x-axis. Using algebraic integration and showing each step of your working, find the exact area of R. Using the answer to part (a) and explaining your reasoning, find the area of the finite region bounded by the curve with equation y = (3x + 6)° [2 - is) and the x-axis. Q) (Total for Question 8 is 7 marks) 6 P87434A | il --- Page 7 --- In this question you must show all stages of your working. Solutions relying entirely on calculator technology are not acceptable. A car has five gears. Given that * the max",
+      "options": [
+        "11",
+        "2000",
+        "2038"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - P2A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "8(c)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q3(c)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The share price, £V, of a company is being monitored. A graph is drawn of log,,V against r, where f is the number of years after monitoring began. The graph is a straight line passing through the points (0,2) and (5, 2.25) Using this information, find an equation for the line in the form log,,V=mt +c where m and c are constants. Write the answer to part (a) in the form V=ab' where a and b are constants to be found. Give the exact value of a and the value of b to 3 significant figures. When ¢=T, the rate of increase in the share price of the company was £50 per year. Find the value of 7, giving",
+      "options": [
+        "10",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - P3 QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q0(d)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "66 P= 200-2 e teR 130 where P is the number of bees, measured in thousands, ¢ years after the study started. A sketch of the graph of P against ¢ is shown in Figure 3 Calculate the number of bees in the colony at the start of the study. Find ap dt The population of bees initially decreases, reaching a minimum value after T years, as shown in Figure 3 Using your answer to part (b), calculate the value of 7 to 2 decimal places. (Solutions relying entirely on calculator technology are not acceptable.) (4) (Total for Question 7 is 9 marks) P87435A | il --- Page 7 --- In this question you must show",
+      "options": [
+        "2000",
+        "2038"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - P3A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "0(d)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q9(e)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Relative to a fixed origin O, the line / has vector equation -1 2 =|-4/4+24) 1 6 -1 where J is a scalar parameter. Points A and B lie on the line /, where A has coordinates (1, a, 5) and B has coordinates (6, -1, 3). Find the value of the constant a and the value of the constant b. . > Find the vector AB The point C has coordinates (4, —3, 2) Find the size of angle CAB. @G) Find the exact area of the triangle CAB. Q) The point D lies on the line / so that the area of the triangle CAD is twice the area of the triangle CAB. Find the coordinates of the two possible positions of D. (4) (Total for ",
+      "options": [
+        "20",
+        "2000",
+        "2038"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - P4A QP.pdf",
+        "year": 2025,
+        "session": "Unknown",
+        "unit": "1",
+        "question_number": "9(e)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q2",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The weights, to the nearest kilogram, of 35 rugby players from club A are summarised in the stem and leaf diagram below. Weight (kg) Totals Key: 7 | 2 represents 72kg ll re)) 2) (9) (10) () (5) ie)",
+      "options": [
+        "10",
+        "12",
+        "13"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - S1 QP.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-q3(c)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "A fair 6-sided die is rolled. The random variable Y represents the score on the uppermost face. Write down the probability function of Y State the name of the distribution of Y Find E(4Y + 3) P84 8 42 A 01 02 8 Onn --- Page 11 --- (Total for Question 3 is 6 marks) A) TY — a NA Turn over > | P84 8 42 A060 1 1 2 8 --- Page 12 ---",
+      "options": [
+        "00",
+        "10",
+        "11",
+        "A. TY —"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - S1 QP.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-qNone(c)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Show how the results above support the manager in his belief. For a randomly selected day, find using the manager’s model, the probability that at least 4 complaints received, more than 2 but less than 7 complaints received. Test, at the 5% level of significance, whether there is significant evidence that the",
+      "options": [
+        "2.",
+        "3."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - S2 QP.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(c)"
+      }
+    },
+    {
+      "id": "as_mathematics-y2025-u1-qNone(e)",
+      "subject": "as_mathematics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Explain what you understand by the sampling distribution of a statistic. List all the possible combinations of the 3 coins that might be selected. State the value of a Find the value of b, the value of c and the value of d Find the sampling distribution of MW",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - S2 QP.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(e)"
+      }
+    }
+  ]
 }

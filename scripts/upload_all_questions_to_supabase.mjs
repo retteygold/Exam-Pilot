@@ -63,6 +63,11 @@ async function main() {
     path.join(root, 'public', 'as_biology_wbi11_questions_ocr.json'),
     path.join(root, 'public', 'as_chemistry_wch_questions_new.json'),
     path.join(root, 'public', 'as_a_level_questions_new.json'),
+    path.join(root, 'public', 'o_level_biology_questions.json'),
+    path.join(root, 'public', 'o_level_accounting_7707_questions.json'),
+    path.join(root, 'public', 'as_economics_questions.json'),
+    path.join(root, 'public', 'as_mathematics_questions.json'),
+    path.join(root, 'public', 'as_physics_questions.json'),
   ]
 
   const all = sources.flatMap(loadQuestions).map(mapToDb)

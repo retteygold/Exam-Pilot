@@ -1,13 +1,1595 @@
 {
   "metadata": {
-    "subject": "o_level_biology",
-    "total_questions": 0,
-    "description": "0 o_level_biology MCQs from past papers (OCR extracted)",
-    "years": [],
+    "subject": "O-Level Biology",
+    "total_questions": 61,
+    "years": [
+      2024
+    ],
     "verified": false,
     "verified_count": 0,
-    "accuracy": "Auto-extracted via OCR - verification needed",
-    "ocr_extracted": true
+    "description": "61 O-Level Biology MCQs from past papers"
   },
-  "questions": []
+  "questions": [
+    {
+      "id": "o_level_biology-y2024-u1-q3",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The suspensory ligaments are pulled tight. The suspensory ligaments are slackened. A 1tand3 B 1and4 C 2and3 D 2and4 23 The diagram shows three positions, X, Y and Z, where nerve impulses are blocked by a drug. brain sensory neurone spinal cord motor neurone Which person listed below moves their leg in response to a pinprick, but does not feel it? A aperson with a block at X B_aperson with a block at Y C_ aperson with a block at Z a person with no block 24 Which pair of bones form a hinge joint in the forelimb? A humerus and scapula B radius and ulna C scapula and radius ulna and humerus ©UCLES",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s21_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q0",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "4 time/seconds 1 liver <2 SX from 4 ileum poo 4— kidneys ~—3 highest lowest A 1 2 B 1 4 c 3 2 D 3 4 ©UCLES 2021 5090/12/M/J/21 [Turn over --- Page 8 --- 16 Which statement is true for aerobic respiration? A Aerobic respiration in humans occurs mainly in the alveoli. B_ Aerobic respiration releases less energy than anaerobic respiration. C_ Glucose is broken down to smaller molecules in aerobic respiration. Oxygen is broken down to release energy in aerobic respiration. 17 The graph shows the concentration of substance X in a person’s blood, before, during and after exercise. concentration of s",
+      "options": [
+        "1005",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s21_qp_12.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "0"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Asycamore tree is a producer for many food chains in a forest ecosystem. Explain what is meant by: a producer essessteesessisessesittessstisssssstseesssiisessssiiessssissessniussssintiessssiisssinnestsssieesssiieeesesieeeeeeneeese [1] a food chain. essessteesessisessesittessstisssssstseesssiisessssiiessssissessniussssintiessssiisssinnestsssieesssiieeesesieeeeeeneeese [1] The diagrams show a pyramid of numbers and a pyramid of biomass for a sycamore tree. pyramid of numbers pyramid of biomass birds of prey birds insects tree Explain the different shapes of the two pyramids. esscsstsesstssesesii",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s21_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(iii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows an elm tree. Elm trees may be infected by a fungus that causes a disease. State two characteristics of a fungus. The fungus moves through an infected tree inside the xylem vessels. The tree responds to stop the movement of the fungus by producing substances that block the xylem vessels. This causes the leaves of the tree to wilt and to become yellow. Explain how the response of the tree to infection leads to these symptoms of disease. © UCLES 2021 5090/22/M/J/21 --- Page 9 --- An insect called the elm bark beetle is the vector of this disease. Describe what is meant by the te",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s21_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(iii)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q5(iv)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Use your results to calculate heart beats per minute (pulse rate). The table shows her results. time after step heart beats/15 seconds heart beats/minute exercise/minutes 1 31 124 2 28 112 3 21 84 total number of heart beats (i) Complete the table by calculating the total number of heart beats for the 3 minutes after the step exercise. The resting pulse rate of the student before exercising was 16 heart beats in 15 seconds. Calculate the number of heart beats in a minute for this resting pulse rate. sesseteeesee 1] 1] Use your answer to (a)(ii) and the data in the table to state the effect of ",
+      "options": [
+        "10",
+        "24000",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s21_qp_61.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "5(iv)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q5(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The graph shows the pulse rate of an unfit student and a fit student before, during and after doing the Step Test. 100 if unfit a + 80++ student + pulse rate /beats per minute 60+ fit student 0 2 4 6 8 10 12 time/min",
+      "options": [
+        "140",
+        "120",
+        "40",
+        "20"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s21_qp_61.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "5(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagrams show four different plant cells. They are all carrying out aerobic respiration. Which diagram represents the movement of carbon dioxide molecules? A B c D e ee ee e ° °° °° e e oe re e ©UCLES 2022 5090/11/M/J/22 [Tu rn over --- Page 4 --- 4 The rate of nitrate ion absorption by a root hair cell was measured at different soil nitrate concentrations. At X, the concentration of nitrate in the soil is the same as in the cell. Which graph shows how the rate of absorption varies with nitrate concentration in the soil? rate of nitrate absorption 0 nitrate X concentration in the soil rate",
+      "options": [
+        "35",
+        "30",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s22_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q11",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is an example of assimilation? absorption of glycerol into lacteals breakdown of glycogen to glucose in the liver building of proteins from amino acids release of a hormone from a gland ©UCLES 2022 5090/11/M/J/22 --- Page 9 --- 12 Four plant shoots were set up as shown in the diagram, in the same environmental conditions. Waterproof petroleum jelly was applied to the plant leaf surfaces, as shown. Each beaker, with its plant shoot and water, was weighed at the start of the experiment and after 24 hours. After 24 hours the percentage loss in mass was calculated for each plant shoot. plant ",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s22_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "11"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q11",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "What is an example of assimilation? absorption of glycerol into lacteals breakdown of glycogen to glucose in the liver building of proteins from amino acids release of a hormone from a gland ©UCLES 2022 5090/12/M/J/22 --- Page 7 --- 12 A student set up an experiment to investigate the rate of transpiration in a plant. balance to measure mass The student set up two identical sets of apparatus. One was placed in a room at 20°C with bright light and one in a room at 20°C in the dark. Which graph shows the student’s results? mass mass time time seeeeee in the dark in bright light mass time time 13",
+      "options": [
+        "10",
+        "11",
+        "12",
+        "37"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s22_qp_12.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "11"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(c)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Agardener grows a species of dahlia, a flowering plant. Each year the gardener chooses his best plants and takes cuttings to make new plants. shoots are cut the cut ends are placed and into well-watered their lower soil and covered by leaves removed transparent plastic the cut ends grow roots and the cuttings develop into new plants single dahlia plant (i) Removing the lower leaves and placing the cuttings in a transparent bag helps prevent them wilting until the roots develop. Suggest and explain how these two steps help to prevent wilting. removal Of lower lEAVES .........cccsceecececeesesee",
+      "options": [
+        "45",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s22_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Name the part of the alimentary canal where absorption occurs and the blood vessel that carries the amino acids to the liver. part of alimentary Canal oo... ccc cece ceee ee eeeeneeseeseeececsceseeeesessseseeeesesesieaeeeseseeeseneeeseeets blood vessel . There are different types of transaminase. Each type has a specific active site. Explain why this means that each type catalyses a specific reaction. [Total: 5] © UCLES 2022 5090/21/M/J/22 --- Page 11 --- 5 Aplant species lives in ponds. The diagrams show the whole plant and a section through one of its leaves. plant section through leaf leave",
+      "options": [
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s22_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q0(i)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "0 0 2 4 6 8 10 12 14 16 18 20 22 24 time/hours Calculate the rate at which mass was lost during the first 6 hours. Space for working. cee eeceeceeceseaeeeeeeseeeaeeeenasaeeae g per hour [2] © UCLES 2022 5090/22/M/J/22 --- Page 7 --- Explain why mass was lost during the investigation. The student then repeated this first investigation changing only the mass of yeast. Draw a line on the graph on page 6 to show the pattern of results you would expect the student to obtain when using 7.0g of yeast. [2] © UCLES 2022 5090/22/M/J/22 [Turn over --- Page 8 --- In asecond investigation, the student prep",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s22_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "0(i)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(i)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The students set up the apparatus shown. Use the thermometer in the diagram below to read the first temperature taken. Record",
+      "options": [
+        "1077",
+        "50",
+        "60",
+        "40"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s22_qp_61.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(i)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q23",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The blood in the renal vein has a different composition to the blood in the renal artery. How is the blood in the renal vein different? less carbon dioxide, less urea, less water less oxygen, more urea, less water more carbon dioxide, less urea, less water more oxygen, less urea, less water 24 The diagram shows a reflex arc. A person was involved in an accident and their arm was injured. The sensory neurones at X were cut. Which statement describes what happens if this person touches a hot object with their finger? The person is not able to feel their finger touching the hot object but is able",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s23_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "23"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q0(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "cell from position Y (6) or@ Fig. 3.1 The cells at X divide constantly. They then increase in size and some form mature cells like the one shown from position Y. Cells at positions X and Y differ in size and shape. Give two other differences between these cells. © UCLES 2023 5090/21/M/J/23. --- Page 7 --- The tomato plant is responding to the light. Name this response and explain how auxin and cell elongation are involved. name of FOSPONSE ...........ccscecccccccnsnssescceceececnaannsssescceeesccenacaasnsesesscecnacausagenseseesnecsacassnsesessceenaaeaene OXPlAMAtION oo... eee cece cece cece c",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s23_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "0(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(c)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The nervous system coordinates and regulates body functions. Fig. 3.1 shows two diagrams, each showing parts of the nervous system in a human. diagram A diagram B Fig. 3.1 Describe the parts of the nervous system shown in each diagram. Xe TF Te] <1 51 9. pe eneptDESESESEESESESENEEEESESTSEEEESOSTSTSESEESESESESLTSTSETESTSTSSTSETESTSESSTSETESESSTSESISESETSITESTSTTSSESESTOSTSTSITON © UCLES 2023 5090/22/M/J/23. --- Page 7 --- Fig. 3.2 shows the junction between two neurones. relay neurone sensory neurone O vesicle containing neurotransmitter molecules not to scale Fig. 3.2 Name the junction shown i",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s23_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(c)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q12",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Adish is filled with agar jelly containing starch. Four holes are cut in the jelly and each hole is filled as shown in the diagram. After 30 minutes, which hole will be surrounded by the largest area without starch? amylase solution gastric protease solution and hydrochloric acid amylase solution and hydrochloric acid agar jelly gastric protease solution ©UCLES 2024 5090/1 1/M/J/24 [Tu rn over --- Page 8 --- 13 A healthy person eats a meal containing carbohydrates. Two hours later, which structure will contain a liquid with an increased concentration of glucose? A colon B hepatic portal vein C",
+      "options": [
+        "1990.",
+        "2005",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s24_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "12"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q35",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "5 12:00 00:00 12:00 00:00 12:00 00:00 18:00 06:00 18:00 06:00 18:00 time of day Which statement about the graph is correct? A_ The temperature of the person is always lower at 18:00 than at 06:00. B_ The range shown by the data is 1.0°C. C_ The temperature of the person after 9 hours from the start is 36.8 °C. Over this period, the mean temperature of the person at 18:00 is 36.8°C. ©UCLES 2024 5090/1 1/M/J/24 [Tu rn over --- Page 12 --- 26 Which process is stimulated by adrenaline in the cells of the liver? A__ breakdown of glycogen, increasing the blood glucose level B__ breakdown of excess a",
+      "options": [
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s24_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "35"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q32",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "00 ©UCLES 2024 5090/12/M/J/24 --- Page 9 --- 14 The diagram shows an alveolus and a blood capillary. alveolus wee capillary Which row identifies the letters P,Q and R? P Q R A carbon dioxide oxygen red blood cell B carbon dioxide oxygen white blood cell c oxygen carbon dioxide red blood cell D oxygen carbon dioxide white blood cell 15 What is produced during anaerobic respiration in muscles? A alcohol, carbon dioxide and water B carbon dioxide and lactic acid C_ carbon dioxide only D lactic acid only © UCLES 2024 5090/12/M/J/24 [Turn over --- Page 10 --- 16 A student measured their pulse rate ",
+      "options": [
+        "17",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s24_qp_12.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "32"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(i)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Gas exchange changes the percentages of some gases in the lungs. (i) Aman eats a piece of brown bread. Describe what happens to the fibre as it passes through his digestive system. Glucose passes from the digestive system into the blood by diffusion and active transport. Scientists have found that there are different types of starch which have molecules of different There is already glucose in the blood when the starch is eaten. Both graph lines show an initial increase in blood glucose concentration followed by a Use information from Fig. 2.1 to suggest which type of starch is healthier to ha",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s24_qp_21.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "None(i)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(ii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Complete Table 3.1, using terms from the list below to match each description to a term. phenotype dominant gene genotype heterozygous homozygous allele recessive Table 3.1 description term a form of a gene that codes for one of a pair of contrasting features) | eee eeeeeeeeeeeeeneeee a form of a gene that always has an effect whenitis present (42 | ceeeeceeeeeseseseeseeeeeeteeeneeteeeeees having two different forms of a gene for a particular feature having two of the same form of a gene for a particular feature | hence the combination of alleles that an organism has inits Chromosomes J. e",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s24_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(ii)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(ii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Pineapples are an important crop in Hawaii, USA. They were introduced to Hawaii from South America. Birds called hummingbirds pollinate pineapple flowers. If pollinated, pineapple fruits develop and they contain hard, inedible seeds. If not pollinated, pineapple fruits develop without seeds. Hummingbirds are not found in Hawaii. Suggest why it is illegal to introduce hummingbirds into Hawaii. essessteesestisetestiseesasiisessstisasessstisestsstiesssstisessnssessstiessnstisesisiiessassieesesiiesesesseeseeenseese [4] Pineapples contain a mixture of protease enzymes called bromelain. When bromela",
+      "options": [
+        "12",
+        "100",
+        "80",
+        "20"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s24_qp_22.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3(ii)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Plants can be provided with fertiliser to help them grow. Some students were provided with germinated seeds of the same species in some shallow dishes and a 10% fertiliser solution. One dish is shown in Fig. 3.1. The students had access to any other common laboratory apparatus. germinated seed ( = +: T Tana Ttat a Fig. 3.1 Plan an investigation the students could carry out to find the effect of different fertiliser concentrations on plant growth. [Total: 7] © UCLES 2024 5090/42/M/J/24 --- Page 11 --- BLANK PAGE © UCLES 2024 5090/42/M/J/24 --- Page 12 --- BLANK PAGE Permission to reproduce ",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s24_qp_42.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q11",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows a transverse section through a leaf. In which parts of the leaf can photosynthesis take place? A KandL B EandF C GandM D HandJ ©UCLES 2025 5090/1 1/M/J/25, --- Page 7 --- 12 Which transverse section photomicrograph shows the position of the xylem and phloem in a non-woody dicotyledonous stem? A B ©UCLES 2025 5090/1 1/M/J/25, [Tu rn over --- Page 8 --- 13 Students set up apparatus to measure the uptake of water by a leafy shoot. air bubble POTTOTTTT ATE ETTTT TTT TTT ETT TETTTE TTT] They recorded the position of the air bubble at the start. They observed the apparatus for 10 m",
+      "options": [
+        "10",
+        "11",
+        "2009",
+        "2010"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_s25_qp_11.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "unit": "1",
+        "question_number": "11"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Oxygen dissolves in moisture on the surface of the alveolus before diffusing into the blood. A 1and2only B 1and3o0nly C 2and3only D 1,2and3 ©UCLES 2021 5090/12/O/N/21 [Turn over --- Page 8 --- 18 The graphs show records of a person's breathing at rest and during exercise. at rest lung volume I T T 1 T T T 1 0 10 20 30 40 50 60 70 time/seconds during exercise lung volume 0 10 20 30 40 50 60 70 time/seconds What is the increase in breathing rate when the person is at rest and then exercises? AQ breaths per minute B12 breaths per minute C 21 breaths per minute 60 breaths per minute ©UCLES 2021 50",
+      "options": [
+        "20",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w21_qp_12.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q0(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "64 blood alcohol concentration 0.54 /g per dm® 0.44 0 1 2 3 4 5 6 7 time after drinking alcohol /hours Suggest how the shape of the graph can be explained by what happens in parts of the body after drinking alcohol. The graph shows that the highest blood alcohol concentration for this person after drinking alcohol is 0.75g per dm®. Suggest two reasons why the highest blood alcohol concentration may be different for two people after drinking the same volume of alcohol. Wee cece ceseeceseeneeeeseseeaeesscsusseseesuesnsuesesuseesssevseseuseneuseneeseesessuesssussesussesessesstsnseteusessnseeseses",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w21_qp_21.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "0(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The table shows the mass of each component in 250 cm of cow’s milk. component mass/g carbohydrate 11 fat 8 protein 8 (i) A 250cm% drink of cow’s milk provides 14% of the total mass of protein required each day in the diet of an average adult human. Calculate the total mass of protein required in the diet of an average adult human each day. You must state your answer to one decimal place and include correct units. bessuttessssisssesssiisetssstinessssiineecesiieseeensees [3] State two important uses of protein in the diet. Vee cceceecesceececeeceeceecscseceeceeacsecsecsececsecsessecessessessacee",
+      "options": [
+        "10",
+        "50",
+        "40",
+        "20"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w21_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(i) The study shows a probability of 20% that sexual intercourse three days before ovulation will result in pregnancy. State how many times more likely pregnancy is if sexual intercourse takes place two days later. © UCLES 2021 5090/22/0/N/21 --- Page 11 --- Explain the role of named hormones in the menstrual cycle during the days investigated by this study. essessteesestisetestiseesasiisessstisasessstisestsstiesssstisessnssessstiessnstisesisiiessassieesesiiesesesseeseeenseese [5] The diagram shows a fetus developing in the uterus of a pregnant female human. structure X Name structure X and de",
+      "options": [
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w21_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q0(c)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "785mm?. Use the data to calculate the volume of water that was transpired by the plant between four and five minutes in moving air. Give your answer to 2 decimal places. Space for working. Another student repeated this investigation a week later, but her results were different. Suggest two reasons why her results were different. [Total: 15] © UCLES 2021 5090/32/O/N/21 --- Page 11 ---",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w21_qp_32.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "0(c)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q0(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "8 3.3 Construct a line graph of the data in the table on the grid below. Join your points with ruled, straight lines. 4] Use your graph to determine the concentration of sucrose which will produce no change in mass. concentration ........0. cee [2] Describe the method you used to determine this concentration of sucrose. [Total: 28] © UCLES 2021 5090/61/O/N/21 [Turn over --- Page 8 --- The photomicrograph shows the central part of a plant root as seen under a light microscope. magnification x200 (i) The xylem and phloem are surrounded by a layer of tissue that is one cell thick. The cell labell",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w21_qp_61.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "0(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q0(c)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "785mm?. Use the data to calculate the volume of water that was transpired by the plant between four and five minutes in moving air. Give your answer to 2 decimal places. Space for working. Another student repeated this investigation a week later, but her results were different. Suggest two reasons why her results were different. [Total: 15] © UCLES 2021 5090/62/0/N/21 --- Page 11 ---",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w21_qp_62.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "0(c)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "They are formed as an extension of the outer layer of root cells. A 1,2and3 B ‘and2only C tand3only D = 2and3only ©UCLES 2022 5090/1 1/O/N/22 [Turn over --- Page 6 --- 13 The graph shows the transpiration rates of two plants during one day. Both plants were grown under identical conditions. plant X transpiration rate 00:00 03:00 06:00 09:00 12:00 15:00 18:00 21:00 00:00 time Which statement explains what the graph shows? A Plant X closes its stomata during the brightest part of the day. B_ Plant Y closes its stomata during the brightest part of the day. C_ Plants X and Y close their stomata du",
+      "options": [
+        "A. aorta",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w22_qp_11.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(nin)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "They are formed as an extension of the outer layer of root cells. A 1,2and3 B ‘and2only C tand3only D = 2and3only 13 The table shows weather conditions in a field. Which row shows conditions that would cause a plant to wilt most rapidly? air temperature humidity time of day /kmper hour A 15 raining 00:00 32 B 12 dry 14:00 24 c 6 fog/rain 08:00 3 D 5 dry 22:00 16 14 Some people have a rare heart condition in which the lower left chamber of the heart has not developed properly and is much smaller than normal. The immediate result of this condition is to cause lower than normal blood flow into wh",
+      "options": [
+        "A. aorta",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w22_qp_12.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(nin)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(ii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Guinea pigs are small mammals. In some countries they are produced for food and in others they are bred as pets. Guinea pigs can have either straight hair or curly hair. The allele for straight hair, T, is dominant to the allele for curly hair, t. (i) Explain the difference between a gene and an allele. - 2 A breeder has two straight-haired guinea pigs, male and female, and is surprised when © UCLES 2022 one of the offspring has curly hair. Complete the genetic diagram to show how this is possible. genotypes ofparents  haseeecetteteeeeees XK eeeeeeteeeteteeeees gametes possible offspring genot",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w22_qp_21.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(ii)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(i)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The graph shows how the concentration of lactose sugar changes during the formation of yoghurt from milk over a period of 48 hours. concentration 0 4 8 12 16 20 24 28 32 36 40 44 48 time/hours (i) Name the type of microorganism used in the production of yoghurt. Name the type of cell division that causes the population of this microorganism to increase over the 48-hour period. Name the acid produced by this type of microorganism in the formation of yoghurt. Draw a line on the graph to show how the concentration of this acid will change during the 48-hour period. 2 © UCLES 2022 5090/22/0/N/22 [",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w22_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(i)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(a)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "A tree produces fruits that are attached to thin leaf-like structures called bracts. One fruit with a bract is shown in the diagram. bract fruit magnification x1 Usually the whole structure shown in the diagram drops from the tree. Sometimes only the small fruit drops without the bract. A student investigated how far fruits were dispersed when they fell from the tree. An outline of the tree is shown in the diagram. 10m She used a 1m x 1m square frame. At increasing distances from the base of the tree, she placed this frame on the ground and looked at any fruits inside the frame. Some fruits st",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w22_qp_31.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The photomicrograph shows a simple plant that lives in ponds and lakes. magnification x630 In the space below make a large drawing of the plant as it appears in the photomicrograph. 6] © UCLES 2022 5090/32/O/N/22 --- Page 9 --- Draw a straight line on the photomicrograph to join lines G and H. Measure the length of this line and record it. Use your measurement to calculate the actual length of the plant. Round your answer to 3 decimal places. Space for working. - (2) [Total: 10] © UCLES 2022 5090/32/O/N/22 --- Page 10 --- BLANK PAGE © UCLES 2022 5090/32/O/N/22 --- Page 11 --- BLANK PAGE © UCLE",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w22_qp_32.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(a)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "A tree produces fruits that are attached to thin leaf-like structures called bracts. One fruit with a bract is shown in the diagram. bract fruit magnification x1 Usually the whole structure shown in the diagram drops from the tree. Sometimes only the small fruit drops without the bract. A student investigated how far fruits were dispersed when they fell from the tree. An outline of the tree is shown in the diagram. 10m She used a 1m x 1m square frame. At increasing distances from the base of the tree, she placed this frame on the ground and looked at any fruits inside the frame. Some fruits st",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w22_qp_61.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The photomicrograph shows a simple plant that lives in ponds and lakes. magnification x630 In the space below make a large drawing of the plant as it appears in the photomicrograph. 6] © UCLES 2022 5090/62/O/N/22 --- Page 9 --- Draw a straight line on the photomicrograph to join lines G and H. Measure the length of this line and record it. Use your measurement to calculate the actual length of the plant. Round your answer to 3 decimal places. Space for working. [Total: 10] © UCLES 2022 5090/62/O/N/22 --- Page 10 --- BLANK PAGE © UCLES 2022 5090/62/O/N/22 --- Page 11 --- BLANK PAGE © UCLES 2022",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w22_qp_62.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q12",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The diagram shows the human digestive system. Where do egestion and ingestion occur? egestion ingestion A 1 3 B 2 3 c 3 1 D 3 2 ©UCLES 2023 5090/1 1/O/N/23. [Turn over --- Page 8 --- 13 Which graph best represents the effect of pH on the action of gastric protease? pH ©UCLES 2023 rate of reaction rate of reaction pH rate of reaction 1 7 14 pH rate of reaction 1 7 14 pH 5090/1 1/O/N/23. --- Page 9 --- 14 The graph shows the changes in lung volume during breathing when a person was at rest and then when they began to exercise. at rest : : exercise : <_—____________» ee 5 m 1) lung volume 3 \\ / d",
+      "options": [
+        "10",
+        "19",
+        "20",
+        "21"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_11.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "12"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q0",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "4- bed net “SS SSSESSEES DPT GT FT GT FT fF FT SF YS PY VP LOK VM OK KS Which conclusion can be drawn from this data? A_ Mosauitoes bite more during the evening than after midnight (00:00). Use of bed nets prevented mosquito bites. Use of bed nets had a greater impact after midnight (00:00) than before midnight. 0 oO DW The maximum number of mosquito bites occur between 01:00 and 02:00. 21 Against which type of infection or disease are antibiotics effective? A bacterial infection Bcancer C_ heart disease viral infection ©UCLES 2023 5090/12/O/N/23. --- Page 11 --- 22 The graph shows the antibod",
+      "options": [
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_12.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "0"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The bar chart in Fig. 3.1 shows the percentage of total human body mass for the five most common elements found in the human body. percentage of total human body mass 20+ EEE EEE EEE EEE EEE fe) pees oxygen carbon hydrogen nitrogen calcium elements Fig. 3.1 Calculate the percentage of the total human body mass made up from the three most",
+      "options": [
+        "70",
+        "60",
+        "50",
+        "40"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_21.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(a)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(i) (ii) © UCLES 2023 common elements. Name two types of substance found in the human body that contain only carbon, hydrogen and oxygen. [2] 5090/21/O/N/23 --- Page 7 --- Water contains the elements hydrogen and oxygen and makes up a large percentage of an adult's total body mass. Discuss why water makes up such a high percentage of an adult's total body mass. Explain why a cell from human tissue will burst when it is placed in water. Human tissues contain different percentage masses of the elements shown in Fig. 3.1. Suggest one tissue that contains a relatively high percentage mass of nitro",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_21.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(a)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(ii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "State the term used to describe a disease-causing organism the type of disease in which the disease-causing organism is passed from one host to The disease-causing organism that causes cholera is a bacterium. Fig. 1.1 shows a photograph of the bacterium that causes cholera. The length of the bacterium in the photograph is 100mm. Use this value to calculate the Use your knowledge of a type of specialised human cell to suggest the name of The binomial name of this type of bacterium is Vibrio cholerae. Construct a food web to show the flow of energy between organisms in this ecosystem. In other m",
+      "options": [
+        "10",
+        "80",
+        "40",
+        "20"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(ii)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q6",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "0 6.5 7.0 75 8.0 8.5 9.0 pH of water Fig. 4.2 © UCLES 2023 5090/22/O/N/23 --- Page 11 --- Fig. 4.3 shows the effect of changing temperature on the solubility of oxygen in water. oxygen solubility in water /mg per dm3 0 5 10 15 20 25 30 35 40 45 50 temperature of water/°C Fig. 4.3",
+      "options": [
+        "11",
+        "15",
+        "14",
+        "13"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(i) The two test-tubes will be filled with hot water.",
+      "options": [
+        "10",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_32.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(i)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "When a seed germinates, the radicle emerges to start developing into the root. A student decided to investigate the growth of the radicle as a seed germinated. The student used a seed that had been germinating for a few days. Eight equally spaced lines were marked on the radicle as shown in Fig. 3.1. The seed was then placed in suitable conditions in the dark with the radicle pointing vertically downwards. Two days later, the radicle had grown as shown in Fig. 3.1. eight CI regularly | spaced lines when marked after growing for two more days Fig. 3.1 (i) Describe the observable changes that oc",
+      "options": [
+        "10",
+        "11",
+        "C. Measure the length of this line and record it.",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_32.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(i)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q2(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "some of the eight parts of potato in test-tube C stuck together SUGGESTION ooo... eceeccecc cece cee ceceeceeceececsecseceeseeseceuceecessaseecaecessaseecaseesassecseeeeeesseesseeceeeeeseeaees Suggest how the student can prove that it is the activity of the enzyme catalase that produces the bubbles. © UCLES 2023 5090/41/O/N/23 --- Page 5 --- Another student investigated the activity of catalase in potato by measuring the volume of oxygen produced. They added cubes of potato to hydrogen peroxide solution in the apparatus shown in Fig. 1.3. hydrogen peroxide solution ° _water potato Fig. 1.3 Nam",
+      "options": [
+        "23",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_41.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "2(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(i)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Enter all the data for the temperatures in Table 1.1.",
+      "options": [
+        "10",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w23_qp_42.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(i)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q12",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Five test-tubes containing cooked egg white are set up as shown. Cooked egg white contains a protein. Protease solutions of different pH are added to each tube. protease solution cooked egg white 2 5 Which diagram shows the results of this experiment for a protease from the stomach? 8 11 14 PH of solution key Bw protease and/or digested egg white undigested egg white ime CE CT Cl CE ‘GS Ge CLC EH “CH CE CT CE Ge Cia cr °C 1 14 PH of solution ©UCLES 2024 5090/1 1/O/N/24 [Turn over --- Page 8 --- 13 Which diagram shows the absorption of different food molecules into a villus? 14 The table shows ",
+      "options": [
+        "10",
+        "11"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w24_qp_11.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "12"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q1",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "coloured oil drop thermometer germinating seeds wire mesh water-bath sodium hydroxide (to absorb carbon dioxide) The coloured oil drop moves along the capillary tube. What causes the movement of the coloured oil drop? A carbon dioxide released heat released C oxygen used water used ©UCLES 2024 5090/12/O/N/24 --- Page 9 --- 16 A ventricular septal defect is a hole in the septum between the left and right ventricles of the heart. Which statement describes the effect on blood flow through the heart in a person with a ventricular septal defect? A Some deoxygenated blood flows into the pulmonary ve",
+      "options": [
+        "C. The time taken for 5cm? of oxygen to be produced was recorded.",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w24_qp_12.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Use words from the list to complete the paragraph. platelets glucagon pancreas plasma liver sucrose endocrine pituitary insulin glycogen Glucose is transported in solution by the component of blood called dese ceceeaeeeeeeeseeeeeseeseseeeeeeseeeeeeseeseseeeee . If the concentration of glucose in the blood increases above normal, the HOrMONE ..............ccccsecceeseeeeseeeeeseeeeseseceeeseeesseeees is released into the blood by an ..........ceececcecee cece eeeceeeeeeseeeeeeeeeeteeae gland called the ces ceseeeeaeeeceeseceeesseesseesesseeecseesesseeeeseseeees . This hormone promotes the r",
+      "options": [
+        "2020.",
+        "35000",
+        "3000044",
+        "25000"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w24_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(iii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Explain why it is important to clean the stirring rod after using it in each test-tube. Measure the distance that the yeast mixtures have moved from the marked starting levels",
+      "options": [
+        "10",
+        "15"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w24_qp_31.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(iii)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(i) State the labels that you would use on the three test-tubes. (i) Complete Table 1.2:",
+      "options": [
+        "10",
+        "15"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w24_qp_41.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q3",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "oxygen moving from the lungs into blood capillaries 4 production of antibodies by lymphocytes water entering a bacterial cell by osmosis A 1,2and3 B 1,2and4 C 2,3and4 D 3,4and5 15 During vigorous exercise, lactic acid builds up in the muscles. Blood leaving these muscles will have a high concentration of lactic acid. Which process removes most of the lactic acid from the blood? A tis broken down in the liver. B_Itis excreted during sweating. C_ itis expired during faster breathing. It is oxidised to release energy in muscles. ©UCLES 2025 5090/1 1/O/N/25 --- Page 9 --- 16 The table shows the me",
+      "options": [
+        "A. calcium",
+        "10",
+        "11",
+        "12"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w25_qp_11.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-q22",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "The graph shows blood glucose concentration over 6 hours in a day. blood glucose a concentration 10 /arbitrary units 0 1 2 3 4 time/hours What is the set point for blood glucose concentration shown by this graph? A 5 arbitrary units B10 arbitrary units C15 arbitrary units D 20 arbitrary units 23 Which hormone can be used to treat Type 1 diabetes? A adrenaline B_ oestrogen C_ glucagon insulin ©UCLES 2025 5090/1 1/O/N/25",
+      "options": [
+        "20",
+        "15"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w25_qp_11.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "22"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(b)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 2.1 is a diagram showing the average daily water intake and average daily water loss for Calculate the percentage of average daily water intake that is lost in sweat from an adult The percentage of water lost in sweat is not always the same. Ascientist measured the mass of water taken up and lost by a plant over 21 hours. The plant",
+      "options": [
+        "70",
+        "60",
+        "50"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w25_qp_22.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(b)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(iii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Observe the colour of the crushed apple in each test-tube at 5, 10 and 15 minutes and",
+      "options": [
+        "10",
+        "15"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w25_qp_31.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(iii)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(ii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(i) Complete Table 1.1 by calculating the mean times for the filter paper discs, from tissues Using your results in Table 1.1, state what you can conclude about catalase in the plant (i) Suggest why the filter paper discs were left on the cut surfaces of the plant tissues while On Fig. 2.1, draw a straight line to join D and E. Measure the length of the line and record it. The population of this plant grows by each plant dividing into two smaller plants. These Suggest why the students added nutrients to the distilled water. Count the total number of leaves visible in Fig. 2.2 and enter the num",
+      "options": [
+        "16",
+        "20",
+        "29",
+        "55"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w25_qp_32.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(ii)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(iii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Complete the headings in Table 1.1 and use the observations in Fig. 1.1 to complete the",
+      "options": [
+        "10",
+        "15"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w25_qp_41.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(iii)"
+      }
+    },
+    {
+      "id": "o_level_biology-y2024-u1-qNone(ii)",
+      "subject": "o_level_biology",
+      "yearGroup": "year11",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(i) On Fig. 2.1, draw a straight line to join D and E. Measure the length of the line and record it. The population of this plant grows by each plant dividing into two smaller plants. These Suggest why the students added nutrients to the distilled water. Count the total number of leaves visible in Fig. 2.2 and enter the number in Table 2.1.",
+      "options": [
+        "16",
+        "20",
+        "29",
+        "55"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "5090_w25_qp_42.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "unit": "1",
+        "question_number": "None(ii)"
+      }
+    }
+  ]
 }
