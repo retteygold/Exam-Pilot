@@ -35,49 +35,58 @@ def parse_mark_scheme(text, paper_info):
     # Clean up text
     text = re.sub(r'©\s*UCLES\s*\d+[^\n]*', '', text)
     text = re.sub(r'Cambridge IGCSE.*?Mark Scheme', '', text, flags=re.DOTALL)
+    text = re.sub(r'Page \d+ Mark Scheme.*?Syllabus Paper', '', text, flags=re.DOTALL)
     
-    # Cambridge mark scheme format:
-    # Question | Answer | Marks
-    # 1        | A      | 1
-    
-    # Look for question-answer pairs
-    # Pattern: question number followed by answer letter
+    # Cambridge mark scheme formats:
+    # Format 1: "Question Key Number" table with two columns (older papers)
+    # Format 2: "1 A", "1  A  1", "1 | A | 1" (newer papers)
     
     lines = text.split('\n')
     
-    for line in lines:
+    # First pass: look for table format with Question/Key headers
+    in_table = False
+    for i, line in enumerate(lines):
         line = line.strip()
         if not line:
             continue
         
-        # Match patterns like "1 A", "1  A  1", "1 | A | 1"
-        # Question number (1-40), then answer (A-D), optional marks
-        match = re.match(r'^(\d{1,2})\s*[\|\s]\s*([A-D])\s*(?:[\|\s]\s*\d+)?$', line)
+        # Detect table header
+        if re.search(r'Question.*Key|Key.*Number', line, re.IGNORECASE):
+            in_table = True
+            continue
+        
+        # Two-column table format: "1 A 21 C" or "1 A 21 C"
+        # Match two question-answer pairs on same line
+        match = re.match(r'^(\d{1,2})\s+([A-D])\s+(\d{1,2})\s+([A-D])', line)
+        if match:
+            q1, a1, q2, a2 = match.groups()
+            answers[int(q1)] = ord(a1) - ord('A')
+            answers[int(q2)] = ord(a2) - ord('A')
+            continue
+        
+        # Single question-answer pair: "1 A" or "1  A"
+        match = re.match(r'^(\d{1,2})\s+([A-D])\b', line)
         if match:
             q_num = int(match.group(1))
             answer = match.group(2)
-            # Convert A-D to 0-3
-            answer_idx = ord(answer) - ord('A')
-            answers[q_num] = answer_idx
+            answers[q_num] = ord(answer) - ord('A')
             continue
         
-        # Alternative: "1A" or "1. A" or "1) A"
-        match = re.match(r'^(\d{1,2})[\.\)]?\s*([A-D])\b', line)
-        if match:
-            q_num = int(match.group(1))
-            answer = match.group(2)
-            answer_idx = ord(answer) - ord('A')
-            answers[q_num] = answer_idx
-            continue
-        
-        # Table format: look for lines with numbers and letters
-        # e.g., "1 A 1" or "2 C 1"
+        # Format with optional marks: "1 A 1" or "1  A   1"
         match = re.match(r'^(\d{1,2})\s+([A-D])\s+\d+$', line)
         if match:
             q_num = int(match.group(1))
             answer = match.group(2)
-            answer_idx = ord(answer) - ord('A')
-            answers[q_num] = answer_idx
+            answers[q_num] = ord(answer) - ord('A')
+            continue
+        
+        # Pipe-separated format: "1 | A | 1"
+        match = re.match(r'^(\d{1,2})\s*\|\s*([A-D])\s*(?:\|\s*\d+)?$', line)
+        if match:
+            q_num = int(match.group(1))
+            answer = match.group(2)
+            answers[q_num] = ord(answer) - ord('A')
+            continue
     
     return answers
 
