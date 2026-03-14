@@ -598,6 +598,42 @@ export function Admin() {
                   />
                 </div>
 
+                {/* PDF Page Image Viewer */}
+                {selected.source?.pdf && (
+                  <div className="border border-slate-700 rounded-xl overflow-hidden">
+                    <button
+                      onClick={() => setShowPdfImage(!showPdfImage)}
+                      className="w-full p-3 flex items-center justify-between bg-slate-700/50 hover:bg-slate-700"
+                    >
+                      <div className="flex items-center gap-2">
+                        <FileText className="w-4 h-4" />
+                        <span className="font-medium text-sm">PDF Page Image</span>
+                        <span className="text-xs text-slate-400">{selected.source.pdf}</span>
+                      </div>
+                      {showPdfImage ? <ChevronUp className="w-4 h-4"/> : <ChevronDown className="w-4 h-4"/>}
+                    </button>
+                    
+                    {showPdfImage && (
+                      <div className="p-4 space-y-3">
+                        <div className="text-xs text-slate-400 mb-2">
+                          Look at this image to verify/correct the question text and options
+                        </div>
+                        <img 
+                          src={`/pdf_images/${selected.source.pdf.replace('.pdf', '')}/page_003.png`}
+                          alt="PDF Page"
+                          className="max-h-64 rounded-lg border border-slate-600 mx-auto"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src = '/pdf_images/' + selected.source.pdf.replace('.pdf', '') + '/page_004.png';
+                          }}
+                        />
+                        <div className="text-xs text-slate-500 text-center">
+                          Images saved in: public/pdf_images/{selected.source.pdf.replace('.pdf', '')}/
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                )}
+
                 {/* Image Section - Collapsible */}
                 <div className="border border-slate-700 rounded-xl overflow-hidden">
                   <button
