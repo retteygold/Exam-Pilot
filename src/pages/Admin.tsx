@@ -62,7 +62,7 @@ export function Admin() {
       try {
         const questions = await fetchAllQuestionsFromSupabase()
         setAllQuestions(questions)
-        setResults(questions.slice(0, 100)) // Show first 100
+        setResults(questions) // Show ALL questions, not just first 100
       } catch (e) {
         console.error('Failed to load questions:', e)
       } finally {
@@ -212,7 +212,7 @@ export function Admin() {
       // Reload all questions
       const qs = await fetchAllQuestionsFromSupabase()
       setAllQuestions(qs)
-      setResults(qs.slice(0, 100))
+      setResults(qs)
       const updated = qs.find((q: Question) => q.id === savedId)
       if (updated) {
         console.log('Re-selecting updated question with imagePath:', updated.imagePath)
@@ -238,7 +238,7 @@ export function Admin() {
       // Reload all questions
       const qs = await fetchAllQuestionsFromSupabase()
       setAllQuestions(qs)
-      setResults(qs.slice(0, 100))
+      setResults(qs)
     } catch (e: any) {
       setSaveStatus(e?.message || 'Delete failed')
     } finally {
