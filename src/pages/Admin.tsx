@@ -451,12 +451,11 @@ export function Admin() {
                   >
                     <div className="flex items-center justify-between">
                       <div className="min-w-0 flex-1">
-                        <div className="text-sm font-medium truncate">{group.subject}</div>
-                        <div className="text-xs text-slate-400 truncate" title={group.pdf}>
-                          {group.year} • Paper {group.paper}
-                        </div>
-                        <div className="text-[10px] text-slate-500 truncate" title={group.pdf}>
+                        <div className="text-sm font-medium truncate text-blue-300" title={group.pdf}>
                           {group.pdf}
+                        </div>
+                        <div className="text-xs text-slate-400 truncate">
+                          {group.subject} • {group.year} • Paper {group.paper}
                         </div>
                       </div>
                       <div className="text-right ml-2 shrink-0">
@@ -519,6 +518,12 @@ export function Admin() {
                     >
                       <option value="biology">O-Level Biology (5090)</option>
                       <option value="igcse_biology">IGCSE Biology (0610)</option>
+                      <option value="as_biology">AS Biology (WBI11)</option>
+                      <option value="o_level_biology">O-Level Biology (5090)</option>
+                      <option value="o_level_accounting">O-Level Accounting (7707)</option>
+                      <option value="as_economics">AS Economics</option>
+                      <option value="as_mathematics">AS Mathematics</option>
+                      <option value="as_physics">AS Physics</option>
                       <option value="accounting">Accounting (7707)</option>
                     </select>
                   </div>
