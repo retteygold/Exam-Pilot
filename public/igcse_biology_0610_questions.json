@@ -1,8 +1,8 @@
 {
   "metadata": {
     "subject": "IGCSE Biology (0610)",
-    "total_questions": 1288,
-    "description": "1288 IGCSE Biology MCQs from Multiple Choice papers (1x, 2x series)",
+    "total_questions": 1377,
+    "description": "1377 IGCSE Biology MCQs from past papers (2024-2025)",
     "years": [
       2020,
       2021,
@@ -12,7 +12,7 @@
       2025
     ],
     "verified": false,
-    "verified_count": 1288,
+    "verified_count": 1289,
     "accuracy": "1289 answers verified from mark schemes"
   },
   "questions": [
@@ -4982,6 +4982,303 @@
         "session": "May/June",
         "paper": "23",
         "question_number": "9"
+      }
+    },
+    {
+      "id": "0610-y2020-p31-q8",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 8.1 is a diagram of a section of human skin. C G D F E Fig. 8.1 State the names of the structures identified by the labels in Fig. 8.1.",
+      "options": [
+        "..............................................................................................................................................",
+        ".............................................................................................................................................. E .........................................................................................................",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_31.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "8"
+      }
+    },
+    {
+      "id": "0610-y2020-p32-q7",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Researchers investigated the effects of using a fertiliser on the number of leaves grown by plants. The fertiliser contained nitrate and magnesium ions. Plants in group 1 were grown in soil with fertiliser. Plants in group 2 were grown in soil without fertiliser. The results are shown in Fig. 7.1. 80 70 60 50 average number of leaves per plant 40 30 20 10 0 10 20 30 40 50 days after planting key: ",
+      "options": [
+        "student wrote a series of statements to explain why an increase in nitrate and magnesium ions increased the number of leaves. Not all of the statements are correct. A \u2013 Magnesium is required for the synthesis of chlorophyll.",
+        "\u2013 Nitrate ions are a component of carbohydrates.",
+        "\u2013 Chlorophyll is required for photosynthesis.",
+        "\u2013 Proteins are needed for growth. E \u2013 Plants make their own food by the process of respiration. F \u2013 Respiration produces glucose. State the letters of the correct statements. ..........................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_32.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "32",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "0610-y2020-p41-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "........................................................................................................................................ ........................................................................................................................................... [2] 12 (b) Fig. 4.2 shows a section through a carpel shortly after pollination. E D C B A Fig. 4.2 (i) State the names of t",
+      "options": [
+        ".......................................................................................................................................",
+        "....................................................................................................................................... E ................................................................................................................",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_41.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "41",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2020-p42-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Homeostasis is the maintenance of a constant internal environment. (a) Human skin is involved in the maintenance of a constant internal body temperature. (i) Skin is an organ. State why the skin is an organ. ........................................................................................................................................... ....................................................",
+      "options": [
+        "F E",
+        "D",
+        "Fig. 1.1 (iii) State the names of structures A, B and C in Fig. 1.1. A ........................................................................................................................................ B ........................................",
+        "is a shunt vessel and E is an arteriole. Describe how these blood vessels are involved in maintaining a constant internal body temperature in a cold environment. ........................................................................................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_42.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "42",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2020-p42-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "hours 40 20 0 0.5 \u03bcm 0.8 \u03bcm 2.4 \u03bcm 5.0 \u03bcm 8.0 \u03bcm bead size Key: umbilical cord placenta Fig. 2.1 7 (i) Convert the diameter of the 5.0 \u00b5m beads into millimetres (mm). Space for working. ................................................... mm [1] (ii) One million beads with a diameter of 2.4 \u00b5m were injected into the placenta. Calculate the number of these beads in the umbilical cord after 3 hours. ",
+      "options": [
+        "B Key: electrical signal neurotransmitter C drug X D relay neurone drug X absent drug X present Fig. 2.2 (i) State the names of A,",
+        ",",
+        "and",
+        "in Fig. 2.2. A ........................................................................................................................................ B ................................................................................................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_42.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "42",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2020-p43-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "................................................................................................................................................ [3] (b) Fig. 1.1 shows part of the digestive system of a human.",
+      "options": [
+        "diaphragm",
+        "L K",
+        "H G",
+        "F E Fig. 1.1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_43.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "43",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2020-p51-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Sugars are a source of energy in the diet. You are going to estimate the concentration of glucose in an energy drink (D). Read all the instructions but DO NOT C",
+      "options": [
+        ",",
+        "and",
+        "Step 2 U se the volumes of 4% glucose solution and distilled water shown in Table 1.1 to make three different concentrations of glucose solution in test-tubes A, B and C. (a) (i) Complete Table 1.1 by calculating and writing in the percentage concent",
+        "which contains 10 cm3 of energy drink D. Shake the test-tube gently for 3 seconds to mix the contents. Step 5 R aise your hand when you are ready for hot water to be put into the beaker labelled water-bath. Step 6 M easure the temperature of the hot "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_51.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "51",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2020-p53-q10",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "mm not to scale Fig. 1.1 (i) Calculate the surface area and volume for the cube shown in Fig. 1.1. surface area ...................................................... mm2 volume ...................................................... mm3 [2] Step 2 Label four test-tubes",
+      "options": [
+        ",",
+        ",",
+        "and",
+        "Step 3 U se the information in Table 1.1 and the syringes provided to add the appropriate volumes of 1.0 mol per dm3 hydrochloric acid (HCl ) and water to each labelled test-tube. Table 1.1 final concentration of volume of volume of water HCl test-tu"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_53.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "53",
+        "question_number": "10"
+      }
+    },
+    {
+      "id": "0610-y2020-p61-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Sugars are a source of energy in the diet.",
+      "options": [
+        "student wanted to estimate the concentration of glucose in an energy drink (D). Step 1 Three test-tubes were labelled A,",
+        "and",
+        "Step 2 T hree different concentrations of glucose solution were prepared as shown in Table 1.1. (a) (i) Complete Table 1.1 by calculating and writing in the volume of 4% glucose solution used in test-tube B. Table 1.1 volume of 4% glucose solution vo",
+        "which contained 10 cm3 of energy drink D. The test-tube was gently shaken for 3 seconds to mix the contents. Step 5 Hot water was put into a beaker that was used as a water-bath. Step 6 The temperature of the hot water in the water-bath (initial temp"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_61.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "61",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2020-p62-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "A student investigated the effect of temperature on diffusion. Dialysis tubing was used to represent a cell membrane. Cell membranes are partially permeable. Step 1 O ne test-tube was labelled C and another test-tube was labelled H. The student drew a small X on the outside of each test-tube as shown in Fig. 1.1. C H X X Fig. 1.1 Step 2 T he student was given two pieces of dialysis tubing. A knot ",
+      "options": [
+        "The open end of the dialysis tubing was folded over the top of the test-tube. It was secured with an elastic band as shown in Fig. 1.2. CC open end of the dialysis tubing bag folded over the top of elastic band the test-tube dialysis tubing bag conta",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_62.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "62",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2020-p63-q10",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "mm not to scale Fig. 1.1 (i) Calculate the surface area and volume for the cube shown in Fig. 1.1. surface area .......................................................mm2 volume .......................................................mm3 [2] Step 1 T he student used the information in Table 1.1 to add the appropriate volumes of 1.0 mol per dm3 hydrochloric acid (HCl) and water to four test-tubes la",
+      "options": [
+        ",",
+        ",",
+        "and",
+        "Table 1.1 volume of final concentration of HCl volume of water test-tube 1.0 mol per dm3 HCl / cm3 / cm3 / .............................. A 5.0 0.0 1.0 B 2.5 2.5 .............................. C 0.5 4.5 0.1 D 0.0 5.0 0.0 (ii) Complete Table 1.1 by: \u2022"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s20_qp_63.pdf",
+        "year": 2020,
+        "session": "May/June",
+        "paper": "63",
+        "question_number": "10"
       }
     },
     {
@@ -10922,6 +11219,546 @@
         "session": "May/June",
         "paper": "23",
         "question_number": "9"
+      }
+    },
+    {
+      "id": "0610-y2021-p31-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 2.1 is a front view diagram of the male reproductive system in humans.",
+      "options": [
+        "B C D Fig. 2.1 The boxes on the left show the letters identifying the parts in Fig. 2.1. The boxes on the right show the functions of some of the parts of the male reproductive system. Draw lines to link each letter to its function. Draw four lines. ",
+        "sac that holds the testes",
+        "tube carrying semen and urine",
+        "tube carrying sperm to urethra [4]"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_31.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2021-p31-q7",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Modern technology has improved food production. Table 7.1 shows some of the ways that food production has been improved. Complete Table 7.1 by writing an example for each description. Table 7.1 description of how it has improved example of technology food production used to farm larger areas of land used to improve growth in plants by providing nutrients used to improve yield by removing anima",
+      "options": [
+        "to E in Table 7.2 describe the selective breeding of chickens to improve meat quantity. The sentences are not in the correct order. Table 7.2",
+        "reed the chickens together. A Observe the chickens to identify those that will yield the most meat. B Observe the offspring and select the offspring that will yield the most meat.",
+        "Repeat the process over many generations.",
+        "Select one male and one female chicken. E Put the letters from Table 7.2 into the correct order. One has been done for you. A [2] (d) Lack of food can affect the population size of animals in ecosystems. State two other factors that could decrease po"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_31.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "0610-y2021-p32-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 1.1 is a diagram of the alimentary canal and associated organs. A K B J C D H G E F Fig. 1.1 (a) State the letter from Fig. 1.1 that identifies the part where: alcohol is broken down .................................. egestion occurs .................................. hydrochloric acid is produced .................................. mechanical digestion occurs .................................",
+      "options": [
+        ".............................................................................................................................................. H .........................................................................................................",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m21_qp_32.pdf",
+        "year": 2021,
+        "session": "March",
+        "paper": "32",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2021-p32-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "........................................................................................................................................ ........................................................................................................................................... [2] (ii) State the chemical used to test for the presence of carbon dioxide gas and the positive test result. chemical ....",
+      "options": [
+        "B D C Fig. 2.1 Identify the parts labelled A,",
+        ",",
+        "and",
+        "in Fig. 2.1. A ............................................................................................................................................... B ........................................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w21_qp_32.pdf",
+        "year": 2021,
+        "session": "Oct/Nov",
+        "paper": "32",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2021-p32-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Define the term transpiration by completing the sentences. Transpiration is the loss of water vapour from plant leaves by ............................................... of water at the surfaces of the mesophyll cells followed by ............................................... of water vapour through the ............................................... . [3] (b)",
+      "options": [
+        "student investigated the volume of water lost in one hour by different species of plants at different temperatures. Fig. 5.1 shows the results. Key: cool temperature hot temperature 9 8 7 6 volume of 5 water loss / cm3 4 per hour 3 2 1 0 A",
+        "plant species Fig. 5.1 13",
+        "ompare the volume of water loss in species A and species B. ................................................................................................................................................... ..........................................",
+        "raw one additional bar on Fig. 5.1, for species B only, to show the expected result. [1] (d) State the name of the vessels that transport water through a plant. ........................................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w21_qp_32.pdf",
+        "year": 2021,
+        "session": "Oct/Nov",
+        "paper": "32",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2021-p32-q7",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 7.1 is a diagram of the circulatory system. lungs F A B E heart liver alimentary canal C D kidneys other organs Fig. 7.1 (i) State the names of the blood vessels labelled A, C and E in Fig. 7.1.",
+      "options": [
+        ".......................................................................................................................................",
+        "....................................................................................................................................... E ................................................................................................................",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m21_qp_32.pdf",
+        "year": 2021,
+        "session": "March",
+        "paper": "32",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "0610-y2021-p33-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 3.1 shows a diagram of a cross\u2011section through a leaf. D F E Fig. 3.1 (i) State the name of the tissues labelled D and E.",
+      "options": [
+        "....................................................................................................................................... E ................................................................................................................",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w21_qp_33.pdf",
+        "year": 2021,
+        "session": "Oct/Nov",
+        "paper": "33",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2021-p33-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Carbon is a part of many biological molecules. (a) Fig. 6.1 is a diagram of part of the carbon cycle. CO in the 2 atmosphere combustion",
+      "options": [
+        "B carbon feeding carbon compounds compounds in in C plants decomposition carbon carbon compounds compounds in D in decomposers Fig. 6.1 (i) State the name of the process labelled A. ....................................................................",
+        "..................................................................................................................................... [1] (iii) State the name of",
+        "..................................................................................................................................... [1] (iv) State the name of",
+        "..................................................................................................................................... [1]"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w21_qp_33.pdf",
+        "year": 2021,
+        "session": "Oct/Nov",
+        "paper": "33",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2021-p33-q8",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) (i) State the type of pathogen that can be treated with antibiotics. ..................................................................................................................................... [1] (ii) State the name of the pathogen that can lead to",
+      "options": [
+        "IDS. ..................................................................................................................................... [1] (b) Many pathogens have developed resistance to some antibiotics. A study took samples of pathogens and tes",
+        "antibiotic",
+        "20 percentage of pathogens sampled that show resistance 10 0 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012 2013 year Fig. 8.1 (i) State the meaning of antibiotic resistance. .........................................................",
+        "escribe the pattern of resistance for the three antibiotics shown in Fig. 8.1. ........................................................................................................................................... ..............................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w21_qp_33.pdf",
+        "year": 2021,
+        "session": "Oct/Nov",
+        "paper": "33",
+        "question_number": "8"
+      }
+    },
+    {
+      "id": "0610-y2021-p41-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": ".......................................................................... Fig. 3.1 (i) Complete Fig. 3.1 by adding labels for the axes at 1 and 2 . [1] (ii) State the names of the stages of population growth of the bacteria labelled P to S. P ........................................................................................................................................ Q .................",
+      "options": [
+        "thaliana. ..................................................................................................................................... [1] 11 (ii) Describe how the gene from A. thaliana and the DNA from cassava form recombinant DNA. ........",
+        "",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_41.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "41",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2021-p42-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 1.1 shows several villi from the ileum, which is part of the small intestine. (a) State the name of one other part of the small intestine. ............................................................................................................................................. [1] area enlarged in Fig. 1.2 lacteal goblet cells Fig. 1.1 Fig. 1.2 shows the tip of a villus in more detail. gob",
+      "options": [
+        "\u2013 1% amylase solution",
+        "\u2013 1% pectinase solution",
+        "\u2013 distilled water",
+        "\u2013 fungal extract. The Petri dishes were kept at 27 \u00b0C for four days. After this time a dye was poured into each dish to stain the areas where starch and pectin remained. Fig. 1.3 shows drawings of the stained agar in the Petri dishes. The clear zones"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w21_qp_42.pdf",
+        "year": 2021,
+        "session": "Oct/Nov",
+        "paper": "42",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2021-p42-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 3.1 shows some of the events that occur in the menstrual cycle.",
+      "options": [
+        "follicle is fully developed",
+        "gamete is released into the oviduct",
+        "lining of the uterus is removed from the body",
+        "lining of the uterus reaches a maximum thickness E lining of the uterus gets thicker Fig. 3.1 (i) Put the events shown in Fig. 3.1 into the correct sequence. One has been done for you. B [1] (ii) State the name of the hormone that stimulates event A "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_42.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "42",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2021-p43-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 2.1 is a photomicrograph of the end of a plant root. lleennggtthh // mmmm root tip 00 55 1100 1155 2200 2255 3300 3355 Fig. 2.1 Fig. 2.2 shows the results of a study on the rate of uptake of nitrate ions at different points along the root shown in Fig. 2.1. 30 25 20 rate of nitrate ion uptake 15 / pmol per cm2 per s 10 5 0 0 5 10 15 20 25 30 35 distance from root tip / mm Fig. 2.2 7 (a) (i) D",
+      "options": [
+        "a decrease in the concentration of dissolved oxygen",
+        "a decrease in the population of consumers",
+        "a decrease in the population of producers",
+        "a decrease in light intensity at the bottom of the lake E an increase in the population of decomposers F an increase in the population of producers Fig. 2.3 Put the events shown in Fig. 2.3 into the correct sequence. [2] (ii) State the name of the pr"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w21_qp_43.pdf",
+        "year": 2021,
+        "session": "Oct/Nov",
+        "paper": "43",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2021-p43-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "There are three species of rhinoceros in",
+      "options": [
+        "sia. Fig. 4.1 shows an Indian rhinoceros, Rhinoceros unicornis, in a national park being observed by tourists who are riding on an elephant. Fig. 4.1 The International Union for Conservation of Nature (IUCN) collects data on animal species and places",
+        "orneo in sumatrensis Indonesia 13 (a) Outline the reasons why large mammals, such as some species of rhinoceros, are endangered. .........................................................................................................................",
+        "incinnati Zoo in the USA announced that they were hoping to breed together rhinoceros that were brother and sister as part of their captive breeding programme. (i)",
+        "iscuss the problems that using such closely related animals might have for the conservation of rhinoceros. ........................................................................................................................................... ..."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_43.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "43",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2021-p51-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "You are going to investigate the effect of the concentration of sugar solutions on osmosis in potato cells. Read all the instructions but DO NOT C",
+      "options": [
+        ",",
+        ",",
+        "and",
+        "and put them into the test-tube rack. Step 2 U se the volumes of 1 mol per dm3 sugar solution and distilled water shown in Table 1.1 to make solutions containing different concentrations of sugar in each test-tube. Use the syringes provided to make y"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_51.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "51",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2021-p51-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "cm of the dialysis tubing folds over the top of the test-tube. Secure it with an elastic band, as shown in Fig. 1.1. Step 5 Use a measuring cylinder to pour warm distilled water into large test-tube T so that it covers the dialysis tubing bag, as shown in Fig. 1.1. open end of the dialysis tubing folded over the top of large elastic band test-tube T solution M inside the dialysis tubing bag warm d",
+      "options": [
+        "fter 15 minutes remove the dialysis tubing bag from large test-tube T and put it in the waste container. Pour the liquid from large test-tube T into beaker T. Step 8 Label six clean test-tubes A,",
+        ",",
+        ",",
+        ", E and F. Step 9 Use a syringe to put 2 cm3 samples of solution M into test-tubes A, B and C."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w21_qp_51.pdf",
+        "year": 2021,
+        "session": "Oct/Nov",
+        "paper": "51",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2021-p52-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Catalase is an enzyme found in living cells. It catalyses the break-down of hydrogen peroxide to form water and oxygen. You are going to investigate the effect of catalase concentration on the rate of oxygen production. You have been provided with a celery extract which contains catalase. Read all the instructions but DO NOT C",
+      "options": [
+        ",",
+        ",",
+        ",",
+        "and E. Put the test-tubes into the test-tube rack. Step 2 Use a measuring cylinder to pour 10 cm3 of celery extract into test-tube A. Step 3 Use the measuring cylinder to transfer 5 cm3 of celery extract from test-tube A to test- tube B. Use the meas"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_52.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "52",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2021-p53-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Vitamin C is an important component of a balanced diet. Many health drinks contain vitamin C. You are going to estimate the concentration of vitamin C in a health drink by comparing it to solutions with known concentrations of vitamin C. DCPIP is an indicator for vitamin C. When added to a vitamin C solution, the blue DCPIP reacts with vitamin C and becomes colourless. Drops of DCPIP are added to ",
+      "options": [
+        ",",
+        ",",
+        "and",
+        "Step 2 U se the large syringe and the information in Table 1.1 to make the vitamin C solutions in the four labelled beakers. Table 1.1 volume of 1.00% vitamin C volume of final percentage beaker solution / cm3 water / cm3 concentration of vitamin C A"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_53.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "53",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2021-p62-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Catalase is an enzyme found in living cells. It catalyses the break-down of hydrogen peroxide to form water and oxygen. In this investigation a celery extract was used as a source of catalase.",
+      "options": [
+        "student investigated the effect of catalase concentration on the rate of oxygen production. The student made five different concentrations of celery extract by diluting the celery extract by 50% in each successive dilution. Step 1 Five beakers were l",
+        ",",
+        ",",
+        "and E. Step 2 A 10 cm3 measuring cylinder was used to place 10 cm3 of celery extract into beaker A. Step 3 The same measuring cylinder was used to transfer 5 cm3 of celery extract from beaker A to beaker B. The same measuring cylinder was used to add"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_62.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "62",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2021-p63-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Vitamin C is an important component of a balanced diet. Many health drinks contain vitamin C.",
+      "options": [
+        "student estimated the concentration of vitamin C in a health drink by comparing it to solutions with known concentrations of vitamin C. DCPIP is an indicator for vitamin C. When added to a vitamin C solution, the blue DCPIP reacts with vitamin C and ",
+        ",",
+        "and",
+        "and used the information in Table 1.1 to make the vitamin C solutions in the four labelled beakers. Table 1.1 volume of 1.00% vitamin C volume of final percentage beaker solution / cm3 water / cm3 concentration of vitamin C A 10 30 0.25 B 20 20 0.50 "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s21_qp_63.pdf",
+        "year": 2021,
+        "session": "May/June",
+        "paper": "63",
+        "question_number": "1"
       }
     },
     {
@@ -16997,6 +17834,465 @@
         "session": "May/June",
         "paper": "23",
         "question_number": "9"
+      }
+    },
+    {
+      "id": "0610-y2022-p31-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 1.1 is a diagram of a plant cell.",
+      "options": [
+        "E",
+        "D",
+        "Fig. 1.1 The boxes on the left contain the letters that identify some parts of the plant cell in Fig. 1.1. The boxes on the right show the functions of some parts of a cell.",
+        "raw five lines to link each letter to its correct function. letter from function Fig. 1.1 contains the genetic material A controls which substances enter and leave the cell B filled with sap to support the cell C strengthens the cell D transports ner"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s22_qp_31.pdf",
+        "year": 2022,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2022-p31-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 6.1 is a photograph of a section through a flower.",
+      "options": [
+        "F",
+        "E",
+        "D Fig. 6.1 15 (a) (i) State the names of the parts labelled A, C and E in Fig. 6.1. A ........................................................................................................................................ C .........................",
+        "escribe the adaptations of the flower structure and pollen in a wind-pollinated flower. ................................................................................................................................................... .............."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s22_qp_31.pdf",
+        "year": 2022,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2022-p32-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 1.1 is a branching key that can be used to identify different types of crustaceans.",
+      "options": [
+        "yes Is hair found only at the ends of two legs? no",
+        "yes Are parts of the",
+        "body hairy? yes no Are any legs visible? no yes Is the crustacean\u2019s",
+        "body (including claws and tail) longer than it E is wide? no yes Is one of the front claws much larger than the other? no F Fig. 1.1"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w22_qp_32.pdf",
+        "year": 2022,
+        "session": "Oct/Nov",
+        "paper": "32",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2022-p32-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 2.1 is a diagram of the male reproductive system in humans. D",
+      "options": [
+        "B C Fig. 2.1 The boxes on the left show the letters in Fig. 2.1 that identify parts of the male reproductive system. The boxes on the right show the functions of some of the parts. Draw four straight lines to match each letter to its correct function",
+        "secretes fluid for sperm to swim in",
+        "tube which carries the sperm to the urethra",
+        "tube which carries urine and sperm [4]"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m22_qp_32.pdf",
+        "year": 2022,
+        "session": "March",
+        "paper": "32",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2022-p32-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 5.1 is a drawing of part of a cross-section of a leaf.",
+      "options": [
+        "D",
+        "C Fig. 5.1 (i)",
+        "omplete Table 5.1 by stating the names of the parts labelled in Fig. 5.1. Table 5.1 letter in Fig. 5.1 name of the part A B C",
+        "[4] (ii) State the number of guard cells shown in Fig. 5.1. ..................................................................................................................................... [1]"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m22_qp_32.pdf",
+        "year": 2022,
+        "session": "March",
+        "paper": "32",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2022-p33-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 1.1 shows leaves from five different species of tree.",
+      "options": [
+        "B C D E Fig. 1.1 3 (a) (i) Use the key to identify each tree species in Fig. 1.1. Write the letter of each tree species (A,",
+        ",",
+        ",",
+        ", E) in the correct box beside the key."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w22_qp_33.pdf",
+        "year": 2022,
+        "session": "Oct/Nov",
+        "paper": "33",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2022-p33-q7",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "One type of nuclear division produces genetically identical cells. (a) State the name and one role of the type of nuclear division that produces genetically identical cells. name ......................................................................................................................................... role ..............................................................................",
+      "options": [
+        "B C D E Fig. 7.2 (i) State the names of structures A,",
+        ",",
+        ",",
+        "and E shown in Fig. 7.2. A ........................................................................................................................................ B ...................................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s22_qp_33.pdf",
+        "year": 2022,
+        "session": "May/June",
+        "paper": "33",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "0610-y2022-p41-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 6.1 shows part of the human gas exchange system. K",
+      "options": [
+        "J",
+        "H G F E D",
+        "Fig. 6.1 17 (i) Table 6.1 shows the names of some parts of the human gas exchange system, their functions and the letters in Fig. 6.1 that identify the parts. Complete Table 6.1. Table 6.1 function name of the structure letter in Fig. 6.1 hairs in th",
+        "escribe and explain how the alveoli are adapted for gas exchange. ........................................................................................................................................... ............................................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w22_qp_41.pdf",
+        "year": 2022,
+        "session": "Oct/Nov",
+        "paper": "41",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2022-p42-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 1.1 shows a spongy mesophyll cell from the leaf of a plant. The arrows show the net direction of movement of carbon dioxide molecules during daylight.",
+      "options": [
+        "G",
+        "F E 0.01 mm D",
+        "Fig. 1.1 (a) The scale bar in Fig. 1.1 represents 0.01 mm. Convert 0.01 mm to micrometres. ..................................................... \u03bcm [1] (b) Table 1.1 shows: \u2022 the functions of some of the structures in plant cells \u2022 some of the names ",
+        "escribe the pathway taken by a molecule of carbon dioxide, from the air outside a leaf to a spongy mesophyll cell. ......................................................................................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s22_qp_42.pdf",
+        "year": 2022,
+        "session": "May/June",
+        "paper": "42",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2022-p42-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "........................................................................................................................................ [2] (b) Fig. 1.1 is a diagram of the gas exchange system in humans. trachea diaphragm Fig. 1.1 (i) Draw a label line and the letter X on Fig. 1.1 to identify an external intercostal muscle. [1] (ii) State the name of the tissue that forms C-shaped structures in t",
+      "options": [
+        "nitrogen 78 78",
+        "16",
+        "0.04 4",
+        "variable saturated (i) Complete Table 1.1 by writing the names of gases B, C and D. [3] (ii) For gas B and gas C, explain the differences in the percentages shown in Table 1.1 between inspired and expired air. ........................................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m22_qp_42.pdf",
+        "year": 2022,
+        "session": "March",
+        "paper": "42",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2022-p42-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 4.1 is a diagram of Vibrio cholerae, the bacterium that causes cholera. plasmid DN",
+      "options": [
+        "scientist tested the resistance of one strain of bacteria to different antibiotics. The scientist tested solutions of five different antibiotics, A to E. She soaked a paper disc in each antibiotic solution. The paper discs with antibiotics were place",
+        "clear area paper disc where bacteria with antibiotic did not grow D",
+        "Fig. 4.2 11 (i) The strain of bacteria used in this investigation causes a disease. Using the information in Fig. 4.2, explain why antibiotic E would be the most effective at treating this disease. ....................................................",
+        "escribe how to minimise the risk of antibiotic B developing the same results as antibiotic A. ........................................................................................................................................... ................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m22_qp_42.pdf",
+        "year": 2022,
+        "session": "March",
+        "paper": "42",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2022-p42-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 5.1 shows Mackinlay\u2019s cuckoo\u2011dove, Macropygia mackinlayi, which is found on most of the islands in the south\u2011west of the Pacific Ocean. Fig. 5.1 (a) Karkar Island is one island where Mackinlay\u2019s cuckoo\u2011dove is found. This species is part of many communities that are adapted to the different habitats on the island. (i) Define the term community. ................................................",
+      "options": [
+        "daptation is sometimes defined as the process resulting from ..................................... ..................................... , by which populations become more suited to their ..................................... over many generations. [",
+        "C D Meyer\u2019s Mackinlay\u2019s island thrush island leaf goshawk cuckoo-dove warbler bird species Fig. 5.2 (i)",
+        "ompare the range in 1969 with the range in 2013 for each of the bird species shown in Fig. 5.2. A ........................................................................................................................................ ...............",
+        "....................................................................................................................................... .................................................................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w22_qp_42.pdf",
+        "year": 2022,
+        "session": "Oct/Nov",
+        "paper": "42",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2022-p42-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Complete Table 6.1 to show the names, functions and sites of action of the three different digestive enzymes. Table 6.1 name of enzyme function site of action pepsin trypsin breaks down maltose to glucose [3] 18 (b) Enzymes are proteins. Fig. 6.1 shows the stages involved in protein synthesis.",
+      "options": [
+        "\u2013 codes for a protein DNA stage 1 nuclear membrane DNA stage 2 nuclear membrane",
+        "stage 3",
+        "not to scale Fig. 6.1 19 (i) State the name of the parts represented by the letters A and C in Fig. 6.1. A ........................................................................................................................................ C ....",
+        "escribe the events that occur during stage 2 in Fig. 6.1. ........................................................................................................................................... ...................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m22_qp_42.pdf",
+        "year": 2022,
+        "session": "March",
+        "paper": "42",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2022-p43-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 4.1 shows a dandelion plant, Taraxacum officinale, in a field. The flower stalk is called a scape. scape Fig. 4.1 (i) The scape of a dandelion responds to sunlight by growing upwards. State the name of this growth response. ..................................................................................................................................... [1] (ii) The scapes of dandelions",
+      "options": [
+        "dandelion scape was cut into long strips for an osmosis investigation. Immediately after the scape was cut, the pieces of scape bent outwards, as shown in Fig. 4.3. scape cut into long strips inner part of scape that can absorb or lose water outer pa",
+        "inner surface of scape outer surface of scape",
+        "D not to scale scape cut into long strips inner part of scape that can absorb or lose water 17 outer part of scape that ca nnoSt taribpsso orbf doar nlodseeli owna stecrape were placed in four dishes, A, B, C and",
+        ", for 30 minutes. Each dish contained a different concentration of salt solution. Fig. 4.4 shows the appearance of the four strips of scape after 30 minutes. Key: A B inner surface of scape outer surface of scape C D not to scale Fig. 4.4 Using the i"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": true,
+      "source": {
+        "pdf": "0610_w22_qp_43.pdf",
+        "year": 2022,
+        "session": "Oct/Nov",
+        "paper": "43",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2022-p51-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "You are going to investigate the vitamin C concentration in three different health drinks:",
+      "options": [
+        ",",
+        "and",
+        "The concentration of vitamin C can be estimated in a sample of health drink by testing it with iodine solution. The test involves adding drops of iodine solution to the health drink sample until the sample remains blue-black. The greater the volume o",
+        "O NOT DO THEM until you have drawn a table for your results in the space provided in 1(a)(i). You should use the safety equipment provided while you are doing the practical work. Step 1 Label three test-tubes A, B and C. Step 2 Use the small syringe "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w22_qp_51.pdf",
+        "year": 2022,
+        "session": "Oct/Nov",
+        "paper": "51",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2022-p53-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 2.1 is a photograph of an inkcap mushroom. Mushrooms are a type of fungus that grow in fields and forests.",
+      "options": [
+        "A",
+        "B magnification \u00d71.5 Fig. 2.1 (i) Make a large drawing of the inkcap mushroom shown in Fig. 2.1. [4] 7 (ii) Line AB represents the width of the mushroom cap shown in Fig. 2.1. Measure the length of line AB on Fig. 2.1. length of line AB on Fig. 2.1 .",
+        ".",
+        "escribe the method you would use to test a sample of mushrooms for vitamin C. ................................................................................................................................................... ........................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w22_qp_53.pdf",
+        "year": 2022,
+        "session": "Oct/Nov",
+        "paper": "53",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2022-p63-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 3.1 is a photograph of an inkcap mushroom. Mushrooms are a type of fungus that grow in fields and forests.",
+      "options": [
+        "A",
+        "B magnification \u00d71.5 Fig. 3.1 (i) Make a large drawing of the inkcap mushroom shown in Fig. 3.1. [4] 9 (ii) Line AB represents the width of the mushroom cap shown in Fig. 3.1. Measure the length of line AB on Fig. 3.1. length of line AB on Fig. 3.1 .",
+        ".",
+        "escribe the method you would use to test a sample of mushrooms for vitamin C. ................................................................................................................................................... ........................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w22_qp_63.pdf",
+        "year": 2022,
+        "session": "Oct/Nov",
+        "paper": "63",
+        "question_number": "3"
       }
     },
     {
@@ -23291,6 +24587,384 @@
       }
     },
     {
+      "id": "0610-y2023-p31-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 2.1 is a diagram of a human tooth.",
+      "options": [
+        "B C D Fig. 2.1 The boxes on the left contain the letters identifying the parts in Fig. 2.1. The boxes on the right contain the names of some parts shown in Fig. 2.1. Draw lines to link each letter to its correct name. Draw four lines. letter in Fig. ",
+        "enamel",
+        "gum",
+        "pulp [4]"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s23_qp_31.pdf",
+        "year": 2023,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2023-p31-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) The boxes on the left show two terms. The boxes on the right show the descriptions of some terms. Draw one line to link each term to its description. Draw two lines. term description a group of organisms that can reproduce to produce fertile offspring all of the populations of different species in an ecosystem community an organism that gets its energy by feeding on other organisms a group of ",
+      "options": [
+        "B C D 70 000 60 000 50 000 number 40 000 of live bacteria 30 000 per cm3 20 000 10 000 0 0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0 4.5 5.0 5.5 6.0 time / hours Fig. 6.1 (i) The data in the graph has been divided into four phases: A,",
+        ",",
+        "and",
+        "The list shows the names of the four phases. death exponential lag stationary Use the words from the list to identify phases A, B, C and D shown in Fig. 6.1. A .........................................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w23_qp_31.pdf",
+        "year": 2023,
+        "session": "Oct/Nov",
+        "paper": "31",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2023-p32-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) The nutrient content of five different foods was analysed. The mass of each nutrient per 100 g of food was estimated. Table 1.1 shows the results. Table 1.1 mass of nutrient per 100 g of food / g food carbohydrates fats protein fibre",
+      "options": [
+        "1 5 6",
+        "8 14 2",
+        "36 25 0",
+        "54 28 7 E 21 7 5 8 The recommended daily allowance for these nutrients for an adult is: \u2022 fat \u2013 a maximum of 70 g per day \u2022 protein \u2013 50 g per day. (i) Identify the food in Table 1.1 which contains the most carbohydrate per 100 g. ..................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m23_qp_32.pdf",
+        "year": 2023,
+        "session": "March",
+        "paper": "32",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2023-p32-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 5.1 is a diagram of the breathing system in humans.",
+      "options": [
+        "H",
+        "C D G F E Fig. 5.1 (a) State the names of the parts labelled A, D and E in Fig. 5.1. A ............................................................................................................................................... D .................",
+        "D E F G species Fig. 5.2 A student made this statement: \u2018The larger the species, the larger the total alveolar surface area.\u2019 (i) State one piece of evidence from Fig. 5.2 that supports this statement and one piece of evidence that does not support t",
+        "and G shown in Fig. 5.2. ..................................................... m2 [1] (e) A large surface area is one feature of gas exchange surfaces in humans. State two other features."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m23_qp_32.pdf",
+        "year": 2023,
+        "session": "March",
+        "paper": "32",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2023-p32-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 6.1 is a diagram representing part of the carbon cycle. carbon dioxide in the atmosphere C B",
+      "options": [
+        "carbon in producers carbon in consumers carbon in carbon in fossil fuels D dead organisms Fig. 6.1 (a) Using the information in Fig. 6.1, identify the number of processes that remove carbon dioxide from the atmosphere. ...............................",
+        "formation of fossil fuel",
+        "photosynthesis",
+        "respiration [4]"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m23_qp_32.pdf",
+        "year": 2023,
+        "session": "March",
+        "paper": "32",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2023-p32-q8",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Explain the importance of the acrosome and the mitochondria for the function of sperm cells. ................................................................................................................................................... ................................................................................................................................................... .......",
+      "options": [
+        "t birth, a human female has approximately 1.5 million eggs in her ovaries.",
+        "y puberty only about 350 000 remain in the ovaries.",
+        "alculate the percentage decrease in the number of eggs between birth and puberty. Give your answer to one decimal place. Space for working. ........................................................... % [3] (d) Fig. 8.1 is a diagram of a fetus develop",
+        "escribe the functions of the placenta. ........................................................................................................................................... ......................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s23_qp_32.pdf",
+        "year": 2023,
+        "session": "May/June",
+        "paper": "32",
+        "question_number": "8"
+      }
+    },
+    {
+      "id": "0610-y2023-p33-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 2.1 is a labelled diagram of an animal cell.",
+      "options": [
+        "B C D E Fig. 2.1 (i) The boxes on the left show the functions of some of the structures shown in Fig. 2.1. The boxes on the right show the letters of the structures labelled in Fig. 2.1. Draw lines to link each function to the correct letter. Draw fo",
+        "controls the activities of the cell",
+        "controls which substances enter or leave the cell",
+        "protein synthesis E [4] (ii) State two letters shown in Fig. 2.1 that identify structures which are also found in bacterial cells. ......................................................... and ........................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s23_qp_33.pdf",
+        "year": 2023,
+        "session": "May/June",
+        "paper": "33",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2023-p33-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) During inspiration air is taken into the lungs. Table 4.1 shows the structures that air passes through during inspiration. The structures are not in the correct order. Table 4.1",
+      "options": [
+        "alveoli",
+        "bronchi",
+        "bronchioles",
+        "larynx E nose F trachea Identify the order of structures that air travels through during inspiration. Write the letters from Table 4.1 in the boxes provided to show the correct order. One has been done for you. F [3] (b) The composition of inspired a"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w23_qp_33.pdf",
+        "year": 2023,
+        "session": "Oct/Nov",
+        "paper": "33",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2023-p33-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 5.1 is a diagram of a cell carrying out one type of respiration. The arrows show the direction of movement of the substances involved in respiration in this type of cell. A B oxygen carbon dioxide Fig. 5.1 (i) State the type of respiration shown by Fig. 5.1. ....................................................................................................................................",
+      "options": [
+        ".......................................................................................................................................",
+        "....................................................................................................................................... [2] (iii) State the process by which oxygen moves into the cell. .................................................",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s23_qp_33.pdf",
+        "year": 2023,
+        "session": "May/June",
+        "paper": "33",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2023-p33-q7",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 7.1 is a diagram of part of the male reproductive system. E",
+      "options": [
+        "D C",
+        "Fig. 7.1",
+        "omplete Table 7.1 by writing in the letter of the structure identified in Fig. 7.1 that carries out each function. Each letter can be used once, more than once or not at all. Table 7.1 function letter on Fig. 7.1 carries sperm only contains the teste",
+        "embryo Fig. 7.2 Identify the cells and the process labelled in Fig. 7.2. cell A ......................................................................................................................................... cell B ........................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s23_qp_33.pdf",
+        "year": 2023,
+        "session": "May/June",
+        "paper": "33",
+        "question_number": "7"
+      }
+    },
+    {
+      "id": "0610-y2023-p41-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 4.1 shows the effect of light intensity on the rate of photosynthesis at different temperatures and concentrations of carbon dioxide.",
+      "options": [
+        "\u00b0C, 0.4% CO 2",
+        "\u00b0C, 0.4%",
+        "O 2 rate of photosynthesis C 15 \u00b0C, 0.04% CO 2 light intensity Fig. 4.1",
+        "escribe and explain the reasons for the shape of lines B and C in Fig. 4.1. ................................................................................................................................................... .........................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s23_qp_41.pdf",
+        "year": 2023,
+        "session": "May/June",
+        "paper": "41",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2023-p42-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 1.1 is a diagram of part of a cross\u2011section of a leaf. layer",
+      "options": [
+        "layer",
+        "layer",
+        "stomata Fig. 1.1 (a) Explain why a leaf is considered to be an organ. ................................................................................................................................................... ................................",
+        "Fig. 1.2 (i) Identify the cell labelled D on Fig. 1.2. ..................................................................................................................................... [1] (ii) State the main function of the stomata. ............"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s23_qp_42.pdf",
+        "year": 2023,
+        "session": "May/June",
+        "paper": "42",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2023-p42-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 2.1 is a photograph of some leaves of a water lily, which is a hydrophyte. The water lily has adaptive features that are found in many different hydrophytes. Fig. 2.1 (a) Describe what is meant by an adaptive feature. ................................................................................................................................................... .............................",
+      "options": [
+        ".......................................................................................................................................",
+        ".......................................................................................................................................",
+        "....................................................................................................................................... [3] (ii) Explain how part C in Fig. 2.2 adapts the hydrophyte for its environment. ...............................",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w23_qp_42.pdf",
+        "year": 2023,
+        "session": "Oct/Nov",
+        "paper": "42",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2023-p53-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "You are going to investigate the nutrient content of three types of drink: \u2022 drink",
+      "options": [
+        "\u2022 drink",
+        "\u2022 drink",
+        "Read all the instructions but",
+        "O NOT DO THEM until you have drawn a table for your results in the space provided in 1(a)(i). You should use the safety equipment provided while you are doing the practical work. Step 1 R aise your hand when you are ready for hot water to be added to"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s23_qp_53.pdf",
+        "year": 2023,
+        "session": "May/June",
+        "paper": "53",
+        "question_number": "1"
+      }
+    },
+    {
       "id": "0610-y2024-p11-q1",
       "subject": "igcse_biology",
       "yearGroup": "year10",
@@ -29555,6 +31229,330 @@
       }
     },
     {
+      "id": "0610-y2024-p31-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "block 2 blocks 4 blocks 8 blocks NOT TO SC",
+      "options": [
+        "6 278 240 255 258",
+        "8 112 120 98 110",
+        "10 79 85 81",
+        "12 56 48 52 52 (i) Calculate the mean time for all the blocks to turn yellow in test\u2011tube C. Give your answer to the nearest whole number. Space for working. ................................................................ [2] (ii) Using the results "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520443-june-2024-question-paper-31.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2024-p31-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Enzymes are biological catalysts. (a) Describe what is meant by a catalyst. ................................................................................................................................................... ................................................................................................................................................... ............................",
+      "options": [
+        "and",
+        ", were recorded at different temperatures. Fig. 2.1 shows the results. A B rate of enzyme activity 0 20 40 60 80 100 temperature / \u00b0C Fig. 2.1 5 (i)",
+        "ompare the effect of temperature on the rate of enzyme activity for enzymes A and B. Use data from Fig. 2.1 to support your answer. ......................................................................................................................",
+        "raw three lines from the box on the left to make three correct sentences. are involved in all metabolic reactions. are only made of the elements carbon and hydrogen. are necessary to sustain life. Enzymes are needed for the loss of water vapour from "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "520443-june-2024-question-paper-31.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2024-p32-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) (i) The boxes on the left show some of the components of blood. The boxes on the right show the functions of the components. Draw lines to link each component with its function or functions. Draw four lines. component function blood clotting platelets phagocytosis red blood cells produce antibodies white blood cells transport oxygen [4] (ii) Plasma is also a component of blood. Describe the fu",
+      "options": [
+        "B C cytoplasm Fig. 1.1 (i) State the name of the component of blood shown in Fig. 1.1. ..................................................................................................................................... [1] (ii) Identify structures ",
+        "and",
+        "shown in Fig. 1.1. A ........................................................................................................................................ B ..........................................................................................",
+        "escribe one function of the cytoplasm. ........................................................................................................................................... ......................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m24_qp_32.pdf",
+        "year": 2024,
+        "session": "March",
+        "paper": "32",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2024-p32-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 2.1 shows part of a strawberry tree. Fig. 2.1 (a) Complete the sentences, using words from the list, to describe how living things are named. Each word may be used once, more than once or not at all. binomial dichotomous gamete genus kingdom offspring organism species The ...................................... system is used to give every species a scientific name. The scientific name for the",
+      "options": [
+        "rbutus unedo. Arbutus is the ....................................... name and unedo is the ........................................ name. [3] (b) Describe what is meant by the term species. ............................................................",
+        "LANK PAGE 6 (c) Plant species can be identified using a dichotomous key. Fig. 2.2 shows the leaves from six plant species, A to F. A B",
+        "F E",
+        "Fig. 2.2 (not to scale)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m24_qp_32.pdf",
+        "year": 2024,
+        "session": "March",
+        "paper": "32",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2024-p32-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Complete the sentences using words from the list. Each word may be used once, more than once or not at all. movement muscles nerve organisms receptor reflex sense tissues The eye is a ................................ organ. The eye is made from a group of ................................ . The ................................ cells in the retina detect light. [3] (b) Fig. 4.1 is a diagram of t",
+      "options": [
+        "E",
+        "D",
+        "Fig. 4.1 (i)",
+        "raw an X on Fig. 4.1 to show the position of the blind spot. [1] (ii) Identify the letters on Fig. 4.1 that represent the: cornea .......................................... iris .......................................... retina ......................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m24_qp_32.pdf",
+        "year": 2024,
+        "session": "March",
+        "paper": "32",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2024-p41-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 3.1 shows the structure of the pathogen that causes cholera.",
+      "options": [
+        "H G F",
+        "E",
+        "D Fig. 3.1 (i) State the name of the kingdom that includes the pathogen shown in Fig. 3.1. ..................................................................................................................................... [1] (ii) Table 3.1 shows ",
+        "escribe how a person becomes infected with cholera. ................................................................................................................................................... .................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w24_qp_41.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "paper": "41",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2024-p42-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 2.1 shows a cross-section of a human heart. C B A Fig. 2.1 (a) (i) On Fig. 2.1, label with an R the position of the right ventricle. [1] (ii) State the names of the structures labelled A and B on Fig. 2.1.",
+      "options": [
+        ".......................................................................................................................................",
+        "....................................................................................................................................... [2] (iii) Complete the sentence about blood vessel C. Blood vessel C transports blood from the ...................",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m24_qp_42.pdf",
+        "year": 2024,
+        "session": "March",
+        "paper": "42",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2024-p42-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 3.1 shows a kidney nephron and its associated blood vessels. glomerulus B",
+      "options": [
+        "C key direction of flow of fluid A Fig. 3.1 The compositions of fluids A,",
+        "and",
+        "were analysed. T able 3.1 shows the results for five components of the fluids. Table 3.1 percentage percentage percentage component concentration in concentration in concentration in fluid A fluid B fluid C water 90.00 90.00 94.00 glucose 0.10 0.10 0",
+        "escribe what is meant by a gene mutation. ........................................................................................................................................... ...................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w24_qp_42.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "paper": "42",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2024-p43-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Proteins are biological molecules. Explain how proteins are made. ................................................................................................................................................... ................................................................................................................................................... ..................................",
+      "options": [
+        "into two smaller molecules,",
+        "and",
+        "molecule A molecule C molecule B enzyme 1 Fig. 3.1 Molecule",
+        ", shown in Fig. 3.2, is added to the mixture shown in Fig. 3.1. This causes the rate of production of molecules B and C to decrease. molecule A molecule D enzyme 1 Fig. 3.2"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s24_qp_43.pdf",
+        "year": 2024,
+        "session": "May/June",
+        "paper": "43",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2024-p43-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Some blood-clotting disorders can be inherited. (a) (i) Describe what is meant by the term inheritance. ........................................................................................................................................... ........................................................................................................................................... ................",
+      "options": [
+        "DNA cut with enzyme A cut DNA and cut plasmid joined using enzyme",
+        "to form",
+        "C inserted into bacteria bacteria are grown in a fermenter and produce factor Vlla Fig. 6.1 (cid:300)(cid:213)(cid:266)(cid:174)(cid:288)(cid:180)(cid:237)(cid:200)(cid:245)(cid:207)(cid:298)(cid:197)(cid:266)(cid:222)(cid:250)(cid:181)(cid:260)(cid:",
+        "NA and the plasmid. ........................................................................................................................................... .........................................................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w24_qp_43.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "paper": "43",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2024-p52-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Photosynthesis occurs in chloroplasts. You are going to investigate the effect of light intensity on the rate of photosynthesis in a chloroplast suspension. The blue dye DCPIP can be used to investigate photosynthesis. During photosynthesis, the dark\u2011blue colour of the DCPIP changes and eventually disappears so that it becomes colourless. Read all the instructions but DO NOT DO THEM until you have",
+      "options": [
+        "llow the mixture to filter for three minutes. Place the muslin cloth and funnel in the container labelled waste. crushed leaves funnel and isolation medium mixture three layers of muslin cloth beaker green chloroplast suspension Fig. 1.1 (cid:300)(ci",
+        "Step 7 R aise your hand when you are ready for ice\u2011cold water to be added to the beaker labelled water-bath. Step 8 U se the small syringe to put 1 cm3 of the green chloroplast suspension into test\u2011tube A and into test\u2011tube B. Step 9 Put test\u2011tubes A",
+        "alculate the actual length of the achene, using the formula and your measurement. length of line PQ in Fig. 1.2 magnification = actual length of the achene Give your answer to two significant figures. Space for working. ..............................",
+        "o not include references to size in your answer . similarity .................................................................................................................................... ........................................................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w24_qp_52.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "paper": "52",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2024-p62-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": ": 37 5 : 43 time recorded for test-tube",
+      "options": [
+        "time recorded for test-tube",
+        "Fig. 1.1 (cid:300)(cid:213)(cid:250)(cid:190)(cid:288)(cid:180)(cid:237)(cid:200)(cid:245)(cid:207)(cid:298)(cid:197)(cid:266)(cid:224)(cid:251)(cid:184)(cid:254)(cid:215) (cid:293)(cid:229)(cid:293)(cid:213)(cid:181)(cid:277)(cid:261)(cid:213)(cid:2",
+        "onvert the times on the stop-clocks in Fig. 1.1 to seconds and record these times in your table. [4] (ii) State a conclusion for the results. ............................................................................................................",
+        "CPIP can be used in food testing. State which substance present in food can be identified using DCPIP . ............................................................................................................................................. [1] "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_w24_qp_62.pdf",
+        "year": 2024,
+        "session": "Oct/Nov",
+        "paper": "62",
+        "question_number": "1"
+      }
+    },
+    {
       "id": "0610-y2025-p11-q1",
       "subject": "igcse_biology",
       "yearGroup": "year10",
@@ -34790,6 +36788,411 @@
         "session": "May/June",
         "paper": "23",
         "question_number": "8"
+      }
+    },
+    {
+      "id": "0610-y2025-p31-q6",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Table 6.1 shows some information about three different types of blood vessel. (i) Circle the correct name of the type of blood vessel in each row in Table 6.1. Table 6.1 type of blood relative thickness of relative diameter of name of the type of blood vessel vessel the wall the lumen X artery vein capillary thin large Y artery vein capillary very thin very narrow Z artery vein capillary thick",
+      "options": [
+        "pulmonary vein organ",
+        "blood vessel",
+        "kidney blood vessel",
+        "rest of body Fig. 6.1 Identify the names of the parts labelled in Fig. 6.1. organ A ..................................................................................................................................... organ B ........................"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_31.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "31",
+        "question_number": "6"
+      }
+    },
+    {
+      "id": "0610-y2025-p32-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 3.1 shows blood flow through a human heart. The arrows show the direction of blood flow .",
+      "options": [
+        "B C septum Fig. 3.1 (i) On Fig. 3.1, draw a label line and the letter X to identify the muscular wall of the left ventricle. [1] (ii) Describe the path taken by blood as it moves from A to",
+        "in Fig. 3.1. ........................................................................................................................................... .................................................................................................",
+        "shown in Fig. 3.1. ..................................................................................................................................... [1] (cid:293)(cid:229)(cid:213)(cid:213)(cid:245)(cid:277)(cid:229)(cid:213)(cid:181)(cid:261)(ci",
+        "raw lines to link each activity with its ECG. Draw three lines. One has been done for you. activity ECG resting during vigorous physical activity one minute after physical activity one hour after physical activity Fig. 3.3 [2] (cid:293)(cid:277)(cid:"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_32.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "32",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2025-p32-q35",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "......................................................... [1] (ii) Explain how the large surface area of a leaf is an adaptation for photosynthesis. ........................................................................................................................................... ...............................................................................................................",
+      "options": [
+        "C",
+        "Fig. 1.2 (i) State the names of the structures labelled A, B and D in Fig. 1.2. A ....................................................... ................. B ....................................................... ................. D ................",
+        "in Fig. 1.2. .......................................... and .......................................... [2] (cid:293)(cid:245)(cid:293)(cid:277)(cid:245)(cid:245)(cid:197)(cid:277)(cid:245)(cid:197)(cid:245)(cid:197)(cid:261)(cid:213)(cid:197)(cid:213",
+        "escribe how cell E adapts the leaf for photosynthesis. ........................................................................................................................................... ......................................................."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_32.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "32",
+        "question_number": "35"
+      }
+    },
+    {
+      "id": "0610-y2025-p32-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "/ tonnes per B unit area 2",
+      "options": [
+        "1940 1960 1980 2000 2020 year Fig. 6.1 (i) Selective breeding of barley plants has increased the yield of barley. Identify the period, A,",
+        "or",
+        ", when the largest increase in yield occurred. Explain how you made your choice. period ............................................ explanation .........................................................................................................",
+        "Pollination and fertilisation occurs. E Seeds form. F The process is repeated over many generations. Arrange the statements in the correct order to describe the process of selective breeding in barley plants. Two have been done for you. A B [2] (iv) "
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_32.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "32",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2025-p41-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) The human retina contains receptor cells called rods and cones. Fig. 2.1 shows the distribution of receptor cells in a human retina. fovea blind spot 150 000 100 000 number of receptors per mm2 50 000 0 80 60 40 20 0 20 40 60 80 distance from the fovea / arbitrary units key rods cones Fig. 2.1 Using the information in Fig. 2.1, describe the dif ferences in the distribution of rods and cones. .",
+      "options": [
+        ".......................................................................................................................................",
+        ".......................................................................................................................................",
+        "....................................................................................................................................... [3] (ii) Explain how part C in Fig. 2.2 moves across the synaptic gap. ...........................................",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_41.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "41",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2025-p41-q5",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Organisms can be classified by their features and by studying the sequence of bases in their DNA. Fig. 5.1 is a diagram showing the evolutionary relationships between some dif ferent groups of organisms. Each branch shows the point at which organisms developed new features that classify them as a new group. The point where the branch starts also indicates a common ancestor shared by the new gr",
+      "options": [
+        ".......................................................................................................................................",
+        "....................................................................................................................................... [2] (ii) Identify the names of the two groups that share the most recent common ancestor in Fig. 5.1. ............",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_41.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "41",
+        "question_number": "5"
+      }
+    },
+    {
+      "id": "0610-y2025-p42-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 1.1 shows part of the human gas exchange system. A cartilage B C Fig. 1.1 (i) Identify structures A, B and C shown in Fig. 1.1.",
+      "options": [
+        ".......................................................................................................................................",
+        ".......................................................................................................................................",
+        "....................................................................................................................................... [3] (ii) State the function of the cartilage shown in Fig. 1.1. ..................................................",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_42.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "42",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2025-p42-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) The internal body temperature of a person was recorded. Fig. 2.1 shows the results. 39 38 internal F body 37 temperature / \u00b0C 36 35 time Fig. 2.1 (i) Using the information in Fig. 2.1, calculate the temperature range for the internal body temperature of the person. State the units. .................................................................................................................",
+      "options": [
+        ".......................................................................................................................................",
+        "....................................................................................................................................... [2] [Total: 11] (cid:300)(cid:217)(cid:266)(cid:174)(cid:288)(cid:180)(cid:237)(cid:200)(cid:245)(cid:207)(cid:298",
+        "",
+        ""
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_m25_qp_42.pdf",
+        "year": 2025,
+        "session": "March",
+        "paper": "42",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2025-p43-q1",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "(a) Fig. 1.1 is a diagram of the human digestive system.",
+      "options": [
+        "M",
+        "L",
+        "K",
+        "J H E F G Fig. 1.1 Table 1.1 shows information about some of the structures shown in Fig. 1.1. Complete Table 1.1, using Fig. 1.1. Table 1.1 letter in name of the structure function Fig. 1.1 G produces amylase gall bladder transports food to the stom"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_43.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "43",
+        "question_number": "1"
+      }
+    },
+    {
+      "id": "0610-y2025-p43-q4",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Fig. 4.1 is a photograph of a water lily, Nymphaea alba, in a lake. Fig. 4.1 Fig. 4.2 is a photomicrograph of a cross-section of part of a water lily leaf.",
+      "options": [
+        "B D C Fig. 4.2 (a) (i) Identify tissue",
+        "and tissue",
+        "labelled in Fig. 4.2. B ........................................................................................................................................ C .......................................................................................",
+        "escribe two functions in water lilies of the area labelled D in Fig. 4.2."
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_43.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "43",
+        "question_number": "4"
+      }
+    },
+    {
+      "id": "0610-y2025-p51-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "........................................................................................................................................ [2] The results of the investigation are shown in Table 2.1. Table 2.1 concentration of vitamin C total volume of vitamin C / mg per dm3 solution added / cm3 125 1.6 250 1.4 500 1.1 750 0.8 1000 0.5 (cid:300)(cid:217)(cid:250)(cid:190)(cid:288)(cid:180)(cid:237)(",
+      "options": [
+        "ssessment International Education Copyright Acknowledgements",
+        "ooklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live examination series.",
+        "ambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge. (cid:300)(c",
+        "FD"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_51.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "51",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2025-p52-q3",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "Hydrogencarbonate indicator can be used to determine the concentration of carbon dioxide in a solution. The table shows the colour of the indicator at different concentrations of carbon dioxide. carbon dioxide hydrogencarbonate concentration indicator colour high yellow medium red low purple",
+      "options": [
+        "quatic plants photosynthesise and use up carbon dioxide when in the light.A quatic plants respire and produce carbon dioxide in the light and in the dark. When the carbon dioxide produced is equal to carbon dioxide used, hydrogencarbonate indicator i",
+        "LANK PAGE Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if ",
+        "ambridge Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live examination series. Cambridge Assess",
+        "FD"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_52.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "52",
+        "question_number": "3"
+      }
+    },
+    {
+      "id": "0610-y2025-p53-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "........................................................................................................................................ [2] The results are shown in Table 2.1. Table 2.1 species of mean mass of proportion of acorns oak tree acorns / g that germinated",
+      "options": [
+        "0.52 0.44",
+        "1.92 0.56",
+        "2.30 0.64 (cid:300)(cid:217)(cid:250)(cid:190)(cid:288)(cid:180)(cid:237)(cid:200)(cid:245)(cid:207)(cid:298)(cid:197)(cid:266)(cid:222)(cid:251)(cid:183)(cid:254)(cid:215) (cid:293)(cid:229)(cid:245)(cid:277)(cid:181)(cid:181)(cid:293)(cid:213)(cid:",
+        "FD * 0000800000011 *"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_53.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "53",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2025-p61-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "........................................................................................................................................ [2] The results of the investigation are shown in Table 2.1. Table 2.1 concentration of vitamin C total volume of vitamin C / mg per dm3 solution added / cm3 125 1.6 250 1.4 500 1.1 750 0.8 1000 0.5 (cid:300)(cid:217)(cid:250)(cid:190)(cid:288)(cid:180)(cid:237)(",
+      "options": [
+        "ssessment International Education Copyright Acknowledgements",
+        "ooklet. This is produced for each series of examinations and is freely available to download at www.cambridgeinternational.org after the live examination series.",
+        "ambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge. (cid:300)(c",
+        "FD"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_61.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "61",
+        "question_number": "2"
+      }
+    },
+    {
+      "id": "0610-y2025-p63-q2",
+      "subject": "igcse_biology",
+      "yearGroup": "year10",
+      "difficulty": "medium",
+      "topic": "general",
+      "marks": 1,
+      "question": "........................................................................................................................................ [2] (cid:300)(cid:217)(cid:250)(cid:190)(cid:288)(cid:180)(cid:237)(cid:200)(cid:245)(cid:207)(cid:298)(cid:197)(cid:266)(cid:223)(cid:249)(cid:182)(cid:256)(cid:215) (cid:293)(cid:213)(cid:293)(cid:213)(cid:181)(cid:181)(cid:293)(cid:277)(cid:293)(cid:245)(cid:1",
+      "options": [
+        "0.52 0.44",
+        "1.92 0.56",
+        "2.30 0.64 (ii) Plot a bar chart on the grid of all the data in Table 2.1. Include a key on your bar chart. [4] (iii) The study measured 100 acorns for each species. Suggest why a large number of acorns was measured. ..................................",
+        "FD * 0000800000010 *"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "0610_s25_qp_63.pdf",
+        "year": 2025,
+        "session": "May/June",
+        "paper": "63",
+        "question_number": "2"
       }
     }
   ]
