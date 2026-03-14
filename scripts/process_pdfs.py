@@ -36,9 +36,6 @@ def parse_questions(text, paper_info):
     # Clean up text
     text = re.sub(r'©\s*UCLES\s*\d+[^\n]*', '', text)
     text = re.sub(r'\[Turn over\]', '', text)
-    text = re.sub(r'\d+\s*/\s*\d+', '', text)
-    text = re.sub(r'\d{4}_\d+_\d+/[A-Z]/[A-Z]/\d+', '', text)
-    text = re.sub(r'IB\d+\s+\d+_\d+_\d+/\d+RP', '', text)
     text = re.sub(r'\*\d+\*', '', text)
     
     # Cambridge format questions start with number then text, options A-D follow
@@ -74,12 +71,23 @@ def parse_questions(text, paper_info):
         # Remove question number from start
         q_text = re.sub(r'^\d{1,2}\s*', '', q_text)
         
-        # Find options A B C D
-        # Options can be inline or on separate lines
-        # Pattern: A ... B ... C ... D ... (end or next number)
+        # Find options A B C D - handle various formats
+        # Format 1: A. text B. text C. text D. text
+        # Format 2: A) text B) text C) text D) text  
+        # Format 3: A text B text C text D text (no punctuation)
         
-        opt_pattern = r'(?:^|\s+|[\n\r]+)A\s*[\.\)]?\s*(.+?)(?:\s+|[\n\r]+)B\s*[\.\)]?\s*(.+?)(?:\s+|[\n\r]+)C\s*[\.\)]?\s*(.+?)(?:\s+|[\n\r]+)D\s*[\.\)]?\s*(.+?)(?:\n\d{1,2}\s+\D|\n\d{1,2}$|$)'
-        match = re.search(opt_pattern, q_text, re.DOTALL)
+        opt_patterns = [
+            # Standard with dots or parens - non-greedy match for each option
+            r'A\s*[\.\)]?\s*(.+?)\s+B\s*[\.\)]?\s*(.+?)\s+C\s*[\.\)]?\s*(.+?)\s+D\s*[\.\)]?\s*(.+?)(?:\n\d|$)',
+            # Simpler format without punctuation
+            r'A\s+(.+?)\s+B\s+(.+?)\s+C\s+(.+?)\s+D\s+(.+?)(?:\n\d|$)',
+        ]
+        
+        match = None
+        for pattern in opt_patterns:
+            match = re.search(pattern, q_text, re.DOTALL)
+            if match:
+                break
         
         if match:
             # Extract question text (everything before option A)
@@ -93,13 +101,14 @@ def parse_questions(text, paper_info):
                 match.group(4).strip()
             ]
         else:
-            # Try simpler split approach
-            parts = re.split(r'\n(?=\s*[A-D]\s*[\.\)])', q_text)
+            # Try line-by-line split approach
+            parts = re.split(r'\n(?=\s*[A-D]\s*[\.\)]?)', q_text)
             if len(parts) >= 2:
                 question_text = parts[0].strip()
                 options = ['', '', '', '']
                 for i, p in enumerate(parts[1:5]):
-                    m = re.match(r'\s*([A-D])\s*[\.\)]\s*(.+)', p, re.DOTALL)
+                    # Remove A/B/C/D and any punctuation
+                    m = re.match(r'\s*([A-D])\s*[\.\)]?\s*(.+)', p, re.DOTALL)
                     if m:
                         options[i] = m.group(2).strip()
             else:
