@@ -20,9 +20,13 @@ const rewards = [
 ]
 
 const availableSubjects = [
-  { id: 'biology', name: 'O-Level Biology (5090)', grades: ['Grade 9', 'Grade 10'], icon: '🧬' },
+  { id: 'o_level_biology', name: 'O-Level Biology (5090)', grades: ['Grade 9', 'Grade 10'], icon: '🧬' },
   { id: 'igcse_biology', name: 'IGCSE Biology (0610)', grades: ['Grade 9', 'Grade 10', 'Grade 11'], icon: '🧫' },
-  { id: 'accounting', name: 'Accounting (7707)', grades: ['Grade 11', 'Grade 12'], icon: '📊' },
+  { id: 'o_level_accounting', name: 'O-Level Accounting (7707)', grades: ['Grade 11', 'Grade 12'], icon: '📊' },
+  { id: 'as_biology', name: 'AS Biology (WBI11)', grades: ['Grade 12'], icon: '🧬' },
+  { id: 'as_mathematics', name: 'AS Mathematics (9709)', grades: ['Grade 12'], icon: '📐' },
+  { id: 'as_physics', name: 'AS Physics (9702)', grades: ['Grade 12'], icon: '⚛️' },
+  { id: 'as_economics', name: 'AS Economics (9708)', grades: ['Grade 12'], icon: '📈' },
 ]
 
 const ageOptions = ['13-14', '15-16', '17-18', '19+']
