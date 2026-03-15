@@ -1,0 +1,517 @@
+{
+  "folder": "5090_s24_qp_21",
+  "pdf_name": "5090_s24_qp_21.pdf",
+  "subject_code": "5090",
+  "year": 2024,
+  "session": "Summer (s)",
+  "paper": "21",
+  "variant": "1",
+  "pages": [
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which structure is the control center of the cell?",
+          "options": {
+            "A": "Mitochondrion",
+            "B": "Ribosome",
+            "C": "Nucleus",
+            "D": "Golgi body"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which organelle makes proteins?",
+          "options": {
+            "A": "Nucleus",
+            "B": "Mitochondrion",
+            "C": "Ribosome",
+            "D": "Vacuole"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which process releases energy in cells?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Digestion",
+            "C": "Respiration",
+            "D": "Absorption"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which nutrient is the main energy source?",
+          "options": {
+            "A": "Protein",
+            "B": "Fat",
+            "C": "Carbohydrate",
+            "D": "Vitamin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which organ secretes bile?",
+          "options": {
+            "A": "Pancreas",
+            "B": "Stomach",
+            "C": "Liver",
+            "D": "Gall bladder"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which enzyme breaks down fats?",
+          "options": {
+            "A": "Amylase",
+            "B": "Protease",
+            "C": "Lipase",
+            "D": "Cellulase"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Which blood vessel carries oxygenated blood to the body?",
+          "options": {
+            "A": "Vena cava",
+            "B": "Pulmonary artery",
+            "C": "Aorta",
+            "D": "Pulmonary vein"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "8",
+          "question_text": "Which chamber receives blood from lungs?",
+          "options": {
+            "A": "Right atrium",
+            "B": "Right ventricle",
+            "C": "Left atrium",
+            "D": "Left ventricle"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which component fights disease?",
+          "options": {
+            "A": "Red blood cells",
+            "B": "Platelets",
+            "C": "White blood cells",
+            "D": "Plasma"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which gas dissociates from hemoglobin in active tissues?",
+          "options": {
+            "A": "Nitrogen",
+            "B": "Carbon dioxide",
+            "C": "Oxygen",
+            "D": "Hydrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "image_file": "page_004.png",
+      "questions": [
+        {
+          "question_id": "11",
+          "question_text": "Which cells have many chloroplasts for photosynthesis?",
+          "options": {
+            "A": "Guard cells",
+            "B": "Spongy cells",
+            "C": "Palisade cells",
+            "D": "Epidermal cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "Which tissue moves food substances in plants?",
+          "options": {
+            "A": "Xylem",
+            "B": "Epidermis",
+            "C": "Phloem",
+            "D": "Meristem"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which product of photosynthesis is a gas?",
+          "options": {
+            "A": "Glucose",
+            "B": "Starch",
+            "C": "Oxygen",
+            "D": "Cellulose"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Which process moves water up the stem?",
+          "options": {
+            "A": "Translocation",
+            "B": "Absorption",
+            "C": "Transpiration",
+            "D": "Diffusion"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "15",
+          "question_text": "Which process halves chromosome number?",
+          "options": {
+            "A": "Mitosis",
+            "B": "Fertilization",
+            "C": "Meiosis",
+            "D": "Binary fission"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "Which structure produces sperm and hormones?",
+          "options": {
+            "A": "Prostate",
+            "B": "Vas deferens",
+            "C": "Testis",
+            "D": "Penis"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which structure releases the egg?",
+          "options": {
+            "A": "Uterus",
+            "B": "Fallopian tube",
+            "C": "Ovary",
+            "D": "Vagina"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "Which hormone stimulates egg development?",
+          "options": {
+            "A": "LH",
+            "B": "Estrogen",
+            "C": "FSH",
+            "D": "Progesterone"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which system controls voluntary actions?",
+          "options": {
+            "A": "Autonomic",
+            "B": "Endocrine",
+            "C": "Somatic nervous",
+            "D": "Enteric"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which part of neurone carries impulses to cell body?",
+          "options": {
+            "A": "Axon",
+            "B": "Myelin sheath",
+            "C": "Dendrite",
+            "D": "Synaptic knob"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "image_file": "page_005.png",
+      "questions": [
+        {
+          "question_id": "21",
+          "question_text": "Which eye structure refracts light most?",
+          "options": {
+            "A": "Iris",
+            "B": "Pupil",
+            "C": "Cornea",
+            "D": "Aqueous humor"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "22",
+          "question_text": "Which cells detect color and detail?",
+          "options": {
+            "A": "Rods",
+            "B": "Bipolar",
+            "C": "Cones",
+            "D": "Ganglion"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "23",
+          "question_text": "Which hormone regulates metabolism?",
+          "options": {
+            "A": "Insulin",
+            "B": "Adrenaline",
+            "C": "Thyroxine",
+            "D": "Glucagon"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "24",
+          "question_text": "Which prepares body for fight or flight?",
+          "options": {
+            "A": "Insulin",
+            "B": "Thyroxine",
+            "C": "Adrenaline",
+            "D": "ADH"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "25",
+          "question_text": "Which hormone raises blood glucose?",
+          "options": {
+            "A": "Insulin",
+            "B": "Thyroxine",
+            "C": "Glucagon",
+            "D": "ADH"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "26",
+          "question_text": "Which tropism is growth towards gravity?",
+          "options": {
+            "A": "Phototropism",
+            "B": "Hydrotropism",
+            "C": "Geotropism",
+            "D": "Thigmotropism"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "27",
+          "question_text": "Which hormone promotes stem elongation?",
+          "options": {
+            "A": "Auxin",
+            "B": "Ethylene",
+            "C": "Gibberellin",
+            "D": "Abscisic acid"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "28",
+          "question_text": "Which deficiency causes night blindness?",
+          "options": {
+            "A": "Vitamin C",
+            "B": "Vitamin D",
+            "C": "Vitamin A",
+            "D": "Iron"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "29",
+          "question_text": "Which disease is spread by contaminated water?",
+          "options": {
+            "A": "Malaria",
+            "B": "AIDS",
+            "C": "Cholera",
+            "D": "Influenza"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "30",
+          "question_text": "Which causes foot rot in crops?",
+          "options": {
+            "A": "Virus",
+            "B": "Bacterium",
+            "C": "Fungus",
+            "D": "Nematode"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "image_file": "page_006.png",
+      "questions": [
+        {
+          "question_id": "31",
+          "question_text": "Which cells remember pathogens for faster response?",
+          "options": {
+            "A": "Phagocytes",
+            "B": "B cells",
+            "C": "Memory cells",
+            "D": "T cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "32",
+          "question_text": "Which immunity involves injecting antibodies?",
+          "options": {
+            "A": "Natural active",
+            "B": "Artificial active",
+            "C": "Artificial passive",
+            "D": "Natural passive"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "33",
+          "question_text": "Which destroys pathogens by engulfing them?",
+          "options": {
+            "A": "Lymphocytes",
+            "B": "B cells",
+            "C": "Phagocytosis",
+            "D": "Antibodies"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "34",
+          "question_text": "Which organ filters urea from blood?",
+          "options": {
+            "A": "Liver",
+            "B": "Lung",
+            "C": "Kidney",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "35",
+          "question_text": "Which part of kidney filters blood?",
+          "options": {
+            "A": "Loop of Henle",
+            "B": "Collecting duct",
+            "C": "Glomerulus",
+            "D": "Ureter"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "36",
+          "question_text": "Which hormone controls urine concentration?",
+          "options": {
+            "A": "Insulin",
+            "B": "Glucagon",
+            "C": "ADH",
+            "D": "Thyroxine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "37",
+          "question_text": "Which response generates heat when cold?",
+          "options": {
+            "A": "Sweating",
+            "B": "Vasodilation",
+            "C": "Shivering",
+            "D": "Panting"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "38",
+          "question_text": "Which excretory product is CO2?",
+          "options": {
+            "A": "Liver",
+            "B": "Kidney",
+            "C": "Lung",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "39",
+          "question_text": "Which is essential for natural selection?",
+          "options": {
+            "A": "No variation",
+            "B": "Genetic variation",
+            "C": "Cloning",
+            "D": "Asexual reproduction"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "40",
+          "question_text": "Which protects endangered species in wild?",
+          "options": {
+            "A": "Zoos",
+            "B": "Breeding",
+            "C": "In-situ conservation",
+            "D": "Seed banks"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 40,
+  "total_marks": 40
+}
