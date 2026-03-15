@@ -1,18 +1,29 @@
-# GCSE Exam Prep
+# Exam Pilot
 
-A comprehensive **React + TypeScript (TSX)** PWA for GCSE exam preparation (Grades 8-10). Features real past paper questions, progress tracking, and offline support.
+A **React + TypeScript** web app for students from **LKG/UKG through Grade 12**.
 
-## 🚀 Features
+- **Younger students (LKG–Grade 8)** see a **Kids Dashboard** with game-like learning.
+- **Older students (Grade 9–12)** practice with **Cambridge past paper MCQs** (O-Level / IGCSE / AS).
 
-- **📱 PWA** - Installable on mobile and desktop, works offline
-- **📝 Real Questions** - 381+ Accounting questions from past papers
-- **📊 Progress Tracking** - localStorage persistence with accuracy, streaks, stats
-- **✅ Quiz Mode** - Multiple choice with instant feedback and explanations
-- **📈 Statistics Dashboard** - Visual progress tracking
-- **🎨 Dark Theme** - Modern UI optimized for study sessions
-- **📲 Mobile First** - Responsive design for phones, tablets, PC
+## Features
 
-## 🛠️ Tech Stack
+- **Student onboarding**
+  - Profile setup flow (age, grade, skill level, exam)
+- **Kids Dashboard (LKG–Grade 8)**
+  - Game-style cards (Quick Quiz, Puzzle Time, Memory Match, Word Builder, Math Race, Science Explorer)
+  - Stars / streak UI and achievements
+- **Exam practice (Grade 9–12)**
+  - Practice / exam-style quiz flow
+  - Results + stats
+- **Admin (question management)**
+  - Create/update questions
+  - Paste/upload images
+  - PDF page image viewer (from `public/pdf_images/...`) for verification
+- **Extraction pipeline (scripts)**
+  - Batch scripts generate per-paper JSON
+  - Upload-ready JSON generation for Supabase
+
+## Tech Stack
 
 - **Framework**: React 18 + TypeScript
 - **Build Tool**: Vite
@@ -21,7 +32,7 @@ A comprehensive **React + TypeScript (TSX)** PWA for GCSE exam preparation (Grad
 - **Charts**: Recharts
 - **PWA**: Vite PWA Plugin
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 gcse-prep-app/
@@ -29,26 +40,34 @@ gcse-prep-app/
 │   ├── components/     # React components
 │   │   └── Layout.tsx  # App layout with navigation
 │   ├── pages/          # Route pages
-│   │   ├── Home.tsx    # Subject selection, stats
-│   │   ├── Quiz.tsx    # Question quiz interface
-│   │   ├── Results.tsx # Quiz completion screen
-│   │   └── Stats.tsx   # Progress dashboard
+│   │   ├── ProfileSetup.tsx   # Student onboarding (/setup)
+│   │   ├── KidsDashboard.tsx  # LKG–Grade 8 dashboard
+│   │   ├── Home.tsx           # Grade 9–12 dashboard
+│   │   ├── PaperSelect.tsx    # Select paper/subject
+│   │   ├── Quiz.tsx           # Question quiz interface
+│   │   ├── Results.tsx        # Quiz completion screen
+│   │   ├── Stats.tsx          # Progress dashboard
+│   │   └── Admin.tsx          # Admin tools (/admin)
 │   ├── hooks/          # Custom React hooks
-│   │   └── useProgress.ts  # localStorage progress
+│   │   └── useAuth.tsx
 │   ├── types/          # TypeScript types
 │   │   └── index.ts    # Question, Progress types
 │   ├── App.tsx         # Main app with routing
 │   ├── main.tsx        # Entry point
 │   └── index.css       # Tailwind + global styles
 ├── public/
-│   └── questions.json  # 381 past paper questions
+│   ├── pdf_images/     # Extracted PDF page images (per paper)
+│   └── *.json          # Question banks (if used)
+├── scripts/            # Extraction + Supabase upload scripts
+├── extracted_*.json    # Per-paper extracted JSON output
+├── supabase_upload_*.json # Upload-ready JSON output
 ├── package.json
 ├── vite.config.ts      # Vite + PWA config
 ├── tailwind.config.js
 └── vercel.json         # Deployment config
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -64,7 +83,7 @@ npm run build
 npm run preview
 ```
 
-## 📦 Deployment
+## Deployment
 
 ### Vercel (Recommended)
 
@@ -74,7 +93,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/gcse-exam-prep.git
+git remote add origin https://github.com/YOUR_USERNAME/exam-pilot.git
 git push -u origin main
 ```
 
@@ -91,7 +110,7 @@ git push -u origin main
 1. Update `vite.config.ts`:
 ```ts
 export default defineConfig({
-  base: '/gcse-exam-prep/',
+  base: '/exam-pilot/',
   // ... rest of config
 })
 ```
@@ -102,39 +121,23 @@ npm run build
 npx gh-pages -d dist
 ```
 
-## 📊 Data Format
+## Data Format
 
-Questions loaded from `public/questions.json`:
+The extraction scripts produce **per-paper JSON** files in the format:
 
-```json
-{
-  "metadata": {
-    "subject": "Accounting (7707)",
-    "total_questions": 381
-  },
-  "questions": [
-    {
-      "id": "7707-y2024-p11-q1",
-      "subject": "accounting",
-      "topic": "bookkeeping",
-      "marks": 1,
-      "question": "Which task is performed by a book-keeper?",
-      "options": ["A", "B", "C", "D"],
-      "correctAnswer": 2,
-      "explanation": "...",
-      "source": { "pdf": "...", "year": 2024 }
-    }
-  ]
-}
-```
+- `extracted_O_Level_Physics_0625_s24_qp_11.json`
 
-## 🔧 Configuration
+Then `scripts/create_supabase_upload.py` combines those into:
 
-### Adding More Subjects
+- `supabase_upload_*.json`
 
-1. Add subject data to `public/`
-2. Update `src/pages/Home.tsx` subject cards
-3. Update `src/types/index.ts` if needed
+For full details, see `extract.md`.
+
+## Adding / Updating Subjects
+
+- Add extracted paper JSONs (`extracted_*.json`)
+- Re-run `scripts/create_supabase_upload.py`
+- Upload the resulting `supabase_upload_*.json` to your database
 
 ### Customizing Theme
 
@@ -147,7 +150,7 @@ colors: {
 }
 ```
 
-## 📱 PWA Installation
+## PWA Installation
 
 ### iOS Safari
 1. Open app in Safari
@@ -161,12 +164,12 @@ colors: {
 
 ### Desktop Chrome
 1. Click install icon in address bar
-2. Or go to menu → "Install GCSE Exam Prep"
+2. Or go to menu → "Install Exam Pilot"
 
-## 📝 License
+## License
 
 MIT - Feel free to use for your own exam prep!
 
 ---
 
-Built with ❤️ for students preparing for GCSE exams.
+Built for students preparing for exams.
