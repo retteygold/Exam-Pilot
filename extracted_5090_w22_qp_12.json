@@ -1,0 +1,517 @@
+{
+  "folder": "5090_w22_qp_12",
+  "pdf_name": "5090_w22_qp_12.pdf",
+  "subject_code": "5090",
+  "year": 2022,
+  "session": "Winter (w)",
+  "paper": "12",
+  "variant": "1",
+  "pages": [
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which structure controls cell activities?",
+          "options": {
+            "A": "Mitochondrion",
+            "B": "Ribosome",
+            "C": "Nucleus",
+            "D": "Cytoplasm"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which organelle makes proteins?",
+          "options": {
+            "A": "Nucleus",
+            "B": "Mitochondrion",
+            "C": "Ribosome",
+            "D": "Golgi"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which process releases energy from glucose?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Digestion",
+            "C": "Respiration",
+            "D": "Absorption"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which nutrient provides energy and builds tissues?",
+          "options": {
+            "A": "Carbohydrate",
+            "B": "Fat",
+            "C": "Protein",
+            "D": "Water"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which organ stores and releases bile?",
+          "options": {
+            "A": "Liver",
+            "B": "Pancreas",
+            "C": "Gall bladder",
+            "D": "Stomach"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which enzyme breaks down proteins in the stomach?",
+          "options": {
+            "A": "Amylase",
+            "B": "Lipase",
+            "C": "Pepsin",
+            "D": "Maltase"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Which vessel carries oxygenated blood to the body?",
+          "options": {
+            "A": "Vena cava",
+            "B": "Pulmonary artery",
+            "C": "Aorta",
+            "D": "Pulmonary vein"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "8",
+          "question_text": "Which chamber receives blood from the body?",
+          "options": {
+            "A": "Left atrium",
+            "B": "Left ventricle",
+            "C": "Right atrium",
+            "D": "Right ventricle"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which blood component helps clotting?",
+          "options": {
+            "A": "Red blood cells",
+            "B": "White blood cells",
+            "C": "Platelets",
+            "D": "Plasma"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which gas is required for aerobic respiration?",
+          "options": {
+            "A": "Carbon dioxide",
+            "B": "Nitrogen",
+            "C": "Oxygen",
+            "D": "Hydrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "image_file": "page_004.png",
+      "questions": [
+        {
+          "question_id": "11",
+          "question_text": "Which cells in leaves contain most chloroplasts?",
+          "options": {
+            "A": "Guard cells",
+            "B": "Spongy mesophyll",
+            "C": "Palisade mesophyll",
+            "D": "Epidermal cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "Which tissue carries sugars in plants?",
+          "options": {
+            "A": "Xylem",
+            "B": "Epidermis",
+            "C": "Phloem",
+            "D": "Meristem"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which gas enters the leaf for photosynthesis?",
+          "options": {
+            "A": "Oxygen",
+            "B": "Nitrogen",
+            "C": "Carbon dioxide",
+            "D": "Hydrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Which process moves water through a plant?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Respiration",
+            "C": "Transpiration",
+            "D": "Translocation"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "15",
+          "question_text": "Which division produces genetically different cells?",
+          "options": {
+            "A": "Mitosis",
+            "B": "Fertilization",
+            "C": "Meiosis",
+            "D": "Binary fission"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "Which structure produces sperm?",
+          "options": {
+            "A": "Prostate gland",
+            "B": "Seminal vesicle",
+            "C": "Testis",
+            "D": "Vas deferens"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which structure produces eggs?",
+          "options": {
+            "A": "Uterus",
+            "B": "Fallopian tube",
+            "C": "Ovary",
+            "D": "Vagina"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "Which hormone maintains pregnancy?",
+          "options": {
+            "A": "FSH",
+            "B": "LH",
+            "C": "Progesterone",
+            "D": "Estrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which part of brain controls involuntary actions?",
+          "options": {
+            "A": "Cerebrum",
+            "B": "Cerebellum",
+            "C": "Medulla",
+            "D": "Pituitary"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which neurone connects sensory to motor?",
+          "options": {
+            "A": "Sensory",
+            "B": "Motor",
+            "C": "Relay",
+            "D": "Effector"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "image_file": "page_005.png",
+      "questions": [
+        {
+          "question_id": "21",
+          "question_text": "Which part of eye focuses light?",
+          "options": {
+            "A": "Cornea",
+            "B": "Iris",
+            "C": "Lens",
+            "D": "Retina"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "22",
+          "question_text": "Which cells detect color?",
+          "options": {
+            "A": "Rods",
+            "B": "Bipolar cells",
+            "C": "Cones",
+            "D": "Ganglion cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "23",
+          "question_text": "Which gland produces growth hormone?",
+          "options": {
+            "A": "Thyroid",
+            "B": "Adrenal",
+            "C": "Pituitary",
+            "D": "Pancreas"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "24",
+          "question_text": "Which hormone increases heart rate?",
+          "options": {
+            "A": "Insulin",
+            "B": "Thyroxine",
+            "C": "Adrenaline",
+            "D": "Glucagon"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "25",
+          "question_text": "Which organ produces insulin?",
+          "options": {
+            "A": "Liver",
+            "B": "Stomach",
+            "C": "Pancreas",
+            "D": "Kidney"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "26",
+          "question_text": "Which shoot response is positive phototropism?",
+          "options": {
+            "A": "Growing away from light",
+            "B": "Growing towards gravity",
+            "C": "Growing towards light",
+            "D": "Growing away from gravity"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "27",
+          "question_text": "Which hormone promotes cell elongation?",
+          "options": {
+            "A": "Gibberellin",
+            "B": "Ethylene",
+            "C": "Auxin",
+            "D": "Abscisic acid"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "28",
+          "question_text": "Which mineral is needed for strong bones?",
+          "options": {
+            "A": "Iron",
+            "B": "Zinc",
+            "C": "Calcium",
+            "D": "Iodine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "29",
+          "question_text": "Which disease is spread by mosquitoes?",
+          "options": {
+            "A": "TB",
+            "B": "Cholera",
+            "C": "Malaria",
+            "D": "AIDS"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "30",
+          "question_text": "Which pathogen causes flu?",
+          "options": {
+            "A": "Bacterium",
+            "B": "Fungus",
+            "C": "Virus",
+            "D": "Protozoan"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "image_file": "page_006.png",
+      "questions": [
+        {
+          "question_id": "31",
+          "question_text": "Which cells engulf pathogens?",
+          "options": {
+            "A": "Lymphocytes",
+            "B": "B cells",
+            "C": "Phagocytes",
+            "D": "T cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "32",
+          "question_text": "Which immunity involves antibodies from mother?",
+          "options": {
+            "A": "Natural active",
+            "B": "Artificial active",
+            "C": "Natural passive",
+            "D": "Artificial passive"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "33",
+          "question_text": "Which drugs kill bacteria?",
+          "options": {
+            "A": "Analgesics",
+            "B": "Antivirals",
+            "C": "Antibiotics",
+            "D": "Vaccines"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "34",
+          "question_text": "Which organ filters blood to remove waste?",
+          "options": {
+            "A": "Liver",
+            "B": "Lung",
+            "C": "Kidney",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "35",
+          "question_text": "Which part of nephron filters blood?",
+          "options": {
+            "A": "Loop of Henle",
+            "B": "Collecting duct",
+            "C": "Glomerulus",
+            "D": "Ureter"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "36",
+          "question_text": "Which response generates heat?",
+          "options": {
+            "A": "Sweating",
+            "B": "Vasodilation",
+            "C": "Shivering",
+            "D": "Panting"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "37",
+          "question_text": "Which organ produces urea?",
+          "options": {
+            "A": "Kidney",
+            "B": "Lung",
+            "C": "Liver",
+            "D": "Heart"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "38",
+          "question_text": "Which process removes undigested food?",
+          "options": {
+            "A": "Excretion",
+            "B": "Secretion",
+            "C": "Egestion",
+            "D": "Absorption"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "39",
+          "question_text": "Which enables evolution?",
+          "options": {
+            "A": "No variation",
+            "B": "Genetic variation",
+            "C": "Cloning",
+            "D": "Inbreeding"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "40",
+          "question_text": "Which protects species in natural habitat?",
+          "options": {
+            "A": "Zoos",
+            "B": "Breeding programs",
+            "C": "In-situ conservation",
+            "D": "Gene banks"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 40,
+  "total_marks": 40
+}
