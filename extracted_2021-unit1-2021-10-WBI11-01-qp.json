@@ -1,0 +1,271 @@
+{
+  "folder": "2021-unit1-2021-10-WBI11-01-qp",
+  "pdf_name": "2021-unit1-2021-10-WBI11-01-qp.pdf",
+  "subject_code": "WBI11",
+  "year": 2021,
+  "session": "October",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the cell theory?",
+          "options": {
+            "A": "Cells are made of atoms",
+            "B": "Cells are the basic unit of life, all living things are made of cells, cells come from pre-existing cells",
+            "C": "Cells contain DNA only",
+            "D": "Cells are always single-celled"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which organelle modifies and packages proteins?",
+          "options": {
+            "A": "Mitochondrion",
+            "B": "Ribosome",
+            "C": "Golgi apparatus",
+            "D": "Lysosome"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the resolution of a light microscope?",
+          "options": {
+            "A": "0.1 nm",
+            "B": "0.2 µm",
+            "C": "1 nm",
+            "D": "1 µm"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which organelle is responsible for photosynthesis?",
+          "options": {
+            "A": "Mitochondrion",
+            "B": "Ribosome",
+            "C": "Chloroplast",
+            "D": "Nucleus"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the function of the rough ER?",
+          "options": {
+            "A": "Lipid synthesis",
+            "B": "Protein synthesis with ribosomes",
+            "C": "Cellular respiration",
+            "D": "Storage"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which enzyme breaks down hydrogen peroxide?",
+          "options": {
+            "A": "Amylase",
+            "B": "Protease",
+            "C": "Catalase",
+            "D": "Lipase"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the optimum pH for pepsin?",
+          "options": {
+            "A": "pH 7",
+            "B": "pH 2",
+            "C": "pH 8",
+            "D": "pH 10"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is competitive inhibition?",
+          "options": {
+            "A": "Inhibitor binds to allosteric site",
+            "B": "Inhibitor competes with substrate for active site",
+            "C": "Enzyme is denatured",
+            "D": "Substrate cannot bind"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which monosaccharides combine to form sucrose?",
+          "options": {
+            "A": "Glucose + Glucose",
+            "B": "Glucose + Fructose",
+            "C": "Glucose + Galactose",
+            "D": "Fructose + Galactose"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What type of bond joins amino acids?",
+          "options": {
+            "A": "Hydrogen bond",
+            "B": "Ionic bond",
+            "C": "Peptide bond",
+            "D": "Glycosidic bond"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "Which level of protein structure involves alpha helices?",
+          "options": {
+            "A": "Primary",
+            "B": "Secondary",
+            "C": "Tertiary",
+            "D": "Quaternary"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the function of cellulose?",
+          "options": {
+            "A": "Energy storage in animals",
+            "B": "Structural support in plants",
+            "C": "Energy storage in plants",
+            "D": "Cell signaling"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which lipid is found in cell membranes?",
+          "options": {
+            "A": "Triglyceride",
+            "B": "Phospholipid",
+            "C": "Cholesterol",
+            "D": "Both B and C"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the fluid mosaic model?",
+          "options": {
+            "A": "Model of DNA structure",
+            "B": "Model of cell membrane structure with proteins in lipid bilayer",
+            "C": "Model of enzyme action",
+            "D": "Model of cell wall"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "Which process moves water across membrane?",
+          "options": {
+            "A": "Active transport",
+            "B": "Osmosis",
+            "C": "Diffusion",
+            "D": "Endocytosis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is active transport?",
+          "options": {
+            "A": "Movement down concentration gradient using ATP",
+            "B": "Movement against concentration gradient using ATP",
+            "C": "Movement through membrane without protein",
+            "D": "Movement of water"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which gas is produced in the light stage?",
+          "options": {
+            "A": "CO2",
+            "B": "O2",
+            "C": "N2",
+            "D": "H2"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the Calvin cycle?",
+          "options": {
+            "A": "Light-dependent reactions",
+            "B": "Light-independent reactions/Carbon fixation",
+            "C": "Photophosphorylation",
+            "D": "Photolysis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which factor limits photosynthesis at low light?",
+          "options": {
+            "A": "Temperature",
+            "B": "CO2 concentration",
+            "C": "Light intensity",
+            "D": "Oxygen concentration"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the role of RuBisCO?",
+          "options": {
+            "A": "Water splitting",
+            "B": "Fixing CO2 to RuBP",
+            "C": "ATP synthesis",
+            "D": "NADP reduction"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

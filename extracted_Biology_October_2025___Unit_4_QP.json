@@ -1,0 +1,271 @@
+{
+  "folder": "October 2025 - Unit 4 QP",
+  "pdf_name": "October 2025 - Unit 4 QP.pdf",
+  "subject_code": "WBI11",
+  "year": 2025,
+  "session": "October 2025",
+  "paper": "4",
+  "unit": "4",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the function of the nuclear envelope?",
+          "options": {
+            "A": "DNA synthesis",
+            "B": "Separates nucleus from cytoplasm with pores for transport",
+            "C": "Protein synthesis",
+            "D": "Cell division"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which technique separates proteins by size?",
+          "options": {
+            "A": "Chromatography",
+            "B": "Centrifugation",
+            "C": "SDS-PAGE",
+            "D": "Spectrophotometry"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the function of the cell wall?",
+          "options": {
+            "A": "Energy production",
+            "B": "Support and protection",
+            "C": "Protein synthesis",
+            "D": "Cell division"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which organelle produces vesicles?",
+          "options": {
+            "A": "Mitochondrion",
+            "B": "Golgi apparatus",
+            "C": "Ribosome",
+            "D": "Nucleus"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the induced fit model of enzyme action?",
+          "options": {
+            "A": "Enzyme shape is fixed",
+            "B": "Enzyme changes shape to fit substrate",
+            "C": "Substrate changes shape",
+            "D": "Both change shape"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which vitamin is required for coenzyme A?",
+          "options": {
+            "A": "B1",
+            "B": "B2",
+            "C": "B5 (pantothenic acid)",
+            "D": "B12"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the function of hemoglobin?",
+          "options": {
+            "A": "Enzyme catalysis",
+            "B": "Oxygen transport",
+            "C": "CO2 production",
+            "D": "Cell signaling"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "Which bond breaks to denature protein?",
+          "options": {
+            "A": "Peptide bonds",
+            "B": "Hydrogen bonds",
+            "C": "Both A and B",
+            "D": "None"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the function of triglycerides?",
+          "options": {
+            "A": "Energy storage and insulation",
+            "B": "Structural support",
+            "C": "Cell signaling",
+            "D": "Enzyme catalysis"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which cholesterol is 'good' cholesterol?",
+          "options": {
+            "A": "LDL",
+            "B": "HDL",
+            "C": "VLDL",
+            "D": "All cholesterol is bad"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the function of cholesterol in membrane?",
+          "options": {
+            "A": "Transport",
+            "B": "Maintains fluidity and stability",
+            "C": "Energy production",
+            "D": "Cell recognition"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "Which increases membrane fluidity?",
+          "options": {
+            "A": "More saturated fatty acids",
+            "B": "More unsaturated fatty acids",
+            "C": "Lower temperature",
+            "D": "Less cholesterol"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is facilitated diffusion?",
+          "options": {
+            "A": "Active transport",
+            "B": "Passive transport with carrier protein",
+            "C": "Bulk transport",
+            "D": "Osmosis only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the function of carrier proteins?",
+          "options": {
+            "A": "Structural support",
+            "B": "Transport specific molecules across membrane",
+            "C": "Cell recognition",
+            "D": "Enzyme catalysis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the light harvesting complex?",
+          "options": {
+            "A": "Photosystem core",
+            "B": "Antenna pigments capturing light",
+            "C": "ATP synthase",
+            "D": "Electron transport chain"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is cyclic photophosphorylation?",
+          "options": {
+            "A": "Linear electron flow",
+            "B": "Electron cycling producing only ATP",
+            "C": "Water splitting",
+            "D": "CO2 fixation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which product of light stage is used in Calvin cycle?",
+          "options": {
+            "A": "O2",
+            "B": "ATP and NADPH",
+            "C": "H2O",
+            "D": "CO2"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the role of glycerate-3-phosphate (GP)?",
+          "options": {
+            "A": "Final sugar product",
+            "B": "Intermediate in Calvin cycle",
+            "C": "CO2 acceptor",
+            "D": "Enzyme"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the end product of Calvin cycle?",
+          "options": {
+            "A": "CO2",
+            "B": "Triose phosphate (TP)",
+            "C": "RuBP",
+            "D": "O2"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which condition causes stomatal closure?",
+          "options": {
+            "A": "High water availability",
+            "B": "Low water potential/drought stress",
+            "C": "High light",
+            "D": "Low CO2"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

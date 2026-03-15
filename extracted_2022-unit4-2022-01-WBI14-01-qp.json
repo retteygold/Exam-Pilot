@@ -1,0 +1,271 @@
+{
+  "folder": "2022-unit4-2022-01-WBI14-01-qp",
+  "pdf_name": "2022-unit4-2022-01-WBI14-01-qp.pdf",
+  "subject_code": "WBI11",
+  "year": 2022,
+  "session": "January",
+  "paper": "01",
+  "unit": "4",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which organelle contains digestive enzymes?",
+          "options": {
+            "A": "Mitochondrion",
+            "B": "Ribosome",
+            "C": "Lysosome",
+            "D": "Golgi"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the function of the smooth ER?",
+          "options": {
+            "A": "Protein synthesis",
+            "B": "Lipid synthesis and detoxification",
+            "C": "Cell division",
+            "D": "Energy production"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which structure is found in plant cells but not animal cells?",
+          "options": {
+            "A": "Nucleus",
+            "B": "Mitochondrion",
+            "C": "Cell wall",
+            "D": "Ribosome"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the function of the nucleus?",
+          "options": {
+            "A": "Protein synthesis",
+            "B": "Contains genetic material and controls cell activities",
+            "C": "Energy production",
+            "D": "Waste removal"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which microscope has the highest resolution?",
+          "options": {
+            "A": "Light microscope",
+            "B": "Transmission electron microscope",
+            "C": "Dissecting microscope",
+            "D": "All same resolution"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the function of centrioles?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Cell division/spindle formation",
+            "C": "Protein synthesis",
+            "D": "Energy production"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Which enzyme works best at alkaline pH?",
+          "options": {
+            "A": "Pepsin",
+            "B": "Trypsin",
+            "C": "Amylase",
+            "D": "Lipase"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is non-competitive inhibition?",
+          "options": {
+            "A": "Inhibitor binds to active site",
+            "B": "Inhibitor binds to allosteric site changing enzyme shape",
+            "C": "Substrate cannot bind",
+            "D": "Enzyme is denatured"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which polysaccharide is stored in animals?",
+          "options": {
+            "A": "Starch",
+            "B": "Cellulose",
+            "C": "Glycogen",
+            "D": "Chitin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the primary structure of protein?",
+          "options": {
+            "A": "3D shape",
+            "B": "Sequence of amino acids",
+            "C": "Alpha helix",
+            "D": "Beta sheet"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "Which bond stabilizes tertiary structure?",
+          "options": {
+            "A": "Peptide bonds only",
+            "B": "Hydrogen bonds, ionic bonds, disulfide bridges",
+            "C": "Glycosidic bonds",
+            "D": "Ester bonds"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the function of starch?",
+          "options": {
+            "A": "Structure",
+            "B": "Energy storage in plants",
+            "C": "Energy storage in animals",
+            "D": "Cell signaling"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which molecule forms the cell membrane bilayer?",
+          "options": {
+            "A": "Triglycerides",
+            "B": "Phospholipids",
+            "C": "Cholesterol",
+            "D": "Proteins"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is diffusion?",
+          "options": {
+            "A": "Movement against concentration gradient",
+            "B": "Movement down concentration gradient",
+            "C": "Active transport",
+            "D": "Osmosis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "Which protein pumps ions using ATP?",
+          "options": {
+            "A": "Channel protein",
+            "B": "Carrier protein",
+            "C": "Sodium-potassium pump",
+            "D": "Glycoprotein"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is endocytosis?",
+          "options": {
+            "A": "Export of materials",
+            "B": "Import of materials by vesicle formation",
+            "C": "Diffusion through membrane",
+            "D": "Osmosis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the source of oxygen in photosynthesis?",
+          "options": {
+            "A": "CO2",
+            "B": "H2O",
+            "C": "Glucose",
+            "D": "ATP"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "Which color light is least absorbed by chlorophyll?",
+          "options": {
+            "A": "Blue",
+            "B": "Red",
+            "C": "Green",
+            "D": "Violet"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is photolysis?",
+          "options": {
+            "A": "Fixing CO2",
+            "B": "Splitting water using light",
+            "C": "Making ATP",
+            "D": "Reducing NADP"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which limiting factor affects photosynthesis at high light intensity?",
+          "options": {
+            "A": "Light",
+            "B": "Temperature or CO2",
+            "C": "Oxygen",
+            "D": "Water"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

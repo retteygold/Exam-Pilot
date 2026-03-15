@@ -1,0 +1,271 @@
+{
+  "folder": "2020-unit5-2020-10-WBI15-01-qp",
+  "pdf_name": "2020-unit5-2020-10-WBI15-01-qp.pdf",
+  "subject_code": "WBI11",
+  "year": 2020,
+  "session": "October",
+  "paper": "01",
+  "unit": "5",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which organelle is the site of aerobic respiration?",
+          "options": {
+            "A": "Nucleus",
+            "B": "Ribosome",
+            "C": "Mitochondrion",
+            "D": "Chloroplast"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the function of ribosomes?",
+          "options": {
+            "A": "DNA replication",
+            "B": "Protein synthesis",
+            "C": "Lipid storage",
+            "D": "Cell division"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which process produces the most ATP per glucose molecule?",
+          "options": {
+            "A": "Glycolysis",
+            "B": "Krebs cycle",
+            "C": "Anaerobic respiration",
+            "D": "Oxidative phosphorylation"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the role of NAD in respiration?",
+          "options": {
+            "A": "Oxygen carrier",
+            "B": "Hydrogen carrier",
+            "C": "Carbon dioxide carrier",
+            "D": "ATP synthesis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which enzyme catalyzes the phosphorylation of glucose in glycolysis?",
+          "options": {
+            "A": "Phosphofructokinase",
+            "B": "Hexokinase",
+            "C": "Pyruvate kinase",
+            "D": "Dehydrogenase"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Where does the Krebs cycle occur?",
+          "options": {
+            "A": "Cytoplasm",
+            "B": "Outer mitochondrial membrane",
+            "C": "Mitochondrial matrix",
+            "D": "Intermembrane space"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the function of ATP synthase?",
+          "options": {
+            "A": "Break down ATP",
+            "B": "Synthesize ATP using proton gradient",
+            "C": "Transport electrons",
+            "D": "Split water"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "Which pigment is primary in photosynthesis?",
+          "options": {
+            "A": "Carotene",
+            "B": "Xanthophyll",
+            "C": "Chlorophyll a",
+            "D": "Chlorophyll b"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Where do light-dependent reactions occur?",
+          "options": {
+            "A": "Stroma",
+            "B": "Thylakoid membrane",
+            "C": "Cytoplasm",
+            "D": "Mitochondria"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is photophosphorylation?",
+          "options": {
+            "A": "ATP synthesis in respiration",
+            "B": "ATP synthesis using light energy",
+            "C": "Glucose synthesis",
+            "D": "Oxygen production"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "Which tissue transports water in plants?",
+          "options": {
+            "A": "Phloem",
+            "B": "Epidermis",
+            "C": "Xylem",
+            "D": "Cambium"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What causes water movement up the xylem?",
+          "options": {
+            "A": "Active transport",
+            "B": "Transpiration pull",
+            "C": "Osmosis only",
+            "D": "Photosynthesis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which ions are required for chlorophyll synthesis?",
+          "options": {
+            "A": "Calcium",
+            "B": "Iron",
+            "C": "Magnesium",
+            "D": "Zinc"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the structure of DNA?",
+          "options": {
+            "A": "Single helix",
+            "B": "Double helix",
+            "C": "Triple helix",
+            "D": "Linear strand"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "Which enzyme unwinds DNA during replication?",
+          "options": {
+            "A": "DNA polymerase",
+            "B": "Helicase",
+            "C": "Ligase",
+            "D": "Primase"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the role of mRNA?",
+          "options": {
+            "A": "Carries amino acids",
+            "B": "Carries genetic code from nucleus to ribosome",
+            "C": "Forms ribosome structure",
+            "D": "Catalyzes reactions"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which nitrogenous base pairs with adenine?",
+          "options": {
+            "A": "Cytosine",
+            "B": "Guanine",
+            "C": "Thymine",
+            "D": "Uracil"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is a codon?",
+          "options": {
+            "A": "Single nucleotide",
+            "B": "Three nucleotides coding for an amino acid",
+            "C": "Gene segment",
+            "D": "Chromosome region"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which process produces haploid cells?",
+          "options": {
+            "A": "Mitosis",
+            "B": "Meiosis",
+            "C": "Binary fission",
+            "D": "Budding"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is crossing over?",
+          "options": {
+            "A": "Cell division",
+            "B": "Exchange of genetic material between homologous chromosomes",
+            "C": "DNA replication",
+            "D": "Protein synthesis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

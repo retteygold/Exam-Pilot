@@ -1,0 +1,271 @@
+{
+  "folder": "2024-unit3-2024-01-WBI13-01-qp",
+  "pdf_name": "2024-unit3-2024-01-WBI13-01-qp.pdf",
+  "subject_code": "WBI11",
+  "year": 2024,
+  "session": "January",
+  "paper": "01",
+  "unit": "3",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the function of the nucleolus?",
+          "options": {
+            "A": "DNA replication",
+            "B": "Ribosome synthesis",
+            "C": "Protein synthesis",
+            "D": "Cell division"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which cytoskeletal element is thickest?",
+          "options": {
+            "A": "Microfilaments",
+            "B": "Intermediate filaments",
+            "C": "Microtubules",
+            "D": "All same size"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the function of plasmodesmata?",
+          "options": {
+            "A": "Energy production",
+            "B": "Cell wall synthesis",
+            "C": "Communication between plant cells",
+            "D": "Photosynthesis"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which cell junction connects animal cells?",
+          "options": {
+            "A": "Plasmodesmata",
+            "B": "Tight junctions, desmosomes, gap junctions",
+            "C": "Cell wall",
+            "D": "Chloroplasts"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the quaternary structure of protein?",
+          "options": {
+            "A": "Sequence of amino acids",
+            "B": "3D folding",
+            "C": "Multiple polypeptide chains together",
+            "D": "Alpha helices"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which vitamin is a component of NAD?",
+          "options": {
+            "A": "Vitamin A",
+            "B": "Vitamin C",
+            "C": "Niacin (B3)",
+            "D": "Vitamin D"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is feedback inhibition of enzymes?",
+          "options": {
+            "A": "Activation by product",
+            "B": "Inhibition by end product of pathway",
+            "C": "Denaturation",
+            "D": "pH change"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "Which is a structural polysaccharide?",
+          "options": {
+            "A": "Starch",
+            "B": "Glycogen",
+            "C": "Cellulose",
+            "D": "Amylose"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What type of lipid is cholesterol?",
+          "options": {
+            "A": "Triglyceride",
+            "B": "Phospholipid",
+            "C": "Steroid",
+            "D": "Wax"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the function of glycoproteins in membrane?",
+          "options": {
+            "A": "Energy production",
+            "B": "Cell recognition and signaling",
+            "C": "Structural support",
+            "D": "Transport"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "Which factor increases rate of diffusion?",
+          "options": {
+            "A": "Lower temperature",
+            "B": "Smaller surface area",
+            "C": "Greater concentration gradient",
+            "D": "Thicker membrane"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is osmosis?",
+          "options": {
+            "A": "Diffusion of any solute",
+            "B": "Diffusion of water through partially permeable membrane",
+            "C": "Active transport of water",
+            "D": "Bulk transport"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the tonoplast?",
+          "options": {
+            "A": "Cell membrane",
+            "B": "Nuclear membrane",
+            "C": "Vacuole membrane",
+            "D": "Mitochondrial membrane"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the compensation point in photosynthesis?",
+          "options": {
+            "A": "Maximum photosynthesis rate",
+            "B": "Where photosynthesis = respiration",
+            "C": "Zero light intensity",
+            "D": "Maximum light intensity"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "Which enzyme fixes CO2 in C4 plants?",
+          "options": {
+            "A": "RuBisCO",
+            "B": "PEP carboxylase",
+            "C": "ATP synthase",
+            "D": "NADP reductase"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is photorespiration?",
+          "options": {
+            "A": "Efficient CO2 fixation",
+            "B": "RuBisCO binding O2 instead of CO2",
+            "C": "ATP production",
+            "D": "Light absorption"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which ion is essential for chlorophyll?",
+          "options": {
+            "A": "Iron",
+            "B": "Calcium",
+            "C": "Magnesium",
+            "D": "Zinc"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the function of stomata?",
+          "options": {
+            "A": "Support",
+            "B": "Gas exchange",
+            "C": "Water storage",
+            "D": "Food production"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What causes stomata to open?",
+          "options": {
+            "A": "Low water potential in guard cells",
+            "B": "High K+ in guard cells causing water uptake",
+            "C": "High CO2",
+            "D": "Low light"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is translocation?",
+          "options": {
+            "A": "Water transport",
+            "B": "Sugar transport in phloem",
+            "C": "Mineral transport",
+            "D": "Gas transport"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
