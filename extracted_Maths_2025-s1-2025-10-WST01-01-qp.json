@@ -1,0 +1,272 @@
+{
+  "folder": "2025-s1-2025-10-WST01-01-qp",
+  "pdf_name": "2025-s1-2025-10-WST01-01-qp.pdf",
+  "subject_code": "WST",
+  "year": 2025,
+  "session": "October",
+  "paper": "01",
+  "unit": "S1",
+  "subject_type": "statistics1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the derivative of sin(x)?",
+          "options": {
+            "A": "cos(x)",
+            "B": "-cos(x)",
+            "C": "-sin(x)",
+            "D": "tan(x)"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the second derivative notation for d²y/dx²?",
+          "options": {
+            "A": "y''",
+            "B": "y'",
+            "C": "dy/dx",
+            "D": "∫y"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the value of cos(60°)?",
+          "options": {
+            "A": "0.5",
+            "B": "√3/2",
+            "C": "1/√2",
+            "D": "0"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the inverse function of y = e^x?",
+          "options": {
+            "A": "y = ln(x)",
+            "B": "y = x",
+            "C": "y = 1/e^x",
+            "D": "y = x²"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the formula for combinations nCr?",
+          "options": {
+            "A": "n! / (r!(n-r)!)",
+            "B": "n! / r!",
+            "C": "n! / (n-r)!",
+            "D": "n! × r!"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the sum of angles in a triangle?",
+          "options": {
+            "A": "180°",
+            "B": "360°",
+            "C": "90°",
+            "D": "270°"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the Pythagorean theorem?",
+          "options": {
+            "A": "a² + b² = c²",
+            "B": "a + b = c",
+            "C": "a² - b² = c²",
+            "D": "ab = c"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the formula for arc length with angle θ (in radians)?",
+          "options": {
+            "A": "rθ",
+            "B": "r²θ",
+            "C": "½rθ",
+            "D": "r/θ"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is ∫ cos(x) dx?",
+          "options": {
+            "A": "sin(x) + c",
+            "B": "-sin(x) + c",
+            "C": "cos(x) + c",
+            "D": "-cos(x) + c"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the stationary point condition for dy/dx?",
+          "options": {
+            "A": "dy/dx = 0",
+            "B": "dy/dx = 1",
+            "C": "dy/dx = x",
+            "D": "d²y/dx² = 0"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the maximum value of sin(x)?",
+          "options": {
+            "A": "1",
+            "B": "0",
+            "C": "-1",
+            "D": "π"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the horizontal asymptote of y = 1/x?",
+          "options": {
+            "A": "y = 0",
+            "B": "y = 1",
+            "C": "x = 0",
+            "D": "y = x"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the vector i + j magnitude?",
+          "options": {
+            "A": "√2",
+            "B": "2",
+            "C": "1",
+            "D": "0"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the formula for parallel vectors?",
+          "options": {
+            "A": "a = kb for some scalar k",
+            "B": "a·b = 0",
+            "C": "|a| = |b|",
+            "D": "a + b = 0"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the formula for resultant force?",
+          "options": {
+            "A": "ΣF = ma",
+            "B": "F = mg",
+            "C": "F = mv",
+            "D": "F = ma²"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the coefficient of restitution formula?",
+          "options": {
+            "A": "e = (v₂-v₁)/(u₁-u₂)",
+            "B": "e = v/u",
+            "C": "e = u/v",
+            "D": "e = 1"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the uniform distribution mean?",
+          "options": {
+            "A": "(a+b)/2",
+            "B": "(b-a)²/12",
+            "C": "a+b",
+            "D": "ab/2"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the formula for binomial variance?",
+          "options": {
+            "A": "np(1-p)",
+            "B": "np",
+            "C": "n(1-p)",
+            "D": "p(1-p)"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the work done formula?",
+          "options": {
+            "A": "F × d",
+            "B": "F × t",
+            "C": "m × v",
+            "D": "½mv²"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the power formula?",
+          "options": {
+            "A": "Work/time",
+            "B": "Force × distance",
+            "C": "mass × velocity",
+            "D": "½mv²"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

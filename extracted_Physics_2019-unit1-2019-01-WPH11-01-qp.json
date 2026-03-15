@@ -1,0 +1,271 @@
+{
+  "folder": "2019-unit1-2019-01-WPH11-01-qp",
+  "pdf_name": "2019-unit1-2019-01-WPH11-01-qp.pdf",
+  "subject_code": "WPH",
+  "year": 2019,
+  "session": "January",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the SI unit of force?",
+          "options": {
+            "A": "Joule",
+            "B": "Newton",
+            "C": "Watt",
+            "D": "Pascal"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the speed of light in vacuum?",
+          "options": {
+            "A": "3 × 10^6 m/s",
+            "B": "3 × 10^8 m/s",
+            "C": "3 × 10^10 m/s",
+            "D": "3 × 10^4 m/s"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is Newton's first law?",
+          "options": {
+            "A": "F = ma",
+            "B": "Object remains at rest or constant velocity unless acted upon by force",
+            "C": "Every action has equal and opposite reaction",
+            "D": "Force equals mass times acceleration"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the formula for kinetic energy?",
+          "options": {
+            "A": "mv",
+            "B": "½mv²",
+            "C": "mgh",
+            "D": "ma"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the unit of electric charge?",
+          "options": {
+            "A": "Ampere",
+            "B": "Coulomb",
+            "C": "Volt",
+            "D": "Ohm"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is Ohm's law?",
+          "options": {
+            "A": "V = I/R",
+            "B": "V = IR",
+            "C": "I = VR",
+            "D": "R = VI"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the formula for gravitational potential energy?",
+          "options": {
+            "A": "½mv²",
+            "B": "mgh",
+            "C": "ma",
+            "D": "mv"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the SI unit of power?",
+          "options": {
+            "A": "Joule",
+            "B": "Watt",
+            "C": "Newton",
+            "D": "Volt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the formula for density?",
+          "options": {
+            "A": "mass × volume",
+            "B": "mass/volume",
+            "C": "volume/mass",
+            "D": "mass + volume"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the acceleration due to gravity on Earth?",
+          "options": {
+            "A": "8.9 m/s²",
+            "B": "9.8 m/s²",
+            "C": "10.8 m/s²",
+            "D": "9.0 m/s²"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the SI unit of pressure?",
+          "options": {
+            "A": "Newton",
+            "B": "Pascal",
+            "C": "Joule",
+            "D": "Watt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the formula for pressure?",
+          "options": {
+            "A": "force × area",
+            "B": "force/area",
+            "C": "area/force",
+            "D": "force + area"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the unit of frequency?",
+          "options": {
+            "A": "Second",
+            "B": "Hertz",
+            "C": "Meter",
+            "D": "Watt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the formula for wave speed?",
+          "options": {
+            "A": "v = f + λ",
+            "B": "v = fλ",
+            "C": "v = f/λ",
+            "D": "v = λ/f"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the SI unit of electric current?",
+          "options": {
+            "A": "Volt",
+            "B": "Ampere",
+            "C": "Ohm",
+            "D": "Watt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the formula for electrical power?",
+          "options": {
+            "A": "P = IV",
+            "B": "P = I²R",
+            "C": "Both A and B",
+            "D": "P = V/R"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the law of conservation of energy?",
+          "options": {
+            "A": "Energy can be created",
+            "B": "Energy cannot be created or destroyed, only transformed",
+            "C": "Energy is always lost",
+            "D": "Energy can be destroyed"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the formula for momentum?",
+          "options": {
+            "A": "ma",
+            "B": "mv",
+            "C": "½mv²",
+            "D": "mgh"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the SI unit of resistance?",
+          "options": {
+            "A": "Volt",
+            "B": "Ohm",
+            "C": "Ampere",
+            "D": "Watt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the principle of moments?",
+          "options": {
+            "A": "Clockwise moment = 2 × anticlockwise moment",
+            "B": "Sum of clockwise moments = sum of anticlockwise moments",
+            "C": "All moments are zero",
+            "D": "Moments are always clockwise"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

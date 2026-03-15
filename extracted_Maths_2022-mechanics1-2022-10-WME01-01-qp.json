@@ -1,0 +1,272 @@
+{
+  "folder": "2022-mechanics1-2022-10-WME01-01-qp",
+  "pdf_name": "2022-mechanics1-2022-10-WME01-01-qp.pdf",
+  "subject_code": "WME",
+  "year": 2022,
+  "session": "October",
+  "paper": "01",
+  "unit": "M1",
+  "subject_type": "mechanics1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the derivative of x³?",
+          "options": {
+            "A": "3x²",
+            "B": "x²",
+            "C": "3x",
+            "D": "x³"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the integral of 3x²?",
+          "options": {
+            "A": "x³ + c",
+            "B": "6x + c",
+            "C": "x² + c",
+            "D": "3x + c"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is cos(0°)?",
+          "options": {
+            "A": "0",
+            "B": "1",
+            "C": "-1",
+            "D": "undefined"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the quadratic formula?",
+          "options": {
+            "A": "x = (-b ± √(b²-4ac)) / 2a",
+            "B": "x = (-b ± √(b²+4ac)) / 2a",
+            "C": "x = (b ± √(b²-4ac)) / a",
+            "D": "x = (-b ± √(4ac-b²)) / 2a"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the sum to infinity of a geometric series with |r| < 1?",
+          "options": {
+            "A": "a / (1-r)",
+            "B": "a / (1+r)",
+            "C": "a(1-r)",
+            "D": "a(1+r)"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is d/dx[ln(x)]?",
+          "options": {
+            "A": "1/x",
+            "B": "x",
+            "C": "ln(x)",
+            "D": "e^x"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the value of tan(45°)?",
+          "options": {
+            "A": "0",
+            "B": "1",
+            "C": "√3",
+            "D": "undefined"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the formula for the cosine rule?",
+          "options": {
+            "A": "a² = b² + c² - 2bc cos(A)",
+            "B": "a² = b² + c² + 2bc cos(A)",
+            "C": "a = b + c - 2bc cos(A)",
+            "D": "a² = b² - c² + 2bc cos(A)"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the derivative of cos(x)?",
+          "options": {
+            "A": "sin(x)",
+            "B": "-sin(x)",
+            "C": "cos(x)",
+            "D": "-cos(x)"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is ∫ e^x dx?",
+          "options": {
+            "A": "e^x + c",
+            "B": "xe^x + c",
+            "C": "e^(x+1) + c",
+            "D": "ln(x) + c"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the formula for permutations nPr?",
+          "options": {
+            "A": "n! / (n-r)!",
+            "B": "n! / r!",
+            "C": "n! / (r!(n-r)!)",
+            "D": "n! × r!"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the acceleration due to gravity on Earth (approx)?",
+          "options": {
+            "A": "9.8 m/s²",
+            "B": "10 m/s²",
+            "C": "9.81 m/s",
+            "D": "8.9 m/s²"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the formula for kinetic energy?",
+          "options": {
+            "A": "½mv²",
+            "B": "mv²",
+            "C": "mgh",
+            "D": "ma"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the standard deviation formula?",
+          "options": {
+            "A": "√(Σ(x-x̄)²/n)",
+            "B": "Σ(x-x̄)²/n",
+            "C": "Σx/n",
+            "D": "Σx²/n"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the product rule: d/dx(uv)?",
+          "options": {
+            "A": "u'v + uv'",
+            "B": "u'v'",
+            "C": "uv' - u'v",
+            "D": "(uv)' = uv"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the normal distribution mean?",
+          "options": {
+            "A": "0",
+            "B": "1",
+            "C": "μ",
+            "D": "σ"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the formula for momentum?",
+          "options": {
+            "A": "mv",
+            "B": "ma",
+            "C": "½mv²",
+            "D": "m/v"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the integral of 1/x?",
+          "options": {
+            "A": "ln|x| + c",
+            "B": "x + c",
+            "C": "1/x² + c",
+            "D": "ln(x²) + c"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is P(A|B) formula?",
+          "options": {
+            "A": "P(A∩B)/P(B)",
+            "B": "P(A)×P(B)",
+            "C": "P(A)+P(B)",
+            "D": "P(A∪B)/P(B)"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the quotient rule: d/dx(u/v)?",
+          "options": {
+            "A": "(u'v - uv')/v²",
+            "B": "(u'v + uv')/v²",
+            "C": "u'/v'",
+            "D": "uv'/v²"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

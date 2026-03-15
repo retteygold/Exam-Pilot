@@ -1,0 +1,272 @@
+{
+  "folder": "2023-s1-2023-01-WST01-01-qp",
+  "pdf_name": "2023-s1-2023-01-WST01-01-qp.pdf",
+  "subject_code": "WST",
+  "year": 2023,
+  "session": "January",
+  "paper": "01",
+  "unit": "S1",
+  "subject_type": "statistics1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the derivative of ln(x)?",
+          "options": {
+            "A": "x",
+            "B": "1/x",
+            "C": "ln(x)",
+            "D": "e^x"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is ∫ x^n dx (n ≠ -1)?",
+          "options": {
+            "A": "x^(n+1)/(n+1) + c",
+            "B": "x^(n-1)/(n-1) + c",
+            "C": "nx^(n-1) + c",
+            "D": "x^(n+1) + c"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is sin(30°)?",
+          "options": {
+            "A": "0.5",
+            "B": "√3/2",
+            "C": "1/√2",
+            "D": "1"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the equation of a straight line with gradient m through (0,c)?",
+          "options": {
+            "A": "y = mx + c",
+            "B": "y = cx + m",
+            "C": "y = m/x + c",
+            "D": "x = my + c"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the amplitude of y = 3sin(x)?",
+          "options": {
+            "A": "1",
+            "B": "3",
+            "C": "x",
+            "D": "sin(x)"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the period of y = sin(2x)?",
+          "options": {
+            "A": "π",
+            "B": "2π",
+            "C": "π/2",
+            "D": "4π"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is d/dx[tan(x)]?",
+          "options": {
+            "A": "sec²(x)",
+            "B": "cos²(x)",
+            "C": "sin²(x)",
+            "D": "1/cos(x)"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the factorial of 5 (5!)?",
+          "options": {
+            "A": "120",
+            "B": "25",
+            "C": "15",
+            "D": "100"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the common ratio in the geometric sequence 2, 6, 18, 54...?",
+          "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "6"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the formula for the area of a sector with angle θ (in radians)?",
+          "options": {
+            "A": "½r²θ",
+            "B": "r²θ",
+            "C": "½rθ",
+            "D": "rθ"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the value of e (Euler's number) approximately?",
+          "options": {
+            "A": "2.718",
+            "B": "3.142",
+            "C": "1.414",
+            "D": "1.732"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the trapezium rule formula for area?",
+          "options": {
+            "A": "½h(y₀ + 2y₁ + 2y₂ + ... + yₙ)",
+            "B": "h(y₀ + y₁ + y₂ + ... + yₙ)",
+            "C": "½h(y₀ + yₙ)",
+            "D": "h(y₀ + 2y₁ + y₂)"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the unit vector in the direction of vector a?",
+          "options": {
+            "A": "a/|a|",
+            "B": "|a|/a",
+            "C": "a×|a|",
+            "D": "a-|a|"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the formula for the magnitude of vector (a,b,c)?",
+          "options": {
+            "A": "√(a²+b²+c²)",
+            "B": "a+b+c",
+            "C": "a²+b²+c²",
+            "D": "|a|+|b|+|c|"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the dot product of perpendicular vectors?",
+          "options": {
+            "A": "0",
+            "B": "1",
+            "C": "-1",
+            "D": "undefined"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the formula for conditional probability P(A|B)?",
+          "options": {
+            "A": "P(A∩B)/P(B)",
+            "B": "P(A∪B)/P(B)",
+            "C": "P(A)×P(B)",
+            "D": "P(A)+P(B)"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the expected value E(X) formula?",
+          "options": {
+            "A": "ΣxP(X=x)",
+            "B": "Σx",
+            "C": "ΣP(X=x)",
+            "D": "x/P(X)"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the velocity-time graph gradient represent?",
+          "options": {
+            "A": "Acceleration",
+            "B": "Displacement",
+            "C": "Distance",
+            "D": "Speed"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the area under velocity-time graph?",
+          "options": {
+            "A": "Displacement",
+            "B": "Acceleration",
+            "C": "Speed",
+            "D": "Force"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is Newton's third law?",
+          "options": {
+            "A": "For every action there is equal and opposite reaction",
+            "B": "F = ma",
+            "C": "Objects at rest stay at rest",
+            "D": "Force equals mass times velocity"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

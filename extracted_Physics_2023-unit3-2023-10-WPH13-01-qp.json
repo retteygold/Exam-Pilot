@@ -1,0 +1,271 @@
+{
+  "folder": "2023-unit3-2023-10-WPH13-01-qp",
+  "pdf_name": "2023-unit3-2023-10-WPH13-01-qp.pdf",
+  "subject_code": "WPH",
+  "year": 2023,
+  "session": "October",
+  "paper": "01",
+  "unit": "3",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the SI unit of energy?",
+          "options": {
+            "A": "Watt",
+            "B": "Joule",
+            "C": "Newton",
+            "D": "Pascal"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the formula for acceleration?",
+          "options": {
+            "A": "v/t",
+            "B": "Δv/Δt",
+            "C": "v×t",
+            "D": "v-t"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is displacement?",
+          "options": {
+            "A": "Total distance traveled",
+            "B": "Shortest distance from start to finish with direction",
+            "C": "Speed × time",
+            "D": "Distance without direction"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the formula for average speed?",
+          "options": {
+            "A": "time/distance",
+            "B": "distance/time",
+            "C": "distance×time",
+            "D": "distance-time"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is uniform acceleration?",
+          "options": {
+            "A": "Changing velocity",
+            "B": "Constant acceleration",
+            "C": "Zero velocity",
+            "D": "Maximum speed"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is a scalar quantity?",
+          "options": {
+            "A": "Quantity with direction",
+            "B": "Quantity with magnitude only",
+            "C": "Quantity with both",
+            "D": "Quantity without units"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is a vector quantity?",
+          "options": {
+            "A": "Quantity with magnitude only",
+            "B": "Quantity with magnitude and direction",
+            "C": "Quantity without units",
+            "D": "Quantity with direction only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the formula for kinetic energy?",
+          "options": {
+            "A": "mv²",
+            "B": "½mv²",
+            "C": "mv",
+            "D": "½mv"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the principle of moments?",
+          "options": {
+            "A": "Force × distance",
+            "B": "Clockwise moments = anticlockwise moments for equilibrium",
+            "C": "Mass × velocity",
+            "D": "Force = mass × acceleration"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the center of gravity?",
+          "options": {
+            "A": "Top of object",
+            "B": "Point where weight appears to act",
+            "C": "Bottom of object",
+            "D": "Midpoint of object"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the formula for pressure in fluids?",
+          "options": {
+            "A": "P = ρ/gh",
+            "B": "P = ρgh",
+            "C": "P = ρg+h",
+            "D": "P = h/ρg"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is upthrust?",
+          "options": {
+            "A": "Force pushing down",
+            "B": "Upward force exerted by fluid on immersed object",
+            "C": "Weight of object",
+            "D": "Pressure in fluid"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is Archimedes' principle?",
+          "options": {
+            "A": "Weight of displaced fluid equals weight of object",
+            "B": "Upthrust equals weight of fluid displaced",
+            "C": "Object floats if less dense",
+            "D": "Pressure increases with depth"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the formula for work done?",
+          "options": {
+            "A": "F + d",
+            "B": "F × d × cos(θ)",
+            "C": "F/d",
+            "D": "F - d"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the unit of frequency?",
+          "options": {
+            "A": "m/s",
+            "B": "Hz",
+            "C": "s",
+            "D": "m"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the relationship between wavelength, frequency and wave speed?",
+          "options": {
+            "A": "v = f/λ",
+            "B": "v = fλ",
+            "C": "v = λ/f",
+            "D": "v = f+λ"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is amplitude of a wave?",
+          "options": {
+            "A": "Distance between crests",
+            "B": "Maximum displacement from equilibrium",
+            "C": "Wave speed",
+            "D": "Wave frequency"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the period of a wave?",
+          "options": {
+            "A": "Distance between crests",
+            "B": "Time for one complete wave",
+            "C": "Wave speed",
+            "D": "Wave amplitude"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the formula for refractive index?",
+          "options": {
+            "A": "n = v/c",
+            "B": "n = c/v",
+            "C": "n = c×v",
+            "D": "n = c-v"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is total internal reflection?",
+          "options": {
+            "A": "Reflection from mirror",
+            "B": "Complete reflection when light travels from denser to less dense medium",
+            "C": "Refraction of light",
+            "D": "Dispersion of light"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

@@ -1,0 +1,271 @@
+{
+  "folder": "2021-unit1-2021-10-WPH11-01-qp",
+  "pdf_name": "2021-unit1-2021-10-WPH11-01-qp.pdf",
+  "subject_code": "WPH",
+  "year": 2021,
+  "session": "October",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the formula for weight?",
+          "options": {
+            "A": "m/g",
+            "B": "mg",
+            "C": "m+g",
+            "D": "m-g"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the unit of work done?",
+          "options": {
+            "A": "Watt",
+            "B": "Joule",
+            "C": "Newton",
+            "D": "Pascal"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the formula for efficiency?",
+          "options": {
+            "A": "(input/output) × 100%",
+            "B": "(useful output/total input) × 100%",
+            "C": "(output/input) × 100%",
+            "D": "(total input/useful output) × 100%"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is Hooke's law?",
+          "options": {
+            "A": "F = k/x",
+            "B": "F = kx",
+            "C": "F = x/k",
+            "D": "F = k+x"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the unit of specific heat capacity?",
+          "options": {
+            "A": "J/kg",
+            "B": "J/(kg·°C)",
+            "C": "J·kg·°C",
+            "D": "kg/J"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the formula for elastic potential energy?",
+          "options": {
+            "A": "½kx",
+            "B": "½kx²",
+            "C": "kx²",
+            "D": "kx"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the formula for power?",
+          "options": {
+            "A": "work × time",
+            "B": "work/time",
+            "C": "time/work",
+            "D": "work + time"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the specific latent heat of fusion?",
+          "options": {
+            "A": "Energy to raise temperature of 1kg by 1°C",
+            "B": "Energy to change 1kg from solid to liquid at constant temperature",
+            "C": "Energy to change 1kg from liquid to gas",
+            "D": "Energy to raise temperature by 1K"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the formula for impulse?",
+          "options": {
+            "A": "mv",
+            "B": "FΔt or Δ(mv)",
+            "C": "ma",
+            "D": "Ft"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is terminal velocity?",
+          "options": {
+            "A": "Maximum acceleration",
+            "B": "Constant maximum velocity when drag equals weight",
+            "C": "Zero velocity",
+            "D": "Initial velocity"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the formula for centripetal force?",
+          "options": {
+            "A": "mv/r",
+            "B": "mv²/r",
+            "C": "mvr",
+            "D": "m/vr"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the unit of potential difference?",
+          "options": {
+            "A": "Ampere",
+            "B": "Volt",
+            "C": "Ohm",
+            "D": "Watt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the formula for resistance in series?",
+          "options": {
+            "A": "1/R = 1/R₁ + 1/R₂",
+            "B": "R = R₁ + R₂",
+            "C": "R = R₁ × R₂",
+            "D": "R = R₁/R₂"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the formula for resistance in parallel?",
+          "options": {
+            "A": "R = R₁ + R₂",
+            "B": "1/R = 1/R₁ + 1/R₂",
+            "C": "R = R₁ × R₂",
+            "D": "R = R₁/R₂"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the formula for electrical energy?",
+          "options": {
+            "A": "E = IR",
+            "B": "E = IVt",
+            "C": "E = V/I",
+            "D": "E = R/t"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the e.m.f. of a cell?",
+          "options": {
+            "A": "Current in circuit",
+            "B": "Total energy supplied per unit charge",
+            "C": "Resistance of circuit",
+            "D": "Voltage drop"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the formula for Young's modulus?",
+          "options": {
+            "A": "stress × strain",
+            "B": "stress/strain",
+            "C": "strain/stress",
+            "D": "stress + strain"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the unit of stress?",
+          "options": {
+            "A": "Newton",
+            "B": "Pascal or N/m²",
+            "C": "Joule",
+            "D": "Watt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the Doppler effect?",
+          "options": {
+            "A": "Change in speed of wave",
+            "B": "Apparent change in frequency due to relative motion",
+            "C": "Increase in amplitude",
+            "D": "Decrease in wavelength only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the formula for refractive index?",
+          "options": {
+            "A": "v/c",
+            "B": "c/v or sin(i)/sin(r)",
+            "C": "v×c",
+            "D": "i/r"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

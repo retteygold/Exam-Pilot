@@ -1,0 +1,271 @@
+{
+  "folder": "2024-unit5-2024-01-WPH15-01-qp",
+  "pdf_name": "2024-unit5-2024-01-WPH15-01-qp.pdf",
+  "subject_code": "WPH",
+  "year": 2024,
+  "session": "January",
+  "paper": "01",
+  "unit": "5",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the SI unit of electric charge?",
+          "options": {
+            "A": "Ampere",
+            "B": "Coulomb",
+            "C": "Volt",
+            "D": "Ohm"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is Ohm's law?",
+          "options": {
+            "A": "R = V/I",
+            "B": "V = IR",
+            "C": "I = V/R",
+            "D": "Both B and C"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the formula for electrical resistance?",
+          "options": {
+            "A": "R = ρL/A",
+            "B": "R = V/I",
+            "C": "Both A and B",
+            "D": "R = I/V"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the unit of resistivity?",
+          "options": {
+            "A": "Ω",
+            "B": "Ω·m",
+            "C": "Ω/m",
+            "D": "m/Ω"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the formula for power in electrical circuits?",
+          "options": {
+            "A": "P = VI",
+            "B": "P = I²R",
+            "C": "P = V²/R",
+            "D": "All of the above"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is e.m.f.?",
+          "options": {
+            "A": "Electromotive force - energy supplied per unit charge",
+            "B": "Force on electron",
+            "C": "Magnetic field",
+            "D": "Electric current"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is internal resistance?",
+          "options": {
+            "A": "Resistance of external circuit",
+            "B": "Resistance within the cell/battery",
+            "C": "Zero resistance",
+            "D": "Infinite resistance"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the formula for terminal p.d.?",
+          "options": {
+            "A": "V = E + Ir",
+            "B": "V = E - Ir",
+            "C": "V = IR",
+            "D": "V = E/r"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the unit of magnetic flux?",
+          "options": {
+            "A": "Tesla",
+            "B": "Weber",
+            "C": "Henry",
+            "D": "Farad"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the force on a moving charge in a magnetic field?",
+          "options": {
+            "A": "F = Bqv",
+            "B": "F = BIL",
+            "C": "F = qE",
+            "D": "F = mg"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the formula for transformer turns ratio?",
+          "options": {
+            "A": "Vp/Vs = Ns/Np",
+            "B": "Vp/Vs = Np/Ns",
+            "C": "Vp×Vs = Np×Ns",
+            "D": "Vp+Vs = Np+Ns"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the photoelectric equation?",
+          "options": {
+            "A": "hf = φ + ½mv²",
+            "B": "hf = φ - ½mv²",
+            "C": "hf = ½mv²",
+            "D": "hf = φ"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is work function?",
+          "options": {
+            "A": "Energy of emitted electron",
+            "B": "Minimum energy needed to remove electron from metal surface",
+            "C": "Kinetic energy of photon",
+            "D": "Potential energy"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the formula for threshold frequency?",
+          "options": {
+            "A": "f₀ = h/φ",
+            "B": "f₀ = φ/h",
+            "C": "f₀ = φ×h",
+            "D": "f₀ = φ-h"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is an isotope?",
+          "options": {
+            "A": "Atoms with different protons",
+            "B": "Atoms with same protons but different neutrons",
+            "C": "Atoms with same mass",
+            "D": "Atoms with different electrons"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the formula for mass defect?",
+          "options": {
+            "A": "Δm = mass of products - mass of reactants",
+            "B": "Δm = mass of reactants - mass of products",
+            "C": "Δm = mass of reactants + mass of products",
+            "D": "Δm = mass of reactants × mass of products"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the binding energy?",
+          "options": {
+            "A": "Energy to break nucleus into individual nucleons",
+            "B": "Energy released when nucleus forms",
+            "C": "Both A and B",
+            "D": "Kinetic energy of nucleus"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the formula for exponential decay?",
+          "options": {
+            "A": "N = N₀e^(λt)",
+            "B": "N = N₀e^(-λt)",
+            "C": "N = N₀/e^(λt)",
+            "D": "N = N₀-λt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the relationship between decay constant and half-life?",
+          "options": {
+            "A": "λ = t½/ln(2)",
+            "B": "λ = ln(2)/t½",
+            "C": "λ = ln(2)×t½",
+            "D": "λ = t½+ln(2)"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the unit of absorbed dose?",
+          "options": {
+            "A": "Sievert",
+            "B": "Gray",
+            "C": "Becquerel",
+            "D": "Rutherford"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
