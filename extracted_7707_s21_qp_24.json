@@ -1,0 +1,457 @@
+{
+  "folder": "7707_s21_qp_24",
+  "pdf_name": "7707_s21_qp_24.pdf",
+  "subject_code": "7707",
+  "year": 2021,
+  "session": "Summer (s)",
+  "paper": "24",
+  "variant": "1",
+  "pages": [
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the purpose of a trial balance?",
+          "options": {
+            "A": "To calculate profit",
+            "B": "To prepare bank reconciliation",
+            "C": "To check arithmetic accuracy of ledger",
+            "D": "To calculate depreciation"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which document is sent by a supplier to a customer when goods are supplied on credit?",
+          "options": {
+            "A": "Invoice",
+            "B": "Receipt",
+            "C": "Debit note",
+            "D": "Credit note"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is a debit note?",
+          "options": {
+            "A": "A document sent to request payment",
+            "B": "A document sent to return goods",
+            "C": "A document received for goods returned",
+            "D": "A bank statement entry"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which account would have a credit balance?",
+          "options": {
+            "A": "Cash",
+            "B": "Bank",
+            "C": "Capital",
+            "D": "Purchases"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the double entry for cash sales?",
+          "options": {
+            "A": "Debit cash, credit purchases",
+            "B": "Debit sales, credit cash",
+            "C": "Debit cash, credit sales",
+            "D": "Debit bank, credit sales"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which is a current asset?",
+          "options": {
+            "A": "Equipment",
+            "B": "Buildings",
+            "C": "Inventory",
+            "D": "Land"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is depreciation?",
+          "options": {
+            "A": "Increase in asset value",
+            "B": "Decrease in asset value",
+            "C": "Purchase of asset",
+            "D": "Sale of asset"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "8",
+          "question_text": "Which method charges equal depreciation each year?",
+          "options": {
+            "A": "Reducing balance",
+            "B": "Revaluation",
+            "C": "Straight line",
+            "D": "Unit of production"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the accounting equation?",
+          "options": {
+            "A": "Assets = Liabilities - Capital",
+            "B": "Assets = Liabilities + Capital",
+            "C": "Assets + Liabilities = Capital",
+            "D": "Assets = Capital - Liabilities"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which is a liability?",
+          "options": {
+            "A": "Cash",
+            "B": "Bank",
+            "C": "Loan",
+            "D": "Inventory"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "image_file": "page_004.png",
+      "questions": [
+        {
+          "question_id": "11",
+          "question_text": "What is the purpose of a bank reconciliation statement?",
+          "options": {
+            "A": "To calculate profit",
+            "B": "To explain difference between cash book and bank statement",
+            "C": "To prepare final accounts",
+            "D": "To calculate depreciation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What are uncredited deposits?",
+          "options": {
+            "A": "Cheques paid not yet cleared",
+            "B": "Cash received not yet banked",
+            "C": "Cheques received not yet cleared",
+            "D": "Bank charges"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which is NOT a book of prime entry?",
+          "options": {
+            "A": "Sales journal",
+            "B": "Purchases journal",
+            "C": "Ledger",
+            "D": "Cash book"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the purpose of a sales journal?",
+          "options": {
+            "A": "Record cash sales",
+            "B": "Record credit sales",
+            "C": "Record purchases",
+            "D": "Record returns"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "15",
+          "question_text": "What is the purpose of control accounts?",
+          "options": {
+            "A": "To calculate profit",
+            "B": "To check accuracy of ledgers and locate errors",
+            "C": "To prepare bank reconciliation",
+            "D": "To calculate depreciation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "Which is entered on the debit side of purchases ledger control account?",
+          "options": {
+            "A": "Purchases",
+            "B": "Cash paid to suppliers",
+            "C": "Discount received",
+            "D": "Returns outwards"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is a petty cash book used for?",
+          "options": {
+            "A": "Large payments",
+            "B": "Small payments",
+            "C": "Bank transfers",
+            "D": "Credit sales"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the imprest system?",
+          "options": {
+            "A": "Bank reconciliation method",
+            "B": "Method of restoring petty cash to fixed amount",
+            "C": "Depreciation method",
+            "D": "Inventory valuation method"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the difference between income and expenditure called?",
+          "options": {
+            "A": "Surplus or deficit",
+            "B": "Profit or loss",
+            "C": "Capital",
+            "D": "Assets"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which is a revenue receipt for a club?",
+          "options": {
+            "A": "Donation for building",
+            "B": "Subscriptions",
+            "C": "Sale of equipment",
+            "D": "Legacy"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "image_file": "page_005.png",
+      "questions": [
+        {
+          "question_id": "21",
+          "question_text": "What is a manufacturing account prepared to show?",
+          "options": {
+            "A": "Sales",
+            "B": "Cost of production",
+            "C": "Profit",
+            "D": "Assets"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "22",
+          "question_text": "What is prime cost?",
+          "options": {
+            "A": "Direct materials + Direct labour + Direct expenses",
+            "B": "Factory overheads",
+            "C": "Administrative costs",
+            "D": "Selling costs"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "23",
+          "question_text": "What is work-in-progress?",
+          "options": {
+            "A": "Finished goods",
+            "B": "Raw materials",
+            "C": "Partly completed goods",
+            "D": "Sold goods"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "24",
+          "question_text": "What is the purpose of a partnership agreement?",
+          "options": {
+            "A": "To avoid tax",
+            "B": "To set out terms of partnership",
+            "C": "To dissolve business",
+            "D": "To calculate depreciation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "25",
+          "question_text": "How are partnership profits shared?",
+          "options": {
+            "A": "Equally only",
+            "B": "According to partnership agreement",
+            "C": "By seniority",
+            "D": "By capital contribution only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "26",
+          "question_text": "What is interest on drawings?",
+          "options": {
+            "A": "Reward for partners",
+            "B": "Charge against partners for early withdrawal",
+            "C": "Profit share",
+            "D": "Loan interest"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "27",
+          "question_text": "What is a limited company?",
+          "options": {
+            "A": "Business with unlimited liability",
+            "B": "Business with limited liability",
+            "C": "Partnership",
+            "D": "Sole trader"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "28",
+          "question_text": "What are ordinary shares?",
+          "options": {
+            "A": "Shares with fixed dividend",
+            "B": "Shares with variable dividend",
+            "C": "Preference shares",
+            "D": "Debentures"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "29",
+          "question_text": "What is a debenture?",
+          "options": {
+            "A": "Share capital",
+            "B": "Long-term loan",
+            "C": "Current liability",
+            "D": "Asset"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "30",
+          "question_text": "What is the authorized share capital?",
+          "options": {
+            "A": "Shares actually issued",
+            "B": "Maximum shares company can issue",
+            "C": "Paid-up capital",
+            "D": "Reserve capital"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "image_file": "page_006.png",
+      "questions": [
+        {
+          "question_id": "31",
+          "question_text": "What is the purpose of a statement of changes in equity?",
+          "options": {
+            "A": "Show assets and liabilities",
+            "B": "Show movements in shareholders' equity",
+            "C": "Show cash flows",
+            "D": "Show cost of sales"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "32",
+          "question_text": "Which is added in cost of sales calculation?",
+          "options": {
+            "A": "Closing inventory",
+            "B": "Opening inventory",
+            "C": "Purchases",
+            "D": "Sales"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "33",
+          "question_text": "What is gross profit?",
+          "options": {
+            "A": "Sales - Cost of sales",
+            "B": "Sales + Cost of sales",
+            "C": "Total expenses",
+            "D": "Net profit"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "34",
+          "question_text": "What is net profit?",
+          "options": {
+            "A": "Sales - Cost of sales",
+            "B": "Gross profit - Expenses",
+            "C": "Total assets",
+            "D": "Capital"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "35",
+          "question_text": "What is a provision for doubtful debts?",
+          "options": {
+            "A": "Actual bad debt written off",
+            "B": "Estimate of debts unlikely to be paid",
+            "C": "Cash discount",
+            "D": "Trade discount"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 35,
+  "total_marks": 35
+}
