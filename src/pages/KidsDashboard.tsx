@@ -1,10 +1,14 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Star, Trophy, Zap, Target, Gamepad2, Puzzle, Brain, Sparkles, ArrowRight, Medal, Crown, LogOut } from 'lucide-react'
+import { Star, Trophy, Zap, Target, Gamepad2, Puzzle, Brain, Sparkles, ArrowRight, Medal, Crown, LogOut, Search, Grid3X3, Eye, HelpCircle } from 'lucide-react'
 import { useKidsStore } from '../store/kidsStore'
 import { useUserStore } from '../store/userStore'
 import type { Question, QuestionsData } from '../types'
 import { KidsLogin } from './KidsLogin'
+import { WordSearchGame } from '../games/WordSearchGame'
+import { CrosswordGame } from '../games/CrosswordGame'
+import { FindOddOneOut } from '../games/FindOddOneOut'
+import { WhichOneCan } from '../games/WhichOneCan'
 
 interface GameCard {
   id: string
@@ -70,6 +74,42 @@ const games: GameCard[] = [
     color: 'text-cyan-400',
     bgGradient: 'from-cyan-500/20 to-teal-500/20',
     points: 20
+  },
+  {
+    id: 'word-search',
+    title: 'Word Search',
+    description: 'Find hidden words!',
+    icon: Search,
+    color: 'text-emerald-400',
+    bgGradient: 'from-emerald-500/20 to-teal-500/20',
+    points: 15
+  },
+  {
+    id: 'crossword',
+    title: 'Crossword',
+    description: 'Solve word puzzles!',
+    icon: Grid3X3,
+    color: 'text-blue-400',
+    bgGradient: 'from-blue-500/20 to-indigo-500/20',
+    points: 20
+  },
+  {
+    id: 'find-odd',
+    title: 'Find Odd One',
+    description: 'Spot the difference!',
+    icon: Eye,
+    color: 'text-orange-400',
+    bgGradient: 'from-orange-500/20 to-amber-500/20',
+    points: 10
+  },
+  {
+    id: 'which-can',
+    title: 'Which One Can?',
+    description: 'Pick what works!',
+    icon: HelpCircle,
+    color: 'text-violet-400',
+    bgGradient: 'from-violet-500/20 to-fuchsia-500/20',
+    points: 10
   }
 ]
 
@@ -89,7 +129,9 @@ export function KidsDashboard() {
 
   const [loginKey, setLoginKey] = useState(0)
 
-  const { currentKid, logout, getKidStats } = useKidsStore()
+  const [activeGame, setActiveGame] = useState<string | null>(null)
+
+  const { currentKid, logout, getKidStats, recordSession } = useKidsStore()
 
   // Trigger re-render when login succeeds
   const handleLogin = () => {
@@ -123,6 +165,13 @@ export function KidsDashboard() {
   }, [])
 
   const startKidsQuiz = (gameId: string) => {
+    // Handle new interactive games
+    const interactiveGames = ['word-search', 'crossword', 'find-odd', 'which-can']
+    if (interactiveGames.includes(gameId)) {
+      setActiveGame(gameId)
+      return
+    }
+
     const byGrade = bank.filter((q) => (q.yearGroup || '').toLowerCase() === gradeKey)
     if (byGrade.length === 0) {
       navigate('/quiz', { state: { questions: [] } })
@@ -148,11 +197,53 @@ export function KidsDashboard() {
     navigate('/quiz', { state: { questions: selection } })
   }
 
+  const handleGameComplete = (gameType: string, score: number, stars: number) => {
+    if (currentKid) {
+      recordSession({
+        gameType,
+        score,
+        starsEarned: stars,
+        correctAnswers: Math.floor(score / 10),
+        totalQuestions: 10,
+        durationSeconds: 120
+      })
+    }
+    setActiveGame(null)
+  }
+
   const stats = currentKid ? getKidStats(currentKid.id) : { totalStars: 0, totalSessions: 0, bestStreak: 0 }
 
   // Show login if not authenticated
   if (!currentKid) {
     return <KidsLogin onLogin={handleLogin} key={loginKey} />
+  }
+
+  // Render active game
+  if (activeGame) {
+    switch (activeGame) {
+      case 'word-search':
+        return <WordSearchGame 
+          onComplete={(score, stars) => handleGameComplete('Word Search', score, stars)} 
+          onExit={() => setActiveGame(null)} 
+        />
+      case 'crossword':
+        return <CrosswordGame 
+          onComplete={(score, stars) => handleGameComplete('Crossword', score, stars)} 
+          onExit={() => setActiveGame(null)} 
+        />
+      case 'find-odd':
+        return <FindOddOneOut 
+          onComplete={(score, stars) => handleGameComplete('Find Odd One', score, stars)} 
+          onExit={() => setActiveGame(null)} 
+        />
+      case 'which-can':
+        return <WhichOneCan 
+          onComplete={(score, stars) => handleGameComplete('Which One Can', score, stars)} 
+          onExit={() => setActiveGame(null)} 
+        />
+      default:
+        break
+    }
   }
 
   return (
