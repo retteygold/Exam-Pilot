@@ -1,0 +1,271 @@
+{
+  "folder": "0580_s23_qp_32",
+  "pdf_name": "0580_s23_qp_32.pdf",
+  "subject_code": "0580",
+  "year": 2023,
+  "session": "Summer",
+  "paper": "32",
+  "unit": "3",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the value of 5² - 3²?",
+          "options": {
+            "A": "4",
+            "B": "16",
+            "C": "25",
+            "D": "9"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is 25% of 80?",
+          "options": {
+            "A": "15",
+            "B": "20",
+            "C": "25",
+            "D": "10"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Simplify: 4y - 2y",
+          "options": {
+            "A": "2y²",
+            "B": "2y",
+            "C": "6y",
+            "D": "y"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the perimeter of a square with side 6cm?",
+          "options": {
+            "A": "12 cm",
+            "B": "24 cm",
+            "C": "36 cm",
+            "D": "18 cm"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the circumference of a circle with radius 7cm? (Use π = 22/7)",
+          "options": {
+            "A": "22 cm",
+            "B": "44 cm",
+            "C": "154 cm",
+            "D": "38 cm"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "If x = 2 and y = 5, what is the value of 3x + y?",
+          "options": {
+            "A": "10",
+            "B": "11",
+            "C": "15",
+            "D": "8"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the next prime number after 7?",
+          "options": {
+            "A": "9",
+            "B": "11",
+            "C": "13",
+            "D": "8"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the HCF of 12 and 18?",
+          "options": {
+            "A": "2",
+            "B": "6",
+            "C": "3",
+            "D": "12"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the LCM of 4 and 6?",
+          "options": {
+            "A": "2",
+            "B": "12",
+            "C": "24",
+            "D": "8"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is 3/5 as a percentage?",
+          "options": {
+            "A": "30%",
+            "B": "60%",
+            "C": "50%",
+            "D": "75%"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the volume of a cube with side 4cm?",
+          "options": {
+            "A": "16 cm³",
+            "B": "64 cm³",
+            "C": "12 cm³",
+            "D": "48 cm³"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the value of 4³?",
+          "options": {
+            "A": "12",
+            "B": "64",
+            "C": "16",
+            "D": "48"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the square root of 169?",
+          "options": {
+            "A": "11",
+            "B": "13",
+            "C": "15",
+            "D": "17"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Solve: 2x + 5 = 15",
+          "options": {
+            "A": "5",
+            "B": "5",
+            "C": "10",
+            "D": "20"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the gradient of the line y = -3x + 2?",
+          "options": {
+            "A": "2",
+            "B": "-3",
+            "C": "3",
+            "D": "-2"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What type of angle is 120°?",
+          "options": {
+            "A": "Acute",
+            "B": "Obtuse",
+            "C": "Right",
+            "D": "Reflex"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the sum of interior angles in a quadrilateral?",
+          "options": {
+            "A": "180°",
+            "B": "360°",
+            "C": "540°",
+            "D": "720°"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the probability of rolling a 6 on a fair die?",
+          "options": {
+            "A": "1/3",
+            "B": "1/6",
+            "C": "1/2",
+            "D": "1/4"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Convert 0.75 to a fraction in lowest terms.",
+          "options": {
+            "A": "3/5",
+            "B": "3/4",
+            "C": "7/10",
+            "D": "2/3"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the ratio 12:18 in its simplest form?",
+          "options": {
+            "A": "2:3",
+            "B": "2:3",
+            "C": "4:6",
+            "D": "6:9"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

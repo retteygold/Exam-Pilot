@@ -1,0 +1,271 @@
+{
+  "folder": "0580_s25_qp_12",
+  "pdf_name": "0580_s25_qp_12.pdf",
+  "subject_code": "0580",
+  "year": 2025,
+  "session": "Summer",
+  "paper": "12",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Calculate: 3.45 × 100",
+          "options": {
+            "A": "34.5",
+            "B": "345",
+            "C": "0.345",
+            "D": "3450"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is 1/4 + 1/2?",
+          "options": {
+            "A": "1/6",
+            "B": "3/4",
+            "C": "2/6",
+            "D": "1/8"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Round 3.786 to 2 decimal places.",
+          "options": {
+            "A": "3.78",
+            "B": "3.79",
+            "C": "3.80",
+            "D": "3.77"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the area of a triangle with base 8cm and height 5cm?",
+          "options": {
+            "A": "40 cm²",
+            "B": "20 cm²",
+            "C": "13 cm²",
+            "D": "26 cm²"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the volume of a cuboid with dimensions 3cm × 4cm × 5cm?",
+          "options": {
+            "A": "12 cm³",
+            "B": "60 cm³",
+            "C": "24 cm³",
+            "D": "15 cm³"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "If 2x = 16, what is the value of x?",
+          "options": {
+            "A": "4",
+            "B": "8",
+            "C": "6",
+            "D": "32"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the bearing of North?",
+          "options": {
+            "A": "90°",
+            "B": "0°",
+            "C": "180°",
+            "D": "270°"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the formula for speed?",
+          "options": {
+            "A": "Time ÷ Distance",
+            "B": "Distance ÷ Time",
+            "C": "Distance × Time",
+            "D": "Time + Distance"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Convert 2.5 km to meters.",
+          "options": {
+            "A": "25 m",
+            "B": "2500 m",
+            "C": "250 m",
+            "D": "25000 m"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the reciprocal of 5?",
+          "options": {
+            "A": "-5",
+            "B": "1/5",
+            "C": "5/1",
+            "D": "0.2"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is 3⁴?",
+          "options": {
+            "A": "12",
+            "B": "81",
+            "C": "27",
+            "D": "64"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the standard form of 4500?",
+          "options": {
+            "A": "45 × 10²",
+            "B": "4.5 × 10³",
+            "C": "0.45 × 10⁴",
+            "D": "450 × 10¹"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the compound interest formula?",
+          "options": {
+            "A": "P × r × t",
+            "B": "P(1 + r/n)^(nt)",
+            "C": "P + r",
+            "D": "P × r"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Solve: x/4 = 3",
+          "options": {
+            "A": "3/4",
+            "B": "12",
+            "C": "4/3",
+            "D": "1"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the surface area of a cube with side 3cm?",
+          "options": {
+            "A": "9 cm²",
+            "B": "54 cm²",
+            "C": "27 cm²",
+            "D": "36 cm²"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the sine of 30°?",
+          "options": {
+            "A": "1/2",
+            "B": "√3/2",
+            "C": "1",
+            "D": "0"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the cosine of 60°?",
+          "options": {
+            "A": "√3/2",
+            "B": "1/2",
+            "C": "0",
+            "D": "1"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the tangent of 45°?",
+          "options": {
+            "A": "0",
+            "B": "1",
+            "C": "√2",
+            "D": "undefined"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the equation of a circle with center (0,0) and radius r?",
+          "options": {
+            "A": "x² + y = r²",
+            "B": "x² + y² = r²",
+            "C": "x + y = r",
+            "D": "x² - y² = r²"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the sum of the first 10 natural numbers?",
+          "options": {
+            "A": "45",
+            "B": "55",
+            "C": "50",
+            "D": "100"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
