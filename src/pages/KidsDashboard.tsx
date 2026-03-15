@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Star, Trophy, Zap, Target, Gamepad2, Puzzle, Brain, Sparkles, ArrowRight, Medal, Crown } from 'lucide-react'
 import { useUserStore } from '../store/userStore'
+import type { Question, QuestionsData } from '../types'
 
 interface GameCard {
   id: string
@@ -83,7 +84,58 @@ export function KidsDashboard() {
   const [stars] = useState(150)
   const [streak] = useState(5)
 
+  const [bank, setBank] = useState<Question[]>([])
+
   const gradeLabel = profile?.grade || 'Grade 1'
+
+  const gradeKey = useMemo(() => {
+    const g = (profile?.grade || '').trim()
+    if (!g) return 'grade1'
+    if (g.toUpperCase() === 'LKG') return 'lkg'
+    if (g.toUpperCase() === 'UKG') return 'ukg'
+    const m = g.match(/Grade\s+(\d+)/i)
+    if (m) return `grade${m[1]}`
+    return 'grade1'
+  }, [profile?.grade])
+
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const res = await fetch('/kids_questions.json', { cache: 'no-store' })
+        const data = (await res.json()) as QuestionsData
+        setBank(Array.isArray(data.questions) ? data.questions : [])
+      } catch {
+        setBank([])
+      }
+    }
+    load()
+  }, [])
+
+  const startKidsQuiz = (gameId: string) => {
+    const byGrade = bank.filter((q) => (q.yearGroup || '').toLowerCase() === gradeKey)
+    if (byGrade.length === 0) {
+      navigate('/quiz', { state: { questions: [] } })
+      return
+    }
+
+    // Light mapping from game cards to topics
+    const topicMap: Record<string, string[]> = {
+      'quick-quiz': ['colors', 'shapes', 'counting', 'addition', 'subtraction'],
+      'puzzle-solve': ['shapes', 'fractions', 'algebra'],
+      'memory-match': ['alphabet', 'phonics', 'spelling'],
+      'word-builder': ['spelling', 'grammar', 'alphabet', 'phonics'],
+      'math-race': ['counting', 'addition', 'subtraction', 'multiplication', 'fractions', 'algebra'],
+      'science-explorer': ['animals', 'forces', 'biology']
+    }
+
+    const allowed = topicMap[gameId]
+    const filtered = allowed
+      ? byGrade.filter((q) => allowed.includes((q.topic || '').toLowerCase()))
+      : byGrade
+
+    const selection = (filtered.length > 0 ? filtered : byGrade).slice(0, 10)
+    navigate('/quiz', { state: { questions: selection } })
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-4">
@@ -142,7 +194,7 @@ export function KidsDashboard() {
             return (
               <button
                 key={game.id}
-                onClick={() => navigate('/quiz')}
+                onClick={() => startKidsQuiz(game.id)}
                 className={`p-4 rounded-2xl bg-gradient-to-br ${game.bgGradient} border border-white/10 hover:border-white/30 transition-all group text-left`}
               >
                 <div className="flex items-start justify-between mb-3">
