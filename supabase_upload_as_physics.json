@@ -1,0 +1,6609 @@
+{
+  "metadata": {
+    "subject": "as_physics",
+    "total_questions": 220,
+    "created_date": "2025-03-15"
+  },
+  "questions": [
+    {
+      "id": "as_physics-y2025-u1-p1A-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1A-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u1-p1-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2A-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u2-p2-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3A-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u3-p3-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4A-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u4-p4-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5A-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u5-p5-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q1",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the SI unit of force?",
+      "options": [
+        "A. Watt",
+        "B. Joule",
+        "C. Newton",
+        "D. Pascal"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q2",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the equation for kinetic energy?",
+      "options": [
+        "A. mgh",
+        "B. 0.5mv²",
+        "C. mv",
+        "D. F/d"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q3",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the acceleration due to gravity on Earth?",
+      "options": [
+        "A. 8.9 m/s²",
+        "B. 9.8 m/s²",
+        "C. 10.2 m/s²",
+        "D. 9.2 m/s²"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q4",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is Newton's First Law?",
+      "options": [
+        "A. F=ma",
+        "B. Every action has equal reaction",
+        "C. Object remains at rest or constant velocity unless acted upon by force",
+        "D. Force equals change in momentum"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q5",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the unit of electric charge?",
+      "options": [
+        "A. Volt",
+        "B. Ampere",
+        "C. Coulomb",
+        "D. Ohm"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q6",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is Ohm's Law?",
+      "options": [
+        "A. V = IR",
+        "B. P = IV",
+        "C. R = V/I",
+        "D. I = V/R"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q7",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the speed of light in vacuum?",
+      "options": [
+        "A. 3.0 × 10^6 m/s",
+        "B. 3.0 × 10^7 m/s",
+        "C. 3.0 × 10^8 m/s",
+        "D. 3.0 × 10^9 m/s"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q8",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the wavelength of visible light?",
+      "options": [
+        "A. 400-700 nm",
+        "B. 700-1000 nm",
+        "C. 100-400 nm",
+        "D. 1-10 nm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q9",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the principle of conservation of energy?",
+      "options": [
+        "A. Energy can be created",
+        "B. Energy can be destroyed",
+        "C. Energy cannot be created or destroyed, only transformed",
+        "D. Energy is always lost"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q10",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the unit of power?",
+      "options": [
+        "A. Joule",
+        "B. Newton",
+        "C. Watt",
+        "D. Volt"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q11",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the formula for density?",
+      "options": [
+        "A. mass × volume",
+        "B. mass / volume",
+        "C. volume / mass",
+        "D. mass + volume"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q12",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is pressure?",
+      "options": [
+        "A. force × area",
+        "B. force / area",
+        "C. area / force",
+        "D. mass × acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q13",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is absolute zero?",
+      "options": [
+        "A. 0°C",
+        "B. -273°C",
+        "C. 273°C",
+        "D. 100°C"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q14",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the ideal gas equation?",
+      "options": [
+        "A. PV = nRT",
+        "B. P = nRT/V",
+        "C. V = nRT/P",
+        "D. All of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q15",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is simple harmonic motion?",
+      "options": [
+        "A. Motion with constant velocity",
+        "B. Motion where acceleration is proportional to displacement",
+        "C. Motion in a circle",
+        "D. Motion with constant acceleration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q16",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the unit of frequency?",
+      "options": [
+        "A. Second",
+        "B. Meter",
+        "C. Hertz",
+        "D. Radian"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q17",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the wave equation?",
+      "options": [
+        "A. v = fλ",
+        "B. v = f/λ",
+        "C. v = λ/f",
+        "D. v = f + λ"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q18",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is refraction?",
+      "options": [
+        "A. Bouncing of light",
+        "B. Change in speed and direction of light at boundary",
+        "C. Absorption of light",
+        "D. Emission of light"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q19",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the photoelectric effect?",
+      "options": [
+        "A. Emission of electrons when light hits metal",
+        "B. Absorption of photons",
+        "C. Reflection of light",
+        "D. Refraction of light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_physics-y2025-u6-p6-q20",
+      "subject": "as_physics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is half-life?",
+      "options": [
+        "A. Time for all atoms to decay",
+        "B. Time for half of atoms to decay",
+        "C. Time for quarter of atoms to decay",
+        "D. Time for double atoms to decay"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "20",
+        "page": "003"
+      }
+    }
+  ]
+}

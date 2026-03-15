@@ -1,0 +1,6609 @@
+{
+  "metadata": {
+    "subject": "as_biology_oct",
+    "total_questions": 220,
+    "created_date": "2025-03-15"
+  },
+  "questions": [
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1A-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u1-p1-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2A-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u2-p2-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3A-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u3-p3-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4A-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4A QP.pdf",
+        "folder": "October 2025 - Unit 4A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4A",
+        "unit": "4",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u4-p4-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5A-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5A QP.pdf",
+        "folder": "October 2025 - Unit 5A QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5A",
+        "unit": "5",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u5-p5-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "5",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 5 QP.pdf",
+        "folder": "October 2025 - Unit 5 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "5",
+        "unit": "5",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q1",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the function of the nuclear envelope?",
+      "options": [
+        "A. DNA synthesis",
+        "B. Separates nucleus from cytoplasm with pores for transport",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q2",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "Which technique separates proteins by size?",
+      "options": [
+        "A. Chromatography",
+        "B. Centrifugation",
+        "C. SDS-PAGE",
+        "D. Spectrophotometry"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q3",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the function of the cell wall?",
+      "options": [
+        "A. Energy production",
+        "B. Support and protection",
+        "C. Protein synthesis",
+        "D. Cell division"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q4",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "Which organelle produces vesicles?",
+      "options": [
+        "A. Mitochondrion",
+        "B. Golgi apparatus",
+        "C. Ribosome",
+        "D. Nucleus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q5",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the induced fit model of enzyme action?",
+      "options": [
+        "A. Enzyme shape is fixed",
+        "B. Enzyme changes shape to fit substrate",
+        "C. Substrate changes shape",
+        "D. Both change shape"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q6",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "Which vitamin is required for coenzyme A?",
+      "options": [
+        "A. B1",
+        "B. B2",
+        "C. B5 (pantothenic acid)",
+        "D. B12"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q7",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the function of hemoglobin?",
+      "options": [
+        "A. Enzyme catalysis",
+        "B. Oxygen transport",
+        "C. CO2 production",
+        "D. Cell signaling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q8",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "Which bond breaks to denature protein?",
+      "options": [
+        "A. Peptide bonds",
+        "B. Hydrogen bonds",
+        "C. Both A and B",
+        "D. None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q9",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the function of triglycerides?",
+      "options": [
+        "A. Energy storage and insulation",
+        "B. Structural support",
+        "C. Cell signaling",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q10",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "Which cholesterol is 'good' cholesterol?",
+      "options": [
+        "A. LDL",
+        "B. HDL",
+        "C. VLDL",
+        "D. All cholesterol is bad"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q11",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the function of cholesterol in membrane?",
+      "options": [
+        "A. Transport",
+        "B. Maintains fluidity and stability",
+        "C. Energy production",
+        "D. Cell recognition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q12",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "Which increases membrane fluidity?",
+      "options": [
+        "A. More saturated fatty acids",
+        "B. More unsaturated fatty acids",
+        "C. Lower temperature",
+        "D. Less cholesterol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q13",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is facilitated diffusion?",
+      "options": [
+        "A. Active transport",
+        "B. Passive transport with carrier protein",
+        "C. Bulk transport",
+        "D. Osmosis only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q14",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the function of carrier proteins?",
+      "options": [
+        "A. Structural support",
+        "B. Transport specific molecules across membrane",
+        "C. Cell recognition",
+        "D. Enzyme catalysis"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q15",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the light harvesting complex?",
+      "options": [
+        "A. Photosystem core",
+        "B. Antenna pigments capturing light",
+        "C. ATP synthase",
+        "D. Electron transport chain"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q16",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is cyclic photophosphorylation?",
+      "options": [
+        "A. Linear electron flow",
+        "B. Electron cycling producing only ATP",
+        "C. Water splitting",
+        "D. CO2 fixation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q17",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "Which product of light stage is used in Calvin cycle?",
+      "options": [
+        "A. O2",
+        "B. ATP and NADPH",
+        "C. H2O",
+        "D. CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q18",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the role of glycerate-3-phosphate (GP)?",
+      "options": [
+        "A. Final sugar product",
+        "B. Intermediate in Calvin cycle",
+        "C. CO2 acceptor",
+        "D. Enzyme"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q19",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "What is the end product of Calvin cycle?",
+      "options": [
+        "A. CO2",
+        "B. Triose phosphate (TP)",
+        "C. RuBP",
+        "D. O2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_biology_oct-y2025-u6-p6-q20",
+      "subject": "as_biology_oct",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "6",
+      "marks": 1,
+      "question": "Which condition causes stomatal closure?",
+      "options": [
+        "A. High water availability",
+        "B. Low water potential/drought stress",
+        "C. High light",
+        "D. Low CO2"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 6 QP.pdf",
+        "folder": "October 2025 - Unit 6 QP",
+        "year": 2025,
+        "session": "October 2025",
+        "paper": "6",
+        "unit": "6",
+        "question_number": "20",
+        "page": "003"
+      }
+    }
+  ]
+}

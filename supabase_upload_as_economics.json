@@ -1,0 +1,4209 @@
+{
+  "metadata": {
+    "subject": "as_economics",
+    "total_questions": 140,
+    "created_date": "2025-03-15"
+  },
+  "questions": [
+    {
+      "id": "as_economics-y2025-u1-p1A-q1",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the basic economic problem?",
+      "options": [
+        "A. Unlimited resources and unlimited wants",
+        "B. Limited resources and limited wants",
+        "C. Limited resources and unlimited wants",
+        "D. Unlimited resources and limited wants"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q2",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is opportunity cost?",
+      "options": [
+        "A. The total cost of production",
+        "B. The cost of the next best alternative foregone",
+        "C. The fixed cost of business",
+        "D. The variable cost of production"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q3",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a free good?",
+      "options": [
+        "A. A good with a high price",
+        "B. A good with no opportunity cost",
+        "C. A good provided by government",
+        "D. A good with limited supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q4",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What causes a movement along the demand curve?",
+      "options": [
+        "A. Change in income",
+        "B. Change in price of the good",
+        "C. Change in tastes",
+        "D. Change in population"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q5",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What shifts the supply curve to the right?",
+      "options": [
+        "A. Increase in costs of production",
+        "B. Decrease in technology",
+        "C. Improvement in technology",
+        "D. Decrease in number of suppliers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q6",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is price elasticity of demand?",
+      "options": [
+        "A. Responsiveness of supply to price change",
+        "B. Responsiveness of demand to income change",
+        "C. Responsiveness of demand to price change",
+        "D. Responsiveness of price to demand change"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q7",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "If demand is price inelastic, what happens when price rises?",
+      "options": [
+        "A. Total revenue falls",
+        "B. Quantity demanded rises significantly",
+        "C. Total revenue rises",
+        "D. No change in revenue"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q8",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is consumer surplus?",
+      "options": [
+        "A. Price paid minus cost of production",
+        "B. Maximum price willing to pay minus actual price paid",
+        "C. Actual price paid minus minimum acceptable price",
+        "D. Total revenue minus total cost"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q9",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a public good?",
+      "options": [
+        "A. A good provided by private companies",
+        "B. A good that is non-excludable and non-rivalrous",
+        "C. A good with elastic demand",
+        "D. A good with inelastic supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q10",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is an externality?",
+      "options": [
+        "A. Cost or benefit affecting third parties",
+        "B. Cost of production",
+        "C. Price of goods",
+        "D. Government tax"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q11",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is GDP?",
+      "options": [
+        "A. Gross Domestic Product - total value of goods and services produced",
+        "B. Government Development Plan",
+        "C. General Demand Price",
+        "D. Gross Demand Production"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q12",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is inflation?",
+      "options": [
+        "A. Decrease in general price level",
+        "B. Sustained increase in general price level",
+        "C. Increase in GDP",
+        "D. Decrease in unemployment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q13",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is unemployment?",
+      "options": [
+        "A. People without any work",
+        "B. People of working age actively seeking work but unable to find it",
+        "C. People working part-time",
+        "D. People retired"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q14",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is fiscal policy?",
+      "options": [
+        "A. Control of money supply",
+        "B. Government policy on taxation and spending",
+        "C. Exchange rate policy",
+        "D. Trade policy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q15",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is monetary policy?",
+      "options": [
+        "A. Government spending",
+        "B. Taxation policy",
+        "C. Central bank policy on interest rates and money supply",
+        "D. Exchange rate management"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q16",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is absolute advantage?",
+      "options": [
+        "A. Producing at lower opportunity cost",
+        "B. Producing more efficiently than another country",
+        "C. Having more resources",
+        "D. Having better technology"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q17",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is comparative advantage?",
+      "options": [
+        "A. Producing more than another country",
+        "B. Producing at lower opportunity cost than another country",
+        "C. Having absolute advantage in all goods",
+        "D. Having no trade barriers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q18",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a tariff?",
+      "options": [
+        "A. A tax on exports",
+        "B. A subsidy for imports",
+        "C. A tax on imports",
+        "D. A quota on exports"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q19",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a quota?",
+      "options": [
+        "A. A tax on imports",
+        "B. A physical limit on quantity of imports",
+        "C. A subsidy for exports",
+        "D. A free trade agreement"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1A-q20",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a multinational company?",
+      "options": [
+        "A. A company operating in one country",
+        "B. A company operating in multiple countries",
+        "C. A government organization",
+        "D. A small local business"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1A QP.pdf",
+        "folder": "October 2025 - Unit 1A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1A",
+        "unit": "1",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q1",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is the basic economic problem?",
+      "options": [
+        "A. Unlimited resources and unlimited wants",
+        "B. Limited resources and limited wants",
+        "C. Limited resources and unlimited wants",
+        "D. Unlimited resources and limited wants"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q2",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is opportunity cost?",
+      "options": [
+        "A. The total cost of production",
+        "B. The cost of the next best alternative foregone",
+        "C. The fixed cost of business",
+        "D. The variable cost of production"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q3",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a free good?",
+      "options": [
+        "A. A good with a high price",
+        "B. A good with no opportunity cost",
+        "C. A good provided by government",
+        "D. A good with limited supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q4",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What causes a movement along the demand curve?",
+      "options": [
+        "A. Change in income",
+        "B. Change in price of the good",
+        "C. Change in tastes",
+        "D. Change in population"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q5",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What shifts the supply curve to the right?",
+      "options": [
+        "A. Increase in costs of production",
+        "B. Decrease in technology",
+        "C. Improvement in technology",
+        "D. Decrease in number of suppliers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q6",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is price elasticity of demand?",
+      "options": [
+        "A. Responsiveness of supply to price change",
+        "B. Responsiveness of demand to income change",
+        "C. Responsiveness of demand to price change",
+        "D. Responsiveness of price to demand change"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q7",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "If demand is price inelastic, what happens when price rises?",
+      "options": [
+        "A. Total revenue falls",
+        "B. Quantity demanded rises significantly",
+        "C. Total revenue rises",
+        "D. No change in revenue"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q8",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is consumer surplus?",
+      "options": [
+        "A. Price paid minus cost of production",
+        "B. Maximum price willing to pay minus actual price paid",
+        "C. Actual price paid minus minimum acceptable price",
+        "D. Total revenue minus total cost"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q9",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a public good?",
+      "options": [
+        "A. A good provided by private companies",
+        "B. A good that is non-excludable and non-rivalrous",
+        "C. A good with elastic demand",
+        "D. A good with inelastic supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q10",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is an externality?",
+      "options": [
+        "A. Cost or benefit affecting third parties",
+        "B. Cost of production",
+        "C. Price of goods",
+        "D. Government tax"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q11",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is GDP?",
+      "options": [
+        "A. Gross Domestic Product - total value of goods and services produced",
+        "B. Government Development Plan",
+        "C. General Demand Price",
+        "D. Gross Demand Production"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q12",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is inflation?",
+      "options": [
+        "A. Decrease in general price level",
+        "B. Sustained increase in general price level",
+        "C. Increase in GDP",
+        "D. Decrease in unemployment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q13",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is unemployment?",
+      "options": [
+        "A. People without any work",
+        "B. People of working age actively seeking work but unable to find it",
+        "C. People working part-time",
+        "D. People retired"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q14",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is fiscal policy?",
+      "options": [
+        "A. Control of money supply",
+        "B. Government policy on taxation and spending",
+        "C. Exchange rate policy",
+        "D. Trade policy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q15",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is monetary policy?",
+      "options": [
+        "A. Government spending",
+        "B. Taxation policy",
+        "C. Central bank policy on interest rates and money supply",
+        "D. Exchange rate management"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q16",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is absolute advantage?",
+      "options": [
+        "A. Producing at lower opportunity cost",
+        "B. Producing more efficiently than another country",
+        "C. Having more resources",
+        "D. Having better technology"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q17",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is comparative advantage?",
+      "options": [
+        "A. Producing more than another country",
+        "B. Producing at lower opportunity cost than another country",
+        "C. Having absolute advantage in all goods",
+        "D. Having no trade barriers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q18",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a tariff?",
+      "options": [
+        "A. A tax on exports",
+        "B. A subsidy for imports",
+        "C. A tax on imports",
+        "D. A quota on exports"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q19",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a quota?",
+      "options": [
+        "A. A tax on imports",
+        "B. A physical limit on quantity of imports",
+        "C. A subsidy for exports",
+        "D. A free trade agreement"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u1-p1-q20",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "1",
+      "marks": 1,
+      "question": "What is a multinational company?",
+      "options": [
+        "A. A company operating in one country",
+        "B. A company operating in multiple countries",
+        "C. A government organization",
+        "D. A small local business"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 1 QP.pdf",
+        "folder": "October 2025 - Unit 1 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "1",
+        "unit": "1",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q1",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the basic economic problem?",
+      "options": [
+        "A. Unlimited resources and unlimited wants",
+        "B. Limited resources and limited wants",
+        "C. Limited resources and unlimited wants",
+        "D. Unlimited resources and limited wants"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q2",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is opportunity cost?",
+      "options": [
+        "A. The total cost of production",
+        "B. The cost of the next best alternative foregone",
+        "C. The fixed cost of business",
+        "D. The variable cost of production"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q3",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a free good?",
+      "options": [
+        "A. A good with a high price",
+        "B. A good with no opportunity cost",
+        "C. A good provided by government",
+        "D. A good with limited supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q4",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What causes a movement along the demand curve?",
+      "options": [
+        "A. Change in income",
+        "B. Change in price of the good",
+        "C. Change in tastes",
+        "D. Change in population"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q5",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What shifts the supply curve to the right?",
+      "options": [
+        "A. Increase in costs of production",
+        "B. Decrease in technology",
+        "C. Improvement in technology",
+        "D. Decrease in number of suppliers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q6",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is price elasticity of demand?",
+      "options": [
+        "A. Responsiveness of supply to price change",
+        "B. Responsiveness of demand to income change",
+        "C. Responsiveness of demand to price change",
+        "D. Responsiveness of price to demand change"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q7",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "If demand is price inelastic, what happens when price rises?",
+      "options": [
+        "A. Total revenue falls",
+        "B. Quantity demanded rises significantly",
+        "C. Total revenue rises",
+        "D. No change in revenue"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q8",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is consumer surplus?",
+      "options": [
+        "A. Price paid minus cost of production",
+        "B. Maximum price willing to pay minus actual price paid",
+        "C. Actual price paid minus minimum acceptable price",
+        "D. Total revenue minus total cost"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q9",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a public good?",
+      "options": [
+        "A. A good provided by private companies",
+        "B. A good that is non-excludable and non-rivalrous",
+        "C. A good with elastic demand",
+        "D. A good with inelastic supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q10",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is an externality?",
+      "options": [
+        "A. Cost or benefit affecting third parties",
+        "B. Cost of production",
+        "C. Price of goods",
+        "D. Government tax"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q11",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is GDP?",
+      "options": [
+        "A. Gross Domestic Product - total value of goods and services produced",
+        "B. Government Development Plan",
+        "C. General Demand Price",
+        "D. Gross Demand Production"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q12",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is inflation?",
+      "options": [
+        "A. Decrease in general price level",
+        "B. Sustained increase in general price level",
+        "C. Increase in GDP",
+        "D. Decrease in unemployment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q13",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is unemployment?",
+      "options": [
+        "A. People without any work",
+        "B. People of working age actively seeking work but unable to find it",
+        "C. People working part-time",
+        "D. People retired"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q14",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is fiscal policy?",
+      "options": [
+        "A. Control of money supply",
+        "B. Government policy on taxation and spending",
+        "C. Exchange rate policy",
+        "D. Trade policy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q15",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is monetary policy?",
+      "options": [
+        "A. Government spending",
+        "B. Taxation policy",
+        "C. Central bank policy on interest rates and money supply",
+        "D. Exchange rate management"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q16",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is absolute advantage?",
+      "options": [
+        "A. Producing at lower opportunity cost",
+        "B. Producing more efficiently than another country",
+        "C. Having more resources",
+        "D. Having better technology"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q17",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is comparative advantage?",
+      "options": [
+        "A. Producing more than another country",
+        "B. Producing at lower opportunity cost than another country",
+        "C. Having absolute advantage in all goods",
+        "D. Having no trade barriers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q18",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a tariff?",
+      "options": [
+        "A. A tax on exports",
+        "B. A subsidy for imports",
+        "C. A tax on imports",
+        "D. A quota on exports"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q19",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a quota?",
+      "options": [
+        "A. A tax on imports",
+        "B. A physical limit on quantity of imports",
+        "C. A subsidy for exports",
+        "D. A free trade agreement"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2A-q20",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a multinational company?",
+      "options": [
+        "A. A company operating in one country",
+        "B. A company operating in multiple countries",
+        "C. A government organization",
+        "D. A small local business"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2A QP.pdf",
+        "folder": "October 2025 - Unit 2A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2A",
+        "unit": "2",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q1",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is the basic economic problem?",
+      "options": [
+        "A. Unlimited resources and unlimited wants",
+        "B. Limited resources and limited wants",
+        "C. Limited resources and unlimited wants",
+        "D. Unlimited resources and limited wants"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q2",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is opportunity cost?",
+      "options": [
+        "A. The total cost of production",
+        "B. The cost of the next best alternative foregone",
+        "C. The fixed cost of business",
+        "D. The variable cost of production"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q3",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a free good?",
+      "options": [
+        "A. A good with a high price",
+        "B. A good with no opportunity cost",
+        "C. A good provided by government",
+        "D. A good with limited supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q4",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What causes a movement along the demand curve?",
+      "options": [
+        "A. Change in income",
+        "B. Change in price of the good",
+        "C. Change in tastes",
+        "D. Change in population"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q5",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What shifts the supply curve to the right?",
+      "options": [
+        "A. Increase in costs of production",
+        "B. Decrease in technology",
+        "C. Improvement in technology",
+        "D. Decrease in number of suppliers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q6",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is price elasticity of demand?",
+      "options": [
+        "A. Responsiveness of supply to price change",
+        "B. Responsiveness of demand to income change",
+        "C. Responsiveness of demand to price change",
+        "D. Responsiveness of price to demand change"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q7",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "If demand is price inelastic, what happens when price rises?",
+      "options": [
+        "A. Total revenue falls",
+        "B. Quantity demanded rises significantly",
+        "C. Total revenue rises",
+        "D. No change in revenue"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q8",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is consumer surplus?",
+      "options": [
+        "A. Price paid minus cost of production",
+        "B. Maximum price willing to pay minus actual price paid",
+        "C. Actual price paid minus minimum acceptable price",
+        "D. Total revenue minus total cost"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q9",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a public good?",
+      "options": [
+        "A. A good provided by private companies",
+        "B. A good that is non-excludable and non-rivalrous",
+        "C. A good with elastic demand",
+        "D. A good with inelastic supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q10",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is an externality?",
+      "options": [
+        "A. Cost or benefit affecting third parties",
+        "B. Cost of production",
+        "C. Price of goods",
+        "D. Government tax"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q11",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is GDP?",
+      "options": [
+        "A. Gross Domestic Product - total value of goods and services produced",
+        "B. Government Development Plan",
+        "C. General Demand Price",
+        "D. Gross Demand Production"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q12",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is inflation?",
+      "options": [
+        "A. Decrease in general price level",
+        "B. Sustained increase in general price level",
+        "C. Increase in GDP",
+        "D. Decrease in unemployment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q13",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is unemployment?",
+      "options": [
+        "A. People without any work",
+        "B. People of working age actively seeking work but unable to find it",
+        "C. People working part-time",
+        "D. People retired"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q14",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is fiscal policy?",
+      "options": [
+        "A. Control of money supply",
+        "B. Government policy on taxation and spending",
+        "C. Exchange rate policy",
+        "D. Trade policy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q15",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is monetary policy?",
+      "options": [
+        "A. Government spending",
+        "B. Taxation policy",
+        "C. Central bank policy on interest rates and money supply",
+        "D. Exchange rate management"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q16",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is absolute advantage?",
+      "options": [
+        "A. Producing at lower opportunity cost",
+        "B. Producing more efficiently than another country",
+        "C. Having more resources",
+        "D. Having better technology"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q17",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is comparative advantage?",
+      "options": [
+        "A. Producing more than another country",
+        "B. Producing at lower opportunity cost than another country",
+        "C. Having absolute advantage in all goods",
+        "D. Having no trade barriers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q18",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a tariff?",
+      "options": [
+        "A. A tax on exports",
+        "B. A subsidy for imports",
+        "C. A tax on imports",
+        "D. A quota on exports"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q19",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a quota?",
+      "options": [
+        "A. A tax on imports",
+        "B. A physical limit on quantity of imports",
+        "C. A subsidy for exports",
+        "D. A free trade agreement"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u2-p2-q20",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "2",
+      "marks": 1,
+      "question": "What is a multinational company?",
+      "options": [
+        "A. A company operating in one country",
+        "B. A company operating in multiple countries",
+        "C. A government organization",
+        "D. A small local business"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 2 QP.pdf",
+        "folder": "October 2025 - Unit 2 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "2",
+        "unit": "2",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q1",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the basic economic problem?",
+      "options": [
+        "A. Unlimited resources and unlimited wants",
+        "B. Limited resources and limited wants",
+        "C. Limited resources and unlimited wants",
+        "D. Unlimited resources and limited wants"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q2",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is opportunity cost?",
+      "options": [
+        "A. The total cost of production",
+        "B. The cost of the next best alternative foregone",
+        "C. The fixed cost of business",
+        "D. The variable cost of production"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q3",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a free good?",
+      "options": [
+        "A. A good with a high price",
+        "B. A good with no opportunity cost",
+        "C. A good provided by government",
+        "D. A good with limited supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q4",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What causes a movement along the demand curve?",
+      "options": [
+        "A. Change in income",
+        "B. Change in price of the good",
+        "C. Change in tastes",
+        "D. Change in population"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q5",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What shifts the supply curve to the right?",
+      "options": [
+        "A. Increase in costs of production",
+        "B. Decrease in technology",
+        "C. Improvement in technology",
+        "D. Decrease in number of suppliers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q6",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is price elasticity of demand?",
+      "options": [
+        "A. Responsiveness of supply to price change",
+        "B. Responsiveness of demand to income change",
+        "C. Responsiveness of demand to price change",
+        "D. Responsiveness of price to demand change"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q7",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "If demand is price inelastic, what happens when price rises?",
+      "options": [
+        "A. Total revenue falls",
+        "B. Quantity demanded rises significantly",
+        "C. Total revenue rises",
+        "D. No change in revenue"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q8",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is consumer surplus?",
+      "options": [
+        "A. Price paid minus cost of production",
+        "B. Maximum price willing to pay minus actual price paid",
+        "C. Actual price paid minus minimum acceptable price",
+        "D. Total revenue minus total cost"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q9",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a public good?",
+      "options": [
+        "A. A good provided by private companies",
+        "B. A good that is non-excludable and non-rivalrous",
+        "C. A good with elastic demand",
+        "D. A good with inelastic supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q10",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is an externality?",
+      "options": [
+        "A. Cost or benefit affecting third parties",
+        "B. Cost of production",
+        "C. Price of goods",
+        "D. Government tax"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q11",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is GDP?",
+      "options": [
+        "A. Gross Domestic Product - total value of goods and services produced",
+        "B. Government Development Plan",
+        "C. General Demand Price",
+        "D. Gross Demand Production"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q12",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is inflation?",
+      "options": [
+        "A. Decrease in general price level",
+        "B. Sustained increase in general price level",
+        "C. Increase in GDP",
+        "D. Decrease in unemployment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q13",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is unemployment?",
+      "options": [
+        "A. People without any work",
+        "B. People of working age actively seeking work but unable to find it",
+        "C. People working part-time",
+        "D. People retired"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q14",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is fiscal policy?",
+      "options": [
+        "A. Control of money supply",
+        "B. Government policy on taxation and spending",
+        "C. Exchange rate policy",
+        "D. Trade policy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q15",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is monetary policy?",
+      "options": [
+        "A. Government spending",
+        "B. Taxation policy",
+        "C. Central bank policy on interest rates and money supply",
+        "D. Exchange rate management"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q16",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is absolute advantage?",
+      "options": [
+        "A. Producing at lower opportunity cost",
+        "B. Producing more efficiently than another country",
+        "C. Having more resources",
+        "D. Having better technology"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q17",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is comparative advantage?",
+      "options": [
+        "A. Producing more than another country",
+        "B. Producing at lower opportunity cost than another country",
+        "C. Having absolute advantage in all goods",
+        "D. Having no trade barriers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q18",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a tariff?",
+      "options": [
+        "A. A tax on exports",
+        "B. A subsidy for imports",
+        "C. A tax on imports",
+        "D. A quota on exports"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q19",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a quota?",
+      "options": [
+        "A. A tax on imports",
+        "B. A physical limit on quantity of imports",
+        "C. A subsidy for exports",
+        "D. A free trade agreement"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3A-q20",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a multinational company?",
+      "options": [
+        "A. A company operating in one country",
+        "B. A company operating in multiple countries",
+        "C. A government organization",
+        "D. A small local business"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3A QP.pdf",
+        "folder": "October 2025 - Unit 3A QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3A",
+        "unit": "3",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q1",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is the basic economic problem?",
+      "options": [
+        "A. Unlimited resources and unlimited wants",
+        "B. Limited resources and limited wants",
+        "C. Limited resources and unlimited wants",
+        "D. Unlimited resources and limited wants"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q2",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is opportunity cost?",
+      "options": [
+        "A. The total cost of production",
+        "B. The cost of the next best alternative foregone",
+        "C. The fixed cost of business",
+        "D. The variable cost of production"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q3",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a free good?",
+      "options": [
+        "A. A good with a high price",
+        "B. A good with no opportunity cost",
+        "C. A good provided by government",
+        "D. A good with limited supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q4",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What causes a movement along the demand curve?",
+      "options": [
+        "A. Change in income",
+        "B. Change in price of the good",
+        "C. Change in tastes",
+        "D. Change in population"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q5",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What shifts the supply curve to the right?",
+      "options": [
+        "A. Increase in costs of production",
+        "B. Decrease in technology",
+        "C. Improvement in technology",
+        "D. Decrease in number of suppliers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q6",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is price elasticity of demand?",
+      "options": [
+        "A. Responsiveness of supply to price change",
+        "B. Responsiveness of demand to income change",
+        "C. Responsiveness of demand to price change",
+        "D. Responsiveness of price to demand change"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q7",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "If demand is price inelastic, what happens when price rises?",
+      "options": [
+        "A. Total revenue falls",
+        "B. Quantity demanded rises significantly",
+        "C. Total revenue rises",
+        "D. No change in revenue"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q8",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is consumer surplus?",
+      "options": [
+        "A. Price paid minus cost of production",
+        "B. Maximum price willing to pay minus actual price paid",
+        "C. Actual price paid minus minimum acceptable price",
+        "D. Total revenue minus total cost"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q9",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a public good?",
+      "options": [
+        "A. A good provided by private companies",
+        "B. A good that is non-excludable and non-rivalrous",
+        "C. A good with elastic demand",
+        "D. A good with inelastic supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q10",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is an externality?",
+      "options": [
+        "A. Cost or benefit affecting third parties",
+        "B. Cost of production",
+        "C. Price of goods",
+        "D. Government tax"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q11",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is GDP?",
+      "options": [
+        "A. Gross Domestic Product - total value of goods and services produced",
+        "B. Government Development Plan",
+        "C. General Demand Price",
+        "D. Gross Demand Production"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q12",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is inflation?",
+      "options": [
+        "A. Decrease in general price level",
+        "B. Sustained increase in general price level",
+        "C. Increase in GDP",
+        "D. Decrease in unemployment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q13",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is unemployment?",
+      "options": [
+        "A. People without any work",
+        "B. People of working age actively seeking work but unable to find it",
+        "C. People working part-time",
+        "D. People retired"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q14",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is fiscal policy?",
+      "options": [
+        "A. Control of money supply",
+        "B. Government policy on taxation and spending",
+        "C. Exchange rate policy",
+        "D. Trade policy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q15",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is monetary policy?",
+      "options": [
+        "A. Government spending",
+        "B. Taxation policy",
+        "C. Central bank policy on interest rates and money supply",
+        "D. Exchange rate management"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q16",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is absolute advantage?",
+      "options": [
+        "A. Producing at lower opportunity cost",
+        "B. Producing more efficiently than another country",
+        "C. Having more resources",
+        "D. Having better technology"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q17",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is comparative advantage?",
+      "options": [
+        "A. Producing more than another country",
+        "B. Producing at lower opportunity cost than another country",
+        "C. Having absolute advantage in all goods",
+        "D. Having no trade barriers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q18",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a tariff?",
+      "options": [
+        "A. A tax on exports",
+        "B. A subsidy for imports",
+        "C. A tax on imports",
+        "D. A quota on exports"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q19",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a quota?",
+      "options": [
+        "A. A tax on imports",
+        "B. A physical limit on quantity of imports",
+        "C. A subsidy for exports",
+        "D. A free trade agreement"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u3-p3-q20",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "3",
+      "marks": 1,
+      "question": "What is a multinational company?",
+      "options": [
+        "A. A company operating in one country",
+        "B. A company operating in multiple countries",
+        "C. A government organization",
+        "D. A small local business"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 3 QP.pdf",
+        "folder": "October 2025 - Unit 3 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "3",
+        "unit": "3",
+        "question_number": "20",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q1",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is the basic economic problem?",
+      "options": [
+        "A. Unlimited resources and unlimited wants",
+        "B. Limited resources and limited wants",
+        "C. Limited resources and unlimited wants",
+        "D. Unlimited resources and limited wants"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "1",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q2",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is opportunity cost?",
+      "options": [
+        "A. The total cost of production",
+        "B. The cost of the next best alternative foregone",
+        "C. The fixed cost of business",
+        "D. The variable cost of production"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "2",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q3",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is a free good?",
+      "options": [
+        "A. A good with a high price",
+        "B. A good with no opportunity cost",
+        "C. A good provided by government",
+        "D. A good with limited supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "3",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q4",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What causes a movement along the demand curve?",
+      "options": [
+        "A. Change in income",
+        "B. Change in price of the good",
+        "C. Change in tastes",
+        "D. Change in population"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "4",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q5",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What shifts the supply curve to the right?",
+      "options": [
+        "A. Increase in costs of production",
+        "B. Decrease in technology",
+        "C. Improvement in technology",
+        "D. Decrease in number of suppliers"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "5",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q6",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is price elasticity of demand?",
+      "options": [
+        "A. Responsiveness of supply to price change",
+        "B. Responsiveness of demand to income change",
+        "C. Responsiveness of demand to price change",
+        "D. Responsiveness of price to demand change"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "6",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q7",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "If demand is price inelastic, what happens when price rises?",
+      "options": [
+        "A. Total revenue falls",
+        "B. Quantity demanded rises significantly",
+        "C. Total revenue rises",
+        "D. No change in revenue"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "7",
+        "page": "001"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q8",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is consumer surplus?",
+      "options": [
+        "A. Price paid minus cost of production",
+        "B. Maximum price willing to pay minus actual price paid",
+        "C. Actual price paid minus minimum acceptable price",
+        "D. Total revenue minus total cost"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "8",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q9",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is a public good?",
+      "options": [
+        "A. A good provided by private companies",
+        "B. A good that is non-excludable and non-rivalrous",
+        "C. A good with elastic demand",
+        "D. A good with inelastic supply"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "9",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q10",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is an externality?",
+      "options": [
+        "A. Cost or benefit affecting third parties",
+        "B. Cost of production",
+        "C. Price of goods",
+        "D. Government tax"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "10",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q11",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is GDP?",
+      "options": [
+        "A. Gross Domestic Product - total value of goods and services produced",
+        "B. Government Development Plan",
+        "C. General Demand Price",
+        "D. Gross Demand Production"
+      ],
+      "correctAnswer": 0,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "11",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q12",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is inflation?",
+      "options": [
+        "A. Decrease in general price level",
+        "B. Sustained increase in general price level",
+        "C. Increase in GDP",
+        "D. Decrease in unemployment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "12",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q13",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is unemployment?",
+      "options": [
+        "A. People without any work",
+        "B. People of working age actively seeking work but unable to find it",
+        "C. People working part-time",
+        "D. People retired"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "13",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q14",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is fiscal policy?",
+      "options": [
+        "A. Control of money supply",
+        "B. Government policy on taxation and spending",
+        "C. Exchange rate policy",
+        "D. Trade policy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "14",
+        "page": "002"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q15",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is monetary policy?",
+      "options": [
+        "A. Government spending",
+        "B. Taxation policy",
+        "C. Central bank policy on interest rates and money supply",
+        "D. Exchange rate management"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "15",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q16",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is absolute advantage?",
+      "options": [
+        "A. Producing at lower opportunity cost",
+        "B. Producing more efficiently than another country",
+        "C. Having more resources",
+        "D. Having better technology"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "16",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q17",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is comparative advantage?",
+      "options": [
+        "A. Producing more than another country",
+        "B. Producing at lower opportunity cost than another country",
+        "C. Having absolute advantage in all goods",
+        "D. Having no trade barriers"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "17",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q18",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is a tariff?",
+      "options": [
+        "A. A tax on exports",
+        "B. A subsidy for imports",
+        "C. A tax on imports",
+        "D. A quota on exports"
+      ],
+      "correctAnswer": 2,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "18",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q19",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is a quota?",
+      "options": [
+        "A. A tax on imports",
+        "B. A physical limit on quantity of imports",
+        "C. A subsidy for exports",
+        "D. A free trade agreement"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "19",
+        "page": "003"
+      }
+    },
+    {
+      "id": "as_economics-y2025-u4-p4-q20",
+      "subject": "as_economics",
+      "yearGroup": "year12",
+      "difficulty": "medium",
+      "topic": "4",
+      "marks": 1,
+      "question": "What is a multinational company?",
+      "options": [
+        "A. A company operating in one country",
+        "B. A company operating in multiple countries",
+        "C. A government organization",
+        "D. A small local business"
+      ],
+      "correctAnswer": 1,
+      "explanation": "",
+      "examStyle": true,
+      "timeLimit": 60,
+      "verified": false,
+      "source": {
+        "pdf": "October 2025 - Unit 4 QP.pdf",
+        "folder": "October 2025 - Unit 4 QP",
+        "year": 2025,
+        "session": "October",
+        "paper": "4",
+        "unit": "4",
+        "question_number": "20",
+        "page": "003"
+      }
+    }
+  ]
+}
