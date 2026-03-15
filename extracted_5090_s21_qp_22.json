@@ -1,0 +1,517 @@
+{
+  "folder": "5090_s21_qp_22",
+  "pdf_name": "5090_s21_qp_22.pdf",
+  "subject_code": "5090",
+  "year": 2021,
+  "session": "Summer (s)",
+  "paper": "22",
+  "variant": "1",
+  "pages": [
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which characteristic of living organisms is shown by growth?",
+          "options": {
+            "A": "Respiration",
+            "B": "Reproduction",
+            "C": "Nutrition",
+            "D": "Excretion"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which cell structure contains enzymes for intracellular digestion?",
+          "options": {
+            "A": "Nucleus",
+            "B": "Mitochondrion",
+            "C": "Lysosome",
+            "D": "Ribosome"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which process requires energy to move substances against a concentration gradient?",
+          "options": {
+            "A": "Diffusion",
+            "B": "Osmosis",
+            "C": "Active transport",
+            "D": "Facilitated diffusion"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which tissue transports water and mineral salts in plants?",
+          "options": {
+            "A": "Phloem",
+            "B": "Xylem",
+            "C": "Epidermis",
+            "D": "Cambium"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which nutrient is a source of energy and helps insulate the body?",
+          "options": {
+            "A": "Protein",
+            "B": "Carbohydrate",
+            "C": "Fat",
+            "D": "Mineral"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which test would be used to detect reducing sugars?",
+          "options": {
+            "A": "Emulsion test",
+            "B": "Benedict's test",
+            "C": "Biuret test",
+            "D": "Iodine test"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Which enzyme in the stomach breaks down proteins?",
+          "options": {
+            "A": "Amylase",
+            "B": "Lipase",
+            "C": "Pepsin",
+            "D": "Trypsin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "8",
+          "question_text": "Which part of the digestive system absorbs digested food?",
+          "options": {
+            "A": "Stomach",
+            "B": "Large intestine",
+            "C": "Small intestine",
+            "D": "Liver"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which gas is required for aerobic respiration to occur?",
+          "options": {
+            "A": "Carbon dioxide",
+            "B": "Nitrogen",
+            "C": "Oxygen",
+            "D": "Hydrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which chamber of the heart pumps blood to the lungs?",
+          "options": {
+            "A": "Left atrium",
+            "B": "Left ventricle",
+            "C": "Right ventricle",
+            "D": "Right atrium"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "image_file": "page_004.png",
+      "questions": [
+        {
+          "question_id": "11",
+          "question_text": "Which blood cell type contains a nucleus?",
+          "options": {
+            "A": "Red blood cell",
+            "B": "Platelet",
+            "C": "White blood cell",
+            "D": "All blood cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "Which adaptation of xylem vessels helps water transport?",
+          "options": {
+            "A": "Having cytoplasm",
+            "B": "Having a nucleus",
+            "C": "Being hollow with no end walls",
+            "D": "Having thin walls"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which cells regulate the opening and closing of stomata?",
+          "options": {
+            "A": "Palisade cells",
+            "B": "Spongy mesophyll cells",
+            "C": "Guard cells",
+            "D": "Xylem cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Which stage of the cell cycle involves nuclear division?",
+          "options": {
+            "A": "Cytokinesis",
+            "B": "Interphase",
+            "C": "Mitosis",
+            "D": "S phase"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "15",
+          "question_text": "Which structure is the site of fertilization in humans?",
+          "options": {
+            "A": "Ovary",
+            "B": "Uterus",
+            "C": "Fallopian tube",
+            "D": "Vagina"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "Which hormone maintains the uterus lining during pregnancy?",
+          "options": {
+            "A": "FSH",
+            "B": "LH",
+            "C": "Estrogen",
+            "D": "Progesterone"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which part of the brain regulates heart rate?",
+          "options": {
+            "A": "Cerebrum",
+            "B": "Cerebellum",
+            "C": "Medulla oblongata",
+            "D": "Pituitary gland"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "Which receptor detects changes in temperature?",
+          "options": {
+            "A": "Photoreceptor",
+            "B": "Mechanoreceptor",
+            "C": "Thermoreceptor",
+            "D": "Chemoreceptor"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which structure carries sound waves to the ear drum?",
+          "options": {
+            "A": "Cochlea",
+            "B": "Semicircular canals",
+            "C": "Auditory canal",
+            "D": "Eustachian tube"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which response occurs when a bright light shines in the eyes?",
+          "options": {
+            "A": "Pupil dilation",
+            "B": "Lens becomes thinner",
+            "C": "Pupil constriction",
+            "D": "Eyeball moves outward"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "image_file": "page_005.png",
+      "questions": [
+        {
+          "question_id": "21",
+          "question_text": "Which mineral ion is needed for healthy root growth in plants?",
+          "options": {
+            "A": "Nitrate",
+            "B": "Phosphate",
+            "C": "Potassium",
+            "D": "Magnesium"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "22",
+          "question_text": "Which adaptation of root hair cells increases absorption?",
+          "options": {
+            "A": "Large vacuole",
+            "B": "Nucleus",
+            "C": "Large surface area",
+            "D": "Chloroplasts"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "23",
+          "question_text": "Which process moves sucrose from leaves to roots?",
+          "options": {
+            "A": "Transpiration",
+            "B": "Translocation",
+            "C": "Absorption",
+            "D": "Evaporation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "24",
+          "question_text": "Which condition would decrease the rate of transpiration?",
+          "options": {
+            "A": "High temperature",
+            "B": "Wind",
+            "C": "High humidity",
+            "D": "Bright light"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "25",
+          "question_text": "Which hormone promotes seed germination?",
+          "options": {
+            "A": "Auxin",
+            "B": "Abscisic acid",
+            "C": "Gibberellin",
+            "D": "Ethylene"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "26",
+          "question_text": "Which response of roots is positive geotropism?",
+          "options": {
+            "A": "Growing towards light",
+            "B": "Growing away from light",
+            "C": "Growing towards gravity",
+            "D": "Growing away from gravity"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "27",
+          "question_text": "Which deficiency causes poor wound healing and bleeding gums?",
+          "options": {
+            "A": "Vitamin A",
+            "B": "Vitamin C",
+            "C": "Vitamin D",
+            "D": "Iron"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "28",
+          "question_text": "Which disease is transmitted through sexual contact?",
+          "options": {
+            "A": "Malaria",
+            "B": "Cholera",
+            "C": "HIV/AIDS",
+            "D": "Typhoid"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "29",
+          "question_text": "Which pathogen causes tuberculosis?",
+          "options": {
+            "A": "Virus",
+            "B": "Fungus",
+            "C": "Bacterium",
+            "D": "Protozoan"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "30",
+          "question_text": "Which method of disease transmission involves droplets in the air?",
+          "options": {
+            "A": "Vector-borne",
+            "B": "Water-borne",
+            "C": "Airborne",
+            "D": "Food-borne"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "image_file": "page_006.png",
+      "questions": [
+        {
+          "question_id": "31",
+          "question_text": "Which cells produce antibodies during an immune response?",
+          "options": {
+            "A": "Phagocytes",
+            "B": "T cells",
+            "C": "B cells",
+            "D": "Helper cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "32",
+          "question_text": "Which type of immunity is passed from mother to baby through breast milk?",
+          "options": {
+            "A": "Natural active immunity",
+            "B": "Natural passive immunity",
+            "C": "Artificial active immunity",
+            "D": "Artificial passive immunity"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "33",
+          "question_text": "Which process is used by white blood cells to engulf bacteria?",
+          "options": {
+            "A": "Osmosis",
+            "B": "Diffusion",
+            "C": "Phagocytosis",
+            "D": "Pinocytosis"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "34",
+          "question_text": "Which organ excretes excess water and salts?",
+          "options": {
+            "A": "Liver",
+            "B": "Lung",
+            "C": "Kidney",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "35",
+          "question_text": "Which hormone stimulates the reabsorption of water in the kidneys?",
+          "options": {
+            "A": "Insulin",
+            "B": "Glucagon",
+            "C": "ADH",
+            "D": "Thyroxine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "36",
+          "question_text": "Which response to exercise increases heat loss?",
+          "options": {
+            "A": "Shivering",
+            "B": "Vasoconstriction",
+            "C": "Sweating",
+            "D": "Piloerection"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "37",
+          "question_text": "Which organ in the human body produces urea?",
+          "options": {
+            "A": "Kidney",
+            "B": "Lung",
+            "C": "Liver",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "38",
+          "question_text": "Which term describes the removal of metabolic waste products?",
+          "options": {
+            "A": "Secretion",
+            "B": "Excretion",
+            "C": "Egestion",
+            "D": "Absorption"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "39",
+          "question_text": "Which adaptation helps a species survive in changing environments?",
+          "options": {
+            "A": "Large population size",
+            "B": "Genetic variation",
+            "C": "Slow reproduction rate",
+            "D": "Specialized diet"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "40",
+          "question_text": "Which human activity contributes to global warming?",
+          "options": {
+            "A": "Recycling paper",
+            "B": "Using renewable energy",
+            "C": "Burning fossil fuels",
+            "D": "Planting trees"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 40,
+  "total_marks": 40
+}
