@@ -1,0 +1,517 @@
+{
+  "folder": "5090_s23_qp_11",
+  "pdf_name": "5090_s23_qp_11.pdf",
+  "subject_code": "5090",
+  "year": 2023,
+  "session": "Summer (s)",
+  "paper": "11",
+  "variant": "1",
+  "pages": [
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which structure contains genetic material?",
+          "options": {
+            "A": "Mitochondrion",
+            "B": "Ribosome",
+            "C": "Nucleus",
+            "D": "Cytoplasm"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which organelle produces ATP?",
+          "options": {
+            "A": "Nucleus",
+            "B": "Ribosome",
+            "C": "Mitochondrion",
+            "D": "Golgi"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which process builds large molecules from small ones?",
+          "options": {
+            "A": "Digestion",
+            "B": "Respiration",
+            "C": "Synthesis",
+            "D": "Excretion"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which enzyme digests proteins?",
+          "options": {
+            "A": "Amylase",
+            "B": "Lipase",
+            "C": "Protease",
+            "D": "Maltase"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which nutrient provides energy?",
+          "options": {
+            "A": "Vitamin",
+            "B": "Mineral",
+            "C": "Carbohydrate",
+            "D": "Water"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which organ stores bile?",
+          "options": {
+            "A": "Liver",
+            "B": "Pancreas",
+            "C": "Gall bladder",
+            "D": "Stomach"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Which vessel returns blood to heart?",
+          "options": {
+            "A": "Artery",
+            "B": "Capillary",
+            "C": "Vein",
+            "D": "Aorta"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "8",
+          "question_text": "Which heart chamber pumps to body?",
+          "options": {
+            "A": "Right atrium",
+            "B": "Right ventricle",
+            "C": "Left ventricle",
+            "D": "Left atrium"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which gas does aerobic respiration need?",
+          "options": {
+            "A": "CO2",
+            "B": "Nitrogen",
+            "C": "Oxygen",
+            "D": "Hydrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which product of anaerobic respiration in muscles causes cramps?",
+          "options": {
+            "A": "Ethanol",
+            "B": "CO2",
+            "C": "Lactic acid",
+            "D": "Water"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "image_file": "page_004.png",
+      "questions": [
+        {
+          "question_id": "11",
+          "question_text": "Which plant tissue transports food?",
+          "options": {
+            "A": "Xylem",
+            "B": "Epidermis",
+            "C": "Phloem",
+            "D": "Cambium"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "Which cells have most chloroplasts?",
+          "options": {
+            "A": "Guard",
+            "B": "Spongy",
+            "C": "Palisade",
+            "D": "Epidermal"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which gas exits leaves during photosynthesis?",
+          "options": {
+            "A": "CO2",
+            "B": "Nitrogen",
+            "C": "Oxygen",
+            "D": "Hydrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Which process loses water from leaves?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Respiration",
+            "C": "Transpiration",
+            "D": "Translocation"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "15",
+          "question_text": "Which division produces gametes?",
+          "options": {
+            "A": "Mitosis",
+            "B": "Fertilization",
+            "C": "Meiosis",
+            "D": "Binary fission"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "Which male structure produces testosterone?",
+          "options": {
+            "A": "Prostate",
+            "B": "Vas deferens",
+            "C": "Testis",
+            "D": "Penis"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which female structure receives sperm?",
+          "options": {
+            "A": "Ovary",
+            "B": "Uterus",
+            "C": "Vagina",
+            "D": "Cervix"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "Which hormone triggers ovulation?",
+          "options": {
+            "A": "FSH",
+            "B": "Estrogen",
+            "C": "LH",
+            "D": "Progesterone"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which brain part controls coordination?",
+          "options": {
+            "A": "Cerebrum",
+            "B": "Medulla",
+            "C": "Cerebellum",
+            "D": "Pituitary"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which neurone connects to effector?",
+          "options": {
+            "A": "Sensory",
+            "B": "Relay",
+            "C": "Motor",
+            "D": "Connector"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "image_file": "page_005.png",
+      "questions": [
+        {
+          "question_id": "21",
+          "question_text": "Which eye structure changes shape to focus?",
+          "options": {
+            "A": "Cornea",
+            "B": "Iris",
+            "C": "Lens",
+            "D": "Retina"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "22",
+          "question_text": "Which cells work in dim light?",
+          "options": {
+            "A": "Cones",
+            "B": "Bipolar",
+            "C": "Rods",
+            "D": "Ganglion"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "23",
+          "question_text": "Which gland is master endocrine gland?",
+          "options": {
+            "A": "Thyroid",
+            "B": "Adrenal",
+            "C": "Pituitary",
+            "D": "Pancreas"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "24",
+          "question_text": "Which hormone lowers blood glucose?",
+          "options": {
+            "A": "Glucagon",
+            "B": "Thyroxine",
+            "C": "Insulin",
+            "D": "ADH"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "25",
+          "question_text": "Which organ makes urea from excess amino acids?",
+          "options": {
+            "A": "Kidney",
+            "B": "Lung",
+            "C": "Liver",
+            "D": "Heart"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "26",
+          "question_text": "Which tropism is growth towards light?",
+          "options": {
+            "A": "Geotropism",
+            "B": "Hydrotropism",
+            "C": "Phototropism",
+            "D": "Thigmotropism"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "27",
+          "question_text": "Which plant hormone promotes cell elongation?",
+          "options": {
+            "A": "Gibberellin",
+            "B": "Ethylene",
+            "C": "Auxin",
+            "D": "Abscisic acid"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "28",
+          "question_text": "Which vitamin prevents rickets?",
+          "options": {
+            "A": "A",
+            "B": "B",
+            "C": "D",
+            "D": "C"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "29",
+          "question_text": "Which disease is spread by mosquitoes?",
+          "options": {
+            "A": "TB",
+            "B": "Cholera",
+            "C": "Malaria",
+            "D": "AIDS"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "30",
+          "question_text": "Which pathogen causes athlete's foot?",
+          "options": {
+            "A": "Virus",
+            "B": "Bacterium",
+            "C": "Fungus",
+            "D": "Protozoan"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "image_file": "page_006.png",
+      "questions": [
+        {
+          "question_id": "31",
+          "question_text": "Which immunity follows infection?",
+          "options": {
+            "A": "Artificial passive",
+            "B": "Natural passive",
+            "C": "Natural active",
+            "D": "Artificial active"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "32",
+          "question_text": "Which cells engulf bacteria?",
+          "options": {
+            "A": "Lymphocytes",
+            "B": "Red cells",
+            "C": "Phagocytes",
+            "D": "Platelets"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "33",
+          "question_text": "Which drugs kill bacteria?",
+          "options": {
+            "A": "Analgesics",
+            "B": "Antivirals",
+            "C": "Antibiotics",
+            "D": "Vaccines"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "34",
+          "question_text": "Which organ filters blood?",
+          "options": {
+            "A": "Liver",
+            "B": "Lung",
+            "C": "Kidney",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "35",
+          "question_text": "Which kidney part filters blood?",
+          "options": {
+            "A": "Loop of Henle",
+            "B": "Collecting duct",
+            "C": "Glomerulus",
+            "D": "Ureter"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "36",
+          "question_text": "Which hormone increases water reabsorption?",
+          "options": {
+            "A": "Insulin",
+            "B": "Glucagon",
+            "C": "ADH",
+            "D": "Thyroxine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "37",
+          "question_text": "Which response generates heat?",
+          "options": {
+            "A": "Sweating",
+            "B": "Vasodilation",
+            "C": "Shivering",
+            "D": "Panting"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "38",
+          "question_text": "Which organ excretes CO2?",
+          "options": {
+            "A": "Liver",
+            "B": "Kidney",
+            "C": "Lung",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "39",
+          "question_text": "Which increases species survival chance?",
+          "options": {
+            "A": "No variation",
+            "B": "Genetic variation",
+            "C": "Cloning",
+            "D": "Inbreeding"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "40",
+          "question_text": "Which conserves species in natural habitat?",
+          "options": {
+            "A": "Zoos",
+            "B": "Breeding programs",
+            "C": "In-situ conservation",
+            "D": "Gene banks"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 40,
+  "total_marks": 40
+}
