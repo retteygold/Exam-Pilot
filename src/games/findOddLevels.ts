@@ -1,4 +1,4 @@
-// 50 Find Odd One Out Levels
+// 100 Find Odd One Out Levels
 export const FIND_ODD_LEVELS = [
   // Level 1-10: Colors and shapes (Easy)
   { level: 1, items: ['🔴', '🔴', '🔴', '🔵'], odd: 3, hint: 'Find the different color!' },
@@ -58,5 +58,65 @@ export const FIND_ODD_LEVELS = [
   { level: 47, items: ['🎵', '🎵', '🎵', '🎶'], odd: 3, hint: 'Find the different note!' },
   { level: 48, items: ['🎨', '🎨', '🎨', '🎨', '🎭'], odd: 4, hint: 'One is for acting not painting!' },
   { level: 49, items: ['🏆', '🏆', '🏆', '🏅'], odd: 3, hint: 'Find the different prize!' },
-  { level: 50, items: ['🎯', '🎯', '🎯', '🎯', '🎲'], odd: 4, hint: 'One is not a target!' }
+  { level: 50, items: ['🎯', '🎯', '🎯', '🎯', '🎲'], odd: 4, hint: 'One is not a target!' },
+
+  // Level 51-60: Nature and weather
+  { level: 51, items: ['🌹', '🌹', '🌹', '🌷'], odd: 3, hint: 'Find the different flower!' },
+  { level: 52, items: ['🌻', '🌻', '🌻', '🌻', '🌺'], odd: 4, hint: 'One flower is different!' },
+  { level: 53, items: ['🌵', '🌵', '🌵', '🌴'], odd: 3, hint: 'Find the different plant!' },
+  { level: 54, items: ['🍁', '🍁', '🍁', '🍁', '🍂'], odd: 4, hint: 'One leaf is different!' },
+  { level: 55, items: ['🌊', '🌊', '🌊', '⛰️'], odd: 3, hint: 'Find the mountain!' },
+  { level: 56, items: ['🌋', '🌋', '🌋', '🗻'], odd: 3, hint: 'One mountain erupts!' },
+  { level: 57, items: ['❄️', '❄️', '❄️', '❄️', '☃️'], odd: 4, hint: 'One is a snowman!' },
+  { level: 58, items: ['☔', '☔', '☔', '☂️'], odd: 3, hint: 'Find the different rain item!' },
+  { level: 59, items: ['🌈', '🌈', '🌈', '🌈', '⭐'], odd: 4, hint: 'One is not a rainbow!' },
+  { level: 60, items: ['🌍', '🌍', '🌍', '🌙'], odd: 3, hint: 'Find the moon!' },
+
+  // Level 61-70: Sports and activities
+  { level: 61, items: ['⚽', '⚽', '⚽', '🏈'], odd: 3, hint: 'Find the different football!' },
+  { level: 62, items: ['🏀', '🏀', '🏀', '🏀', '⚾'], odd: 4, hint: 'One ball is different!' },
+  { level: 63, items: ['🎾', '🎾', '🎾', '🏸'], odd: 3, hint: 'Find the different racket sport!' },
+  { level: 64, items: ['🎿', '🎿', '🎿', '🎿', '🏂'], odd: 4, hint: 'One is snowboarding!' },
+  { level: 65, items: ['🏊', '🏊', '🏊', '🏄'], odd: 3, hint: 'Find the different water sport!' },
+  { level: 66, items: ['🚴', '🚴', '🚴', '🚴', '🏃'], odd: 4, hint: 'One is running!' },
+  { level: 67, items: ['⛷️', '⛷️', '⛷️', '🏂'], odd: 3, hint: 'Find the snowboarder!' },
+  { level: 68, items: ['🎯', '🎯', '🎯', '🎳'], odd: 3, hint: 'Find the bowling!' },
+  { level: 69, items: ['🎣', '🎣', '🎣', '🎣', '🏹'], odd: 4, hint: 'One is archery!' },
+  { level: 70, items: ['🥊', '🥊', '🥊', '🥋'], odd: 3, hint: 'Find the martial arts!' },
+
+  // Level 71-80: Emotions and faces
+  { level: 71, items: ['😀', '😀', '😀', '😢'], odd: 3, hint: 'Find the sad face!' },
+  { level: 72, items: ['😊', '😊', '😊', '😊', '😠'], odd: 4, hint: 'One face is angry!' },
+  { level: 73, items: ['😍', '😍', '😍', '😎'], odd: 3, hint: 'Find the cool face!' },
+  { level: 74, items: ['😴', '😴', '😴', '😴', '🤓'], odd: 4, hint: 'One is not sleeping!' },
+  { level: 75, items: ['🤔', '🤔', '🤔', '🤯'], odd: 3, hint: 'Find the exploding head!' },
+  { level: 76, items: ['😱', '😱', '😱', '😱', '🤗'], odd: 4, hint: 'One is hugging!' },
+  { level: 77, items: ['🥳', '🥳', '🥳', '😭'], odd: 3, hint: 'Find the crying face!' },
+  { level: 78, items: ['🤩', '🤩', '🤩', '🤩', '🥺'], odd: 4, hint: 'One is pleading!' },
+  { level: 79, items: ['😇', '😇', '😇', '😈'], odd: 3, hint: 'Find the devil!' },
+  { level: 80, items: ['🤡', '🤡', '🤡', '🤡', '👻'], odd: 4, hint: 'One is a ghost!' },
+
+  // Level 81-90: Buildings and places
+  { level: 81, items: ['🏠', '🏠', '🏠', '🏢'], odd: 3, hint: 'Find the office building!' },
+  { level: 82, items: ['🏫', '🏫', '🏫', '🏫', '🏥'], odd: 4, hint: 'One is a hospital!' },
+  { level: 83, items: ['🏰', '🏰', '🏰', '🏯'], odd: 3, hint: 'Find the Japanese castle!' },
+  { level: 84, items: ['🗽', '🗽', '🗽', '🗽', '🗿'], odd: 4, hint: 'One is a moai statue!' },
+  { level: 85, items: ['🎪', '🎪', '🎪', '🎭'], odd: 3, hint: 'Find the theater!' },
+  { level: 86, items: ['🚂', '🚂', '🚂', '🚂', '🚁'], odd: 4, hint: 'One flies!' },
+  { level: 87, items: ['🚀', '🚀', '🚀', '🛸'], odd: 3, hint: 'Find the UFO!' },
+  { level: 88, items: ['🚢', '🚢', '🚢', '🚢', '⛵'], odd: 4, hint: 'One is a sailboat!' },
+  { level: 89, items: ['🚑', '🚑', '🚑', '🚒'], odd: 3, hint: 'Find the fire truck!' },
+  { level: 90, items: ['🚓', '🚓', '🚓', '🚓', '🚕'], odd: 4, hint: 'One is a taxi!' },
+
+  // Level 91-100: Challenge master
+  { level: 91, items: ['🎸', '🎸', '🎸', '🎺'], odd: 3, hint: 'Find the trumpet!' },
+  { level: 92, items: ['🎹', '🎹', '🎹', '🎹', '🥁'], odd: 4, hint: 'One is drums!' },
+  { level: 93, items: ['🎬', '🎬', '🎬', '📽️'], odd: 3, hint: 'Find the film projector!' },
+  { level: 94, items: ['🎮', '🎮', '🎮', '🎮', '🕹️'], odd: 4, hint: 'One joystick is different!' },
+  { level: 95, items: ['💎', '💎', '💎', '💍'], odd: 3, hint: 'Find the ring!' },
+  { level: 96, items: ['💰', '💰', '💰', '💰', '💸'], odd: 4, hint: 'One money has wings!' },
+  { level: 97, items: ['🔮', '🔮', '🔮', '🧿'], odd: 3, hint: 'Find the evil eye amulet!' },
+  { level: 98, items: ['🧸', '🧸', '🧸', '🧸', '🤖'], odd: 4, hint: 'One is a robot!' },
+  { level: 99, items: ['👑', '👑', '👑', '🎓'], odd: 3, hint: 'Find the graduation cap!' },
+  { level: 100, items: ['🏆', '🏆', '🏆', '🏆', '🎖️'], odd: 4, hint: 'One is a military medal!' }
 ]

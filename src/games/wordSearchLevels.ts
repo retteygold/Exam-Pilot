@@ -1,4 +1,4 @@
-// 50 Word Search Levels - Words get progressively harder
+// 100 Word Search Levels - Words get progressively harder
 export const WORD_SEARCH_LEVELS = [
   // Level 1-10: Easy 3-4 letter words (School items, colors)
   { level: 1, words: ['PEN', 'BOOK', 'DESK', 'BAG'], theme: 'School Items' },
@@ -58,5 +58,65 @@ export const WORD_SEARCH_LEVELS = [
   { level: 47, words: ['CARNIVAL', 'FESTIVAL', 'PARADE', 'FAIR'], theme: 'Celebrations' },
   { level: 48, words: ['PUZZLE', 'RIDDLE', 'MAZE', 'GAME'], theme: 'Brain Games' },
   { level: 49, words: ['MYSTERY', 'SECRET', 'PUZZLE', 'CLUE'], theme: 'Mystery' },
-  { level: 50, words: ['CHAMPION', 'VICTORY', 'SUCCESS', 'WINNER'], theme: 'Champions' }
+  { level: 50, words: ['CHAMPION', 'VICTORY', 'SUCCESS', 'WINNER'], theme: 'Champions' },
+
+  // Level 51-60: Advanced vocabulary
+  { level: 51, words: ['DINOSAUR', 'DRAGON', 'UNICORN', 'PHOENIX'], theme: 'Mythical Creatures' },
+  { level: 52, words: ['DIAMOND', 'RUBY', 'EMERALD', 'SAPPHIRE'], theme: 'Gems' },
+  { level: 53, words: ['RAINBOW', 'CLOUD', 'THUNDER', 'LIGHTNING'], theme: 'Weather' },
+  { level: 54, words: ['PAINTER', 'SCULPTOR', 'MUSICIAN', 'DANCER'], theme: 'Artists' },
+  { level: 55, words: ['SPACESHIP', 'ROCKET', 'SATELLITE', 'SHUTTLE'], theme: 'Space Travel' },
+  { level: 56, words: ['ADVENTURE', 'JOURNEY', 'VOYAGE', 'EXPEDITION'], theme: 'Travel' },
+  { level: 57, words: ['CROCODILE', 'ALLIGATOR', 'LIZARD', 'GECKO'], theme: 'Reptiles' },
+  { level: 58, words: ['BUTTERFLY', 'DRAGONFLY', 'LADYBUG', 'BEETLE'], theme: 'Insects' },
+  { level: 59, words: ['ASTRONAUT', 'PILOT', 'SAILOR', 'DRIVER'], theme: 'Vehicle Operators' },
+  { level: 60, words: ['TREASURE', 'GOLD', 'SILVER', 'JEWELS'], theme: 'Treasure' },
+
+  // Level 61-70: Science and nature
+  { level: 61, words: ['CHEMISTRY', 'PHYSICS', 'BIOLOGY', 'SCIENCE'], theme: 'Sciences' },
+  { level: 62, words: ['HURRICANE', 'TORNADO', 'TSUNAMI', 'EARTHQUAKE'], theme: 'Natural Disasters' },
+  { level: 63, words: ['SUNFLOWER', 'ROSE', 'DAISY', 'LILY'], theme: 'Flowers' },
+  { level: 64, words: ['WHISPER', 'SHOUT', 'MURMUR', 'ECHO'], theme: 'Sounds' },
+  { level: 65, words: ['CASTLE', 'PALACE', 'FORTRESS', 'TOWER'], theme: 'Fortifications' },
+  { level: 66, words: ['UMBRELLA', 'RAINCOAT', 'BOOTS', 'COAT'], theme: 'Rain Gear' },
+  { level: 67, words: ['COMPASS', 'MAP', 'TELESCOPE', 'BINOCULARS'], theme: 'Exploration Tools' },
+  { level: 68, words: ['BACTERIA', 'VIRUS', 'GERM', 'CELL'], theme: 'Microorganisms' },
+  { level: 69, words: ['ECLIPSE', 'SOLSTICE', 'EQUINOX', 'PHASE'], theme: 'Astronomy' },
+  { level: 70, words: ['DICTIONARY', 'ATLAS', 'ALMANAC', 'ENCYCLOPEDIA'], theme: 'Reference Books' },
+
+  // Level 71-80: Food and cooking
+  { level: 71, words: ['SANDWICH', 'BURGER', 'HOTDOG', 'PIZZA'], theme: 'Fast Food' },
+  { level: 72, words: ['SPAGHETTI', 'LASAGNA', 'RAVIOLI', 'MACARONI'], theme: 'Pasta' },
+  { level: 73, words: ['PANCAKE', 'WAFFLE', 'CROISSANT', 'DONUT'], theme: 'Breakfast' },
+  { level: 74, words: ['CUCUMBER', 'ZUCCHINI', 'PUMPKIN', 'SQUASH'], theme: 'Squash Family' },
+  { level: 75, words: ['CHOCOLATE', 'CARAMEL', 'BUTTERSCOTCH', 'FUDGE'], theme: 'Sweets' },
+  { level: 76, words: ['SAUSAGE', 'BACON', 'HAM', 'SALAMI'], theme: 'Meats' },
+  { level: 77, words: ['CINNAMON', 'NUTMEG', 'GINGER', 'CLOVE'], theme: 'Spices' },
+  { level: 78, words: ['BARBECUE', 'GRILL', 'SMOKE', 'ROAST'], theme: 'Cooking Methods' },
+  { level: 79, words: ['BLENDER', 'MIXER', 'GRATER', 'WHISK'], theme: 'Kitchen Tools' },
+  { level: 80, words: ['RESTAURANT', 'CAFE', 'BISTRO', 'DINER'], theme: 'Eateries' },
+
+  // Level 81-90: Sports and activities
+  { level: 81, words: ['BASEBALL', 'FOOTBALL', 'BASKETBALL', 'VOLLEYBALL'], theme: 'Team Sports' },
+  { level: 82, words: ['SWIMMING', 'DIVING', 'SURFING', 'SAILING'], theme: 'Water Sports' },
+  { level: 83, words: ['GYMNASTICS', 'DANCING', 'SKATING', 'SKIING'], theme: 'Individual Sports' },
+  { level: 84, words: ['TENNIS', 'BADMINTON', 'SQUASH', 'RACQUETBALL'], theme: 'Racket Sports' },
+  { level: 85, words: ['ARCHERY', 'FENCING', 'WRESTLING', 'BOXING'], theme: 'Combat Sports' },
+  { level: 86, words: ['CHECKERS', 'CHESS', 'DOMINOES', 'CARDS'], theme: 'Board Games' },
+  { level: 87, words: ['FISHING', 'CAMPING', 'HIKING', 'CLIMBING'], theme: 'Outdoor Activities' },
+  { level: 88, words: ['MARATHON', 'SPRINT', 'RELAY', 'RACE'], theme: 'Running' },
+  { level: 89, words: ['MEDAL', 'TROPHY', 'CUP', 'PRIZE'], theme: 'Awards' },
+  { level: 90, words: ['STADIUM', 'ARENA', 'COURT', 'FIELD'], theme: 'Sports Venues' },
+
+  // Level 91-100: Master level
+  { level: 91, words: ['PENINSULA', 'ARCHIPELAGO', 'ISTHMUS', 'FJORD'], theme: 'Landforms' },
+  { level: 92, words: ['CHAMELEON', 'OCTOPUS', 'SQUID', 'JELLYFISH'], theme: 'Color Changers' },
+  { level: 93, words: ['TRAMPOLINE', 'SEESAW', 'SWINGS', 'SLIDE'], theme: 'Playground' },
+  { level: 94, words: ['CALCULATOR', 'COMPUTER', 'TABLET', 'PHONE'], theme: 'Technology' },
+  { level: 95, words: ['SUBMARINE', 'BATTleship', 'Cruiser', 'DESTROYER'], theme: 'Warships' },
+  { level: 96, words: ['HElicopter', 'AIRPLANE', 'BLIMP', 'GLIDER'], theme: 'Aircraft' },
+  { level: 97, words: ['GRANDMA', 'GRANDPA', 'GRANDSON', 'GRANDDAUGHTER'], theme: 'Grandparents' },
+  { level: 98, words: ['FIRETRUCK', 'AMBULANCE', 'POLICE', 'TOWTRUCK'], theme: 'Service Vehicles' },
+  { level: 99, words: ['DOLPHIN', 'WHALE', 'SHARK', 'SEAL'], theme: 'Sea Creatures' },
+  { level: 100, words: ['EXCELLENT', 'BRILLIANT', 'AMAZING', 'SPECTACULAR'], theme: 'Compliments' }
 ]
