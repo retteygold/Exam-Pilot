@@ -1,0 +1,271 @@
+{
+  "folder": "2020-unit1-2020-10-WEC11-01-qp",
+  "pdf_name": "2020-unit1-2020-10-WEC11-01-qp.pdf",
+  "subject_code": "WEC",
+  "year": 2020,
+  "session": "October",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the basic economic problem?",
+          "options": {
+            "A": "Unlimited resources and limited wants",
+            "B": "Unlimited wants and scarce resources",
+            "C": "No wants and no resources",
+            "D": "Equal distribution of resources"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is scarcity?",
+          "options": {
+            "A": "Abundance of resources",
+            "B": "Limited resources relative to unlimited wants",
+            "C": "No demand for goods",
+            "D": "Excess supply"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What are the three fundamental economic questions?",
+          "options": {
+            "A": "What, How, and For Whom to produce",
+            "B": "When, Where, and Why to produce",
+            "C": "Who, What, and Where to sell",
+            "D": "How much, How long, and How often"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is opportunity cost?",
+          "options": {
+            "A": "Total cost of production",
+            "B": "Value of next best alternative foregone",
+            "C": "Fixed costs only",
+            "D": "Variable costs only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is a production possibility frontier (PPF)?",
+          "options": {
+            "A": "Consumer demand curve",
+            "B": "Curve showing maximum possible output combinations",
+            "C": "Supply curve",
+            "D": "Cost curve"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What causes a movement along the demand curve?",
+          "options": {
+            "A": "Change in income",
+            "B": "Change in price of the good itself",
+            "C": "Change in tastes",
+            "D": "Change in population"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What causes a shift in the demand curve?",
+          "options": {
+            "A": "Change in price of the good",
+            "B": "Change in income, tastes, or prices of related goods",
+            "C": "Change in technology",
+            "D": "Change in costs"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the law of demand?",
+          "options": {
+            "A": "Price up, quantity demanded up",
+            "B": "Price up, quantity demanded down",
+            "C": "Price unchanged, quantity changes",
+            "D": "No relationship"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the law of supply?",
+          "options": {
+            "A": "Price up, quantity supplied down",
+            "B": "Price up, quantity supplied up",
+            "C": "Price unchanged, quantity changes",
+            "D": "Inverse relationship"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is equilibrium price?",
+          "options": {
+            "A": "Government set price",
+            "B": "Price where quantity demanded equals quantity supplied",
+            "C": "Maximum price",
+            "D": "Minimum price"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is price elasticity of demand?",
+          "options": {
+            "A": "Change in supply from price change",
+            "B": "Responsiveness of quantity demanded to price change",
+            "C": "Change in income from price change",
+            "D": "Government price control"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is income elasticity of demand?",
+          "options": {
+            "A": "Response to price changes",
+            "B": "Responsiveness of demand to income changes",
+            "C": "Response to supply changes",
+            "D": "Cross-price elasticity"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is a normal good?",
+          "options": {
+            "A": "Demand decreases when income rises",
+            "B": "Demand increases when income rises",
+            "C": "Demand unchanged by income",
+            "D": "Inferior good"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is an inferior good?",
+          "options": {
+            "A": "Demand increases with income",
+            "B": "Demand decreases as income rises",
+            "C": "Normal good",
+            "D": "Luxury good"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a substitute good?",
+          "options": {
+            "A": "Goods used together",
+            "B": "Goods that replace each other",
+            "C": "Identical goods",
+            "D": "Complementary goods"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is a complementary good?",
+          "options": {
+            "A": "Goods that replace each other",
+            "B": "Goods used together",
+            "C": "Unrelated goods",
+            "D": "Same product"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is consumer surplus?",
+          "options": {
+            "A": "Price minus cost",
+            "B": "Difference between what consumers pay and what they are willing to pay",
+            "C": "Producer profit",
+            "D": "Government revenue"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is producer surplus?",
+          "options": {
+            "A": "Consumer willingness to pay",
+            "B": "Difference between market price and minimum supply price",
+            "C": "Government tax",
+            "D": "Total revenue"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is excess demand (shortage)?",
+          "options": {
+            "A": "Quantity supplied exceeds quantity demanded",
+            "B": "Quantity demanded exceeds quantity supplied at given price",
+            "C": "Equilibrium",
+            "D": "No demand"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is excess supply (surplus)?",
+          "options": {
+            "A": "Quantity demanded exceeds quantity supplied",
+            "B": "Quantity supplied exceeds quantity demanded at given price",
+            "C": "Equilibrium",
+            "D": "No supply"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

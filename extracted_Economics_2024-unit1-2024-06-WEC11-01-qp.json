@@ -1,0 +1,271 @@
+{
+  "folder": "2024-unit1-2024-06-WEC11-01-qp",
+  "pdf_name": "2024-unit1-2024-06-WEC11-01-qp.pdf",
+  "subject_code": "WEC",
+  "year": 2024,
+  "session": "June",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the multiplier effect?",
+          "options": {
+            "A": "Decrease in spending",
+            "B": "Initial change in spending causes larger change in GDP",
+            "C": "Tax reduction only",
+            "D": "Import increase"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the accelerator effect?",
+          "options": {
+            "A": "Change in investment from change in consumer spending",
+            "B": "Decrease in production",
+            "C": "Tax multiplier",
+            "D": "Import effect"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is comparative advantage?",
+          "options": {
+            "A": "Ability to produce more than competitors",
+            "B": "Ability to produce at lower opportunity cost",
+            "C": "Absolute production advantage",
+            "D": "No trade benefit"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is absolute advantage?",
+          "options": {
+            "A": "Lower opportunity cost",
+            "B": "Ability to produce more with same resources",
+            "C": "Trade barrier",
+            "D": "Exchange rate advantage"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the balance of payments?",
+          "options": {
+            "A": "Government budget",
+            "B": "Record of all economic transactions between country and rest of world",
+            "C": "Domestic trade only",
+            "D": "Stock market value"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the current account?",
+          "options": {
+            "A": "Capital flows",
+            "B": "Record of trade in goods, services, income and transfers",
+            "C": "Financial account",
+            "D": "Government spending"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the financial account?",
+          "options": {
+            "A": "Trade in goods",
+            "B": "Record of investment flows",
+            "C": "Consumer spending",
+            "D": "Government revenue"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is a trade deficit?",
+          "options": {
+            "A": "Exports exceed imports",
+            "B": "Imports exceed exports",
+            "C": "Balanced trade",
+            "D": "No trade"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is a trade surplus?",
+          "options": {
+            "A": "Imports exceed exports",
+            "B": "Exports exceed imports",
+            "C": "No exports",
+            "D": "No imports"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the exchange rate?",
+          "options": {
+            "A": "Domestic price level",
+            "B": "Price of one currency in terms of another",
+            "C": "Interest rate",
+            "D": "Inflation rate"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is currency appreciation?",
+          "options": {
+            "A": "Decrease in currency value",
+            "B": "Increase in currency value relative to others",
+            "C": "Fixed exchange rate",
+            "D": "No change"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is currency depreciation?",
+          "options": {
+            "A": "Increase in currency value",
+            "B": "Decrease in currency value relative to others",
+            "C": "Appreciation",
+            "D": "Fixed rate"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is a floating exchange rate?",
+          "options": {
+            "A": "Government fixed rate",
+            "B": "Rate determined by market forces",
+            "C": "No exchange",
+            "D": "Barter system"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is a fixed exchange rate?",
+          "options": {
+            "A": "Market determined",
+            "B": "Government or central bank sets and maintains rate",
+            "C": "Floating rate",
+            "D": "No rate"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is purchasing power parity (PPP)?",
+          "options": {
+            "A": "Interest rate equality",
+            "B": "Exchange rate that equalizes purchasing power between currencies",
+            "C": "Trade deficit",
+            "D": "Inflation rate"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the terms of trade?",
+          "options": {
+            "A": "Total exports",
+            "B": "Ratio of export prices to import prices",
+            "C": "Exchange rate",
+            "D": "Inflation rate"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is protectionism?",
+          "options": {
+            "A": "Free trade",
+            "B": "Government restrictions on international trade",
+            "C": "Export promotion",
+            "D": "Currency appreciation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is free trade?",
+          "options": {
+            "A": "Trade with tariffs",
+            "B": "Trade without restrictions or barriers",
+            "C": "No international trade",
+            "D": "Barter only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is a trading bloc?",
+          "options": {
+            "A": "Single country",
+            "B": "Group of countries with trade agreement",
+            "C": "Trade barrier",
+            "D": "Currency union only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the World Trade Organization (WTO)?",
+          "options": {
+            "A": "Central bank",
+            "B": "International organization regulating trade between nations",
+            "C": "Currency union",
+            "D": "Government agency"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

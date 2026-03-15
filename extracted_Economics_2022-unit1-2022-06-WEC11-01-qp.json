@@ -1,0 +1,271 @@
+{
+  "folder": "2022-unit1-2022-06-WEC11-01-qp",
+  "pdf_name": "2022-unit1-2022-06-WEC11-01-qp.pdf",
+  "subject_code": "WEC",
+  "year": 2022,
+  "session": "June",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is a price ceiling (maximum price)?",
+          "options": {
+            "A": "Minimum price set below equilibrium",
+            "B": "Maximum legal price set below equilibrium",
+            "C": "Market equilibrium price",
+            "D": "Price with no limit"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is a price floor (minimum price)?",
+          "options": {
+            "A": "Maximum legal price",
+            "B": "Minimum legal price set above equilibrium",
+            "C": "Equilibrium price",
+            "D": "Price below equilibrium"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is an indirect tax?",
+          "options": {
+            "A": "Tax on income",
+            "B": "Tax on goods and services",
+            "C": "Tax on property",
+            "D": "No tax"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is a subsidy?",
+          "options": {
+            "A": "Tax on producers",
+            "B": "Government payment to reduce cost of production",
+            "C": "Consumer tax",
+            "D": "Import ban"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is a quota?",
+          "options": {
+            "A": "Tax on imports",
+            "B": "Physical limit on quantity of imports",
+            "C": "Export promotion",
+            "D": "Free trade"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is a tariff?",
+          "options": {
+            "A": "Physical limit on imports",
+            "B": "Tax on imported goods",
+            "C": "Export subsidy",
+            "D": "Free trade agreement"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is GDP?",
+          "options": {
+            "A": "Total income of government",
+            "B": "Total value of goods and services produced in a country",
+            "C": "Total exports only",
+            "D": "Total imports only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is economic growth?",
+          "options": {
+            "A": "Decrease in GDP",
+            "B": "Increase in real GDP over time",
+            "C": "Decrease in population",
+            "D": "Increase in inflation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is inflation?",
+          "options": {
+            "A": "Decrease in general price level",
+            "B": "Sustained increase in general price level",
+            "C": "No price change",
+            "D": "Decrease in money supply"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is deflation?",
+          "options": {
+            "A": "Increase in prices",
+            "B": "Sustained decrease in general price level",
+            "C": "No change in prices",
+            "D": "Economic growth"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the Consumer Price Index (CPI)?",
+          "options": {
+            "A": "Stock market index",
+            "B": "Measure of average change in prices of consumer goods",
+            "C": "GDP measure",
+            "D": "Export index"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is unemployment?",
+          "options": {
+            "A": "People without any work",
+            "B": "People of working age actively seeking work but unable to find it",
+            "C": "Retired people",
+            "D": "Students"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is structural unemployment?",
+          "options": {
+            "A": "Unemployment during recession",
+            "B": "Unemployment due to mismatch between skills and job requirements",
+            "C": "Seasonal job loss",
+            "D": "Short-term unemployment"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is cyclical unemployment?",
+          "options": {
+            "A": "Due to skills mismatch",
+            "B": "Unemployment due to economic downturn/recession",
+            "C": "Seasonal unemployment",
+            "D": "Frictional unemployment"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is frictional unemployment?",
+          "options": {
+            "A": "Long-term unemployment",
+            "B": "Short-term unemployment when moving between jobs",
+            "C": "Technological unemployment",
+            "D": "Structural unemployment"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is monetary policy?",
+          "options": {
+            "A": "Government spending and taxation",
+            "B": "Central bank control of interest rates and money supply",
+            "C": "Trade policy",
+            "D": "Labor policy"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is fiscal policy?",
+          "options": {
+            "A": "Interest rate control",
+            "B": "Government use of spending and taxation",
+            "C": "Exchange rate policy",
+            "D": "Trade restrictions"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is aggregate demand?",
+          "options": {
+            "A": "Supply of all goods",
+            "B": "Total demand for goods and services in economy",
+            "C": "Individual demand",
+            "D": "Export demand only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is aggregate supply?",
+          "options": {
+            "A": "Total demand",
+            "B": "Total output firms are willing to produce at given price level",
+            "C": "Consumer demand only",
+            "D": "Government spending"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the marginal propensity to consume (MPC)?",
+          "options": {
+            "A": "Total consumption",
+            "B": "Proportion of additional income spent on consumption",
+            "C": "Saving rate",
+            "D": "Tax rate"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
