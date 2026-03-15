@@ -1,0 +1,271 @@
+{
+  "folder": "October 2025 - Unit 1A QP",
+  "pdf_name": "October 2025 - Unit 1A QP.pdf",
+  "subject_code": "Economics",
+  "year": 2025,
+  "session": "October",
+  "paper": "1A",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the basic economic problem?",
+          "options": {
+            "A": "Unlimited resources and unlimited wants",
+            "B": "Limited resources and limited wants",
+            "C": "Limited resources and unlimited wants",
+            "D": "Unlimited resources and limited wants"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is opportunity cost?",
+          "options": {
+            "A": "The total cost of production",
+            "B": "The cost of the next best alternative foregone",
+            "C": "The fixed cost of business",
+            "D": "The variable cost of production"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is a free good?",
+          "options": {
+            "A": "A good with a high price",
+            "B": "A good with no opportunity cost",
+            "C": "A good provided by government",
+            "D": "A good with limited supply"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What causes a movement along the demand curve?",
+          "options": {
+            "A": "Change in income",
+            "B": "Change in price of the good",
+            "C": "Change in tastes",
+            "D": "Change in population"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What shifts the supply curve to the right?",
+          "options": {
+            "A": "Increase in costs of production",
+            "B": "Decrease in technology",
+            "C": "Improvement in technology",
+            "D": "Decrease in number of suppliers"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is price elasticity of demand?",
+          "options": {
+            "A": "Responsiveness of supply to price change",
+            "B": "Responsiveness of demand to income change",
+            "C": "Responsiveness of demand to price change",
+            "D": "Responsiveness of price to demand change"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "If demand is price inelastic, what happens when price rises?",
+          "options": {
+            "A": "Total revenue falls",
+            "B": "Quantity demanded rises significantly",
+            "C": "Total revenue rises",
+            "D": "No change in revenue"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is consumer surplus?",
+          "options": {
+            "A": "Price paid minus cost of production",
+            "B": "Maximum price willing to pay minus actual price paid",
+            "C": "Actual price paid minus minimum acceptable price",
+            "D": "Total revenue minus total cost"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is a public good?",
+          "options": {
+            "A": "A good provided by private companies",
+            "B": "A good that is non-excludable and non-rivalrous",
+            "C": "A good with elastic demand",
+            "D": "A good with inelastic supply"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is an externality?",
+          "options": {
+            "A": "Cost or benefit affecting third parties",
+            "B": "Cost of production",
+            "C": "Price of goods",
+            "D": "Government tax"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is GDP?",
+          "options": {
+            "A": "Gross Domestic Product - total value of goods and services produced",
+            "B": "Government Development Plan",
+            "C": "General Demand Price",
+            "D": "Gross Demand Production"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is inflation?",
+          "options": {
+            "A": "Decrease in general price level",
+            "B": "Sustained increase in general price level",
+            "C": "Increase in GDP",
+            "D": "Decrease in unemployment"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is unemployment?",
+          "options": {
+            "A": "People without any work",
+            "B": "People of working age actively seeking work but unable to find it",
+            "C": "People working part-time",
+            "D": "People retired"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is fiscal policy?",
+          "options": {
+            "A": "Control of money supply",
+            "B": "Government policy on taxation and spending",
+            "C": "Exchange rate policy",
+            "D": "Trade policy"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is monetary policy?",
+          "options": {
+            "A": "Government spending",
+            "B": "Taxation policy",
+            "C": "Central bank policy on interest rates and money supply",
+            "D": "Exchange rate management"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is absolute advantage?",
+          "options": {
+            "A": "Producing at lower opportunity cost",
+            "B": "Producing more efficiently than another country",
+            "C": "Having more resources",
+            "D": "Having better technology"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is comparative advantage?",
+          "options": {
+            "A": "Producing more than another country",
+            "B": "Producing at lower opportunity cost than another country",
+            "C": "Having absolute advantage in all goods",
+            "D": "Having no trade barriers"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is a tariff?",
+          "options": {
+            "A": "A tax on exports",
+            "B": "A subsidy for imports",
+            "C": "A tax on imports",
+            "D": "A quota on exports"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is a quota?",
+          "options": {
+            "A": "A tax on imports",
+            "B": "A physical limit on quantity of imports",
+            "C": "A subsidy for exports",
+            "D": "A free trade agreement"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is a multinational company?",
+          "options": {
+            "A": "A company operating in one country",
+            "B": "A company operating in multiple countries",
+            "C": "A government organization",
+            "D": "A small local business"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

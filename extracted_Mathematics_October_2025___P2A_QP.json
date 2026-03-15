@@ -1,0 +1,271 @@
+{
+  "folder": "October 2025 - P2A QP",
+  "pdf_name": "October 2025 - P2A QP.pdf",
+  "subject_code": "Mathematics",
+  "year": 2025,
+  "session": "October",
+  "paper": "P2A",
+  "unit": "Pure 2",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the derivative of x²?",
+          "options": {
+            "A": "x",
+            "B": "2x",
+            "C": "x²",
+            "D": "2"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the integral of 2x?",
+          "options": {
+            "A": "x",
+            "B": "x²",
+            "C": "2x²",
+            "D": "x² + c"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is sin(90°)?",
+          "options": {
+            "A": "0",
+            "B": "0.5",
+            "C": "1",
+            "D": "undefined"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is cos(0°)?",
+          "options": {
+            "A": "0",
+            "B": "0.5",
+            "C": "1",
+            "D": "undefined"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the quadratic formula?",
+          "options": {
+            "A": "x = -b ± √(b²-4ac)/2a",
+            "B": "x = -b ± √(b²+4ac)/2a",
+            "C": "x = b ± √(b²-4ac)/2a",
+            "D": "x = -b ± √(4ac-b²)/2a"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the sum of angles in a triangle?",
+          "options": {
+            "A": "90°",
+            "B": "180°",
+            "C": "270°",
+            "D": "360°"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the equation of a straight line?",
+          "options": {
+            "A": "y = mx + c",
+            "B": "y = mx - c",
+            "C": "y = m/x + c",
+            "D": "y = x + c"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the discriminant of ax² + bx + c = 0?",
+          "options": {
+            "A": "b² + 4ac",
+            "B": "b² - 4ac",
+            "C": "b² × 4ac",
+            "D": "b² / 4ac"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the formula for the area of a circle?",
+          "options": {
+            "A": "2πr",
+            "B": "πr²",
+            "C": "2πr²",
+            "D": "πd"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is log₁₀(100)?",
+          "options": {
+            "A": "1",
+            "B": "2",
+            "C": "10",
+            "D": "100"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the binomial expansion of (1+x)²?",
+          "options": {
+            "A": "1 + x + x²",
+            "B": "1 + 2x + x²",
+            "C": "1 - 2x + x²",
+            "D": "1 + x²"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the factorial of 5 (5!)?",
+          "options": {
+            "A": "25",
+            "B": "120",
+            "C": "125",
+            "D": "15"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the probability of getting heads on a fair coin toss?",
+          "options": {
+            "A": "0",
+            "B": "0.25",
+            "C": "0.5",
+            "D": "1"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the mean of 2, 4, 6, 8?",
+          "options": {
+            "A": "4",
+            "B": "5",
+            "C": "6",
+            "D": "20"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the standard deviation a measure of?",
+          "options": {
+            "A": "Central tendency",
+            "B": "Spread of data",
+            "C": "Correlation",
+            "D": "Probability"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is a permutation?",
+          "options": {
+            "A": "Selection where order doesn't matter",
+            "B": "Arrangement where order matters",
+            "C": "Combination of items",
+            "D": "Probability calculation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the chain rule used for?",
+          "options": {
+            "A": "Integration by parts",
+            "B": "Differentiating composite functions",
+            "C": "Finding area under curve",
+            "D": "Solving simultaneous equations"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the vector i + j?",
+          "options": {
+            "A": "Zero vector",
+            "B": "Unit vector at 45°",
+            "C": "Vector (1,1)",
+            "D": "Both B and C"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is a matrix?",
+          "options": {
+            "A": "A single number",
+            "B": "A rectangular array of numbers",
+            "C": "A type of equation",
+            "D": "A function"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the determinant of a 2×2 matrix |a b; c d|?",
+          "options": {
+            "A": "ad + bc",
+            "B": "ad - bc",
+            "C": "ab + cd",
+            "D": "ab - cd"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

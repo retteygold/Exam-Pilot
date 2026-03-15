@@ -1,0 +1,271 @@
+{
+  "folder": "October 2025 - Unit 4A QP",
+  "pdf_name": "October 2025 - Unit 4A QP.pdf",
+  "subject_code": "Physics",
+  "year": 2025,
+  "session": "October",
+  "paper": "4A",
+  "unit": "4",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the SI unit of force?",
+          "options": {
+            "A": "Watt",
+            "B": "Joule",
+            "C": "Newton",
+            "D": "Pascal"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the equation for kinetic energy?",
+          "options": {
+            "A": "mgh",
+            "B": "0.5mv²",
+            "C": "mv",
+            "D": "F/d"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the acceleration due to gravity on Earth?",
+          "options": {
+            "A": "8.9 m/s²",
+            "B": "9.8 m/s²",
+            "C": "10.2 m/s²",
+            "D": "9.2 m/s²"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is Newton's First Law?",
+          "options": {
+            "A": "F=ma",
+            "B": "Every action has equal reaction",
+            "C": "Object remains at rest or constant velocity unless acted upon by force",
+            "D": "Force equals change in momentum"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the unit of electric charge?",
+          "options": {
+            "A": "Volt",
+            "B": "Ampere",
+            "C": "Coulomb",
+            "D": "Ohm"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is Ohm's Law?",
+          "options": {
+            "A": "V = IR",
+            "B": "P = IV",
+            "C": "R = V/I",
+            "D": "I = V/R"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the speed of light in vacuum?",
+          "options": {
+            "A": "3.0 × 10^6 m/s",
+            "B": "3.0 × 10^7 m/s",
+            "C": "3.0 × 10^8 m/s",
+            "D": "3.0 × 10^9 m/s"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the wavelength of visible light?",
+          "options": {
+            "A": "400-700 nm",
+            "B": "700-1000 nm",
+            "C": "100-400 nm",
+            "D": "1-10 nm"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the principle of conservation of energy?",
+          "options": {
+            "A": "Energy can be created",
+            "B": "Energy can be destroyed",
+            "C": "Energy cannot be created or destroyed, only transformed",
+            "D": "Energy is always lost"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the unit of power?",
+          "options": {
+            "A": "Joule",
+            "B": "Newton",
+            "C": "Watt",
+            "D": "Volt"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the formula for density?",
+          "options": {
+            "A": "mass × volume",
+            "B": "mass / volume",
+            "C": "volume / mass",
+            "D": "mass + volume"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is pressure?",
+          "options": {
+            "A": "force × area",
+            "B": "force / area",
+            "C": "area / force",
+            "D": "mass × acceleration"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is absolute zero?",
+          "options": {
+            "A": "0°C",
+            "B": "-273°C",
+            "C": "273°C",
+            "D": "100°C"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the ideal gas equation?",
+          "options": {
+            "A": "PV = nRT",
+            "B": "P = nRT/V",
+            "C": "V = nRT/P",
+            "D": "All of these"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is simple harmonic motion?",
+          "options": {
+            "A": "Motion with constant velocity",
+            "B": "Motion where acceleration is proportional to displacement",
+            "C": "Motion in a circle",
+            "D": "Motion with constant acceleration"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the unit of frequency?",
+          "options": {
+            "A": "Second",
+            "B": "Meter",
+            "C": "Hertz",
+            "D": "Radian"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the wave equation?",
+          "options": {
+            "A": "v = fλ",
+            "B": "v = f/λ",
+            "C": "v = λ/f",
+            "D": "v = f + λ"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is refraction?",
+          "options": {
+            "A": "Bouncing of light",
+            "B": "Change in speed and direction of light at boundary",
+            "C": "Absorption of light",
+            "D": "Emission of light"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the photoelectric effect?",
+          "options": {
+            "A": "Emission of electrons when light hits metal",
+            "B": "Absorption of photons",
+            "C": "Reflection of light",
+            "D": "Refraction of light"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is half-life?",
+          "options": {
+            "A": "Time for all atoms to decay",
+            "B": "Time for half of atoms to decay",
+            "C": "Time for quarter of atoms to decay",
+            "D": "Time for double atoms to decay"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
