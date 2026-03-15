@@ -13,6 +13,7 @@ import { WordSearchGame } from './games/WordSearchGame'
 import { CrosswordGame } from './games/CrosswordGame'
 import { FindOddOneOut } from './games/FindOddOneOut'
 import { WhichOneCan } from './games/WhichOneCan'
+import { Quiz } from './pages/Quiz'
 
 function App() {
   const { profile, isSetupComplete } = useUserStore()
@@ -92,6 +93,19 @@ function App() {
           isSetupComplete ? (
             <Layout>
               <Stats />
+            </Layout>
+          ) : (
+            <Navigate to="/setup" replace />
+          )
+        } 
+      />
+
+      <Route 
+        path="/quiz" 
+        element={
+          isSetupComplete ? (
+            <Layout>
+              <Quiz />
             </Layout>
           ) : (
             <Navigate to="/setup" replace />

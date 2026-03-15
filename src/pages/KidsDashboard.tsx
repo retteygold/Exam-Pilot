@@ -362,7 +362,7 @@ export function KidsDashboard() {
 
       {/* Quick Practice Button */}
       <button
-        onClick={() => navigate('/papers')}
+        onClick={() => startKidsQuiz('quick-quiz')}
         className="w-full py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all"
       >
         Start Learning Adventure!
