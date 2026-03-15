@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Star, Trophy, Zap, Target, Gamepad2, Puzzle, Brain, Sparkles, ArrowRight, Medal, Crown } from 'lucide-react'
+import { Star, Trophy, Zap, Target, Gamepad2, Puzzle, Brain, Sparkles, ArrowRight, Medal, Crown, LogOut } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 import { useUserStore } from '../store/userStore'
 import type { Question, QuestionsData } from '../types'
+import { KidsLogin } from './KidsLogin'
 
 interface GameCard {
   id: string
@@ -81,22 +83,24 @@ const achievements = [
 export function KidsDashboard() {
   const navigate = useNavigate()
   const { profile } = useUserStore()
-  const [stars] = useState(150)
   const [streak] = useState(5)
 
   const [bank, setBank] = useState<Question[]>([])
 
-  const gradeLabel = profile?.grade || 'Grade 1'
+  const { currentKid, logout, getKidStats } = useKidsStore()
 
+  // Use kids profile grade if logged in
+  const gradeLabel = currentKid?.grade || profile?.grade || 'Grade 1'
+  
   const gradeKey = useMemo(() => {
-    const g = (profile?.grade || '').trim()
+    const g = (currentKid?.grade || profile?.grade || '').trim()
     if (!g) return 'grade1'
     if (g.toUpperCase() === 'LKG') return 'lkg'
     if (g.toUpperCase() === 'UKG') return 'ukg'
     const m = g.match(/Grade\s+(\d+)/i)
     if (m) return `grade${m[1]}`
     return 'grade1'
-  }, [profile?.grade])
+  }, [currentKid?.grade, profile?.grade])
 
   useEffect(() => {
     const load = async () => {
@@ -137,28 +141,42 @@ export function KidsDashboard() {
     navigate('/quiz', { state: { questions: selection } })
   }
 
+  const stats = currentKid ? getKidStats(currentKid.id) : { totalStars: 0, totalSessions: 0, bestStreak: 0 }
+
+  // Show login if not authenticated
+  if (!currentKid) {
+    return <KidsLogin onLogin={() => window.location.reload()} />
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-4">
       {/* Header with Stars & Streak */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg shadow-yellow-500/30">
-            <span className="text-2xl">🚀</span>
+          <div className="w-14 h-14 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg shadow-yellow-500/30 text-3xl">
+            {currentKid!.avatar}
           </div>
           <div>
-            <h1 className="text-xl font-bold text-white">Hi Explorer!</h1>
+            <h1 className="text-xl font-bold text-white">Hi {currentKid!.name}!</h1>
             <p className="text-xs text-purple-200">{gradeLabel}</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-1 px-3 py-1.5 bg-yellow-500/20 rounded-full border border-yellow-500/30">
             <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-            <span className="font-bold text-yellow-400">{stars}</span>
+            <span className="font-bold text-yellow-400">{stats.totalStars}</span>
           </div>
           <div className="flex items-center gap-1 px-3 py-1.5 bg-orange-500/20 rounded-full border border-orange-500/30">
             <Zap className="w-4 h-4 text-orange-400 fill-orange-400" />
-            <span className="font-bold text-orange-400">{streak}</span>
+            <span className="font-bold text-orange-400">{stats.bestStreak > 0 ? stats.bestStreak : streak}</span>
           </div>
+          <button
+            onClick={logout}
+            className="ml-2 p-2 bg-slate-700/50 rounded-full hover:bg-slate-700 transition-colors"
+            title="Logout"
+          >
+            <LogOut className="w-4 h-4 text-slate-400" />
+          </button>
         </div>
       </div>
 

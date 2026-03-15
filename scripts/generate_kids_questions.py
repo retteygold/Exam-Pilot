@@ -23,18 +23,18 @@ GRADES = [
     ('grade8', 'Grade 8', 13),
 ]
 
-# Questions per grade (total ~20,000)
+# Questions per grade (total ~40,000)
 QUESTIONS_PER_GRADE = {
-    'lkg': 800,
-    'ukg': 1200,
-    'grade1': 1600,
-    'grade2': 1800,
-    'grade3': 2000,
-    'grade4': 2200,
-    'grade5': 2400,
-    'grade6': 2600,
-    'grade7': 2800,
-    'grade8': 3000,
+    'lkg': 1600,
+    'ukg': 2400,
+    'grade1': 3200,
+    'grade2': 3600,
+    'grade3': 4000,
+    'grade4': 4400,
+    'grade5': 4800,
+    'grade6': 5200,
+    'grade7': 5600,
+    'grade8': 6000,
 }
 
 # Difficulty distribution per grade
