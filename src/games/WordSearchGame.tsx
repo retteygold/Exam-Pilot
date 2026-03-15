@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Search, RotateCcw, Trophy, Star } from 'lucide-react'
+import { Search, RotateCcw, Trophy, Star, ChevronRight } from 'lucide-react'
+import { WORD_SEARCH_LEVELS } from './wordSearchLevels'
 
 interface WordSearchGameProps {
   onComplete: (score: number, stars: number) => void
@@ -7,20 +8,25 @@ interface WordSearchGameProps {
 }
 
 const GRID_SIZE = 10
-const WORDS = ['RULER', 'PENCIL', 'BOOK', 'DESK', 'SCHOOL', 'MATH', 'READ', 'LEARN']
 
 export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
+  const [currentLevel, setCurrentLevel] = useState(0)
   const [grid, setGrid] = useState<string[][]>([])
   const [foundWords, setFoundWords] = useState<string[]>([])
   const [selectedCells, setSelectedCells] = useState<{row: number, col: number}[]>([])
   const [isSelecting, setIsSelecting] = useState(false)
   const [currentWord, setCurrentWord] = useState('')
   const [score, setScore] = useState(0)
+  const [totalScore, setTotalScore] = useState(0)
   const [wordPositions, setWordPositions] = useState<Map<string, {row: number, col: number}[]>>(new Map())
+  const [showLevelComplete, setShowLevelComplete] = useState(false)
+
+  const levelData = WORD_SEARCH_LEVELS[currentLevel]
+  const WORDS = levelData.words
 
   useEffect(() => {
     generateGrid()
-  }, [])
+  }, [currentLevel])
 
   function generateGrid() {
     const newGrid: string[][] = Array(GRID_SIZE).fill(null).map(() => Array(GRID_SIZE).fill(''))
@@ -119,13 +125,32 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
     const targetWord = WORDS.find(w => w === word || w === reversedWord)
     
     if (targetWord && !foundWords.includes(targetWord)) {
-      setFoundWords([...foundWords, targetWord])
-      setScore(score + 10)
+      const newFoundWords = [...foundWords, targetWord]
+      setFoundWords(newFoundWords)
+      const newScore = score + 10
+      setScore(newScore)
       
-      if (foundWords.length + 1 === WORDS.length) {
-        const stars = Math.min(3, Math.floor((score + 10) / 30) + 1)
-        setTimeout(() => onComplete(score + 10, stars), 500)
+      if (newFoundWords.length === WORDS.length) {
+        const newTotal = totalScore + newScore
+        setTotalScore(newTotal)
+        setTimeout(() => setShowLevelComplete(true), 500)
       }
+    }
+  }
+
+  function nextLevel() {
+    if (currentLevel < WORD_SEARCH_LEVELS.length - 1) {
+      setCurrentLevel(currentLevel + 1)
+      setFoundWords([])
+      setSelectedCells([])
+      setIsSelecting(false)
+      setCurrentWord('')
+      setScore(0)
+      setShowLevelComplete(false)
+    } else {
+      // Game complete - all 50 levels done
+      const stars = Math.min(3, Math.floor(totalScore / 100) + 1)
+      onComplete(totalScore, stars)
     }
   }
 
@@ -173,7 +198,22 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
         <div className="text-center mb-6">
           <Search className="w-12 h-12 text-emerald-400 mx-auto mb-2" />
           <h1 className="text-2xl font-bold text-white">Word Search</h1>
-          <p className="text-emerald-200">Find all the hidden words!</p>
+          <p className="text-emerald-200">Level {currentLevel + 1}/50 - {levelData.theme}</p>
+          <p className="text-emerald-300/70 text-sm">Find all the hidden words!</p>
+        </div>
+
+        {/* Level Progress */}
+        <div className="mb-4">
+          <div className="flex justify-between text-sm text-slate-300 mb-1">
+            <span>Level Progress</span>
+            <span>{currentLevel + 1} / 50</span>
+          </div>
+          <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
+            <div 
+              className="h-full bg-gradient-to-r from-emerald-400 to-teal-400 transition-all"
+              style={{ width: `${((currentLevel + 1) / 50) * 100}%` }}
+            />
+          </div>
         </div>
 
         {/* Word List */}
@@ -248,23 +288,25 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
           Click and drag to select letters forming words
         </p>
 
-        {/* Victory */}
-        {foundWords.length === WORDS.length && (
+        {/* Level Complete Modal */}
+        {showLevelComplete && (
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
             <div className="bg-slate-800 rounded-2xl p-8 text-center max-w-sm">
               <Trophy className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-white mb-2">Amazing!</h2>
-              <p className="text-slate-300 mb-4">You found all the words!</p>
+              <h2 className="text-2xl font-bold text-white mb-2">Level Complete!</h2>
+              <p className="text-emerald-300 mb-2">Level {currentLevel + 1}: {levelData.theme}</p>
+              <p className="text-slate-300 mb-4">Score: {score} points</p>
               <div className="flex justify-center gap-1 mb-6">
                 {[...Array(3)].map((_, i) => (
                   <Star key={i} className={`w-8 h-8 ${i < Math.min(3, Math.floor(score / 30) + 1) ? 'text-yellow-400 fill-yellow-400' : 'text-slate-600'}`} />
                 ))}
               </div>
               <button 
-                onClick={() => onComplete(score, Math.min(3, Math.floor(score / 30) + 1))}
-                className="w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl font-bold text-white"
+                onClick={nextLevel}
+                className="w-full py-3 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-xl font-bold text-white flex items-center justify-center gap-2"
               >
-                Continue
+                {currentLevel < WORD_SEARCH_LEVELS.length - 1 ? 'Next Level' : 'Finish Game'}
+                <ChevronRight className="w-5 h-5" />
               </button>
             </div>
           </div>

@@ -1,36 +1,13 @@
 import { useState } from 'react'
-import { Grid3X3, RotateCcw, Trophy, Star, HelpCircle } from 'lucide-react'
+import { Grid3X3, RotateCcw, Trophy, Star, HelpCircle, ChevronRight } from 'lucide-react'
+import { CROSSWORD_LEVELS } from './crosswordLevels'
 
 interface CrosswordGameProps {
   onComplete: (score: number, stars: number) => void
   onExit: () => void
 }
 
-const PUZZLES = [
-  {
-    words: [
-      { word: 'CAT', clue: 'A pet that meows', row: 0, col: 0, direction: 'across' },
-      { word: 'CAR', clue: 'Vehicle with four wheels', row: 0, col: 0, direction: 'down' },
-      { word: 'RAT', clue: 'A small rodent', row: 2, col: 0, direction: 'across' },
-    ]
-  },
-  {
-    words: [
-      { word: 'SUN', clue: 'Gives us light and warmth', row: 0, col: 0, direction: 'across' },
-      { word: 'SKY', clue: 'Blue above us', row: 0, col: 0, direction: 'down' },
-      { word: 'BOY', clue: 'A male child', row: 0, col: 2, direction: 'down' },
-    ]
-  },
-  {
-    words: [
-      { word: 'DOG', clue: 'A loyal pet', row: 0, col: 0, direction: 'across' },
-      { word: 'DOT', clue: 'A small round mark', row: 0, col: 0, direction: 'down' },
-      { word: 'GOT', clue: 'Past tense of get', row: 0, col: 2, direction: 'down' },
-    ]
-  }
-]
-
-const GRID_SIZE = 5
+const GRID_SIZE = 9
 
 export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
   const [currentPuzzle, setCurrentPuzzle] = useState(0)
@@ -39,9 +16,11 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
   const [direction, setDirection] = useState<'across' | 'down'>('across')
   const [solvedWords, setSolvedWords] = useState<string[]>([])
   const [score, setScore] = useState(0)
+  const [totalScore, setTotalScore] = useState(0)
   const [showHint, setShowHint] = useState<string | null>(null)
+  const [showLevelComplete, setShowLevelComplete] = useState(false)
 
-  const puzzle = PUZZLES[currentPuzzle]
+  const puzzle = CROSSWORD_LEVELS[currentPuzzle]
 
   function handleCellClick(row: number, col: number) {
     if (isCellBlocked(row, col)) return
@@ -132,23 +111,22 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
       setScore(score + newSolved.length * 15)
       
       if (solvedWords.length + newSolved.length === puzzle.words.length) {
+        const levelScore = score + newSolved.length * 15
         setTimeout(() => {
-          if (currentPuzzle < PUZZLES.length - 1) {
-            nextPuzzle()
-          } else {
-            onComplete(score + newSolved.length * 15, Math.min(3, Math.floor((score + newSolved.length * 15) / 40) + 1))
-          }
+          setTotalScore(totalScore + levelScore)
+          setShowLevelComplete(true)
         }, 1000)
       }
     }
   }
 
-  function nextPuzzle() {
+  function nextLevel() {
     setCurrentPuzzle(currentPuzzle + 1)
     setGrid(Array(GRID_SIZE).fill(null).map(() => Array(GRID_SIZE).fill('')))
     setSelectedCell(null)
     setSolvedWords([])
     setShowHint(null)
+    setShowLevelComplete(false)
   }
 
   function resetGame() {
@@ -179,8 +157,6 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
     })
   }
 
-  const allSolved = solvedWords.length === puzzle.words.length
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 p-4">
       <div className="max-w-2xl mx-auto">
@@ -190,7 +166,7 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
             ← Back
           </button>
           <div className="flex items-center gap-4">
-            <span className="text-slate-300">Puzzle {currentPuzzle + 1}/{PUZZLES.length}</span>
+            <span className="text-slate-300">Level {currentPuzzle + 1}/{CROSSWORD_LEVELS.length}</span>
             <div className="flex items-center gap-1 px-3 py-1 bg-yellow-500/20 rounded-full">
               <Star className="w-4 h-4 text-yellow-400" />
               <span className="text-yellow-400 font-bold">{score}</span>
@@ -350,34 +326,33 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
         )}
 
         {/* Victory */}
-        {allSolved && (
+        {showLevelComplete && (
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
             <div className="bg-slate-800 rounded-2xl p-8 text-center max-w-sm">
               <Trophy className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-white mb-2">Puzzle Complete!</h2>
+              <h2 className="text-2xl font-bold text-white mb-2">Level Complete!</h2>
               <p className="text-slate-300 mb-4">
-                {currentPuzzle < PUZZLES.length - 1 
-                  ? 'Ready for the next puzzle?' 
-                  : 'You completed all puzzles!'}
+                Level {currentPuzzle + 1} finished!
               </p>
               <div className="flex justify-center gap-1 mb-6">
                 {[...Array(3)].map((_, i) => (
                   <Star key={i} className={`w-8 h-8 ${i < Math.min(3, Math.floor(score / 40) + 1) ? 'text-yellow-400 fill-yellow-400' : 'text-slate-600'}`} />
                 ))}
               </div>
-              {currentPuzzle < PUZZLES.length - 1 ? (
+              {currentPuzzle < CROSSWORD_LEVELS.length - 1 ? (
                 <button 
-                  onClick={nextPuzzle}
-                  className="w-full py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl font-bold text-white"
+                  onClick={nextLevel}
+                  className="w-full py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl font-bold text-white flex items-center justify-center gap-2"
                 >
-                  Next Puzzle
+                  Next Level
+                  <ChevronRight className="w-5 h-5" />
                 </button>
               ) : (
                 <button 
-                  onClick={() => onComplete(score, Math.min(3, Math.floor(score / 40) + 1))}
+                  onClick={() => onComplete(totalScore, Math.min(3, Math.floor(totalScore / 200) + 1))}
                   className="w-full py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl font-bold text-white"
                 >
-                  Finish
+                  Finish Game
                 </button>
               )}
             </div>

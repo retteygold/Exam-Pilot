@@ -1,103 +1,11 @@
 import { useState } from 'react'
 import { HelpCircle, RotateCcw, Star, ArrowRight } from 'lucide-react'
+import { WHICH_CAN_LEVELS } from './whichCanLevels'
 
 interface WhichOneCanProps {
   onComplete: (score: number, stars: number) => void
   onExit: () => void
 }
-
-const QUESTIONS = [
-  {
-    question: 'Which one can BOUNCE?',
-    items: [
-      { emoji: '🏀', can: true, name: 'Ball' },
-      { emoji: '☂️', can: false, name: 'Umbrella' },
-      { emoji: '🪣', can: false, name: 'Bucket' }
-    ],
-    explanation: 'A ball is bouncy! It springs back when you drop it.'
-  },
-  {
-    question: 'Which one can FLOAT on water?',
-    items: [
-      { emoji: '🪨', can: false, name: 'Rock' },
-      { emoji: '🪵', can: true, name: 'Wood' },
-      { emoji: '🔩', can: false, name: 'Bolt' }
-    ],
-    explanation: 'Wood floats because it is less dense than water!'
-  },
-  {
-    question: 'Which one can FLY?',
-    items: [
-      { emoji: '🦅', can: true, name: 'Eagle' },
-      { emoji: '🐕', can: false, name: 'Dog' },
-      { emoji: '🐟', can: false, name: 'Fish' }
-    ],
-    explanation: 'Eagles have wings and can soar through the sky!'
-  },
-  {
-    question: 'Which one can MELT?',
-    items: [
-      { emoji: '🧊', can: true, name: 'Ice' },
-      { emoji: '🪨', can: false, name: 'Stone' },
-      { emoji: '🧱', can: false, name: 'Brick' }
-    ],
-    explanation: 'Ice melts into water when it gets warm!'
-  },
-  {
-    question: 'Which one can GROW?',
-    items: [
-      { emoji: '🌱', can: true, name: 'Plant' },
-      { emoji: '🪑', can: false, name: 'Chair' },
-      { emoji: '📱', can: false, name: 'Phone' }
-    ],
-    explanation: 'Plants grow bigger with sunlight and water!'
-  },
-  {
-    question: 'Which one can ROLL?',
-    items: [
-      { emoji: '📦', can: false, name: 'Box' },
-      { emoji: '🛞', can: true, name: 'Wheel' },
-      { emoji: '🧊', can: false, name: 'Cube' }
-    ],
-    explanation: 'Wheels are round and can roll smoothly!'
-  },
-  {
-    question: 'Which one can SING?',
-    items: [
-      { emoji: '🐦', can: true, name: 'Bird' },
-      { emoji: '🌷', can: false, name: 'Flower' },
-      { emoji: '🚗', can: false, name: 'Car' }
-    ],
-    explanation: 'Birds love to sing beautiful songs!'
-  },
-  {
-    question: 'Which one can BREAK easily?',
-    items: [
-      { emoji: '🥚', can: true, name: 'Egg' },
-      { emoji: '⚽', can: false, name: 'Ball' },
-      { emoji: '🧽', can: false, name: 'Sponge' }
-    ],
-    explanation: 'Eggs have fragile shells that can crack easily!'
-  },
-  {
-    question: 'Which one can SWIM?',
-    items: [
-      { emoji: '🐱', can: false, name: 'Cat' },
-      { emoji: '🦈', can: true, name: 'Shark' },
-      { emoji: '🦁', can: false, name: 'Lion' }
-    ],
-    explanation: 'Sharks are expert swimmers in the ocean!'
-  },
-  {
-    question: 'Which one can SPARKLE?',
-    items: [
-      { emoji: '✨', can: true, name: 'Stars' },
-      { emoji: '🧦', can: false, name: 'Sock' },
-      { emoji: '📄', can: false, name: 'Paper' }
-    ],
-    explanation: 'Stars sparkle and twinkle in the night sky!'
-  }
-]
 
 export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
   const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -107,7 +15,7 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
   const [streak, setStreak] = useState(0)
   const [correctCount, setCorrectCount] = useState(0)
 
-  const question = QUESTIONS[currentQuestion]
+  const question = WHICH_CAN_LEVELS[currentQuestion]
 
   function handleSelect(index: number) {
     if (showResult) return
@@ -129,12 +37,12 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
   }
 
   function nextQuestion() {
-    if (currentQuestion < QUESTIONS.length - 1) {
+    if (currentQuestion < WHICH_CAN_LEVELS.length - 1) {
       setCurrentQuestion(currentQuestion + 1)
       setSelected(null)
       setShowResult(false)
     } else {
-      const stars = Math.min(3, Math.floor((correctCount / QUESTIONS.length) * 3) + (correctCount === QUESTIONS.length ? 0 : 1))
+      const stars = Math.min(3, Math.floor((correctCount / WHICH_CAN_LEVELS.length) * 3) + (correctCount === WHICH_CAN_LEVELS.length ? 0 : 1))
       onComplete(score, stars)
     }
   }
@@ -159,7 +67,7 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
             ← Back
           </button>
           <div className="flex items-center gap-4">
-            <span className="text-slate-300">Q {currentQuestion + 1}/{QUESTIONS.length}</span>
+            <span className="text-slate-300">Q {currentQuestion + 1}/{WHICH_CAN_LEVELS.length}</span>
             <div className="flex items-center gap-1 px-3 py-1 bg-yellow-500/20 rounded-full">
               <Star className="w-4 h-4 text-yellow-400" />
               <span className="text-yellow-400 font-bold">{score}</span>
@@ -183,12 +91,12 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
         <div className="mb-6">
           <div className="flex justify-between text-sm text-slate-300 mb-1">
             <span>Progress</span>
-            <span>{Math.round(((currentQuestion) / QUESTIONS.length) * 100)}%</span>
+            <span>{Math.round(((currentQuestion) / WHICH_CAN_LEVELS.length) * 100)}%</span>
           </div>
           <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
             <div 
               className="h-full bg-gradient-to-r from-violet-400 to-fuchsia-400 transition-all"
-              style={{ width: `${((currentQuestion) / QUESTIONS.length) * 100}%` }}
+              style={{ width: `${((currentQuestion) / WHICH_CAN_LEVELS.length) * 100}%` }}
             />
           </div>
         </div>
@@ -244,7 +152,7 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
               onClick={nextQuestion}
               className="px-8 py-3 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-xl font-bold text-white flex items-center gap-2 mx-auto"
             >
-              {currentQuestion < QUESTIONS.length - 1 ? 'Next Question' : 'Finish'}
+              {currentQuestion < WHICH_CAN_LEVELS.length - 1 ? 'Next Question' : 'Finish'}
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>

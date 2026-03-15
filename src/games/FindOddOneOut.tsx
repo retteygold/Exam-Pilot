@@ -1,73 +1,22 @@
 import { useState } from 'react'
 import { Eye, RotateCcw, Trophy, Star } from 'lucide-react'
+import { FIND_ODD_LEVELS } from './findOddLevels'
 
 interface FindOddOneOutProps {
   onComplete: (score: number, stars: number) => void
   onExit: () => void
 }
 
-const LEVELS = [
-  {
-    items: ['🍎', '🍎', '🍎', '🍊'],
-    odd: 3,
-    hint: 'Find the fruit that is different!'
-  },
-  {
-    items: ['🔵', '🔵', '🔵', '🔵', '🟢'],
-    odd: 4,
-    hint: 'Look for the different color!'
-  },
-  {
-    items: ['🐶', '🐶', '🐶', '🐱'],
-    odd: 3,
-    hint: 'One animal is different!'
-  },
-  {
-    items: ['🚗', '🚗', '🚗', '🚗', '🚗', '🚙'],
-    odd: 5,
-    hint: 'Find the different vehicle!'
-  },
-  {
-    items: ['⭐', '⭐', '⭐', '⭐', '🌟'],
-    odd: 4,
-    hint: 'Look closely at the stars!'
-  },
-  {
-    items: ['🔴', '🔴', '🔴', '🔴', '🔴', '🔴', '🟠'],
-    odd: 6,
-    hint: 'One circle has a different color!'
-  },
-  {
-    items: ['✏️', '✏️', '✏️', '✏️', '🖊️'],
-    odd: 4,
-    hint: 'Find the different writing tool!'
-  },
-  {
-    items: ['🎵', '🎵', '🎵', '🎶'],
-    odd: 3,
-    hint: 'One note is different!'
-  },
-  {
-    items: ['🏀', '🏀', '🏀', '🏀', '⚽'],
-    odd: 4,
-    hint: 'Find the different ball!'
-  },
-  {
-    items: ['🌸', '🌸', '🌸', '🌸', '🌸', '🌺'],
-    odd: 5,
-    hint: 'One flower is different!'
-  }
-]
-
 export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
   const [currentLevel, setCurrentLevel] = useState(0)
   const [score, setScore] = useState(0)
+  const [totalScore, setTotalScore] = useState(0)
   const [attempts, setAttempts] = useState(0)
   const [wrongSelections, setWrongSelections] = useState<number[]>([])
   const [found, setFound] = useState(false)
   const [showHint, setShowHint] = useState(false)
 
-  const level = LEVELS[currentLevel]
+  const level = FIND_ODD_LEVELS[currentLevel]
 
   function handleItemClick(index: number) {
     if (found || wrongSelections.includes(index)) return
@@ -79,12 +28,8 @@ export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
       setFound(true)
       
       setTimeout(() => {
-        if (currentLevel < LEVELS.length - 1) {
-          nextLevel()
-        } else {
-          const stars = Math.min(3, Math.floor(score / 50) + 1)
-          onComplete(score, stars)
-        }
+        setTotalScore(totalScore + score + bonus)
+        nextLevel()
       }, 1500)
     } else {
       // Wrong
@@ -120,7 +65,7 @@ export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
             ← Back
           </button>
           <div className="flex items-center gap-4">
-            <span className="text-slate-300">Level {currentLevel + 1}/{LEVELS.length}</span>
+            <span className="text-slate-300">Level {currentLevel + 1}/{FIND_ODD_LEVELS.length}</span>
             <div className="flex items-center gap-1 px-3 py-1 bg-yellow-500/20 rounded-full">
               <Star className="w-4 h-4 text-yellow-400" />
               <span className="text-yellow-400 font-bold">{score}</span>
@@ -158,12 +103,12 @@ export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
         <div className="mb-6">
           <div className="flex justify-between text-sm text-slate-300 mb-1">
             <span>Progress</span>
-            <span>{Math.round((currentLevel / LEVELS.length) * 100)}%</span>
+            <span>{Math.round((currentLevel / FIND_ODD_LEVELS.length) * 100)}%</span>
           </div>
           <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
             <div 
               className="h-full bg-gradient-to-r from-orange-400 to-yellow-400 transition-all"
-              style={{ width: `${((currentLevel) / LEVELS.length) * 100}%` }}
+              style={{ width: `${((currentLevel) / FIND_ODD_LEVELS.length) * 100}%` }}
             />
           </div>
         </div>
@@ -238,14 +183,14 @@ export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
               </div>
               <p className="text-yellow-400 font-bold mb-4">+{attempts === 0 ? 20 : attempts === 1 ? 15 : 10} points</p>
               <p className="text-slate-400 text-sm">
-                {currentLevel < LEVELS.length - 1 ? 'Next level coming up...' : 'Final level complete!'}
+                {currentLevel < FIND_ODD_LEVELS.length - 1 ? 'Next level coming up...' : 'Final level complete!'}
               </p>
             </div>
           </div>
         )}
 
         {/* Game Complete */}
-        {currentLevel === LEVELS.length - 1 && found && (
+        {currentLevel === FIND_ODD_LEVELS.length - 1 && found && (
           <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-50">
             <div className="bg-slate-800 rounded-2xl p-8 text-center max-w-sm">
               <Trophy className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
@@ -253,12 +198,12 @@ export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
               <p className="text-slate-300 mb-4">You found all the odd ones!</p>
               <div className="flex justify-center gap-1 mb-6">
                 {[...Array(3)].map((_, i) => (
-                  <Star key={i} className={`w-8 h-8 ${i < Math.min(3, Math.floor(score / 50) + 1) ? 'text-yellow-400 fill-yellow-400' : 'text-slate-600'}`} />
+                  <Star key={i} className={`w-8 h-8 ${i < Math.min(3, Math.floor(totalScore / 200) + 1) ? 'text-yellow-400 fill-yellow-400' : 'text-slate-600'}`} />
                 ))}
               </div>
-              <p className="text-2xl font-bold text-yellow-400 mb-6">{score} points</p>
+              <p className="text-2xl font-bold text-yellow-400 mb-6">{totalScore} points</p>
               <button 
-                onClick={() => onComplete(score, Math.min(3, Math.floor(score / 50) + 1))}
+                onClick={() => onComplete(totalScore, Math.min(3, Math.floor(totalScore / 200) + 1))}
                 className="w-full py-3 bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl font-bold text-white"
               >
                 Continue
