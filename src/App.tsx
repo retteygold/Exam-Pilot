@@ -3,6 +3,7 @@ import { useUserStore } from './store/userStore'
 import { Layout } from './components/Layout'
 import { ProfileSetup } from './pages/ProfileSetup'
 import { Home } from './pages/Home'
+import { KidsDashboard } from './pages/KidsDashboard'
 import { PaperSelect } from './pages/PaperSelect'
 import { Exam } from './pages/Exam'
 import { Results } from './pages/Results'
@@ -10,7 +11,14 @@ import { Stats } from './pages/Stats'
 import { Admin } from './pages/Admin'
 
 function App() {
-  const isSetupComplete = useUserStore((state: { isSetupComplete: boolean }) => state.isSetupComplete)
+  const { profile, isSetupComplete } = useUserStore()
+  
+  // Determine if user should see kids dashboard (Grades LKG-8)
+  const isYoungStudent = profile?.grade && (
+    profile.grade.includes('LKG') || 
+    profile.grade.includes('UKG') ||
+    (profile.grade.includes('Grade') && parseInt(profile.grade.replace('Grade ', '')) <= 8)
+  )
 
   return (
     <Routes>
@@ -25,13 +33,13 @@ function App() {
         element={isSetupComplete ? <Navigate to="/" replace /> : <ProfileSetup />} 
       />
       
-      {/* Main app routes */}
+      {/* Main app routes - KidsDashboard for young students, Home for older */}
       <Route 
         path="/" 
         element={
           isSetupComplete ? (
             <Layout>
-              <Home />
+              {isYoungStudent ? <KidsDashboard /> : <Home />}
             </Layout>
           ) : (
             <Navigate to="/setup" replace />

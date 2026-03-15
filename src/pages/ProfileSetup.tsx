@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Star, Zap, Medal, Crown, BookOpen } from 'lucide-react'
+import { Star, Zap, Medal, Crown } from 'lucide-react'
 import { useUserStore } from '../store/userStore'
 
 const quotes = [
@@ -20,16 +20,31 @@ const rewards = [
 ]
 
 const availableSubjects = [
+  // LKG - UKG (Ages 3-5)
+  { id: 'lkg_foundation', name: 'LKG - Foundation Learning', grades: ['LKG', 'UKG'], icon: '🎨' },
+  { id: 'ukg_preparatory', name: 'UKG - Preparatory Learning', grades: ['UKG'], icon: '📚' },
+  // Primary Grades 1-5 (Cambridge Primary)
+  { id: 'primary_english', name: 'Primary English (0058)', grades: ['Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5'], icon: '📖' },
+  { id: 'primary_math', name: 'Primary Mathematics (0096)', grades: ['Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5'], icon: '🔢' },
+  { id: 'primary_science', name: 'Primary Science (0097)', grades: ['Grade 3', 'Grade 4', 'Grade 5'], icon: '🔬' },
+  { id: 'primary_digital', name: 'Primary Digital Literacy (0071)', grades: ['Grade 3', 'Grade 4', 'Grade 5'], icon: '💻' },
+  // Lower Secondary Grades 6-8 (Cambridge Lower Secondary)
+  { id: 'lower_english', name: 'Lower Secondary English (1111)', grades: ['Grade 6', 'Grade 7', 'Grade 8'], icon: '📚' },
+  { id: 'lower_math', name: 'Lower Secondary Mathematics (1112)', grades: ['Grade 6', 'Grade 7', 'Grade 8'], icon: '📐' },
+  { id: 'lower_science', name: 'Lower Secondary Science (1113)', grades: ['Grade 6', 'Grade 7', 'Grade 8'], icon: '⚗️' },
+  { id: 'lower_computing', name: 'Lower Secondary Computing (0082)', grades: ['Grade 6', 'Grade 7', 'Grade 8'], icon: '🖥️' },
+  // O-Level & IGCSE (Grades 9-11)
   { id: 'o_level_biology', name: 'O-Level Biology (5090)', grades: ['Grade 9', 'Grade 10'], icon: '🧬' },
   { id: 'igcse_biology', name: 'IGCSE Biology (0610)', grades: ['Grade 9', 'Grade 10', 'Grade 11'], icon: '🧫' },
   { id: 'o_level_accounting', name: 'O-Level Accounting (7707)', grades: ['Grade 11', 'Grade 12'], icon: '📊' },
+  // AS-A-Level (Grade 12)
   { id: 'as_biology', name: 'AS Biology (WBI11)', grades: ['Grade 12'], icon: '🧬' },
   { id: 'as_mathematics', name: 'AS Mathematics (9709)', grades: ['Grade 12'], icon: '📐' },
   { id: 'as_physics', name: 'AS Physics (9702)', grades: ['Grade 12'], icon: '⚛️' },
   { id: 'as_economics', name: 'AS Economics (9708)', grades: ['Grade 12'], icon: '📈' },
 ]
 
-const ageOptions = ['13-14', '15-16', '17-18', '19+']
+const ageOptions = ['3-4 (LKG)', '4-5 (UKG)', '5-6', '6-7', '7-8', '8-9', '9-10', '10-11', '11-12', '12-13', '13-14', '15-16', '17-18', '19+']
 
 const images = [
   '/storyset/Researchers-amico.svg',
@@ -99,7 +114,7 @@ export function ProfileSetup() {
         <p className='text-center text-sm text-emerald-300 italic'>&quot;{quote}&quot;</p>
       </div>
 
-      <div className='flex-1 p-4 flex flex-col'>
+      <div className='flex-1 p-4 flex flex-col overflow-hidden'>
         <div className='text-center mb-6'>
           <div className='relative w-32 h-32 mx-auto mb-4'>
             <img src={images[step - 1]} alt='' className='w-full h-full object-contain' />
@@ -120,7 +135,7 @@ export function ProfileSetup() {
           </h2>
         </div>
 
-        <div className='flex-1'>
+        <div className='flex-1 overflow-y-auto'>
           {step === 1 && (
             <div className='grid grid-cols-2 gap-3'>
               {['Male','Female','Other','Prefer not to say'].map(o => (
@@ -145,11 +160,10 @@ export function ProfileSetup() {
           )}
 
           {step === 3 && (
-            <div className='space-y-3'>
-              {['Grade 8', 'Grade 9', 'Grade 10', 'Grade 11', 'Grade 12'].map(o => (
+            <div className='grid grid-cols-2 gap-3'>
+              {['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7', 'Grade 8', 'Grade 9', 'Grade 10', 'Grade 11', 'Grade 12'].map(o => (
                 <button key={o} onClick={() => updateField('grade', o)}
-                  className={'w-full p-4 rounded-2xl border-2 text-left transition-all flex items-center gap-4 ' + (profile.grade === o ? 'border-blue-500 bg-blue-500/20' : 'border-slate-700 bg-slate-800 hover:border-slate-600')}>
-                  <BookOpen className='w-6 h-6 text-blue-400' />
+                  className={'p-4 rounded-2xl border-2 transition-all ' + (profile.grade === o ? 'border-blue-500 bg-blue-500/20' : 'border-slate-700 bg-slate-800 hover:border-slate-600')}>
                   <div className='font-semibold'>{o}</div>
                 </button>
               ))}

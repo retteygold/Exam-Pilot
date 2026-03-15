@@ -3,7 +3,7 @@ import type { ClipboardEvent } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types'
 import { canUseSupabaseQuestions, deleteQuestion, fetchAllQuestionsFromSupabase, upsertQuestion } from '../services/questionsSupabase'
-import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check } from 'lucide-react'
+import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText } from 'lucide-react'
 
 function makeEmptyQuestion(): Question {
   return {
@@ -50,6 +50,7 @@ export function Admin() {
   const [selected, setSelected] = useState<Question | null>(null)
   const [saveStatus, setSaveStatus] = useState<string | null>(null)
   const [showImageSection, setShowImageSection] = useState(false)
+  const [showPdfImage, setShowPdfImage] = useState(false)
 
   const canUseSupabase = canUseSupabaseQuestions()
 
