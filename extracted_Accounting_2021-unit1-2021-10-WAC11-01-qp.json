@@ -1,0 +1,271 @@
+{
+  "folder": "2021-unit1-2021-10-WAC11-01-qp",
+  "pdf_name": "2021-unit1-2021-10-WAC11-01-qp.pdf",
+  "subject_code": "WAC",
+  "year": 2021,
+  "session": "October",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the acid test ratio formula?",
+          "options": {
+            "A": "Current assets / Current liabilities",
+            "B": "(Current assets - Inventory) / Current liabilities",
+            "C": "Total assets / Total liabilities",
+            "D": "Inventory / Current liabilities"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the current ratio formula?",
+          "options": {
+            "A": "(Current assets - Inventory) / Current liabilities",
+            "B": "Current assets / Current liabilities",
+            "C": "Fixed assets / Current liabilities",
+            "D": "Total liabilities / Total assets"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is gross profit margin?",
+          "options": {
+            "A": "Net profit / Sales × 100%",
+            "B": "Gross profit / Sales × 100%",
+            "C": "Cost of sales / Sales × 100%",
+            "D": "Expenses / Sales × 100%"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is net profit margin?",
+          "options": {
+            "A": "Gross profit / Sales × 100%",
+            "B": "Net profit / Sales × 100%",
+            "C": "Cost / Sales × 100%",
+            "D": "Sales / Net profit × 100%"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the return on capital employed (ROCE)?",
+          "options": {
+            "A": "Net profit / Sales × 100%",
+            "B": "Net profit / Capital employed × 100%",
+            "C": "Gross profit / Capital × 100%",
+            "D": "Sales / Capital × 100%"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the rate of inventory turnover?",
+          "options": {
+            "A": "Inventory / Cost of sales",
+            "B": "Cost of sales / Average inventory",
+            "C": "Sales / Inventory",
+            "D": "Inventory / Sales"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the trade receivables collection period?",
+          "options": {
+            "A": "(Trade receivables / Sales) × 365 days",
+            "B": "(Trade receivables / Credit sales) × 365 days",
+            "C": "(Sales / Trade receivables) × 365 days",
+            "D": "Credit sales / 365 days"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the trade payables payment period?",
+          "options": {
+            "A": "(Trade payables / Purchases) × 365 days",
+            "B": "(Trade payables / Credit purchases) × 365 days",
+            "C": "(Purchases / Trade payables) × 365 days",
+            "D": "365 / Trade payables"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is a sole trader?",
+          "options": {
+            "A": "Company with many shareholders",
+            "B": "Business owned by one person",
+            "C": "Partnership business",
+            "D": "Government organization"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is a partnership?",
+          "options": {
+            "A": "Sole trader business",
+            "B": "Business owned by two or more persons",
+            "C": "Limited company",
+            "D": "Government business"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the main advantage of a sole trader?",
+          "options": {
+            "A": "Limited liability",
+            "B": "Easy to set up and all profits kept",
+            "C": "Unlimited capital",
+            "D": "Separate legal entity"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the main disadvantage of a sole trader?",
+          "options": {
+            "A": "Limited liability",
+            "B": "Unlimited liability and limited capital",
+            "C": "Complex setup",
+            "D": "Many partners"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is a limited liability company?",
+          "options": {
+            "A": "Partnership with unlimited liability",
+            "B": "Company where shareholders' liability is limited to shares held",
+            "C": "Sole trader",
+            "D": "Charity organization"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the difference between ordinary shares and preference shares?",
+          "options": {
+            "A": "No difference",
+            "B": "Preference shares have fixed dividend and priority in payment",
+            "C": "Ordinary shares always have priority",
+            "D": "Preference shares have voting rights"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is an audit?",
+          "options": {
+            "A": "Preparation of financial statements",
+            "B": "Independent examination of financial statements",
+            "C": "Daily book keeping",
+            "D": "Bank reconciliation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the purpose of accounting standards?",
+          "options": {
+            "A": "To make profit",
+            "B": "To ensure consistency and comparability in financial reporting",
+            "C": "To avoid taxes",
+            "D": "To increase sales"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the accruals concept?",
+          "options": {
+            "A": "Record when cash is received",
+            "B": "Match revenue with expenses in the period they occur",
+            "C": "Record only cash transactions",
+            "D": "Record at year end only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the going concern concept?",
+          "options": {
+            "A": "Business will close soon",
+            "B": "Business will continue to operate for foreseeable future",
+            "C": "Business is bankrupt",
+            "D": "Business is for sale"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the consistency concept?",
+          "options": {
+            "A": "Change methods every year",
+            "B": "Use same accounting methods from period to period",
+            "C": "Use different methods for different items",
+            "D": "No accounting methods needed"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the prudence concept?",
+          "options": {
+            "A": "Record all profits immediately",
+            "B": "Do not overstate profits or assets",
+            "C": "Overstate all values",
+            "D": "Ignore losses"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

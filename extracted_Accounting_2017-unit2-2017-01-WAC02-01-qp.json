@@ -1,0 +1,271 @@
+{
+  "folder": "2017-unit2-2017-01-WAC02-01-qp",
+  "pdf_name": "2017-unit2-2017-01-WAC02-01-qp.pdf",
+  "subject_code": "WAC",
+  "year": 2017,
+  "session": "January",
+  "paper": "01",
+  "unit": "2",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the accounting equation?",
+          "options": {
+            "A": "Assets = Liabilities - Capital",
+            "B": "Assets = Liabilities + Capital",
+            "C": "Assets + Liabilities = Capital",
+            "D": "Assets - Liabilities = Revenue"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is a debit entry recorded for?",
+          "options": {
+            "A": "Increase in liability",
+            "B": "Increase in asset",
+            "C": "Decrease in expense",
+            "D": "Increase in income"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the purpose of a trial balance?",
+          "options": {
+            "A": "To calculate profit",
+            "B": "To check arithmetical accuracy of ledger accounts",
+            "C": "To prepare bank reconciliation",
+            "D": "To record daily transactions"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is depreciation?",
+          "options": {
+            "A": "Increase in asset value",
+            "B": "Decrease in asset value over time",
+            "C": "Purchase of new asset",
+            "D": "Sale of asset"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the straight-line depreciation formula?",
+          "options": {
+            "A": "(Cost - Residual value) × Useful life",
+            "B": "(Cost - Residual value) / Useful life",
+            "C": "Cost / Useful life",
+            "D": "Residual value / Useful life"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What does GAAP stand for?",
+          "options": {
+            "A": "General Accepted Accounting Principles",
+            "B": "Generally Accepted Accounting Principles",
+            "C": "Government Approved Accounting Procedures",
+            "D": "General Accounting and Auditing Principles"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is a balance sheet?",
+          "options": {
+            "A": "Record of daily transactions",
+            "B": "Statement of financial position at a specific date",
+            "C": "Record of cash receipts",
+            "D": "List of all expenses"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is gross profit?",
+          "options": {
+            "A": "Total revenue - Total expenses",
+            "B": "Sales - Cost of goods sold",
+            "C": "Net profit + Expenses",
+            "D": "Total assets - Total liabilities"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is net profit?",
+          "options": {
+            "A": "Sales - Cost of goods sold",
+            "B": "Gross profit - Expenses",
+            "C": "Total revenue",
+            "D": "Gross profit + Expenses"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is a ledger account?",
+          "options": {
+            "A": "Bank statement",
+            "B": "Record of all transactions for a specific item",
+            "C": "List of employees",
+            "D": "Inventory list"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the purpose of bank reconciliation?",
+          "options": {
+            "A": "To calculate profit",
+            "B": "To ensure bank statement matches cash book",
+            "C": "To prepare balance sheet",
+            "D": "To record depreciation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is a journal in accounting?",
+          "options": {
+            "A": "Daily newspaper",
+            "B": "Book of original entry for transactions",
+            "C": "Annual report",
+            "D": "Bank statement"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the reducing balance depreciation method?",
+          "options": {
+            "A": "Same amount each year",
+            "B": "Fixed percentage of carrying amount each year",
+            "C": "Based on units produced",
+            "D": "No depreciation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is working capital?",
+          "options": {
+            "A": "Total assets",
+            "B": "Current assets - Current liabilities",
+            "C": "Fixed assets - Current liabilities",
+            "D": "Total liabilities"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a profit and loss account?",
+          "options": {
+            "A": "Balance sheet",
+            "B": "Statement of income and expenses",
+            "C": "Cash flow statement",
+            "D": "Bank statement"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is accrued expense?",
+          "options": {
+            "A": "Expense already paid",
+            "B": "Expense incurred but not yet paid",
+            "C": "Prepaid expense",
+            "D": "Income received"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is prepaid expense?",
+          "options": {
+            "A": "Expense not yet incurred",
+            "B": "Expense paid in advance",
+            "C": "Accrued expense",
+            "D": "Outstanding expense"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is capital expenditure?",
+          "options": {
+            "A": "Day-to-day expenses",
+            "B": "Spending on fixed assets",
+            "C": "Revenue expenses",
+            "D": "Operating expenses"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is revenue expenditure?",
+          "options": {
+            "A": "Spending on fixed assets",
+            "B": "Day-to-day running expenses",
+            "C": "Capital expenses",
+            "D": "Investment in shares"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the purpose of a cash book?",
+          "options": {
+            "A": "To record credit sales",
+            "B": "To record all cash and bank transactions",
+            "C": "To calculate depreciation",
+            "D": "To prepare trial balance"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

@@ -1,0 +1,271 @@
+{
+  "folder": "2022-unit1-2022-06-WBS11-01-qp",
+  "pdf_name": "2022-unit1-2022-06-WBS11-01-qp.pdf",
+  "subject_code": "WBS",
+  "year": 2022,
+  "session": "June",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is contribution?",
+          "options": {
+            "A": "Total revenue",
+            "B": "Selling price - Variable cost per unit",
+            "C": "Fixed costs",
+            "D": "Total profit"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is break-even point?",
+          "options": {
+            "A": "Where revenue exceeds costs",
+            "B": "Where total revenue = total costs",
+            "C": "Maximum profit point",
+            "D": "Minimum sales point"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the margin of safety?",
+          "options": {
+            "A": "Break-even sales - Actual sales",
+            "B": "Actual sales - Break-even sales",
+            "C": "Fixed costs",
+            "D": "Variable costs"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is target profit?",
+          "options": {
+            "A": "Revenue",
+            "B": "(Fixed costs + Target profit) / Contribution per unit",
+            "C": "Variable costs",
+            "D": "Break-even point"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is cash flow?",
+          "options": {
+            "A": "Profit only",
+            "B": "Movement of cash in and out of business",
+            "C": "Revenue only",
+            "D": "Costs only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is a cash flow forecast?",
+          "options": {
+            "A": "Historical profit data",
+            "B": "Prediction of future cash inflows and outflows",
+            "C": "Balance sheet",
+            "D": "Income statement"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is net cash flow?",
+          "options": {
+            "A": "Cash inflows only",
+            "B": "Cash inflows - Cash outflows",
+            "C": "Cash outflows only",
+            "D": "Total revenue"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is opening balance?",
+          "options": {
+            "A": "Cash at end of period",
+            "B": "Cash at start of period",
+            "C": "Profit",
+            "D": "Loss"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is closing balance?",
+          "options": {
+            "A": "Cash at start",
+            "B": "Opening balance + Net cash flow",
+            "C": "Revenue",
+            "D": "Expenses"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the marketing mix?",
+          "options": {
+            "A": "Price only",
+            "B": "Product, Price, Place, Promotion (4Ps)",
+            "C": "Product only",
+            "D": "Promotion only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is product differentiation?",
+          "options": {
+            "A": "Same product as competitors",
+            "B": "Making product different from competitors",
+            "C": "Lowering price only",
+            "D": "No advertising"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is market segmentation?",
+          "options": {
+            "A": "Selling to everyone",
+            "B": "Dividing market into distinct groups",
+            "C": "Single price strategy",
+            "D": "No promotion"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is niche marketing?",
+          "options": {
+            "A": "Mass marketing",
+            "B": "Targeting a small specific market segment",
+            "C": "No target market",
+            "D": "Global marketing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is mass marketing?",
+          "options": {
+            "A": "Targeting specific group",
+            "B": "Selling same product to whole market",
+            "C": "No advertising",
+            "D": "Premium pricing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is penetration pricing?",
+          "options": {
+            "A": "High price strategy",
+            "B": "Low price to enter market",
+            "C": "Premium pricing",
+            "D": "Cost plus pricing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is skimming pricing?",
+          "options": {
+            "A": "Low price",
+            "B": "High price for new product then lower",
+            "C": "Break-even price",
+            "D": "Penetration price"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is psychological pricing?",
+          "options": {
+            "A": "Cost-based pricing",
+            "B": "Pricing to appeal to customer's emotions",
+            "C": "Break-even pricing",
+            "D": "Marginal cost pricing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is above-the-line promotion?",
+          "options": {
+            "A": "Personal selling",
+            "B": "Advertising through mass media",
+            "C": "Direct marketing",
+            "D": "Sales promotion"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is below-the-line promotion?",
+          "options": {
+            "A": "TV advertising",
+            "B": "Direct marketing, sales promotion, personal selling",
+            "C": "Radio advertising",
+            "D": "Newspaper advertising"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is brand loyalty?",
+          "options": {
+            "A": "Switching brands frequently",
+            "B": "Customers consistently buying same brand",
+            "C": "No preference",
+            "D": "Price shopping only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

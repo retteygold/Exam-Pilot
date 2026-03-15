@@ -1,0 +1,271 @@
+{
+  "folder": "2019-unit1-2019-06-WBS11-01-qp",
+  "pdf_name": "2019-unit1-2019-06-WBS11-01-qp.pdf",
+  "subject_code": "WBS",
+  "year": 2019,
+  "session": "June",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the primary objective of a business?",
+          "options": {
+            "A": "Increase costs",
+            "B": "Make profit",
+            "C": "Reduce revenue",
+            "D": "Eliminate competition"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is entrepreneurship?",
+          "options": {
+            "A": "Working for government",
+            "B": "Taking risks to set up and run a business",
+            "C": "Working for a salary",
+            "D": "Investing in bonds"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is a business opportunity?",
+          "options": {
+            "A": "Guaranteed profit",
+            "B": "A situation where goods/services can be sold at profit",
+            "C": "No risk involved",
+            "D": "Government job"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is market research?",
+          "options": {
+            "A": "Selling products",
+            "B": "Gathering information about customers and markets",
+            "C": "Hiring employees",
+            "D": "Building factories"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is primary market research?",
+          "options": {
+            "A": "Using existing data",
+            "B": "Collecting new data firsthand",
+            "C": "Reading books",
+            "D": "Using internet"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is secondary market research?",
+          "options": {
+            "A": "Collecting new data",
+            "B": "Using existing data already collected",
+            "C": "Surveys",
+            "D": "Interviews"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is a business plan?",
+          "options": {
+            "A": "Document showing past profits",
+            "B": "Document outlining business goals and strategies",
+            "C": "Employee handbook",
+            "D": "Marketing brochure"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is a mission statement?",
+          "options": {
+            "A": "Financial report",
+            "B": "Statement of business purpose and values",
+            "C": "Employee contract",
+            "D": "Product specification"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is a vision statement?",
+          "options": {
+            "A": "Daily sales target",
+            "B": "Long-term desired future state of business",
+            "C": "Employee salary details",
+            "D": "Current profit margin"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What are SMART objectives?",
+          "options": {
+            "A": "Simple, Mandatory, Automatic, Realistic, Timely",
+            "B": "Specific, Measurable, Achievable, Realistic, Time-bound",
+            "C": "Strategic, Market, Analysis, Research, Trends",
+            "D": "Sales, Marketing, Accounting, Resources, Training"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is sole proprietorship?",
+          "options": {
+            "A": "Business owned by many shareholders",
+            "B": "Business owned by one person",
+            "C": "Government organization",
+            "D": "Charity"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is partnership?",
+          "options": {
+            "A": "Business owned by one person",
+            "B": "Business owned by 2-20 people",
+            "C": "Public limited company",
+            "D": "Sole trader"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is a private limited company?",
+          "options": {
+            "A": "Company selling shares to public",
+            "B": "Company owned by shareholders, shares not sold to public",
+            "C": "Sole proprietorship",
+            "D": "Partnership"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is a public limited company?",
+          "options": {
+            "A": "Company not allowed to sell shares",
+            "B": "Company that can sell shares to the public",
+            "C": "Sole trader",
+            "D": "Partnership"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is unlimited liability?",
+          "options": {
+            "A": "Loss limited to investment",
+            "B": "Personal assets can be used to pay business debts",
+            "C": "No risk",
+            "D": "Limited to company assets only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is limited liability?",
+          "options": {
+            "A": "Personal assets at risk",
+            "B": "Loss limited to amount invested",
+            "C": "No investment needed",
+            "D": "Unlimited risk"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is fixed cost?",
+          "options": {
+            "A": "Cost that varies with output",
+            "B": "Cost that doesn't change with output",
+            "C": "Cost of raw materials",
+            "D": "Direct labor cost"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is variable cost?",
+          "options": {
+            "A": "Cost that stays constant",
+            "B": "Cost that changes with output level",
+            "C": "Rent expense",
+            "D": "Insurance cost"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is total cost?",
+          "options": {
+            "A": "Fixed costs only",
+            "B": "Fixed costs + Variable costs",
+            "C": "Variable costs only",
+            "D": "Revenue - Profit"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is revenue?",
+          "options": {
+            "A": "Total costs",
+            "B": "Price × Quantity sold",
+            "C": "Profit only",
+            "D": "Fixed costs"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

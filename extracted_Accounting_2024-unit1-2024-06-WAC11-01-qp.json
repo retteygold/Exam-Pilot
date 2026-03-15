@@ -1,0 +1,271 @@
+{
+  "folder": "2024-unit1-2024-06-WAC11-01-qp",
+  "pdf_name": "2024-unit1-2024-06-WAC11-01-qp.pdf",
+  "subject_code": "WAC",
+  "year": 2024,
+  "session": "June",
+  "paper": "01",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the materiality concept?",
+          "options": {
+            "A": "Record all transactions regardless of size",
+            "B": "Only record significant items that affect decisions",
+            "C": "Record only cash transactions",
+            "D": "Ignore all expenses"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the business entity concept?",
+          "options": {
+            "A": "Business and owner are same",
+            "B": "Business is separate from its owner",
+            "C": "Owner can use business money freely",
+            "D": "No separate records needed"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the money measurement concept?",
+          "options": {
+            "A": "Record in any currency",
+            "B": "Only record transactions measurable in money",
+            "C": "Record physical assets only",
+            "D": "Record non-monetary items"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the realization concept?",
+          "options": {
+            "A": "Profit is realized when production completes",
+            "B": "Profit is realized when goods are sold",
+            "C": "Profit is realized when cash is received",
+            "D": "Profit is realized when order is placed"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the dual aspect concept?",
+          "options": {
+            "A": "Every transaction has one effect",
+            "B": "Every transaction has two equal effects (debit and credit)",
+            "C": "No effect on accounts",
+            "D": "Only affects one account"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is accumulated depreciation?",
+          "options": {
+            "A": "Depreciation for one year",
+            "B": "Total depreciation charged to date on asset",
+            "C": "Original cost of asset",
+            "D": "Scrap value of asset"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is net book value?",
+          "options": {
+            "A": "Original cost",
+            "B": "Cost - Accumulated depreciation",
+            "C": "Accumulated depreciation only",
+            "D": "Selling price"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the purpose of a purchases ledger?",
+          "options": {
+            "A": "Record cash sales",
+            "B": "Record credit purchases from suppliers",
+            "C": "Record cash purchases",
+            "D": "Record sales"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the purpose of a sales ledger?",
+          "options": {
+            "A": "Record cash purchases",
+            "B": "Record credit sales to customers",
+            "C": "Record cash sales",
+            "D": "Record purchases"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the purpose of a nominal ledger?",
+          "options": {
+            "A": "Record names of customers",
+            "B": "Record all income, expenses, assets and liabilities",
+            "C": "Record only cash",
+            "D": "Record only sales"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the accounting equation after profit?",
+          "options": {
+            "A": "Assets = Liabilities - Capital",
+            "B": "Assets = Liabilities + Capital + Profit",
+            "C": "Assets = Liabilities",
+            "D": "Assets = Capital - Liabilities"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is drawings in accounting?",
+          "options": {
+            "A": "Business profit",
+            "B": "Assets taken by owner for personal use",
+            "C": "Business expenses",
+            "D": "Sales revenue"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is capital introduced?",
+          "options": {
+            "A": "Business profit",
+            "B": "Assets or cash invested by owner",
+            "C": "Bank loan",
+            "D": "Sales revenue"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is an income statement?",
+          "options": {
+            "A": "Balance sheet",
+            "B": "Statement showing revenue, expenses and profit/loss",
+            "C": "Cash book",
+            "D": "Bank statement"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a statement of financial position?",
+          "options": {
+            "A": "Income statement",
+            "B": "Balance sheet showing assets, liabilities and capital",
+            "C": "Cash flow statement",
+            "D": "Bank reconciliation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is a trade discount?",
+          "options": {
+            "A": "Discount for early payment",
+            "B": "Reduction in list price for bulk purchases",
+            "C": "Discount allowed to debtors",
+            "D": "Cash discount"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is a cash discount?",
+          "options": {
+            "A": "Bulk purchase discount",
+            "B": "Discount for early payment of debts",
+            "C": "Trade discount",
+            "D": "No discount"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the purpose of a petty cash book?",
+          "options": {
+            "A": "Record large payments",
+            "B": "Record small cash payments",
+            "C": "Record bank transactions",
+            "D": "Record credit sales"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the imprest system?",
+          "options": {
+            "A": "Unlimited petty cash",
+            "B": "Fixed amount of petty cash replenished when spent",
+            "C": "No petty cash",
+            "D": "Bank overdraft system"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the purpose of a statement of cash flows?",
+          "options": {
+            "A": "Calculate profit",
+            "B": "Show sources and uses of cash",
+            "C": "Show assets only",
+            "D": "Show liabilities only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

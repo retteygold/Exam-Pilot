@@ -1,0 +1,271 @@
+{
+  "folder": "2019-unit2-2019-01-WAC12-01-qp",
+  "pdf_name": "2019-unit2-2019-01-WAC12-01-qp.pdf",
+  "subject_code": "WAC",
+  "year": 2019,
+  "session": "January",
+  "paper": "01",
+  "unit": "2",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the purpose of control accounts?",
+          "options": {
+            "A": "To calculate profit",
+            "B": "To check accuracy of ledgers and locate errors",
+            "C": "To prepare bank reconciliation",
+            "D": "To record depreciation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is a suspense account used for?",
+          "options": {
+            "A": "Recording profits",
+            "B": "Temporarily recording unclassified transactions until errors are found",
+            "C": "Recording cash sales",
+            "D": "Recording fixed assets"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is a provision for doubtful debts?",
+          "options": {
+            "A": "Cash set aside for bad debts",
+            "B": "Estimated amount of debts that may not be collected",
+            "C": "Actual bad debts written off",
+            "D": "Bank overdraft"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the formula for cost of goods sold (COGS)?",
+          "options": {
+            "A": "Opening inventory + Purchases + Closing inventory",
+            "B": "Opening inventory + Purchases - Closing inventory",
+            "C": "Sales - Gross profit",
+            "D": "Both B and C"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is a manufacturing account?",
+          "options": {
+            "A": "Record of sales",
+            "B": "Statement showing cost of production",
+            "C": "Bank statement",
+            "D": "Payroll record"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is prime cost?",
+          "options": {
+            "A": "Total manufacturing cost",
+            "B": "Direct materials + Direct labor + Direct expenses",
+            "C": "Factory overheads only",
+            "D": "Administrative expenses"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is inventory valuation at lower of cost and net realizable value?",
+          "options": {
+            "A": "Conservatism principle",
+            "B": "Prudence concept",
+            "C": "Consistency concept",
+            "D": "Both A and B"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is FIFO method?",
+          "options": {
+            "A": "First In First Out - oldest inventory sold first",
+            "B": "Last In First Out",
+            "C": "Average cost method",
+            "D": "Highest price method"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is LIFO method?",
+          "options": {
+            "A": "First In First Out",
+            "B": "Last In First Out - newest inventory sold first",
+            "C": "Average cost method",
+            "D": "Lowest price method"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the purpose of financial statements?",
+          "options": {
+            "A": "To record daily transactions",
+            "B": "To provide information for decision-making to users",
+            "C": "To calculate depreciation only",
+            "D": "To prepare invoices"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What are intangible assets?",
+          "options": {
+            "A": "Buildings and machinery",
+            "B": "Non-physical assets like goodwill and patents",
+            "C": "Cash and inventory",
+            "D": "Accounts receivable"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is goodwill?",
+          "options": {
+            "A": "Physical asset",
+            "B": "Intangible asset representing value of business reputation",
+            "C": "Cash in bank",
+            "D": "Inventory value"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is a partnership deed?",
+          "options": {
+            "A": "Bank statement",
+            "B": "Legal document outlining partnership terms",
+            "C": "Sales invoice",
+            "D": "Cash book"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "How are profits shared in partnership without agreement?",
+          "options": {
+            "A": "Equally",
+            "B": "Based on capital contribution",
+            "C": "Based on work done",
+            "D": "Senior partner takes all"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a limited company?",
+          "options": {
+            "A": "Business with unlimited liability",
+            "B": "Legal entity separate from owners with limited liability",
+            "C": "Sole proprietorship",
+            "D": "Partnership firm"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is share capital?",
+          "options": {
+            "A": "Company's profits",
+            "B": "Amount invested by shareholders",
+            "C": "Bank loans",
+            "D": "Trade payables"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What are reserves in company accounts?",
+          "options": {
+            "A": "Cash in hand",
+            "B": "Retained profits for future use",
+            "C": "Share capital",
+            "D": "Bank overdraft"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the difference between capital and revenue expenditure?",
+          "options": {
+            "A": "No difference",
+            "B": "Capital is for long-term assets, revenue is day-to-day expenses",
+            "C": "Both are same",
+            "D": "Capital is for short-term"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is a cash flow statement?",
+          "options": {
+            "A": "Profit and loss account",
+            "B": "Statement showing inflow and outflow of cash",
+            "C": "Balance sheet",
+            "D": "Bank reconciliation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is liquidity ratio?",
+          "options": {
+            "A": "Profitability measure",
+            "B": "Ability to pay short-term debts",
+            "C": "Long-term solvency",
+            "D": "Asset turnover"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

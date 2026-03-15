@@ -1,0 +1,271 @@
+{
+  "folder": "2025-unit2-2025-10-WBS12-01-qp",
+  "pdf_name": "2025-unit2-2025-10-WBS12-01-qp.pdf",
+  "subject_code": "WBS",
+  "year": 2025,
+  "session": "October",
+  "paper": "01",
+  "unit": "2",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is human resource management?",
+          "options": {
+            "A": "Financial management",
+            "B": "Managing people in organization",
+            "C": "Marketing only",
+            "D": "Production only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is recruitment?",
+          "options": {
+            "A": "Firing employees",
+            "B": "Process of finding and hiring employees",
+            "C": "Training only",
+            "D": "Paying salaries"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is internal recruitment?",
+          "options": {
+            "A": "Hiring from outside",
+            "B": "Filling vacancy from existing employees",
+            "C": "No hiring",
+            "D": "Firing employees"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is external recruitment?",
+          "options": {
+            "A": "Promoting internal staff",
+            "B": "Hiring from outside organization",
+            "C": "No recruitment",
+            "D": "Reducing staff"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is training?",
+          "options": {
+            "A": "Firing employees",
+            "B": "Developing skills and knowledge of employees",
+            "C": "Reducing salaries",
+            "D": "Hiring only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is motivation?",
+          "options": {
+            "A": "Firing staff",
+            "B": "Reasons why people work and want to achieve",
+            "C": "Reducing pay",
+            "D": "No benefits"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is Maslow's hierarchy of needs?",
+          "options": {
+            "A": "Financial statement",
+            "B": "Theory of human motivation with levels of needs",
+            "C": "Marketing strategy",
+            "D": "Production method"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is piece rate payment?",
+          "options": {
+            "A": "Fixed monthly salary",
+            "B": "Pay based on units produced",
+            "C": "Hourly wage only",
+            "D": "Annual bonus only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is commission?",
+          "options": {
+            "A": "Fixed salary",
+            "B": "Payment based on sales made",
+            "C": "Hourly wage",
+            "D": "No payment"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is fringe benefits?",
+          "options": {
+            "A": "Only salary",
+            "B": "Non-wage benefits like car, insurance",
+            "C": "Only commission",
+            "D": "No benefits"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is operations management?",
+          "options": {
+            "A": "Marketing only",
+            "B": "Managing production of goods/services",
+            "C": "Finance only",
+            "D": "HR only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is economies of scale?",
+          "options": {
+            "A": "Higher costs with scale",
+            "B": "Lower average costs as production increases",
+            "C": "No change in costs",
+            "D": "Higher prices"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is diseconomies of scale?",
+          "options": {
+            "A": "Lower costs",
+            "B": "Higher average costs as business grows too large",
+            "C": "Constant costs",
+            "D": "Better efficiency"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is lean production?",
+          "options": {
+            "A": "Using more resources",
+            "B": "Producing efficiently with minimum waste",
+            "C": "Slow production",
+            "D": "More inventory"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is just-in-time (JIT)?",
+          "options": {
+            "A": "Keeping large inventory",
+            "B": "Receiving goods only as needed for production",
+            "C": "Early ordering",
+            "D": "Bulk purchasing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is quality control?",
+          "options": {
+            "A": "No checking",
+            "B": "Checking products meet standards",
+            "C": "Reducing standards",
+            "D": "Ignoring defects"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is quality assurance?",
+          "options": {
+            "A": "Final inspection only",
+            "B": "Systems ensuring quality at every stage",
+            "C": "No quality checks",
+            "D": "Random checking"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is external growth?",
+          "options": {
+            "A": "Growing organically",
+            "B": "Growth through mergers/acquisitions",
+            "C": "Reducing size",
+            "D": "Staying same size"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is internal growth?",
+          "options": {
+            "A": "Merging with another company",
+            "B": "Organic growth from existing operations",
+            "C": "Acquisition",
+            "D": "Takeover"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is globalization?",
+          "options": {
+            "A": "Local business only",
+            "B": "Business expanding and operating internationally",
+            "C": "Closing overseas operations",
+            "D": "Domestic market only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
