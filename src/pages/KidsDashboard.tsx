@@ -5,10 +5,6 @@ import { useKidsStore } from '../store/kidsStore'
 import { useUserStore } from '../store/userStore'
 import type { Question, QuestionsData } from '../types'
 import { KidsLogin } from './KidsLogin'
-import { WordSearchGame } from '../games/WordSearchGame'
-import { CrosswordGame } from '../games/CrosswordGame'
-import { FindOddOneOut } from '../games/FindOddOneOut'
-import { WhichOneCan } from '../games/WhichOneCan'
 
 interface GameCard {
   id: string
@@ -129,9 +125,7 @@ export function KidsDashboard() {
 
   const [loginKey, setLoginKey] = useState(0)
 
-  const [activeGame, setActiveGame] = useState<string | null>(null)
-
-  const { currentKid, logout, getKidStats, recordSession } = useKidsStore()
+  const { currentKid, logout, getKidStats } = useKidsStore()
 
   // Trigger re-render when login succeeds
   const handleLogin = () => {
@@ -165,10 +159,16 @@ export function KidsDashboard() {
   }, [])
 
   const startKidsQuiz = (gameId: string) => {
-    // Handle new interactive games
-    const interactiveGames = ['word-search', 'crossword', 'find-odd', 'which-can']
-    if (interactiveGames.includes(gameId)) {
-      setActiveGame(gameId)
+    // Handle new interactive games - navigate to full screen routes
+    const interactiveGames: Record<string, string> = {
+      'word-search': '/game/word-search',
+      'crossword': '/game/crossword',
+      'find-odd': '/game/find-odd',
+      'which-can': '/game/which-can'
+    }
+    
+    if (interactiveGames[gameId]) {
+      navigate(interactiveGames[gameId])
       return
     }
 
@@ -197,53 +197,11 @@ export function KidsDashboard() {
     navigate('/quiz', { state: { questions: selection } })
   }
 
-  const handleGameComplete = (gameType: string, score: number, stars: number) => {
-    if (currentKid) {
-      recordSession({
-        gameType,
-        score,
-        starsEarned: stars,
-        correctAnswers: Math.floor(score / 10),
-        totalQuestions: 10,
-        durationSeconds: 120
-      })
-    }
-    setActiveGame(null)
-  }
-
   const stats = currentKid ? getKidStats(currentKid.id) : { totalStars: 0, totalSessions: 0, bestStreak: 0 }
 
   // Show login if not authenticated
   if (!currentKid) {
     return <KidsLogin onLogin={handleLogin} key={loginKey} />
-  }
-
-  // Render active game
-  if (activeGame) {
-    switch (activeGame) {
-      case 'word-search':
-        return <WordSearchGame 
-          onComplete={(score, stars) => handleGameComplete('Word Search', score, stars)} 
-          onExit={() => setActiveGame(null)} 
-        />
-      case 'crossword':
-        return <CrosswordGame 
-          onComplete={(score, stars) => handleGameComplete('Crossword', score, stars)} 
-          onExit={() => setActiveGame(null)} 
-        />
-      case 'find-odd':
-        return <FindOddOneOut 
-          onComplete={(score, stars) => handleGameComplete('Find Odd One', score, stars)} 
-          onExit={() => setActiveGame(null)} 
-        />
-      case 'which-can':
-        return <WhichOneCan 
-          onComplete={(score, stars) => handleGameComplete('Which One Can', score, stars)} 
-          onExit={() => setActiveGame(null)} 
-        />
-      default:
-        break
-    }
   }
 
   return (

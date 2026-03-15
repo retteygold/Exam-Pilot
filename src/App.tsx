@@ -9,6 +9,10 @@ import { Exam } from './pages/Exam'
 import { Results } from './pages/Results'
 import { Stats } from './pages/Stats'
 import { Admin } from './pages/Admin'
+import { WordSearchGame } from './games/WordSearchGame'
+import { CrosswordGame } from './games/CrosswordGame'
+import { FindOddOneOut } from './games/FindOddOneOut'
+import { WhichOneCan } from './games/WhichOneCan'
 
 function App() {
   const { profile, isSetupComplete } = useUserStore()
@@ -91,6 +95,48 @@ function App() {
             </Layout>
           ) : (
             <Navigate to="/setup" replace />
+          )
+        } 
+      />
+
+      {/* Kids Games - Full screen without Layout */}
+      <Route 
+        path="/game/word-search" 
+        element={
+          isSetupComplete && isYoungStudent ? (
+            <WordSearchGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/crossword" 
+        element={
+          isSetupComplete && isYoungStudent ? (
+            <CrosswordGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/find-odd" 
+        element={
+          isSetupComplete && isYoungStudent ? (
+            <FindOddOneOut onComplete={() => {}} onExit={() => window.location.href = '/'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/which-can" 
+        element={
+          isSetupComplete && isYoungStudent ? (
+            <WhichOneCan onComplete={() => {}} onExit={() => window.location.href = '/'} />
+          ) : (
+            <Navigate to="/" replace />
           )
         } 
       />
