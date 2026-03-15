@@ -1,0 +1,271 @@
+{
+  "folder": "9618_w24_qp_42",
+  "pdf_name": "9618_w24_qp_42.pdf",
+  "subject_code": "9618",
+  "year": 2024,
+  "session": "Winter",
+  "paper": "42",
+  "unit": "4",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is a data structure?",
+          "options": {
+            "A": "A type of hardware",
+            "B": "A way of organizing and storing data",
+            "C": "An input device",
+            "D": "An output device"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is an array?",
+          "options": {
+            "A": "A single value",
+            "B": "Collection of elements of same type with fixed size",
+            "C": "A random collection",
+            "D": "A single character"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is a 2D array?",
+          "options": {
+            "A": "A single row",
+            "B": "An array with rows and columns (matrix)",
+            "C": "A list",
+            "D": "A string"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is a linked list?",
+          "options": {
+            "A": "Fixed size collection",
+            "B": "Dynamic collection of nodes connected by pointers",
+            "C": "Hardware component",
+            "D": "Single value"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is a stack data structure?",
+          "options": {
+            "A": "Random access",
+            "B": "LIFO - Last In First Out",
+            "C": "FIFO - First In First Out",
+            "D": "No order"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is a queue data structure?",
+          "options": {
+            "A": "LIFO",
+            "B": "FIFO - First In First Out",
+            "C": "Random access",
+            "D": "No order"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What operations can be performed on a stack?",
+          "options": {
+            "A": "Only insert",
+            "B": "Push (add), Pop (remove), Peek (view top)",
+            "C": "Only delete",
+            "D": "Only search"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What operations can be performed on a queue?",
+          "options": {
+            "A": "Only pop",
+            "B": "Enqueue (add rear), Dequeue (remove front)",
+            "C": "Only push",
+            "D": "Only peek"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is a record (or structure)?",
+          "options": {
+            "A": "Array of same type",
+            "B": "Collection of different data types under one name",
+            "C": "Single number",
+            "D": "Single character"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is recursion in programming?",
+          "options": {
+            "A": "Using a loop",
+            "B": "Function calling itself",
+            "C": "Using if statements",
+            "D": "Using variables"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is a base case in recursion?",
+          "options": {
+            "A": "The complex case",
+            "B": "Condition that stops recursion",
+            "C": "The recursive call",
+            "D": "A loop"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is iteration?",
+          "options": {
+            "A": "Function calling itself",
+            "B": "Repeating using loops (for, while)",
+            "C": "Single execution",
+            "D": "Random execution"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the difference between iteration and recursion?",
+          "options": {
+            "A": "Same thing",
+            "B": "Iteration uses loops, recursion uses function calls",
+            "C": "No difference",
+            "D": "Both use loops"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is searching in computer science?",
+          "options": {
+            "A": "Sorting data",
+            "B": "Finding specific item in a collection",
+            "C": "Deleting data",
+            "D": "Adding data"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is linear search?",
+          "options": {
+            "A": "Requires sorted data",
+            "B": "Sequentially checking each element",
+            "C": "Dividing data in half",
+            "D": "Random checking"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is binary search?",
+          "options": {
+            "A": "Works on unsorted data",
+            "B": "Dividing sorted data in half repeatedly",
+            "C": "Random checking",
+            "D": "Sequential checking"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the time complexity of linear search?",
+          "options": {
+            "A": "O(1)",
+            "B": "O(n)",
+            "C": "O(log n)",
+            "D": "O(n²)"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the time complexity of binary search?",
+          "options": {
+            "A": "O(n)",
+            "B": "O(log n)",
+            "C": "O(1)",
+            "D": "O(n²)"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is sorting in computer science?",
+          "options": {
+            "A": "Searching data",
+            "B": "Arranging data in order (ascending/descending)",
+            "C": "Deleting data",
+            "D": "Copying data"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is bubble sort?",
+          "options": {
+            "A": "Fast sorting",
+            "B": "Comparing adjacent elements and swapping if out of order",
+            "C": "Divide and conquer",
+            "D": "Random arrangement"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

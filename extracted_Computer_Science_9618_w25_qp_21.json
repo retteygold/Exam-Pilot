@@ -1,0 +1,271 @@
+{
+  "folder": "9618_w25_qp_21",
+  "pdf_name": "9618_w25_qp_21.pdf",
+  "subject_code": "9618",
+  "year": 2025,
+  "session": "Winter",
+  "paper": "21",
+  "unit": "2",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is merge sort?",
+          "options": {
+            "A": "Compare adjacent elements",
+            "B": "Divide list into halves, sort and merge them",
+            "C": "Random sorting",
+            "D": "Single pass sorting"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is quick sort?",
+          "options": {
+            "A": "Only compare adjacent",
+            "B": "Divide using pivot, sort partitions recursively",
+            "C": "Linear search based",
+            "D": "Random arrangement"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is insertion sort?",
+          "options": {
+            "A": "Divide and conquer",
+            "B": "Build sorted array one item at a time",
+            "C": "Random sorting",
+            "D": "Only swapping adjacent"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is selection sort?",
+          "options": {
+            "A": "Divide in half",
+            "B": "Find minimum and swap to correct position repeatedly",
+            "C": "Random selection",
+            "D": "Only compare adjacent"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is a database?",
+          "options": {
+            "A": "A spreadsheet",
+            "B": "Organized collection of structured data",
+            "C": "A text file",
+            "D": "An image file"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is a database management system (DBMS)?",
+          "options": {
+            "A": "A programming language",
+            "B": "Software for creating and managing databases",
+            "C": "A hardware device",
+            "D": "An operating system"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is a table in a database?",
+          "options": {
+            "A": "A furniture item",
+            "B": "Collection of related data organized in rows and columns",
+            "C": "A single value",
+            "D": "A graph"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is a record (row) in a database?",
+          "options": {
+            "A": "A column header",
+            "B": "A single complete set of related data fields",
+            "C": "The entire table",
+            "D": "A database name"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is a field (column) in a database?",
+          "options": {
+            "A": "Multiple records",
+            "B": "Single category of data for all records",
+            "C": "The primary key",
+            "D": "A table name"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is a primary key?",
+          "options": {
+            "A": "A password",
+            "B": "Unique identifier for each record in a table",
+            "C": "A foreign key",
+            "D": "A data type"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is a foreign key?",
+          "options": {
+            "A": "Primary identifier",
+            "B": "Field linking two tables together",
+            "C": "Unique constraint",
+            "D": "Data validation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is a relational database?",
+          "options": {
+            "A": "Single table database",
+            "B": "Database with multiple related tables",
+            "C": "Flat file",
+            "D": "Spreadsheet"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is SQL?",
+          "options": {
+            "A": "A programming language for games",
+            "B": "Structured Query Language for managing databases",
+            "C": "A hardware protocol",
+            "D": "An operating system"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What does SELECT do in SQL?",
+          "options": {
+            "A": "Delete data",
+            "B": "Retrieve data from database",
+            "C": "Update data",
+            "D": "Insert data"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What does INSERT do in SQL?",
+          "options": {
+            "A": "Retrieve data",
+            "B": "Add new records to a table",
+            "C": "Delete records",
+            "D": "Modify table structure"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What does UPDATE do in SQL?",
+          "options": {
+            "A": "Delete table",
+            "B": "Modify existing records",
+            "C": "Add new table",
+            "D": "Retrieve records"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What does DELETE do in SQL?",
+          "options": {
+            "A": "Add records",
+            "B": "Remove records from table",
+            "C": "Create table",
+            "D": "Modify structure"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is a query in database terms?",
+          "options": {
+            "A": "A table",
+            "B": "Request for data or action from database",
+            "C": "A field type",
+            "D": "A record"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is normalization in databases?",
+          "options": {
+            "A": "Adding redundancy",
+            "B": "Organizing data to reduce redundancy",
+            "C": "Deleting all data",
+            "D": "Creating duplicates"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is data integrity?",
+          "options": {
+            "A": "Data duplication",
+            "B": "Accuracy and consistency of data",
+            "C": "Data deletion",
+            "D": "Random data"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

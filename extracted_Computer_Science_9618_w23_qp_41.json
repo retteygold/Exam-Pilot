@@ -1,0 +1,271 @@
+{
+  "folder": "9618_w23_qp_41",
+  "pdf_name": "9618_w23_qp_41.pdf",
+  "subject_code": "9618",
+  "year": 2023,
+  "session": "Winter",
+  "paper": "41",
+  "unit": "4",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is a register in CPU architecture?",
+          "options": {
+            "A": "External storage device",
+            "B": "Small fast storage location inside CPU",
+            "C": "Input device",
+            "D": "Output device"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the Memory Address Register (MAR) used for?",
+          "options": {
+            "A": "Store data temporarily",
+            "B": "Hold address of memory location being accessed",
+            "C": "Execute instructions",
+            "D": "Display output"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the Memory Data Register (MDR) used for?",
+          "options": {
+            "A": "Store memory addresses",
+            "B": "Hold data being transferred to/from memory",
+            "C": "Decode instructions",
+            "D": "Control program flow"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the Accumulator used for?",
+          "options": {
+            "A": "Store memory addresses",
+            "B": "Hold intermediate arithmetic/logic results",
+            "C": "Input data",
+            "D": "Output display"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the clock speed of a CPU measured in?",
+          "options": {
+            "A": "Bytes",
+            "B": "Hertz (cycles per second)",
+            "C": "Pixels",
+            "D": "Watts"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the purpose of cache memory?",
+          "options": {
+            "A": "Permanent storage",
+            "B": "Fast temporary storage for frequently accessed data",
+            "C": "Input device",
+            "D": "Output display"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is pipelining in CPU design?",
+          "options": {
+            "A": "Water cooling system",
+            "B": "Executing multiple instructions simultaneously in stages",
+            "C": "Storage device",
+            "D": "Power supply"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the function of the system bus?",
+          "options": {
+            "A": "Only power supply",
+            "B": "Transfer data between CPU, memory and I/O devices",
+            "C": "Only cooling",
+            "D": "Only storage"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What are the three types of buses?",
+          "options": {
+            "A": "USB, HDMI, VGA",
+            "B": "Data bus, Address bus, Control bus",
+            "C": "Red, Blue, Green",
+            "D": "Fast, Medium, Slow"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is an instruction set?",
+          "options": {
+            "A": "Set of data values",
+            "B": "Collection of all commands a CPU can execute",
+            "C": "Memory locations",
+            "D": "Output devices"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is machine code?",
+          "options": {
+            "A": "High-level language",
+            "B": "Binary instructions executed directly by CPU",
+            "C": "Human readable text",
+            "D": "Image format"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is an assembly language?",
+          "options": {
+            "A": "High-level language like Python",
+            "B": "Low-level language using mnemonics for machine code",
+            "C": "Web programming language",
+            "D": "Database language"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the purpose of an assembler?",
+          "options": {
+            "A": "Execute programs",
+            "B": "Convert assembly language to machine code",
+            "C": "Store data",
+            "D": "Display graphics"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is a high-level programming language?",
+          "options": {
+            "A": "Machine code",
+            "B": "Language closer to human language like Python/Java",
+            "C": "Binary code",
+            "D": "Assembly code"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a compiler?",
+          "options": {
+            "A": "Hardware component",
+            "B": "Translates entire high-level program to machine code",
+            "C": "Input device",
+            "D": "Output device"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is an interpreter?",
+          "options": {
+            "A": "Storage device",
+            "B": "Translates and executes code line by line",
+            "C": "Network cable",
+            "D": "Graphics card"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the difference between compiler and interpreter?",
+          "options": {
+            "A": "No difference",
+            "B": "Compiler translates whole program first, interpreter line by line",
+            "C": "Both are hardware",
+            "D": "Both store data"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is source code?",
+          "options": {
+            "A": "Compiled binary",
+            "B": "Human-readable program written by programmer",
+            "C": "CPU instructions",
+            "D": "Memory contents"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is object code?",
+          "options": {
+            "A": "Source code",
+            "B": "Compiled machine code output",
+            "C": "Comment lines",
+            "D": "Variable names"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is a linker used for?",
+          "options": {
+            "A": "Write code",
+            "B": "Combines object files and libraries into executable",
+            "C": "Edit text",
+            "D": "Display images"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

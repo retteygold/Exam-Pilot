@@ -1,0 +1,271 @@
+{
+  "folder": "9618_w21_qp_12",
+  "pdf_name": "9618_w21_qp_12.pdf",
+  "subject_code": "9618",
+  "year": 2021,
+  "session": "Winter",
+  "paper": "12",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the function of the CPU's Control Unit?",
+          "options": {
+            "A": "Perform arithmetic operations",
+            "B": "Fetch, decode and execute instructions",
+            "C": "Store data permanently",
+            "D": "Display output"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the purpose of the ALU in a CPU?",
+          "options": {
+            "A": "Control program flow",
+            "B": "Perform arithmetic and logical operations",
+            "C": "Store instructions",
+            "D": "Input data"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is RAM used for?",
+          "options": {
+            "A": "Permanent storage",
+            "B": "Temporary storage of running programs",
+            "C": "Backup",
+            "D": "Display output"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What does ROM stand for and what is its purpose?",
+          "options": {
+            "A": "Random Output Memory - stores output",
+            "B": "Read Only Memory - stores permanent instructions",
+            "C": "Read Output Module - displays text",
+            "D": "Random Operation Memory - temporary storage"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the fetch-decode-execute cycle?",
+          "options": {
+            "A": "A type of memory",
+            "B": "The process of fetching, decoding and executing instructions",
+            "C": "A storage device",
+            "D": "An input device"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the purpose of the Program Counter?",
+          "options": {
+            "A": "Count total programs",
+            "B": "Hold address of next instruction",
+            "C": "Store data",
+            "D": "Display output"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is an advantage of flash memory over magnetic storage?",
+          "options": {
+            "A": "Higher cost",
+            "B": "Faster access speed and no moving parts",
+            "C": "Lower capacity",
+            "D": "Slower speed"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the difference between volatile and non-volatile memory?",
+          "options": {
+            "A": "Volatile keeps data without power",
+            "B": "Volatile loses data without power, non-volatile keeps it",
+            "C": "No difference",
+            "D": "Non-volatile is faster"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is secondary storage used for?",
+          "options": {
+            "A": "Running programs temporarily",
+            "B": "Long-term storage of data and programs",
+            "C": "Processing instructions",
+            "D": "Output display"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the binary number system?",
+          "options": {
+            "A": "Base 10",
+            "B": "Base 2 using 0s and 1s",
+            "C": "Base 16",
+            "D": "Base 8"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "Convert decimal 13 to binary.",
+          "options": {
+            "A": "1010",
+            "B": "1101",
+            "C": "1110",
+            "D": "1001"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is hexadecimal used for in computing?",
+          "options": {
+            "A": "Only for text",
+            "B": "Compact representation of binary data",
+            "C": "Only for sound",
+            "D": "Only for video"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the result of binary addition 1010 + 0101?",
+          "options": {
+            "A": "1110",
+            "B": "1111",
+            "C": "10101",
+            "D": "1001"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is two's complement used for?",
+          "options": {
+            "A": "Only positive numbers",
+            "B": "Representing negative numbers in binary",
+            "C": "Text encoding",
+            "D": "Image compression"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is an input device?",
+          "options": {
+            "A": "Monitor",
+            "B": "Device that sends data to computer",
+            "C": "Printer",
+            "D": "Speaker"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is an output device?",
+          "options": {
+            "A": "Keyboard",
+            "B": "Device that receives data from computer",
+            "C": "Mouse",
+            "D": "Scanner"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is ASCII?",
+          "options": {
+            "A": "A programming language",
+            "B": "Character encoding standard",
+            "C": "A computer brand",
+            "D": "A type of memory"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is Unicode used for?",
+          "options": {
+            "A": "Only English characters",
+            "B": "Representing characters from all world languages",
+            "C": "Only numbers",
+            "D": "Only images"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the purpose of an operating system?",
+          "options": {
+            "A": "Only games",
+            "B": "Manage hardware and software resources",
+            "C": "Only word processing",
+            "D": "Only internet"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is multitasking in an OS?",
+          "options": {
+            "A": "Running only one program",
+            "B": "Running multiple programs simultaneously",
+            "C": "Turning off computer",
+            "D": "Installing hardware"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
