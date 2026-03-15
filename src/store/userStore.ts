@@ -12,10 +12,12 @@ export interface UserProfile {
 interface UserState {
   profile: UserProfile | null
   isSetupComplete: boolean
+  hasHydrated: boolean
   
   setProfile: (profile: UserProfile) => void
   updateProfile: (updates: Partial<UserProfile>) => void
   clearProfile: () => void
+  setHasHydrated: (value: boolean) => void
   
   // Helper to get recommended difficulty
   getRecommendedDifficulty: () => 'easy' | 'medium' | 'hard'
@@ -28,6 +30,7 @@ export const useUserStore = create<UserState>()(
     (set, get) => ({
       profile: null,
       isSetupComplete: false,
+      hasHydrated: false,
 
       setProfile: (profile) => set({
         profile,
@@ -42,6 +45,8 @@ export const useUserStore = create<UserState>()(
         profile: null,
         isSetupComplete: false
       }),
+
+      setHasHydrated: (value) => set({ hasHydrated: value }),
 
       getRecommendedDifficulty: () => {
         const { profile } = get()
@@ -62,7 +67,12 @@ export const useUserStore = create<UserState>()(
       }
     }),
     {
-      name: 'user-profile'
+      name: 'user-profile',
+      onRehydrateStorage: () => (state) => {
+        if (state) {
+          state.setHasHydrated(true)
+        }
+      }
     }
   )
 )

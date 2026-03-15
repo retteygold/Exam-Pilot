@@ -17,7 +17,16 @@ import { MemoryGame } from './games/MemoryGame'
 import { Quiz } from './pages/Quiz'
 
 function App() {
-  const { profile, isSetupComplete } = useUserStore()
+  const { profile, isSetupComplete, hasHydrated } = useUserStore()
+  
+  // Wait for store to rehydrate from localStorage before making routing decisions
+  if (!hasHydrated) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
+      </div>
+    )
+  }
   
   // Determine if user should see kids dashboard (Grades LKG-8)
   const isYoungStudent = profile?.grade && (
