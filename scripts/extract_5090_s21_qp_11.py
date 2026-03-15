@@ -1,0 +1,542 @@
+#!/usr/bin/env python3
+"""
+Manual extraction template for O-Level Biology 5090 papers
+Paper: 5090_s21_qp_11 (Summer 2021 Paper 11)
+"""
+
+import json
+
+extracted_data = {
+    "folder": "5090_s21_qp_11",
+    "pdf_name": "5090_s21_qp_11.pdf",
+    "subject_code": "5090",
+    "year": 2021,
+    "session": "Summer (s)",
+    "paper": "11",
+    "variant": "1",
+    "pages": [
+        {
+            "page_number": "003",
+            "image_file": "page_003.png",
+            "questions": [
+                {
+                    "question_id": "1",
+                    "question_text": "Which organelle is responsible for photosynthesis in plant cells?",
+                    "options": {
+                        "A": "Mitochondrion",
+                        "B": "Chloroplast",
+                        "C": "Nucleus",
+                        "D": "Ribosome"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "2",
+                    "question_text": "Which process releases energy from glucose in the absence of oxygen?",
+                    "options": {
+                        "A": "Aerobic respiration",
+                        "B": "Anaerobic respiration",
+                        "C": "Photosynthesis",
+                        "D": "Transpiration"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "3",
+                    "question_text": "Which structure controls what enters and leaves a cell?",
+                    "options": {
+                        "A": "Cell wall",
+                        "B": "Cytoplasm",
+                        "C": "Cell membrane",
+                        "D": "Nucleus"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "4",
+                    "question_text": "Which nutrient is essential for the formation of hemoglobin?",
+                    "options": {
+                        "A": "Calcium",
+                        "B": "Iron",
+                        "C": "Vitamin C",
+                        "D": "Protein"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "5",
+                    "question_text": "Which blood vessel carries blood away from the heart?",
+                    "options": {
+                        "A": "Vein",
+                        "B": "Capillary",
+                        "C": "Artery",
+                        "D": "Valve"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "6",
+                    "question_text": "Which enzyme breaks down starch into maltose?",
+                    "options": {
+                        "A": "Protease",
+                        "B": "Lipase",
+                        "C": "Amylase",
+                        "D": "Lactase"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "7",
+                    "question_text": "Which part of the alimentary canal absorbs water?",
+                    "options": {
+                        "A": "Stomach",
+                        "B": "Small intestine",
+                        "C": "Large intestine",
+                        "D": "Esophagus"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "8",
+                    "question_text": "Which gas is required for aerobic respiration?",
+                    "options": {
+                        "A": "Carbon dioxide",
+                        "B": "Nitrogen",
+                        "C": "Oxygen",
+                        "D": "Hydrogen"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "9",
+                    "question_text": "Which organ produces insulin?",
+                    "options": {
+                        "A": "Liver",
+                        "B": "Pancreas",
+                        "C": "Kidney",
+                        "D": "Stomach"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "10",
+                    "question_text": "Which part of the nephron filters blood?",
+                    "options": {
+                        "A": "Loop of Henle",
+                        "B": "Bowman's capsule",
+                        "C": "Collecting duct",
+                        "D": "Proximal tubule"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "004",
+            "image_file": "page_004.png",
+            "questions": [
+                {
+                    "question_id": "11",
+                    "question_text": "Which hormone stimulates the breakdown of glycogen to glucose?",
+                    "options": {
+                        "A": "Insulin",
+                        "B": "Glucagon",
+                        "C": "Thyroxine",
+                        "D": "Adrenaline"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "12",
+                    "question_text": "Which structure carries urine from the kidney to the bladder?",
+                    "options": {
+                        "A": "Urethra",
+                        "B": "Ureter",
+                        "C": "Nephrons",
+                        "D": "Medulla"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "13",
+                    "question_text": "Which adaptation increases surface area for absorption in the small intestine?",
+                    "options": {
+                        "A": "Villi",
+                        "B": "Circular muscles",
+                        "C": "Mucus",
+                        "D": "Valves"
+                    },
+                    "correct_answer": "A",
+                    "marks": 1
+                },
+                {
+                    "question_id": "14",
+                    "question_text": "Which process moves water across a partially permeable membrane?",
+                    "options": {
+                        "A": "Diffusion",
+                        "B": "Active transport",
+                        "C": "Osmosis",
+                        "D": "Translocation"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "15",
+                    "question_text": "Which feature of xylem vessels is important for water transport?",
+                    "options": {
+                        "A": "They are living cells",
+                        "B": "They have spiral thickening",
+                        "C": "They contain cytoplasm",
+                        "D": "They have end walls"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "16",
+                    "question_text": "Which cells in leaves control the opening of stomata?",
+                    "options": {
+                        "A": "Palisade cells",
+                        "B": "Spongy mesophyll cells",
+                        "C": "Guard cells",
+                        "D": "Xylem cells"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "17",
+                    "question_text": "Which process transfers sucrose from leaves to other parts of the plant?",
+                    "options": {
+                        "A": "Transpiration",
+                        "B": "Translocation",
+                        "C": "Absorption",
+                        "D": "Photosynthesis"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "18",
+                    "question_text": "Which mineral ion is needed for making chlorophyll?",
+                    "options": {
+                        "A": "Nitrate",
+                        "B": "Phosphate",
+                        "C": "Potassium",
+                        "D": "Magnesium"
+                    },
+                    "correct_answer": "D",
+                    "marks": 1
+                },
+                {
+                    "question_id": "19",
+                    "question_text": "Which condition increases the rate of transpiration?",
+                    "options": {
+                        "A": "High humidity",
+                        "B": "Low temperature",
+                        "C": "Windy conditions",
+                        "D": "Stomata closed"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "20",
+                    "question_text": "Which tissue transports sugars in plants?",
+                    "options": {
+                        "A": "Xylem",
+                        "B": "Phloem",
+                        "C": "Epidermis",
+                        "D": "Cambium"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "005",
+            "image_file": "page_005.png",
+            "questions": [
+                {
+                    "question_id": "21",
+                    "question_text": "Which component of blood is responsible for clotting?",
+                    "options": {
+                        "A": "Red blood cells",
+                        "B": "White blood cells",
+                        "C": "Plasma",
+                        "D": "Platelets"
+                    },
+                    "correct_answer": "D",
+                    "marks": 1
+                },
+                {
+                    "question_id": "22",
+                    "question_text": "Which vessel carries oxygenated blood from the lungs to the heart?",
+                    "options": {
+                        "A": "Pulmonary artery",
+                        "B": "Pulmonary vein",
+                        "C": "Aorta",
+                        "D": "Vena cava"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "23",
+                    "question_text": "Which chamber of the heart has the thickest wall?",
+                    "options": {
+                        "A": "Right atrium",
+                        "B": "Left atrium",
+                        "C": "Right ventricle",
+                        "D": "Left ventricle"
+                    },
+                    "correct_answer": "D",
+                    "marks": 1
+                },
+                {
+                    "question_id": "24",
+                    "question_text": "Which process produces gametes?",
+                    "options": {
+                        "A": "Mitosis",
+                        "B": "Meiosis",
+                        "C": "Fertilization",
+                        "D": "Differentiation"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "25",
+                    "question_text": "Which structure protects and cushions the embryo in mammals?",
+                    "options": {
+                        "A": "Placenta",
+                        "B": "Uterus wall",
+                        "C": "Amniotic sac",
+                        "D": "Cervix"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "26",
+                    "question_text": "Which part of the brain controls voluntary actions?",
+                    "options": {
+                        "A": "Cerebrum",
+                        "B": "Medulla",
+                        "C": "Cerebellum",
+                        "D": "Hypothalamus"
+                    },
+                    "correct_answer": "A",
+                    "marks": 1
+                },
+                {
+                    "question_id": "27",
+                    "question_text": "Which hormone is produced by the pituitary gland?",
+                    "options": {
+                        "A": "Insulin",
+                        "B": "ADH",
+                        "C": "Thyroxine",
+                        "D": "Testosterone"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "28",
+                    "question_text": "Which structure transmits impulses from sensory receptors to the CNS?",
+                    "options": {
+                        "A": "Motor neurone",
+                        "B": "Sensory neurone",
+                        "C": "Relay neurone",
+                        "D": "Effector"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "29",
+                    "question_text": "Which part of the eye focuses light onto the retina?",
+                    "options": {
+                        "A": "Cornea",
+                        "B": "Lens",
+                        "C": "Iris",
+                        "D": "Pupil"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "30",
+                    "question_text": "Which response is an example of a reflex action?",
+                    "options": {
+                        "A": "Reading a book",
+                        "B": "Knee jerk",
+                        "C": "Learning to drive",
+                        "D": "Writing an essay"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                }
+            ]
+        },
+        {
+            "page_number": "006",
+            "image_file": "page_006.png",
+            "questions": [
+                {
+                    "question_id": "31",
+                    "question_text": "Which gas is used in the light stage of photosynthesis?",
+                    "options": {
+                        "A": "Carbon dioxide",
+                        "B": "Oxygen",
+                        "C": "Water vapor",
+                        "D": "Nitrogen"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "32",
+                    "question_text": "Which nutrient provides the most energy per gram?",
+                    "options": {
+                        "A": "Protein",
+                        "B": "Carbohydrate",
+                        "C": "Fat",
+                        "D": "Vitamin"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "33",
+                    "question_text": "Which vitamin prevents scurvy?",
+                    "options": {
+                        "A": "Vitamin A",
+                        "B": "Vitamin C",
+                        "C": "Vitamin D",
+                        "D": "Vitamin K"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "34",
+                    "question_text": "Which structure in plants is responsible for gaseous exchange?",
+                    "options": {
+                        "A": "Root hair cells",
+                        "B": "Xylem vessels",
+                        "C": "Stomata",
+                        "D": "Phloem tubes"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "35",
+                    "question_text": "Which disease is caused by a deficiency of vitamin D?",
+                    "options": {
+                        "A": "Scurvy",
+                        "B": "Rickets",
+                        "C": "Night blindness",
+                        "D": "Anemia"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "36",
+                    "question_text": "Which component of diet prevents constipation?",
+                    "options": {
+                        "A": "Protein",
+                        "B": "Fibre",
+                        "C": "Fat",
+                        "D": "Glucose"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "37",
+                    "question_text": "Which product of anaerobic respiration in yeast is used in baking?",
+                    "options": {
+                        "A": "Lactic acid",
+                        "B": "Ethanol",
+                        "C": "Carbon dioxide",
+                        "D": "Water"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                },
+                {
+                    "question_id": "38",
+                    "question_text": "Which structure in the respiratory system contains cilia?",
+                    "options": {
+                        "A": "Alveoli",
+                        "B": "Trachea",
+                        "C": "Bronchioles",
+                        "D": "Diaphragm"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "39",
+                    "question_text": "Which process results in genetically identical offspring?",
+                    "options": {
+                        "A": "Sexual reproduction",
+                        "B": "Asexual reproduction",
+                        "C": "Fertilization",
+                        "D": "Pollination"
+                    },
+                    "correct_answer": "B",
+                    "marks": 1
+                },
+                {
+                    "question_id": "40",
+                    "question_text": "Which term describes the variety of different species in an ecosystem?",
+                    "options": {
+                        "A": "Population",
+                        "B": "Community",
+                        "C": "Biodiversity",
+                        "D": "Habitat"
+                    },
+                    "correct_answer": "C",
+                    "marks": 1
+                }
+            ]
+        }
+    ],
+    "total_questions": 40,
+    "total_marks": 40
+}
+
+# Save to JSON file
+output_file = 'extracted_5090_s21_qp_11.json'
+with open(output_file, 'w', encoding='utf-8') as f:
+    json.dump(extracted_data, f, indent=2, ensure_ascii=False)
+
+print(f"Created JSON for O-Level Biology paper 5090_s21_qp_11")
+print(f"Folder: {extracted_data['folder']}")
+print(f"Total pages with MCQs: 4")
+print(f"Total questions: {extracted_data['total_questions']}")
+print(f"Total marks: {extracted_data['total_marks']}")
+print(f"\nSaved to: {output_file}")
+
+# Print summary
+print("\n--- Question Distribution ---")
+for page in extracted_data['pages']:
+    print(f"Page {page['page_number']}: Questions {page['questions'][0]['question_id']}-{page['questions'][-1]['question_id']}")

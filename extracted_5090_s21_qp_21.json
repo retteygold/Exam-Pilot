@@ -1,0 +1,517 @@
+{
+  "folder": "5090_s21_qp_21",
+  "pdf_name": "5090_s21_qp_21.pdf",
+  "subject_code": "5090",
+  "year": 2021,
+  "session": "Summer (s)",
+  "paper": "21",
+  "variant": "1",
+  "pages": [
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which feature is common to all living organisms?",
+          "options": {
+            "A": "Ability to photosynthesize",
+            "B": "Ability to reproduce",
+            "C": "Having a nucleus",
+            "D": "Having chloroplasts"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which magnification would be most suitable for viewing a human cheek cell?",
+          "options": {
+            "A": "x10",
+            "B": "x100",
+            "C": "x1000",
+            "D": "x10000"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which cell structure is present in plant cells but not animal cells?",
+          "options": {
+            "A": "Nucleus",
+            "B": "Mitochondrion",
+            "C": "Cell wall",
+            "D": "Cytoplasm"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which process moves substances from high to low concentration without energy?",
+          "options": {
+            "A": "Active transport",
+            "B": "Diffusion",
+            "C": "Osmosis",
+            "D": "Phagocytosis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which enzyme breaks down fats into fatty acids and glycerol?",
+          "options": {
+            "A": "Amylase",
+            "B": "Protease",
+            "C": "Lipase",
+            "D": "Cellulase"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which food test would indicate the presence of protein?",
+          "options": {
+            "A": "Benedict's test",
+            "B": "Biuret test",
+            "C": "Iodine test",
+            "D": "Emulsion test"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Which part of the alimentary canal is mainly responsible for mechanical digestion?",
+          "options": {
+            "A": "Stomach",
+            "B": "Small intestine",
+            "C": "Mouth",
+            "D": "Large intestine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "8",
+          "question_text": "Which structure increases the surface area for absorption in the small intestine?",
+          "options": {
+            "A": "Circular folds",
+            "B": "Villi",
+            "C": "Mucus",
+            "D": "Enzymes"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which vessel carries blood to the heart from the body tissues?",
+          "options": {
+            "A": "Aorta",
+            "B": "Vena cava",
+            "C": "Pulmonary artery",
+            "D": "Pulmonary vein"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which component of blood is primarily water?",
+          "options": {
+            "A": "Red blood cells",
+            "B": "White blood cells",
+            "C": "Plasma",
+            "D": "Platelets"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "image_file": "page_004.png",
+      "questions": [
+        {
+          "question_id": "11",
+          "question_text": "Which structure separates the left and right sides of the heart?",
+          "options": {
+            "A": "Valve",
+            "B": "Septum",
+            "C": "Aorta",
+            "D": "Vena cava"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "Which adaptation of red blood cells is essential for oxygen transport?",
+          "options": {
+            "A": "Having a nucleus",
+            "B": "Being biconcave",
+            "C": "Having mitochondria",
+            "D": "Being large in size"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which substance is removed from the blood by the kidneys?",
+          "options": {
+            "A": "Glucose",
+            "B": "Water",
+            "C": "Urea",
+            "D": "Oxygen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Which process results in the production of identical cells?",
+          "options": {
+            "A": "Meiosis",
+            "B": "Mitosis",
+            "C": "Fertilization",
+            "D": "Reduction division"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "15",
+          "question_text": "Which structure in the male reproductive system stores sperm?",
+          "options": {
+            "A": "Testis",
+            "B": "Vas deferens",
+            "C": "Epididymis",
+            "D": "Urethra"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "Which part of the female reproductive system produces eggs?",
+          "options": {
+            "A": "Uterus",
+            "B": "Ovary",
+            "C": "Fallopian tube",
+            "D": "Cervix"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which structure provides nutrition to the developing embryo?",
+          "options": {
+            "A": "Amniotic sac",
+            "B": "Placenta",
+            "C": "Umbilical cord",
+            "D": "Uterus wall"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "Which hormone stimulates the development of secondary sexual characteristics in females?",
+          "options": {
+            "A": "FSH",
+            "B": "LH",
+            "C": "Estrogen",
+            "D": "Progesterone"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which part of the nervous system carries impulses to and from the brain?",
+          "options": {
+            "A": "Central nervous system",
+            "B": "Peripheral nervous system",
+            "C": "Autonomic nervous system",
+            "D": "Somatic nervous system"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which structure contains receptors for detecting light?",
+          "options": {
+            "A": "Cornea",
+            "B": "Lens",
+            "C": "Retina",
+            "D": "Optic nerve"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "image_file": "page_005.png",
+      "questions": [
+        {
+          "question_id": "21",
+          "question_text": "Which condition is necessary for seed germination?",
+          "options": {
+            "A": "Sunlight",
+            "B": "Chlorophyll",
+            "C": "Water",
+            "D": "Carbon dioxide"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "22",
+          "question_text": "Which structure anchors the plant in the soil and absorbs water?",
+          "options": {
+            "A": "Stem",
+            "B": "Leaf",
+            "C": "Root",
+            "D": "Flower"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "23",
+          "question_text": "Which cells in a leaf are specialized for photosynthesis?",
+          "options": {
+            "A": "Guard cells",
+            "B": "Xylem cells",
+            "C": "Palisade mesophyll cells",
+            "D": "Spongy mesophyll cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "24",
+          "question_text": "Which environmental factor would increase the rate of photosynthesis?",
+          "options": {
+            "A": "Decreased light intensity",
+            "B": "Decreased temperature",
+            "C": "Increased carbon dioxide concentration",
+            "D": "Decreased water availability"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "25",
+          "question_text": "Which process in plants is affected by the hormone auxin?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Transpiration",
+            "C": "Phototropism",
+            "D": "Germination"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "26",
+          "question_text": "Which gas diffuses out of plant leaves through stomata?",
+          "options": {
+            "A": "Carbon dioxide only",
+            "B": "Oxygen only",
+            "C": "Both oxygen and carbon dioxide",
+            "D": "Nitrogen only"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "27",
+          "question_text": "Which product of photosynthesis is transported in the phloem?",
+          "options": {
+            "A": "Water",
+            "B": "Mineral ions",
+            "C": "Sucrose",
+            "D": "Oxygen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "28",
+          "question_text": "Which disease is caused by a deficiency of vitamin A?",
+          "options": {
+            "A": "Scurvy",
+            "B": "Rickets",
+            "C": "Night blindness",
+            "D": "Goiter"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "29",
+          "question_text": "Which pathogen causes malaria?",
+          "options": {
+            "A": "Bacterium",
+            "B": "Virus",
+            "C": "Fungus",
+            "D": "Protozoan"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "30",
+          "question_text": "Which condition is caused by a lack of iron in the diet?",
+          "options": {
+            "A": "Scurvy",
+            "B": "Anemia",
+            "C": "Rickets",
+            "D": "Goiter"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "image_file": "page_006.png",
+      "questions": [
+        {
+          "question_id": "31",
+          "question_text": "Which structure in bacteria makes them resistant to antibiotics?",
+          "options": {
+            "A": "Cell wall",
+            "B": "Capsule",
+            "C": "Plasmid",
+            "D": "Flagellum"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "32",
+          "question_text": "Which method of transmission spreads cholera?",
+          "options": {
+            "A": "Airborne",
+            "B": "Contaminated water",
+            "C": "Insect vector",
+            "D": "Direct contact"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "33",
+          "question_text": "Which type of drug destroys bacteria but not viruses?",
+          "options": {
+            "A": "Analgesics",
+            "B": "Antibiotics",
+            "C": "Antivirals",
+            "D": "Vaccines"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "34",
+          "question_text": "Which cells are targeted by HIV?",
+          "options": {
+            "A": "Red blood cells",
+            "B": "Platelets",
+            "C": "Helper T cells",
+            "D": "Nerve cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "35",
+          "question_text": "Which organ is primarily responsible for regulating body temperature?",
+          "options": {
+            "A": "Heart",
+            "B": "Brain",
+            "C": "Skin",
+            "D": "Liver"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "36",
+          "question_text": "Which response to cold conditions reduces heat loss from the body?",
+          "options": {
+            "A": "Vasodilation",
+            "B": "Sweating",
+            "C": "Vasoconstriction",
+            "D": "Panting"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "37",
+          "question_text": "Which hormone is produced when blood glucose concentration is too high?",
+          "options": {
+            "A": "Glucagon",
+            "B": "Thyroxine",
+            "C": "Insulin",
+            "D": "ADH"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "38",
+          "question_text": "Which organ is responsible for the excretion of carbon dioxide?",
+          "options": {
+            "A": "Kidney",
+            "B": "Liver",
+            "C": "Lung",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "39",
+          "question_text": "Which characteristic is essential for a species to survive environmental changes?",
+          "options": {
+            "A": "Large size",
+            "B": "Genetic variation",
+            "C": "Rapid reproduction",
+            "D": "Carnivorous diet"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "40",
+          "question_text": "Which practice involves maintaining natural habitats to protect wildlife?",
+          "options": {
+            "A": "Selective breeding",
+            "B": "In-situ conservation",
+            "C": "Ex-situ conservation",
+            "D": "Deforestation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 40,
+  "total_marks": 40
+}

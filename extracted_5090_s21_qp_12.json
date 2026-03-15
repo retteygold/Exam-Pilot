@@ -1,0 +1,517 @@
+{
+  "folder": "5090_s21_qp_12",
+  "pdf_name": "5090_s21_qp_12.pdf",
+  "subject_code": "5090",
+  "year": 2021,
+  "session": "Summer (s)",
+  "paper": "12",
+  "variant": "1",
+  "pages": [
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which structure contains the genetic material of a cell?",
+          "options": {
+            "A": "Cell membrane",
+            "B": "Cytoplasm",
+            "C": "Nucleus",
+            "D": "Mitochondrion"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which organelle is the site of aerobic respiration?",
+          "options": {
+            "A": "Ribosome",
+            "B": "Nucleus",
+            "C": "Mitochondrion",
+            "D": "Chloroplast"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which substance is produced during anaerobic respiration in muscle cells?",
+          "options": {
+            "A": "Carbon dioxide",
+            "B": "Ethanol",
+            "C": "Lactic acid",
+            "D": "Water"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which nutrient is required for growth and repair of tissues?",
+          "options": {
+            "A": "Carbohydrate",
+            "B": "Protein",
+            "C": "Fat",
+            "D": "Vitamin"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which part of the digestive system produces bile?",
+          "options": {
+            "A": "Pancreas",
+            "B": "Stomach",
+            "C": "Liver",
+            "D": "Small intestine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which enzyme breaks down proteins into amino acids?",
+          "options": {
+            "A": "Amylase",
+            "B": "Lipase",
+            "C": "Protease",
+            "D": "Maltase"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Which structure prevents food from entering the trachea during swallowing?",
+          "options": {
+            "A": "Epiglottis",
+            "B": "Larynx",
+            "C": "Pharynx",
+            "D": "Uvula"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "8",
+          "question_text": "Which gas is produced as a waste product of photosynthesis?",
+          "options": {
+            "A": "Carbon dioxide",
+            "B": "Oxygen",
+            "C": "Nitrogen",
+            "D": "Methane"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which vitamin is produced by bacteria in the human gut?",
+          "options": {
+            "A": "Vitamin A",
+            "B": "Vitamin C",
+            "C": "Vitamin D",
+            "D": "Vitamin K"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which structure is the functional unit of the kidney?",
+          "options": {
+            "A": "Ureter",
+            "B": "Nephron",
+            "C": "Bladder",
+            "D": "Urethra"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "image_file": "page_004.png",
+      "questions": [
+        {
+          "question_id": "11",
+          "question_text": "Which hormone reduces blood glucose concentration?",
+          "options": {
+            "A": "Glucagon",
+            "B": "Adrenaline",
+            "C": "Insulin",
+            "D": "Thyroxine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "Which blood cells are responsible for fighting pathogens?",
+          "options": {
+            "A": "Red blood cells",
+            "B": "Platelets",
+            "C": "White blood cells",
+            "D": "Plasma cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which vessel has valves to prevent backflow of blood?",
+          "options": {
+            "A": "Artery",
+            "B": "Capillary",
+            "C": "Vein",
+            "D": "Aorta"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Which pigment gives red blood cells their color?",
+          "options": {
+            "A": "Chlorophyll",
+            "B": "Hemoglobin",
+            "C": "Melanin",
+            "D": "Carotene"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "15",
+          "question_text": "Which process occurs during the S phase of the cell cycle?",
+          "options": {
+            "A": "Cell division",
+            "B": "DNA replication",
+            "C": "Protein synthesis",
+            "D": "Cell growth"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "Which structure carries sperm from the testes to the urethra?",
+          "options": {
+            "A": "Ureter",
+            "B": "Vas deferens",
+            "C": "Seminal vesicle",
+            "D": "Prostate gland"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which part of the female reproductive system receives the sperm?",
+          "options": {
+            "A": "Ovary",
+            "B": "Uterus",
+            "C": "Cervix",
+            "D": "Vagina"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "Which hormone stimulates ovulation in females?",
+          "options": {
+            "A": "FSH",
+            "B": "LH",
+            "C": "Estrogen",
+            "D": "Progesterone"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which part of the brain controls coordination and balance?",
+          "options": {
+            "A": "Cerebrum",
+            "B": "Medulla",
+            "C": "Cerebellum",
+            "D": "Hypothalamus"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which type of neurone carries impulses from the CNS to effectors?",
+          "options": {
+            "A": "Sensory neurone",
+            "B": "Relay neurone",
+            "C": "Motor neurone",
+            "D": "Connector neurone"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "image_file": "page_005.png",
+      "questions": [
+        {
+          "question_id": "21",
+          "question_text": "Which structure in the eye adjusts the amount of light entering?",
+          "options": {
+            "A": "Lens",
+            "B": "Cornea",
+            "C": "Iris",
+            "D": "Retina"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "22",
+          "question_text": "Which photoreceptor cells are responsible for color vision?",
+          "options": {
+            "A": "Rods",
+            "B": "Cones",
+            "C": "Bipolar cells",
+            "D": "Ganglion cells"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "23",
+          "question_text": "Which substance in the blood carries hormones to target organs?",
+          "options": {
+            "A": "Red blood cells",
+            "B": "White blood cells",
+            "C": "Plasma",
+            "D": "Platelets"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "24",
+          "question_text": "Which glands secrete hormones directly into the bloodstream?",
+          "options": {
+            "A": "Exocrine glands",
+            "B": "Endocrine glands",
+            "C": "Salivary glands",
+            "D": "Sweat glands"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "25",
+          "question_text": "Which response to adrenaline prepares the body for emergency action?",
+          "options": {
+            "A": "Increased digestion",
+            "B": "Decreased heart rate",
+            "C": "Increased breathing rate",
+            "D": "Pupil constriction"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "26",
+          "question_text": "Which part of a plant grows towards light?",
+          "options": {
+            "A": "Root",
+            "B": "Shoot",
+            "C": "Leaf",
+            "D": "Flower"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "27",
+          "question_text": "Which hormone promotes growth in plants?",
+          "options": {
+            "A": "Ethylene",
+            "B": "Gibberellin",
+            "C": "Auxin",
+            "D": "Abscisic acid"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "28",
+          "question_text": "Which deficiency disease results from lack of iodine?",
+          "options": {
+            "A": "Scurvy",
+            "B": "Goiter",
+            "C": "Anemia",
+            "D": "Rickets"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "29",
+          "question_text": "Which disease is caused by a virus?",
+          "options": {
+            "A": "Tuberculosis",
+            "B": "Malaria",
+            "C": "HIV/AIDS",
+            "D": "Cholera"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "30",
+          "question_text": "Which pathogen causes athlete's foot?",
+          "options": {
+            "A": "Bacterium",
+            "B": "Fungus",
+            "C": "Virus",
+            "D": "Protozoan"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "image_file": "page_006.png",
+      "questions": [
+        {
+          "question_id": "31",
+          "question_text": "Which component of the immune system produces antibodies?",
+          "options": {
+            "A": "Phagocytes",
+            "B": "Lymphocytes",
+            "C": "Platelets",
+            "D": "Red blood cells"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "32",
+          "question_text": "Which process involves the engulfing and digestion of pathogens?",
+          "options": {
+            "A": "Phagocytosis",
+            "B": "Pinocytosis",
+            "C": "Exocytosis",
+            "D": "Osmosis"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "33",
+          "question_text": "Which type of immunity is developed after vaccination?",
+          "options": {
+            "A": "Natural passive immunity",
+            "B": "Artificial active immunity",
+            "C": "Natural active immunity",
+            "D": "Innate immunity"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "34",
+          "question_text": "Which process maintains a constant internal environment in the body?",
+          "options": {
+            "A": "Excretion",
+            "B": "Homeostasis",
+            "C": "Respiration",
+            "D": "Nutrition"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "35",
+          "question_text": "Which organ regulates body temperature?",
+          "options": {
+            "A": "Liver",
+            "B": "Skin",
+            "C": "Kidney",
+            "D": "Lungs"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "36",
+          "question_text": "Which disease is caused by a bacterium?",
+          "options": {
+            "A": "Influenza",
+            "B": "Measles",
+            "C": "Tuberculosis",
+            "D": "Chickenpox"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "37",
+          "question_text": "Which vector transmits the malaria parasite?",
+          "options": {
+            "A": "Housefly",
+            "B": "Mosquito",
+            "C": "Tick",
+            "D": "Flea"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "38",
+          "question_text": "Which method of birth control prevents the release of an egg?",
+          "options": {
+            "A": "Condom",
+            "B": "IUD",
+            "C": "Oral contraceptive pill",
+            "D": "Withdrawal"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "39",
+          "question_text": "Which structure in the male reproductive system produces sperm?",
+          "options": {
+            "A": "Seminal vesicle",
+            "B": "Testis",
+            "C": "Prostate gland",
+            "D": "Penis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "40",
+          "question_text": "Which term describes the preservation of ecosystems and species?",
+          "options": {
+            "A": "Recycling",
+            "B": "Conservation",
+            "C": "Pollution",
+            "D": "Deforestation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 40,
+  "total_marks": 40
+}
