@@ -1,0 +1,517 @@
+{
+  "folder": "5090_s23_qp_22",
+  "pdf_name": "5090_s23_qp_22.pdf",
+  "subject_code": "5090",
+  "year": 2023,
+  "session": "Summer (s)",
+  "paper": "22",
+  "variant": "1",
+  "pages": [
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which is the basic unit of life?",
+          "options": {
+            "A": "Tissue",
+            "B": "Organ",
+            "C": "Cell",
+            "D": "System"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which organelle is the powerhouse of the cell?",
+          "options": {
+            "A": "Nucleus",
+            "B": "Ribosome",
+            "C": "Mitochondrion",
+            "D": "Lysosome"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which process makes food in plants?",
+          "options": {
+            "A": "Respiration",
+            "B": "Digestion",
+            "C": "Photosynthesis",
+            "D": "Absorption"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which nutrient repairs body tissues?",
+          "options": {
+            "A": "Carbohydrate",
+            "B": "Fat",
+            "C": "Protein",
+            "D": "Vitamin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which organ makes digestive enzymes?",
+          "options": {
+            "A": "Stomach",
+            "B": "Liver",
+            "C": "Pancreas",
+            "D": "Gall bladder"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which enzyme acts in the stomach?",
+          "options": {
+            "A": "Amylase",
+            "B": "Lipase",
+            "C": "Pepsin",
+            "D": "Maltase"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Which vessel has thin walls for exchange?",
+          "options": {
+            "A": "Artery",
+            "B": "Vein",
+            "C": "Capillary",
+            "D": "Aorta"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "8",
+          "question_text": "Which valve is between left atrium and ventricle?",
+          "options": {
+            "A": "Tricuspid",
+            "B": "Pulmonary",
+            "C": "Bicuspid/Mitral",
+            "D": "Semilunar"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which cells fight infection?",
+          "options": {
+            "A": "Red blood cells",
+            "B": "Platelets",
+            "C": "White blood cells",
+            "D": "Plasma cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which product of respiration is a waste gas?",
+          "options": {
+            "A": "Oxygen",
+            "B": "Nitrogen",
+            "C": "Carbon dioxide",
+            "D": "Hydrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "image_file": "page_004.png",
+      "questions": [
+        {
+          "question_id": "11",
+          "question_text": "Which plant cells control stomata?",
+          "options": {
+            "A": "Palisade",
+            "B": "Spongy",
+            "C": "Guard",
+            "D": "Xylem"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "Which tissue carries water upward?",
+          "options": {
+            "A": "Phloem",
+            "B": "Epidermis",
+            "C": "Xylem",
+            "D": "Meristem"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which gas is needed for photosynthesis?",
+          "options": {
+            "A": "Oxygen",
+            "B": "Nitrogen",
+            "C": "Carbon dioxide",
+            "D": "Ammonia"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Which process moves sugars in plants?",
+          "options": {
+            "A": "Transpiration",
+            "B": "Absorption",
+            "C": "Translocation",
+            "D": "Evaporation"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "15",
+          "question_text": "Which stage of cell division separates chromatids?",
+          "options": {
+            "A": "Prophase",
+            "B": "Metaphase",
+            "C": "Anaphase",
+            "D": "Telophase"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "Which structure carries sperm to urethra?",
+          "options": {
+            "A": "Epididymis",
+            "B": "Seminal vesicle",
+            "C": "Vas deferens",
+            "D": "Prostate"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which structure connects ovary to uterus?",
+          "options": {
+            "A": "Vagina",
+            "B": "Cervix",
+            "C": "Fallopian tube",
+            "D": "Urethra"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "Which hormone is the male sex hormone?",
+          "options": {
+            "A": "Estrogen",
+            "B": "Progesterone",
+            "C": "Testosterone",
+            "D": "FSH"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which system includes brain and spinal cord?",
+          "options": {
+            "A": "Peripheral",
+            "B": "Autonomic",
+            "C": "Central",
+            "D": "Somatic"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which chemical carries nerve impulses across synapse?",
+          "options": {
+            "A": "Hormone",
+            "B": "Enzyme",
+            "C": "Neurotransmitter",
+            "D": "Antibody"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "image_file": "page_005.png",
+      "questions": [
+        {
+          "question_id": "21",
+          "question_text": "Which part of eye contains sensory neurons?",
+          "options": {
+            "A": "Cornea",
+            "B": "Lens",
+            "C": "Retina",
+            "D": "Iris"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "22",
+          "question_text": "Which structure adjusts pupil size?",
+          "options": {
+            "A": "Lens",
+            "B": "Cornea",
+            "C": "Iris",
+            "D": "Ciliary body"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "23",
+          "question_text": "Which gland produces thyroxine?",
+          "options": {
+            "A": "Pituitary",
+            "B": "Adrenal",
+            "C": "Thyroid",
+            "D": "Pancreas"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "24",
+          "question_text": "Which response increases heart rate?",
+          "options": {
+            "A": "Eating",
+            "B": "Sleeping",
+            "C": "Exercising",
+            "D": "Reading"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "25",
+          "question_text": "Which organ detects blood glucose levels?",
+          "options": {
+            "A": "Liver",
+            "B": "Stomach",
+            "C": "Pancreas",
+            "D": "Kidney"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "26",
+          "question_text": "Which response do roots show to water?",
+          "options": {
+            "A": "Phototropism",
+            "B": "Geotropism",
+            "C": "Hydrotropism",
+            "D": "Thigmotropism"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "27",
+          "question_text": "Which plant hormone promotes fruit ripening?",
+          "options": {
+            "A": "Auxin",
+            "B": "Gibberellin",
+            "C": "Ethylene",
+            "D": "Abscisic acid"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "28",
+          "question_text": "Which mineral prevents anemia?",
+          "options": {
+            "A": "Calcium",
+            "B": "Iodine",
+            "C": "Iron",
+            "D": "Zinc"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "29",
+          "question_text": "Which disease is caused by bacteria?",
+          "options": {
+            "A": "AIDS",
+            "B": "Malaria",
+            "C": "Cholera",
+            "D": "Measles"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "30",
+          "question_text": "Which pathogen causes ringworm?",
+          "options": {
+            "A": "Virus",
+            "B": "Bacterium",
+            "C": "Fungus",
+            "D": "Protozoan"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "image_file": "page_006.png",
+      "questions": [
+        {
+          "question_id": "31",
+          "question_text": "Which immunity involves antibodies in breast milk?",
+          "options": {
+            "A": "Natural active",
+            "B": "Artificial active",
+            "C": "Natural passive",
+            "D": "Artificial passive"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "32",
+          "question_text": "Which cells make antibodies?",
+          "options": {
+            "A": "Phagocytes",
+            "B": "T cells",
+            "C": "B cells",
+            "D": "Macrophages"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "33",
+          "question_text": "Which treatment is used for viral infections?",
+          "options": {
+            "A": "Antibiotics",
+            "B": "Vaccines",
+            "C": "Antiviral drugs",
+            "D": "Painkillers"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "34",
+          "question_text": "Which organ removes waste from blood?",
+          "options": {
+            "A": "Liver",
+            "B": "Lung",
+            "C": "Kidney",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "35",
+          "question_text": "Which fluid in kidney contains urea?",
+          "options": {
+            "A": "Blood only",
+            "B": "Urine only",
+            "C": "Both blood and urine",
+            "D": "Neither"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "36",
+          "question_text": "Which response reduces heat loss?",
+          "options": {
+            "A": "Sweating",
+            "B": "Vasodilation",
+            "C": "Vasoconstriction",
+            "D": "Panting"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "37",
+          "question_text": "Which part of nephron is permeable to water?",
+          "options": {
+            "A": "Glomerulus",
+            "B": "Loop of Henle",
+            "C": "Collecting duct",
+            "D": "Proximal tubule"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "38",
+          "question_text": "Which process returns useful substances to blood?",
+          "options": {
+            "A": "Filtration",
+            "B": "Secretion",
+            "C": "Reabsorption",
+            "D": "Excretion"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "39",
+          "question_text": "Which factor helps species adapt to change?",
+          "options": {
+            "A": "Low variation",
+            "B": "Genetic variation",
+            "C": "Cloning",
+            "D": "Inbreeding"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "40",
+          "question_text": "Which conserves species in natural habitat?",
+          "options": {
+            "A": "Zoos",
+            "B": "Captive breeding",
+            "C": "In-situ conservation",
+            "D": "Gene banks"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 40,
+  "total_marks": 40
+}
