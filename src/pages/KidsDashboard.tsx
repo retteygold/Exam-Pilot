@@ -87,7 +87,14 @@ export function KidsDashboard() {
 
   const [bank, setBank] = useState<Question[]>([])
 
+  const [loginKey, setLoginKey] = useState(0)
+
   const { currentKid, logout, getKidStats } = useKidsStore()
+
+  // Trigger re-render when login succeeds
+  const handleLogin = () => {
+    setLoginKey(k => k + 1)
+  }
 
   // Use kids profile grade if logged in
   const gradeLabel = currentKid?.grade || profile?.grade || 'Grade 1'
@@ -145,7 +152,7 @@ export function KidsDashboard() {
 
   // Show login if not authenticated
   if (!currentKid) {
-    return <KidsLogin onLogin={() => {}} />
+    return <KidsLogin onLogin={handleLogin} key={loginKey} />
   }
 
   return (
