@@ -220,7 +220,7 @@ export function KidsDashboard() {
               <button
                 key={game.id}
                 onClick={() => startKidsQuiz(game.id)}
-                className={`p-4 rounded-2xl bg-gradient-to-br ${game.bgGradient} border border-white/10 hover:border-white/30 transition-all group text-left`}
+                className={`p-4 rounded-2xl bg-gradient-to-br ${game.bgGradient} border border-white/10 hover:border-white/30 transition-all group text-left pointer-events-auto z-10 relative`}
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className={`w-10 h-10 rounded-xl bg-slate-900/50 flex items-center justify-center`}>

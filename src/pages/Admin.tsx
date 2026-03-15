@@ -364,7 +364,7 @@ export function Admin() {
                   : 'text-slate-400 hover:text-white'
               }`}
             >
-              Kids
+              Students
             </button>
           </div>
           {saveStatus && <span className="text-sm px-3 py-1 rounded-full bg-slate-700">{saveStatus}</span>}
@@ -373,7 +373,7 @@ export function Admin() {
       </div>
 
       <div className="p-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
-        {/* Kids Tab Content */}
+        {/* Students Tab Content */}
         {activeTab === 'kids' && (
           <div className="lg:col-span-12 space-y-4">
             {/* Kids Stats Overview */}
@@ -381,7 +381,7 @@ export function Admin() {
               <div className="p-4 bg-slate-800 rounded-xl">
                 <div className="flex items-center gap-2 mb-2">
                   <Users className="w-5 h-5 text-blue-400" />
-                  <span className="text-sm text-slate-400">Total Kids</span>
+                  <span className="text-sm text-slate-400">Total Students</span>
                 </div>
                 <div className="text-2xl font-bold">{profiles.length}</div>
               </div>
@@ -414,7 +414,7 @@ export function Admin() {
             <div className="p-4 bg-slate-800 rounded-xl">
               <h3 className="font-semibold mb-4 flex items-center gap-2">
                 <Trophy className="w-5 h-5 text-yellow-400" />
-                Kids Leaderboard
+                Students Leaderboard
               </h3>
               <div className="space-y-2">
                 {getLeaderboard().map((entry, idx) => (
@@ -471,7 +471,7 @@ export function Admin() {
                   </div>
                 ))}
                 {profiles.length === 0 && (
-                  <div className="text-center text-slate-500 py-8">No kids registered yet</div>
+                  <div className="text-center text-slate-500 py-8">No students registered yet</div>
                 )}
               </div>
             </div>
