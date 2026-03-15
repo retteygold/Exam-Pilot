@@ -1,0 +1,28 @@
+[
+  {
+    "id": "as_biology-y2019-u1-q6(a)",
+    "subject": "as_biology",
+    "yearGroup": "year12",
+    "difficulty": "medium",
+    "topic": "general",
+    "marks": 1,
+    "question": "Which of the following is a medication to control blood pressure?",
+    "options": [
+      "A. anticoagulant",
+      "C. platelet inhibitor",
+      "D. statin"
+    ],
+    "correctAnswer": 0,
+    "explanation": "",
+    "examStyle": true,
+    "timeLimit": 60,
+    "verified": false,
+    "source": {
+      "pdf": "2019-unit1-2019-01-WBI11-01-qp.pdf",
+      "year": 2019,
+      "session": "Oct/Nov",
+      "unit": "1",
+      "question_number": "6(a)"
+    }
+  }
+]
