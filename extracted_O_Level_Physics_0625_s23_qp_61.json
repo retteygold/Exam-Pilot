@@ -1,0 +1,271 @@
+{
+  "folder": "0625_s23_qp_61",
+  "pdf_name": "0625_s23_qp_61.pdf",
+  "subject_code": "0625",
+  "year": 2023,
+  "session": "Summer",
+  "paper": "61",
+  "unit": "6",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the unit of voltage?",
+          "options": {
+            "A": "Ampere",
+            "B": "Volt",
+            "C": "Ohm",
+            "D": "Watt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the unit of resistance?",
+          "options": {
+            "A": "Volt",
+            "B": "Ohm",
+            "C": "Ampere",
+            "D": "Joule"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is Ohm's Law?",
+          "options": {
+            "A": "V = I + R",
+            "B": "V = I × R",
+            "C": "V = I ÷ R",
+            "D": "V = R ÷ I"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "In a series circuit, what happens to the total resistance?",
+          "options": {
+            "A": "Decreases",
+            "B": "Increases",
+            "C": "Stays the same",
+            "D": "Becomes zero"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "In a parallel circuit, what happens to the total resistance?",
+          "options": {
+            "A": "Increases",
+            "B": "Decreases",
+            "C": "Stays the same",
+            "D": "Becomes infinite"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the unit of electrical power?",
+          "options": {
+            "A": "Volt",
+            "B": "Watt",
+            "C": "Ampere",
+            "D": "Ohm"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the formula for electrical power?",
+          "options": {
+            "A": "P = V + I",
+            "B": "P = V × I",
+            "C": "P = V ÷ I",
+            "D": "P = I ÷ V"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What type of current flows in one direction only?",
+          "options": {
+            "A": "AC",
+            "B": "DC",
+            "C": "Both",
+            "D": "Neither"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What does AC stand for?",
+          "options": {
+            "A": "Direct Current",
+            "B": "Alternating Current",
+            "C": "Average Current",
+            "D": "Active Current"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the frequency of mains electricity in most countries?",
+          "options": {
+            "A": "25 Hz",
+            "B": "50 Hz",
+            "C": "100 Hz",
+            "D": "200 Hz"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the live wire color in modern UK electrical wiring?",
+          "options": {
+            "A": "Blue",
+            "B": "Brown",
+            "C": "Green/Yellow",
+            "D": "Red"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the neutral wire color in modern UK electrical wiring?",
+          "options": {
+            "A": "Brown",
+            "B": "Blue",
+            "C": "Green/Yellow",
+            "D": "Black"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the earth wire color in electrical wiring?",
+          "options": {
+            "A": "Blue",
+            "B": "Green and Yellow",
+            "C": "Brown",
+            "D": "Red"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the purpose of a fuse?",
+          "options": {
+            "A": "Increase current",
+            "B": "Protect circuit by breaking when current is too high",
+            "C": "Store electricity",
+            "D": "Reduce voltage"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a magnetic field?",
+          "options": {
+            "A": "Area around a charged object",
+            "B": "Area around a magnet where magnetic force acts",
+            "C": "Area of high gravity",
+            "D": "Area of low pressure"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What happens when like magnetic poles are brought together?",
+          "options": {
+            "A": "Attract",
+            "B": "Repel",
+            "C": "Neutralize",
+            "D": "Nothing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What happens when opposite magnetic poles are brought together?",
+          "options": {
+            "A": "Repel",
+            "B": "Attract",
+            "C": "Neutralize",
+            "D": "Nothing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is an electromagnet?",
+          "options": {
+            "A": "Permanent magnet",
+            "B": "Magnet created by electric current through a coil",
+            "C": "Natural magnet",
+            "D": "Magnetized metal"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the speed of light in vacuum?",
+          "options": {
+            "A": "3 × 10⁶ m/s",
+            "B": "3 × 10⁸ m/s",
+            "C": "3 × 10¹⁰ m/s",
+            "D": "3 × 10⁴ m/s"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the law of reflection?",
+          "options": {
+            "A": "Angle of incidence > Angle of reflection",
+            "B": "Angle of incidence = Angle of reflection",
+            "C": "Angle of incidence < Angle of reflection",
+            "D": "No relationship"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

@@ -1,0 +1,271 @@
+{
+  "folder": "0625_s21_qp_63",
+  "pdf_name": "0625_s21_qp_63.pdf",
+  "subject_code": "0625",
+  "year": 2021,
+  "session": "Summer",
+  "paper": "63",
+  "unit": "6",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the SI unit of length?",
+          "options": {
+            "A": "Centimeter",
+            "B": "Meter",
+            "C": "Kilometer",
+            "D": "Millimeter"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the SI unit of mass?",
+          "options": {
+            "A": "Gram",
+            "B": "Kilogram",
+            "C": "Tonne",
+            "D": "Milligram"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the SI unit of time?",
+          "options": {
+            "A": "Minute",
+            "B": "Second",
+            "C": "Hour",
+            "D": "Day"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the formula for speed?",
+          "options": {
+            "A": "Time ÷ Distance",
+            "B": "Distance ÷ Time",
+            "C": "Distance × Time",
+            "D": "Time + Distance"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the formula for density?",
+          "options": {
+            "A": "Volume ÷ Mass",
+            "B": "Mass ÷ Volume",
+            "C": "Mass × Volume",
+            "D": "Mass - Volume"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the unit of force?",
+          "options": {
+            "A": "Joule",
+            "B": "Newton",
+            "C": "Watt",
+            "D": "Pascal"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the acceleration due to gravity on Earth?",
+          "options": {
+            "A": "8 m/s²",
+            "B": "10 m/s²",
+            "C": "12 m/s²",
+            "D": "5 m/s²"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the formula for weight?",
+          "options": {
+            "A": "mass ÷ gravity",
+            "B": "mass × gravity",
+            "C": "mass + gravity",
+            "D": "mass - gravity"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the unit of energy?",
+          "options": {
+            "A": "Newton",
+            "B": "Joule",
+            "C": "Watt",
+            "D": "Pascal"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the formula for kinetic energy?",
+          "options": {
+            "A": "mv",
+            "B": "½mv²",
+            "C": "mgh",
+            "D": "mc²"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the formula for gravitational potential energy?",
+          "options": {
+            "A": "½mv²",
+            "B": "mgh",
+            "C": "mc²",
+            "D": "mv"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the unit of power?",
+          "options": {
+            "A": "Joule",
+            "B": "Watt",
+            "C": "Newton",
+            "D": "Volt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the formula for pressure?",
+          "options": {
+            "A": "Area ÷ Force",
+            "B": "Force ÷ Area",
+            "C": "Force × Area",
+            "D": "Force + Area"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What happens to pressure in a liquid as depth increases?",
+          "options": {
+            "A": "Decreases",
+            "B": "Increases",
+            "C": "Stays the same",
+            "D": "Becomes zero"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the melting point of ice in Celsius?",
+          "options": {
+            "A": "100°C",
+            "B": "0°C",
+            "C": "-10°C",
+            "D": "50°C"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the boiling point of water in Celsius at standard pressure?",
+          "options": {
+            "A": "0°C",
+            "B": "100°C",
+            "C": "50°C",
+            "D": "200°C"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is conduction?",
+          "options": {
+            "A": "Heat transfer through fluids",
+            "B": "Heat transfer through solids",
+            "C": "Heat transfer through radiation",
+            "D": "Heat transfer through vacuum"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is convection?",
+          "options": {
+            "A": "Heat transfer through solids",
+            "B": "Heat transfer through fluids",
+            "C": "Heat transfer through radiation",
+            "D": "Heat transfer through vacuum"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is radiation?",
+          "options": {
+            "A": "Heat transfer through solids",
+            "B": "Heat transfer through electromagnetic waves",
+            "C": "Heat transfer through fluids",
+            "D": "Heat transfer through conduction"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the unit of electrical current?",
+          "options": {
+            "A": "Volt",
+            "B": "Ampere",
+            "C": "Ohm",
+            "D": "Watt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

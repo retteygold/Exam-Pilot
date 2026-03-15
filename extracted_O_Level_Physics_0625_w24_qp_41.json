@@ -1,0 +1,271 @@
+{
+  "folder": "0625_w24_qp_41",
+  "pdf_name": "0625_w24_qp_41.pdf",
+  "subject_code": "0625",
+  "year": 2024,
+  "session": "Winter",
+  "paper": "41",
+  "unit": "4",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is refraction?",
+          "options": {
+            "A": "Bouncing of light",
+            "B": "Bending of light when passing through different media",
+            "C": "Absorption of light",
+            "D": "Reflection of light"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the critical angle?",
+          "options": {
+            "A": "Angle where refraction stops",
+            "B": "Angle of incidence where angle of refraction is 90°",
+            "C": "Angle of reflection",
+            "D": "Angle of dispersion"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is total internal reflection?",
+          "options": {
+            "A": "Partial reflection",
+            "B": "Complete reflection when light travels from denser to rarer medium",
+            "C": "Refraction",
+            "D": "Diffraction"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is a converging lens?",
+          "options": {
+            "A": "Lens that spreads light",
+            "B": "Lens that brings light rays together",
+            "C": "Flat lens",
+            "D": "Lens that absorbs light"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is a real image?",
+          "options": {
+            "A": "Image that cannot be projected",
+            "B": "Image formed by actual light rays that can be projected",
+            "C": "Virtual image",
+            "D": "Image in a mirror"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is a transverse wave?",
+          "options": {
+            "A": "Wave where particles move parallel to wave direction",
+            "B": "Wave where particles move perpendicular to wave direction",
+            "C": "Sound wave",
+            "D": "Compression wave"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is a longitudinal wave?",
+          "options": {
+            "A": "Light wave",
+            "B": "Wave where particles move parallel to wave direction",
+            "C": "Wave where particles move perpendicular to wave direction",
+            "D": "Water wave"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the wavelength?",
+          "options": {
+            "A": "Height of wave",
+            "B": "Distance between two consecutive crests",
+            "C": "Time for one wave",
+            "D": "Speed of wave"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the amplitude of a wave?",
+          "options": {
+            "A": "Distance between crests",
+            "B": "Maximum displacement from rest position",
+            "C": "Frequency",
+            "D": "Speed"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the frequency of a wave?",
+          "options": {
+            "A": "Distance between waves",
+            "B": "Number of waves per second",
+            "C": "Speed of wave",
+            "D": "Height of wave"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the speed of sound in air?",
+          "options": {
+            "A": "34 m/s",
+            "B": "340 m/s",
+            "C": "3400 m/s",
+            "D": "3.4 m/s"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is an echo?",
+          "options": {
+            "A": "Original sound",
+            "B": "Reflected sound heard after the original",
+            "C": "Absorbed sound",
+            "D": "Refracted sound"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the Doppler effect?",
+          "options": {
+            "A": "Change in speed",
+            "B": "Change in frequency due to relative motion",
+            "C": "Change in wavelength only",
+            "D": "Change in amplitude"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is an alpha particle?",
+          "options": {
+            "A": "Electron",
+            "B": "Helium nucleus (2 protons + 2 neutrons)",
+            "C": "Neutron",
+            "D": "Photon"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a beta particle?",
+          "options": {
+            "A": "Helium nucleus",
+            "B": "Fast-moving electron",
+            "C": "Neutron",
+            "D": "Proton"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is gamma radiation?",
+          "options": {
+            "A": "Particle",
+            "B": "Electromagnetic wave",
+            "C": "Sound wave",
+            "D": "Matter"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is half-life?",
+          "options": {
+            "A": "Full decay time",
+            "B": "Time for half the radioactive nuclei to decay",
+            "C": "Time for all nuclei to decay",
+            "D": "Time for double decay"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the nucleus of an atom made of?",
+          "options": {
+            "A": "Electrons only",
+            "B": "Protons and neutrons",
+            "C": "Electrons and protons",
+            "D": "Neutrons only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the atomic number?",
+          "options": {
+            "A": "Number of neutrons",
+            "B": "Number of protons",
+            "C": "Number of electrons",
+            "D": "Mass number"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the mass number?",
+          "options": {
+            "A": "Number of protons only",
+            "B": "Number of protons + neutrons",
+            "C": "Number of electrons",
+            "D": "Number of neutrons only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
