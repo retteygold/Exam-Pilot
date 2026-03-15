@@ -8,9 +8,9 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'GCSE Exam Prep',
-        short_name: 'GCSE Prep',
-        description: 'Comprehensive GCSE exam preparation for grades 8-10',
+        name: 'Exam Pilot',
+        short_name: 'Exam Pilot',
+        description: 'Comprehensive exam preparation for LKG to Grade 12',
         theme_color: '#3b82f6',
         background_color: '#0f172a',
         display: 'standalone',

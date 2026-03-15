@@ -17,15 +17,19 @@ export function KidsLogin({ onLogin }: KidsLoginProps) {
   const [avatar, setAvatar] = useState(AVATARS[0])
   const [error, setError] = useState('')
 
+  const [success, setSuccess] = useState('')
+
   const { login, register } = useKidsStore()
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
+    setSuccess('')
     
     const profile = login(name, secretCode)
     if (profile) {
-      onLogin()
+      setSuccess(`Welcome back, ${profile.name}! 🎉`)
+      setTimeout(() => onLogin(), 500)
     } else {
       setError('Wrong name or secret code! Try again.')
     }
@@ -34,6 +38,7 @@ export function KidsLogin({ onLogin }: KidsLoginProps) {
   const handleRegister = (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
+    setSuccess('')
     
     if (name.length < 2) {
       setError('Name must be at least 2 letters!')
@@ -47,7 +52,8 @@ export function KidsLogin({ onLogin }: KidsLoginProps) {
     
     const profile = register(name, secretCode, grade, avatar)
     if (profile) {
-      onLogin()
+      setSuccess(`Account created! Welcome, ${profile.name}! 🎉`)
+      setTimeout(() => onLogin(), 500)
     } else {
       setError('This name is already taken! Try a different name.')
     }
@@ -74,6 +80,11 @@ export function KidsLogin({ onLogin }: KidsLoginProps) {
           {error && (
             <div className="mb-4 p-3 bg-red-500/20 border border-red-500/30 rounded-xl text-red-300 text-sm">
               {error}
+            </div>
+          )}
+          {success && (
+            <div className="mb-4 p-3 bg-green-500/20 border border-green-500/30 rounded-xl text-green-300 text-sm">
+              {success}
             </div>
           )}
 

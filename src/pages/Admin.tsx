@@ -3,7 +3,8 @@ import type { ClipboardEvent } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types'
 import { canUseSupabaseQuestions, deleteQuestion, fetchAllQuestionsFromSupabase, upsertQuestion } from '../services/questionsSupabase'
-import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText } from 'lucide-react'
+import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText, Users, Star, Trophy, Activity, RefreshCw, RotateCcw, Edit2, X } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 function makeEmptyQuestion(): Question {
   return {
@@ -51,6 +52,9 @@ export function Admin() {
   const [saveStatus, setSaveStatus] = useState<string | null>(null)
   const [showImageSection, setShowImageSection] = useState(false)
   const [showPdfImage, setShowPdfImage] = useState(false)
+  const [activeTab, setActiveTab] = useState<'questions' | 'kids'>('questions')
+
+  const { profiles, sessions, achievements, getLeaderboard, deleteKid, resetKidStats, updateKid } = useKidsStore()
 
   const canUseSupabase = canUseSupabaseQuestions()
 
@@ -340,6 +344,29 @@ export function Admin() {
           <span className="text-xs text-slate-400">{sessionEmail}</span>
         </div>
         <div className="flex items-center gap-2">
+          {/* Tab Switcher */}
+          <div className="flex bg-slate-700 rounded-lg p-1 mr-4">
+            <button
+              onClick={() => setActiveTab('questions')}
+              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                activeTab === 'questions' 
+                  ? 'bg-blue-600 text-white' 
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              Questions
+            </button>
+            <button
+              onClick={() => setActiveTab('kids')}
+              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+                activeTab === 'kids' 
+                  ? 'bg-purple-600 text-white' 
+                  : 'text-slate-400 hover:text-white'
+              }`}
+            >
+              Kids
+            </button>
+          </div>
           {saveStatus && <span className="text-sm px-3 py-1 rounded-full bg-slate-700">{saveStatus}</span>}
           <button disabled={loading} onClick={signOut} className="px-3 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-sm">Logout</button>
         </div>

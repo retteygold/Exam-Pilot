@@ -46,6 +46,12 @@ export interface KidsState {
   unlockAchievement: (achievementCode: string, title: string, description: string, starsReward: number) => void
   getKidStats: (kidId: string) => { totalStars: number; totalSessions: number; bestStreak: number }
   getLeaderboard: () => Array<{ kid: KidsProfile; totalStars: number; sessions: number }>
+  // Admin functions
+  deleteKid: (kidId: string) => void
+  resetKidStats: (kidId: string) => void
+  updateKid: (kidId: string, updates: Partial<KidsProfile>) => void
+  getAllSessions: () => GameSession[]
+  getKidAchievements: (kidId: string) => Achievement[]
 }
 
 const generateId = () => Math.random().toString(36).substring(2, 15)
@@ -187,6 +193,38 @@ export const useKidsStore = create<KidsState>()(
         })
         
         return kidStats.sort((a, b) => b.totalStars - a.totalStars)
+      },
+
+      // Admin functions
+      deleteKid: (kidId: string) => {
+        set(state => ({
+          profiles: state.profiles.filter(p => p.id !== kidId),
+          sessions: state.sessions.filter(s => s.kidId !== kidId),
+          achievements: state.achievements.filter(a => a.kidId !== kidId)
+        }))
+      },
+
+      resetKidStats: (kidId: string) => {
+        set(state => ({
+          sessions: state.sessions.filter(s => s.kidId !== kidId),
+          achievements: state.achievements.filter(a => a.kidId !== kidId)
+        }))
+      },
+
+      updateKid: (kidId: string, updates: Partial<KidsProfile>) => {
+        set(state => ({
+          profiles: state.profiles.map(p => 
+            p.id === kidId ? { ...p, ...updates } : p
+          )
+        }))
+      },
+
+      getAllSessions: () => {
+        return get().sessions
+      },
+
+      getKidAchievements: (kidId: string) => {
+        return get().achievements.filter(a => a.kidId === kidId)
       }
     }),
     {
@@ -194,7 +232,9 @@ export const useKidsStore = create<KidsState>()(
       partialize: (state) => ({
         profiles: state.profiles,
         sessions: state.sessions,
-        achievements: state.achievements
+        achievements: state.achievements,
+        currentKid: state.currentKid,
+        isKidsLoggedIn: state.isKidsLoggedIn
       })
     }
   )

@@ -145,7 +145,7 @@ export function KidsDashboard() {
 
   // Show login if not authenticated
   if (!currentKid) {
-    return <KidsLogin onLogin={() => window.location.reload()} />
+    return <KidsLogin onLogin={() => {}} />
   }
 
   return (
