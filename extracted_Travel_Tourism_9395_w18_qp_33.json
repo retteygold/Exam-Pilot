@@ -1,0 +1,271 @@
+{
+  "folder": "9395_w18_qp_33",
+  "pdf_name": "9395_w18_qp_33.pdf",
+  "subject_code": "9395",
+  "year": 2018,
+  "session": "Winter",
+  "paper": "33",
+  "unit": "3",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is pro-poor tourism?",
+          "options": {
+            "A": "Luxury tourism",
+            "B": "Tourism generating net benefits for poor people",
+            "C": "Expensive holidays",
+            "D": "International chain hotels"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is community-based tourism?",
+          "options": {
+            "A": "Foreign owned resorts",
+            "B": "Tourism owned and managed by local communities",
+            "C": "Government only",
+            "D": "International chains"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the enclave model of tourism?",
+          "options": {
+            "A": "Integrated with local community",
+            "B": "Self-contained tourism separate from local economy",
+            "C": "Small family businesses",
+            "D": "Eco-tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What are externalities in tourism?",
+          "options": {
+            "A": "Only positive effects",
+            "B": "Unintended side effects (positive or negative)",
+            "C": "Only profits",
+            "D": "Only costs"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is social carrying capacity?",
+          "options": {
+            "A": "Physical limits",
+            "B": "Level of tourist development before negative impacts on locals",
+            "C": "Hotel rooms",
+            "D": "Transport seats"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is economic carrying capacity?",
+          "options": {
+            "A": "Social impacts",
+            "B": "Point where tourism no longer economically viable",
+            "C": "Environmental damage",
+            "D": "Cultural change"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is environmental carrying capacity?",
+          "options": {
+            "A": "Economic viability",
+            "B": "Level before damage to natural environment occurs",
+            "C": "Social acceptance",
+            "D": "Political limits"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is tourism planning?",
+          "options": {
+            "A": "Random development",
+            "B": "Strategic process managing tourism development",
+            "C": "Only marketing",
+            "D": "Only transport"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is a zoning plan in tourism?",
+          "options": {
+            "A": "Transport schedule",
+            "B": "Designating areas for different tourism uses",
+            "C": "Hotel pricing",
+            "D": "Staff roster"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is capacity management?",
+          "options": {
+            "A": "Building more hotels",
+            "B": "Controlling visitor numbers to sustainable levels",
+            "C": "Lowering prices",
+            "D": "Increasing marketing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is visitor management?",
+          "options": {
+            "A": "Only marketing",
+            "B": "Strategies to manage tourist behavior and impacts",
+            "C": "Building construction",
+            "D": "Airport security only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is revenue management?",
+          "options": {
+            "A": "Random pricing",
+            "B": "Maximizing revenue through pricing and inventory control",
+            "C": "Only cost cutting",
+            "D": "Only advertising"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is yield management?",
+          "options": {
+            "A": "Fixed pricing",
+            "B": "Selling right product to right customer at right price/time",
+            "C": "Discount only",
+            "D": "Premium only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is destination marketing?",
+          "options": {
+            "A": "Individual hotel ads",
+            "B": "Promoting location to attract tourists",
+            "C": "Only transport ads",
+            "D": "Only restaurant promotions"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a destination management organization (DMO)?",
+          "options": {
+            "A": "Individual hotel",
+            "B": "Coordinating marketing and management of destination",
+            "C": "Only airline",
+            "D": "Only travel agency"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is visitor surveying?",
+          "options": {
+            "A": "Random guessing",
+            "B": "Collecting data about tourist demographics and behavior",
+            "C": "Only counting",
+            "D": "Only pricing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is tourism impact assessment?",
+          "options": {
+            "A": "Only positive impacts",
+            "B": "Evaluating potential effects before tourism development",
+            "C": "After development only",
+            "D": "Only financial"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is a tourism development plan?",
+          "options": {
+            "A": "Random building",
+            "B": "Comprehensive strategy for tourism growth",
+            "C": "Marketing only",
+            "D": "Transport only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is benchmarking in tourism?",
+          "options": {
+            "A": "Only comparing prices",
+            "B": "Comparing performance against best practices",
+            "C": "No comparison",
+            "D": "Only staff training"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is quality assurance in tourism?",
+          "options": {
+            "A": "Random service",
+            "B": "Systems ensuring consistent service standards",
+            "C": "No standards",
+            "D": "Only low prices"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

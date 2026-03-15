@@ -1,0 +1,271 @@
+{
+  "folder": "9395_s08_qp_4",
+  "pdf_name": "9395_s08_qp_4.pdf",
+  "subject_code": "9395",
+  "year": 2008,
+  "session": "Summer",
+  "paper": "4",
+  "unit": "4",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the primary purpose of tourism?",
+          "options": {
+            "A": "Business meetings only",
+            "B": "Recreation, leisure, and experiencing new places",
+            "C": "Permanent relocation",
+            "D": "Government work"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is domestic tourism?",
+          "options": {
+            "A": "Travel to foreign countries",
+            "B": "Travel within one's own country",
+            "C": "Business travel only",
+            "D": "Medical tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is inbound tourism?",
+          "options": {
+            "A": "Residents traveling abroad",
+            "B": "Visitors coming into a country",
+            "C": "Domestic travel",
+            "D": "Business travel"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is outbound tourism?",
+          "options": {
+            "A": "Visitors coming to a country",
+            "B": "Residents traveling to another country",
+            "C": "Domestic tourism",
+            "D": "Inbound tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is eco-tourism?",
+          "options": {
+            "A": "Luxury tourism",
+            "B": "Responsible travel conserving environment and improving local welfare",
+            "C": "Urban tourism only",
+            "D": "Historical tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is cultural tourism?",
+          "options": {
+            "A": "Beach holidays",
+            "B": "Travel to experience culture, heritage, arts",
+            "C": "Adventure sports",
+            "D": "Business travel"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is adventure tourism?",
+          "options": {
+            "A": "Relaxing beach holidays",
+            "B": "Travel involving exploration or physical activities",
+            "C": "Cultural visits",
+            "D": "Business trips"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is mass tourism?",
+          "options": {
+            "A": "Individual travel",
+            "B": "Large-scale organized tourism to popular destinations",
+            "C": "Eco-tourism",
+            "D": "Luxury travel"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the tourism product life cycle?",
+          "options": {
+            "A": "Only development stage",
+            "B": "Introduction, growth, maturity, decline stages",
+            "C": "Only decline stage",
+            "D": "No stages"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is a tourist destination?",
+          "options": {
+            "A": "Only hotels",
+            "B": "Place attracting visitors for tourism purposes",
+            "C": "Only airports",
+            "D": "Only beaches"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is seasonality in tourism?",
+          "options": {
+            "A": "Year-round same demand",
+            "B": "Variation in visitor numbers throughout the year",
+            "C": "No variation",
+            "D": "Only winter tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is carrying capacity?",
+          "options": {
+            "A": "Hotel room size",
+            "B": "Maximum number of visitors a destination can sustain",
+            "C": "Airport size",
+            "D": "Restaurant capacity"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is sustainable tourism?",
+          "options": {
+            "A": "Maximum tourist numbers",
+            "B": "Tourism meeting present needs without compromising future",
+            "C": "Cheap tourism",
+            "D": "Luxury tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is a package holiday?",
+          "options": {
+            "A": "Individual components bought separately",
+            "B": "Pre-arranged combination of transport, accommodation, services",
+            "C": "Only accommodation",
+            "D": "Only transport"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a tour operator?",
+          "options": {
+            "A": "Individual tourist",
+            "B": "Company combining tour components into package",
+            "C": "Hotel only",
+            "D": "Airline only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is a travel agent?",
+          "options": {
+            "A": "Tourism product creator",
+            "B": "Intermediary selling travel products on behalf of suppliers",
+            "C": "Hotel manager",
+            "D": "Pilot"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is direct tourism employment?",
+          "options": {
+            "A": "Jobs in other industries",
+            "B": "Jobs directly involved in providing tourism services",
+            "C": "Government jobs",
+            "D": "Manufacturing jobs"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is indirect tourism employment?",
+          "options": {
+            "A": "Direct service jobs",
+            "B": "Jobs supporting tourism but not directly serving tourists",
+            "C": "No jobs",
+            "D": "Only government jobs"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the multiplier effect in tourism?",
+          "options": {
+            "A": "Decrease in spending",
+            "B": "Additional economic benefits from tourist spending circulating",
+            "C": "No effect",
+            "D": "Decrease in jobs"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is tourism leakage?",
+          "options": {
+            "A": "All money stays local",
+            "B": "Revenue leaving destination to pay for imports",
+            "C": "Profit only",
+            "D": "No spending"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

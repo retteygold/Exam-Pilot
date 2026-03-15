@@ -1,0 +1,271 @@
+{
+  "folder": "9395_s24_qp_41",
+  "pdf_name": "9395_s24_qp_41.pdf",
+  "subject_code": "9395",
+  "year": 2024,
+  "session": "Summer",
+  "paper": "41",
+  "unit": "4",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is gastronomy tourism?",
+          "options": {
+            "A": "Only fast food",
+            "B": "Travel for culinary experiences and food culture",
+            "C": "Only drinks",
+            "D": "Only cooking classes"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is wine tourism?",
+          "options": {
+            "A": "Any drinking",
+            "B": "Travel to visit vineyards and wineries",
+            "C": "Only bars",
+            "D": "Only restaurants"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is brewery/distillery tourism?",
+          "options": {
+            "A": "Only consumption",
+            "B": "Visiting facilities where alcoholic beverages are made",
+            "C": "Only retail",
+            "D": "Only festivals"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is tea tourism?",
+          "options": {
+            "A": "Only cafes",
+            "B": "Visiting tea plantations and learning about tea culture",
+            "C": "Only shops",
+            "D": "Only hotels"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is coffee tourism?",
+          "options": {
+            "A": "Only chains",
+            "B": "Visiting coffee regions and learning production process",
+            "C": "Only urban",
+            "D": "Only instant"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is chocolate tourism?",
+          "options": {
+            "A": "Only buying",
+            "B": "Visiting cacao farms and chocolate factories",
+            "C": "Only tasting",
+            "D": "Only museums"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is cheese tourism?",
+          "options": {
+            "A": "Any dairy",
+            "B": "Visiting cheese-making regions and farms",
+            "C": "Only supermarkets",
+            "D": "Only restaurants"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is farm tourism?",
+          "options": {
+            "A": "Only cities",
+            "B": "Visiting working farms for accommodation/experience",
+            "C": "Only industry",
+            "D": "Only technology"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is fishing tourism?",
+          "options": {
+            "A": "Only commercial",
+            "B": "Recreational fishing as tourism activity",
+            "C": "Only aquaculture",
+            "D": "Only processing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is hunting tourism?",
+          "options": {
+            "A": "All hunting",
+            "B": "Travel specifically to hunt animals",
+            "C": "Only wildlife watching",
+            "D": "Only fishing"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is wildlife tourism?",
+          "options": {
+            "A": "Any nature",
+            "B": "Observing animals in natural habitats",
+            "C": "Only zoos",
+            "D": "Only pets"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is birdwatching tourism?",
+          "options": {
+            "A": "All nature",
+            "B": "Travel specifically to observe birds",
+            "C": "Only farms",
+            "D": "Only cities"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is safari tourism?",
+          "options": {
+            "A": "Only zoos",
+            "B": "Wildlife expedition in natural habitat",
+            "C": "Only cities",
+            "D": "Only beaches"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is marine tourism?",
+          "options": {
+            "A": "Only land",
+            "B": "Tourism activities in ocean/marine environment",
+            "C": "Only rivers",
+            "D": "Only lakes"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is polar tourism?",
+          "options": {
+            "A": "Any cold place",
+            "B": "Travel to Arctic or Antarctic regions",
+            "C": "Only mountains",
+            "D": "Only temperate"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is desert tourism?",
+          "options": {
+            "A": "Any dry area",
+            "B": "Travel to desert environments for unique experiences",
+            "C": "Only forests",
+            "D": "Only beaches"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is island tourism?",
+          "options": {
+            "A": "Any coastal area",
+            "B": "Tourism focused on island destinations",
+            "C": "Only mainland",
+            "D": "Only cities"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is coastal tourism?",
+          "options": {
+            "A": "Only islands",
+            "B": "Tourism activities along coastlines",
+            "C": "Only inland",
+            "D": "Only mountains"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is mountain tourism?",
+          "options": {
+            "A": "Only flat land",
+            "B": "Tourism in mountainous regions",
+            "C": "Only beaches",
+            "D": "Only deserts"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is glacier tourism?",
+          "options": {
+            "A": "Any cold place",
+            "B": "Visiting glaciers for recreation/education",
+            "C": "Only tropics",
+            "D": "Only urban"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

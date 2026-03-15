@@ -1,0 +1,271 @@
+{
+  "folder": "9395_w21_qp_11",
+  "pdf_name": "9395_w21_qp_11.pdf",
+  "subject_code": "9395",
+  "year": 2021,
+  "session": "Winter",
+  "paper": "11",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is crisis management in tourism?",
+          "options": {
+            "A": "Regular operations",
+            "B": "Managing unexpected events affecting tourism",
+            "C": "Marketing only",
+            "D": "Pricing only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is disaster tourism?",
+          "options": {
+            "A": "Luxury resorts",
+            "B": "Visiting areas affected by disasters",
+            "C": "Eco-tourism",
+            "D": "Cultural tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is resilience in tourism?",
+          "options": {
+            "A": "Vulnerability to change",
+            "B": "Ability to recover from shocks and adapt",
+            "C": "No adaptation",
+            "D": "Closing destinations"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is risk management in tourism?",
+          "options": {
+            "A": "Ignoring problems",
+            "B": "Identifying and mitigating potential risks",
+            "C": "Only insurance",
+            "D": "No planning"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is food tourism?",
+          "options": {
+            "A": "Only fast food",
+            "B": "Travel motivated by food and drink experiences",
+            "C": "Business meals",
+            "D": "Medical diets"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is film tourism?",
+          "options": {
+            "A": "Cinema business",
+            "B": "Visiting locations featured in films/TV",
+            "C": "Only production",
+            "D": "Only festivals"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is music tourism?",
+          "options": {
+            "A": "Only listening",
+            "B": "Travel to attend concerts and music festivals",
+            "C": "Only recording",
+            "D": "Instrument shopping"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is sports tourism?",
+          "options": {
+            "A": "Only professional athletes",
+            "B": "Travel to participate in or watch sports",
+            "C": "Only training",
+            "D": "Only local"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is event tourism?",
+          "options": {
+            "A": "Only business events",
+            "B": "Travel to attend planned events",
+            "C": "Only weddings",
+            "D": "Only private"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is shopping tourism?",
+          "options": {
+            "A": "Only online shopping",
+            "B": "Travel specifically for shopping purposes",
+            "C": "Only local markets",
+            "D": "Only groceries"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is wellness tourism?",
+          "options": {
+            "A": "Only hospitals",
+            "B": "Travel for health and well-being improvement",
+            "C": "Only fitness",
+            "D": "Only medical"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is spa tourism?",
+          "options": {
+            "A": "Only water parks",
+            "B": "Travel for spa treatments and wellness",
+            "C": "Only beaches",
+            "D": "Only pools"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is yoga tourism?",
+          "options": {
+            "A": "Only exercise",
+            "B": "Travel for yoga retreats and wellness",
+            "C": "Only competitions",
+            "D": "Only teaching"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is spiritual tourism?",
+          "options": {
+            "A": "Only religious",
+            "B": "Travel for spiritual growth and enlightenment",
+            "C": "Only commercial",
+            "D": "Only education"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is pilgrimage tourism?",
+          "options": {
+            "A": "Only vacations",
+            "B": "Travel to sacred sites for religious purposes",
+            "C": "Only business",
+            "D": "Only leisure"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is faith tourism?",
+          "options": {
+            "A": "Only sightseeing",
+            "B": "Travel motivated by religious faith",
+            "C": "Only adventure",
+            "D": "Only luxury"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is monastic tourism?",
+          "options": {
+            "A": "Only parties",
+            "B": "Staying at monasteries for spiritual experience",
+            "C": "Only shopping",
+            "D": "Only sports"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is LGBTQ+ tourism?",
+          "options": {
+            "A": "Only general",
+            "B": "Tourism catering to LGBTQ+ travelers",
+            "C": "Only family",
+            "D": "Only business"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is accessible tourism?",
+          "options": {
+            "A": "Only luxury",
+            "B": "Tourism for people with disabilities",
+            "C": "Only budget",
+            "D": "Only group"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is senior tourism?",
+          "options": {
+            "A": "Only youth",
+            "B": "Tourism catering to elderly travelers",
+            "C": "Only children",
+            "D": "Only families"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

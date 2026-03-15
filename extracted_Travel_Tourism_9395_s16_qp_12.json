@@ -1,0 +1,271 @@
+{
+  "folder": "9395_s16_qp_12",
+  "pdf_name": "9395_s16_qp_12.pdf",
+  "subject_code": "9395",
+  "year": 2016,
+  "session": "Summer",
+  "paper": "12",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is a tourism generating region?",
+          "options": {
+            "A": "Destination country",
+            "B": "Area where tourists come from",
+            "C": "Airport only",
+            "D": "Hotel location"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is a tourism destination region?",
+          "options": {
+            "A": "Origin of tourists",
+            "B": "Area attracting tourists to visit",
+            "C": "Transport hub only",
+            "D": "Home country"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is a transit route in tourism?",
+          "options": {
+            "A": "Destination",
+            "B": "Path between origin and destination",
+            "C": "Hotel",
+            "D": "Attraction"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is a tourist attraction?",
+          "options": {
+            "A": "Only natural features",
+            "B": "Place drawing visitors (natural or built)",
+            "C": "Only hotels",
+            "D": "Only transport"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is accommodation in tourism?",
+          "options": {
+            "A": "Transport only",
+            "B": "Places where tourists stay overnight",
+            "C": "Only restaurants",
+            "D": "Only attractions"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is hospitality in tourism?",
+          "options": {
+            "A": "Only accommodation",
+            "B": "Services providing food, drink, lodging",
+            "C": "Only transport",
+            "D": "Only attractions"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the difference between a travel agency and tour operator?",
+          "options": {
+            "A": "Same thing",
+            "B": "Agency sells, operator creates packages",
+            "C": "Agency creates, operator sells",
+            "D": "No difference"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is a niche market in tourism?",
+          "options": {
+            "A": "Mass tourism",
+            "B": "Specialized small market segment",
+            "C": "All tourists",
+            "D": "Only luxury"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is business tourism?",
+          "options": {
+            "A": "Leisure holidays",
+            "B": "Travel for work/conferences/meetings",
+            "C": "Adventure travel",
+            "D": "Eco-tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is MICE tourism?",
+          "options": {
+            "A": "Animal tourism",
+            "B": "Meetings, Incentives, Conferences, Exhibitions",
+            "C": "Medical tourism",
+            "D": "Military tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is agri-tourism?",
+          "options": {
+            "A": "Urban tourism",
+            "B": "Tourism based on farm/agricultural experiences",
+            "C": "Beach tourism",
+            "D": "Ski tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is volunteer tourism?",
+          "options": {
+            "A": "Luxury travel",
+            "B": "Travel to work for charitable cause",
+            "C": "Business travel",
+            "D": "Medical tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is dark tourism?",
+          "options": {
+            "A": "Night travel",
+            "B": "Visiting sites associated with death/tragedy",
+            "C": "Adventure sports",
+            "D": "Eco-tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is health tourism?",
+          "options": {
+            "A": "Only spa visits",
+            "B": "Travel for medical treatment or wellness",
+            "C": "Sports tourism",
+            "D": "Adventure tourism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a World Heritage Site?",
+          "options": {
+            "A": "Any tourist attraction",
+            "B": "Place of special cultural or physical significance protected by UNESCO",
+            "C": "Only natural sites",
+            "D": "Only religious sites"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the role of tourism organizations?",
+          "options": {
+            "A": "Only government",
+            "B": "Promote, develop, regulate tourism",
+            "C": "Only private",
+            "D": "No role"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is a national tourism organization?",
+          "options": {
+            "A": "Private hotel chain",
+            "B": "Government body promoting country tourism",
+            "C": "Individual business",
+            "D": "Airline company"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is heritage tourism?",
+          "options": {
+            "A": "Only modern attractions",
+            "B": "Travel to experience historical/cultural heritage",
+            "C": "Beach holidays",
+            "D": "Ski holidays"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is a tourist information center?",
+          "options": {
+            "A": "Hotel booking only",
+            "B": "Facility providing visitor information and assistance",
+            "C": "Transport terminal",
+            "D": "Restaurant"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is interpretation in tourism?",
+          "options": {
+            "A": "Language translation only",
+            "B": "Communicating significance of heritage/culture to visitors",
+            "C": "Hotel services",
+            "D": "Transport scheduling"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
