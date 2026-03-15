@@ -1,0 +1,517 @@
+{
+  "folder": "5090_s21_qp_32",
+  "pdf_name": "5090_s21_qp_32.pdf",
+  "subject_code": "5090",
+  "year": 2021,
+  "session": "Summer (s)",
+  "paper": "32",
+  "variant": "1",
+  "pages": [
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "Which feature is found in plant cells but not animal cells?",
+          "options": {
+            "A": "Cytoplasm",
+            "B": "Nucleus",
+            "C": "Cell wall",
+            "D": "Cell membrane"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "Which organelle carries out photosynthesis?",
+          "options": {
+            "A": "Mitochondrion",
+            "B": "Nucleus",
+            "C": "Chloroplast",
+            "D": "Ribosome"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "Which process requires energy from respiration?",
+          "options": {
+            "A": "Diffusion",
+            "B": "Osmosis",
+            "C": "Active transport",
+            "D": "Transpiration"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "Which molecule stores genetic information?",
+          "options": {
+            "A": "Protein",
+            "B": "Carbohydrate",
+            "C": "DNA",
+            "D": "Lipid"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which part of the digestive system produces pepsin?",
+          "options": {
+            "A": "Mouth",
+            "B": "Small intestine",
+            "C": "Stomach",
+            "D": "Pancreas"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which test indicates the presence of starch?",
+          "options": {
+            "A": "Benedict's test",
+            "B": "Biuret test",
+            "C": "Iodine test",
+            "D": "Emulsion test"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Which component of food is digested by lipase?",
+          "options": {
+            "A": "Protein",
+            "B": "Starch",
+            "C": "Fat",
+            "D": "Sugar"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "8",
+          "question_text": "Which structure in the small intestine increases surface area?",
+          "options": {
+            "A": "Circular muscles",
+            "B": "Longitudinal muscles",
+            "C": "Villi",
+            "D": "Glands"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "Which blood vessel carries blood to the heart from the lower body?",
+          "options": {
+            "A": "Pulmonary vein",
+            "B": "Aorta",
+            "C": "Vena cava",
+            "D": "Pulmonary artery"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "Which heart valve prevents backflow from the aorta?",
+          "options": {
+            "A": "Tricuspid valve",
+            "B": "Mitral valve",
+            "C": "Semilunar valve",
+            "D": "Pulmonary valve"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "image_file": "page_004.png",
+      "questions": [
+        {
+          "question_id": "11",
+          "question_text": "Which adaptation of root hair cells aids absorption?",
+          "options": {
+            "A": "Large vacuole",
+            "B": "Chloroplasts",
+            "C": "Large surface area",
+            "D": "Thick cell wall"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "Which cells in leaves contain most chloroplasts?",
+          "options": {
+            "A": "Spongy mesophyll",
+            "B": "Guard cells",
+            "C": "Palisade mesophyll",
+            "D": "Epidermal cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "Which process is responsible for water movement in xylem?",
+          "options": {
+            "A": "Active transport",
+            "B": "Diffusion",
+            "C": "Transpiration pull",
+            "D": "Osmosis"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "Which gas enters leaves through stomata for photosynthesis?",
+          "options": {
+            "A": "Oxygen",
+            "B": "Nitrogen",
+            "C": "Carbon dioxide",
+            "D": "Hydrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "15",
+          "question_text": "Which stage of meiosis reduces chromosome number?",
+          "options": {
+            "A": "Metaphase",
+            "B": "Anaphase",
+            "C": "Reduction division",
+            "D": "Cytokinesis"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "Which structure protects and nourishes the sperm?",
+          "options": {
+            "A": "Testis",
+            "B": "Epididymis",
+            "C": "Seminal vesicle",
+            "D": "Prostate gland"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "Which hormone stimulates the thickening of the uterus lining?",
+          "options": {
+            "A": "FSH",
+            "B": "LH",
+            "C": "Estrogen",
+            "D": "Progesterone"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "Which part of the sperm contains enzymes to penetrate the egg?",
+          "options": {
+            "A": "Tail",
+            "B": "Midpiece",
+            "C": "Acrosome",
+            "D": "Nucleus"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "Which part of the nervous system includes the brain and spinal cord?",
+          "options": {
+            "A": "Peripheral",
+            "B": "Autonomic",
+            "C": "Central",
+            "D": "Somatic"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "Which structure in the ear detects sound vibrations?",
+          "options": {
+            "A": "Semicircular canals",
+            "B": "Eustachian tube",
+            "C": "Cochlea",
+            "D": "Pinna"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "image_file": "page_005.png",
+      "questions": [
+        {
+          "question_id": "21",
+          "question_text": "Which cells in the eye are sensitive to dim light?",
+          "options": {
+            "A": "Cones",
+            "B": "Bipolar cells",
+            "C": "Rods",
+            "D": "Ganglion cells"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "22",
+          "question_text": "Which response to light is shown by shoots?",
+          "options": {
+            "A": "Negative phototropism",
+            "B": "Geotropism",
+            "C": "Positive phototropism",
+            "D": "Hydrotropism"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "23",
+          "question_text": "Which hormone inhibits seed germination?",
+          "options": {
+            "A": "Auxin",
+            "B": "Gibberellin",
+            "C": "Abscisic acid",
+            "D": "Ethylene"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "24",
+          "question_text": "Which nutrient deficiency causes kwashiorkor?",
+          "options": {
+            "A": "Vitamin C",
+            "B": "Iron",
+            "C": "Protein",
+            "D": "Iodine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "25",
+          "question_text": "Which disease is caused by Plasmodium?",
+          "options": {
+            "A": "Cholera",
+            "B": "Tuberculosis",
+            "C": "Malaria",
+            "D": "Measles"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "26",
+          "question_text": "Which pathogen causes influenza?",
+          "options": {
+            "A": "Bacterium",
+            "B": "Fungus",
+            "C": "Virus",
+            "D": "Protozoan"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "27",
+          "question_text": "Which cells engulf and destroy pathogens?",
+          "options": {
+            "A": "Lymphocytes",
+            "B": "Red blood cells",
+            "C": "Phagocytes",
+            "D": "Platelets"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "28",
+          "question_text": "Which type of immunity involves injecting antibodies?",
+          "options": {
+            "A": "Natural active",
+            "B": "Artificial active",
+            "C": "Artificial passive",
+            "D": "Natural passive"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "29",
+          "question_text": "Which process describes maintaining a stable internal environment?",
+          "options": {
+            "A": "Excretion",
+            "B": "Respiration",
+            "C": "Homeostasis",
+            "D": "Reproduction"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "30",
+          "question_text": "Which organ produces bile?",
+          "options": {
+            "A": "Gall bladder",
+            "B": "Pancreas",
+            "C": "Liver",
+            "D": "Stomach"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "image_file": "page_006.png",
+      "questions": [
+        {
+          "question_id": "31",
+          "question_text": "Which part of the kidney contains the glomerulus?",
+          "options": {
+            "A": "Medulla",
+            "B": "Pelvis",
+            "C": "Cortex",
+            "D": "Ureter"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "32",
+          "question_text": "Which substance is selectively reabsorbed in the nephron?",
+          "options": {
+            "A": "Urea",
+            "B": "Creatinine",
+            "C": "Glucose",
+            "D": "Excess water"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "33",
+          "question_text": "Which hormone stimulates water reabsorption?",
+          "options": {
+            "A": "Insulin",
+            "B": "Glucagon",
+            "C": "ADH",
+            "D": "Thyroxine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "34",
+          "question_text": "Which response to cold reduces heat loss from skin?",
+          "options": {
+            "A": "Sweating",
+            "B": "Vasodilation",
+            "C": "Vasoconstriction",
+            "D": "Panting"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "35",
+          "question_text": "Which organ is the main excretory organ?",
+          "options": {
+            "A": "Liver",
+            "B": "Lung",
+            "C": "Kidney",
+            "D": "Skin"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "36",
+          "question_text": "Which nitrogenous waste is excreted by the kidneys?",
+          "options": {
+            "A": "Ammonia",
+            "B": "Uric acid",
+            "C": "Urea",
+            "D": "Creatine"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "37",
+          "question_text": "Which process in the kidney removes useful substances back to blood?",
+          "options": {
+            "A": "Filtration",
+            "B": "Secretion",
+            "C": "Reabsorption",
+            "D": "Excretion"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "38",
+          "question_text": "Which adaptation reduces water loss in desert plants?",
+          "options": {
+            "A": "Broad leaves",
+            "B": "Shallow roots",
+            "C": "Thick cuticle",
+            "D": "Large stomata"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "39",
+          "question_text": "Which factor contributes to the greenhouse effect?",
+          "options": {
+            "A": "Oxygen",
+            "B": "Nitrogen",
+            "C": "Carbon dioxide",
+            "D": "Argon"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "40",
+          "question_text": "Which conservation method involves protecting species in natural habitat?",
+          "options": {
+            "A": "Zoos",
+            "B": "Botanical gardens",
+            "C": "In-situ conservation",
+            "D": "Gene banks"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 40,
+  "total_marks": 40
+}
