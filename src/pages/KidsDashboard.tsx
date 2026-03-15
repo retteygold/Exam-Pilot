@@ -80,8 +80,8 @@ const achievements = [
 export function KidsDashboard() {
   const navigate = useNavigate()
   const { profile } = useUserStore()
-  const [stars, setStars] = useState(150)
-  const [streak, setStreak] = useState(5)
+  const [stars] = useState(150)
+  const [streak] = useState(5)
 
   const gradeLabel = profile?.grade || 'Grade 1'
 
