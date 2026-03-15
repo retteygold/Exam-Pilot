@@ -1,0 +1,271 @@
+{
+  "folder": "2022-unit2-2022-10-WCH12-01-qp",
+  "pdf_name": "2022-unit2-2022-10-WCH12-01-qp.pdf",
+  "subject_code": "WCH",
+  "year": 2022,
+  "session": "October",
+  "paper": "01",
+  "unit": "2",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the atomic number?",
+          "options": {
+            "A": "Number of neutrons",
+            "B": "Number of protons",
+            "C": "Number of electrons",
+            "D": "Mass of atom"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is an isotope?",
+          "options": {
+            "A": "Atoms with same protons but different neutrons",
+            "B": "Atoms with different protons",
+            "C": "Atoms with same mass",
+            "D": "Ions with charge"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "How many electrons can the first shell hold?",
+          "options": {
+            "A": "2",
+            "B": "8",
+            "C": "18",
+            "D": "32"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the electron configuration of oxygen?",
+          "options": {
+            "A": "1s²2s²2p²",
+            "B": "1s²2s²2p⁴",
+            "C": "1s²2s²2p⁶",
+            "D": "1s²2s²2p⁶3s²"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is ionization energy?",
+          "options": {
+            "A": "Energy to add electron",
+            "B": "Energy to remove electron from gaseous atom",
+            "C": "Energy to form bond",
+            "D": "Energy of photon"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "Which has the highest first ionization energy?",
+          "options": {
+            "A": "Na",
+            "B": "Mg",
+            "C": "Al",
+            "D": "Si"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What type of bonding is in NaCl?",
+          "options": {
+            "A": "Covalent",
+            "B": "Metallic",
+            "C": "Ionic",
+            "D": "Hydrogen"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is electronegativity?",
+          "options": {
+            "A": "Energy to remove electron",
+            "B": "Ability to attract bonding electrons",
+            "C": "Energy to add electron",
+            "D": "Size of atom"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What shape is methane (CH₄)?",
+          "options": {
+            "A": "Linear",
+            "B": "Trigonal planar",
+            "C": "Tetrahedral",
+            "D": "Octahedral"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is the bond angle in water?",
+          "options": {
+            "A": "109.5°",
+            "B": "120°",
+            "C": "104.5°",
+            "D": "180°"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the oxidation state of oxygen in H₂O?",
+          "options": {
+            "A": "+2",
+            "B": "-2",
+            "C": "0",
+            "D": "+1"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is a reducing agent?",
+          "options": {
+            "A": "Accepts electrons",
+            "B": "Donates electrons",
+            "C": "Forms bonds",
+            "D": "Catalyst"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the molar mass of CO₂?",
+          "options": {
+            "A": "28 g/mol",
+            "B": "44 g/mol",
+            "C": "32 g/mol",
+            "D": "12 g/mol"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the ideal gas equation?",
+          "options": {
+            "A": "PV = nRT",
+            "B": "P = nRT/V",
+            "C": "PV = mRT",
+            "D": "P = nT/R"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What are the units of concentration in mol/dm³?",
+          "options": {
+            "A": "Moles per liter",
+            "B": "Grams per liter",
+            "C": "Molarity",
+            "D": "Both A and C"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the mole ratio in 2H₂ + O₂ → 2H₂O?",
+          "options": {
+            "A": "1:1:1",
+            "B": "2:1:2",
+            "C": "2:2:2",
+            "D": "1:2:1"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is an exothermic reaction?",
+          "options": {
+            "A": "Absorbs heat",
+            "B": "Releases heat",
+            "C": "No heat change",
+            "D": "Requires light"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What does ΔH represent?",
+          "options": {
+            "A": "Entropy change",
+            "B": "Enthalpy change",
+            "C": "Gibbs free energy",
+            "D": "Activation energy"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is activation energy?",
+          "options": {
+            "A": "Total energy of products",
+            "B": "Minimum energy for reaction to occur",
+            "C": "Energy released",
+            "D": "Bond energy"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What does a catalyst do?",
+          "options": {
+            "A": "Increases activation energy",
+            "B": "Lowers activation energy",
+            "C": "Changes products",
+            "D": "Increases enthalpy change"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

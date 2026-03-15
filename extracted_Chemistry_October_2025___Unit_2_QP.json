@@ -1,0 +1,271 @@
+{
+  "folder": "October 2025 - Unit 2 QP",
+  "pdf_name": "October 2025 - Unit 2 QP.pdf",
+  "subject_code": "WCH",
+  "year": 2025,
+  "session": "October 2025",
+  "paper": "2",
+  "unit": "2",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the mass number?",
+          "options": {
+            "A": "Number of protons",
+            "B": "Number of neutrons",
+            "C": "Protons + neutrons",
+            "D": "Electrons only"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is relative atomic mass?",
+          "options": {
+            "A": "Mass of one atom",
+            "B": "Average mass of isotopes",
+            "C": "Mass of protons",
+            "D": "Neutron mass"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "How many orbitals in p subshell?",
+          "options": {
+            "A": "1",
+            "B": "3",
+            "C": "5",
+            "D": "7"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is Hund's rule?",
+          "options": {
+            "A": "Electrons pair up first",
+            "B": "Electrons occupy separate orbitals with parallel spins first",
+            "C": "Orbitals fill by energy",
+            "D": "Max 2 electrons per orbital"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "Which element has highest electronegativity?",
+          "options": {
+            "A": "Na",
+            "B": "Cl",
+            "C": "F",
+            "D": "O"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What causes ionization energy to increase across period?",
+          "options": {
+            "A": "More electron shells",
+            "B": "Increased nuclear charge with same shielding",
+            "C": "Less protons",
+            "D": "More shielding"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "Why is there a drop in IE between Mg and Al?",
+          "options": {
+            "A": "More protons",
+            "B": "Electron in higher energy p orbital",
+            "C": "Less shielding",
+            "D": "More shielding"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is a dative covalent bond?",
+          "options": {
+            "A": "Both atoms donate electrons",
+            "B": "One atom donates both electrons",
+            "C": "No electrons shared",
+            "D": "Ions attracted"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the shape of ammonia (NH₃)?",
+          "options": {
+            "A": "Trigonal planar",
+            "B": "Tetrahedral",
+            "C": "Trigonal pyramidal",
+            "D": "Bent"
+          },
+          "correct_answer": "C",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What causes bond polarity?",
+          "options": {
+            "A": "Same electronegativity",
+            "B": "Difference in electronegativity",
+            "C": "Same atoms",
+            "D": "Bond length"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What are London forces?",
+          "options": {
+            "A": "Forces between ions",
+            "B": "Temporary dipole-induced dipole forces",
+            "C": "Hydrogen bonds",
+            "D": "Covalent bonds"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the bond angle in CO₂?",
+          "options": {
+            "A": "104.5°",
+            "B": "107°",
+            "C": "120°",
+            "D": "180°"
+          },
+          "correct_answer": "D",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is oxidation?",
+          "options": {
+            "A": "Gain of electrons",
+            "B": "Loss of electrons",
+            "C": "Gain of hydrogen",
+            "D": "Loss of oxygen"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the oxidation state of sulfur in SO₄²⁻?",
+          "options": {
+            "A": "+4",
+            "B": "+6",
+            "C": "+2",
+            "D": "-2"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a disproportionation reaction?",
+          "options": {
+            "A": "Same element oxidized and reduced",
+            "B": "Two elements oxidized",
+            "C": "Two elements reduced",
+            "D": "No change in oxidation"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the empirical formula?",
+          "options": {
+            "A": "Actual formula of molecule",
+            "B": "Simplest whole number ratio of atoms",
+            "C": "Molecular mass",
+            "D": "Structural formula"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the molar volume of gas at RTP?",
+          "options": {
+            "A": "22.4 dm³",
+            "B": "24 dm³",
+            "C": "1 dm³",
+            "D": "12 dm³"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is percentage yield?",
+          "options": {
+            "A": "(Theoretical/Actual) × 100",
+            "B": "(Actual/Theoretical) × 100",
+            "C": "Mass of product",
+            "D": "Volume of gas"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is atom economy?",
+          "options": {
+            "A": "Percentage of desired product in total products",
+            "B": "Mass of reactants",
+            "C": "Energy change",
+            "D": "Rate of reaction"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is the Arrhenius equation?",
+          "options": {
+            "A": "k = A × e^(-Ea/RT)",
+            "B": "k = A / e^(Ea/RT)",
+            "C": "k = Ea / RT",
+            "D": "k = A + Ea"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
