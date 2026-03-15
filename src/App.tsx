@@ -13,6 +13,7 @@ import { WordSearchGame } from './games/WordSearchGame'
 import { CrosswordGame } from './games/CrosswordGame'
 import { FindOddOneOut } from './games/FindOddOneOut'
 import { WhichOneCan } from './games/WhichOneCan'
+import { MemoryGame } from './games/MemoryGame'
 import { Quiz } from './pages/Quiz'
 
 function App() {
@@ -149,6 +150,16 @@ function App() {
         element={
           isSetupComplete && isYoungStudent ? (
             <WhichOneCan onComplete={() => {}} onExit={() => window.location.href = '/'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/memory" 
+        element={
+          isSetupComplete && isYoungStudent ? (
+            <MemoryGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
           )

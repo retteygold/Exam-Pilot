@@ -106,6 +106,15 @@ const games: GameCard[] = [
     color: 'text-violet-400',
     bgGradient: 'from-violet-500/20 to-fuchsia-500/20',
     points: 10
+  },
+  {
+    id: 'memory',
+    title: 'Memory Match',
+    description: 'Match the pairs!',
+    icon: Grid3X3,
+    color: 'text-rose-400',
+    bgGradient: 'from-rose-500/20 to-pink-500/20',
+    points: 15
   }
 ]
 
@@ -164,7 +173,8 @@ export function KidsDashboard() {
       'word-search': '/game/word-search',
       'crossword': '/game/crossword',
       'find-odd': '/game/find-odd',
-      'which-can': '/game/which-can'
+      'which-can': '/game/which-can',
+      'memory': '/game/memory'
     }
     
     if (interactiveGames[gameId]) {
