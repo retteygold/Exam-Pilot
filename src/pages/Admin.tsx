@@ -3,7 +3,7 @@ import type { ClipboardEvent } from 'react'
 import { supabase } from '../lib/supabase'
 import type { Question } from '../types'
 import { canUseSupabaseQuestions, deleteQuestion, fetchAllQuestionsFromSupabase, upsertQuestion } from '../services/questionsSupabase'
-import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText, Users, Star, Trophy, Activity, RefreshCw, RotateCcw, Edit2, X } from 'lucide-react'
+import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText, Users, Star, Trophy, Activity, RotateCcw, Edit2 } from 'lucide-react'
 import { useKidsStore } from '../store/kidsStore'
 
 function makeEmptyQuestion(): Question {
@@ -373,6 +373,147 @@ export function Admin() {
       </div>
 
       <div className="p-4 grid grid-cols-1 lg:grid-cols-12 gap-4">
+        {/* Kids Tab Content */}
+        {activeTab === 'kids' && (
+          <div className="lg:col-span-12 space-y-4">
+            {/* Kids Stats Overview */}
+            <div className="grid grid-cols-4 gap-4">
+              <div className="p-4 bg-slate-800 rounded-xl">
+                <div className="flex items-center gap-2 mb-2">
+                  <Users className="w-5 h-5 text-blue-400" />
+                  <span className="text-sm text-slate-400">Total Kids</span>
+                </div>
+                <div className="text-2xl font-bold">{profiles.length}</div>
+              </div>
+              <div className="p-4 bg-slate-800 rounded-xl">
+                <div className="flex items-center gap-2 mb-2">
+                  <Activity className="w-5 h-5 text-green-400" />
+                  <span className="text-sm text-slate-400">Total Sessions</span>
+                </div>
+                <div className="text-2xl font-bold">{sessions.length}</div>
+              </div>
+              <div className="p-4 bg-slate-800 rounded-xl">
+                <div className="flex items-center gap-2 mb-2">
+                  <Star className="w-5 h-5 text-yellow-400" />
+                  <span className="text-sm text-slate-400">Total Stars</span>
+                </div>
+                <div className="text-2xl font-bold">
+                  {sessions.reduce((sum, s) => sum + s.starsEarned, 0)}
+                </div>
+              </div>
+              <div className="p-4 bg-slate-800 rounded-xl">
+                <div className="flex items-center gap-2 mb-2">
+                  <Trophy className="w-5 h-5 text-purple-400" />
+                  <span className="text-sm text-slate-400">Achievements</span>
+                </div>
+                <div className="text-2xl font-bold">{achievements.length}</div>
+              </div>
+            </div>
+
+            {/* Leaderboard */}
+            <div className="p-4 bg-slate-800 rounded-xl">
+              <h3 className="font-semibold mb-4 flex items-center gap-2">
+                <Trophy className="w-5 h-5 text-yellow-400" />
+                Kids Leaderboard
+              </h3>
+              <div className="space-y-2">
+                {getLeaderboard().map((entry, idx) => (
+                  <div key={entry.kid.id} className="flex items-center gap-3 p-3 bg-slate-700/50 rounded-lg">
+                    <div className="w-8 text-center font-bold text-lg">
+                      {idx === 0 ? '🥇' : idx === 1 ? '🥈' : idx === 2 ? '🥉' : `#${idx + 1}`}
+                    </div>
+                    <div className="text-2xl">{entry.kid.avatar}</div>
+                    <div className="flex-1">
+                      <div className="font-medium">{entry.kid.name}</div>
+                      <div className="text-xs text-slate-400">{entry.kid.grade}</div>
+                    </div>
+                    <div className="text-right">
+                      <div className="flex items-center gap-1 text-yellow-400">
+                        <Star className="w-4 h-4" />
+                        <span className="font-bold">{entry.totalStars}</span>
+                      </div>
+                      <div className="text-xs text-slate-400">{entry.sessions} games</div>
+                    </div>
+                    <div className="flex gap-1">
+                      <button
+                        onClick={() => {
+                          const newName = prompt('New name:', entry.kid.name)
+                          if (newName) updateKid(entry.kid.id, { name: newName })
+                        }}
+                        className="p-2 rounded-lg bg-slate-600 hover:bg-slate-500"
+                        title="Edit"
+                      >
+                        <Edit2 className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={() => {
+                          if (confirm(`Reset stats for ${entry.kid.name}?`)) {
+                            resetKidStats(entry.kid.id)
+                          }
+                        }}
+                        className="p-2 rounded-lg bg-yellow-600/50 hover:bg-yellow-600"
+                        title="Reset Stats"
+                      >
+                        <RotateCcw className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={() => {
+                          if (confirm(`Delete ${entry.kid.name}?`)) {
+                            deleteKid(entry.kid.id)
+                          }
+                        }}
+                        className="p-2 rounded-lg bg-red-600/50 hover:bg-red-600"
+                        title="Delete"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    </div>
+                  </div>
+                ))}
+                {profiles.length === 0 && (
+                  <div className="text-center text-slate-500 py-8">No kids registered yet</div>
+                )}
+              </div>
+            </div>
+
+            {/* All Sessions */}
+            <div className="p-4 bg-slate-800 rounded-xl">
+              <h3 className="font-semibold mb-4 flex items-center gap-2">
+                <Activity className="w-5 h-5 text-green-400" />
+                Recent Activity
+              </h3>
+              <div className="max-h-64 overflow-y-auto space-y-2">
+                {[...sessions].sort((a, b) => b.playedAt - a.playedAt).slice(0, 50).map(session => {
+                  const kid = profiles.find(p => p.id === session.kidId)
+                  return (
+                    <div key={session.id} className="flex items-center gap-3 p-2 bg-slate-700/30 rounded-lg text-sm">
+                      <div className="text-xl">{kid?.avatar || '👤'}</div>
+                      <div className="flex-1">
+                        <span className="font-medium">{kid?.name || 'Unknown'}</span>
+                        <span className="text-slate-400"> played </span>
+                        <span className="text-blue-400">{session.gameType}</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <span className="text-yellow-400">+{session.starsEarned}⭐</span>
+                        <span className="text-slate-400">{session.score}/{session.totalQuestions}</span>
+                        <span className="text-xs text-slate-500">
+                          {new Date(session.playedAt).toLocaleDateString()}
+                        </span>
+                      </div>
+                    </div>
+                  )
+                })}
+                {sessions.length === 0 && (
+                  <div className="text-center text-slate-500 py-8">No sessions recorded yet</div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Questions Tab Content */}
+        {activeTab === 'questions' && (
+        <>
         {/* Left Panel - Filters & List */}
         <div className="lg:col-span-4 space-y-3">
           {/* Filters */}
@@ -727,6 +868,8 @@ export function Admin() {
             </div>
           )}
         </div>
+        </>
+        )}
       </div>
     </div>
   )

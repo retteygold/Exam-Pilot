@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { BarChart3, Home, ChevronLeft, FileText, Code } from 'lucide-react'
+import { BarChart3, Home, ChevronLeft, FileText, Code, RefreshCw } from 'lucide-react'
 
 interface LayoutProps {
   children: React.ReactNode
@@ -51,7 +51,14 @@ export function Layout({ children }: LayoutProps) {
           </div>
         </div>
         
-        <div className="flex items-center gap-4 text-sm text-slate-400">
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => window.location.reload()}
+            className="p-2 rounded-lg hover:bg-slate-700 transition-colors"
+            title="Refresh App"
+          >
+            <RefreshCw className="w-4 h-4" />
+          </button>
           <span>{stats.answered} answered</span>
           <span className="text-emerald-400">{stats.correct} correct</span>
         </div>
