@@ -1,0 +1,271 @@
+{
+  "folder": "5090_w21_qp_12",
+  "pdf_name": "5090_w21_qp_12.pdf",
+  "subject_code": "5090",
+  "year": 2021,
+  "session": "Winter",
+  "paper": "12",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the basic unit of life?",
+          "options": {
+            "A": "Tissue",
+            "B": "Cell",
+            "C": "Organ",
+            "D": "Organism"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the function of the cell membrane?",
+          "options": {
+            "A": "Produce energy",
+            "B": "Control what enters and leaves the cell",
+            "C": "Store genetic material",
+            "D": "Synthesize proteins"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the function of the nucleus?",
+          "options": {
+            "A": "Produce energy",
+            "B": "Control cell activities and contain genetic material",
+            "C": "Digest waste",
+            "D": "Store water"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the function of mitochondria?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Cellular respiration and energy production",
+            "C": "Protein synthesis",
+            "D": "Waste removal"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the function of chloroplasts?",
+          "options": {
+            "A": "Cellular respiration",
+            "B": "Photosynthesis",
+            "C": "Protein synthesis",
+            "D": "Digestion"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the function of the cell wall?",
+          "options": {
+            "A": "Control cell contents",
+            "B": "Provide support and protection to plant cells",
+            "C": "Produce energy",
+            "D": "Store genetic material"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the function of ribosomes?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Protein synthesis",
+            "C": "Energy production",
+            "D": "Waste storage"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the function of vacuoles in plant cells?",
+          "options": {
+            "A": "Energy production",
+            "B": "Store water, nutrients and maintain cell shape",
+            "C": "Protein synthesis",
+            "D": "Cell division"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is diffusion?",
+          "options": {
+            "A": "Movement of water across membrane",
+            "B": "Movement of particles from high to low concentration",
+            "C": "Active transport of molecules",
+            "D": "Cell division"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is osmosis?",
+          "options": {
+            "A": "Movement of any particles",
+            "B": "Diffusion of water molecules across partially permeable membrane",
+            "C": "Active transport",
+            "D": "Photosynthesis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is active transport?",
+          "options": {
+            "A": "Passive movement of molecules",
+            "B": "Movement of molecules against concentration gradient using energy",
+            "C": "Diffusion of water",
+            "D": "Osmosis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is photosynthesis?",
+          "options": {
+            "A": "Breakdown of glucose",
+            "B": "Process by which plants make food using light energy",
+            "C": "Cellular respiration",
+            "D": "Protein synthesis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What are the raw materials for photosynthesis?",
+          "options": {
+            "A": "Glucose and oxygen",
+            "B": "Carbon dioxide and water",
+            "C": "Oxygen and water",
+            "D": "Glucose and carbon dioxide"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What are the products of photosynthesis?",
+          "options": {
+            "A": "Carbon dioxide and water",
+            "B": "Glucose and oxygen",
+            "C": "Water and oxygen",
+            "D": "Carbon dioxide and glucose"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the equation for photosynthesis?",
+          "options": {
+            "A": "Glucose → Carbon dioxide + Water",
+            "B": "Carbon dioxide + Water → Glucose + Oxygen",
+            "C": "Oxygen + Glucose → Carbon dioxide + Water",
+            "D": "Water → Oxygen + Hydrogen"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is cellular respiration?",
+          "options": {
+            "A": "Process of making food",
+            "B": "Breakdown of glucose to release energy",
+            "C": "Process of photosynthesis",
+            "D": "Building proteins"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the equation for aerobic respiration?",
+          "options": {
+            "A": "Glucose → Lactic acid",
+            "B": "Glucose + Oxygen → Carbon dioxide + Water + Energy",
+            "C": "Carbon dioxide + Water → Glucose + Oxygen",
+            "D": "Oxygen → Carbon dioxide"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is anaerobic respiration in humans?",
+          "options": {
+            "A": "Glucose + Oxygen → Energy",
+            "B": "Glucose → Lactic acid + Energy",
+            "C": "Glucose → Alcohol + Carbon dioxide",
+            "D": "Photosynthesis"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the function of enzymes?",
+          "options": {
+            "A": "Provide energy",
+            "B": "Biological catalysts that speed up chemical reactions",
+            "C": "Store genetic information",
+            "D": "Transport oxygen"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What factors affect enzyme activity?",
+          "options": {
+            "A": "Only temperature",
+            "B": "Temperature and pH",
+            "C": "Only pH",
+            "D": "Only concentration"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

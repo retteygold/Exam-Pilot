@@ -1,0 +1,271 @@
+{
+  "folder": "5090_w23_qp_12",
+  "pdf_name": "5090_w23_qp_12.pdf",
+  "subject_code": "5090",
+  "year": 2023,
+  "session": "Winter",
+  "paper": "12",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the function of xylem?",
+          "options": {
+            "A": "Transport food",
+            "B": "Transport water and minerals from roots to leaves",
+            "C": "Store nutrients",
+            "D": "Produce energy"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is the function of phloem?",
+          "options": {
+            "A": "Transport water",
+            "B": "Transport food (sugars) from leaves to other parts",
+            "C": "Provide support",
+            "D": "Absorb minerals"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is transpiration?",
+          "options": {
+            "A": "Absorption of water",
+            "B": "Loss of water vapor from plant leaves",
+            "C": "Photosynthesis",
+            "D": "Respiration"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the function of root hair cells?",
+          "options": {
+            "A": "Photosynthesis",
+            "B": "Absorb water and minerals",
+            "C": "Transport food",
+            "D": "Reproduction"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is the human digestive system?",
+          "options": {
+            "A": "Only stomach and intestines",
+            "B": "Organs that break down food and absorb nutrients",
+            "C": "Only the mouth",
+            "D": "Only the liver"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is the function of the stomach?",
+          "options": {
+            "A": "Absorb nutrients",
+            "B": "Break down food using acid and enzymes",
+            "C": "Produce bile",
+            "D": "Absorb water"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is the function of the small intestine?",
+          "options": {
+            "A": "Only water absorption",
+            "B": "Digestion and absorption of nutrients",
+            "C": "Produce digestive juices",
+            "D": "Store food"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is the function of the large intestine?",
+          "options": {
+            "A": "Digest proteins",
+            "B": "Absorb water and form feces",
+            "C": "Produce enzymes",
+            "D": "Break down fats"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is the function of the heart?",
+          "options": {
+            "A": "Produce blood",
+            "B": "Pump blood around the body",
+            "C": "Clean blood",
+            "D": "Store blood"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What are the components of blood?",
+          "options": {
+            "A": "Only red blood cells",
+            "B": "Red blood cells, white blood cells, platelets, plasma",
+            "C": "Only plasma",
+            "D": "Only white blood cells"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is the function of red blood cells?",
+          "options": {
+            "A": "Fight infection",
+            "B": "Transport oxygen using hemoglobin",
+            "C": "Clot blood",
+            "D": "Produce antibodies"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is the function of white blood cells?",
+          "options": {
+            "A": "Transport oxygen",
+            "B": "Fight infection and disease",
+            "C": "Clot blood",
+            "D": "Carry nutrients"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is the function of platelets?",
+          "options": {
+            "A": "Transport oxygen",
+            "B": "Clot blood to stop bleeding",
+            "C": "Fight infection",
+            "D": "Produce plasma"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is the human breathing system?",
+          "options": {
+            "A": "Only lungs",
+            "B": "Organs involved in gas exchange (nose, trachea, bronchi, lungs)",
+            "C": "Only trachea",
+            "D": "Only diaphragm"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is the function of alveoli?",
+          "options": {
+            "A": "Produce mucus",
+            "B": "Gas exchange between air and blood",
+            "C": "Filter air",
+            "D": "Warm air"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is the human excretory system?",
+          "options": {
+            "A": "Only kidneys",
+            "B": "Organs that remove waste products from the body",
+            "C": "Only bladder",
+            "D": "Only skin"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is the function of kidneys?",
+          "options": {
+            "A": "Store urine",
+            "B": "Filter blood and produce urine",
+            "C": "Transport urine",
+            "D": "Remove feces"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is the nervous system?",
+          "options": {
+            "A": "Only brain",
+            "B": "System that coordinates body activities using electrical signals",
+            "C": "Only spinal cord",
+            "D": "Only nerves"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is the function of the brain?",
+          "options": {
+            "A": "Only control movement",
+            "B": "Control and coordinate body activities and process information",
+            "C": "Only produce hormones",
+            "D": "Only store memories"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is a reflex action?",
+          "options": {
+            "A": "A learned response",
+            "B": "An automatic rapid response to a stimulus",
+            "C": "A voluntary action",
+            "D": "A slow response"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

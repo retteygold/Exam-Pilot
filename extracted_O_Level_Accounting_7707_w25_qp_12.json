@@ -1,0 +1,271 @@
+{
+  "folder": "7707_w25_qp_12",
+  "pdf_name": "7707_w25_qp_12.pdf",
+  "subject_code": "7707",
+  "year": 2025,
+  "session": "Winter",
+  "paper": "12",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is a provision for doubtful debts?",
+          "options": {
+            "A": "A debt known to be bad",
+            "B": "An estimate of debts that may not be paid",
+            "C": "A cash discount",
+            "D": "A trade discount"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is a bad debt?",
+          "options": {
+            "A": "A debt that will definitely be paid",
+            "B": "A debt that is known to be uncollectible",
+            "C": "A cash discount allowed",
+            "D": "A credit sale"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the effect of bad debts on profit?",
+          "options": {
+            "A": "Increases profit",
+            "B": "Decreases profit",
+            "C": "No effect on profit",
+            "D": "Increases assets"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is a reserve in accounting?",
+          "options": {
+            "A": "A liability",
+            "B": "An appropriation of profit retained in the business",
+            "C": "An expense",
+            "D": "A revenue"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is accumulated fund?",
+          "options": {
+            "A": "Capital in a sole trader business",
+            "B": "Capital in a non-profit organization",
+            "C": "A loan",
+            "D": "A reserve"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is a receipts and payments account?",
+          "options": {
+            "A": "A trading account",
+            "B": "A summary of cash transactions for non-profit organizations",
+            "C": "A profit and loss account",
+            "D": "A balance sheet"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is an income and expenditure account?",
+          "options": {
+            "A": "A cash book",
+            "B": "A profit and loss account for non-profit organizations",
+            "C": "A receipts and payments account",
+            "D": "A bank statement"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is a subscription in arrears?",
+          "options": {
+            "A": "Subscription paid in advance",
+            "B": "Subscription owed by members but not yet paid",
+            "C": "Subscription paid on time",
+            "D": "Life membership"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is a subscription in advance?",
+          "options": {
+            "A": "Subscription not yet paid",
+            "B": "Subscription paid before it is due",
+            "C": "Bad debt",
+            "D": "Life membership"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is a manufacturing account?",
+          "options": {
+            "A": "An account showing sales",
+            "B": "An account showing cost of production",
+            "C": "An account showing profit",
+            "D": "An account showing assets"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What are direct materials in manufacturing?",
+          "options": {
+            "A": "Materials used in factory overheads",
+            "B": "Raw materials used in production of finished goods",
+            "C": "Office supplies",
+            "D": "Selling expenses"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What are direct labour costs?",
+          "options": {
+            "A": "Salaries of office staff",
+            "B": "Wages of workers directly involved in production",
+            "C": "Management salaries",
+            "D": "Advertising costs"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What are factory overheads?",
+          "options": {
+            "A": "Direct materials",
+            "B": "Indirect costs of manufacturing",
+            "C": "Direct labour",
+            "D": "Prime cost"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is prime cost?",
+          "options": {
+            "A": "Total factory cost",
+            "B": "Direct materials plus direct labour",
+            "C": "Factory overheads",
+            "D": "Cost of goods sold"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a partnership in business?",
+          "options": {
+            "A": "A sole trader business",
+            "B": "A business owned by two or more persons",
+            "C": "A limited company",
+            "D": "A non-profit organization"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is a partnership agreement?",
+          "options": {
+            "A": "A tax document",
+            "B": "A document setting out terms of partnership",
+            "C": "A bank loan",
+            "D": "A receipt"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is an appropriation account?",
+          "options": {
+            "A": "A trading account",
+            "B": "An account showing how profit is divided among partners",
+            "C": "A balance sheet",
+            "D": "A cash book"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is a limited company?",
+          "options": {
+            "A": "A partnership",
+            "B": "A business with separate legal personality from owners",
+            "C": "A sole trader",
+            "D": "A club"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What are ordinary shares?",
+          "options": {
+            "A": "Preference shares",
+            "B": "Shares with voting rights but no fixed dividend",
+            "C": "Debentures",
+            "D": "Loans"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What are preference shares?",
+          "options": {
+            "A": "Shares with voting rights",
+            "B": "Shares with fixed dividend but usually no voting rights",
+            "C": "Ordinary shares",
+            "D": "Debentures"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

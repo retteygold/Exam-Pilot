@@ -1,0 +1,271 @@
+{
+  "folder": "5090_s25_qp_12",
+  "pdf_name": "5090_s25_qp_12.pdf",
+  "subject_code": "5090",
+  "year": 2025,
+  "session": "Summer",
+  "paper": "12",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is the endocrine system?",
+          "options": {
+            "A": "Nervous system",
+            "B": "System of glands that produce hormones",
+            "C": "Digestive system",
+            "D": "Circulatory system"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is a hormone?",
+          "options": {
+            "A": "An enzyme",
+            "B": "Chemical messenger produced by glands",
+            "C": "A nutrient",
+            "D": "A waste product"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is the function of insulin?",
+          "options": {
+            "A": "Increase blood glucose",
+            "B": "Decrease blood glucose levels",
+            "C": "Digest food",
+            "D": "Produce energy"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is the function of adrenaline?",
+          "options": {
+            "A": "Digest food",
+            "B": "Prepare body for emergency action (fight or flight)",
+            "C": "Lower heart rate",
+            "D": "Produce insulin"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is reproduction?",
+          "options": {
+            "A": "Growth of organism",
+            "B": "Process by which organisms produce offspring",
+            "C": "Repair of tissues",
+            "D": "Nutrition"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is sexual reproduction?",
+          "options": {
+            "A": "Only one parent",
+            "B": "Fusion of male and female gametes from two parents",
+            "C": "Cloning",
+            "D": "Budding"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is a gamete?",
+          "options": {
+            "A": "Body cell",
+            "B": "Sex cell (sperm or egg)",
+            "C": "Nerve cell",
+            "D": "Muscle cell"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is fertilization?",
+          "options": {
+            "A": "Division of cells",
+            "B": "Fusion of male and female gametes",
+            "C": "Growth of embryo",
+            "D": "Birth of offspring"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is pollination?",
+          "options": {
+            "A": "Fusion of gametes",
+            "B": "Transfer of pollen from anther to stigma",
+            "C": "Seed germination",
+            "D": "Fruit development"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is seed dispersal?",
+          "options": {
+            "A": "Production of seeds",
+            "B": "Spreading of seeds away from parent plant",
+            "C": "Pollination",
+            "D": "Fertilization"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is germination?",
+          "options": {
+            "A": "Production of seeds",
+            "B": "Growth of a seed into a seedling",
+            "C": "Pollination",
+            "D": "Fruit formation"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What are the conditions needed for germination?",
+          "options": {
+            "A": "Only water",
+            "B": "Water, oxygen, and suitable temperature",
+            "C": "Only light",
+            "D": "Only warmth"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is genetics?",
+          "options": {
+            "A": "Study of cells",
+            "B": "Study of heredity and variation",
+            "C": "Study of ecosystems",
+            "D": "Study of evolution"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is a gene?",
+          "options": {
+            "A": "A protein",
+            "B": "A unit of heredity that codes for a characteristic",
+            "C": "A cell",
+            "D": "An organ"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is DNA?",
+          "options": {
+            "A": "A protein",
+            "B": "Genetic material that carries hereditary information",
+            "C": "A type of cell",
+            "D": "An enzyme"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is a chromosome?",
+          "options": {
+            "A": "A cell",
+            "B": "Structure made of DNA and proteins carrying genes",
+            "C": "An enzyme",
+            "D": "A hormone"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is mitosis?",
+          "options": {
+            "A": "Cell division producing gametes",
+            "B": "Cell division producing two identical daughter cells",
+            "C": "Fusion of cells",
+            "D": "Cell death"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is meiosis?",
+          "options": {
+            "A": "Cell division for growth",
+            "B": "Cell division producing four genetically different gametes",
+            "C": "Cell fusion",
+            "D": "Cell repair"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is a dominant allele?",
+          "options": {
+            "A": "Allele that is always hidden",
+            "B": "Allele that expresses its effect even with one copy",
+            "C": "Recessive allele",
+            "D": "Mutated allele"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is a recessive allele?",
+          "options": {
+            "A": "Allele always expressed",
+            "B": "Allele only expressed when two copies present",
+            "C": "Dominant allele",
+            "D": "Normal allele"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}

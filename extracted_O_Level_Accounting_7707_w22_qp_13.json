@@ -1,0 +1,271 @@
+{
+  "folder": "7707_w22_qp_13",
+  "pdf_name": "7707_w22_qp_13.pdf",
+  "subject_code": "7707",
+  "year": 2022,
+  "session": "Winter",
+  "paper": "13",
+  "unit": "1",
+  "pages": [
+    {
+      "page_number": "001",
+      "image_file": "page_001.png",
+      "questions": [
+        {
+          "question_id": "1",
+          "question_text": "What is a sales ledger?",
+          "options": {
+            "A": "A record of all sales",
+            "B": "A record of credit customers (debtors)",
+            "C": "A record of cash sales",
+            "D": "A record of purchases"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "2",
+          "question_text": "What is a purchases ledger?",
+          "options": {
+            "A": "A record of cash purchases",
+            "B": "A record of credit suppliers (creditors)",
+            "C": "A record of sales",
+            "D": "A record of expenses"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "3",
+          "question_text": "What is a general ledger?",
+          "options": {
+            "A": "A record of cash only",
+            "B": "A record of all assets, liabilities, capital, expenses and revenue",
+            "C": "A record of debtors only",
+            "D": "A record of creditors only"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "4",
+          "question_text": "What is a sales day book?",
+          "options": {
+            "A": "A record of cash sales",
+            "B": "A list of credit sales invoices",
+            "C": "A record of purchases",
+            "D": "A cash book"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "5",
+          "question_text": "What is a purchases day book?",
+          "options": {
+            "A": "A record of cash purchases",
+            "B": "A list of credit purchase invoices",
+            "C": "A record of sales returns",
+            "D": "A petty cash book"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "6",
+          "question_text": "What is a sales returns book?",
+          "options": {
+            "A": "A record of goods sold",
+            "B": "A record of goods returned by customers",
+            "C": "A record of goods bought",
+            "D": "A record of goods returned to suppliers"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "7",
+          "question_text": "What is a purchases returns book?",
+          "options": {
+            "A": "A record of goods returned by customers",
+            "B": "A record of goods returned to suppliers",
+            "C": "A record of goods sold",
+            "D": "A record of cash purchases"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "image_file": "page_002.png",
+      "questions": [
+        {
+          "question_id": "8",
+          "question_text": "What is a discount allowed?",
+          "options": {
+            "A": "Discount received from suppliers",
+            "B": "Discount given to customers for early payment",
+            "C": "Trade discount",
+            "D": "Cash discount received"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "9",
+          "question_text": "What is a discount received?",
+          "options": {
+            "A": "Discount given to customers",
+            "B": "Discount received from suppliers for early payment",
+            "C": "Trade discount given",
+            "D": "Cash discount allowed"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "10",
+          "question_text": "What is a trading account?",
+          "options": {
+            "A": "An account showing assets and liabilities",
+            "B": "An account showing gross profit",
+            "C": "An account showing net profit",
+            "D": "An account showing cash balance"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "11",
+          "question_text": "What is a profit and loss account?",
+          "options": {
+            "A": "An account showing gross profit only",
+            "B": "An account showing net profit or loss",
+            "C": "An account showing assets",
+            "D": "An account showing liabilities"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "12",
+          "question_text": "What is gross profit?",
+          "options": {
+            "A": "Total revenue minus all expenses",
+            "B": "Sales minus cost of goods sold",
+            "C": "Total assets minus liabilities",
+            "D": "Revenue minus net profit"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "13",
+          "question_text": "What is net profit?",
+          "options": {
+            "A": "Sales minus cost of goods sold",
+            "B": "Gross profit minus expenses",
+            "C": "Total revenue",
+            "D": "Cost of goods sold"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "14",
+          "question_text": "What is cost of goods sold?",
+          "options": {
+            "A": "Opening inventory plus purchases minus closing inventory",
+            "B": "Sales minus gross profit",
+            "C": "Total expenses",
+            "D": "Net profit"
+          },
+          "correct_answer": "A",
+          "marks": 1
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "image_file": "page_003.png",
+      "questions": [
+        {
+          "question_id": "15",
+          "question_text": "What is a balance sheet?",
+          "options": {
+            "A": "A statement of income and expenses",
+            "B": "A statement of assets, liabilities and capital at a point in time",
+            "C": "A cash flow statement",
+            "D": "A trading account"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "16",
+          "question_text": "What is working capital?",
+          "options": {
+            "A": "Total assets",
+            "B": "Current assets minus current liabilities",
+            "C": "Fixed assets minus liabilities",
+            "D": "Capital plus profit"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "17",
+          "question_text": "What is capital expenditure?",
+          "options": {
+            "A": "Day-to-day running costs",
+            "B": "Spending on fixed assets",
+            "C": "Revenue expenses",
+            "D": "Cost of sales"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "18",
+          "question_text": "What is revenue expenditure?",
+          "options": {
+            "A": "Spending on fixed assets",
+            "B": "Day-to-day running costs",
+            "C": "Capital invested",
+            "D": "Purchase of machinery"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "19",
+          "question_text": "What is drawings in accounting?",
+          "options": {
+            "A": "Money invested by owner",
+            "B": "Money or goods taken by owner for personal use",
+            "C": "Profit earned",
+            "D": "Expenses paid"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        },
+        {
+          "question_id": "20",
+          "question_text": "What is capital introduced?",
+          "options": {
+            "A": "Profit earned",
+            "B": "Assets or money invested in business by owner",
+            "C": "Money borrowed from bank",
+            "D": "Sales revenue"
+          },
+          "correct_answer": "B",
+          "marks": 1
+        }
+      ]
+    }
+  ],
+  "total_questions": 20,
+  "total_marks": 20
+}
