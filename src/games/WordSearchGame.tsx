@@ -19,6 +19,7 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
   const [score, setScore] = useState(0)
   const [totalScore, setTotalScore] = useState(0)
   const [wordPositions, setWordPositions] = useState<Map<string, {row: number, col: number}[]>>(new Map())
+  const [pointerId, setPointerId] = useState<number | null>(null)
   const [showLevelComplete, setShowLevelComplete] = useState(false)
 
   const levelData = WORD_SEARCH_LEVELS[currentLevel]
@@ -113,37 +114,56 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
     }
   }
 
-  function handleTouchStart(e: React.TouchEvent, row: number, col: number) {
-    e.preventDefault()
-    handleCellClick(row, col)
+  function startSelection(row: number, col: number) {
+    setIsSelecting(true)
+    setSelectedCells([{row, col}])
+    setCurrentWord(grid[row][col])
   }
 
-  function handleTouchMove(e: React.TouchEvent) {
-    e.preventDefault()
+  function endSelection() {
     if (!isSelecting) return
-    
-    const touch = e.touches[0]
-    const element = document.elementFromPoint(touch.clientX, touch.clientY)
-    if (!element) return
-    
-    const button = element.closest('button[data-row]')
-    if (button) {
-      const r = parseInt(button.getAttribute('data-row') || '-1')
-      const c = parseInt(button.getAttribute('data-col') || '-1')
-      if (r >= 0 && c >= 0) {
-        handleCellEnter(r, c)
-      }
-    }
+    checkWord()
+    setIsSelecting(false)
+    setSelectedCells([])
+    setCurrentWord('')
   }
 
-  function handleTouchEnd(e: React.TouchEvent) {
+  function handlePointerDown(e: React.PointerEvent, row: number, col: number) {
     e.preventDefault()
-    if (isSelecting) {
-      checkWord()
-      setIsSelecting(false)
-      setSelectedCells([])
-      setCurrentWord('')
-    }
+    if (e.pointerType === 'mouse' && (e.button ?? 0) !== 0) return
+    ;(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId)
+    setPointerId(e.pointerId)
+    startSelection(row, col)
+  }
+
+  function handlePointerMove(e: React.PointerEvent) {
+    if (!isSelecting) return
+    if (pointerId !== null && e.pointerId !== pointerId) return
+    e.preventDefault()
+
+    const element = document.elementFromPoint(e.clientX, e.clientY)
+    const button = element?.closest?.('button[data-row]') as HTMLElement | null
+    if (!button) return
+
+    const r = parseInt(button.getAttribute('data-row') || '-1')
+    const c = parseInt(button.getAttribute('data-col') || '-1')
+    if (r >= 0 && c >= 0) handleCellEnter(r, c)
+  }
+
+  function handlePointerUp(e: React.PointerEvent) {
+    if (pointerId !== null && e.pointerId !== pointerId) return
+    e.preventDefault()
+    setPointerId(null)
+    endSelection()
+  }
+
+  function handlePointerCancel(e: React.PointerEvent) {
+    if (pointerId !== null && e.pointerId !== pointerId) return
+    e.preventDefault()
+    setPointerId(null)
+    setIsSelecting(false)
+    setSelectedCells([])
+    setCurrentWord('')
   }
 
   function checkWord() {
@@ -196,7 +216,7 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
   const isCellFound = (row: number, col: number) => {
     for (const [word, positions] of wordPositions) {
       if (foundWords.includes(word)) {
-        if (positions.some(p => p.row === row && p.col === col)) return true
+        if (positions.some((p) => p.row === row && p.col === col)) return true
       }
     }
     return false
@@ -276,14 +296,21 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
         {/* Grid */}
         <div className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700 overflow-x-auto">
           <div 
-            className="grid gap-1 touch-none"
-            style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`, minWidth: '280px', touchAction: 'none' }}
+            className="grid gap-1 touch-none select-none"
+            style={{ 
+              gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`, 
+              minWidth: '280px', 
+              touchAction: 'none',
+              WebkitTouchCallout: 'none',
+              WebkitUserSelect: 'none',
+              userSelect: 'none'
+            }}
+            onPointerMove={handlePointerMove}
+            onPointerUp={handlePointerUp}
+            onPointerCancel={handlePointerCancel}
             onMouseLeave={() => {
               if (isSelecting) {
-                checkWord()
-                setIsSelecting(false)
-                setSelectedCells([])
-                setCurrentWord('')
+                endSelection()
               }
             }}
           >
@@ -296,12 +323,9 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
                   onMouseDown={() => handleCellClick(r, c)}
                   onMouseEnter={() => handleCellEnter(r, c)}
                   onClick={() => handleCellClick(r, c)}
-                  onTouchStart={(e) => handleTouchStart(e, r, c)}
-                  onTouchMove={handleTouchMove}
-                  onTouchEnd={handleTouchEnd}
-                  style={{ touchAction: 'none', WebkitTouchCallout: 'none', WebkitUserSelect: 'none', userSelect: 'none' }}
+                  onPointerDown={(e) => handlePointerDown(e, r, c)}
                   className={`
-                    aspect-square rounded-lg font-bold text-sm transition-all select-none
+                    aspect-square rounded-lg font-bold text-sm transition-all select-none pointer-events-auto
                     ${isCellFound(r, c) 
                       ? 'bg-emerald-500/50 text-emerald-100' 
                       : isCellSelected(r, c)

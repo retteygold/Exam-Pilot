@@ -215,7 +215,10 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
             <input
               ref={inputRef}
               type="text"
-              className="absolute opacity-0 w-1 h-1 -z-10"
+              className="fixed left-0 top-0 opacity-0 w-1 h-1"
+              autoCapitalize="characters"
+              autoCorrect="off"
+              spellCheck={false}
               onChange={(e) => {
                 const char = e.target.value.slice(-1).toUpperCase()
                 if (char && selectedCell && !isCellBlocked(selectedCell.row, selectedCell.col)) {
@@ -284,7 +287,7 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
           </div>
 
           {/* Clues - Scrollable container */}
-          <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2" style={{ WebkitOverflowScrolling: 'touch' }}>
+          <div className="space-y-4 overflow-y-scroll pr-2" style={{ height: '400px', WebkitOverflowScrolling: 'touch', overscrollBehavior: 'contain' }}>
             <div className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700">
               <h3 className="font-bold text-white mb-3 flex items-center gap-2">
                 <span className="text-blue-400">→</span> Across
@@ -297,6 +300,7 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
                       setSelectedCell({row: w.row, col: w.col})
                       setDirection('across')
                       setShowHint(w.clue)
+                      inputRef.current?.focus()
                     }}
                     className={`p-2 rounded-lg cursor-pointer transition-all ${
                       solvedWords.includes(w.word)
@@ -328,6 +332,7 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
                         setSelectedCell({row: w.row, col: w.col})
                         setDirection('down')
                         setShowHint(w.clue)
+                        inputRef.current?.focus()
                       }}
                       className={`p-2 rounded-lg cursor-pointer transition-all ${
                         solvedWords.includes(w.word)
