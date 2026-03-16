@@ -41,3 +41,23 @@ coverage/
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Scripts (keep for dev, exclude from deploy)
+scripts/*.pdf
+scripts/*.zip
+scripts/*.tar.gz
+
+# Database & extracted data
+database/
+extracted_data/
+extracted_images/
+*.pdf
+*.zip
