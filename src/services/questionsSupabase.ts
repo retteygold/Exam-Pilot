@@ -76,13 +76,21 @@ export function canUseSupabaseQuestions(): boolean {
   return Boolean(import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY)
 }
 
+function getSupabaseClient() {
+  if (!supabase) {
+    throw new Error('Supabase not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.')
+  }
+  return supabase
+}
+
 export async function fetchAllQuestionsFromSupabase(): Promise<Question[]> {
+  const client = getSupabaseClient()
   const pageSize = 1000
   let offset = 0
   const out: Question[] = []
 
   while (true) {
-    const { data, error } = await supabase
+    const { data, error } = await client
       .from('questions')
       .select('*')
       .order('id', { ascending: true })
@@ -101,7 +109,8 @@ export async function fetchAllQuestionsFromSupabase(): Promise<Question[]> {
 }
 
 export async function fetchQuestionsByIdLike(idLike: string): Promise<Question[]> {
-  const { data, error } = await supabase
+  const client = getSupabaseClient()
+  const { data, error } = await client
     .from('questions')
     .select('*')
     .ilike('id', `%${idLike}%`)
@@ -112,7 +121,8 @@ export async function fetchQuestionsByIdLike(idLike: string): Promise<Question[]
 }
 
 export async function fetchRecentQuestions(limit = 50): Promise<Question[]> {
-  const { data, error } = await supabase
+  const client = getSupabaseClient()
+  const { data, error } = await client
     .from('questions')
     .select('*')
     .order('created_at', { ascending: false })
@@ -123,12 +133,14 @@ export async function fetchRecentQuestions(limit = 50): Promise<Question[]> {
 }
 
 export async function upsertQuestion(q: Question): Promise<void> {
+  const client = getSupabaseClient()
   const payload = questionToDb(q)
-  const { error } = await supabase.from('questions').upsert(payload, { onConflict: 'id' })
+  const { error } = await client.from('questions').upsert(payload, { onConflict: 'id' })
   if (error) throw error
 }
 
 export async function deleteQuestion(id: string): Promise<void> {
-  const { error } = await supabase.from('questions').delete().eq('id', id)
+  const client = getSupabaseClient()
+  const { error } = await client.from('questions').delete().eq('id', id)
   if (error) throw error
 }
