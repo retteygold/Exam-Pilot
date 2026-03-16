@@ -1,5 +1,13 @@
 import { createContext, useContext, useEffect, useState } from 'react'
-import { supabase, type User } from '../lib/supabase'
+import { 
+  onAuthStateChanged, 
+  signInWithEmailAndPassword, 
+  createUserWithEmailAndPassword,
+  signOut as firebaseSignOut,
+  updateProfile
+} from 'firebase/auth'
+import { doc, setDoc, getDoc } from 'firebase/firestore'
+import { auth, db, type User } from '../lib/firebase'
 
 interface AuthContextType {
   user: User | null
@@ -16,67 +24,54 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Check active session
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session?.user) {
-        fetchUser(session.user.id)
+    const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
+      if (firebaseUser) {
+        // Fetch additional user data from Firestore
+        const userDoc = await getDoc(doc(db, 'profiles', firebaseUser.uid))
+        const userData = userDoc.data()
+        
+        setUser({
+          id: firebaseUser.uid,
+          email: firebaseUser.email || '',
+          name: userData?.name || firebaseUser.displayName || '',
+          grade: userData?.grade,
+          role: userData?.role || 'student',
+          created_at: userData?.created_at || new Date().toISOString()
+        })
+      } else {
+        setUser(null)
       }
       setLoading(false)
     })
 
-    // Listen for auth changes
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      if (session?.user) {
-        fetchUser(session.user.id)
-      } else {
-        setUser(null)
-      }
-    })
-
-    return () => subscription.unsubscribe()
+    return () => unsubscribe()
   }, [])
 
-  async function fetchUser(userId: string) {
-    const { data } = await supabase
-      .from('profiles')
-      .select('*')
-      .eq('id', userId)
-      .single()
-    
-    if (data) {
-      setUser(data as User)
-    }
-  }
 
   async function signIn(email: string, password: string) {
-    const { error } = await supabase.auth.signInWithPassword({ email, password })
-    if (error) throw error
+    await signInWithEmailAndPassword(auth, email, password)
   }
 
   async function signUp(email: string, password: string, name: string, grade: number) {
-    const { error, data } = await supabase.auth.signUp({ 
-      email, 
-      password,
-      options: {
-        data: { name, grade, role: 'student' }
-      }
-    })
-    if (error) throw error
+    const userCredential = await createUserWithEmailAndPassword(auth, email, password)
+    const firebaseUser = userCredential.user
     
-    // Create profile
-    if (data.user) {
-      await supabase.from('profiles').insert({
-        id: data.user.id,
-        email,
-        name,
-        grade,
-        role: 'student'
-      })
-    }
+    // Update profile display name
+    await updateProfile(firebaseUser, { displayName: name })
+    
+    // Create profile in Firestore
+    await setDoc(doc(db, 'profiles', firebaseUser.uid), {
+      id: firebaseUser.uid,
+      email,
+      name,
+      grade,
+      role: 'student',
+      created_at: new Date().toISOString()
+    })
   }
 
   async function signOut() {
-    await supabase.auth.signOut()
+    await firebaseSignOut(auth)
     setUser(null)
   }
 

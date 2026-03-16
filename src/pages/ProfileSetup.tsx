@@ -94,7 +94,7 @@ export function ProfileSetup() {
   }
 
   if (showLogin) {
-    return <KidsLogin onLogin={handleLoginSuccess} />
+    return <KidsLogin onLogin={handleLoginSuccess} onBack={() => setShowLogin(false)} />
   }
 
   return (

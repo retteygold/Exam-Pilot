@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import type { ClipboardEvent } from 'react'
-import { supabase } from '../lib/supabase'
+import { onAuthStateChanged, signInWithEmailAndPassword, signOut as firebaseSignOut } from 'firebase/auth'
+import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
+import { auth, storage } from '../lib/firebase'
 import type { Question } from '../types'
-import { canUseSupabaseQuestions, deleteQuestion, fetchAllQuestionsFromSupabase, upsertQuestion } from '../services/questionsSupabase'
+import { canUseFirebase, deleteQuestion, fetchAllQuestionsFromFirebase, upsertQuestion } from '../services/questionsFirebase'
 import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText, Users, Star, Trophy, Activity, RotateCcw, Edit2 } from 'lucide-react'
 import { useKidsStore } from '../store/kidsStore'
 
@@ -56,16 +58,16 @@ export function Admin() {
 
   const { profiles, sessions, achievements, getLeaderboard, deleteKid, resetKidStats, updateKid } = useKidsStore()
 
-  const canUseSupabase = canUseSupabaseQuestions()
+  const canUseFirebaseDb = canUseFirebase()
 
   // Load all questions on mount
   useEffect(() => {
-    if (!canUseSupabase) return
+    if (!canUseFirebaseDb) return
 
     const loadQuestions = async () => {
       setLoading(true)
       try {
-        const questions = await fetchAllQuestionsFromSupabase()
+        const questions = await fetchAllQuestionsFromFirebase()
         setAllQuestions(questions)
         setResults(questions) // Show ALL questions, not just first 100
       } catch (e) {
@@ -75,7 +77,7 @@ export function Admin() {
       }
     }
     loadQuestions()
-  }, [canUseSupabase])
+  }, [canUseFirebaseDb])
 
   // Apply filters
   useEffect(() => {
@@ -115,33 +117,23 @@ export function Admin() {
   }, {} as Record<string, { subject: string, year: string, paper: string, pdf: string, questions: Question[] }>)
 
   useEffect(() => {
-    if (!canUseSupabase) return
+    if (!canUseFirebaseDb) return
 
-    supabase.auth.getSession().then(({ data }) => {
-      setSessionEmail(data.session?.user.email || null)
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setSessionEmail(user?.email || null)
     })
 
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, newSession) => {
-      setSessionEmail(newSession?.user.email || null)
-    })
-
-    return () => {
-      subscription.unsubscribe()
-    }
-  }, [canUseSupabase])
+    return () => unsubscribe()
+  }, [canUseFirebaseDb])
 
   const signIn = async () => {
     setAuthError(null)
     setLoading(true)
     try {
-      const { data, error } = await supabase.auth.signInWithPassword({ email, password })
-      if (error) {
-        setAuthError(error.message)
-        return
-      }
-      setSessionEmail(data.user?.email || null)
+      await signInWithEmailAndPassword(auth, email, password)
+      // onAuthStateChanged will update sessionEmail
+    } catch (error: any) {
+      setAuthError(error.message || 'Login failed')
     } finally {
       setLoading(false)
     }
@@ -150,7 +142,7 @@ export function Admin() {
   const signOut = async () => {
     setLoading(true)
     try {
-      await supabase.auth.signOut()
+      await firebaseSignOut(auth)
       setSessionEmail(null)
       setResults([])
       setSelected(null)
@@ -166,7 +158,7 @@ export function Admin() {
     // Reload all questions and reset filters
     setLoading(true)
     try {
-      const questions = await fetchAllQuestionsFromSupabase()
+      const questions = await fetchAllQuestionsFromFirebase()
       setAllQuestions(questions)
       setSelectedSubject('all')
       setSelectedYear('all')
@@ -215,7 +207,7 @@ export function Admin() {
       
       // Refresh the list and re-select the same question
       // Reload all questions
-      const qs = await fetchAllQuestionsFromSupabase()
+      const qs = await fetchAllQuestionsFromFirebase()
       setAllQuestions(qs)
       setResults(qs)
       const updated = qs.find((q: Question) => q.id === savedId)
@@ -241,7 +233,7 @@ export function Admin() {
       setSaveStatus('Deleted')
       setSelected(null)
       // Reload all questions
-      const qs = await fetchAllQuestionsFromSupabase()
+      const qs = await fetchAllQuestionsFromFirebase()
       setAllQuestions(qs)
       setResults(qs)
     } catch (e: any) {
@@ -256,26 +248,17 @@ export function Admin() {
     setLoading(true)
     setSaveStatus(null)
     try {
-      const bucket = 'question-images'
-      const ext = (file.name.split('.').pop() || 'png').toLowerCase()
       // Sanitize the ID for storage path
       const safeId = selected.id.replace(/[^a-zA-Z0-9-_]/g, '_')
-      const path = `${safeId}/${Date.now()}.${ext}`
+      const ext = (file.name.split('.').pop() || 'png').toLowerCase()
+      const path = `question-images/${safeId}/${Date.now()}.${ext}`
 
-      console.log('Uploading to bucket:', bucket, 'path:', path)
+      console.log('Uploading to Firebase Storage:', path)
       
-      const { error: uploadError } = await supabase.storage.from(bucket).upload(path, file, {
-        upsert: true,
-        contentType: file.type || 'image/png',
-      })
+      const storageRef = ref(storage, path)
+      await uploadBytes(storageRef, file)
       
-      if (uploadError) {
-        console.error('Upload error:', uploadError)
-        throw new Error(`Upload failed: ${uploadError.message}`)
-      }
-
-      const { data: urlData } = supabase.storage.from(bucket).getPublicUrl(path)
-      const url = urlData.publicUrl
+      const url = await getDownloadURL(storageRef)
 
       setSelected({
         ...selected,
@@ -308,10 +291,10 @@ export function Admin() {
     await uploadImageFile(file)
   }
 
-  if (!canUseSupabase) {
+  if (!canUseFirebaseDb) {
     return (
       <div className="p-4">
-        <div className="p-4 bg-slate-800 rounded-xl text-center">Supabase not configured</div>
+        <div className="p-4 bg-slate-800 rounded-xl text-center">Firebase not configured</div>
       </div>
     )
   }

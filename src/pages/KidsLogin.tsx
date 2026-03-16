@@ -7,9 +7,10 @@ const GRADES = ['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade
 
 interface KidsLoginProps {
   onLogin: () => void
+  onBack?: () => void
 }
 
-export function KidsLogin({ onLogin }: KidsLoginProps) {
+export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
   const [isRegistering, setIsRegistering] = useState(false)
   const [name, setName] = useState('')
   const [secretCode, setSecretCode] = useState('')
@@ -60,7 +61,16 @@ export function KidsLogin({ onLogin }: KidsLoginProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-4 flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-4 flex items-center justify-center relative">
+      {/* Back Button */}
+      {onBack && (
+        <button
+          onClick={onBack}
+          className="absolute top-4 left-4 p-2 bg-slate-700/50 hover:bg-slate-700 rounded-full text-white transition-colors z-10"
+        >
+          ← Back
+        </button>
+      )}
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
