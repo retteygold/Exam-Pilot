@@ -4,9 +4,8 @@ import { onAuthStateChanged, signInWithEmailAndPassword, signOut as firebaseSign
 import { auth, storage } from '../lib/firebase'
 import type { Question } from '../types'
 import { canUseFirebase, deleteQuestion, fetchAllQuestionsFromFirebase, upsertQuestion } from '../services/questionsFirebase'
-import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText, Users, Star, Trophy, Activity, RotateCcw, Edit2, Database, Download } from 'lucide-react'
+import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText, Users, Star, Trophy, Activity, RotateCcw, Edit2, Download } from 'lucide-react'
 import { useKidsStore } from '../store/kidsStore'
-import { useMigration } from '../services/migrateQuestions'
 import { isCloudinaryConfigured, uploadImageToCloudinary } from '../services/cloudinary'
 
 function makeEmptyQuestion(): Question {
@@ -55,7 +54,7 @@ export function Admin() {
   const [saveStatus, setSaveStatus] = useState<string | null>(null)
   const [showImageSection, setShowImageSection] = useState(false)
   const [showPdfImage, setShowPdfImage] = useState(false)
-  const [activeTab, setActiveTab] = useState<'questions' | 'kids' | 'migration'>('questions')
+  const [activeTab, setActiveTab] = useState<'questions' | 'kids'>('questions')
 
   const { profiles, sessions, achievements, getLeaderboard, deleteKid, resetKidStats, updateKid } = useKidsStore()
 
@@ -372,16 +371,6 @@ export function Admin() {
             >
               Students
             </button>
-            <button
-              onClick={() => setActiveTab('migration')}
-              className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-                activeTab === 'migration' 
-                  ? 'bg-orange-600 text-white' 
-                  : 'text-slate-400 hover:text-white'
-              }`}
-            >
-              Migration
-            </button>
           </div>
           {saveStatus && <span className="text-sm px-3 py-1 rounded-full bg-slate-700">{saveStatus}</span>}
           <button disabled={loading} onClick={signOut} className="px-3 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-sm">Logout</button>
@@ -527,22 +516,6 @@ export function Admin() {
           </div>
         )}
 
-        {/* Migration Tab Content */}
-        {activeTab === 'migration' && (
-          <div className="lg:col-span-12 space-y-4">
-            <div className="p-4 bg-slate-800 rounded-xl">
-              <h3 className="font-semibold mb-4 flex items-center gap-2">
-                <Database className="w-5 h-5 text-orange-400" />
-                Data Migration (Supabase → Firebase)
-              </h3>
-              <p className="text-sm text-slate-400 mb-4">
-                Migrate existing questions from Supabase to Firebase Firestore.
-                This will copy all questions while keeping the originals in Supabase.
-              </p>
-              <MigrationPanel />
-            </div>
-          </div>
-        )}
         {activeTab === 'questions' && (
         <>
         {/* Left Panel - Filters & List */}
@@ -921,68 +894,6 @@ export function Admin() {
           )}
         </div>
         </>
-        )}
-      </div>
-    </div>
-  )
-}
-
-// Migration Panel Component
-function MigrationPanel() {
-  const { status, progress, logs, startMigration } = useMigration()
-
-  return (
-    <div className="space-y-4">
-      <div className="flex items-center gap-4">
-        <button
-          onClick={startMigration}
-          disabled={status === 'running'}
-          className={`px-4 py-2 rounded-lg font-medium ${
-            status === 'running'
-              ? 'bg-slate-600 cursor-not-allowed'
-              : 'bg-orange-600 hover:bg-orange-500'
-          }`}
-        >
-          {status === 'running' ? 'Migrating...' : 'Start Migration'}
-        </button>
-        
-        {status === 'complete' && (
-          <span className="text-green-400">✅ Migration Complete</span>
-        )}
-        {status === 'error' && (
-          <span className="text-red-400">❌ Migration Failed</span>
-        )}
-      </div>
-
-      {/* Progress */}
-      <div className="text-sm">
-        <div className="flex justify-between mb-1">
-          <span>Progress: {progress.migrated} / {progress.total}</span>
-          <span className={progress.errors > 0 ? 'text-red-400' : 'text-slate-400'}>
-            Errors: {progress.errors}
-          </span>
-        </div>
-        {progress.total > 0 && (
-          <div className="w-full bg-slate-700 rounded-full h-2">
-            <div
-              className="bg-orange-500 h-2 rounded-full transition-all"
-              style={{ width: `${(progress.migrated / progress.total) * 100}%` }}
-            />
-          </div>
-        )}
-      </div>
-
-      {/* Logs */}
-      <div className="bg-slate-900 rounded-lg p-3 max-h-48 overflow-y-auto">
-        <div className="text-xs text-slate-500 mb-2">Migration Log:</div>
-        {logs.length === 0 ? (
-          <div className="text-sm text-slate-500">Click "Start Migration" to begin</div>
-        ) : (
-          <div className="space-y-1 text-xs font-mono">
-            {logs.map((log, i) => (
-              <div key={i} className="text-slate-300">{log}</div>
-            ))}
-          </div>
         )}
       </div>
     </div>

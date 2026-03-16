@@ -4,7 +4,6 @@ import { BookOpen, Clock, Target, Award, FileText, Calendar, User, Beaker, Calcu
 import { useExamStore } from '../store/examStore'
 import { useUserStore } from '../store/userStore'
 import type { Question } from '../types'
-import { canUseSupabaseQuestions, fetchAllQuestionsFromSupabase } from '../services/questionsSupabase'
 
 interface Paper {
   id: string
@@ -119,15 +118,6 @@ export function PaperSelect() {
 
       setPapers(Array.from(paperMap.values()).sort((a, b) => b.year - a.year))
       setLoading(false)
-    }
-
-    if (canUseSupabaseQuestions()) {
-      fetchAllQuestionsFromSupabase()
-        .then((qs) => compute(qs))
-        .catch(() => {
-          setLoading(false)
-        })
-      return
     }
 
     Promise.all([

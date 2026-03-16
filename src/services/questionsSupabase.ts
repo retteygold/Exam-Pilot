@@ -1,4 +1,3 @@
-import { supabase } from '../lib/supabase'
 import type { Question } from '../types'
 
 export type DbQuestionRow = {
@@ -73,74 +72,29 @@ export function questionToDb(q: Question): Partial<DbQuestionRow> {
 }
 
 export function canUseSupabaseQuestions(): boolean {
-  return Boolean(import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_ANON_KEY)
-}
-
-function getSupabaseClient() {
-  if (!supabase) {
-    throw new Error('Supabase not configured. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.')
-  }
-  return supabase
+  return false
 }
 
 export async function fetchAllQuestionsFromSupabase(): Promise<Question[]> {
-  const client = getSupabaseClient()
-  const pageSize = 1000
-  let offset = 0
-  const out: Question[] = []
-
-  while (true) {
-    const { data, error } = await client
-      .from('questions')
-      .select('*')
-      .order('id', { ascending: true })
-      .range(offset, offset + pageSize - 1)
-
-    if (error) throw error
-
-    const rows = (data as DbQuestionRow[]) || []
-    out.push(...rows.map(dbToQuestion))
-
-    if (rows.length < pageSize) break
-    offset += pageSize
-  }
-
-  return out
+  throw new Error('Supabase questions are disabled')
 }
 
 export async function fetchQuestionsByIdLike(idLike: string): Promise<Question[]> {
-  const client = getSupabaseClient()
-  const { data, error } = await client
-    .from('questions')
-    .select('*')
-    .ilike('id', `%${idLike}%`)
-    .limit(50)
-
-  if (error) throw error
-  return ((data as DbQuestionRow[]) || []).map(dbToQuestion)
+  void idLike
+  throw new Error('Supabase questions are disabled')
 }
 
 export async function fetchRecentQuestions(limit = 50): Promise<Question[]> {
-  const client = getSupabaseClient()
-  const { data, error } = await client
-    .from('questions')
-    .select('*')
-    .order('created_at', { ascending: false })
-    .limit(limit)
-
-  if (error) throw error
-  return ((data as DbQuestionRow[]) || []).map(dbToQuestion)
+  void limit
+  throw new Error('Supabase questions are disabled')
 }
 
 export async function upsertQuestion(q: Question): Promise<void> {
-  const client = getSupabaseClient()
-  const payload = questionToDb(q)
-  const { error } = await client.from('questions').upsert(payload, { onConflict: 'id' })
-  if (error) throw error
+  void q
+  throw new Error('Supabase questions are disabled')
 }
 
 export async function deleteQuestion(id: string): Promise<void> {
-  const client = getSupabaseClient()
-  const { error } = await client.from('questions').delete().eq('id', id)
-  if (error) throw error
+  void id
+  throw new Error('Supabase questions are disabled')
 }

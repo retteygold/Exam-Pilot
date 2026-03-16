@@ -14,8 +14,7 @@ declare module 'virtual:pwa-register' {
 }
 
 interface ImportMetaEnv {
-  readonly VITE_SUPABASE_URL?: string
-  readonly VITE_SUPABASE_ANON_KEY?: string
+  // Add additional VITE_* env types here as needed
 }
 
 interface ImportMeta {
