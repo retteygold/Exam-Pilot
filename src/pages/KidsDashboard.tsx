@@ -203,7 +203,19 @@ export function KidsDashboard() {
       ? byGrade.filter((q) => allowed.includes((q.topic || '').toLowerCase()))
       : byGrade
 
-    const selection = (filtered.length > 0 ? filtered : byGrade).slice(0, 10)
+    // Remove duplicates by question ID, then shuffle randomly
+    const uniqueQuestions = (filtered.length > 0 ? filtered : byGrade)
+    const seenIds = new Set<string>()
+    const deduped = uniqueQuestions.filter(q => {
+      if (seenIds.has(q.id)) return false
+      seenIds.add(q.id)
+      return true
+    })
+    
+    // Shuffle array randomly
+    const shuffled = [...deduped].sort(() => Math.random() - 0.5)
+    const selection = shuffled.slice(0, 10)
+    
     navigate('/quiz', { state: { questions: selection } })
   }
 

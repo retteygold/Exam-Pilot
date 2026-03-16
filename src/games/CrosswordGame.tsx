@@ -253,7 +253,7 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
           </div>
 
           {/* Clues */}
-          <div className="space-y-4">
+          <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2">
             <div className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700">
               <h3 className="font-bold text-white mb-3 flex items-center gap-2">
                 <span className="text-blue-400">→</span> Across

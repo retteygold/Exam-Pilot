@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 import type { ClipboardEvent } from 'react'
 import { onAuthStateChanged, signInWithEmailAndPassword, signOut as firebaseSignOut } from 'firebase/auth'
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
 import { auth, storage } from '../lib/firebase'
 import type { Question } from '../types'
 import { canUseFirebase, deleteQuestion, fetchAllQuestionsFromFirebase, upsertQuestion } from '../services/questionsFirebase'
-import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText, Users, Star, Trophy, Activity, RotateCcw, Edit2, Database } from 'lucide-react'
+import { Save, Trash2, Plus, Image, ChevronDown, ChevronUp, Check, FileText, Users, Star, Trophy, Activity, RotateCcw, Edit2, Database, Download } from 'lucide-react'
 import { useKidsStore } from '../store/kidsStore'
 import { useMigration } from '../services/migrateQuestions'
+import { isCloudinaryConfigured, uploadImageToCloudinary } from '../services/cloudinary'
 
 function makeEmptyQuestion(): Question {
   return {
@@ -246,20 +246,16 @@ export function Admin() {
 
   const uploadImageFile = async (file: File) => {
     if (!selected) return
+    if (!isCloudinaryConfigured()) {
+      setSaveStatus('Cloudinary not configured - check .env file')
+      return
+    }
     setLoading(true)
     setSaveStatus(null)
     try {
-      // Sanitize the ID for storage path
-      const safeId = selected.id.replace(/[^a-zA-Z0-9-_]/g, '_')
-      const ext = (file.name.split('.').pop() || 'png').toLowerCase()
-      const path = `question-images/${safeId}/${Date.now()}.${ext}`
-
-      console.log('Uploading to Firebase Storage:', path)
+      console.log('Uploading to Cloudinary...')
       
-      const storageRef = ref(storage, path)
-      await uploadBytes(storageRef, file)
-      
-      const url = await getDownloadURL(storageRef)
+      const url = await uploadImageToCloudinary(file)
 
       setSelected({
         ...selected,
@@ -273,6 +269,32 @@ export function Admin() {
     } finally {
       setLoading(false)
     }
+  }
+
+  const exportToJson = () => {
+    if (!selected) return
+    
+    const data = {
+      metadata: {
+        subject: selected.subject,
+        id: selected.id,
+        exportedAt: new Date().toISOString(),
+        verified: selected.verified
+      },
+      question: selected
+    }
+    
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `${selected.id || 'question'}.json`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+    
+    setSaveStatus('Exported to JSON!')
   }
 
   const onPaste = async (e: ClipboardEvent<HTMLDivElement>) => {
@@ -666,6 +688,11 @@ export function Admin() {
                   <button disabled={loading} onClick={save} className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 font-semibold flex items-center gap-2">
                     <Save className="w-4 h-4"/> Save
                   </button>
+                  {selected.verified && (
+                    <button disabled={loading} onClick={exportToJson} className="px-3 py-2 rounded-lg bg-emerald-600/50 hover:bg-emerald-600" title="Export verified question to JSON">
+                      <Download className="w-4 h-4"/>
+                    </button>
+                  )}
                   {selected.id && (
                     <button disabled={loading} onClick={remove} className="px-3 py-2 rounded-lg bg-red-600/50 hover:bg-red-600">
                       <Trash2 className="w-4 h-4"/>
@@ -822,32 +849,48 @@ export function Admin() {
                       <Image className="w-4 h-4" />
                       <span className="font-medium text-sm">Image</span>
                       {selected.imagePath && <span className="text-xs text-green-400">(Uploaded)</span>}
+                      {!storage && <span className="text-xs text-orange-400">(Storage disabled)</span>}
                     </div>
                     {showImageSection ? <ChevronUp className="w-4 h-4"/> : <ChevronDown className="w-4 h-4"/>}
                   </button>
                   
                   {showImageSection && (
                     <div className="p-4 space-y-3">
-                      {/* Paste Area */}
-                      <div
-                        tabIndex={0}
-                        onPaste={onPaste}
-                        className="p-4 border-2 border-dashed border-slate-600 rounded-lg text-center hover:border-blue-500 focus:border-blue-500 focus:outline-none cursor-pointer bg-slate-800/50"
-                      >
-                        <div className="text-2xl mb-1">📋</div>
-                        <div className="text-sm text-slate-300">Click here → Press Ctrl+V to paste</div>
-                        <div className="text-xs text-slate-500">Use Snipping Tool → Copy → Ctrl+V</div>
-                      </div>
+                      {!storage ? (
+                        <div className="p-4 bg-slate-800/50 rounded-lg text-center">
+                          <div className="text-2xl mb-2">⚠️</div>
+                          <div className="text-sm text-slate-300">Image upload disabled</div>
+                          <div className="text-xs text-slate-500 mt-1">
+                            Firebase Storage requires a paid plan. Images are stored as external URLs only.
+                          </div>
+                          <div className="mt-3 text-xs text-slate-400">
+                            You can still paste image URLs in the question text.
+                          </div>
+                        </div>
+                      ) : (
+                        <>
+                          {/* Paste Area */}
+                          <div
+                            tabIndex={0}
+                            onPaste={onPaste}
+                            className="p-4 border-2 border-dashed border-slate-600 rounded-lg text-center hover:border-blue-500 focus:border-blue-500 focus:outline-none cursor-pointer bg-slate-800/50"
+                          >
+                            <div className="text-2xl mb-1">📋</div>
+                            <div className="text-sm text-slate-300">Click here → Press Ctrl+V to paste</div>
+                            <div className="text-xs text-slate-500">Use Snipping Tool → Copy → Ctrl+V</div>
+                          </div>
 
-                      {/* File Upload */}
-                      <div className="flex items-center gap-2">
-                        <input
-                          type="file"
-                          accept="image/*"
-                          onChange={(e) => { const f = e.target.files?.[0]; if (f) uploadImageFile(f); }}
-                          className="flex-1 text-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-slate-700 file:text-sm"
-                        />
-                      </div>
+                          {/* File Upload */}
+                          <div className="flex items-center gap-2">
+                            <input
+                              type="file"
+                              accept="image/*"
+                              onChange={(e) => { const f = e.target.files?.[0]; if (f) uploadImageFile(f); }}
+                              className="flex-1 text-sm file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-slate-700 file:text-sm"
+                            />
+                          </div>
+                        </>
+                      )}
 
                       {/* Image Preview */}
                       {selected.imagePath && (

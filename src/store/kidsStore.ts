@@ -22,6 +22,15 @@ export interface GameSession {
   playedAt: number
 }
 
+// Active game progress that can be resumed
+export interface ActiveGameProgress {
+  gameType: string
+  level: number
+  score: number
+  startTime: number
+  extraData?: Record<string, any>
+}
+
 export interface Achievement {
   id: string
   kidId: string
@@ -38,6 +47,7 @@ export interface KidsState {
   profiles: KidsProfile[]
   sessions: GameSession[]
   achievements: Achievement[]
+  activeGame: ActiveGameProgress | null  // Track ongoing game
   
   login: (name: string, secretCode: string) => KidsProfile | null
   register: (name: string, secretCode: string, grade: string, avatar: string) => KidsProfile | null
@@ -46,6 +56,11 @@ export interface KidsState {
   unlockAchievement: (achievementCode: string, title: string, description: string, starsReward: number) => void
   getKidStats: (kidId: string) => { totalStars: number; totalSessions: number; bestStreak: number }
   getLeaderboard: () => Array<{ kid: KidsProfile; totalStars: number; sessions: number }>
+  // Game session management
+  startGameSession: (gameType: string, level: number, extraData?: Record<string, any>) => void
+  updateGameProgress: (level: number, score: number, extraData?: Record<string, any>) => void
+  clearActiveGame: () => void
+  getActiveGame: () => ActiveGameProgress | null
   // Admin functions
   deleteKid: (kidId: string) => void
   resetKidStats: (kidId: string) => void
@@ -64,6 +79,7 @@ export const useKidsStore = create<KidsState>()(
       profiles: [],
       sessions: [],
       achievements: [],
+      activeGame: null,
 
       login: (name: string, secretCode: string) => {
         const profile = get().profiles.find(
@@ -117,6 +133,43 @@ export const useKidsStore = create<KidsState>()(
         set(state => ({
           sessions: [...state.sessions, newSession]
         }))
+      },
+
+      startGameSession: (gameType: string, level: number, extraData?: Record<string, any>) => {
+        const currentKid = get().currentKid
+        if (!currentKid) return
+        
+        set({
+          activeGame: {
+            gameType,
+            level,
+            score: 0,
+            startTime: Date.now(),
+            extraData
+          }
+        })
+      },
+
+      updateGameProgress: (level: number, score: number, extraData?: Record<string, any>) => {
+        const currentKid = get().currentKid
+        if (!currentKid || !get().activeGame) return
+        
+        set(state => ({
+          activeGame: state.activeGame ? {
+            ...state.activeGame,
+            level,
+            score,
+            extraData: { ...state.activeGame.extraData, ...extraData }
+          } : null
+        }))
+      },
+
+      clearActiveGame: () => {
+        set({ activeGame: null })
+      },
+
+      getActiveGame: () => {
+        return get().activeGame
       },
 
       unlockAchievement: (code, title, description, starsReward) => {
@@ -234,7 +287,8 @@ export const useKidsStore = create<KidsState>()(
         sessions: state.sessions,
         achievements: state.achievements,
         currentKid: state.currentKid,
-        isKidsLoggedIn: state.isKidsLoggedIn
+        isKidsLoggedIn: state.isKidsLoggedIn,
+        activeGame: state.activeGame
       })
     }
   )

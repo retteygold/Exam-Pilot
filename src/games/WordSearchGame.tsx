@@ -32,7 +32,6 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
     const newGrid: string[][] = Array(GRID_SIZE).fill(null).map(() => Array(GRID_SIZE).fill(''))
     const positions = new Map<string, {row: number, col: number}[]>()
     
-    // Place words
     const directions = [[0, 1], [1, 0], [1, 1], [0, -1], [-1, 0], [-1, -1], [1, -1], [-1, 1]]
     
     for (const word of WORDS) {
@@ -59,7 +58,6 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
       }
     }
     
-    // Fill empty cells with random letters
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     for (let r = 0; r < GRID_SIZE; r++) {
       for (let c = 0; c < GRID_SIZE; c++) {
@@ -85,7 +83,6 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
 
   function handleCellClick(row: number, col: number) {
     if (isSelecting) {
-      // Check if selection forms a word
       checkWord()
       setIsSelecting(false)
       setSelectedCells([])
@@ -103,18 +100,49 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
     const lastCell = selectedCells[selectedCells.length - 1]
     if (!lastCell) return
     
-    // Check if adjacent (horizontal, vertical, or diagonal)
     const dr = Math.abs(row - lastCell.row)
     const dc = Math.abs(col - lastCell.col)
     
     if ((dr <= 1 && dc <= 1) && !(dr === 0 && dc === 0)) {
-      // Check if cell is already selected
       const alreadySelected = selectedCells.some(c => c.row === row && c.col === col)
       if (!alreadySelected) {
         const newSelected = [...selectedCells, {row, col}]
         setSelectedCells(newSelected)
         setCurrentWord(newSelected.map(c => grid[c.row][c.col]).join(''))
       }
+    }
+  }
+
+  function handleTouchStart(e: React.TouchEvent, row: number, col: number) {
+    e.preventDefault()
+    handleCellClick(row, col)
+  }
+
+  function handleTouchMove(e: React.TouchEvent) {
+    e.preventDefault()
+    if (!isSelecting) return
+    
+    const touch = e.touches[0]
+    const element = document.elementFromPoint(touch.clientX, touch.clientY)
+    if (!element) return
+    
+    const button = element.closest('button[data-row]')
+    if (button) {
+      const r = parseInt(button.getAttribute('data-row') || '-1')
+      const c = parseInt(button.getAttribute('data-col') || '-1')
+      if (r >= 0 && c >= 0) {
+        handleCellEnter(r, c)
+      }
+    }
+  }
+
+  function handleTouchEnd(e: React.TouchEvent) {
+    e.preventDefault()
+    if (isSelecting) {
+      checkWord()
+      setIsSelecting(false)
+      setSelectedCells([])
+      setCurrentWord('')
     }
   }
 
@@ -148,7 +176,6 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
       setScore(0)
       setShowLevelComplete(false)
     } else {
-      // Game complete - all 50 levels done
       const stars = Math.min(3, Math.floor(totalScore / 100) + 1)
       onComplete(totalScore, stars)
     }
@@ -180,7 +207,7 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
-          <button onClick={onExit} className="p-2 bg-slate-700/50 rounded-full hover:bg-slate-700">
+          <button onClick={onExit} className="p-2 bg-slate-700/50 rounded-full hover:bg-slate-700 text-white">
             ← Back
           </button>
           <div className="flex items-center gap-4">
@@ -188,7 +215,7 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
               <Star className="w-4 h-4 text-yellow-400" />
               <span className="text-yellow-400 font-bold">{score}</span>
             </div>
-            <button onClick={resetGame} className="p-2 bg-slate-700/50 rounded-full hover:bg-slate-700">
+            <button onClick={resetGame} className="p-2 bg-slate-700/50 rounded-full hover:bg-slate-700 text-white">
               <RotateCcw className="w-5 h-5" />
             </button>
           </div>
@@ -217,7 +244,7 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
         </div>
 
         {/* Word List */}
-        <div className="flex flex-wrap gap-2 justify-center mb-6">
+        <div className="flex flex-wrap gap-2 justify-center mb-6 max-h-32 overflow-y-auto">
           {WORDS.map(word => (
             <span
               key={word}
@@ -247,10 +274,10 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
         </div>
 
         {/* Grid */}
-        <div className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700">
+        <div className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700 overflow-x-auto">
           <div 
             className="grid gap-1"
-            style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)` }}
+            style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`, minWidth: '280px' }}
             onMouseLeave={() => {
               if (isSelecting) {
                 checkWord()
@@ -264,9 +291,14 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
               row.map((cell, c) => (
                 <button
                   key={`${r}-${c}`}
+                  data-row={r}
+                  data-col={c}
                   onMouseDown={() => handleCellClick(r, c)}
                   onMouseEnter={() => handleCellEnter(r, c)}
                   onClick={() => handleCellClick(r, c)}
+                  onTouchStart={(e) => handleTouchStart(e, r, c)}
+                  onTouchMove={handleTouchMove}
+                  onTouchEnd={handleTouchEnd}
                   className={`
                     aspect-square rounded-lg font-bold text-sm transition-all
                     ${isCellFound(r, c) 
