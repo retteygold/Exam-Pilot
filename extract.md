@@ -168,6 +168,41 @@ supabase_upload_[subject].json         # Combined for database
 
 ---
 
+## Deployment Guide
+
+### How to Push Changes and Deploy
+
+1. **Commit changes:**
+   ```bash
+   git add -A
+   git commit -m "Description of changes"
+   ```
+
+2. **Push to GitHub:**
+   ```bash
+   git push origin master
+   ```
+
+3. **Auto-deploy to Vercel:**
+   - Vercel automatically builds on every push
+   - Check deployment status at [Vercel Dashboard](https://vercel.com/dashboard)
+   - Build takes ~2-3 minutes
+
+### Environment Variables (Vercel)
+Add these in Vercel Project Settings:
+```
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+VITE_CLOUDINARY_CLOUD_NAME=
+VITE_CLOUDINARY_API_KEY=
+```
+
+---
+
 ## Recent Updates
 
 ### O-Level Physics 0625 (Latest)

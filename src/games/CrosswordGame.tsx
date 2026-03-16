@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Grid3X3, RotateCcw, Trophy, Star, HelpCircle, ChevronRight } from 'lucide-react'
 import { CROSSWORD_LEVELS } from './crosswordLevels'
 
@@ -19,6 +19,7 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
   const [totalScore, setTotalScore] = useState(0)
   const [showHint, setShowHint] = useState<string | null>(null)
   const [showLevelComplete, setShowLevelComplete] = useState(false)
+  const inputRef = useRef<HTMLInputElement>(null)
 
   const puzzle = CROSSWORD_LEVELS[currentPuzzle]
 
@@ -73,6 +74,16 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
   function moveSelectionTo(row: number, col: number) {
     if (row >= 0 && row < GRID_SIZE && col >= 0 && col < GRID_SIZE && !isCellBlocked(row, col)) {
       setSelectedCell({row, col})
+    }
+  }
+
+  function moveToNextCell() {
+    if (!selectedCell) return
+    const { row, col } = selectedCell
+    if (direction === 'across') {
+      moveSelectionTo(row, col + 1)
+    } else {
+      moveSelectionTo(row + 1, col)
     }
   }
 
@@ -199,61 +210,81 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {/* Grid */}
-          <div 
-            className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700"
-            tabIndex={0}
-            onKeyDown={handleKeyPress}
-          >
-            <div 
-              className="grid gap-1 mx-auto"
-              style={{ 
-                gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`,
-                maxWidth: '280px'
+          {/* Grid with hidden input for mobile keyboard */}
+          <div className="relative">
+            <input
+              ref={inputRef}
+              type="text"
+              className="absolute opacity-0 w-1 h-1 -z-10"
+              onChange={(e) => {
+                const char = e.target.value.slice(-1).toUpperCase()
+                if (char && selectedCell && !isCellBlocked(selectedCell.row, selectedCell.col)) {
+                  const newGrid = [...grid]
+                  newGrid[selectedCell.row][selectedCell.col] = char
+                  setGrid(newGrid)
+                  moveToNextCell()
+                }
+                e.target.value = ''
               }}
+              onKeyDown={handleKeyPress}
+            />
+            <div 
+              className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700"
+              onClick={() => inputRef.current?.focus()}
             >
-              {Array(GRID_SIZE).fill(null).map((_, row) => 
-                Array(GRID_SIZE).fill(null).map((_, col) => {
-                  const isBlocked = isCellBlocked(row, col)
-                  const isSelected = selectedCell?.row === row && selectedCell?.col === col
-                  const number = getCellNumber(row, col)
-                  const isSolved = isCellSolved(row, col)
-                  
-                  return (
-                    <button
-                      key={`${row}-${col}`}
-                      onClick={() => handleCellClick(row, col)}
-                      disabled={isBlocked}
-                      className={`
-                        aspect-square rounded-lg font-bold text-lg relative transition-all
-                        ${isBlocked 
-                          ? 'bg-slate-900/50' 
-                          : isSelected
-                            ? 'bg-blue-500/50 text-white ring-2 ring-blue-400'
-                            : isSolved
-                              ? 'bg-emerald-500/30 text-emerald-100'
-                              : 'bg-slate-700/50 text-slate-300 hover:bg-slate-600'
-                        }
-                      `}
-                    >
-                      {number && (
-                        <span className="absolute top-0.5 left-0.5 text-[8px] font-bold text-slate-400">
-                          {number}
-                        </span>
-                      )}
-                      {grid[row][col]}
-                    </button>
-                  )
-                })
-              )}
+              <div 
+                className="grid gap-1 mx-auto"
+                style={{ 
+                  gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`,
+                  maxWidth: '280px'
+                }}
+              >
+                {Array(GRID_SIZE).fill(null).map((_, row) => 
+                  Array(GRID_SIZE).fill(null).map((_, col) => {
+                    const isBlocked = isCellBlocked(row, col)
+                    const isSelected = selectedCell?.row === row && selectedCell?.col === col
+                    const number = getCellNumber(row, col)
+                    const isSolved = isCellSolved(row, col)
+                    
+                    return (
+                      <button
+                        key={`${row}-${col}`}
+                        onClick={() => {
+                          handleCellClick(row, col)
+                          inputRef.current?.focus()
+                        }}
+                        disabled={isBlocked}
+                        className={`
+                          aspect-square rounded-lg font-bold text-lg relative transition-all
+                          ${isBlocked 
+                            ? 'bg-slate-900/50' 
+                            : isSelected
+                              ? 'bg-blue-500/50 text-white ring-2 ring-blue-400'
+                              : isSolved
+                                ? 'bg-emerald-500/30 text-emerald-100'
+                                : 'bg-slate-700/50 text-slate-300 hover:bg-slate-600'
+                          }
+                        `}
+                      >
+                        {number && (
+                          <span className="absolute top-0.5 left-0.5 text-[8px] font-bold text-slate-400">
+                            {number}
+                          </span>
+                        )}
+                        {grid[row][col]}
+                      </button>
+                    )
+                  })
+                )}
+              </div>
+              <p className="text-center text-slate-400 text-xs mt-3">
+                Click a cell, then type letters
+              </p>
             </div>
-            <p className="text-center text-slate-400 text-xs mt-3">
-              Click a cell, then type letters
-            </p>
           </div>
 
-          {/* Clues */}
-          <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2">
+          {/* Clues - Scrollable container */}
+          <div className="space-y-4 max-h-[400px] overflow-y-auto pr-2" style={{ WebkitOverflowScrolling: 'touch' }}>
             <div className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700">
               <h3 className="font-bold text-white mb-3 flex items-center gap-2">
                 <span className="text-blue-400">→</span> Across

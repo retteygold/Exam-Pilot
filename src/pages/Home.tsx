@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { BookOpen, Target, Award, ArrowRight, GraduationCap } from 'lucide-react'
+import { BookOpen, Target, Award, ArrowRight, GraduationCap, RefreshCw } from 'lucide-react'
 import { useExamStore } from '../store/examStore'
 
 export function Home() {
@@ -10,8 +10,8 @@ export function Home() {
 
   return (
     <div className="p-4 space-y-6">
-      {/* Logo Header */}
-      <div className="flex items-center justify-center py-4">
+      {/* Logo Header with Refresh */}
+      <div className="flex items-center justify-between py-4">
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center">
             <GraduationCap className="w-7 h-7 text-white" />
@@ -23,6 +23,13 @@ export function Home() {
             <p className="text-xs text-slate-400">Cambridge Past Papers</p>
           </div>
         </div>
+        <button
+          onClick={() => window.location.reload()}
+          className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
+          title="Refresh to see latest uploads"
+        >
+          <RefreshCw className="w-5 h-5" />
+        </button>
       </div>
 
       {/* Hero with Storyset Image */}

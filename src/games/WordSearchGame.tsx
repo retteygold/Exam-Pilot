@@ -276,8 +276,8 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
         {/* Grid */}
         <div className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700 overflow-x-auto">
           <div 
-            className="grid gap-1"
-            style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`, minWidth: '280px' }}
+            className="grid gap-1 touch-none"
+            style={{ gridTemplateColumns: `repeat(${GRID_SIZE}, 1fr)`, minWidth: '280px', touchAction: 'none' }}
             onMouseLeave={() => {
               if (isSelecting) {
                 checkWord()
@@ -299,8 +299,9 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
                   onTouchStart={(e) => handleTouchStart(e, r, c)}
                   onTouchMove={handleTouchMove}
                   onTouchEnd={handleTouchEnd}
+                  style={{ touchAction: 'none', WebkitTouchCallout: 'none', WebkitUserSelect: 'none', userSelect: 'none' }}
                   className={`
-                    aspect-square rounded-lg font-bold text-sm transition-all
+                    aspect-square rounded-lg font-bold text-sm transition-all select-none
                     ${isCellFound(r, c) 
                       ? 'bg-emerald-500/50 text-emerald-100' 
                       : isCellSelected(r, c)
