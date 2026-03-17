@@ -491,26 +491,27 @@ export async function getKidSessions(kidId: string): Promise<GameSessionDB[]> {
   try {
     const q = query(
       collection(db, SESSIONS_COLLECTION),
-      where('kidId', '==', kidId),
-      where('deleted', '!=', true)
+      where('kidId', '==', kidId)
     )
     const snapshot = await getDocs(q)
 
-    return snapshot.docs.map(docSnap => {
-      const data = docSnap.data()
-      return {
-        id: docSnap.id,
-        kidId: data.kidId,
-        gameType: data.gameType,
-        level: typeof data.level === 'number' ? data.level : undefined,
-        score: data.score,
-        starsEarned: data.starsEarned,
-        correctAnswers: data.correctAnswers,
-        totalQuestions: data.totalQuestions,
-        durationSeconds: data.durationSeconds,
-        playedAt: data.playedAt?.toMillis?.() || Date.now()
-      } as GameSessionDB
-    })
+    return snapshot.docs
+      .filter(docSnap => !docSnap.data().deleted)
+      .map(docSnap => {
+        const data = docSnap.data()
+        return {
+          id: docSnap.id,
+          kidId: data.kidId,
+          gameType: data.gameType,
+          level: typeof data.level === 'number' ? data.level : undefined,
+          score: data.score,
+          starsEarned: data.starsEarned,
+          correctAnswers: data.correctAnswers,
+          totalQuestions: data.totalQuestions,
+          durationSeconds: data.durationSeconds,
+          playedAt: data.playedAt?.toMillis?.() || Date.now()
+        } as GameSessionDB
+      })
   } catch (error) {
     console.error('Error getting kid sessions:', error)
     return []
@@ -550,23 +551,24 @@ export async function getKidAchievements(kidId: string): Promise<AchievementDB[]
   try {
     const q = query(
       collection(db, ACHIEVEMENTS_COLLECTION),
-      where('kidId', '==', kidId),
-      where('deleted', '!=', true)
+      where('kidId', '==', kidId)
     )
     const snapshot = await getDocs(q)
     
-    return snapshot.docs.map(doc => {
-      const data = doc.data()
-      return {
-        id: doc.id,
-        kidId: data.kidId,
-        code: data.code,
-        title: data.title,
-        description: data.description,
-        starsReward: data.starsReward,
-        unlockedAt: data.unlockedAt?.toMillis?.() || Date.now()
-      } as AchievementDB
-    })
+    return snapshot.docs
+      .filter(docSnap => !docSnap.data().deleted)
+      .map(docSnap => {
+        const data = docSnap.data()
+        return {
+          id: docSnap.id,
+          kidId: data.kidId,
+          code: data.code,
+          title: data.title,
+          description: data.description,
+          starsReward: data.starsReward,
+          unlockedAt: data.unlockedAt?.toMillis?.() || Date.now()
+        } as AchievementDB
+      })
   } catch (error) {
     console.error('Error getting kid achievements:', error)
     return []
