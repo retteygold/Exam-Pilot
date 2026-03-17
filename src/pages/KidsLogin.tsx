@@ -7,38 +7,32 @@ const GRADES = ['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade
 
 type CountryOption = { name: string; flag: string }
 
-const FALLBACK_COUNTRIES: CountryOption[] = [
-  { name: 'Pakistan', flag: '🇵🇰' },
-  { name: 'India', flag: '🇮🇳' },
-  { name: 'Bangladesh', flag: '🇧🇩' },
-  { name: 'Sri Lanka', flag: '🇱🇰' },
-  { name: 'Nepal', flag: '🇳🇵' },
-  { name: 'United Kingdom', flag: '🇬🇧' },
-  { name: 'United States', flag: '🇺🇸' },
-  { name: 'Canada', flag: '🇨🇦' },
-  { name: 'Australia', flag: '🇦🇺' },
-  { name: 'UAE', flag: '🇦🇪' },
-  { name: 'Saudi Arabia', flag: '🇸🇦' },
-  { name: 'Qatar', flag: '🇶🇦' },
-  { name: 'Kuwait', flag: '🇰🇼' },
-  { name: 'Turkey', flag: '🇹🇷' },
-  { name: 'South Africa', flag: '🇿🇦' },
-  { name: 'Nigeria', flag: '🇳🇬' },
-  { name: 'Kenya', flag: '🇰🇪' },
-  { name: 'France', flag: '🇫🇷' },
-  { name: 'Germany', flag: '🇩🇪' },
-  { name: 'Spain', flag: '🇪🇸' },
-  { name: 'Italy', flag: '🇮🇹' },
-  { name: 'Netherlands', flag: '🇳🇱' },
-  { name: 'Sweden', flag: '🇸🇪' },
-  { name: 'Norway', flag: '🇳🇴' },
-  { name: 'Finland', flag: '🇫🇮' },
-  { name: 'Japan', flag: '🇯🇵' },
-  { name: 'China', flag: '🇨🇳' },
-  { name: 'Malaysia', flag: '🇲🇾' },
-  { name: 'Singapore', flag: '🇸🇬' },
-  { name: 'Indonesia', flag: '🇮🇩' },
-  { name: 'Philippines', flag: '🇵🇭' }
+const ISO_3166_ALPHA2: string[] = [
+  'AD','AE','AF','AG','AI','AL','AM','AO','AQ','AR','AS','AT','AU','AW','AX','AZ',
+  'BA','BB','BD','BE','BF','BG','BH','BI','BJ','BL','BM','BN','BO','BQ','BR','BS','BT','BV','BW','BY','BZ',
+  'CA','CC','CD','CF','CG','CH','CI','CK','CL','CM','CN','CO','CR','CU','CV','CW','CX','CY','CZ',
+  'DE','DJ','DK','DM','DO','DZ',
+  'EC','EE','EG','EH','ER','ES','ET',
+  'FI','FJ','FK','FM','FO','FR',
+  'GA','GB','GD','GE','GF','GG','GH','GI','GL','GM','GN','GP','GQ','GR','GS','GT','GU','GW','GY',
+  'HK','HM','HN','HR','HT','HU',
+  'ID','IE','IL','IM','IN','IO','IQ','IR','IS','IT',
+  'JE','JM','JO','JP',
+  'KE','KG','KH','KI','KM','KN','KP','KR','KW','KY','KZ',
+  'LA','LB','LC','LI','LK','LR','LS','LT','LU','LV','LY',
+  'MA','MC','MD','ME','MF','MG','MH','MK','ML','MM','MN','MO','MP','MQ','MR','MS','MT','MU','MV','MW','MX','MY','MZ',
+  'NA','NC','NE','NF','NG','NI','NL','NO','NP','NR','NU','NZ',
+  'OM',
+  'PA','PE','PF','PG','PH','PK','PL','PM','PN','PR','PS','PT','PW','PY',
+  'QA',
+  'RE','RO','RS','RU','RW',
+  'SA','SB','SC','SD','SE','SG','SH','SI','SJ','SK','SL','SM','SN','SO','SR','SS','ST','SV','SX','SY','SZ',
+  'TC','TD','TF','TG','TH','TJ','TK','TL','TM','TN','TO','TR','TT','TV','TW','TZ',
+  'UA','UG','UM','US','UY','UZ',
+  'VA','VC','VE','VG','VI','VN','VU',
+  'WF','WS',
+  'YE','YT',
+  'ZA','ZM','ZW'
 ]
 
 const flagFromRegion = (regionCode: string) =>
@@ -47,25 +41,13 @@ const flagFromRegion = (regionCode: string) =>
     .replace(/./g, c => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65))
 
 const buildCountryOptions = (): CountryOption[] => {
-  try {
-    const intlAny = Intl as any
-    if (typeof intlAny.supportedValuesOf !== 'function') return FALLBACK_COUNTRIES
-    const regionCodes: string[] = intlAny.supportedValuesOf('region')
-    const dn = new Intl.DisplayNames(['en'], { type: 'region' })
-
-    const options = regionCodes
-      .map(code => {
-        const name = dn.of(code)
-        if (!name) return null
-        return { name, flag: flagFromRegion(code) }
-      })
-      .filter(Boolean) as CountryOption[]
-
-    options.sort((a, b) => a.name.localeCompare(b.name))
-    return options.length ? options : FALLBACK_COUNTRIES
-  } catch {
-    return FALLBACK_COUNTRIES
-  }
+  const dn = new Intl.DisplayNames(['en'], { type: 'region' })
+  return ISO_3166_ALPHA2
+    .map(code => ({
+      name: dn.of(code) || code,
+      flag: flagFromRegion(code)
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name))
 }
 
 interface KidsLoginProps {
