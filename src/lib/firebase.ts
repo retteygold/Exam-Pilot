@@ -16,6 +16,15 @@ export const app = initializeApp(firebaseConfig)
 export const auth = getAuth(app)
 export const db = getFirestore(app)
 
+if (typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1') {
+  console.log('[KidsAuth] firebase config', {
+    authDomain: firebaseConfig.authDomain,
+    projectId: firebaseConfig.projectId,
+    hasApiKey: !!firebaseConfig.apiKey,
+    hasAppId: !!firebaseConfig.appId
+  })
+}
+
 // Storage is optional - only export if configured
 export const storage = firebaseConfig.storageBucket ? getStorage(app) : null
 

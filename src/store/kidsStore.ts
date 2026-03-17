@@ -235,7 +235,9 @@ export const useKidsStore = create<KidsState>()(
             skillPath
           }))
           return profile
-        } catch {
+        } catch (err: unknown) {
+          const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+          if (debugKidsAuth) console.log('[KidsAuth] store.finishGoogleRedirectLogin: error', err)
           return null
         }
       },
@@ -376,17 +378,24 @@ export const useKidsStore = create<KidsState>()(
 
       loginWithGoogle: async () => {
         try {
+          const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+          if (debugKidsAuth) console.log('[KidsAuth] store.loginWithGoogle: calling signInWithRedirect')
           const provider = new GoogleAuthProvider()
           await signInWithRedirect(auth, provider)
           return null
-        } catch {
+        } catch (err: unknown) {
+          const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+          if (debugKidsAuth) console.log('[KidsAuth] store.loginWithGoogle: signInWithRedirect error', err)
           return null
         }
       },
 
       finishGoogleRedirectLogin: async () => {
         try {
+          const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+          if (debugKidsAuth) console.log('[KidsAuth] store.finishGoogleRedirectLogin: calling getRedirectResult', { hasAuthUser: !!auth.currentUser })
           const result = await getRedirectResult(auth)
+          if (debugKidsAuth) console.log('[KidsAuth] store.finishGoogleRedirectLogin: getRedirectResult returned', { hasResult: !!result, uid: result?.user?.uid })
           if (!result?.user) return null
 
           const uid = result.user.uid
