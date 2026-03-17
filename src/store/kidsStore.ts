@@ -82,8 +82,10 @@ export const useKidsStore = create<KidsState>()(
       activeGame: null,
 
       login: (name: string, secretCode: string) => {
+        const normalizedName = name.trim().toLowerCase()
+        const normalizedCode = secretCode.trim()
         const profile = get().profiles.find(
-          p => p.name.toLowerCase() === name.toLowerCase() && p.secretCode === secretCode
+          p => p.name.trim().toLowerCase() === normalizedName && p.secretCode.trim() === normalizedCode
         )
         if (profile) {
           set({ currentKid: profile, isKidsLoggedIn: true })
@@ -93,14 +95,18 @@ export const useKidsStore = create<KidsState>()(
       },
 
       register: (name: string, secretCode: string, grade: string, avatar: string) => {
-        const existing = get().profiles.find(p => p.name.toLowerCase() === name.toLowerCase())
+        const normalizedName = name.trim()
+        const normalizedNameKey = normalizedName.toLowerCase()
+        const normalizedCode = secretCode.trim()
+
+        const existing = get().profiles.find(p => p.name.trim().toLowerCase() === normalizedNameKey)
         if (existing) return null
-        if (!/^\d{4}$/.test(secretCode)) return null
+        if (!/^\d{4}$/.test(normalizedCode)) return null
         
         const newProfile: KidsProfile = {
           id: generateId(),
-          name,
-          secretCode,
+          name: normalizedName,
+          secretCode: normalizedCode,
           grade,
           avatar,
           createdAt: Date.now()
