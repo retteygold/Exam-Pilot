@@ -58,6 +58,7 @@ interface KidsLoginProps {
 }
 
 export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
+  const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
   const [isRegistering, setIsRegistering] = useState(false)
   const [authMode, setAuthMode] = useState<'kid_pin' | 'email' | 'google_profile'>('kid_pin')
   const [name, setName] = useState('')
@@ -77,15 +78,27 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
 
   useEffect(() => {
     const run = async () => {
+      if (debugKidsAuth) {
+        console.log('[KidsAuth] mount: starting redirect completion attempt', {
+          hasCurrentKid: !!currentKid,
+          hasAuthUserAtMount: !!auth.currentUser,
+          url: window.location.href
+        })
+      }
+
       const profile = await finishGoogleRedirectLogin()
       if (profile) {
+        if (debugKidsAuth) console.log('[KidsAuth] redirect result: profile loaded', { kidId: profile.id, name: profile.name })
         setSuccess(`Welcome back, ${profile.name}! 🎉`)
         setTimeout(() => onLogin(), 300)
         return
       }
 
+      if (debugKidsAuth) console.log('[KidsAuth] redirect result: no profile returned', { hasAuthUser: !!auth.currentUser })
+
       // If redirect sign-in completed but profile doc doesn't exist yet, prompt profile completion.
       if (auth.currentUser) {
+        if (debugKidsAuth) console.log('[KidsAuth] auth.currentUser exists but no profile doc yet; switching to profile completion')
         setAuthMode('google_profile')
         setIsRegistering(true)
         setSuccess('Signed in with Google. Please complete your profile.')
@@ -97,9 +110,17 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => {
+      if (debugKidsAuth) {
+        console.log('[KidsAuth] onAuthStateChanged', {
+          hasUser: !!user,
+          uid: user?.uid,
+          hasCurrentKid: !!currentKid
+        })
+      }
       // After redirect/refresh, auth may initialize after the component renders.
       // If the user is signed in but we don't yet have a kid profile loaded, prompt completion.
       if (user && !currentKid) {
+        if (debugKidsAuth) console.log('[KidsAuth] signed-in user but currentKid missing -> show google_profile form')
         setAuthMode('google_profile')
         setIsRegistering(true)
       }
@@ -135,6 +156,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
   const handleGoogleLogin = async () => {
     setError('')
     setSuccess('')
+    if (debugKidsAuth) console.log('[KidsAuth] starting Google redirect sign-in')
     await loginWithGoogle()
     setSuccess('Opening Google sign-in...')
   }

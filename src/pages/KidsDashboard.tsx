@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { auth } from '../lib/firebase'
 import { Star, Trophy, Zap, Target, Gamepad2, Puzzle, Brain, Sparkles, ArrowRight, Medal, Crown, LogOut, Search, Grid3X3, Eye, HelpCircle } from 'lucide-react'
 import { useKidsStore } from '../store/kidsStore'
 import { useUserStore } from '../store/userStore'
@@ -247,6 +248,7 @@ const achievements = [
 ]
 
 export function KidsDashboard() {
+  const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
   const navigate = useNavigate()
   const { profile } = useUserStore()
   const [streak] = useState(5)
@@ -465,6 +467,12 @@ export function KidsDashboard() {
 
   // Show login if not authenticated
   if (!currentKid) {
+    if (debugKidsAuth) {
+      console.log('[KidsAuth] KidsDashboard: currentKid is null -> rendering KidsLogin', {
+        hasFirebaseUser: !!auth.currentUser,
+        uid: auth.currentUser?.uid
+      })
+    }
     return <KidsLogin onLogin={handleLogin} key={loginKey} />
   }
 
