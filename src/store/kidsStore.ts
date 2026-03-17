@@ -1,8 +1,10 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth'
+import { auth } from '../lib/firebase'
 import {
   createKidProfile,
-  validateKidLogin,
+  getKidProfileById,
   recordSession as recordSessionDB,
   recordAchievement as recordAchievementDB,
   getKidSessions,
@@ -19,6 +21,15 @@ import {
   deleteKidProfile,
   updateKidProfile
 } from '../services/kidsFirestore'
+
+const kidEmailFromNameKey = (nameKey: string) => {
+  const safe = nameKey
+    .trim()
+    .toLowerCase()
+    .replace(/\s+/g, '.')
+    .replace(/[^a-z0-9.\-]/g, '')
+  return `${safe}@kids.exam-pilot.local`
+}
 
 export interface KidsProfile {
   id: string
@@ -161,13 +172,21 @@ export const useKidsStore = create<KidsState>()(
       activeGame: null,
 
       login: async (name: string, secretCode: string) => {
-        const profile = await validateKidLogin(name, secretCode)
-        if (profile) {
+        const normalizedNameKey = name.trim().toLowerCase()
+        const normalizedCode = secretCode.trim()
+        const email = kidEmailFromNameKey(normalizedNameKey)
+
+        try {
+          const cred = await signInWithEmailAndPassword(auth, email, normalizedCode)
+          const uid = cred.user.uid
+          const profile = await getKidProfileById(uid)
+          if (!profile) return null
+
           // Load this kid's sessions and achievements from Firestore
-          const sessions = await getKidSessions(profile.id)
-          const achievements = await getKidAchievements(profile.id)
-          const progress = await getKidGameProgressDB(profile.id)
-          const skillPathDB = await getKidSkillPathDB(profile.id)
+          const sessions = await getKidSessions(uid)
+          const achievements = await getKidAchievements(uid)
+          const progress = await getKidGameProgressDB(uid)
+          const skillPathDB = await getKidSkillPathDB(uid)
 
           const progressByGame: Record<string, KidGameProgress> = {}
           for (const p of progress) {
@@ -211,8 +230,9 @@ export const useKidsStore = create<KidsState>()(
             skillPath
           }))
           return profile
+        } catch {
+          return null
         }
-        return null
       },
       register: async (name: string, secretCode: string, grade: string, avatar: string, countryName?: string, countryFlag?: string) => {
         const normalizedName = name.trim()
@@ -220,10 +240,16 @@ export const useKidsStore = create<KidsState>()(
 
         if (!/^\d{4}$/.test(normalizedCode)) throw new Error('KID_SECRET_INVALID')
 
+        const nameKey = normalizedName.toLowerCase()
+        const email = kidEmailFromNameKey(nameKey)
+
         try {
-          const newProfile = await createKidProfile({
+          const cred = await createUserWithEmailAndPassword(auth, email, normalizedCode)
+          const uid = cred.user.uid
+
+          const newProfile = await createKidProfile(uid, {
             name: normalizedName,
-            nameKey: normalizedName.toLowerCase(),
+            nameKey,
             secretCode: normalizedCode,
             grade,
             avatar,
@@ -241,12 +267,13 @@ export const useKidsStore = create<KidsState>()(
           return newProfile
         } catch (error: unknown) {
           const message = error instanceof Error ? error.message : String(error)
-          if (message.includes('KID_NAME_TAKEN')) throw new Error('KID_NAME_TAKEN')
+          if (message.includes('email-already-in-use') || message.includes('KID_NAME_TAKEN')) throw new Error('KID_NAME_TAKEN')
           throw new Error('KID_REGISTRATION_FAILED')
         }
       },
 
       logout: () => {
+        void signOut(auth)
         set({ currentKid: null, isKidsLoggedIn: false, skillPath: null })
       },
 

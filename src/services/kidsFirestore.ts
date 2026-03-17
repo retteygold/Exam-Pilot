@@ -1,5 +1,5 @@
 import { db } from '../lib/firebase'
-import { collection, doc, setDoc, query, where, getDocs, serverTimestamp, orderBy, limit } from 'firebase/firestore'
+import { collection, doc, getDoc, setDoc, query, where, getDocs, serverTimestamp, orderBy, limit } from 'firebase/firestore'
 import type { KidsProfile, GameSession, Achievement } from '../store/kidsStore'
 
 export type KidsProfileDB = KidsProfile
@@ -56,7 +56,7 @@ export type KidSkillPathDB = {
   updatedAt: number
 }
 
-export async function createKidProfile(profile: Omit<KidsProfileDB, 'id'>): Promise<KidsProfileDB> {
+export async function createKidProfile(kidId: string, profile: Omit<KidsProfileDB, 'id'>): Promise<KidsProfileDB> {
   try {
     const nameKey = profile.name.toLowerCase().trim()
     
@@ -67,10 +67,10 @@ export async function createKidProfile(profile: Omit<KidsProfileDB, 'id'>): Prom
       throw new Error('KID_NAME_TAKEN')
     }
 
-    const docRef = doc(collection(db, KIDS_COLLECTION))
+    const docRef = doc(db, KIDS_COLLECTION, kidId)
     const newProfile: KidsProfileDB = {
       ...profile,
-      id: docRef.id,
+      id: kidId,
       nameKey
     }
     
@@ -83,6 +83,30 @@ export async function createKidProfile(profile: Omit<KidsProfileDB, 'id'>): Prom
   } catch (error) {
     console.error('Error creating kid profile:', error)
     throw error
+  }
+}
+
+export async function getKidProfileById(kidId: string): Promise<KidsProfileDB | null> {
+  try {
+    const docRef = doc(db, KIDS_COLLECTION, kidId)
+    const snap = await getDoc(docRef)
+    if (!snap.exists()) return null
+
+    const data = snap.data()
+    return {
+      id: snap.id,
+      name: data.name,
+      nameKey: data.nameKey,
+      secretCode: data.secretCode,
+      grade: data.grade,
+      avatar: data.avatar,
+      countryName: data.countryName,
+      countryFlag: data.countryFlag,
+      createdAt: data.createdAt?.toMillis?.() || Date.now()
+    } as KidsProfileDB
+  } catch (error) {
+    console.error('Error getting kid profile by id:', error)
+    return null
   }
 }
 
