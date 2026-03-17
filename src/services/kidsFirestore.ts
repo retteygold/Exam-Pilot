@@ -369,26 +369,29 @@ export async function getGameLeaderboard(gameId: string, topN: number = 10): Pro
   try {
     const q = query(
       collection(db, GAME_BEST_SCORES_COLLECTION),
-      where('gameId', '==', gameId),
-      orderBy('bestScore', 'desc'),
-      limit(topN)
+      where('gameId', '==', gameId)
     )
 
     const snapshot = await getDocs(q)
-    return snapshot.docs.map(d => {
-      const data = d.data()
-      return {
-        id: d.id,
-        kidId: data.kidId,
-        gameId: data.gameId,
-        bestScore: data.bestScore ?? 0,
-        kidName: data.kidName ?? 'Kid',
-        kidAvatar: data.kidAvatar ?? '⭐',
-        kidFlag: data.kidFlag,
-        kidGrade: data.kidGrade,
-        updatedAt: data.updatedAt?.toMillis?.() || Date.now()
-      } as KidGameBestScoreDB
-    })
+
+    return snapshot.docs
+      .filter(d => !d.data().deleted)
+      .map(d => {
+        const data = d.data()
+        return {
+          id: d.id,
+          kidId: data.kidId,
+          gameId: data.gameId,
+          bestScore: data.bestScore,
+          kidName: data.kidName ?? 'Kid',
+          kidAvatar: data.kidAvatar ?? '⭐',
+          kidFlag: data.kidFlag,
+          kidGrade: data.kidGrade,
+          updatedAt: data.updatedAt?.toMillis?.() || Date.now()
+        } as KidGameBestScoreDB
+      })
+      .sort((a, b) => (b.bestScore ?? 0) - (a.bestScore ?? 0))
+      .slice(0, topN)
   } catch (error) {
     console.error('Error getting game leaderboard:', error)
     return []
@@ -462,25 +465,27 @@ export async function getGradeTopper(grade: string): Promise<KidOverallScoreDB |
   try {
     const q = query(
       collection(db, OVERALL_SCORES_COLLECTION),
-      where('kidGrade', '==', grade),
-      orderBy('overallScore', 'desc'),
-      limit(1)
+      where('kidGrade', '==', grade)
     )
     const snapshot = await getDocs(q)
-    if (snapshot.empty) return null
+    const rows = snapshot.docs
+      .filter(d => !d.data().deleted)
+      .map(d => {
+        const data = d.data()
+        return {
+          id: d.id,
+          kidId: data.kidId,
+          kidName: data.kidName ?? 'Kid',
+          kidAvatar: data.kidAvatar ?? '⭐',
+          kidFlag: data.kidFlag,
+          kidGrade: data.kidGrade,
+          overallScore: data.overallScore ?? 0,
+          updatedAt: data.updatedAt?.toMillis?.() || Date.now()
+        } as KidOverallScoreDB
+      })
+      .sort((a, b) => (b.overallScore ?? 0) - (a.overallScore ?? 0))
 
-    const d = snapshot.docs[0]
-    const data = d.data()
-    return {
-      id: d.id,
-      kidId: data.kidId,
-      kidName: data.kidName ?? 'Kid',
-      kidAvatar: data.kidAvatar ?? '⭐',
-      kidFlag: data.kidFlag,
-      kidGrade: data.kidGrade,
-      overallScore: data.overallScore ?? 0,
-      updatedAt: data.updatedAt?.toMillis?.() || Date.now()
-    } as KidOverallScoreDB
+    return rows[0] ?? null
   } catch (error) {
     console.error('Error getting grade topper:', error)
     return null
@@ -523,11 +528,10 @@ export async function recordAchievement(achievement: Omit<AchievementDB, 'id'>):
     // Check if already exists
     const q = query(
       collection(db, ACHIEVEMENTS_COLLECTION),
-      where('kidId', '==', achievement.kidId),
-      where('code', '==', achievement.code)
+      where('kidId', '==', achievement.kidId)
     )
     const existing = await getDocs(q)
-    if (!existing.empty) return null
+    if (existing.docs.some(d => d.data().code === achievement.code && !d.data().deleted)) return null
     
     const docRef = doc(collection(db, ACHIEVEMENTS_COLLECTION))
     const newAchievement: AchievementDB = {
