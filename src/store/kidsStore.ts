@@ -7,6 +7,10 @@ import {
   recordAchievement as recordAchievementDB,
   getKidSessions,
   getKidAchievements,
+  getKidGameProgress as getKidGameProgressDB,
+  upsertKidGameProgress as upsertKidGameProgressDB,
+  upsertKidBestScore as upsertKidBestScoreDB,
+  getGameLeaderboard as getGameLeaderboardDB,
   deleteKidProfile,
   updateKidProfile
 } from '../services/kidsFirestore'
@@ -25,12 +29,30 @@ export interface GameSession {
   id: string
   kidId: string
   gameType: string
+  level?: number
   score: number
   starsEarned: number
   correctAnswers: number
   totalQuestions: number
   durationSeconds: number
   playedAt: number
+}
+
+export interface KidGameProgress {
+  gameId: string
+  highestLevelUnlocked: number
+  lastPlayedLevel: number
+  bestScore: number
+  updatedAt: number
+}
+
+export interface GameLeaderboardEntry {
+  kidId: string
+  kidName: string
+  kidAvatar: string
+  gameId: string
+  bestScore: number
+  updatedAt: number
 }
 
 // Active game progress that can be resumed
@@ -58,6 +80,7 @@ export interface KidsState {
   profiles: KidsProfile[]
   sessions: GameSession[]
   achievements: Achievement[]
+  gameProgress: Record<string, KidGameProgress>
   activeGame: ActiveGameProgress | null  // Track ongoing game
   
   login: (name: string, secretCode: string) => Promise<KidsProfile | null>
@@ -67,6 +90,10 @@ export interface KidsState {
   unlockAchievement: (achievementCode: string, title: string, description: string, starsReward: number) => void
   getKidStats: (kidId: string) => { totalStars: number; totalSessions: number; bestStreak: number }
   getLeaderboard: () => Array<{ kid: KidsProfile; totalStars: number; sessions: number }>
+
+  getGameProgress: (gameId: string) => KidGameProgress | null
+  getAllGameProgress: () => KidGameProgress[]
+  getGameLeaderboard: (gameId: string, topN?: number) => Promise<GameLeaderboardEntry[]>
   // Game session management
   startGameSession: (gameType: string, level: number, extraData?: Record<string, any>) => void
   updateGameProgress: (level: number, score: number, extraData?: Record<string, any>) => void
@@ -90,6 +117,7 @@ export const useKidsStore = create<KidsState>()(
       profiles: [],
       sessions: [],
       achievements: [],
+      gameProgress: {},
       activeGame: null,
 
       login: async (name: string, secretCode: string) => {
@@ -98,12 +126,25 @@ export const useKidsStore = create<KidsState>()(
           // Load this kid's sessions and achievements from Firestore
           const sessions = await getKidSessions(profile.id)
           const achievements = await getKidAchievements(profile.id)
+          const progress = await getKidGameProgressDB(profile.id)
+
+          const progressByGame: Record<string, KidGameProgress> = {}
+          for (const p of progress) {
+            progressByGame[p.gameId] = {
+              gameId: p.gameId,
+              highestLevelUnlocked: p.highestLevelUnlocked ?? 1,
+              lastPlayedLevel: p.lastPlayedLevel ?? 1,
+              bestScore: p.bestScore ?? 0,
+              updatedAt: p.updatedAt ?? Date.now()
+            }
+          }
           
           set(state => ({
             currentKid: profile,
             isKidsLoggedIn: true,
             sessions: [...state.sessions.filter((s: GameSession) => s.kidId !== profile.id), ...sessions],
-            achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements]
+            achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements],
+            gameProgress: progressByGame
           }))
           return profile
         }
@@ -155,6 +196,7 @@ export const useKidsStore = create<KidsState>()(
         await recordSessionDB({
           kidId: currentKid.id,
           gameType: session.gameType,
+          level: session.level,
           score: session.score,
           starsEarned: session.starsEarned,
           correctAnswers: session.correctAnswers,
@@ -162,6 +204,40 @@ export const useKidsStore = create<KidsState>()(
           durationSeconds: session.durationSeconds,
           playedAt: Date.now()
         })
+
+        // Update per-game progress and best score (for per-game leaderboard)
+        const gameId = session.gameType
+        const currentProgress = get().gameProgress[gameId]
+        const playedLevel = session.level ?? currentProgress?.lastPlayedLevel ?? 1
+        const nextUnlocked = Math.min(100, playedLevel + 1)
+        const bestScore = Math.max(currentProgress?.bestScore ?? 0, session.score)
+
+        await upsertKidGameProgressDB(currentKid.id, gameId, {
+          highestLevelUnlocked: Math.max(currentProgress?.highestLevelUnlocked ?? 1, nextUnlocked),
+          lastPlayedLevel: playedLevel,
+          bestScore
+        })
+
+        await upsertKidBestScoreDB({
+          kidId: currentKid.id,
+          kidName: currentKid.name,
+          kidAvatar: currentKid.avatar,
+          gameId,
+          bestScore
+        })
+
+        set(state => ({
+          gameProgress: {
+            ...state.gameProgress,
+            [gameId]: {
+              gameId,
+              highestLevelUnlocked: Math.max(currentProgress?.highestLevelUnlocked ?? 1, nextUnlocked),
+              lastPlayedLevel: playedLevel,
+              bestScore,
+              updatedAt: Date.now()
+            }
+          }
+        }))
         
         set(state => ({
           sessions: [...state.sessions, newSession]
@@ -291,6 +367,26 @@ export const useKidsStore = create<KidsState>()(
         return kidStats.sort((a, b) => b.totalStars - a.totalStars)
       },
 
+      getGameProgress: (gameId: string) => {
+        return get().gameProgress[gameId] ?? null
+      },
+
+      getAllGameProgress: () => {
+        return Object.values(get().gameProgress)
+      },
+
+      getGameLeaderboard: async (gameId: string, topN: number = 10) => {
+        const rows = await getGameLeaderboardDB(gameId, topN)
+        return rows.map(r => ({
+          kidId: r.kidId,
+          kidName: r.kidName,
+          kidAvatar: r.kidAvatar,
+          gameId: r.gameId,
+          bestScore: r.bestScore,
+          updatedAt: r.updatedAt
+        }))
+      },
+
       // Admin functions
       deleteKid: async (kidId: string) => {
         await deleteKidProfile(kidId)
@@ -331,6 +427,7 @@ export const useKidsStore = create<KidsState>()(
         profiles: state.profiles,
         sessions: state.sessions,
         achievements: state.achievements,
+        gameProgress: state.gameProgress,
         currentKid: state.currentKid,
         isKidsLoggedIn: state.isKidsLoggedIn,
         activeGame: state.activeGame

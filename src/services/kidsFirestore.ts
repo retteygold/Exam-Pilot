@@ -1,14 +1,36 @@
 import { db } from '../lib/firebase'
-import { collection, doc, setDoc, query, where, getDocs, serverTimestamp } from 'firebase/firestore'
+import { collection, doc, setDoc, query, where, getDocs, serverTimestamp, orderBy, limit } from 'firebase/firestore'
 import type { KidsProfile, GameSession, Achievement } from '../store/kidsStore'
 
 export type KidsProfileDB = KidsProfile
-export type GameSessionDB = GameSession
+export type GameSessionDB = GameSession & { level?: number }
 export type AchievementDB = Achievement
 
 const KIDS_COLLECTION = 'kidsProfiles'
 const SESSIONS_COLLECTION = 'kidsSessions'
 const ACHIEVEMENTS_COLLECTION = 'kidsAchievements'
+const GAME_PROGRESS_COLLECTION = 'kidsGameProgress'
+const GAME_BEST_SCORES_COLLECTION = 'kidsGameBestScores'
+
+export type KidGameProgressDB = {
+  id: string
+  kidId: string
+  gameId: string
+  highestLevelUnlocked: number
+  lastPlayedLevel: number
+  bestScore: number
+  updatedAt: number
+}
+
+export type KidGameBestScoreDB = {
+  id: string
+  kidId: string
+  gameId: string
+  bestScore: number
+  kidName: string
+  kidAvatar: string
+  updatedAt: number
+}
 
 export async function createKidProfile(profile: Omit<KidsProfileDB, 'id'>): Promise<KidsProfileDB | null> {
   try {
@@ -135,6 +157,134 @@ export async function recordSession(session: Omit<GameSessionDB, 'id'>): Promise
   }
 }
 
+ export async function upsertKidGameProgress(
+   kidId: string,
+   gameId: string,
+   updates: {
+     highestLevelUnlocked?: number
+     lastPlayedLevel?: number
+     bestScore?: number
+   }
+ ): Promise<KidGameProgressDB | null> {
+   try {
+     const docId = `${kidId}_${gameId}`
+     const docRef = doc(db, GAME_PROGRESS_COLLECTION, docId)
+
+     const progress: Partial<KidGameProgressDB> = {
+       id: docId,
+       kidId,
+       gameId,
+       ...updates,
+       updatedAt: Date.now()
+     }
+
+     await setDoc(
+       docRef,
+       {
+         ...progress,
+         updatedAt: serverTimestamp()
+       },
+       { merge: true }
+     )
+
+     return progress as KidGameProgressDB
+   } catch (error) {
+     console.error('Error upserting kid game progress:', error)
+     return null
+   }
+ }
+
+ export async function getKidGameProgress(kidId: string): Promise<KidGameProgressDB[]> {
+   try {
+     const q = query(
+       collection(db, GAME_PROGRESS_COLLECTION),
+       where('kidId', '==', kidId)
+     )
+     const snapshot = await getDocs(q)
+     return snapshot.docs.map(d => {
+       const data = d.data()
+       return {
+         id: d.id,
+         kidId: data.kidId,
+         gameId: data.gameId,
+         highestLevelUnlocked: data.highestLevelUnlocked ?? 1,
+         lastPlayedLevel: data.lastPlayedLevel ?? 1,
+         bestScore: data.bestScore ?? 0,
+         updatedAt: data.updatedAt?.toMillis?.() || Date.now()
+       } as KidGameProgressDB
+     })
+   } catch (error) {
+     console.error('Error getting kid game progress:', error)
+     return []
+   }
+ }
+
+ export async function upsertKidBestScore(params: {
+   kidId: string
+   kidName: string
+   kidAvatar: string
+   gameId: string
+   bestScore: number
+ }): Promise<KidGameBestScoreDB | null> {
+   try {
+     const { kidId, kidName, kidAvatar, gameId, bestScore } = params
+     const docId = `${kidId}_${gameId}`
+     const docRef = doc(db, GAME_BEST_SCORES_COLLECTION, docId)
+
+     const payload: Partial<KidGameBestScoreDB> = {
+       id: docId,
+       kidId,
+       gameId,
+       bestScore,
+       kidName,
+       kidAvatar,
+       updatedAt: Date.now()
+     }
+
+     await setDoc(
+       docRef,
+       {
+         ...payload,
+         updatedAt: serverTimestamp()
+       },
+       { merge: true }
+     )
+
+     return payload as KidGameBestScoreDB
+   } catch (error) {
+     console.error('Error upserting kid best score:', error)
+     return null
+   }
+ }
+
+ export async function getGameLeaderboard(gameId: string, topN: number = 10): Promise<KidGameBestScoreDB[]> {
+   try {
+     const q = query(
+       collection(db, GAME_BEST_SCORES_COLLECTION),
+       where('gameId', '==', gameId),
+       orderBy('bestScore', 'desc'),
+       limit(topN)
+     )
+
+     const snapshot = await getDocs(q)
+     return snapshot.docs.map(d => {
+       const data = d.data()
+       return {
+         id: d.id,
+         kidId: data.kidId,
+         gameId: data.gameId,
+         bestScore: data.bestScore ?? 0,
+         kidName: data.kidName ?? 'Kid',
+         kidAvatar: data.kidAvatar ?? '⭐',
+         updatedAt: data.updatedAt?.toMillis?.() || Date.now()
+       } as KidGameBestScoreDB
+     })
+   } catch (error) {
+     console.error('Error getting game leaderboard:', error)
+     return []
+   }
+ }
+
 export async function getKidSessions(kidId: string): Promise<GameSessionDB[]> {
   try {
     const q = query(
@@ -150,6 +300,7 @@ export async function getKidSessions(kidId: string): Promise<GameSessionDB[]> {
         id: doc.id,
         kidId: data.kidId,
         gameType: data.gameType,
+        level: typeof data.level === 'number' ? data.level : undefined,
         score: data.score,
         starsEarned: data.starsEarned,
         correctAnswers: data.correctAnswers,
