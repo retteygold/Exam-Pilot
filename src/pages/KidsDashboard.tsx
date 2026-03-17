@@ -31,12 +31,30 @@ const games: GameCard[] = [
     points: 40
   },
   {
+    id: 'times-table-tower',
+    title: 'Times Table Tower',
+    description: 'Master times tables (100)!',
+    icon: Target,
+    color: 'text-orange-300',
+    bgGradient: 'from-orange-500/20 to-amber-500/20',
+    points: 40
+  },
+  {
     id: 'spelling-sprint',
     title: 'Spelling Sprint',
     description: 'Speed spelling practice!',
     icon: Zap,
     color: 'text-emerald-300',
     bgGradient: 'from-emerald-500/20 to-teal-500/20',
+    points: 35
+  },
+  {
+    id: 'phonics-pop',
+    title: 'Phonics Pop',
+    description: 'Sounds & letters fun!',
+    icon: Sparkles,
+    color: 'text-teal-200',
+    bgGradient: 'from-teal-500/20 to-cyan-500/20',
     points: 35
   },
   {
@@ -55,6 +73,15 @@ const games: GameCard[] = [
     icon: Sparkles,
     color: 'text-cyan-300',
     bgGradient: 'from-cyan-500/20 to-sky-500/20',
+    points: 35
+  },
+  {
+    id: 'flag-capital-match',
+    title: 'Flag & Capital Match',
+    description: 'Flags and capitals!',
+    icon: Trophy,
+    color: 'text-sky-200',
+    bgGradient: 'from-sky-500/20 to-indigo-500/20',
     points: 35
   },
   {
@@ -380,9 +407,12 @@ export function KidsDashboard() {
     }
     if (
       gameId === 'math-blaster' ||
+      gameId === 'times-table-tower' ||
       gameId === 'spelling-sprint' ||
+      gameId === 'phonics-pop' ||
       gameId === 'grammar-builder' ||
       gameId === 'science-lab' ||
+      gameId === 'flag-capital-match' ||
       gameId === 'geography-map-tap' ||
       gameId === 'pattern-detective' ||
       gameId === 'reading-comprehension' ||
@@ -506,9 +536,12 @@ export function KidsDashboard() {
 
       {activeGame &&
         (activeGame === 'math-blaster' ||
+          activeGame === 'times-table-tower' ||
           activeGame === 'spelling-sprint' ||
+          activeGame === 'phonics-pop' ||
           activeGame === 'grammar-builder' ||
           activeGame === 'science-lab' ||
+          activeGame === 'flag-capital-match' ||
           activeGame === 'geography-map-tap' ||
           activeGame === 'pattern-detective' ||
           activeGame === 'reading-comprehension' ||
@@ -517,12 +550,18 @@ export function KidsDashboard() {
             config={
               activeGame === 'math-blaster'
                 ? { id: 'math-blaster', title: 'Math Blaster', description: 'Arcade math levels', iconEmoji: '🚀', bgClassName: 'bg-gradient-to-br from-red-900 via-orange-900 to-slate-900', topics: ['counting', 'addition', 'subtraction', 'multiplication', 'fractions', 'algebra'] }
+                : activeGame === 'times-table-tower'
+                  ? { id: 'times-table-tower', title: 'Times Table Tower', description: 'Times tables', iconEmoji: '🏰', bgClassName: 'bg-gradient-to-br from-orange-900 via-amber-900 to-slate-900', topics: ['multiplication', 'counting', 'addition', 'subtraction'] }
                 : activeGame === 'spelling-sprint'
                   ? { id: 'spelling-sprint', title: 'Spelling Sprint', description: 'Spelling practice', iconEmoji: '📝', bgClassName: 'bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900', topics: ['spelling', 'alphabet', 'phonics'] }
+                  : activeGame === 'phonics-pop'
+                    ? { id: 'phonics-pop', title: 'Phonics Pop', description: 'Phonics', iconEmoji: '🎈', bgClassName: 'bg-gradient-to-br from-teal-900 via-cyan-900 to-slate-900', topics: ['phonics', 'alphabet', 'spelling'] }
                   : activeGame === 'grammar-builder'
                     ? { id: 'grammar-builder', title: 'Grammar Builder', description: 'Grammar levels', iconEmoji: '🧩', bgClassName: 'bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900', topics: ['grammar'] }
                     : activeGame === 'science-lab'
                       ? { id: 'science-lab', title: 'Science Lab', description: 'Science facts', iconEmoji: '🧪', bgClassName: 'bg-gradient-to-br from-cyan-900 via-sky-900 to-slate-900', topics: ['animals', 'forces', 'biology'] }
+                      : activeGame === 'flag-capital-match'
+                        ? { id: 'flag-capital-match', title: 'Flag & Capital Match', description: 'Flags and capitals', iconEmoji: '🏳️', bgClassName: 'bg-gradient-to-br from-sky-900 via-indigo-900 to-slate-900', topics: ['geography'] }
                       : activeGame === 'geography-map-tap'
                         ? { id: 'geography-map-tap', title: 'Geography Map Tap', description: 'Geography practice', iconEmoji: '🗺️', bgClassName: 'bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900', topics: ['geography'] }
                         : activeGame === 'pattern-detective'
@@ -555,7 +594,7 @@ export function KidsDashboard() {
                   onChange={(e) => setLeaderboardGameId(e.target.value)}
                   className="bg-slate-900/60 text-slate-200 text-sm rounded-xl px-3 py-2 border border-slate-700"
                 >
-                  {games.slice(0, 8).map(g => (
+                  {games.slice(0, 11).map(g => (
                     <option key={g.id} value={g.id}>{g.title}</option>
                   ))}
                 </select>

@@ -66,9 +66,12 @@ export interface KidSkillPath {
 
 const DEFAULT_SKILL_PATH_GAME_IDS = [
   'math-blaster',
+  'times-table-tower',
   'spelling-sprint',
+  'phonics-pop',
   'grammar-builder',
   'science-lab',
+  'flag-capital-match',
   'geography-map-tap',
   'pattern-detective',
   'reading-comprehension',
