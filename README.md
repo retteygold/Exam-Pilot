@@ -11,7 +11,10 @@ A **React + TypeScript** web app for students from **LKG/UKG through Grade 12**.
   - Profile setup flow (age, grade, skill level, exam)
 - **Kids Dashboard (LKG–Grade 8)**
   - Game-style cards (Quick Quiz, Puzzle Time, Memory Match, Word Builder, Math Race, Science Explorer)
+  - Advanced games: Quiz Race, Speed Challenge, Knowledge Battle
+  - Reward popups (confetti) + sound effects (correct/wrong/win/level-up)
   - Stars / streak UI and achievements
+  - Kids accounts stored in Firebase Firestore (profiles + sessions + achievements)
 - **Exam practice (Grade 9–12)**
   - Practice / exam-style quiz flow
   - Results + stats
@@ -31,6 +34,8 @@ A **React + TypeScript** web app for students from **LKG/UKG through Grade 12**.
 - **Icons**: Lucide React
 - **Charts**: Recharts
 - **PWA**: Vite PWA Plugin
+- **Database**: Firebase Firestore (kids profiles + game history)
+- **Image Hosting**: Cloudinary (avatars / uploads)
 
 ## Project Structure
 
@@ -83,6 +88,23 @@ npm run build
 npm run preview
 ```
 
+## Environment Variables
+
+Create a `.env` file (local) or set these on Vercel.
+
+Required for Firebase:
+
+```bash
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+```
+
+These are read in `src/lib/firebase.ts`.
+
 ## Deployment
 
 ### Vercel (Recommended)
@@ -100,10 +122,23 @@ git push -u origin main
 2. Deploy on Vercel:
    - Go to [vercel.com](https://vercel.com)
    - Import your GitHub repository
+   - Root Directory: `gcse-prep-app`
    - Framework: Vite
    - Build Command: `npm run build`
    - Output Directory: `dist`
    - Click Deploy
+
+### How to push updates (auto-deploy)
+
+Any time you change any file and want Vercel to deploy the latest version:
+
+```bash
+git add -A
+git commit -m "Describe your change"
+git push
+```
+
+Vercel will automatically build and deploy from the `main` branch.
 
 ### GitHub Pages
 
