@@ -5,16 +5,68 @@ import { UserPlus, LogIn, Sparkles } from 'lucide-react'
 const AVATARS = ['🦁', '🐯', '🐻', '🐨', '🐼', '🐸', '🦄', '🐙', '🦊', '🐰']
 const GRADES = ['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7', 'Grade 8']
 
-const COUNTRIES = [
+type CountryOption = { name: string; flag: string }
+
+const FALLBACK_COUNTRIES: CountryOption[] = [
   { name: 'Pakistan', flag: '🇵🇰' },
   { name: 'India', flag: '🇮🇳' },
   { name: 'Bangladesh', flag: '🇧🇩' },
+  { name: 'Sri Lanka', flag: '🇱🇰' },
+  { name: 'Nepal', flag: '🇳🇵' },
   { name: 'United Kingdom', flag: '🇬🇧' },
   { name: 'United States', flag: '🇺🇸' },
   { name: 'Canada', flag: '🇨🇦' },
   { name: 'Australia', flag: '🇦🇺' },
-  { name: 'UAE', flag: '🇦🇪' }
+  { name: 'UAE', flag: '🇦🇪' },
+  { name: 'Saudi Arabia', flag: '🇸🇦' },
+  { name: 'Qatar', flag: '🇶🇦' },
+  { name: 'Kuwait', flag: '🇰🇼' },
+  { name: 'Turkey', flag: '🇹🇷' },
+  { name: 'South Africa', flag: '🇿🇦' },
+  { name: 'Nigeria', flag: '🇳🇬' },
+  { name: 'Kenya', flag: '🇰🇪' },
+  { name: 'France', flag: '🇫🇷' },
+  { name: 'Germany', flag: '🇩🇪' },
+  { name: 'Spain', flag: '🇪🇸' },
+  { name: 'Italy', flag: '🇮🇹' },
+  { name: 'Netherlands', flag: '🇳🇱' },
+  { name: 'Sweden', flag: '🇸🇪' },
+  { name: 'Norway', flag: '🇳🇴' },
+  { name: 'Finland', flag: '🇫🇮' },
+  { name: 'Japan', flag: '🇯🇵' },
+  { name: 'China', flag: '🇨🇳' },
+  { name: 'Malaysia', flag: '🇲🇾' },
+  { name: 'Singapore', flag: '🇸🇬' },
+  { name: 'Indonesia', flag: '🇮🇩' },
+  { name: 'Philippines', flag: '🇵🇭' }
 ]
+
+const flagFromRegion = (regionCode: string) =>
+  regionCode
+    .toUpperCase()
+    .replace(/./g, c => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65))
+
+const buildCountryOptions = (): CountryOption[] => {
+  try {
+    const intlAny = Intl as any
+    if (typeof intlAny.supportedValuesOf !== 'function') return FALLBACK_COUNTRIES
+    const regionCodes: string[] = intlAny.supportedValuesOf('region')
+    const dn = new Intl.DisplayNames(['en'], { type: 'region' })
+
+    const options = regionCodes
+      .map(code => {
+        const name = dn.of(code)
+        if (!name) return null
+        return { name, flag: flagFromRegion(code) }
+      })
+      .filter(Boolean) as CountryOption[]
+
+    options.sort((a, b) => a.name.localeCompare(b.name))
+    return options.length ? options : FALLBACK_COUNTRIES
+  } catch {
+    return FALLBACK_COUNTRIES
+  }
+}
 
 interface KidsLoginProps {
   onLogin: () => void
@@ -27,8 +79,9 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
   const [secretCode, setSecretCode] = useState('')
   const [grade, setGrade] = useState('Grade 1')
   const [avatar, setAvatar] = useState(AVATARS[0])
-  const [countryName, setCountryName] = useState(COUNTRIES[0].name)
-  const [countryFlag, setCountryFlag] = useState(COUNTRIES[0].flag)
+  const [countryOptions] = useState<CountryOption[]>(() => buildCountryOptions())
+  const [countryName, setCountryName] = useState(countryOptions[0]?.name || 'Pakistan')
+  const [countryFlag, setCountryFlag] = useState(countryOptions[0]?.flag || '🇵🇰')
   const [error, setError] = useState('')
 
   const [success, setSuccess] = useState('')
@@ -64,12 +117,21 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
       return
     }
     
-    const profile = await register(name, secretCode, grade, avatar, countryName, countryFlag)
-    if (profile) {
-      setSuccess(`Account created! Welcome, ${profile.name}! 🎉`)
-      setTimeout(() => onLogin(), 500)
-    } else {
-      setError('This name is already taken! Try a different name.')
+    try {
+      const profile = await register(name, secretCode, grade, avatar, countryName, countryFlag)
+      if (profile) {
+        setSuccess(`Account created! Welcome, ${profile.name}! 🎉`)
+        setTimeout(() => onLogin(), 500)
+      }
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : String(err)
+      if (msg.includes('KID_NAME_TAKEN')) {
+        setError('This name is already taken! Try a different name.')
+      } else if (msg.includes('KID_SECRET_INVALID')) {
+        setError('Secret code must be exactly 4 numbers!')
+      } else {
+        setError('Signup failed. Please check your internet / Firebase setup and try again.')
+      }
     }
   }
 
@@ -167,19 +229,23 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
                   <label className="block text-sm font-medium text-slate-300 mb-2">
                     Your Country
                   </label>
-                  <select
+                  <input
                     value={countryName}
                     onChange={(e) => {
-                      const selected = COUNTRIES.find(c => c.name === e.target.value)
-                      setCountryName(e.target.value)
-                      setCountryFlag(selected?.flag || '🏳️')
+                      const nextName = e.target.value
+                      setCountryName(nextName)
+                      const selected = countryOptions.find(c => c.name.toLowerCase() === nextName.trim().toLowerCase())
+                      if (selected) setCountryFlag(selected.flag)
                     }}
+                    list="kids-country-list"
+                    placeholder="Type your country..."
                     className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-purple-500"
-                  >
-                    {COUNTRIES.map(c => (
+                  />
+                  <datalist id="kids-country-list">
+                    {countryOptions.map(c => (
                       <option key={c.name} value={c.name}>{c.flag} {c.name}</option>
                     ))}
-                  </select>
+                  </datalist>
                   <div className="mt-2 text-xs text-slate-400">Selected: {countryFlag} {countryName}</div>
                 </div>
 

@@ -214,33 +214,36 @@ export const useKidsStore = create<KidsState>()(
         }
         return null
       },
-
       register: async (name: string, secretCode: string, grade: string, avatar: string, countryName?: string, countryFlag?: string) => {
         const normalizedName = name.trim()
         const normalizedCode = secretCode.trim()
 
-        if (!/^\d{4}$/.test(normalizedCode)) return null
-        
-        const newProfile = await createKidProfile({
-          name: normalizedName,
-          nameKey: normalizedName.toLowerCase(),
-          secretCode: normalizedCode,
-          grade,
-          avatar,
-          countryName,
-          countryFlag,
-          createdAt: Date.now()
-        })
-        
-        if (newProfile) {
+        if (!/^\d{4}$/.test(normalizedCode)) throw new Error('KID_SECRET_INVALID')
+
+        try {
+          const newProfile = await createKidProfile({
+            name: normalizedName,
+            nameKey: normalizedName.toLowerCase(),
+            secretCode: normalizedCode,
+            grade,
+            avatar,
+            countryName,
+            countryFlag,
+            createdAt: Date.now()
+          })
+
           set(state => ({
             profiles: [...state.profiles, newProfile],
             currentKid: newProfile,
             isKidsLoggedIn: true
           }))
+
+          return newProfile
+        } catch (error: unknown) {
+          const message = error instanceof Error ? error.message : String(error)
+          if (message.includes('KID_NAME_TAKEN')) throw new Error('KID_NAME_TAKEN')
+          throw new Error('KID_REGISTRATION_FAILED')
         }
-        
-        return newProfile
       },
 
       logout: () => {

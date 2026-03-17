@@ -56,7 +56,7 @@ export type KidSkillPathDB = {
   updatedAt: number
 }
 
-export async function createKidProfile(profile: Omit<KidsProfileDB, 'id'>): Promise<KidsProfileDB | null> {
+export async function createKidProfile(profile: Omit<KidsProfileDB, 'id'>): Promise<KidsProfileDB> {
   try {
     const nameKey = profile.name.toLowerCase().trim()
     
@@ -64,7 +64,7 @@ export async function createKidProfile(profile: Omit<KidsProfileDB, 'id'>): Prom
     const existing = await getKidByNameKey(nameKey)
     if (existing) {
       console.log('Kid with this name already exists:', nameKey)
-      return null
+      throw new Error('KID_NAME_TAKEN')
     }
 
     const docRef = doc(collection(db, KIDS_COLLECTION))
@@ -82,7 +82,7 @@ export async function createKidProfile(profile: Omit<KidsProfileDB, 'id'>): Prom
     return newProfile
   } catch (error) {
     console.error('Error creating kid profile:', error)
-    return null
+    throw error
   }
 }
 
