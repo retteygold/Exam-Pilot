@@ -60,9 +60,8 @@ interface KidsLoginProps {
 export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
   const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
   const [isRegistering, setIsRegistering] = useState(false)
-  const [authMode, setAuthMode] = useState<'kid_pin' | 'email' | 'google_profile'>('kid_pin')
+  const [authMode, setAuthMode] = useState<'email' | 'google_profile'>('email')
   const [name, setName] = useState('')
-  const [secretCode, setSecretCode] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [grade, setGrade] = useState('Grade 1')
@@ -74,7 +73,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
 
   const [success, setSuccess] = useState('')
 
-  const { currentKid, login, register, loginWithEmail, registerWithEmail, loginWithGoogle, finishGoogleRedirectLogin, completeKidProfileForCurrentUser } = useKidsStore()
+  const { currentKid, loginWithEmail, registerWithEmail, loginWithGoogle, finishGoogleRedirectLogin, completeKidProfileForCurrentUser } = useKidsStore()
 
   useEffect(() => {
     const run = async () => {
@@ -133,23 +132,12 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
     setError('')
     setSuccess('')
 
-    if (authMode === 'email') {
-      const profile = await loginWithEmail(email, password)
-      if (profile) {
-        setSuccess(`Welcome back, ${profile.name}! 🎉`)
-        setTimeout(() => onLogin(), 500)
-      } else {
-        setError('Login failed. Check your email/password or complete your profile.')
-      }
-      return
-    }
-
-    const profile = await login(name, secretCode)
+    const profile = await loginWithEmail(email, password)
     if (profile) {
       setSuccess(`Welcome back, ${profile.name}! 🎉`)
       setTimeout(() => onLogin(), 500)
     } else {
-      setError('Wrong name or secret code! Try again.')
+      setError('Login failed. Check your email/password or complete your profile.')
     }
   }
 
@@ -225,27 +213,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
       return
     }
 
-    if (!/^\d{4}$/.test(secretCode)) {
-      setError('Secret code must be exactly 4 numbers!')
-      return
-    }
-    
-    try {
-      const profile = await register(name, secretCode, grade, avatar, countryName, countryFlag)
-      if (profile) {
-        setSuccess(`Account created! Welcome, ${profile.name}! 🎉`)
-        setTimeout(() => onLogin(), 500)
-      }
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : String(err)
-      if (msg.includes('KID_NAME_TAKEN')) {
-        setError('This name is already taken! Try a different name.')
-      } else if (msg.includes('KID_SECRET_INVALID')) {
-        setError('Secret code must be exactly 4 numbers!')
-      } else {
-        setError('Signup failed. Please check your internet / Firebase setup and try again.')
-      }
-    }
+    setError('Signup failed. Please try again.')
   }
 
   return (
@@ -259,6 +227,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
           ← Back
         </button>
       )}
+
       <div className="w-full max-w-md">
         {/* Header */}
         <div className="text-center mb-8">
@@ -269,7 +238,9 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
             {isRegistering ? 'Create Account' : 'Welcome Back!'}
           </h1>
           <p className="text-purple-200">
-            {isRegistering ? 'Join the fun learning adventure!' : 'Enter your name and secret code'}
+            {authMode === 'google_profile'
+              ? 'Complete your profile to continue'
+              : (isRegistering ? 'Create an account with email or Google' : 'Sign in with email or Google')}
           </p>
         </div>
 
@@ -287,32 +258,6 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
           )}
 
           <form onSubmit={isRegistering ? handleRegister : handleLogin} className="space-y-4">
-            {/* Auth Options */}
-            <div className="grid grid-cols-2 gap-2">
-              <button
-                type="button"
-                onClick={() => {
-                  setAuthMode('kid_pin')
-                  setError('')
-                  setSuccess('')
-                }}
-                className={`px-3 py-2 rounded-xl text-sm border transition-colors ${authMode === 'kid_pin' ? 'bg-purple-500/30 border-purple-500 text-white' : 'bg-slate-700 border-slate-600 text-slate-200 hover:bg-slate-600'}`}
-              >
-                Name + Code
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  setAuthMode('email')
-                  setError('')
-                  setSuccess('')
-                }}
-                className={`px-3 py-2 rounded-xl text-sm border transition-colors ${authMode === 'email' ? 'bg-purple-500/30 border-purple-500 text-white' : 'bg-slate-700 border-slate-600 text-slate-200 hover:bg-slate-600'}`}
-              >
-                Email Login
-              </button>
-            </div>
-
             <button
               type="button"
               onClick={handleGoogleLogin}
@@ -321,22 +266,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
               <Chrome className="w-5 h-5" /> Continue with Google
             </button>
 
-            {/* Name Input */}
-            <div>
-              <label className="block text-sm font-medium text-slate-300 mb-2">
-                Your Name
-              </label>
-              <input
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Enter your name"
-                className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20"
-                maxLength={20}
-              />
-            </div>
-
-            {authMode === 'email' && (
+            {authMode !== 'google_profile' && (
               <>
                 <div>
                   <label className="block text-sm font-medium text-slate-300 mb-2">
@@ -365,27 +295,22 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
               </>
             )}
 
-            {authMode === 'kid_pin' && (
-              <div>
-                <label className="block text-sm font-medium text-slate-300 mb-2">
-                  Secret Code (4 numbers)
-                </label>
-                <input
-                  type="password"
-                  inputMode="numeric"
-                  value={secretCode}
-                  onChange={(e) => setSecretCode(e.target.value.replace(/\D/g, '').slice(0, 4))}
-                  placeholder="****"
-                  className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 text-center text-2xl tracking-widest"
-                  maxLength={4}
-                />
-              </div>
-            )}
-
-            {/* Registration Fields */}
             {isRegistering && (
               <>
-                {/* Grade Selection */}
+                <div>
+                  <label className="block text-sm font-medium text-slate-300 mb-2">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Enter your name"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20"
+                    maxLength={20}
+                  />
+                </div>
+
                 <div>
                   <label className="block text-sm font-medium text-slate-300 mb-2">
                     Your Grade
@@ -393,7 +318,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
                   <select
                     value={grade}
                     onChange={(e) => setGrade(e.target.value)}
-                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-purple-500"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20"
                   >
                     {GRADES.map(g => (
                       <option key={g} value={g}>{g}</option>
@@ -401,47 +326,43 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
                   </select>
                 </div>
 
-                {/* Country Selection */}
                 <div>
                   <label className="block text-sm font-medium text-slate-300 mb-2">
                     Your Country
                   </label>
                   <input
+                    list="country-options"
                     value={countryName}
                     onChange={(e) => {
-                      const nextName = e.target.value
-                      setCountryName(nextName)
-                      const selected = countryOptions.find(c => c.name.toLowerCase() === nextName.trim().toLowerCase())
-                      if (selected) setCountryFlag(selected.flag)
+                      const v = e.target.value
+                      setCountryName(v)
+                      const match = countryOptions.find(o => o.name === v)
+                      if (match) setCountryFlag(match.flag)
                     }}
-                    list="kids-country-list"
-                    placeholder="Type your country..."
-                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-purple-500"
+                    placeholder="Start typing..."
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20"
                   />
-                  <datalist id="kids-country-list">
-                    {countryOptions.map(c => (
-                      <option key={c.name} value={c.name}>{c.flag} {c.name}</option>
+                  <datalist id="country-options">
+                    {countryOptions.map(o => (
+                      <option key={o.name} value={o.name} />
                     ))}
                   </datalist>
-                  <div className="mt-2 text-xs text-slate-400">Selected: {countryFlag} {countryName}</div>
+                  <div className="text-xs text-slate-400 mt-1">
+                    Selected: {countryFlag} {countryName}
+                  </div>
                 </div>
 
-                {/* Avatar Selection */}
                 <div>
                   <label className="block text-sm font-medium text-slate-300 mb-2">
                     Choose Your Avatar
                   </label>
                   <div className="grid grid-cols-5 gap-2">
-                    {AVATARS.map((a) => (
+                    {AVATARS.map(a => (
                       <button
                         key={a}
                         type="button"
                         onClick={() => setAvatar(a)}
-                        className={`text-3xl p-2 rounded-xl transition-all ${
-                          avatar === a
-                            ? 'bg-purple-500/30 border-2 border-purple-500 scale-110'
-                            : 'bg-slate-700 border-2 border-transparent hover:bg-slate-600'
-                        }`}
+                        className={`p-3 rounded-xl text-2xl border transition-colors ${avatar === a ? 'bg-purple-500/20 border-purple-500' : 'bg-slate-700 border-slate-600 hover:bg-slate-600'}`}
                       >
                         {a}
                       </button>
@@ -451,33 +372,48 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
               </>
             )}
 
-            {/* Submit Button */}
             <button
               type="submit"
-              className="w-full py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all mt-6"
+              className="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 rounded-2xl font-bold text-white text-lg flex items-center justify-center gap-2 transition-all duration-200 transform hover:scale-105 shadow-lg shadow-purple-500/30"
             >
               {isRegistering ? (
-                <><UserPlus className="w-5 h-5" /> Create Account</>
+                <>
+                  <UserPlus className="w-6 h-6" />
+                  Create Account
+                </>
               ) : (
-                <><LogIn className="w-5 h-5" /> Login</>
+                <>
+                  <LogIn className="w-6 h-6" />
+                  Login
+                </>
               )}
             </button>
-          </form>
 
-          {/* Toggle */}
-          <div className="mt-6 text-center">
-            <button
-              onClick={() => {
-                setIsRegistering(!isRegistering)
-                setError('')
-              }}
-              className="text-purple-400 hover:text-purple-300 text-sm transition-colors"
-            >
-              {isRegistering 
-                ? 'Already have an account? Login here' 
-                : 'New here? Create an account'}
-            </button>
-          </div>
+            {authMode !== 'google_profile' && (
+              <button
+                type="button"
+                onClick={() => {
+                  setAuthMode('email')
+                  setIsRegistering(!isRegistering)
+                  setError('')
+                  setSuccess('')
+                }}
+                className="w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-2xl font-bold text-white flex items-center justify-center gap-2 border border-slate-600 transition-colors"
+              >
+                {isRegistering ? (
+                  <>
+                    <LogIn className="w-5 h-5" />
+                    Already have an account? Login
+                  </>
+                ) : (
+                  <>
+                    <UserPlus className="w-5 h-5" />
+                    New here? Create account
+                  </>
+                )}
+              </button>
+            )}
+          </form>
         </div>
       </div>
     </div>
