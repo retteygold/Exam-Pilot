@@ -98,7 +98,7 @@ export function ProfileSetup() {
   }
 
   return (
-    <div className='min-h-screen bg-slate-900 flex flex-col'>
+    <div className='min-h-[100dvh] bg-slate-900 flex flex-col'>
       <div className='p-4 bg-slate-800 border-b border-slate-700'>
         <div className='flex items-center justify-between mb-3'>
           <div className='flex items-center gap-2'>
@@ -128,7 +128,7 @@ export function ProfileSetup() {
         <p className='text-center text-sm text-emerald-300 italic'>&quot;{quote}&quot;</p>
       </div>
 
-      <div className='flex-1 p-4 flex flex-col overflow-hidden'>
+      <div className='flex-1 p-4 flex flex-col min-h-0'>
         <div className='text-center mb-6'>
           <div className='relative w-32 h-32 mx-auto mb-4'>
             <img src={images[step - 1]} alt='' className='w-full h-full object-contain' />
@@ -149,7 +149,7 @@ export function ProfileSetup() {
           </h2>
         </div>
 
-        <div className='flex-1 overflow-y-auto'>
+        <div className='flex-1 overflow-y-auto min-h-0'>
           {step === 1 && (
             <div className='grid grid-cols-2 gap-3'>
               {['Male','Female','Other','Prefer not to say'].map(o => (
@@ -228,7 +228,10 @@ export function ProfileSetup() {
         )}
       </div>
 
-      <div className='p-4 bg-slate-800 border-t border-slate-700'>
+      <div
+        className='p-4 bg-slate-800 border-t border-slate-700'
+        style={{ paddingBottom: 'calc(1rem + env(safe-area-inset-bottom))' }}
+      >
         <button onClick={nextStep} disabled={!isComplete()}
           className='w-full py-4 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 disabled:opacity-50 disabled:cursor-not-allowed rounded-xl font-semibold transition-all shadow-lg'>
           {step === 5 ? 'Start Your Journey' : 'Continue'}
