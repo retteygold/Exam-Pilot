@@ -15,6 +15,15 @@ A **React + TypeScript** web app for students from **LKG/UKG through Grade 12**.
   - Reward popups (confetti) + sound effects (correct/wrong/win/level-up)
   - Stars / streak UI and achievements
   - Kids accounts stored in Firebase Firestore (profiles + sessions + achievements)
+  - Kids authentication (Firebase Auth)
+    - Name + 4-digit code
+    - Email + password
+    - Google sign-in
+  - Leaderboards
+    - Per-game leaderboard
+    - Overall leaderboard (all games combined)
+    - Grade topper (top 1 per grade)
+  - Country selection on kids profile (country + flag)
 - **Exam practice (Grade 9–12)**
   - Practice / exam-style quiz flow
   - Results + stats
@@ -104,6 +113,28 @@ VITE_FIREBASE_APP_ID=
 ```
 
 These are read in `src/lib/firebase.ts`.
+
+## Firebase Setup (Required)
+
+### Enable Authentication Providers
+
+In Firebase Console → Authentication → Sign-in method, enable:
+
+- Email/Password
+- Google
+
+If using Google sign-in on Vercel, also add your domain:
+
+- Firebase Console → Authentication → Settings → Authorized domains
+- Add `exam-pilot-three.vercel.app` (and any custom domain)
+
+### Firestore Security Rules
+
+Kids features require Firestore rules that allow authenticated kids to read/write their own data.
+
+Note: this project also currently allows public reads (for convenience) and has a temporary open write rule for `questions` during initial upload.
+
+See `USER_MANUAL.md` for the exact rules snippet to paste into Firestore.
 
 ## Deployment
 

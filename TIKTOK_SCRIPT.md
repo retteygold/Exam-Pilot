@@ -24,6 +24,9 @@ Show that Exam Pilot makes studying feel like a game for kids + serious exam pra
 **On-screen text:** “LKG–Grade 8: Games + rewards”
 **Voiceover:** “For LKG to Grade 8, they get learning games…”
 
+**Quick cut (optional):** Kids login screen
+**On-screen text:** “Login: Code • Email • Google”
+
 ### 0:06–0:12 — Show 2–3 games quickly
 **Shots (fast):**
 - Tap **Quiz Race** → answer a question → streak popup
@@ -47,6 +50,9 @@ Show that Exam Pilot makes studying feel like a game for kids + serious exam pra
 **Shot:** Stats page / results summary
 **On-screen text:** “Track progress”
 **Voiceover:** “You can track accuracy and improvement over time.”
+
+**Quick cut (optional):** Kids leaderboard
+**On-screen text:** “Leaderboards + flags”
 
 ### 0:27–0:30 — CTA
 **On-screen text:** “Want the link? Comment ‘EXAM’”
