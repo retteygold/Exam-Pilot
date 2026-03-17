@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useKidsStore } from '../store/kidsStore'
 import { UserPlus, LogIn, Sparkles, Chrome } from 'lucide-react'
+import { auth } from '../lib/firebase'
 
 const AVATARS = ['🦁', '🐯', '🐻', '🐨', '🐼', '🐸', '🦄', '🐙', '🦊', '🐰']
 const GRADES = ['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7', 'Grade 8']
@@ -71,7 +72,27 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
 
   const [success, setSuccess] = useState('')
 
-  const { login, register, loginWithEmail, registerWithEmail, loginWithGoogle, completeKidProfileForCurrentUser } = useKidsStore()
+  const { login, register, loginWithEmail, registerWithEmail, loginWithGoogle, finishGoogleRedirectLogin, completeKidProfileForCurrentUser } = useKidsStore()
+
+  useEffect(() => {
+    const run = async () => {
+      const profile = await finishGoogleRedirectLogin()
+      if (profile) {
+        setSuccess(`Welcome back, ${profile.name}! 🎉`)
+        setTimeout(() => onLogin(), 300)
+        return
+      }
+
+      // If redirect sign-in completed but profile doc doesn't exist yet, prompt profile completion.
+      if (auth.currentUser) {
+        setAuthMode('google_profile')
+        setIsRegistering(true)
+        setSuccess('Signed in with Google. Please complete your profile.')
+      }
+    }
+
+    void run()
+  }, [finishGoogleRedirectLogin, onLogin])
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -101,15 +122,8 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
   const handleGoogleLogin = async () => {
     setError('')
     setSuccess('')
-    const profile = await loginWithGoogle()
-    if (profile) {
-      setSuccess(`Welcome back, ${profile.name}! 🎉`)
-      setTimeout(() => onLogin(), 500)
-      return
-    }
-    setAuthMode('google_profile')
-    setIsRegistering(true)
-    setSuccess('Signed in with Google. Please complete your profile.')
+    await loginWithGoogle()
+    setSuccess('Opening Google sign-in...')
   }
 
   const handleRegister = async (e: React.FormEvent) => {

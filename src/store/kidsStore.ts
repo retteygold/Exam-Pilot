@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth'
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getRedirectResult, signInWithEmailAndPassword, signInWithRedirect, signOut } from 'firebase/auth'
 import { auth } from '../lib/firebase'
 import {
   createKidProfile,
@@ -130,6 +130,7 @@ export interface KidsState {
   loginWithEmail: (email: string, password: string) => Promise<KidsProfile | null>
   registerWithEmail: (params: { name: string; email: string; password: string; grade: string; avatar: string; countryName?: string; countryFlag?: string }) => Promise<KidsProfile | null>
   loginWithGoogle: () => Promise<KidsProfile | null>
+  finishGoogleRedirectLogin: () => Promise<KidsProfile | null>
   completeKidProfileForCurrentUser: (params: { name: string; grade: string; avatar: string; countryName?: string; countryFlag?: string; secretCode?: string }) => Promise<KidsProfile | null>
   logout: () => void
   recordSession: (session: Omit<GameSession, 'id' | 'kidId' | 'playedAt'>) => Promise<void>
@@ -376,8 +377,19 @@ export const useKidsStore = create<KidsState>()(
       loginWithGoogle: async () => {
         try {
           const provider = new GoogleAuthProvider()
-          const cred = await signInWithPopup(auth, provider)
-          const uid = cred.user.uid
+          await signInWithRedirect(auth, provider)
+          return null
+        } catch {
+          return null
+        }
+      },
+
+      finishGoogleRedirectLogin: async () => {
+        try {
+          const result = await getRedirectResult(auth)
+          if (!result?.user) return null
+
+          const uid = result.user.uid
           const profile = await getKidProfileById(uid)
           if (!profile) return null
 
