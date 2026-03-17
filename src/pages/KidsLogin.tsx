@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useKidsStore } from '../store/kidsStore'
 import { UserPlus, LogIn, Sparkles, Chrome } from 'lucide-react'
 import { auth } from '../lib/firebase'
+import { onAuthStateChanged } from 'firebase/auth'
 
 const AVATARS = ['🦁', '🐯', '🐻', '🐨', '🐼', '🐸', '🦄', '🐙', '🦊', '🐰']
 const GRADES = ['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7', 'Grade 8']
@@ -72,7 +73,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
 
   const [success, setSuccess] = useState('')
 
-  const { login, register, loginWithEmail, registerWithEmail, loginWithGoogle, finishGoogleRedirectLogin, completeKidProfileForCurrentUser } = useKidsStore()
+  const { currentKid, login, register, loginWithEmail, registerWithEmail, loginWithGoogle, finishGoogleRedirectLogin, completeKidProfileForCurrentUser } = useKidsStore()
 
   useEffect(() => {
     const run = async () => {
@@ -93,6 +94,18 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
 
     void run()
   }, [finishGoogleRedirectLogin, onLogin])
+
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (user) => {
+      // After redirect/refresh, auth may initialize after the component renders.
+      // If the user is signed in but we don't yet have a kid profile loaded, prompt completion.
+      if (user && !currentKid) {
+        setAuthMode('google_profile')
+        setIsRegistering(true)
+      }
+    })
+    return () => unsub()
+  }, [currentKid])
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
