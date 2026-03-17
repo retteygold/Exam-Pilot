@@ -5,6 +5,9 @@ import { useKidsStore } from '../store/kidsStore'
 import { useUserStore } from '../store/userStore'
 import type { Question, QuestionsData } from '../types'
 import { KidsLogin } from './KidsLogin'
+import { QuizRaceGame } from '../games/QuizRaceGame'
+import { SpeedChallengeGame } from '../games/SpeedChallengeGame'
+import { KnowledgeBattleGame } from '../games/KnowledgeBattleGame'
 
 interface GameCard {
   id: string
@@ -17,6 +20,33 @@ interface GameCard {
 }
 
 const games: GameCard[] = [
+  {
+    id: 'quiz-race',
+    title: 'Quiz Race',
+    description: 'Fast quiz with streak bonuses!',
+    icon: Trophy,
+    color: 'text-amber-400',
+    bgGradient: 'from-amber-500/20 to-yellow-500/20',
+    points: 30
+  },
+  {
+    id: 'speed-challenge',
+    title: 'Speed Challenge',
+    description: 'Answer quickly to score big!',
+    icon: Zap,
+    color: 'text-orange-400',
+    bgGradient: 'from-orange-500/20 to-red-500/20',
+    points: 35
+  },
+  {
+    id: 'knowledge-battle',
+    title: 'Knowledge Battle',
+    description: 'Fight with your brain power!',
+    icon: Brain,
+    color: 'text-purple-300',
+    bgGradient: 'from-purple-500/20 to-fuchsia-500/20',
+    points: 40
+  },
   {
     id: 'quick-quiz',
     title: 'Quick Quiz',
@@ -125,9 +155,23 @@ export function KidsDashboard() {
 
   const [loginKey, setLoginKey] = useState(0)
 
-  const { currentKid, logout, getKidStats } = useKidsStore()
+  const { currentKid, logout, getKidStats, recordSession } = useKidsStore()
 
-  // Trigger re-render when login succeeds
+  const [activeGame, setActiveGame] = useState<string | null>(null)
+
+  const handleGameComplete = (score: number, stars: number) => {
+    if (currentKid && recordSession) {
+      recordSession({
+        gameType: activeGame || 'unknown',
+        score,
+        starsEarned: stars,
+        correctAnswers: Math.floor(score / 10),
+        totalQuestions: 10,
+        durationSeconds: 120
+      })
+    }
+    setActiveGame(null)
+  }
   const handleLogin = () => {
     setLoginKey(k => k + 1)
   }
@@ -215,6 +259,14 @@ export function KidsDashboard() {
     navigate('/quiz', { state: { questions: selection } })
   }
 
+  const startGame = (gameId: string) => {
+    if (gameId === 'quiz-race' || gameId === 'speed-challenge' || gameId === 'knowledge-battle') {
+      setActiveGame(gameId)
+      return
+    }
+    startKidsQuiz(gameId)
+  }
+
   const stats = currentKid ? getKidStats(currentKid.id) : { totalStars: 0, totalSessions: 0, bestStreak: 0 }
 
   // Show login if not authenticated
@@ -274,118 +326,124 @@ export function KidsDashboard() {
         </div>
       </div>
 
-      {/* Games Grid */}
-      <div className="mb-6">
-        <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-          <Gamepad2 className="w-5 h-5 text-purple-400" />
-          Play & Learn
-        </h2>
-        <div className="grid grid-cols-2 gap-3">
-          {games.map((game) => {
-            const Icon = game.icon
-            return (
-              <button
-                key={game.id}
-                onClick={() => startKidsQuiz(game.id)}
-                className={`p-4 rounded-2xl bg-gradient-to-br ${game.bgGradient} border border-white/10 hover:border-white/30 transition-all group text-left pointer-events-auto z-10 relative`}
-              >
-                <div className="flex items-start justify-between mb-3">
-                  <div className={`w-10 h-10 rounded-xl bg-slate-900/50 flex items-center justify-center`}>
-                    <Icon className={`w-5 h-5 ${game.color}`} />
-                  </div>
-                  <div className="flex items-center gap-1 text-xs">
-                    <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
-                    <span className="text-white/70">+{game.points}</span>
-                  </div>
-                </div>
-                <h3 className="font-bold text-white text-sm mb-1">{game.title}</h3>
-                <p className="text-xs text-white/60">{game.description}</p>
-              </button>
-            )
-          })}
-        </div>
-      </div>
+      {activeGame === 'quiz-race' && (
+        <QuizRaceGame onComplete={handleGameComplete} onExit={() => setActiveGame(null)} />
+      )}
+      {activeGame === 'speed-challenge' && (
+        <SpeedChallengeGame onComplete={handleGameComplete} onExit={() => setActiveGame(null)} />
+      )}
+      {activeGame === 'knowledge-battle' && (
+        <KnowledgeBattleGame onComplete={handleGameComplete} onExit={() => setActiveGame(null)} />
+      )}
 
-      {/* Learning Path */}
-      <div className="mb-6">
-        <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-          <Target className="w-5 h-5 text-pink-400" />
-          Your Journey
-        </h2>
-        <div className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700">
-          <div className="flex items-center justify-between mb-4">
-            <span className="text-sm text-slate-300">Level 3: Math Explorer</span>
-            <span className="text-xs text-purple-400 font-bold">450/500 XP</span>
+      {!activeGame && (
+        <>
+          {/* Games Grid */}
+          <div className="mb-6">
+            <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <Gamepad2 className="w-5 h-5 text-purple-400" />
+              Play & Learn
+            </h2>
+            <div className="grid grid-cols-2 gap-3">
+              {games.map((game) => {
+                const Icon = game.icon
+                return (
+                  <button
+                    key={game.id}
+                    onClick={() => startGame(game.id)}
+                    className={`p-4 rounded-2xl bg-gradient-to-br ${game.bgGradient} border border-white/10 hover:border-white/30 transition-all group text-left`}
+                  >
+                    <div className="flex items-start justify-between mb-3">
+                      <div className={`w-10 h-10 rounded-xl bg-slate-900/50 flex items-center justify-center`}>
+                        <Icon className={`w-5 h-5 ${game.color}`} />
+                      </div>
+                      <div className="flex items-center gap-1 text-xs">
+                        <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
+                        <span className="text-white/70">+{game.points}</span>
+                      </div>
+                    </div>
+                    <h3 className="font-bold text-white text-sm mb-1">{game.title}</h3>
+                    <p className="text-xs text-white/60">{game.description}</p>
+                  </button>
+                )
+              })}
+            </div>
           </div>
-          <div className="h-3 bg-slate-700 rounded-full overflow-hidden mb-4">
-            <div className="h-full w-11/12 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full" />
-          </div>
-          <div className="grid grid-cols-5 gap-2">
-            {[1, 2, 3, 4, 5].map((level) => (
-              <div
-                key={level}
-                className={`aspect-square rounded-xl flex items-center justify-center ${
-                  level <= 3
-                    ? 'bg-gradient-to-br from-purple-500 to-pink-500'
-                    : 'bg-slate-700/50 border border-slate-600'
-                }`}
-              >
-                {level <= 3 ? (
-                  <Star className="w-4 h-4 text-white fill-white" />
-                ) : (
-                  <span className="text-xs text-slate-500">{level}</span>
-                )}
+
+          {/* Learning Path */}
+          <div className="mb-6">
+            <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <Target className="w-5 h-5 text-pink-400" />
+              Your Journey
+            </h2>
+            <div className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700">
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-sm text-slate-300">Level 3: Math Explorer</span>
+                <span className="text-xs text-purple-400 font-bold">450/500 XP</span>
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Achievements */}
-      <div className="mb-6">
-        <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-          <Medal className="w-5 h-5 text-amber-400" />
-          Achievements
-        </h2>
-        <div className="grid grid-cols-2 gap-3">
-          {achievements.map((ach, i) => {
-            const Icon = ach.icon
-            return (
-              <div
-                key={i}
-                className={`p-3 rounded-xl border ${
-                  ach.unlocked
-                    ? 'bg-amber-500/10 border-amber-500/30'
-                    : 'bg-slate-800/50 border-slate-700'
-                }`}
-              >
-                <Icon
-                  className={`w-6 h-6 mb-2 ${
-                    ach.unlocked ? 'text-amber-400' : 'text-slate-600'
-                  }`}
-                />
-                <h4
-                  className={`text-sm font-bold ${
-                    ach.unlocked ? 'text-amber-300' : 'text-slate-500'
-                  }`}
-                >
-                  {ach.title}
-                </h4>
-                <p className="text-xs text-slate-500">{ach.desc}</p>
+              <div className="h-3 bg-slate-700 rounded-full overflow-hidden mb-4">
+                <div className="h-full w-11/12 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full" />
               </div>
-            )
-          })}
-        </div>
-      </div>
+              <div className="grid grid-cols-5 gap-2">
+                {[1, 2, 3, 4, 5].map((level) => (
+                  <div
+                    key={level}
+                    className={`aspect-square rounded-xl flex items-center justify-center ${
+                      level <= 3
+                        ? 'bg-gradient-to-br from-purple-500 to-pink-500'
+                        : 'bg-slate-700/50 border border-slate-600'
+                    }`}
+                  >
+                    {level <= 3 ? (
+                      <Star className="w-4 h-4 text-white fill-white" />
+                    ) : (
+                      <span className="text-xs text-slate-500">{level}</span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
 
-      {/* Quick Practice Button */}
-      <button
-        onClick={() => startKidsQuiz('quick-quiz')}
-        className="w-full py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl font-bold text-white flex items-center justify-center gap-2 shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all"
-      >
-        Start Learning Adventure!
-        <ArrowRight className="w-5 h-5" />
-      </button>
+          {/* Achievements */}
+          <div className="mb-6">
+            <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <Medal className="w-5 h-5 text-amber-400" />
+              Achievements
+            </h2>
+            <div className="grid grid-cols-2 gap-3">
+              {achievements.map((ach, i) => {
+                const Icon = ach.icon
+                return (
+                  <div
+                    key={i}
+                    className={`p-3 rounded-xl border ${
+                      ach.unlocked
+                        ? 'bg-amber-500/10 border-amber-500/30'
+                        : 'bg-slate-800/50 border-slate-700'
+                    }`}
+                  >
+                    <Icon className={`w-6 h-6 mb-2 ${ach.unlocked ? 'text-amber-400' : 'text-slate-600'}`} />
+                    <h4 className={`text-sm font-bold ${ach.unlocked ? 'text-amber-300' : 'text-slate-500'}`}>
+                      {ach.title}
+                    </h4>
+                    <p className="text-xs text-slate-500">{ach.desc}</p>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+
+          {/* Quick Practice Button */}
+          <button
+            onClick={() => startKidsQuiz('quick-quiz')}
+            className="w-full py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl font-bold text-white flex items-center justify-center gap-2 shadow-lg"
+          >
+            Start Learning Adventure!
+            <ArrowRight className="w-5 h-5" />
+          </button>
+        </>
+      )}
     </div>
   )
 }

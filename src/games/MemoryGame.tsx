@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Timer, RotateCcw, Trophy, Star, ChevronRight } from 'lucide-react'
 import { MEMORY_LEVELS, EMOJI_SETS } from './memoryLevels'
+import { soundManager } from '../utils/soundManager'
+import { RewardPopup } from '../components/RewardPopup'
 
 interface MemoryGameProps {
   onComplete: (score: number, stars: number) => void
@@ -26,6 +28,14 @@ export function MemoryGame({ onComplete, onExit }: MemoryGameProps) {
   const [showGameOver, setShowGameOver] = useState(false)
   const [matches, setMatches] = useState(0)
   const [attempts, setAttempts] = useState(0)
+
+   const [showReward, setShowReward] = useState(false)
+   const [rewardData, setRewardData] = useState({
+     title: '',
+     message: '',
+     type: 'achievement' as 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+     value: 0
+   })
 
   const levelData = MEMORY_LEVELS[currentLevel]
 
@@ -66,6 +76,7 @@ export function MemoryGame({ onComplete, onExit }: MemoryGameProps) {
         if (prev <= 1) {
           setIsGameActive(false)
           setShowGameOver(true)
+          soundManager.play('wrong')
           return 0
         }
         return prev - 1
@@ -82,6 +93,8 @@ export function MemoryGame({ onComplete, onExit }: MemoryGameProps) {
     if (flippedCards.includes(cardId)) return
     if (cards[cardId].isMatched) return
 
+    soundManager.play('click')
+
     const newFlipped = [...flippedCards, cardId]
     setFlippedCards(newFlipped)
 
@@ -97,6 +110,7 @@ export function MemoryGame({ onComplete, onExit }: MemoryGameProps) {
       
       if (cards[first].emoji === cards[second].emoji) {
         // Match found
+        soundManager.play('correct')
         setTimeout(() => {
           setCards(prev => prev.map((card, idx) => 
             idx === first || idx === second ? { ...card, isMatched: true } : card
@@ -107,6 +121,7 @@ export function MemoryGame({ onComplete, onExit }: MemoryGameProps) {
         }, 500)
       } else {
         // No match - flip back
+        soundManager.play('wrong')
         setTimeout(() => {
           setCards(prev => prev.map((card, idx) => 
             idx === first || idx === second ? { ...card, isFlipped: false } : card
@@ -117,12 +132,29 @@ export function MemoryGame({ onComplete, onExit }: MemoryGameProps) {
     }
   }
 
+  const showRewardPopup = (
+    title: string,
+    message: string,
+    type: 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+    value: number
+  ) => {
+    setRewardData({ title, message, type, value })
+    setShowReward(true)
+  }
+
   // Check for level completion
   useEffect(() => {
     if (matches > 0 && matches === levelData.pairs) {
       setIsGameActive(false)
       const levelScore = Math.floor(score + timeLeft * 2)
       setTotalScore(prev => prev + levelScore)
+      showRewardPopup(
+        `Level ${currentLevel + 1} Complete!`,
+        `+${levelScore} points!`,
+        'levelUp',
+        levelScore
+      )
+      soundManager.play('levelUp')
       setTimeout(() => setShowLevelComplete(true), 500)
     }
   }, [matches, levelData.pairs, score, timeLeft])
@@ -133,7 +165,12 @@ export function MemoryGame({ onComplete, onExit }: MemoryGameProps) {
       setCurrentLevel(prev => prev + 1)
     } else {
       // Game complete
-      onComplete(totalScore, Math.min(3, Math.floor(totalScore / 1000) + 1))
+      const stars = Math.min(3, Math.floor(totalScore / 1000) + 1)
+      showRewardPopup('Memory Master! 🏆', `You earned ${stars} stars!`, 'win', stars)
+      soundManager.play('win')
+      setTimeout(() => {
+        onComplete(totalScore, stars)
+      }, 2500)
     }
   }
 
@@ -345,6 +382,17 @@ export function MemoryGame({ onComplete, onExit }: MemoryGameProps) {
               </div>
             </div>
           </div>
+        )}
+
+        {showReward && (
+          <RewardPopup
+            isOpen={showReward}
+            onClose={() => setShowReward(false)}
+            title={rewardData.title}
+            message={rewardData.message}
+            type={rewardData.type}
+            value={rewardData.value}
+          />
         )}
       </div>
     </div>

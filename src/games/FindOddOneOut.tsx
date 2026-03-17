@@ -1,6 +1,8 @@
 import { useState } from 'react'
-import { Eye, RotateCcw, Trophy, Star } from 'lucide-react'
+import { Eye, RotateCcw, Star } from 'lucide-react'
 import { FIND_ODD_LEVELS } from './findOddLevels'
+import { soundManager } from '../utils/soundManager'
+import { RewardPopup } from '../components/RewardPopup'
 
 interface FindOddOneOutProps {
   onComplete: (score: number, stars: number) => void
@@ -16,16 +18,39 @@ export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
   const [found, setFound] = useState(false)
   const [showHint, setShowHint] = useState(false)
 
+  const [showReward, setShowReward] = useState(false)
+  const [rewardData, setRewardData] = useState({
+    title: '',
+    message: '',
+    type: 'achievement' as 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+    value: 0
+  })
+
   const level = FIND_ODD_LEVELS[currentLevel]
+
+  const showRewardPopup = (
+    title: string,
+    message: string,
+    type: 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+    value: number
+  ) => {
+    setRewardData({ title, message, type, value })
+    setShowReward(true)
+  }
 
   function handleItemClick(index: number) {
     if (found || wrongSelections.includes(index)) return
 
+    soundManager.play('click')
+
     if (index === level.odd) {
       // Correct!
+      soundManager.play('correct')
       const bonus = attempts === 0 ? 20 : attempts === 1 ? 15 : 10
       setScore(score + bonus)
       setFound(true)
+
+      showRewardPopup('Great Eye! 👀', `+${bonus} points!`, 'achievement', bonus)
       
       setTimeout(() => {
         setTotalScore(totalScore + score + bonus)
@@ -33,6 +58,7 @@ export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
       }, 1500)
     } else {
       // Wrong
+      soundManager.play('wrong')
       setWrongSelections([...wrongSelections, index])
       setAttempts(attempts + 1)
       setScore(Math.max(0, score - 5))
@@ -40,14 +66,24 @@ export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
   }
 
   function nextLevel() {
-    setCurrentLevel(currentLevel + 1)
-    setAttempts(0)
-    setWrongSelections([])
-    setFound(false)
-    setShowHint(false)
+    if (currentLevel < FIND_ODD_LEVELS.length - 1) {
+      setCurrentLevel(currentLevel + 1)
+      setAttempts(0)
+      setWrongSelections([])
+      setFound(false)
+      setShowHint(false)
+    } else {
+      const stars = Math.min(3, Math.floor(totalScore / 200) + 1)
+      showRewardPopup('Super Spotter! 🏆', `You earned ${stars} stars!`, 'win', stars)
+      soundManager.play('win')
+      setTimeout(() => {
+        onComplete(totalScore, stars)
+      }, 2500)
+    }
   }
 
   function resetGame() {
+    soundManager.play('click')
     setCurrentLevel(0)
     setScore(0)
     setAttempts(0)
@@ -189,27 +225,15 @@ export function FindOddOneOut({ onComplete, onExit }: FindOddOneOutProps) {
           </div>
         )}
 
-        {/* Game Complete */}
-        {currentLevel === FIND_ODD_LEVELS.length - 1 && found && (
-          <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-50">
-            <div className="bg-slate-800 rounded-2xl p-8 text-center max-w-sm">
-              <Trophy className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-white mb-2">Game Complete!</h2>
-              <p className="text-slate-300 mb-4">You found all the odd ones!</p>
-              <div className="flex justify-center gap-1 mb-6">
-                {[...Array(3)].map((_, i) => (
-                  <Star key={i} className={`w-8 h-8 ${i < Math.min(3, Math.floor(totalScore / 200) + 1) ? 'text-yellow-400 fill-yellow-400' : 'text-slate-600'}`} />
-                ))}
-              </div>
-              <p className="text-2xl font-bold text-yellow-400 mb-6">{totalScore} points</p>
-              <button 
-                onClick={() => onComplete(totalScore, Math.min(3, Math.floor(totalScore / 200) + 1))}
-                className="w-full py-3 bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl font-bold text-white"
-              >
-                Continue
-              </button>
-            </div>
-          </div>
+        {showReward && (
+          <RewardPopup
+            isOpen={showReward}
+            onClose={() => setShowReward(false)}
+            title={rewardData.title}
+            message={rewardData.message}
+            type={rewardData.type}
+            value={rewardData.value}
+          />
         )}
       </div>
     </div>

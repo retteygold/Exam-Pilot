@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { Search, RotateCcw, Trophy, Star, ChevronRight } from 'lucide-react'
 import { WORD_SEARCH_LEVELS } from './wordSearchLevels'
+import { soundManager } from '../utils/soundManager'
+import { RewardPopup } from '../components/RewardPopup'
 
 interface WordSearchGameProps {
   onComplete: (score: number, stars: number) => void
@@ -22,12 +24,30 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
   const [pointerId, setPointerId] = useState<number | null>(null)
   const [showLevelComplete, setShowLevelComplete] = useState(false)
 
+  const [showReward, setShowReward] = useState(false)
+  const [rewardData, setRewardData] = useState({
+    title: '',
+    message: '',
+    type: 'achievement' as 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+    value: 0
+  })
+
   const levelData = WORD_SEARCH_LEVELS[currentLevel]
   const WORDS = levelData.words
 
   useEffect(() => {
     generateGrid()
   }, [currentLevel])
+
+  const showRewardPopup = (
+    title: string,
+    message: string,
+    type: 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+    value: number
+  ) => {
+    setRewardData({ title, message, type, value })
+    setShowReward(true)
+  }
 
   function generateGrid() {
     const newGrid: string[][] = Array(GRID_SIZE).fill(null).map(() => Array(GRID_SIZE).fill(''))
@@ -83,6 +103,7 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
   }
 
   function handleCellClick(row: number, col: number) {
+    soundManager.play('click')
     if (isSelecting) {
       checkWord()
       setIsSelecting(false)
@@ -115,6 +136,7 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
   }
 
   function startSelection(row: number, col: number) {
+    soundManager.play('click')
     setIsSelecting(true)
     setSelectedCells([{row, col}])
     setCurrentWord(grid[row][col])
@@ -173,16 +195,30 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
     const targetWord = WORDS.find(w => w === word || w === reversedWord)
     
     if (targetWord && !foundWords.includes(targetWord)) {
+      soundManager.play('correct')
       const newFoundWords = [...foundWords, targetWord]
       setFoundWords(newFoundWords)
       const newScore = score + 10
       setScore(newScore)
+
+      if (newFoundWords.length === 1 || newFoundWords.length === Math.ceil(WORDS.length / 2)) {
+        showRewardPopup('Nice Find! ⭐', `You found: ${targetWord}`, 'achievement', 10)
+      }
       
       if (newFoundWords.length === WORDS.length) {
         const newTotal = totalScore + newScore
         setTotalScore(newTotal)
+        showRewardPopup(
+          `Level ${currentLevel + 1} Complete!`,
+          `+${newScore} points!`,
+          'levelUp',
+          newScore
+        )
+        soundManager.play('levelUp')
         setTimeout(() => setShowLevelComplete(true), 500)
       }
+    } else {
+      soundManager.play('wrong')
     }
   }
 
@@ -197,7 +233,11 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
       setShowLevelComplete(false)
     } else {
       const stars = Math.min(3, Math.floor(totalScore / 100) + 1)
-      onComplete(totalScore, stars)
+      showRewardPopup('Word Wizard! 🏆', `You earned ${stars} stars!`, 'win', stars)
+      soundManager.play('win')
+      setTimeout(() => {
+        onComplete(totalScore, stars)
+      }, 2500)
     }
   }
 
@@ -367,6 +407,17 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
               </button>
             </div>
           </div>
+        )}
+
+        {showReward && (
+          <RewardPopup
+            isOpen={showReward}
+            onClose={() => setShowReward(false)}
+            title={rewardData.title}
+            message={rewardData.message}
+            type={rewardData.type}
+            value={rewardData.value}
+          />
         )}
       </div>
     </div>

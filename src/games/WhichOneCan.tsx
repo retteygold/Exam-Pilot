@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { HelpCircle, RotateCcw, Star, ArrowRight } from 'lucide-react'
 import { WHICH_CAN_LEVELS } from './whichCanLevels'
+import { soundManager } from '../utils/soundManager'
+import { RewardPopup } from '../components/RewardPopup'
 
 interface WhichOneCanProps {
   onComplete: (score: number, stars: number) => void
@@ -15,10 +17,30 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
   const [streak, setStreak] = useState(0)
   const [correctCount, setCorrectCount] = useState(0)
 
+  const [showReward, setShowReward] = useState(false)
+  const [rewardData, setRewardData] = useState({
+    title: '',
+    message: '',
+    type: 'achievement' as 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+    value: 0
+  })
+
   const question = WHICH_CAN_LEVELS[currentQuestion]
+
+  const showRewardPopup = (
+    title: string,
+    message: string,
+    type: 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+    value: number
+  ) => {
+    setRewardData({ title, message, type, value })
+    setShowReward(true)
+  }
 
   function handleSelect(index: number) {
     if (showResult) return
+
+    soundManager.play('click')
     
     setSelected(index)
     setShowResult(true)
@@ -26,11 +48,20 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
     const isCorrect = question.items[index].can
     
     if (isCorrect) {
+      soundManager.play('correct')
       const points = 10 + (streak * 2)
       setScore(score + points)
-      setStreak(streak + 1)
+      const newStreak = streak + 1
+      setStreak(newStreak)
       setCorrectCount(correctCount + 1)
+
+      if (newStreak === 3) {
+        showRewardPopup('Hot Streak! 🔥', '3 correct in a row!', 'achievement', 10)
+      } else if (newStreak === 5) {
+        showRewardPopup('Unstoppable! ⚡', '5 correct in a row!', 'milestone', 20)
+      }
     } else {
+      soundManager.play('wrong')
       setStreak(0)
       setScore(Math.max(0, score - 5))
     }
@@ -38,16 +69,22 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
 
   function nextQuestion() {
     if (currentQuestion < WHICH_CAN_LEVELS.length - 1) {
+      soundManager.play('click')
       setCurrentQuestion(currentQuestion + 1)
       setSelected(null)
       setShowResult(false)
     } else {
       const stars = Math.min(3, Math.floor((correctCount / WHICH_CAN_LEVELS.length) * 3) + (correctCount === WHICH_CAN_LEVELS.length ? 0 : 1))
-      onComplete(score, stars)
+      showRewardPopup('Logic Legend! 🏆', `You earned ${stars} stars!`, 'win', stars)
+      soundManager.play('win')
+      setTimeout(() => {
+        onComplete(score, stars)
+      }, 2500)
     }
   }
 
   function resetGame() {
+    soundManager.play('click')
     setCurrentQuestion(0)
     setScore(0)
     setSelected(null)
@@ -163,6 +200,17 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
           <span>✅ Correct: {correctCount}</span>
           <span>❌ Wrong: {currentQuestion - correctCount + (showResult && !isCorrect ? 1 : 0)}</span>
         </div>
+
+        {showReward && (
+          <RewardPopup
+            isOpen={showReward}
+            onClose={() => setShowReward(false)}
+            title={rewardData.title}
+            message={rewardData.message}
+            type={rewardData.type}
+            value={rewardData.value}
+          />
+        )}
       </div>
     </div>
   )

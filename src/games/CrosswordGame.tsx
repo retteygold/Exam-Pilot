@@ -1,6 +1,8 @@
 import { useState, useRef } from 'react'
 import { Grid3X3, RotateCcw, Trophy, Star, HelpCircle, ChevronRight } from 'lucide-react'
 import { CROSSWORD_LEVELS } from './crosswordLevels'
+import { soundManager } from '../utils/soundManager'
+import { RewardPopup } from '../components/RewardPopup'
 
 interface CrosswordGameProps {
   onComplete: (score: number, stars: number) => void
@@ -21,10 +23,20 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
   const [showLevelComplete, setShowLevelComplete] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
+  const [showReward, setShowReward] = useState(false)
+  const [rewardData, setRewardData] = useState({
+    title: '',
+    message: '',
+    type: 'achievement' as 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+    value: 0
+  })
+
   const puzzle = CROSSWORD_LEVELS[currentPuzzle]
 
   function handleCellClick(row: number, col: number) {
     if (isCellBlocked(row, col)) return
+
+    soundManager.play('click')
     
     if (selectedCell?.row === row && selectedCell?.col === col) {
       setDirection(direction === 'across' ? 'down' : 'across')
@@ -40,6 +52,7 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
     const key = e.key.toUpperCase()
     
     if (key === 'BACKSPACE') {
+      soundManager.play('click')
       const newGrid = [...grid.map(r => [...r])]
       newGrid[row][col] = ''
       setGrid(newGrid)
@@ -53,12 +66,23 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
     } else if (key === 'ARROWRIGHT') {
       moveSelectionTo(row, col + 1)
     } else if (key.length === 1 && /[A-Z]/.test(key)) {
+      soundManager.play('click')
       const newGrid = [...grid.map(r => [...r])]
       newGrid[row][col] = key
       setGrid(newGrid)
       checkWords(newGrid)
       moveSelection(1)
     }
+  }
+
+  const showRewardPopup = (
+    title: string,
+    message: string,
+    type: 'achievement' | 'levelUp' | 'stars' | 'milestone' | 'win',
+    value: number
+  ) => {
+    setRewardData({ title, message, type, value })
+    setShowReward(true)
   }
 
   function moveSelection(dir: number) {
@@ -118,16 +142,30 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
     }
     
     if (newSolved.length > 0) {
+      soundManager.play('correct')
       setSolvedWords([...solvedWords, ...newSolved])
       setScore(score + newSolved.length * 15)
+
+      if (solvedWords.length + newSolved.length === 1 || solvedWords.length + newSolved.length === Math.ceil(puzzle.words.length / 2)) {
+        showRewardPopup('Nice! ⭐', `You solved: ${newSolved[0]}`, 'achievement', 15)
+      }
       
       if (solvedWords.length + newSolved.length === puzzle.words.length) {
         const levelScore = score + newSolved.length * 15
         setTimeout(() => {
           setTotalScore(totalScore + levelScore)
+          showRewardPopup(
+            `Level ${currentPuzzle + 1} Complete!`,
+            `+${levelScore} points!`,
+            'levelUp',
+            levelScore
+          )
+          soundManager.play('levelUp')
           setShowLevelComplete(true)
         }, 1000)
       }
+    } else {
+      soundManager.play('wrong')
     }
   }
 
@@ -138,9 +176,11 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
     setSolvedWords([])
     setShowHint(null)
     setShowLevelComplete(false)
+    setScore(0)
   }
 
   function resetGame() {
+    soundManager.play('click')
     setCurrentPuzzle(0)
     setGrid(Array(GRID_SIZE).fill(null).map(() => Array(GRID_SIZE).fill('')))
     setSelectedCell(null)
@@ -385,7 +425,14 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
                 </button>
               ) : (
                 <button 
-                  onClick={() => onComplete(totalScore, Math.min(3, Math.floor(totalScore / 200) + 1))}
+                  onClick={() => {
+                    const stars = Math.min(3, Math.floor(totalScore / 200) + 1)
+                    showRewardPopup('Crossword Champion! 🏆', `You earned ${stars} stars!`, 'win', stars)
+                    soundManager.play('win')
+                    setTimeout(() => {
+                      onComplete(totalScore, stars)
+                    }, 2500)
+                  }}
                   className="w-full py-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl font-bold text-white"
                 >
                   Finish Game
@@ -393,6 +440,17 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
               )}
             </div>
           </div>
+        )}
+
+        {showReward && (
+          <RewardPopup
+            isOpen={showReward}
+            onClose={() => setShowReward(false)}
+            title={rewardData.title}
+            message={rewardData.message}
+            type={rewardData.type}
+            value={rewardData.value}
+          />
         )}
       </div>
     </div>
