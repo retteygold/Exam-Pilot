@@ -13,6 +13,9 @@ import {
   upsertKidBestScore as upsertKidBestScoreDB,
   upsertKidSkillPath as upsertKidSkillPathDB,
   getGameLeaderboard as getGameLeaderboardDB,
+  upsertKidOverallScore as upsertKidOverallScoreDB,
+  getOverallLeaderboard as getOverallLeaderboardDB,
+  getGradeTopper as getGradeTopperDB,
   deleteKidProfile,
   updateKidProfile
 } from '../services/kidsFirestore'
@@ -24,6 +27,8 @@ export interface KidsProfile {
   secretCode: string
   grade: string
   avatar: string
+  countryName?: string
+  countryFlag?: string
   createdAt: number
 }
 
@@ -52,6 +57,8 @@ export interface GameLeaderboardEntry {
   kidId: string
   kidName: string
   kidAvatar: string
+  kidFlag?: string
+  kidGrade?: string
   gameId: string
   bestScore: number
   updatedAt: number
@@ -108,7 +115,7 @@ export interface KidsState {
   activeGame: ActiveGameProgress | null  // Track ongoing game
   
   login: (name: string, secretCode: string) => Promise<KidsProfile | null>
-  register: (name: string, secretCode: string, grade: string, avatar: string) => Promise<KidsProfile | null>
+  register: (name: string, secretCode: string, grade: string, avatar: string, countryName?: string, countryFlag?: string) => Promise<KidsProfile | null>
   logout: () => void
   recordSession: (session: Omit<GameSession, 'id' | 'kidId' | 'playedAt'>) => Promise<void>
   unlockAchievement: (achievementCode: string, title: string, description: string, starsReward: number) => void
@@ -118,6 +125,9 @@ export interface KidsState {
   getGameProgress: (gameId: string) => KidGameProgress | null
   getAllGameProgress: () => KidGameProgress[]
   getGameLeaderboard: (gameId: string, topN?: number) => Promise<GameLeaderboardEntry[]>
+
+  getOverallLeaderboard: (topN?: number) => Promise<Array<{ kidId: string; kidName: string; kidAvatar: string; kidFlag?: string; kidGrade?: string; overallScore: number; updatedAt: number }>>
+  getGradeTopper: (grade: string) => Promise<{ kidId: string; kidName: string; kidAvatar: string; kidFlag?: string; kidGrade?: string; overallScore: number; updatedAt: number } | null>
 
   setSkillPathMode: (mode: KidSkillPath['mode']) => Promise<void>
   setSkillPathGameIds: (gameIds: string[]) => Promise<void>
@@ -205,7 +215,7 @@ export const useKidsStore = create<KidsState>()(
         return null
       },
 
-      register: async (name: string, secretCode: string, grade: string, avatar: string) => {
+      register: async (name: string, secretCode: string, grade: string, avatar: string, countryName?: string, countryFlag?: string) => {
         const normalizedName = name.trim()
         const normalizedCode = secretCode.trim()
 
@@ -217,6 +227,8 @@ export const useKidsStore = create<KidsState>()(
           secretCode: normalizedCode,
           grade,
           avatar,
+          countryName,
+          countryFlag,
           createdAt: Date.now()
         })
         
@@ -276,8 +288,24 @@ export const useKidsStore = create<KidsState>()(
           kidId: currentKid.id,
           kidName: currentKid.name,
           kidAvatar: currentKid.avatar,
+          kidFlag: currentKid.countryFlag,
+          kidGrade: currentKid.grade,
           gameId,
           bestScore
+        })
+
+        const previousOverall = get()
+          .sessions
+          .filter(s => s.kidId === currentKid.id)
+          .reduce((sum, s) => sum + (s.score || 0), 0)
+        const nextOverall = previousOverall + session.score
+        await upsertKidOverallScoreDB({
+          kidId: currentKid.id,
+          kidName: currentKid.name,
+          kidAvatar: currentKid.avatar,
+          kidFlag: currentKid.countryFlag,
+          kidGrade: currentKid.grade,
+          overallScore: nextOverall
         })
 
         set(state => ({
@@ -512,10 +540,39 @@ export const useKidsStore = create<KidsState>()(
           kidId: r.kidId,
           kidName: r.kidName,
           kidAvatar: r.kidAvatar,
+          kidFlag: r.kidFlag,
+          kidGrade: r.kidGrade,
           gameId: r.gameId,
           bestScore: r.bestScore,
           updatedAt: r.updatedAt
         }))
+      },
+
+      getOverallLeaderboard: async (topN: number = 10) => {
+        const rows = await getOverallLeaderboardDB(topN)
+        return rows.map(r => ({
+          kidId: r.kidId,
+          kidName: r.kidName,
+          kidAvatar: r.kidAvatar,
+          kidFlag: r.kidFlag,
+          kidGrade: r.kidGrade,
+          overallScore: r.overallScore,
+          updatedAt: r.updatedAt
+        }))
+      },
+
+      getGradeTopper: async (grade: string) => {
+        const r = await getGradeTopperDB(grade)
+        if (!r) return null
+        return {
+          kidId: r.kidId,
+          kidName: r.kidName,
+          kidAvatar: r.kidAvatar,
+          kidFlag: r.kidFlag,
+          kidGrade: r.kidGrade,
+          overallScore: r.overallScore,
+          updatedAt: r.updatedAt
+        }
       },
 
       // Admin functions

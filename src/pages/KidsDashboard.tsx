@@ -264,13 +264,17 @@ export function KidsDashboard() {
     setSkillPathMode,
     getSkillPathCurrentGameId,
     getGameProgress,
-    getGameLeaderboard
+    getGameLeaderboard,
+    getOverallLeaderboard,
+    getGradeTopper
   } = useKidsStore()
 
   const [activeGame, setActiveGame] = useState<string | null>(null)
   const [activeLevel, setActiveLevel] = useState<number>(1)
   const [leaderboardGameId, setLeaderboardGameId] = useState<string>('math-blaster')
-  const [leaderboardRows, setLeaderboardRows] = useState<Array<{ kidName: string; kidAvatar: string; bestScore: number }>>([])
+  const [leaderboardRows, setLeaderboardRows] = useState<Array<{ kidName: string; kidAvatar: string; kidFlag?: string; bestScore: number }>>([])
+  const [overallRows, setOverallRows] = useState<Array<{ kidName: string; kidAvatar: string; kidFlag?: string; overallScore: number }>>([])
+  const [gradeTopper, setGradeTopper] = useState<{ kidName: string; kidAvatar: string; kidFlag?: string; overallScore: number } | null>(null)
 
   const handleGameComplete = async (score: number, stars: number) => {
     if (currentKid && recordSession) {
@@ -332,13 +336,42 @@ export function KidsDashboard() {
     const loadLeaderboard = async () => {
       try {
         const rows = await getGameLeaderboard(leaderboardGameId, 10)
-        setLeaderboardRows(rows.map(r => ({ kidName: r.kidName, kidAvatar: r.kidAvatar, bestScore: r.bestScore })))
+        setLeaderboardRows(rows.map(r => ({ kidName: r.kidName, kidAvatar: r.kidAvatar, kidFlag: r.kidFlag, bestScore: r.bestScore })))
       } catch {
         setLeaderboardRows([])
       }
     }
     loadLeaderboard()
   }, [getGameLeaderboard, leaderboardGameId])
+
+  useEffect(() => {
+    const loadOverall = async () => {
+      try {
+        const rows = await getOverallLeaderboard(10)
+        setOverallRows(rows.map(r => ({ kidName: r.kidName, kidAvatar: r.kidAvatar, kidFlag: r.kidFlag, overallScore: r.overallScore })))
+      } catch {
+        setOverallRows([])
+      }
+    }
+    loadOverall()
+  }, [getOverallLeaderboard])
+
+  useEffect(() => {
+    const loadTopper = async () => {
+      if (!currentKid?.grade) return
+      try {
+        const r = await getGradeTopper(currentKid.grade)
+        if (!r) {
+          setGradeTopper(null)
+          return
+        }
+        setGradeTopper({ kidName: r.kidName, kidAvatar: r.kidAvatar, kidFlag: r.kidFlag, overallScore: r.overallScore })
+      } catch {
+        setGradeTopper(null)
+      }
+    }
+    loadTopper()
+  }, [currentKid?.grade, getGradeTopper])
 
   const startKidsQuiz = (gameId: string) => {
     // Handle new interactive games - navigate to full screen routes
@@ -608,13 +641,63 @@ export function KidsDashboard() {
                     <div className="flex items-center gap-2">
                       <div className="w-7 h-7 rounded-lg bg-slate-800 flex items-center justify-center">{r.kidAvatar}</div>
                       <div className="text-sm text-white font-semibold">
-                        {idx + 1}. {r.kidName}
+                        {idx + 1}. {r.kidFlag ? `${r.kidFlag} ` : ''}{r.kidName}
                       </div>
                     </div>
                     <div className="text-sm text-yellow-300 font-bold">{r.bestScore}</div>
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+
+          {/* Overall Leaderboard */}
+          <div className="mb-6">
+            <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <Crown className="w-5 h-5 text-amber-400" />
+              Overall Champions
+            </h2>
+            <div className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700">
+              <div className="space-y-2">
+                {overallRows.length === 0 && (
+                  <div className="text-sm text-slate-400">No overall scores yet.</div>
+                )}
+                {overallRows.slice(0, 5).map((r, idx) => (
+                  <div key={`${r.kidName}-${idx}`} className="flex items-center justify-between bg-slate-900/40 rounded-xl px-3 py-2 border border-slate-700/60">
+                    <div className="flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-lg bg-slate-800 flex items-center justify-center">{r.kidAvatar}</div>
+                      <div className="text-sm text-white font-semibold">
+                        {idx + 1}. {r.kidFlag ? `${r.kidFlag} ` : ''}{r.kidName}
+                      </div>
+                    </div>
+                    <div className="text-sm text-amber-300 font-bold">{r.overallScore}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Grade Topper */}
+          <div className="mb-6">
+            <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <Medal className="w-5 h-5 text-emerald-300" />
+              Grade Topper
+            </h2>
+            <div className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700">
+              {!gradeTopper ? (
+                <div className="text-sm text-slate-400">No topper yet for {currentKid.grade}.</div>
+              ) : (
+                <div className="flex items-center justify-between bg-slate-900/40 rounded-xl px-3 py-3 border border-slate-700/60">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center">{gradeTopper.kidAvatar}</div>
+                    <div>
+                      <div className="text-sm text-white font-bold">{gradeTopper.kidFlag ? `${gradeTopper.kidFlag} ` : ''}{gradeTopper.kidName}</div>
+                      <div className="text-xs text-slate-400">{currentKid.grade}</div>
+                    </div>
+                  </div>
+                  <div className="text-sm text-emerald-300 font-bold">{gradeTopper.overallScore}</div>
+                </div>
+              )}
             </div>
           </div>
 

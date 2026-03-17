@@ -12,6 +12,7 @@ const ACHIEVEMENTS_COLLECTION = 'kidsAchievements'
 const GAME_PROGRESS_COLLECTION = 'kidsGameProgress'
 const GAME_BEST_SCORES_COLLECTION = 'kidsGameBestScores'
 const SKILL_PATH_COLLECTION = 'kidsSkillPath'
+const OVERALL_SCORES_COLLECTION = 'kidsOverallScores'
 
 export type KidGameProgressDB = {
   id: string
@@ -30,6 +31,19 @@ export type KidGameBestScoreDB = {
   bestScore: number
   kidName: string
   kidAvatar: string
+  kidFlag?: string
+  kidGrade?: string
+  updatedAt: number
+}
+
+export type KidOverallScoreDB = {
+  id: string
+  kidId: string
+  kidName: string
+  kidAvatar: string
+  kidFlag?: string
+  kidGrade?: string
+  overallScore: number
   updatedAt: number
 }
 
@@ -91,6 +105,8 @@ export async function getKidByNameKey(nameKey: string): Promise<KidsProfileDB | 
       secretCode: data.secretCode,
       grade: data.grade,
       avatar: data.avatar,
+      countryName: data.countryName,
+      countryFlag: data.countryFlag,
       createdAt: data.createdAt?.toMillis?.() || Date.now()
     } as KidsProfileDB
   } catch (error) {
@@ -283,71 +299,169 @@ export async function getKidSkillPath(kidId: string): Promise<KidSkillPathDB | n
    }
  }
 
- export async function upsertKidBestScore(params: {
-   kidId: string
-   kidName: string
-   kidAvatar: string
-   gameId: string
-   bestScore: number
- }): Promise<KidGameBestScoreDB | null> {
-   try {
-     const { kidId, kidName, kidAvatar, gameId, bestScore } = params
-     const docId = `${kidId}_${gameId}`
-     const docRef = doc(db, GAME_BEST_SCORES_COLLECTION, docId)
+export async function upsertKidBestScore(params: {
+  kidId: string
+  kidName: string
+  kidAvatar: string
+  kidFlag?: string
+  kidGrade?: string
+  gameId: string
+  bestScore: number
+}): Promise<KidGameBestScoreDB | null> {
+  try {
+    const { kidId, kidName, kidAvatar, kidFlag, kidGrade, gameId, bestScore } = params
+    const docId = `${kidId}_${gameId}`
+    const docRef = doc(db, GAME_BEST_SCORES_COLLECTION, docId)
 
-     const payload: Partial<KidGameBestScoreDB> = {
-       id: docId,
-       kidId,
-       gameId,
-       bestScore,
-       kidName,
-       kidAvatar,
-       updatedAt: Date.now()
-     }
+    const payload: Partial<KidGameBestScoreDB> = {
+      id: docId,
+      kidId,
+      gameId,
+      bestScore,
+      kidName,
+      kidAvatar,
+      kidFlag,
+      kidGrade,
+      updatedAt: Date.now()
+    }
 
-     await setDoc(
-       docRef,
-       {
-         ...payload,
-         updatedAt: serverTimestamp()
-       },
-       { merge: true }
-     )
+    await setDoc(
+      docRef,
+      {
+        ...payload,
+        updatedAt: serverTimestamp()
+      },
+      { merge: true }
+    )
 
-     return payload as KidGameBestScoreDB
-   } catch (error) {
-     console.error('Error upserting kid best score:', error)
-     return null
-   }
- }
+    return payload as KidGameBestScoreDB
+  } catch (error) {
+    console.error('Error upserting kid best score:', error)
+    return null
+  }
+}
 
- export async function getGameLeaderboard(gameId: string, topN: number = 10): Promise<KidGameBestScoreDB[]> {
-   try {
-     const q = query(
-       collection(db, GAME_BEST_SCORES_COLLECTION),
-       where('gameId', '==', gameId),
-       orderBy('bestScore', 'desc'),
-       limit(topN)
-     )
+export async function getGameLeaderboard(gameId: string, topN: number = 10): Promise<KidGameBestScoreDB[]> {
+  try {
+    const q = query(
+      collection(db, GAME_BEST_SCORES_COLLECTION),
+      where('gameId', '==', gameId),
+      orderBy('bestScore', 'desc'),
+      limit(topN)
+    )
 
-     const snapshot = await getDocs(q)
-     return snapshot.docs.map(d => {
-       const data = d.data()
-       return {
-         id: d.id,
-         kidId: data.kidId,
-         gameId: data.gameId,
-         bestScore: data.bestScore ?? 0,
-         kidName: data.kidName ?? 'Kid',
-         kidAvatar: data.kidAvatar ?? '⭐',
-         updatedAt: data.updatedAt?.toMillis?.() || Date.now()
-       } as KidGameBestScoreDB
-     })
-   } catch (error) {
-     console.error('Error getting game leaderboard:', error)
-     return []
-   }
- }
+    const snapshot = await getDocs(q)
+    return snapshot.docs.map(d => {
+      const data = d.data()
+      return {
+        id: d.id,
+        kidId: data.kidId,
+        gameId: data.gameId,
+        bestScore: data.bestScore ?? 0,
+        kidName: data.kidName ?? 'Kid',
+        kidAvatar: data.kidAvatar ?? '⭐',
+        kidFlag: data.kidFlag,
+        kidGrade: data.kidGrade,
+        updatedAt: data.updatedAt?.toMillis?.() || Date.now()
+      } as KidGameBestScoreDB
+    })
+  } catch (error) {
+    console.error('Error getting game leaderboard:', error)
+    return []
+  }
+}
+
+export async function upsertKidOverallScore(params: {
+  kidId: string
+  kidName: string
+  kidAvatar: string
+  kidFlag?: string
+  kidGrade?: string
+  overallScore: number
+}): Promise<KidOverallScoreDB | null> {
+  try {
+    const { kidId, kidName, kidAvatar, kidFlag, kidGrade, overallScore } = params
+    const docId = kidId
+    const docRef = doc(db, OVERALL_SCORES_COLLECTION, docId)
+
+    const payload: Partial<KidOverallScoreDB> = {
+      id: docId,
+      kidId,
+      kidName,
+      kidAvatar,
+      kidFlag,
+      kidGrade,
+      overallScore,
+      updatedAt: Date.now()
+    }
+
+    await setDoc(
+      docRef,
+      {
+        ...payload,
+        updatedAt: serverTimestamp()
+      },
+      { merge: true }
+    )
+
+    return payload as KidOverallScoreDB
+  } catch (error) {
+    console.error('Error upserting kid overall score:', error)
+    return null
+  }
+}
+
+export async function getOverallLeaderboard(topN: number = 10): Promise<KidOverallScoreDB[]> {
+  try {
+    const q = query(collection(db, OVERALL_SCORES_COLLECTION), orderBy('overallScore', 'desc'), limit(topN))
+    const snapshot = await getDocs(q)
+    return snapshot.docs.map(d => {
+      const data = d.data()
+      return {
+        id: d.id,
+        kidId: data.kidId,
+        kidName: data.kidName ?? 'Kid',
+        kidAvatar: data.kidAvatar ?? '⭐',
+        kidFlag: data.kidFlag,
+        kidGrade: data.kidGrade,
+        overallScore: data.overallScore ?? 0,
+        updatedAt: data.updatedAt?.toMillis?.() || Date.now()
+      } as KidOverallScoreDB
+    })
+  } catch (error) {
+    console.error('Error getting overall leaderboard:', error)
+    return []
+  }
+}
+
+export async function getGradeTopper(grade: string): Promise<KidOverallScoreDB | null> {
+  try {
+    const q = query(
+      collection(db, OVERALL_SCORES_COLLECTION),
+      where('kidGrade', '==', grade),
+      orderBy('overallScore', 'desc'),
+      limit(1)
+    )
+    const snapshot = await getDocs(q)
+    if (snapshot.empty) return null
+
+    const d = snapshot.docs[0]
+    const data = d.data()
+    return {
+      id: d.id,
+      kidId: data.kidId,
+      kidName: data.kidName ?? 'Kid',
+      kidAvatar: data.kidAvatar ?? '⭐',
+      kidFlag: data.kidFlag,
+      kidGrade: data.kidGrade,
+      overallScore: data.overallScore ?? 0,
+      updatedAt: data.updatedAt?.toMillis?.() || Date.now()
+    } as KidOverallScoreDB
+  } catch (error) {
+    console.error('Error getting grade topper:', error)
+    return null
+  }
+}
 
 export async function getKidSessions(kidId: string): Promise<GameSessionDB[]> {
   try {
@@ -357,11 +471,11 @@ export async function getKidSessions(kidId: string): Promise<GameSessionDB[]> {
       where('deleted', '!=', true)
     )
     const snapshot = await getDocs(q)
-    
-    return snapshot.docs.map(doc => {
-      const data = doc.data()
+
+    return snapshot.docs.map(docSnap => {
+      const data = docSnap.data()
       return {
-        id: doc.id,
+        id: docSnap.id,
         kidId: data.kidId,
         gameType: data.gameType,
         level: typeof data.level === 'number' ? data.level : undefined,

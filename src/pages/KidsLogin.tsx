@@ -5,6 +5,17 @@ import { UserPlus, LogIn, Sparkles } from 'lucide-react'
 const AVATARS = ['🦁', '🐯', '🐻', '🐨', '🐼', '🐸', '🦄', '🐙', '🦊', '🐰']
 const GRADES = ['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7', 'Grade 8']
 
+const COUNTRIES = [
+  { name: 'Pakistan', flag: '🇵🇰' },
+  { name: 'India', flag: '🇮🇳' },
+  { name: 'Bangladesh', flag: '🇧🇩' },
+  { name: 'United Kingdom', flag: '🇬🇧' },
+  { name: 'United States', flag: '🇺🇸' },
+  { name: 'Canada', flag: '🇨🇦' },
+  { name: 'Australia', flag: '🇦🇺' },
+  { name: 'UAE', flag: '🇦🇪' }
+]
+
 interface KidsLoginProps {
   onLogin: () => void
   onBack?: () => void
@@ -16,6 +27,8 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
   const [secretCode, setSecretCode] = useState('')
   const [grade, setGrade] = useState('Grade 1')
   const [avatar, setAvatar] = useState(AVATARS[0])
+  const [countryName, setCountryName] = useState(COUNTRIES[0].name)
+  const [countryFlag, setCountryFlag] = useState(COUNTRIES[0].flag)
   const [error, setError] = useState('')
 
   const [success, setSuccess] = useState('')
@@ -51,7 +64,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
       return
     }
     
-    const profile = await register(name, secretCode, grade, avatar)
+    const profile = await register(name, secretCode, grade, avatar, countryName, countryFlag)
     if (profile) {
       setSuccess(`Account created! Welcome, ${profile.name}! 🎉`)
       setTimeout(() => onLogin(), 500)
@@ -147,6 +160,27 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
                       <option key={g} value={g}>{g}</option>
                     ))}
                   </select>
+                </div>
+
+                {/* Country Selection */}
+                <div>
+                  <label className="block text-sm font-medium text-slate-300 mb-2">
+                    Your Country
+                  </label>
+                  <select
+                    value={countryName}
+                    onChange={(e) => {
+                      const selected = COUNTRIES.find(c => c.name === e.target.value)
+                      setCountryName(e.target.value)
+                      setCountryFlag(selected?.flag || '🏳️')
+                    }}
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white focus:outline-none focus:border-purple-500"
+                  >
+                    {COUNTRIES.map(c => (
+                      <option key={c.name} value={c.name}>{c.flag} {c.name}</option>
+                    ))}
+                  </select>
+                  <div className="mt-2 text-xs text-slate-400">Selected: {countryFlag} {countryName}</div>
                 </div>
 
                 {/* Avatar Selection */}
