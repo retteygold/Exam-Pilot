@@ -8,6 +8,7 @@ import { KidsLogin } from './KidsLogin'
 import { QuizRaceGame } from '../games/QuizRaceGame'
 import { SpeedChallengeGame } from '../games/SpeedChallengeGame'
 import { KnowledgeBattleGame } from '../games/KnowledgeBattleGame'
+import { SkillPathLevelGame } from '../games/SkillPathLevelGame'
 
 interface GameCard {
   id: string
@@ -20,6 +21,78 @@ interface GameCard {
 }
 
 const games: GameCard[] = [
+  {
+    id: 'math-blaster',
+    title: 'Math Blaster',
+    description: 'Arcade math levels (100)!',
+    icon: Gamepad2,
+    color: 'text-red-300',
+    bgGradient: 'from-red-500/20 to-orange-500/20',
+    points: 40
+  },
+  {
+    id: 'spelling-sprint',
+    title: 'Spelling Sprint',
+    description: 'Speed spelling practice!',
+    icon: Zap,
+    color: 'text-emerald-300',
+    bgGradient: 'from-emerald-500/20 to-teal-500/20',
+    points: 35
+  },
+  {
+    id: 'grammar-builder',
+    title: 'Grammar Builder',
+    description: 'Build strong sentences!',
+    icon: Puzzle,
+    color: 'text-indigo-300',
+    bgGradient: 'from-indigo-500/20 to-purple-500/20',
+    points: 35
+  },
+  {
+    id: 'science-lab',
+    title: 'Science Lab',
+    description: 'Experiments & facts!',
+    icon: Sparkles,
+    color: 'text-cyan-300',
+    bgGradient: 'from-cyan-500/20 to-sky-500/20',
+    points: 35
+  },
+  {
+    id: 'geography-map-tap',
+    title: 'Geography Map Tap',
+    description: 'Tap places on the map!',
+    icon: Target,
+    color: 'text-blue-300',
+    bgGradient: 'from-blue-500/20 to-indigo-500/20',
+    points: 35
+  },
+  {
+    id: 'pattern-detective',
+    title: 'Pattern Detective',
+    description: 'Find the next pattern!',
+    icon: Eye,
+    color: 'text-amber-300',
+    bgGradient: 'from-amber-500/20 to-orange-500/20',
+    points: 35
+  },
+  {
+    id: 'reading-comprehension',
+    title: 'Reading Comprehension',
+    description: 'Read & answer smart!',
+    icon: Brain,
+    color: 'text-purple-200',
+    bgGradient: 'from-purple-500/20 to-fuchsia-500/20',
+    points: 35
+  },
+  {
+    id: 'revision-boss',
+    title: 'Revision Boss',
+    description: 'Boss battle quiz!',
+    icon: Trophy,
+    color: 'text-yellow-300',
+    bgGradient: 'from-yellow-500/20 to-amber-500/20',
+    points: 45
+  },
   {
     id: 'quiz-race',
     title: 'Quiz Race',
@@ -155,20 +228,46 @@ export function KidsDashboard() {
 
   const [loginKey, setLoginKey] = useState(0)
 
-  const { currentKid, logout, getKidStats, recordSession } = useKidsStore()
+  const {
+    currentKid,
+    logout,
+    getKidStats,
+    recordSession,
+    skillPath,
+    setSkillPathMode,
+    getSkillPathCurrentGameId,
+    getGameProgress,
+    getGameLeaderboard
+  } = useKidsStore()
 
   const [activeGame, setActiveGame] = useState<string | null>(null)
+  const [activeLevel, setActiveLevel] = useState<number>(1)
+  const [leaderboardGameId, setLeaderboardGameId] = useState<string>('math-blaster')
+  const [leaderboardRows, setLeaderboardRows] = useState<Array<{ kidName: string; kidAvatar: string; bestScore: number }>>([])
 
-  const handleGameComplete = (score: number, stars: number) => {
+  const handleGameComplete = async (score: number, stars: number) => {
     if (currentKid && recordSession) {
-      recordSession({
+      await recordSession({
         gameType: activeGame || 'unknown',
+        level: activeLevel,
         score,
         starsEarned: stars,
         correctAnswers: Math.floor(score / 10),
         totalQuestions: 10,
         durationSeconds: 120
       })
+
+      if (skillPath?.mode === 'skill_path_rotate') {
+        const nextGameId = getSkillPathCurrentGameId()
+        if (nextGameId) {
+          const p = getGameProgress(nextGameId)
+          const nextLevel = p?.highestLevelUnlocked ?? 1
+          setActiveGame(nextGameId)
+          setActiveLevel(nextLevel)
+          setLeaderboardGameId(nextGameId)
+          return
+        }
+      }
     }
     setActiveGame(null)
   }
@@ -202,6 +301,18 @@ export function KidsDashboard() {
     load()
   }, [])
 
+  useEffect(() => {
+    const loadLeaderboard = async () => {
+      try {
+        const rows = await getGameLeaderboard(leaderboardGameId, 10)
+        setLeaderboardRows(rows.map(r => ({ kidName: r.kidName, kidAvatar: r.kidAvatar, bestScore: r.bestScore })))
+      } catch {
+        setLeaderboardRows([])
+      }
+    }
+    loadLeaderboard()
+  }, [getGameLeaderboard, leaderboardGameId])
+
   const startKidsQuiz = (gameId: string) => {
     // Handle new interactive games - navigate to full screen routes
     const interactiveGames: Record<string, string> = {
@@ -209,7 +320,8 @@ export function KidsDashboard() {
       'crossword': '/game/crossword',
       'find-odd': '/game/find-odd',
       'which-can': '/game/which-can',
-      'memory': '/game/memory'
+      'memory': '/game/memory',
+      'memory-match': '/game/memory'
     }
     
     if (interactiveGames[gameId]) {
@@ -262,6 +374,25 @@ export function KidsDashboard() {
   const startGame = (gameId: string) => {
     if (gameId === 'quiz-race' || gameId === 'speed-challenge' || gameId === 'knowledge-battle') {
       setActiveGame(gameId)
+      setActiveLevel(1)
+      setLeaderboardGameId(gameId)
+      return
+    }
+    if (
+      gameId === 'math-blaster' ||
+      gameId === 'spelling-sprint' ||
+      gameId === 'grammar-builder' ||
+      gameId === 'science-lab' ||
+      gameId === 'geography-map-tap' ||
+      gameId === 'pattern-detective' ||
+      gameId === 'reading-comprehension' ||
+      gameId === 'revision-boss'
+    ) {
+      const p = getGameProgress(gameId)
+      const startLevel = p?.highestLevelUnlocked ?? 1
+      setActiveLevel(startLevel)
+      setActiveGame(gameId)
+      setLeaderboardGameId(gameId)
       return
     }
     startKidsQuiz(gameId)
@@ -307,22 +438,59 @@ export function KidsDashboard() {
       </div>
 
       {/* Daily Challenge Banner */}
-      <div className="relative p-4 rounded-2xl bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 mb-6">
+      <button
+        type="button"
+        onClick={() => {
+          const target = skillPath?.mode === 'skill_path_rotate' ? (getSkillPathCurrentGameId() || 'math-blaster') : 'quick-quiz'
+          startGame(target)
+        }}
+        className="relative w-full text-left p-4 rounded-2xl bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 mb-4 hover:border-emerald-400/60 transition-colors"
+      >
         <div className="flex items-center gap-4">
           <div className="w-14 h-14 bg-emerald-500/30 rounded-xl flex items-center justify-center">
             <Trophy className="w-7 h-7 text-emerald-400" />
           </div>
           <div className="flex-1">
-            <h3 className="font-bold text-emerald-300">Daily Challenge!</h3>
-            <p className="text-xs text-emerald-200/70">Complete 3 quizzes today</p>
+            <h3 className="font-bold text-emerald-300">Play Now</h3>
+            <p className="text-xs text-emerald-200/70">
+              {skillPath?.mode === 'skill_path_rotate' ? 'Skill Path (Rotate) - next game ready!' : 'Free Play - tap to start!'}
+            </p>
             <div className="mt-2 h-2 bg-slate-800 rounded-full overflow-hidden">
               <div className="h-full w-2/3 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full" />
             </div>
           </div>
           <div className="text-right">
-            <div className="text-xs text-emerald-300">2/3</div>
-            <div className="text-xs text-emerald-400 font-bold">+50⭐</div>
+            <div className="text-xs text-emerald-300">Tap</div>
+            <div className="text-xs text-emerald-400 font-bold">Play Now</div>
           </div>
+        </div>
+      </button>
+
+      <div className="flex items-center justify-between mb-6 gap-3">
+        <div className="text-white font-bold">Mode</div>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={() => setSkillPathMode('free')}
+            className={`px-3 py-2 rounded-xl text-sm font-bold border transition-colors ${
+              skillPath?.mode !== 'skill_path_rotate'
+                ? 'bg-purple-500/30 border-purple-400 text-purple-100'
+                : 'bg-slate-800/50 border-slate-700 text-slate-200 hover:border-slate-500'
+            }`}
+          >
+            Free Play
+          </button>
+          <button
+            type="button"
+            onClick={() => setSkillPathMode('skill_path_rotate')}
+            className={`px-3 py-2 rounded-xl text-sm font-bold border transition-colors ${
+              skillPath?.mode === 'skill_path_rotate'
+                ? 'bg-emerald-500/30 border-emerald-400 text-emerald-100'
+                : 'bg-slate-800/50 border-slate-700 text-slate-200 hover:border-slate-500'
+            }`}
+          >
+            Skill Path (Rotate)
+          </button>
         </div>
       </div>
 
@@ -336,8 +504,81 @@ export function KidsDashboard() {
         <KnowledgeBattleGame onComplete={handleGameComplete} onExit={() => setActiveGame(null)} />
       )}
 
+      {activeGame &&
+        (activeGame === 'math-blaster' ||
+          activeGame === 'spelling-sprint' ||
+          activeGame === 'grammar-builder' ||
+          activeGame === 'science-lab' ||
+          activeGame === 'geography-map-tap' ||
+          activeGame === 'pattern-detective' ||
+          activeGame === 'reading-comprehension' ||
+          activeGame === 'revision-boss') && (
+          <SkillPathLevelGame
+            config={
+              activeGame === 'math-blaster'
+                ? { id: 'math-blaster', title: 'Math Blaster', description: 'Arcade math levels', iconEmoji: '🚀', bgClassName: 'bg-gradient-to-br from-red-900 via-orange-900 to-slate-900', topics: ['counting', 'addition', 'subtraction', 'multiplication', 'fractions', 'algebra'] }
+                : activeGame === 'spelling-sprint'
+                  ? { id: 'spelling-sprint', title: 'Spelling Sprint', description: 'Spelling practice', iconEmoji: '📝', bgClassName: 'bg-gradient-to-br from-emerald-900 via-teal-900 to-slate-900', topics: ['spelling', 'alphabet', 'phonics'] }
+                  : activeGame === 'grammar-builder'
+                    ? { id: 'grammar-builder', title: 'Grammar Builder', description: 'Grammar levels', iconEmoji: '🧩', bgClassName: 'bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900', topics: ['grammar'] }
+                    : activeGame === 'science-lab'
+                      ? { id: 'science-lab', title: 'Science Lab', description: 'Science facts', iconEmoji: '🧪', bgClassName: 'bg-gradient-to-br from-cyan-900 via-sky-900 to-slate-900', topics: ['animals', 'forces', 'biology'] }
+                      : activeGame === 'geography-map-tap'
+                        ? { id: 'geography-map-tap', title: 'Geography Map Tap', description: 'Geography practice', iconEmoji: '🗺️', bgClassName: 'bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900', topics: ['geography'] }
+                        : activeGame === 'pattern-detective'
+                          ? { id: 'pattern-detective', title: 'Pattern Detective', description: 'Patterns', iconEmoji: '🕵️', bgClassName: 'bg-gradient-to-br from-amber-900 via-orange-900 to-slate-900', topics: ['shapes', 'algebra', 'fractions'] }
+                          : activeGame === 'reading-comprehension'
+                            ? { id: 'reading-comprehension', title: 'Reading Comprehension', description: 'Reading practice', iconEmoji: '📚', bgClassName: 'bg-gradient-to-br from-purple-900 via-fuchsia-900 to-slate-900', topics: ['grammar', 'alphabet'] }
+                            : { id: 'revision-boss', title: 'Revision Boss', description: 'Boss battle revision', iconEmoji: '👑', bgClassName: 'bg-gradient-to-br from-slate-900 via-yellow-900 to-slate-900', topics: ['counting', 'addition', 'subtraction', 'spelling', 'grammar', 'animals'] }
+            }
+            questions={bank}
+            gradeKey={gradeKey}
+            level={activeLevel}
+            onComplete={handleGameComplete}
+            onExit={() => setActiveGame(null)}
+          />
+        )}
+
       {!activeGame && (
         <>
+          {/* Leaderboard */}
+          <div className="mb-6">
+            <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <Trophy className="w-5 h-5 text-yellow-400" />
+              Leaderboard
+            </h2>
+            <div className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700">
+              <div className="flex items-center justify-between mb-3">
+                <div className="text-sm text-slate-200 font-bold">{games.find(g => g.id === leaderboardGameId)?.title || 'Game'}</div>
+                <select
+                  value={leaderboardGameId}
+                  onChange={(e) => setLeaderboardGameId(e.target.value)}
+                  className="bg-slate-900/60 text-slate-200 text-sm rounded-xl px-3 py-2 border border-slate-700"
+                >
+                  {games.slice(0, 8).map(g => (
+                    <option key={g.id} value={g.id}>{g.title}</option>
+                  ))}
+                </select>
+              </div>
+              <div className="space-y-2">
+                {leaderboardRows.length === 0 && (
+                  <div className="text-sm text-slate-400">No scores yet. Be the first!</div>
+                )}
+                {leaderboardRows.slice(0, 5).map((r, idx) => (
+                  <div key={`${r.kidName}-${idx}`} className="flex items-center justify-between bg-slate-900/40 rounded-xl px-3 py-2 border border-slate-700/60">
+                    <div className="flex items-center gap-2">
+                      <div className="w-7 h-7 rounded-lg bg-slate-800 flex items-center justify-center">{r.kidAvatar}</div>
+                      <div className="text-sm text-white font-semibold">
+                        {idx + 1}. {r.kidName}
+                      </div>
+                    </div>
+                    <div className="text-sm text-yellow-300 font-bold">{r.bestScore}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
           {/* Games Grid */}
           <div className="mb-6">
             <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
@@ -439,7 +680,7 @@ export function KidsDashboard() {
             onClick={() => startKidsQuiz('quick-quiz')}
             className="w-full py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-2xl font-bold text-white flex items-center justify-center gap-2 shadow-lg"
           >
-            Start Learning Adventure!
+            Play Now
             <ArrowRight className="w-5 h-5" />
           </button>
         </>

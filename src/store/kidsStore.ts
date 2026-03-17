@@ -8,8 +8,10 @@ import {
   getKidSessions,
   getKidAchievements,
   getKidGameProgress as getKidGameProgressDB,
+  getKidSkillPath as getKidSkillPathDB,
   upsertKidGameProgress as upsertKidGameProgressDB,
   upsertKidBestScore as upsertKidBestScoreDB,
+  upsertKidSkillPath as upsertKidSkillPathDB,
   getGameLeaderboard as getGameLeaderboardDB,
   deleteKidProfile,
   updateKidProfile
@@ -55,6 +57,24 @@ export interface GameLeaderboardEntry {
   updatedAt: number
 }
 
+export interface KidSkillPath {
+  mode: 'free' | 'skill_path_rotate'
+  gameIds: string[]
+  currentIndex: number
+  updatedAt: number
+}
+
+const DEFAULT_SKILL_PATH_GAME_IDS = [
+  'math-blaster',
+  'spelling-sprint',
+  'grammar-builder',
+  'science-lab',
+  'geography-map-tap',
+  'pattern-detective',
+  'reading-comprehension',
+  'revision-boss'
+]
+
 // Active game progress that can be resumed
 export interface ActiveGameProgress {
   gameType: string
@@ -81,12 +101,13 @@ export interface KidsState {
   sessions: GameSession[]
   achievements: Achievement[]
   gameProgress: Record<string, KidGameProgress>
+  skillPath: KidSkillPath | null
   activeGame: ActiveGameProgress | null  // Track ongoing game
   
   login: (name: string, secretCode: string) => Promise<KidsProfile | null>
   register: (name: string, secretCode: string, grade: string, avatar: string) => Promise<KidsProfile | null>
   logout: () => void
-  recordSession: (session: Omit<GameSession, 'id' | 'kidId' | 'playedAt'>) => void
+  recordSession: (session: Omit<GameSession, 'id' | 'kidId' | 'playedAt'>) => Promise<void>
   unlockAchievement: (achievementCode: string, title: string, description: string, starsReward: number) => void
   getKidStats: (kidId: string) => { totalStars: number; totalSessions: number; bestStreak: number }
   getLeaderboard: () => Array<{ kid: KidsProfile; totalStars: number; sessions: number }>
@@ -94,6 +115,11 @@ export interface KidsState {
   getGameProgress: (gameId: string) => KidGameProgress | null
   getAllGameProgress: () => KidGameProgress[]
   getGameLeaderboard: (gameId: string, topN?: number) => Promise<GameLeaderboardEntry[]>
+
+  setSkillPathMode: (mode: KidSkillPath['mode']) => Promise<void>
+  setSkillPathGameIds: (gameIds: string[]) => Promise<void>
+  getSkillPathCurrentGameId: () => string | null
+  advanceSkillPath: () => Promise<string | null>
   // Game session management
   startGameSession: (gameType: string, level: number, extraData?: Record<string, any>) => void
   updateGameProgress: (level: number, score: number, extraData?: Record<string, any>) => void
@@ -118,6 +144,7 @@ export const useKidsStore = create<KidsState>()(
       sessions: [],
       achievements: [],
       gameProgress: {},
+      skillPath: null,
       activeGame: null,
 
       login: async (name: string, secretCode: string) => {
@@ -127,6 +154,7 @@ export const useKidsStore = create<KidsState>()(
           const sessions = await getKidSessions(profile.id)
           const achievements = await getKidAchievements(profile.id)
           const progress = await getKidGameProgressDB(profile.id)
+          const skillPathDB = await getKidSkillPathDB(profile.id)
 
           const progressByGame: Record<string, KidGameProgress> = {}
           for (const p of progress) {
@@ -138,13 +166,36 @@ export const useKidsStore = create<KidsState>()(
               updatedAt: p.updatedAt ?? Date.now()
             }
           }
+
+          const skillPath: KidSkillPath = skillPathDB
+            ? {
+                mode: skillPathDB.mode,
+                gameIds: Array.isArray(skillPathDB.gameIds) && skillPathDB.gameIds.length > 0 ? skillPathDB.gameIds : DEFAULT_SKILL_PATH_GAME_IDS,
+                currentIndex: typeof skillPathDB.currentIndex === 'number' ? skillPathDB.currentIndex : 0,
+                updatedAt: skillPathDB.updatedAt ?? Date.now()
+              }
+            : {
+                mode: 'free',
+                gameIds: DEFAULT_SKILL_PATH_GAME_IDS,
+                currentIndex: 0,
+                updatedAt: Date.now()
+              }
+
+          if (!skillPathDB) {
+            await upsertKidSkillPathDB(profile.id, {
+              mode: skillPath.mode,
+              gameIds: skillPath.gameIds,
+              currentIndex: skillPath.currentIndex
+            })
+          }
           
           set(state => ({
             currentKid: profile,
             isKidsLoggedIn: true,
             sessions: [...state.sessions.filter((s: GameSession) => s.kidId !== profile.id), ...sessions],
             achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements],
-            gameProgress: progressByGame
+            gameProgress: progressByGame,
+            skillPath
           }))
           return profile
         }
@@ -178,7 +229,7 @@ export const useKidsStore = create<KidsState>()(
       },
 
       logout: () => {
-        set({ currentKid: null, isKidsLoggedIn: false })
+        set({ currentKid: null, isKidsLoggedIn: false, skillPath: null })
       },
 
       recordSession: async (session) => {
@@ -242,6 +293,83 @@ export const useKidsStore = create<KidsState>()(
         set(state => ({
           sessions: [...state.sessions, newSession]
         }))
+
+        const skillPath = get().skillPath
+        if (skillPath?.mode === 'skill_path_rotate') {
+          const currentGameId = skillPath.gameIds[skillPath.currentIndex]
+          if (currentGameId && currentGameId === session.gameType) {
+            const nextIndex = skillPath.gameIds.length > 0 ? (skillPath.currentIndex + 1) % skillPath.gameIds.length : 0
+            const updated: KidSkillPath = {
+              ...skillPath,
+              currentIndex: nextIndex,
+              updatedAt: Date.now()
+            }
+            set({ skillPath: updated })
+            await upsertKidSkillPathDB(currentKid.id, { currentIndex: nextIndex })
+          }
+        }
+      },
+
+      setSkillPathMode: async (mode) => {
+        const currentKid = get().currentKid
+        if (!currentKid) return
+
+        const existing = get().skillPath
+        const next: KidSkillPath = {
+          mode,
+          gameIds: existing?.gameIds?.length ? existing.gameIds : DEFAULT_SKILL_PATH_GAME_IDS,
+          currentIndex: existing?.currentIndex ?? 0,
+          updatedAt: Date.now()
+        }
+        set({ skillPath: next })
+        await upsertKidSkillPathDB(currentKid.id, {
+          mode: next.mode,
+          gameIds: next.gameIds,
+          currentIndex: next.currentIndex
+        })
+      },
+
+      setSkillPathGameIds: async (gameIds) => {
+        const currentKid = get().currentKid
+        if (!currentKid) return
+
+        const cleaned = Array.isArray(gameIds) ? gameIds.filter(Boolean) : []
+        const existing = get().skillPath
+        const nextIndex = 0
+        const next: KidSkillPath = {
+          mode: existing?.mode ?? 'free',
+          gameIds: cleaned.length ? cleaned : DEFAULT_SKILL_PATH_GAME_IDS,
+          currentIndex: nextIndex,
+          updatedAt: Date.now()
+        }
+        set({ skillPath: next })
+        await upsertKidSkillPathDB(currentKid.id, {
+          mode: next.mode,
+          gameIds: next.gameIds,
+          currentIndex: next.currentIndex
+        })
+      },
+
+      getSkillPathCurrentGameId: () => {
+        const skillPath = get().skillPath
+        if (!skillPath?.gameIds?.length) return null
+        return skillPath.gameIds[skillPath.currentIndex] ?? null
+      },
+
+      advanceSkillPath: async () => {
+        const currentKid = get().currentKid
+        const skillPath = get().skillPath
+        if (!currentKid || !skillPath?.gameIds?.length) return null
+
+        const nextIndex = (skillPath.currentIndex + 1) % skillPath.gameIds.length
+        const updated: KidSkillPath = {
+          ...skillPath,
+          currentIndex: nextIndex,
+          updatedAt: Date.now()
+        }
+        set({ skillPath: updated })
+        await upsertKidSkillPathDB(currentKid.id, { currentIndex: nextIndex })
+        return updated.gameIds[updated.currentIndex] ?? null
       },
 
       startGameSession: (gameType: string, level: number, extraData?: Record<string, any>) => {
@@ -428,6 +556,7 @@ export const useKidsStore = create<KidsState>()(
         sessions: state.sessions,
         achievements: state.achievements,
         gameProgress: state.gameProgress,
+        skillPath: state.skillPath,
         currentKid: state.currentKid,
         isKidsLoggedIn: state.isKidsLoggedIn,
         activeGame: state.activeGame

@@ -11,6 +11,7 @@ const SESSIONS_COLLECTION = 'kidsSessions'
 const ACHIEVEMENTS_COLLECTION = 'kidsAchievements'
 const GAME_PROGRESS_COLLECTION = 'kidsGameProgress'
 const GAME_BEST_SCORES_COLLECTION = 'kidsGameBestScores'
+const SKILL_PATH_COLLECTION = 'kidsSkillPath'
 
 export type KidGameProgressDB = {
   id: string
@@ -29,6 +30,15 @@ export type KidGameBestScoreDB = {
   bestScore: number
   kidName: string
   kidAvatar: string
+  updatedAt: number
+}
+
+export type KidSkillPathDB = {
+  id: string
+  kidId: string
+  mode: 'free' | 'skill_path_rotate'
+  gameIds: string[]
+  currentIndex: number
   updatedAt: number
 }
 
@@ -153,6 +163,60 @@ export async function recordSession(session: Omit<GameSessionDB, 'id'>): Promise
     return newSession
   } catch (error) {
     console.error('Error recording session:', error)
+    return null
+  }
+}
+
+export async function upsertKidSkillPath(
+  kidId: string,
+  updates: Partial<Pick<KidSkillPathDB, 'mode' | 'gameIds' | 'currentIndex'>>
+): Promise<KidSkillPathDB | null> {
+  try {
+    const docId = kidId
+    const docRef = doc(db, SKILL_PATH_COLLECTION, docId)
+
+    const payload: Partial<KidSkillPathDB> = {
+      id: docId,
+      kidId,
+      ...updates,
+      updatedAt: Date.now()
+    }
+
+    await setDoc(
+      docRef,
+      {
+        ...payload,
+        updatedAt: serverTimestamp()
+      },
+      { merge: true }
+    )
+
+    return payload as KidSkillPathDB
+  } catch (error) {
+    console.error('Error upserting kid skill path:', error)
+    return null
+  }
+}
+
+export async function getKidSkillPath(kidId: string): Promise<KidSkillPathDB | null> {
+  try {
+    const q = query(collection(db, SKILL_PATH_COLLECTION), where('kidId', '==', kidId), limit(1))
+    const snapshot = await getDocs(q)
+    if (snapshot.empty) return null
+
+    const d = snapshot.docs[0]
+    const data = d.data()
+
+    return {
+      id: d.id,
+      kidId: data.kidId,
+      mode: (data.mode === 'skill_path_rotate' ? 'skill_path_rotate' : 'free') as KidSkillPathDB['mode'],
+      gameIds: Array.isArray(data.gameIds) ? data.gameIds : [],
+      currentIndex: typeof data.currentIndex === 'number' ? data.currentIndex : 0,
+      updatedAt: data.updatedAt?.toMillis?.() || Date.now()
+    } as KidSkillPathDB
+  } catch (error) {
+    console.error('Error getting kid skill path:', error)
     return null
   }
 }
