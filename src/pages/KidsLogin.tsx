@@ -157,8 +157,14 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
     setError('')
     setSuccess('')
     if (debugKidsAuth) console.log('[KidsAuth] starting Google redirect sign-in')
-    await loginWithGoogle()
-    setSuccess('Opening Google sign-in...')
+    try {
+      await loginWithGoogle()
+      setSuccess('Opening Google sign-in...')
+    } catch (err: unknown) {
+      if (debugKidsAuth) console.log('[KidsAuth] loginWithGoogle threw', err)
+      const message = err instanceof Error ? err.message : String(err)
+      setError(`Google sign-in failed: ${message}`)
+    }
   }
 
   const handleRegister = async (e: React.FormEvent) => {

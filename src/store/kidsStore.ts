@@ -386,7 +386,7 @@ export const useKidsStore = create<KidsState>()(
         } catch (err: unknown) {
           const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
           if (debugKidsAuth) console.log('[KidsAuth] store.loginWithGoogle: signInWithRedirect error', err)
-          return null
+          throw err
         }
       },
 
