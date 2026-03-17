@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth'
+import { GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth'
 import { auth } from '../lib/firebase'
 import {
   createKidProfile,
@@ -127,6 +127,10 @@ export interface KidsState {
   
   login: (name: string, secretCode: string) => Promise<KidsProfile | null>
   register: (name: string, secretCode: string, grade: string, avatar: string, countryName?: string, countryFlag?: string) => Promise<KidsProfile | null>
+  loginWithEmail: (email: string, password: string) => Promise<KidsProfile | null>
+  registerWithEmail: (params: { name: string; email: string; password: string; grade: string; avatar: string; countryName?: string; countryFlag?: string }) => Promise<KidsProfile | null>
+  loginWithGoogle: () => Promise<KidsProfile | null>
+  completeKidProfileForCurrentUser: (params: { name: string; grade: string; avatar: string; countryName?: string; countryFlag?: string; secretCode?: string }) => Promise<KidsProfile | null>
   logout: () => void
   recordSession: (session: Omit<GameSession, 'id' | 'kidId' | 'playedAt'>) => Promise<void>
   unlockAchievement: (achievementCode: string, title: string, description: string, starsReward: number) => void
@@ -270,6 +274,192 @@ export const useKidsStore = create<KidsState>()(
           if (message.includes('email-already-in-use') || message.includes('KID_NAME_TAKEN')) throw new Error('KID_NAME_TAKEN')
           throw new Error('KID_REGISTRATION_FAILED')
         }
+      },
+
+      loginWithEmail: async (email: string, password: string) => {
+        const normalizedEmail = email.trim().toLowerCase()
+        const normalizedPassword = password
+
+        try {
+          const cred = await signInWithEmailAndPassword(auth, normalizedEmail, normalizedPassword)
+          const uid = cred.user.uid
+          const profile = await getKidProfileById(uid)
+          if (!profile) return null
+
+          const sessions = await getKidSessions(uid)
+          const achievements = await getKidAchievements(uid)
+          const progress = await getKidGameProgressDB(uid)
+          const skillPathDB = await getKidSkillPathDB(uid)
+
+          const progressByGame: Record<string, KidGameProgress> = {}
+          for (const p of progress) {
+            progressByGame[p.gameId] = {
+              gameId: p.gameId,
+              highestLevelUnlocked: p.highestLevelUnlocked ?? 1,
+              lastPlayedLevel: p.lastPlayedLevel ?? 1,
+              bestScore: p.bestScore ?? 0,
+              updatedAt: p.updatedAt ?? Date.now()
+            }
+          }
+
+          const skillPath: KidSkillPath = skillPathDB
+            ? {
+                mode: skillPathDB.mode,
+                gameIds: Array.isArray(skillPathDB.gameIds) && skillPathDB.gameIds.length > 0 ? skillPathDB.gameIds : DEFAULT_SKILL_PATH_GAME_IDS,
+                currentIndex: typeof skillPathDB.currentIndex === 'number' ? skillPathDB.currentIndex : 0,
+                updatedAt: skillPathDB.updatedAt ?? Date.now()
+              }
+            : {
+                mode: 'free',
+                gameIds: DEFAULT_SKILL_PATH_GAME_IDS,
+                currentIndex: 0,
+                updatedAt: Date.now()
+              }
+
+          if (!skillPathDB) {
+            await upsertKidSkillPathDB(profile.id, {
+              mode: skillPath.mode,
+              gameIds: skillPath.gameIds,
+              currentIndex: skillPath.currentIndex
+            })
+          }
+
+          set(state => ({
+            currentKid: profile,
+            isKidsLoggedIn: true,
+            sessions: [...state.sessions.filter((s: GameSession) => s.kidId !== profile.id), ...sessions],
+            achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements],
+            gameProgress: progressByGame,
+            skillPath
+          }))
+
+          return profile
+        } catch {
+          return null
+        }
+      },
+
+      registerWithEmail: async (params) => {
+        const normalizedEmail = params.email.trim().toLowerCase()
+        const password = params.password
+        if (password.length < 6) throw new Error('KID_PASSWORD_TOO_SHORT')
+
+        try {
+          const cred = await createUserWithEmailAndPassword(auth, normalizedEmail, password)
+          const uid = cred.user.uid
+
+          const newProfile = await createKidProfile(uid, {
+            name: params.name.trim(),
+            nameKey: params.name.trim().toLowerCase(),
+            secretCode: password,
+            grade: params.grade,
+            avatar: params.avatar,
+            countryName: params.countryName,
+            countryFlag: params.countryFlag,
+            createdAt: Date.now()
+          })
+
+          set(state => ({
+            profiles: [...state.profiles, newProfile],
+            currentKid: newProfile,
+            isKidsLoggedIn: true
+          }))
+
+          return newProfile
+        } catch (error: unknown) {
+          const message = error instanceof Error ? error.message : String(error)
+          if (message.includes('email-already-in-use') || message.includes('KID_NAME_TAKEN')) throw new Error('KID_NAME_TAKEN')
+          throw new Error('KID_REGISTRATION_FAILED')
+        }
+      },
+
+      loginWithGoogle: async () => {
+        try {
+          const provider = new GoogleAuthProvider()
+          const cred = await signInWithPopup(auth, provider)
+          const uid = cred.user.uid
+          const profile = await getKidProfileById(uid)
+          if (!profile) return null
+
+          const sessions = await getKidSessions(uid)
+          const achievements = await getKidAchievements(uid)
+          const progress = await getKidGameProgressDB(uid)
+          const skillPathDB = await getKidSkillPathDB(uid)
+
+          const progressByGame: Record<string, KidGameProgress> = {}
+          for (const p of progress) {
+            progressByGame[p.gameId] = {
+              gameId: p.gameId,
+              highestLevelUnlocked: p.highestLevelUnlocked ?? 1,
+              lastPlayedLevel: p.lastPlayedLevel ?? 1,
+              bestScore: p.bestScore ?? 0,
+              updatedAt: p.updatedAt ?? Date.now()
+            }
+          }
+
+          const skillPath: KidSkillPath = skillPathDB
+            ? {
+                mode: skillPathDB.mode,
+                gameIds: Array.isArray(skillPathDB.gameIds) && skillPathDB.gameIds.length > 0 ? skillPathDB.gameIds : DEFAULT_SKILL_PATH_GAME_IDS,
+                currentIndex: typeof skillPathDB.currentIndex === 'number' ? skillPathDB.currentIndex : 0,
+                updatedAt: skillPathDB.updatedAt ?? Date.now()
+              }
+            : {
+                mode: 'free',
+                gameIds: DEFAULT_SKILL_PATH_GAME_IDS,
+                currentIndex: 0,
+                updatedAt: Date.now()
+              }
+
+          if (!skillPathDB) {
+            await upsertKidSkillPathDB(profile.id, {
+              mode: skillPath.mode,
+              gameIds: skillPath.gameIds,
+              currentIndex: skillPath.currentIndex
+            })
+          }
+
+          set(state => ({
+            currentKid: profile,
+            isKidsLoggedIn: true,
+            sessions: [...state.sessions.filter((s: GameSession) => s.kidId !== profile.id), ...sessions],
+            achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements],
+            gameProgress: progressByGame,
+            skillPath
+          }))
+
+          return profile
+        } catch {
+          return null
+        }
+      },
+
+      completeKidProfileForCurrentUser: async (params) => {
+        const user = auth.currentUser
+        if (!user) return null
+        const uid = user.uid
+
+        const existing = await getKidProfileById(uid)
+        if (existing) return existing
+
+        const newProfile = await createKidProfile(uid, {
+          name: params.name.trim(),
+          nameKey: params.name.trim().toLowerCase(),
+          secretCode: (params.secretCode ?? '').trim(),
+          grade: params.grade,
+          avatar: params.avatar,
+          countryName: params.countryName,
+          countryFlag: params.countryFlag,
+          createdAt: Date.now()
+        })
+
+        set(state => ({
+          profiles: [...state.profiles, newProfile],
+          currentKid: newProfile,
+          isKidsLoggedIn: true
+        }))
+
+        return newProfile
       },
 
       logout: () => {

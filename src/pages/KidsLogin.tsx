@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useKidsStore } from '../store/kidsStore'
-import { UserPlus, LogIn, Sparkles } from 'lucide-react'
+import { UserPlus, LogIn, Sparkles, Chrome } from 'lucide-react'
 
 const AVATARS = ['🦁', '🐯', '🐻', '🐨', '🐼', '🐸', '🦄', '🐙', '🦊', '🐰']
 const GRADES = ['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7', 'Grade 8']
@@ -57,8 +57,11 @@ interface KidsLoginProps {
 
 export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
   const [isRegistering, setIsRegistering] = useState(false)
+  const [authMode, setAuthMode] = useState<'kid_pin' | 'email' | 'google_profile'>('kid_pin')
   const [name, setName] = useState('')
   const [secretCode, setSecretCode] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [grade, setGrade] = useState('Grade 1')
   const [avatar, setAvatar] = useState(AVATARS[0])
   const [countryOptions] = useState<CountryOption[]>(() => buildCountryOptions())
@@ -68,13 +71,24 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
 
   const [success, setSuccess] = useState('')
 
-  const { login, register } = useKidsStore()
+  const { login, register, loginWithEmail, registerWithEmail, loginWithGoogle, completeKidProfileForCurrentUser } = useKidsStore()
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
     setSuccess('')
-    
+
+    if (authMode === 'email') {
+      const profile = await loginWithEmail(email, password)
+      if (profile) {
+        setSuccess(`Welcome back, ${profile.name}! 🎉`)
+        setTimeout(() => onLogin(), 500)
+      } else {
+        setError('Login failed. Check your email/password or complete your profile.')
+      }
+      return
+    }
+
     const profile = await login(name, secretCode)
     if (profile) {
       setSuccess(`Welcome back, ${profile.name}! 🎉`)
@@ -82,6 +96,20 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
     } else {
       setError('Wrong name or secret code! Try again.')
     }
+  }
+
+  const handleGoogleLogin = async () => {
+    setError('')
+    setSuccess('')
+    const profile = await loginWithGoogle()
+    if (profile) {
+      setSuccess(`Welcome back, ${profile.name}! 🎉`)
+      setTimeout(() => onLogin(), 500)
+      return
+    }
+    setAuthMode('google_profile')
+    setIsRegistering(true)
+    setSuccess('Signed in with Google. Please complete your profile.')
   }
 
   const handleRegister = async (e: React.FormEvent) => {
@@ -94,6 +122,54 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
       return
     }
     
+
+    if (authMode === 'email') {
+      try {
+        const profile = await registerWithEmail({
+          name,
+          email,
+          password,
+          grade,
+          avatar,
+          countryName,
+          countryFlag
+        })
+        if (profile) {
+          setSuccess(`Account created! Welcome, ${profile.name}! 🎉`)
+          setTimeout(() => onLogin(), 500)
+        }
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err)
+        if (msg.includes('KID_NAME_TAKEN')) {
+          setError('This account already exists. Try logging in instead.')
+        } else if (msg.includes('KID_PASSWORD_TOO_SHORT')) {
+          setError('Password must be at least 6 characters.')
+        } else {
+          setError('Signup failed. Please try again.')
+        }
+      }
+      return
+    }
+
+    if (authMode === 'google_profile') {
+      try {
+        const profile = await completeKidProfileForCurrentUser({
+          name,
+          grade,
+          avatar,
+          countryName,
+          countryFlag
+        })
+        if (profile) {
+          setSuccess(`Profile saved! Welcome, ${profile.name}! 🎉`)
+          setTimeout(() => onLogin(), 500)
+        }
+      } catch {
+        setError('Could not save profile. Please try again.')
+      }
+      return
+    }
+
     if (!/^\d{4}$/.test(secretCode)) {
       setError('Secret code must be exactly 4 numbers!')
       return
@@ -156,6 +232,40 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
           )}
 
           <form onSubmit={isRegistering ? handleRegister : handleLogin} className="space-y-4">
+            {/* Auth Options */}
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setAuthMode('kid_pin')
+                  setError('')
+                  setSuccess('')
+                }}
+                className={`px-3 py-2 rounded-xl text-sm border transition-colors ${authMode === 'kid_pin' ? 'bg-purple-500/30 border-purple-500 text-white' : 'bg-slate-700 border-slate-600 text-slate-200 hover:bg-slate-600'}`}
+              >
+                Name + Code
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setAuthMode('email')
+                  setError('')
+                  setSuccess('')
+                }}
+                className={`px-3 py-2 rounded-xl text-sm border transition-colors ${authMode === 'email' ? 'bg-purple-500/30 border-purple-500 text-white' : 'bg-slate-700 border-slate-600 text-slate-200 hover:bg-slate-600'}`}
+              >
+                Email Login
+              </button>
+            </div>
+
+            <button
+              type="button"
+              onClick={handleGoogleLogin}
+              className="w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-2xl font-bold text-white flex items-center justify-center gap-2 border border-slate-600 transition-colors"
+            >
+              <Chrome className="w-5 h-5" /> Continue with Google
+            </button>
+
             {/* Name Input */}
             <div>
               <label className="block text-sm font-medium text-slate-300 mb-2">
@@ -171,21 +281,51 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
               />
             </div>
 
-            {/* Secret Code */}
-            <div>
-              <label className="block text-sm font-medium text-slate-300 mb-2">
-                Secret Code (4 numbers)
-              </label>
-              <input
-                type="password"
-                inputMode="numeric"
-                value={secretCode}
-                onChange={(e) => setSecretCode(e.target.value.replace(/\D/g, '').slice(0, 4))}
-                placeholder="****"
-                className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 text-center text-2xl tracking-widest"
-                maxLength={4}
-              />
-            </div>
+            {authMode === 'email' && (
+              <>
+                <div>
+                  <label className="block text-sm font-medium text-slate-300 mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="you@example.com"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-slate-300 mb-2">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="••••••"
+                    className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20"
+                  />
+                </div>
+              </>
+            )}
+
+            {authMode === 'kid_pin' && (
+              <div>
+                <label className="block text-sm font-medium text-slate-300 mb-2">
+                  Secret Code (4 numbers)
+                </label>
+                <input
+                  type="password"
+                  inputMode="numeric"
+                  value={secretCode}
+                  onChange={(e) => setSecretCode(e.target.value.replace(/\D/g, '').slice(0, 4))}
+                  placeholder="****"
+                  className="w-full px-4 py-3 bg-slate-700 border border-slate-600 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 text-center text-2xl tracking-widest"
+                  maxLength={4}
+                />
+              </div>
+            )}
 
             {/* Registration Fields */}
             {isRegistering && (
