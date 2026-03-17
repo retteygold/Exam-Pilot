@@ -22,12 +22,12 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
 
   const { login, register } = useKidsStore()
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
     setSuccess('')
     
-    const profile = login(name, secretCode)
+    const profile = await login(name, secretCode)
     if (profile) {
       setSuccess(`Welcome back, ${profile.name}! 🎉`)
       setTimeout(() => onLogin(), 500)
@@ -36,7 +36,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
     }
   }
 
-  const handleRegister = (e: React.FormEvent) => {
+  const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
     setSuccess('')
@@ -51,7 +51,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
       return
     }
     
-    const profile = register(name, secretCode, grade, avatar)
+    const profile = await register(name, secretCode, grade, avatar)
     if (profile) {
       setSuccess(`Account created! Welcome, ${profile.name}! 🎉`)
       setTimeout(() => onLogin(), 500)

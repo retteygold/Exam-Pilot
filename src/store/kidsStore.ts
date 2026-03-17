@@ -1,9 +1,20 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import {
+  createKidProfile,
+  validateKidLogin,
+  recordSession as recordSessionDB,
+  recordAchievement as recordAchievementDB,
+  getKidSessions,
+  getKidAchievements,
+  deleteKidProfile,
+  updateKidProfile
+} from '../services/kidsFirestore'
 
 export interface KidsProfile {
   id: string
   name: string
+  nameKey: string
   secretCode: string
   grade: string
   avatar: string
@@ -49,8 +60,8 @@ export interface KidsState {
   achievements: Achievement[]
   activeGame: ActiveGameProgress | null  // Track ongoing game
   
-  login: (name: string, secretCode: string) => KidsProfile | null
-  register: (name: string, secretCode: string, grade: string, avatar: string) => KidsProfile | null
+  login: (name: string, secretCode: string) => Promise<KidsProfile | null>
+  register: (name: string, secretCode: string, grade: string, avatar: string) => Promise<KidsProfile | null>
   logout: () => void
   recordSession: (session: Omit<GameSession, 'id' | 'kidId' | 'playedAt'>) => void
   unlockAchievement: (achievementCode: string, title: string, description: string, starsReward: number) => void
@@ -81,42 +92,46 @@ export const useKidsStore = create<KidsState>()(
       achievements: [],
       activeGame: null,
 
-      login: (name: string, secretCode: string) => {
-        const normalizedName = name.trim().toLowerCase()
-        const normalizedCode = secretCode.trim()
-        const profile = get().profiles.find(
-          p => p.name.trim().toLowerCase() === normalizedName && p.secretCode.trim() === normalizedCode
-        )
+      login: async (name: string, secretCode: string) => {
+        const profile = await validateKidLogin(name, secretCode)
         if (profile) {
-          set({ currentKid: profile, isKidsLoggedIn: true })
+          // Load this kid's sessions and achievements from Firestore
+          const sessions = await getKidSessions(profile.id)
+          const achievements = await getKidAchievements(profile.id)
+          
+          set(state => ({
+            currentKid: profile,
+            isKidsLoggedIn: true,
+            sessions: [...state.sessions.filter((s: GameSession) => s.kidId !== profile.id), ...sessions],
+            achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements]
+          }))
           return profile
         }
         return null
       },
 
-      register: (name: string, secretCode: string, grade: string, avatar: string) => {
+      register: async (name: string, secretCode: string, grade: string, avatar: string) => {
         const normalizedName = name.trim()
-        const normalizedNameKey = normalizedName.toLowerCase()
         const normalizedCode = secretCode.trim()
 
-        const existing = get().profiles.find(p => p.name.trim().toLowerCase() === normalizedNameKey)
-        if (existing) return null
         if (!/^\d{4}$/.test(normalizedCode)) return null
         
-        const newProfile: KidsProfile = {
-          id: generateId(),
+        const newProfile = await createKidProfile({
           name: normalizedName,
+          nameKey: normalizedName.toLowerCase(),
           secretCode: normalizedCode,
           grade,
           avatar,
           createdAt: Date.now()
-        }
+        })
         
-        set(state => ({
-          profiles: [...state.profiles, newProfile],
-          currentKid: newProfile,
-          isKidsLoggedIn: true
-        }))
+        if (newProfile) {
+          set(state => ({
+            profiles: [...state.profiles, newProfile],
+            currentKid: newProfile,
+            isKidsLoggedIn: true
+          }))
+        }
         
         return newProfile
       },
@@ -125,7 +140,7 @@ export const useKidsStore = create<KidsState>()(
         set({ currentKid: null, isKidsLoggedIn: false })
       },
 
-      recordSession: (session) => {
+      recordSession: async (session) => {
         const currentKid = get().currentKid
         if (!currentKid) return
         
@@ -135,6 +150,18 @@ export const useKidsStore = create<KidsState>()(
           kidId: currentKid.id,
           playedAt: Date.now()
         }
+        
+        // Save to Firestore
+        await recordSessionDB({
+          kidId: currentKid.id,
+          gameType: session.gameType,
+          score: session.score,
+          starsEarned: session.starsEarned,
+          correctAnswers: session.correctAnswers,
+          totalQuestions: session.totalQuestions,
+          durationSeconds: session.durationSeconds,
+          playedAt: Date.now()
+        })
         
         set(state => ({
           sessions: [...state.sessions, newSession]
@@ -178,7 +205,7 @@ export const useKidsStore = create<KidsState>()(
         return get().activeGame
       },
 
-      unlockAchievement: (code, title, description, starsReward) => {
+      unlockAchievement: async (code, title, description, starsReward) => {
         const currentKid = get().currentKid
         if (!currentKid) return
         
@@ -196,6 +223,16 @@ export const useKidsStore = create<KidsState>()(
           starsReward,
           unlockedAt: Date.now()
         }
+        
+        // Save to Firestore
+        await recordAchievementDB({
+          kidId: currentKid.id,
+          code,
+          title,
+          description,
+          starsReward,
+          unlockedAt: Date.now()
+        })
         
         set(state => ({
           achievements: [...state.achievements, newAchievement]
@@ -255,7 +292,8 @@ export const useKidsStore = create<KidsState>()(
       },
 
       // Admin functions
-      deleteKid: (kidId: string) => {
+      deleteKid: async (kidId: string) => {
+        await deleteKidProfile(kidId)
         set(state => ({
           profiles: state.profiles.filter(p => p.id !== kidId),
           sessions: state.sessions.filter(s => s.kidId !== kidId),
@@ -270,7 +308,8 @@ export const useKidsStore = create<KidsState>()(
         }))
       },
 
-      updateKid: (kidId: string, updates: Partial<KidsProfile>) => {
+      updateKid: async (kidId: string, updates: Partial<KidsProfile>) => {
+        await updateKidProfile(kidId, updates)
         set(state => ({
           profiles: state.profiles.map(p => 
             p.id === kidId ? { ...p, ...updates } : p
