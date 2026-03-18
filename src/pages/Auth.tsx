@@ -9,6 +9,7 @@ import {
   sendPasswordResetEmail,
   setPersistence,
   signInWithEmailAndPassword,
+  signInWithPopup,
   signInWithRedirect
 } from 'firebase/auth'
 import { auth } from '../lib/firebase'
@@ -104,11 +105,28 @@ export function Auth({ onSuccess }: AuthProps) {
     try {
       await setPersistence(auth, browserLocalPersistence)
       const provider = new GoogleAuthProvider()
+      provider.setCustomParameters({ prompt: 'select_account' })
       await signInWithRedirect(auth, provider)
       setSuccess('Opening Google sign-in...')
     } catch (err: unknown) {
       if (debugKidsAuth) console.log('[Auth] google error', err)
-      setError(mapErr(err))
+      const mapped = mapErr(err)
+      setError(mapped)
+
+      // Fallback: if redirect is blocked/unsupported, try popup so user can still sign in.
+      // (Popup may still be blocked by browser settings, but this helps on many devices.)
+      try {
+        const provider = new GoogleAuthProvider()
+        provider.setCustomParameters({ prompt: 'select_account' })
+        await signInWithPopup(auth, provider)
+        if (!didCallSuccessRef.current) {
+          didCallSuccessRef.current = true
+          onSuccess?.()
+        }
+      } catch (popupErr: unknown) {
+        if (debugKidsAuth) console.log('[Auth] google popup fallback error', popupErr)
+        // Keep the original error shown; popup errors are usually secondary.
+      }
     }
   }
 
