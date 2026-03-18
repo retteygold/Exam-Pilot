@@ -472,6 +472,19 @@ export function KidsDashboard() {
 
   const stats = currentKid ? getKidStats(currentKid.id) : { totalStars: 0, totalSessions: 0, bestStreak: 0 }
 
+  const kidXp = useMemo(() => {
+    if (!currentKid) return 0
+    const all = useKidsStore.getState().sessions
+    return all
+      .filter(s => s.kidId === currentKid.id)
+      .reduce((sum, s) => sum + (s.score || 0), 0)
+  }, [currentKid, useKidsStore.getState().sessions.length])
+
+  const xpPerLevel = 500
+  const xpLevel = Math.max(1, Math.floor(kidXp / xpPerLevel) + 1)
+  const xpInLevel = kidXp % xpPerLevel
+  const xpProgressPct = Math.min(100, Math.round((xpInLevel / xpPerLevel) * 100))
+
   if (!kidsAuthReady) {
     if (debugKidsAuth) {
       console.log('[KidsAuth] KidsDashboard: waiting for kidsAuthReady', {
@@ -771,23 +784,26 @@ export function KidsDashboard() {
             </h2>
             <div className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700">
               <div className="flex items-center justify-between mb-4">
-                <span className="text-sm text-slate-300">Level 3: Math Explorer</span>
-                <span className="text-xs text-purple-400 font-bold">450/500 XP</span>
+                <span className="text-sm text-slate-300">Level {xpLevel}</span>
+                <span className="text-xs text-purple-400 font-bold">{xpInLevel}/{xpPerLevel} XP</span>
               </div>
               <div className="h-3 bg-slate-700 rounded-full overflow-hidden mb-4">
-                <div className="h-full w-11/12 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full" />
+                <div
+                  className="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full"
+                  style={{ width: `${xpProgressPct}%` }}
+                />
               </div>
               <div className="grid grid-cols-5 gap-2">
                 {[1, 2, 3, 4, 5].map((level) => (
                   <div
                     key={level}
                     className={`aspect-square rounded-xl flex items-center justify-center ${
-                      level <= 3
+                      level <= Math.min(5, xpLevel)
                         ? 'bg-gradient-to-br from-purple-500 to-pink-500'
                         : 'bg-slate-700/50 border border-slate-600'
                     }`}
                   >
-                    {level <= 3 ? (
+                    {level <= Math.min(5, xpLevel) ? (
                       <Star className="w-4 h-4 text-white fill-white" />
                     ) : (
                       <span className="text-xs text-slate-500">{level}</span>

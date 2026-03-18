@@ -156,7 +156,7 @@ export function ReadingComprehension({ onComplete: _onComplete, onExit }: Readin
   if (!currentPassage || !currentQuestion) return null
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-900 via-orange-900 to-slate-900 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-amber-900 via-orange-900 to-slate-900 p-4 pb-20 overflow-y-auto">
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <button onClick={onExit} className="p-2 bg-slate-800/50 rounded-full"><ArrowLeft className="w-6 h-6 text-white" /></button>
@@ -180,7 +180,9 @@ export function ReadingComprehension({ onComplete: _onComplete, onExit }: Readin
             <BookOpen className="w-6 h-6 text-amber-400" />
             <h2 className="text-xl font-bold text-white">{currentPassage.title}</h2>
           </div>
-          <p className="text-slate-200 text-sm leading-relaxed">{currentPassage.passage}</p>
+          <div className="max-h-[38vh] overflow-y-auto pr-1 md:max-h-none md:overflow-visible md:pr-0">
+            <p className="text-slate-200 text-sm leading-relaxed">{currentPassage.passage}</p>
+          </div>
         </div>
 
         {/* Question */}

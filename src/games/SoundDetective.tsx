@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Star, ArrowLeft, Volume2, Play, Ear, Check } from 'lucide-react'
 
 interface SoundDetectiveProps {
@@ -47,6 +47,110 @@ export function SoundDetective({ onComplete: _onComplete, onExit }: SoundDetecti
   const [selected, setSelected] = useState<number | null>(null)
   const [showCorrect, setShowCorrect] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
+  const audioCtxRef = useRef<AudioContext | null>(null)
+
+  const getAudioCtx = async () => {
+    if (!audioCtxRef.current) {
+      audioCtxRef.current = new (window.AudioContext || (window as any).webkitAudioContext)()
+    }
+    if (audioCtxRef.current.state === 'suspended') {
+      await audioCtxRef.current.resume()
+    }
+    return audioCtxRef.current
+  }
+
+  const playTone = (ctx: AudioContext, freq: number, duration: number, type: OscillatorType, gain = 0.2) => {
+    const osc = ctx.createOscillator()
+    const g = ctx.createGain()
+    osc.type = type
+    osc.frequency.setValueAtTime(freq, ctx.currentTime)
+    g.gain.setValueAtTime(gain, ctx.currentTime)
+    g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + duration)
+    osc.connect(g)
+    g.connect(ctx.destination)
+    osc.start()
+    osc.stop(ctx.currentTime + duration)
+  }
+
+  const playNoise = (ctx: AudioContext, duration: number, color: 'white' | 'pink' = 'white', gain = 0.12) => {
+    const bufferSize = Math.max(1, Math.floor(ctx.sampleRate * duration))
+    const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate)
+    const data = buffer.getChannelData(0)
+
+    let b0 = 0
+    let b1 = 0
+    let b2 = 0
+    for (let i = 0; i < bufferSize; i++) {
+      const white = Math.random() * 2 - 1
+      if (color === 'pink') {
+        b0 = 0.99765 * b0 + white * 0.0990460
+        b1 = 0.96300 * b1 + white * 0.2965164
+        b2 = 0.57000 * b2 + white * 1.0526913
+        data[i] = (b0 + b1 + b2 + white * 0.1848) * 0.2
+      } else {
+        data[i] = white
+      }
+    }
+
+    const source = ctx.createBufferSource()
+    source.buffer = buffer
+
+    const g = ctx.createGain()
+    g.gain.setValueAtTime(gain, ctx.currentTime)
+    g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + duration)
+
+    source.connect(g)
+    g.connect(ctx.destination)
+    source.start()
+    source.stop(ctx.currentTime + duration)
+  }
+
+  const playSoundByQuestion = async (q: SoundQuestion) => {
+    const ctx = await getAudioCtx()
+
+    // Keep these short so it feels like “real sound” but doesn't annoy.
+    switch (q.type) {
+      case 'animal': {
+        // Simple “voice” style: quick pitch pattern
+        // Different animals get slightly different pitch.
+        const base = q.emoji === '🐱' ? 900 : q.emoji === '🐮' ? 220 : q.emoji === '🐘' ? 140 : 600
+        playTone(ctx, base, 0.12, 'square', 0.12)
+        setTimeout(() => playTone(ctx, base * 0.85, 0.12, 'square', 0.12), 130)
+        setTimeout(() => playTone(ctx, base * 1.1, 0.1, 'square', 0.1), 260)
+        break
+      }
+      case 'nature': {
+        if (q.emoji === '🌧️') {
+          // Rain: soft pink noise
+          playNoise(ctx, 0.9, 'pink', 0.10)
+        } else if (q.emoji === '⛈️') {
+          // Thunder: low rumble + crack
+          playTone(ctx, 55, 0.7, 'sawtooth', 0.15)
+          setTimeout(() => playNoise(ctx, 0.15, 'white', 0.12), 120)
+        } else if (q.emoji === '🌊') {
+          // Waves: slow oscillation + noise
+          playNoise(ctx, 0.8, 'pink', 0.09)
+          setTimeout(() => playTone(ctx, 180, 0.25, 'sine', 0.08), 80)
+        } else {
+          playNoise(ctx, 0.8, 'pink', 0.10)
+        }
+        break
+      }
+      case 'vehicle': {
+        // Engine: buzzing sawtooth + short honk
+        playTone(ctx, 110, 0.6, 'sawtooth', 0.10)
+        setTimeout(() => playTone(ctx, 330, 0.12, 'square', 0.08), 220)
+        break
+      }
+      case 'musical': {
+        // Instrument: clean notes
+        playTone(ctx, 440, 0.18, 'sine', 0.14)
+        setTimeout(() => playTone(ctx, 554, 0.18, 'sine', 0.14), 180)
+        setTimeout(() => playTone(ctx, 659, 0.22, 'sine', 0.14), 360)
+        break
+      }
+    }
+  }
 
   useEffect(() => {
     const shuffledS = [...sounds].sort(() => Math.random() - 0.5).slice(0, 10)
@@ -60,20 +164,16 @@ export function SoundDetective({ onComplete: _onComplete, onExit }: SoundDetecti
     }
   }, [level, shuffled])
 
-  const playSound = () => {
+  const playSound = async () => {
     if (!currentSound || isPlaying) return
-    
-    // Use Web Speech API to describe the sound
     setIsPlaying(true)
-    const utterance = new SpeechSynthesisUtterance(`Listen carefully. ${currentSound.description}. What makes this sound?`)
-    utterance.rate = 0.8
-    utterance.pitch = 1
-    
-    utterance.onend = () => {
+    try {
+      await playSoundByQuestion(currentSound)
+      // Approx duration; keep in sync with synth functions
+      setTimeout(() => setIsPlaying(false), 950)
+    } catch {
       setIsPlaying(false)
     }
-    
-    speechSynthesis.speak(utterance)
   }
 
   const handleAnswer = (idx: number) => {
