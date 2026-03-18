@@ -28,6 +28,7 @@ export function Auth({ onSuccess }: AuthProps) {
     const userId = `email_${email.trim().toLowerCase().replace(/[^a-z0-9]/g, '_')}`
     setUserId(userId)
     setProfile({
+      name: email.split('@')[0], // Store name from email
       gender: '',
       age: '',
       grade: 'Grade 1',
@@ -50,6 +51,7 @@ export function Auth({ onSuccess }: AuthProps) {
     const userId = `guest_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
     setUserId(userId)
     setProfile({
+      name: name.trim(), // Store guest name
       gender: '',
       age: '',
       grade: 'Grade 1',

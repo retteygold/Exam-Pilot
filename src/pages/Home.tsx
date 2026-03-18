@@ -2,13 +2,12 @@ import { useNavigate } from 'react-router-dom'
 import { BookOpen, Target, Award, ArrowRight, GraduationCap, RefreshCw, LogOut } from 'lucide-react'
 import { useExamStore } from '../store/examStore'
 import { useUserStore } from '../store/userStore'
-import { auth } from '../lib/firebase'
-import { signOut } from 'firebase/auth'
 
 export function Home() {
   const navigate = useNavigate()
   const { getScore } = useExamStore()
   const profile = useUserStore((s) => s.profile)
+  const clearProfile = useUserStore((s) => s.clearProfile)
 
   const stats = getScore()
 
@@ -48,6 +47,14 @@ export function Home() {
           </div>
         </div>
         <div className="flex items-center gap-2">
+          {profile?.name && (
+            <div className="flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full">
+              <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-xs text-white font-bold">
+                {profile.name[0].toUpperCase()}
+              </div>
+              <span className="text-sm text-blue-300 hidden sm:inline">{profile.name}</span>
+            </div>
+          )}
           <button
             onClick={() => window.location.reload()}
             className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
@@ -56,8 +63,8 @@ export function Home() {
             <RefreshCw className="w-5 h-5" />
           </button>
           <button
-            onClick={async () => {
-              await signOut(auth)
+            onClick={() => {
+              clearProfile()
               navigate('/')
             }}
             className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
