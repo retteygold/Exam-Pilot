@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Star, Zap, Medal, Crown, LogIn } from 'lucide-react'
 import { useUserStore } from '../store/userStore'
 import { Auth } from './Auth'
+import { auth } from '../lib/firebase'
+import { onAuthStateChanged } from 'firebase/auth'
 
 const quotes = [
   'Every expert was once a beginner. Start your journey today!',
@@ -59,10 +61,19 @@ export function ProfileSetup() {
   const navigate = useNavigate()
   const setProfile = useUserStore((state) => state.setProfile)
   const [showAuth, setShowAuth] = useState(false)
+  const [isAuthed, setIsAuthed] = useState<boolean>(!!auth.currentUser)
   const [step, setStep] = useState(1)
   const [profile, setProfileState] = useState({
     gender: '', age: '', grade: '', skillLevel: '' as any, exam: ''
   })
+
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (user) => {
+      setIsAuthed(!!user)
+      setShowAuth(!user)
+    })
+    return () => unsub()
+  }, [])
 
   const updateField = (field: string, value: string) => {
     setProfileState(prev => ({ ...prev, [field]: value }))
@@ -90,10 +101,10 @@ export function ProfileSetup() {
 
   const handleLoginSuccess = () => {
     setShowAuth(false)
-    navigate('/setup')
+    setIsAuthed(true)
   }
 
-  if (showAuth) {
+  if (showAuth || !isAuthed) {
     return <Auth onSuccess={handleLoginSuccess} />
   }
 
@@ -107,13 +118,15 @@ export function ProfileSetup() {
             </div>
             <span className='font-semibold'>Exam Pilot</span>
           </div>
-          <button 
-            onClick={() => setShowAuth(true)}
-            className='flex items-center gap-2 px-3 py-1.5 bg-emerald-500/20 border border-emerald-500/30 rounded-full hover:bg-emerald-500/30 transition-colors'
-          >
-            <LogIn className='w-4 h-4 text-emerald-400' />
-            <span className='text-sm text-emerald-400'>Login</span>
-          </button>
+          {!isAuthed && (
+            <button 
+              onClick={() => setShowAuth(true)}
+              className='flex items-center gap-2 px-3 py-1.5 bg-emerald-500/20 border border-emerald-500/30 rounded-full hover:bg-emerald-500/30 transition-colors'
+            >
+              <LogIn className='w-4 h-4 text-emerald-400' />
+              <span className='text-sm text-emerald-400'>Login</span>
+            </button>
+          )}
         </div>
         <div className='flex items-center gap-2'>
           {[1,2,3,4,5].map(s => (
