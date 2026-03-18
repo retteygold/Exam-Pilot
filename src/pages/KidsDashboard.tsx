@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { auth } from '../lib/firebase'
-import { Star, Trophy, Zap, Target, Gamepad2, Puzzle, Brain, Sparkles, ArrowRight, Medal, Crown, LogOut, Search, Grid3X3, Eye, HelpCircle } from 'lucide-react'
+import { Star, Trophy, Zap, Target, Gamepad2, Puzzle, Brain, Sparkles, ArrowRight, Medal, Crown, LogOut, Search, Grid3X3, Eye, HelpCircle, Users } from 'lucide-react'
 import { useKidsStore } from '../store/kidsStore'
 import { useUserStore } from '../store/userStore'
 import type { Question, QuestionsData } from '../types'
@@ -571,6 +571,42 @@ export function KidsDashboard() {
           </div>
         </div>
       </button>
+
+      {/* Online Challenge Buttons */}
+      <div className="grid grid-cols-2 gap-3 mb-6">
+        <button
+          type="button"
+          onClick={() => navigate('/challenge?mode=friends')}
+          className="p-4 rounded-2xl bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 hover:border-yellow-400/60 transition-colors text-left"
+        >
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-10 h-10 bg-yellow-500/30 rounded-xl flex items-center justify-center">
+              <Users className="w-5 h-5 text-yellow-400" />
+            </div>
+            <div className="text-right flex-1">
+              <span className="text-xs text-yellow-300">Challenge</span>
+            </div>
+          </div>
+          <h3 className="font-bold text-white text-sm">Friend Battle</h3>
+          <p className="text-xs text-white/60 mt-1">Invite & compete</p>
+        </button>
+        <button
+          type="button"
+          onClick={() => navigate('/challenge?mode=random')}
+          className="p-4 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 hover:border-purple-400/60 transition-colors text-left"
+        >
+          <div className="flex items-center gap-3 mb-2">
+            <div className="w-10 h-10 bg-purple-500/30 rounded-xl flex items-center justify-center">
+              <Zap className="w-5 h-5 text-purple-400" />
+            </div>
+            <div className="text-right flex-1">
+              <span className="text-xs text-purple-300">Quick</span>
+            </div>
+          </div>
+          <h3 className="font-bold text-white text-sm">Random Match</h3>
+          <p className="text-xs text-white/60 mt-1">Play vs stranger</p>
+        </button>
+      </div>
 
       <div className="flex items-center justify-between mb-6 gap-3">
         <div className="text-white font-bold">Mode</div>

@@ -201,6 +201,42 @@ service cloud.firestore {
     match /kidsOverallScores/{kidId} {
       allow create, update, delete: if signedIn() && request.auth.uid == kidId;
     }
+
+    // Online Challenge - Challenge Rooms
+    match /challengeRooms/{roomId} {
+      // Players can read rooms they're in
+      allow read: if signedIn() && 
+        (request.auth.uid in resource.data.players || 
+         resource.data.inviteCode != null);
+      
+      // Anyone can create a room
+      allow create: if signedIn();
+      
+      // Players in the room can update
+      allow update: if signedIn() && 
+        (request.auth.uid in resource.data.players ||
+         request.auth.uid in request.resource.data.players);
+      
+      // Host or any player can delete (cancel) before game starts
+      allow delete: if signedIn() && 
+        (resource.data.status == 'waiting' || resource.data.status == 'abandoned');
+    }
+
+    // Online Challenge - Matchmaking Queue
+    match /matchmakingQueue/{playerId} {
+      // Only the player can read/write their own queue entry
+      allow read, write: if signedIn() && request.auth.uid == playerId;
+    }
+
+    // Online Challenge - Results History
+    match /challengeResults/{resultId} {
+      // Players can read their own match results
+      allow read: if signedIn() && (
+        request.auth.uid == resource.data.playerA.id ||
+        request.auth.uid == resource.data.playerB.id
+      );
+      allow create: if signedIn();
+    }
   }
 }
 ```
