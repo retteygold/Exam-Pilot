@@ -11,10 +11,12 @@ export function Exam() {
     currentIndex,
     answers,
     isComplete,
+    selectedPaper,
     answerQuestion,
     nextQuestion,
     prevQuestion,
     finishExam,
+    markPaperCompleted,
   } = useExamStore()
 
   const [selected, setSelected] = useState<number | null>(null)
@@ -69,6 +71,9 @@ export function Exam() {
   }
 
   const handleFinish = () => {
+    if (selectedPaper) {
+      markPaperCompleted(selectedPaper)
+    }
     finishExam()
     navigate('/results')
   }

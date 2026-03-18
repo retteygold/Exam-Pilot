@@ -12,6 +12,9 @@ interface ExamState {
   startTime: number | null
   isComplete: boolean
   
+  // Completed papers tracking
+  completedPapers: string[]  // Array of paper IDs that have been completed
+  
   // Actions
   startExam: (questions: Question[], mode: 'practice' | 'exam', paper: string) => void
   answerQuestion: (questionId: string, selected: number, correct: boolean) => void
@@ -19,10 +22,12 @@ interface ExamState {
   prevQuestion: () => void
   finishExam: () => void
   resetExam: () => void
+  markPaperCompleted: (paperId: string) => void
   
   // Stats
   getScore: () => { correct: number; total: number; percentage: number }
   getTimeSpent: () => number
+  getCompletedCount: () => number
 }
 
 export const useExamStore = create<ExamState>()(
@@ -35,6 +40,7 @@ export const useExamStore = create<ExamState>()(
       answers: {},
       startTime: null,
       isComplete: false,
+      completedPapers: [],
 
       startExam: (questions, mode, paper) => set({
         examMode: mode,
@@ -77,6 +83,12 @@ export const useExamStore = create<ExamState>()(
         isComplete: false
       }),
 
+      markPaperCompleted: (paperId) => set((state) => ({
+        completedPapers: state.completedPapers.includes(paperId)
+          ? state.completedPapers
+          : [...state.completedPapers, paperId]
+      })),
+
       getScore: () => {
         const state = get()
         const answers = Object.values(state.answers)
@@ -93,6 +105,10 @@ export const useExamStore = create<ExamState>()(
         const state = get()
         if (!state.startTime) return 0
         return Math.floor((Date.now() - state.startTime) / 1000)
+      },
+
+      getCompletedCount: () => {
+        return get().completedPapers.length
       }
     }),
     {

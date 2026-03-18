@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { BookOpen, Clock, Target, Award, FileText, Calendar, User, Beaker, Calculator } from 'lucide-react'
+import { BookOpen, Clock, Target, Award, FileText, Calendar, User, Beaker, Calculator, CheckCircle } from 'lucide-react'
 import { useExamStore } from '../store/examStore'
 import { useUserStore } from '../store/userStore'
 import type { Question } from '../types'
@@ -39,7 +39,8 @@ function normalizeSubjectKey(subject: string | undefined | null): string {
 
 export function PaperSelect() {
   const navigate = useNavigate()
-  const startExam = useExamStore((state: { startExam: (questions: Question[], mode: 'practice' | 'exam', paper: string) => void }) => state.startExam)
+  const startExam = useExamStore((state) => state.startExam)
+  const completedPapers = useExamStore((state) => state.completedPapers)
   const { profile, getRecommendedDifficulty } = useUserStore()
   
   const [papers, setPapers] = useState<Paper[]>([])
@@ -192,7 +193,35 @@ export function PaperSelect() {
         </div>
       </div>
 
-      {/* Verified Badge */}
+      {/* Progress Banner */}
+      <div className="p-4 bg-gradient-to-r from-emerald-600 to-teal-600 rounded-2xl">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+              <CheckCircle className="w-6 h-6" />
+            </div>
+            <div>
+              <h2 className="font-bold text-lg">Your Progress</h2>
+              <p className="text-emerald-100 text-sm">
+                {completedPapers.length} of {papers.length} papers completed
+              </p>
+            </div>
+          </div>
+          <div className="text-right">
+            <div className="text-2xl font-bold">
+              {papers.length > 0 ? Math.round((completedPapers.length / papers.length) * 100) : 0}%
+            </div>
+            <div className="text-xs text-emerald-100">Done</div>
+          </div>
+        </div>
+        {/* Progress Bar */}
+        <div className="mt-3 h-2 bg-white/20 rounded-full overflow-hidden">
+          <div 
+            className="h-full bg-white rounded-full transition-all"
+            style={{ width: `${papers.length > 0 ? (completedPapers.length / papers.length) * 100 : 0}%` }}
+          />
+        </div>
+      </div>
       <div className="p-3 bg-emerald-500/10 border border-emerald-500/30 rounded-xl">
         <div className="flex items-center gap-2 text-emerald-400">
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -430,8 +459,15 @@ export function PaperSelect() {
             <button
               key={paper.id}
               onClick={() => handleStart(paper)}
-              className="w-full p-4 bg-slate-800 rounded-xl hover:bg-slate-700 transition-colors text-left"
+              className={`w-full p-4 rounded-xl hover:bg-slate-700 transition-colors text-left relative ${
+                completedPapers.includes(paper.id) ? 'bg-emerald-900/30 border border-emerald-500/30' : 'bg-slate-800'
+              }`}
             >
+              {completedPapers.includes(paper.id) && (
+                <div className="absolute top-2 right-2 w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center">
+                  <CheckCircle className="w-4 h-4 text-white" />
+                </div>
+              )}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl ${
