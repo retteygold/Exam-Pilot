@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Gamepad2, Puzzle, Brain, Grid3X3, Zap, Trophy, Star, ArrowRight, Search, Eye, HelpCircle, BookOpen, Sparkles, Target, PenTool, Ear, Mic, BookMarked, Shuffle, Music, Image } from 'lucide-react'
+import { Gamepad2, Puzzle, Brain, Grid3X3, Zap, Trophy, Star, ArrowRight, Search, Eye, HelpCircle, BookOpen, Sparkles, Target, PenTool, Ear, Mic, BookMarked, Shuffle, Music, Image, Calculator, Palette, Shapes, Crown } from 'lucide-react'
 
 interface GameCard {
   id: string
@@ -115,6 +115,44 @@ const games: GameCard[] = [
     bgGradient: 'from-lime-500/20 to-green-500/20',
     points: 20
   },
+  // Quick Games
+  {
+    id: 'speed-math',
+    title: 'Speed Math',
+    description: 'Fast calculations!',
+    icon: Calculator,
+    color: 'text-red-400',
+    bgGradient: 'from-red-500/20 to-orange-500/20',
+    points: 35
+  },
+  {
+    id: 'color-match',
+    title: 'Color Match',
+    description: 'Match colors!',
+    icon: Palette,
+    color: 'text-purple-400',
+    bgGradient: 'from-purple-500/20 to-violet-500/20',
+    points: 25
+  },
+  {
+    id: 'pattern-recognition',
+    title: 'Pattern Genius',
+    description: 'Complete patterns!',
+    icon: Shapes,
+    color: 'text-cyan-400',
+    bgGradient: 'from-cyan-500/20 to-teal-500/20',
+    points: 30
+  },
+  // MEGA GAME
+  {
+    id: 'mega-challenge',
+    title: 'MEGA CHALLENGE',
+    description: 'All games mixed!',
+    icon: Crown,
+    color: 'text-yellow-300',
+    bgGradient: 'from-yellow-500/30 via-orange-500/30 to-pink-500/30',
+    points: 100
+  },
   // Science & Geography
   {
     id: 'science-lab',
@@ -214,7 +252,10 @@ export function KidsQuickPlay() {
       'dictionary': '/game/dictionary',
       'word-scramble': '/game/word-scramble',
       'rhyme-time': '/game/rhyme-time',
-      'picture-match': '/game/picture-match'
+      'mega-challenge': '/game/mega-challenge',
+      'speed-math': '/game/speed-math',
+      'color-match': '/game/color-match',
+      'pattern-recognition': '/game/pattern-recognition'
     }
     const route = routes[gameId]
     if (route) navigate(route)

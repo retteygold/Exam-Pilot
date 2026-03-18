@@ -27,6 +27,10 @@ import { DictionaryGame } from './games/DictionaryGame'
 import { WordScramble } from './games/WordScramble'
 import { RhymeTime } from './games/RhymeTime'
 import { PictureWordMatch } from './games/PictureWordMatch'
+import { SpeedMath } from './games/SpeedMath'
+import { ColorMatch } from './games/ColorMatch'
+import { PatternRecognition } from './games/PatternRecognition'
+import { MegaGame } from './games/MegaGame'
 import { GameExitWrapper } from './components/GameExitWrapper'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -367,6 +371,54 @@ function App() {
           isAuthed && isSetupComplete ? (
             <GameExitWrapper>
               {({ onExit }) => <PictureWordMatch onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/speed-math" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <GameExitWrapper>
+              {({ onExit }) => <SpeedMath onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/color-match" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <GameExitWrapper>
+              {({ onExit }) => <ColorMatch onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/pattern-recognition" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <GameExitWrapper>
+              {({ onExit }) => <PatternRecognition onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/mega-challenge" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <GameExitWrapper>
+              {({ onExit }) => <MegaGame onComplete={() => {}} onExit={onExit} />}
             </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
