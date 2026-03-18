@@ -5,7 +5,7 @@ import { Star, Trophy, Zap, Target, Gamepad2, Puzzle, Brain, Sparkles, ArrowRigh
 import { useKidsStore } from '../store/kidsStore'
 import { useUserStore } from '../store/userStore'
 import type { Question, QuestionsData } from '../types'
-import { KidsLogin } from './KidsLogin'
+import { Auth } from './Auth'
 import { QuizRaceGame } from '../games/QuizRaceGame'
 import { SpeedChallengeGame } from '../games/SpeedChallengeGame'
 import { KnowledgeBattleGame } from '../games/KnowledgeBattleGame'
@@ -312,6 +312,7 @@ export function KidsDashboard() {
   }
   const handleLogin = () => {
     setLoginKey(k => k + 1)
+    navigate('/setup')
   }
 
   // Use kids profile grade if logged in
@@ -494,7 +495,7 @@ export function KidsDashboard() {
         uid: auth.currentUser?.uid
       })
     }
-    return <KidsLogin onLogin={handleLogin} key={loginKey} />
+    return <Auth onSuccess={handleLogin} key={loginKey} />
   }
 
   return (

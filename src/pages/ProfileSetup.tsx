@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Star, Zap, Medal, Crown, LogIn } from 'lucide-react'
 import { useUserStore } from '../store/userStore'
-import { KidsLogin } from '../pages/KidsLogin'
+import { Auth } from './Auth'
 
 const quotes = [
   'Every expert was once a beginner. Start your journey today!',
@@ -58,7 +58,7 @@ const images = [
 export function ProfileSetup() {
   const navigate = useNavigate()
   const setProfile = useUserStore((state) => state.setProfile)
-  const [showLogin, setShowLogin] = useState(false)
+  const [showAuth, setShowAuth] = useState(false)
   const [step, setStep] = useState(1)
   const [profile, setProfileState] = useState({
     gender: '', age: '', grade: '', skillLevel: '' as any, exam: ''
@@ -89,12 +89,12 @@ export function ProfileSetup() {
   const Icon = reward?.icon || Star
 
   const handleLoginSuccess = () => {
-    setShowLogin(false)
-    navigate('/')
+    setShowAuth(false)
+    navigate('/setup')
   }
 
-  if (showLogin) {
-    return <KidsLogin onLogin={handleLoginSuccess} onBack={() => setShowLogin(false)} />
+  if (showAuth) {
+    return <Auth onSuccess={handleLoginSuccess} />
   }
 
   return (
@@ -108,7 +108,7 @@ export function ProfileSetup() {
             <span className='font-semibold'>Exam Pilot</span>
           </div>
           <button 
-            onClick={() => setShowLogin(true)}
+            onClick={() => setShowAuth(true)}
             className='flex items-center gap-2 px-3 py-1.5 bg-emerald-500/20 border border-emerald-500/30 rounded-full hover:bg-emerald-500/30 transition-colors'
           >
             <LogIn className='w-4 h-4 text-emerald-400' />
