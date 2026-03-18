@@ -135,12 +135,18 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
     setError('')
     setSuccess('')
 
-    const profile = await loginWithEmail(email, password)
-    if (profile) {
-      setSuccess(`Welcome back, ${profile.name}! 🎉`)
-      setTimeout(() => onLogin(), 500)
-    } else {
-      setError('Login failed. Check your email/password or complete your profile.')
+    try {
+      const profile = await loginWithEmail(email, password)
+      if (profile) {
+        setSuccess(`Welcome back, ${profile.name}! 🎉`)
+        setTimeout(() => onLogin(), 500)
+      } else {
+        setError('Login failed. Please complete your profile.')
+      }
+    } catch (err: unknown) {
+      if (debugKidsAuth) console.log('[KidsAuth] handleLogin error', err)
+      const message = err instanceof Error ? err.message : String(err)
+      setError(`Login failed: ${message}`)
     }
   }
 
@@ -185,11 +191,14 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
           setTimeout(() => onLogin(), 500)
         }
       } catch (err: unknown) {
+        if (debugKidsAuth) console.log('[KidsAuth] handleRegister(email) error', err)
         const msg = err instanceof Error ? err.message : String(err)
         if (msg.includes('KID_NAME_TAKEN')) {
           setError('This account already exists. Try logging in instead.')
         } else if (msg.includes('KID_PASSWORD_TOO_SHORT')) {
           setError('Password must be at least 6 characters.')
+        } else if (msg.includes('auth/')) {
+          setError(`Signup failed: ${msg}`)
         } else {
           setError('Signup failed. Please try again.')
         }

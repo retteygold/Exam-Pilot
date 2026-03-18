@@ -22,6 +22,18 @@ import {
   updateKidProfile
 } from '../services/kidsFirestore'
 
+const kidsAuthErrorMessage = (err: unknown) => {
+  const anyErr = err as any
+  const code: string | undefined = typeof anyErr?.code === 'string' ? anyErr.code : undefined
+  const message: string = anyErr instanceof Error ? anyErr.message : String(err)
+  if (code) return code
+  if (message.includes('auth/')) {
+    const m = message.match(/auth\/[a-zA-Z0-9-]+/)
+    if (m?.[0]) return m[0]
+  }
+  return message
+}
+
 const kidEmailFromNameKey = (nameKey: string) => {
   const safe = nameKey
     .trim()
@@ -366,9 +378,12 @@ export const useKidsStore = create<KidsState>()(
 
           return newProfile
         } catch (error: unknown) {
+          const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+          if (debugKidsAuth) console.log('[KidsAuth] store.registerWithEmail: error', { msg: kidsAuthErrorMessage(error), error })
           set({ kidsAuthReady: true })
           const message = error instanceof Error ? error.message : String(error)
           if (message.includes('email-already-in-use') || message.includes('KID_NAME_TAKEN')) throw new Error('KID_NAME_TAKEN')
+          if (message.includes('auth/')) throw new Error(kidsAuthErrorMessage(error))
           throw new Error('KID_REGISTRATION_FAILED')
         }
       },
@@ -378,6 +393,8 @@ export const useKidsStore = create<KidsState>()(
         const normalizedPassword = password
 
         try {
+          const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+          if (debugKidsAuth) console.log('[KidsAuth] store.loginWithEmail: attempting signInWithEmailAndPassword', { email: normalizedEmail })
           const cred = await signInWithEmailAndPassword(auth, normalizedEmail, normalizedPassword)
           const uid = cred.user.uid
           const profile = await getKidProfileById(uid)
@@ -432,9 +449,11 @@ export const useKidsStore = create<KidsState>()(
           }))
 
           return profile
-        } catch {
+        } catch (err: unknown) {
+          const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+          if (debugKidsAuth) console.log('[KidsAuth] store.loginWithEmail: error', { msg: kidsAuthErrorMessage(err), err })
           set({ kidsAuthReady: true })
-          return null
+          throw new Error(kidsAuthErrorMessage(err))
         }
       },
 
@@ -444,6 +463,8 @@ export const useKidsStore = create<KidsState>()(
         if (password.length < 6) throw new Error('KID_PASSWORD_TOO_SHORT')
 
         try {
+          const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+          if (debugKidsAuth) console.log('[KidsAuth] store.registerWithEmail: attempting createUserWithEmailAndPassword', { email: normalizedEmail })
           const cred = await createUserWithEmailAndPassword(auth, normalizedEmail, password)
           const uid = cred.user.uid
 
