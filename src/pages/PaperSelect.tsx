@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { BookOpen, Clock, Target, Award, FileText, Calendar, User, Beaker, Calculator, CheckCircle } from 'lucide-react'
 import { useExamStore } from '../store/examStore'
 import { useUserStore } from '../store/userStore'
+import { getQuestions } from '../services/firebaseQuestions'
 import type { Question } from '../types'
 
 interface Paper {
@@ -121,18 +122,23 @@ export function PaperSelect() {
       setLoading(false)
     }
 
-    Promise.all([
-      fetch(`/questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []})),
-      fetch(`/biology_questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []})),
-      fetch(`/igcse_biology_0610_questions.json?t=${Date.now()}`).then(r => r.json()).catch(() => ({questions: []}))
-    ]).then(([accountingData, biologyData, igcseBioData]) => {
-      const combined = [
-        ...(accountingData.questions || []),
-        ...(biologyData.questions || []),
-        ...(igcseBioData.questions || []),
-      ] as Question[]
-      compute(combined)
-    })
+    const loadQuestions = async () => {
+      try {
+        const { questions: firebaseQuestions } = await getQuestions({
+          verified: true
+        }, 500)
+        
+        compute(firebaseQuestions)
+      } catch (error) {
+        console.error('Failed to load questions from Firebase:', error)
+        // Fallback to empty state
+        setQuestions([])
+        setPapers([])
+        setLoading(false)
+      }
+    }
+    
+    loadQuestions()
   }, [getRecommendedDifficulty, recommendedDifficulty, selectedMode])
 
   const handleStart = (paper: Paper) => {

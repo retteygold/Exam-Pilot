@@ -1,6 +1,8 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { Question } from '../types'
+import { saveExamResult } from '../services/firebaseQuestions'
+import { useUserStore } from './userStore'
 
 interface ExamState {
   // Current exam
@@ -71,7 +73,43 @@ export const useExamStore = create<ExamState>()(
         currentIndex: Math.max(state.currentIndex - 1, 0)
       })),
 
-      finishExam: () => set({ isComplete: true }),
+      finishExam: async () => {
+        const state = get()
+        const userId = useUserStore.getState().userId
+        
+        // Save to local state
+        set({ isComplete: true })
+        
+        // Save to Firebase if user is logged in
+        if (userId && state.selectedPaper && state.examMode) {
+          try {
+            const score = state.getScore()
+            const timeSpent = state.getTimeSpent()
+            
+            // Extract paper info from selectedPaper
+            const paperParts = state.selectedPaper.split('_')
+            const [subject, year, session, paper] = paperParts
+            
+            await saveExamResult({
+              userId,
+              paperId: state.selectedPaper,
+              subject: subject || 'unknown',
+              year: parseInt(year) || new Date().getFullYear(),
+              session: session || 'unknown',
+              paper: paper || '1',
+              mode: state.examMode,
+              score: score.correct,
+              totalMarks: score.total,
+              percentage: score.percentage,
+              timeSpent,
+              answers: state.answers,
+              completedAt: new Date()
+            })
+          } catch (error) {
+            console.error('Failed to save exam result to Firebase:', error)
+          }
+        }
+      },
 
       resetExam: () => set({
         examMode: null,

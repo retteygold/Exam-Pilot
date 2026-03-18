@@ -50,10 +50,11 @@ __pycache__/
 dist/
 build/
 
-# Scripts (keep for dev, exclude from deploy)
-scripts/*.pdf
-scripts/*.zip
-scripts/*.tar.gz
+# Scripts (exclude from deploy)
+scripts/
+
+# Questions data (now in Firebase)
+public/questions/
 
 # Database & extracted data
 database/
@@ -61,3 +62,4 @@ extracted_data/
 extracted_images/
 *.pdf
 *.zip
+*.tar.gz
