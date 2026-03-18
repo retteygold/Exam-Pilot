@@ -57,7 +57,7 @@ function App() {
               {isYoungStudent ? <KidsDashboard /> : <Home />}
             </Layout>
           ) : (
-            <Navigate to="/setup" replace />
+            <ProfileSetup />
           )
         } 
       />
