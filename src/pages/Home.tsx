@@ -9,7 +9,6 @@ export function Home() {
   const navigate = useNavigate()
   const { getScore } = useExamStore()
   const profile = useUserStore((s) => s.profile)
-  const clearProfile = useUserStore((s) => s.clearProfile)
 
   const stats = getScore()
 
@@ -38,9 +37,13 @@ export function Home() {
             </h1>
             <p className="text-xs text-slate-400">Cambridge Past Papers</p>
             {isKidsMode && (
-              <div className="inline-flex mt-1 px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30">
+              <button
+                type="button"
+                onClick={() => navigate('/kids')}
+                className="inline-flex mt-1 px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 hover:bg-emerald-500/20"
+              >
                 <span className="text-[10px] font-semibold text-emerald-300">Kids Mode</span>
-              </div>
+              </button>
             )}
           </div>
         </div>
@@ -55,7 +58,6 @@ export function Home() {
           <button
             onClick={async () => {
               await signOut(auth)
-              clearProfile()
               navigate('/')
             }}
             className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"

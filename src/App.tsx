@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useUserStore } from './store/userStore'
 import { Layout } from './components/Layout'
@@ -8,15 +9,20 @@ import { Exam } from './pages/Exam'
 import { Results } from './pages/Results'
 import { Stats } from './pages/Stats'
 import { Admin } from './pages/Admin'
+import { auth } from './lib/firebase'
+import { onAuthStateChanged } from 'firebase/auth'
+import { useState } from 'react'
 import { WordSearchGame } from './games/WordSearchGame'
 import { CrosswordGame } from './games/CrosswordGame'
 import { FindOddOneOut } from './games/FindOddOneOut'
 import { WhichOneCan } from './games/WhichOneCan'
 import { MemoryGame } from './games/MemoryGame'
 import { Quiz } from './pages/Quiz'
+import { KidsQuickPlay } from './pages/KidsQuickPlay'
 
 function App() {
-  const { isSetupComplete, hasHydrated } = useUserStore()
+  const { userId, isSetupComplete, hasHydrated, setUserId, clearProfile } = useUserStore()
+  const [isAuthed, setIsAuthed] = useState<boolean>(!!auth.currentUser)
   
   // Wait for store to rehydrate from localStorage before making routing decisions
   if (!hasHydrated) {
@@ -26,6 +32,31 @@ function App() {
       </div>
     )
   }
+
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (user) => {
+      const uid = user?.uid ?? null
+      setIsAuthed(!!uid)
+
+      if (!uid) {
+        // Logged out: keep local setup/profile so the same user doesn't redo setup after re-login.
+        setUserId(null)
+        return
+      }
+
+      // If a different account signs in, require setup again for that account.
+      if (userId && userId !== uid) {
+        clearProfile()
+        setUserId(uid)
+        return
+      }
+
+      // First login on this device
+      if (!userId) setUserId(uid)
+    })
+
+    return () => unsub()
+  }, [clearProfile, setUserId, userId])
 
   return (
     <Routes>
@@ -44,7 +75,7 @@ function App() {
       <Route 
         path="/" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <Layout>
               <Home />
             </Layout>
@@ -53,10 +84,23 @@ function App() {
           )
         } 
       />
+
+      <Route
+        path="/kids"
+        element={
+          isAuthed && isSetupComplete ? (
+            <Layout>
+              <KidsQuickPlay />
+            </Layout>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        }
+      />
       <Route 
         path="/papers" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <Layout>
               <PaperSelect />
             </Layout>
@@ -68,7 +112,7 @@ function App() {
       <Route 
         path="/exam" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <Layout>
               <Exam />
             </Layout>
@@ -80,7 +124,7 @@ function App() {
       <Route 
         path="/results" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <Layout>
               <Results />
             </Layout>
@@ -92,7 +136,7 @@ function App() {
       <Route 
         path="/stats" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <Layout>
               <Stats />
             </Layout>
@@ -105,7 +149,7 @@ function App() {
       <Route 
         path="/quiz" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <Layout>
               <Quiz />
             </Layout>
@@ -119,7 +163,7 @@ function App() {
       <Route 
         path="/game/word-search" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <WordSearchGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
@@ -129,7 +173,7 @@ function App() {
       <Route 
         path="/game/crossword" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <CrosswordGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
@@ -139,7 +183,7 @@ function App() {
       <Route 
         path="/game/find-odd" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <FindOddOneOut onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
@@ -149,7 +193,7 @@ function App() {
       <Route 
         path="/game/which-can" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <WhichOneCan onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
@@ -159,7 +203,7 @@ function App() {
       <Route 
         path="/game/memory" 
         element={
-          isSetupComplete ? (
+          isAuthed && isSetupComplete ? (
             <MemoryGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
