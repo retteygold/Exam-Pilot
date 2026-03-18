@@ -25,26 +25,15 @@ import { SoundDetective } from './games/SoundDetective'
 import { SpeakUp } from './games/SpeakUp'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { auth } from './lib/firebase'
-import { onAuthStateChanged } from 'firebase/auth'
 
 function App() {
-  const { isSetupComplete, hasHydrated, setUserId } = useUserStore()
+  const { isSetupComplete, hasHydrated, userId } = useUserStore()
   const [isAuthed, setIsAuthed] = useState(false)
   
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (user) => {
-      const uid = user?.uid ?? null
-      setIsAuthed(!!uid)
-      
-      if (uid) {
-        setUserId(uid)
-      } else {
-        setUserId(null)
-      }
-    })
-    return () => unsub()
-  }, [setUserId])
+    // Check if user is authenticated based on local userId
+    setIsAuthed(!!userId)
+  }, [userId])
   
   // Wait for store to rehydrate from localStorage before making routing decisions
   if (!hasHydrated) {
