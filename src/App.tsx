@@ -164,7 +164,7 @@ function App() {
         path="/game/word-search" 
         element={
           isAuthed && isSetupComplete ? (
-            <WordSearchGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
+            <WordSearchGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
           )
@@ -174,7 +174,7 @@ function App() {
         path="/game/crossword" 
         element={
           isAuthed && isSetupComplete ? (
-            <CrosswordGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
+            <CrosswordGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
           )
@@ -184,7 +184,7 @@ function App() {
         path="/game/find-odd" 
         element={
           isAuthed && isSetupComplete ? (
-            <FindOddOneOut onComplete={() => {}} onExit={() => window.location.href = '/'} />
+            <FindOddOneOut onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
           )
@@ -194,7 +194,7 @@ function App() {
         path="/game/which-can" 
         element={
           isAuthed && isSetupComplete ? (
-            <WhichOneCan onComplete={() => {}} onExit={() => window.location.href = '/'} />
+            <WhichOneCan onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
           )
@@ -204,7 +204,7 @@ function App() {
         path="/game/memory" 
         element={
           isAuthed && isSetupComplete ? (
-            <MemoryGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
+            <MemoryGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
           )
