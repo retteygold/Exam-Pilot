@@ -209,7 +209,7 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 p-4 pb-20 overflow-y-auto">
       <div className="max-w-2xl mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
@@ -249,9 +249,10 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Grid with hidden input for mobile keyboard */}
-          <div className="relative">
+        {/* Game Area - Stacked on mobile, side-by-side on desktop */}
+        <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
+          {/* Grid */}
+          <div className="relative order-1">
             <input
               ref={inputRef}
               type="text"
@@ -272,7 +273,7 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
               onKeyDown={handleKeyPress}
             />
             <div 
-              className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700"
+              className="bg-slate-800/50 rounded-2xl p-3 border border-slate-700"
               onClick={() => inputRef.current?.focus()}
             >
               <div 
@@ -320,19 +321,20 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
                   })
                 )}
               </div>
-              <p className="text-center text-slate-400 text-xs mt-3">
+              <p className="text-center text-slate-400 text-xs mt-2">
                 Click a cell, then type letters
               </p>
             </div>
           </div>
 
-          {/* Clues - Scrollable container */}
-          <div className="space-y-4 max-h-[60vh] overflow-y-auto md:max-h-[500px] pr-2" style={{ WebkitOverflowScrolling: 'touch', overscrollBehavior: 'contain' }}>
-            <div className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700">
-              <h3 className="font-bold text-white mb-3 flex items-center gap-2">
+          {/* Clues - Always visible with proper height on mobile */}
+          <div className="order-2 space-y-3">
+            {/* Across Clues */}
+            <div className="bg-slate-800/50 rounded-2xl p-3 border border-slate-700">
+              <h3 className="font-bold text-white mb-2 flex items-center gap-2 text-sm">
                 <span className="text-blue-400">→</span> Across
               </h3>
-              <div className="space-y-2">
+              <div className="space-y-1.5">
                 {puzzle.words.filter(w => w.direction === 'across').map((w, i) => (
                   <div 
                     key={w.word}
@@ -342,27 +344,28 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
                       setShowHint(w.clue)
                       inputRef.current?.focus()
                     }}
-                    className={`p-2 rounded-lg cursor-pointer transition-all ${
+                    className={`p-2 rounded-lg cursor-pointer transition-all text-sm ${
                       solvedWords.includes(w.word)
                         ? 'bg-emerald-500/20 text-emerald-300'
                         : 'bg-slate-700/30 hover:bg-slate-700 text-slate-300'
                     }`}
                   >
-                    <span className="font-bold mr-2">{i + 1}.</span>
+                    <span className="font-bold mr-1.5">{i + 1}.</span>
                     {w.clue}
                     {solvedWords.includes(w.word) && (
-                      <span className="ml-2 text-emerald-400">✓ {w.word}</span>
+                      <span className="ml-1.5 text-emerald-400 text-xs">✓ {w.word}</span>
                     )}
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-slate-800/50 rounded-2xl p-4 border border-slate-700">
-              <h3 className="font-bold text-white mb-3 flex items-center gap-2">
+            {/* Down Clues */}
+            <div className="bg-slate-800/50 rounded-2xl p-3 border border-slate-700">
+              <h3 className="font-bold text-white mb-2 flex items-center gap-2 text-sm">
                 <span className="text-purple-400">↓</span> Down
               </h3>
-              <div className="space-y-2">
+              <div className="space-y-1.5">
                 {puzzle.words.filter(w => w.direction === 'down').map((w, i) => {
                   const acrossCount = puzzle.words.filter(w => w.direction === 'across').length
                   return (
@@ -374,16 +377,16 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
                         setShowHint(w.clue)
                         inputRef.current?.focus()
                       }}
-                      className={`p-2 rounded-lg cursor-pointer transition-all ${
+                      className={`p-2 rounded-lg cursor-pointer transition-all text-sm ${
                         solvedWords.includes(w.word)
                           ? 'bg-emerald-500/20 text-emerald-300'
                           : 'bg-slate-700/30 hover:bg-slate-700 text-slate-300'
                       }`}
                     >
-                      <span className="font-bold mr-2">{acrossCount + i + 1}.</span>
+                      <span className="font-bold mr-1.5">{acrossCount + i + 1}.</span>
                       {w.clue}
                       {solvedWords.includes(w.word) && (
-                        <span className="ml-2 text-emerald-400">✓ {w.word}</span>
+                        <span className="ml-1.5 text-emerald-400 text-xs">✓ {w.word}</span>
                       )}
                     </div>
                   )
