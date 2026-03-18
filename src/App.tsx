@@ -23,6 +23,10 @@ import { ReadingComprehension } from './games/ReadingComprehension'
 import { StoryBuilder } from './games/StoryBuilder'
 import { SoundDetective } from './games/SoundDetective'
 import { SpeakUp } from './games/SpeakUp'
+import { DictionaryGame } from './games/DictionaryGame'
+import { WordScramble } from './games/WordScramble'
+import { RhymeTime } from './games/RhymeTime'
+import { PictureWordMatch } from './games/PictureWordMatch'
 import { GameExitWrapper } from './components/GameExitWrapper'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -315,6 +319,54 @@ function App() {
           isAuthed && isSetupComplete ? (
             <GameExitWrapper>
               {({ onExit }) => <SpeakUp onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/dictionary" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <GameExitWrapper>
+              {({ onExit }) => <DictionaryGame onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/word-scramble" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <GameExitWrapper>
+              {({ onExit }) => <WordScramble onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/rhyme-time" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <GameExitWrapper>
+              {({ onExit }) => <RhymeTime onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/picture-match" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <GameExitWrapper>
+              {({ onExit }) => <PictureWordMatch onComplete={() => {}} onExit={onExit} />}
             </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Gamepad2, Puzzle, Brain, Grid3X3, Zap, Trophy, Star, ArrowRight, Search, Eye, HelpCircle, BookOpen, Sparkles, Target, PenTool, Ear, Mic } from 'lucide-react'
+import { Gamepad2, Puzzle, Brain, Grid3X3, Zap, Trophy, Star, ArrowRight, Search, Eye, HelpCircle, BookOpen, Sparkles, Target, PenTool, Ear, Mic, BookMarked, Shuffle, Music, Image } from 'lucide-react'
 
 interface GameCard {
   id: string
@@ -77,6 +77,43 @@ const games: GameCard[] = [
     color: 'text-rose-400',
     bgGradient: 'from-rose-500/20 to-pink-500/20',
     points: 40
+  },
+  // Vocabulary & Word Games
+  {
+    id: 'dictionary',
+    title: 'Dictionary',
+    description: 'Learn words!',
+    icon: BookMarked,
+    color: 'text-amber-400',
+    bgGradient: 'from-amber-500/20 to-orange-500/20',
+    points: 35
+  },
+  {
+    id: 'word-scramble',
+    title: 'Word Scramble',
+    description: 'Unscramble letters!',
+    icon: Shuffle,
+    color: 'text-violet-400',
+    bgGradient: 'from-violet-500/20 to-purple-500/20',
+    points: 30
+  },
+  {
+    id: 'rhyme-time',
+    title: 'Rhyme Time',
+    description: 'Find rhymes!',
+    icon: Music,
+    color: 'text-pink-400',
+    bgGradient: 'from-pink-500/20 to-rose-500/20',
+    points: 25
+  },
+  {
+    id: 'picture-match',
+    title: 'Picture Match',
+    description: 'Match pictures!',
+    icon: Image,
+    color: 'text-lime-400',
+    bgGradient: 'from-lime-500/20 to-green-500/20',
+    points: 20
   },
   // Science & Geography
   {
@@ -173,7 +210,11 @@ export function KidsQuickPlay() {
       'reading-comprehension': '/game/reading-comprehension',
       'story-builder': '/game/story-builder',
       'sound-detective': '/game/sound-detective',
-      'speak-up': '/game/speak-up'
+      'speak-up': '/game/speak-up',
+      'dictionary': '/game/dictionary',
+      'word-scramble': '/game/word-scramble',
+      'rhyme-time': '/game/rhyme-time',
+      'picture-match': '/game/picture-match'
     }
     const route = routes[gameId]
     if (route) navigate(route)
