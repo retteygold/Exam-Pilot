@@ -43,8 +43,9 @@ A **React + TypeScript** web app for students from **LKG/UKG through Grade 12**.
 - **Icons**: Lucide React
 - **Charts**: Recharts
 - **PWA**: Vite PWA Plugin
-- **Database**: Firebase Firestore (kids profiles + game history)
-- **Image Hosting**: Cloudinary (avatars / uploads)
+- **Auth**: Firebase Authentication
+- **Database**: Firebase Firestore (questions + users + exam results + kids data)
+- **Image Hosting**: Cloudinary (question images / uploads)
 
 ## Project Structure
 
@@ -114,6 +115,13 @@ VITE_FIREBASE_APP_ID=
 
 These are read in `src/lib/firebase.ts`.
 
+Required for Cloudinary uploads (Admin image upload):
+
+```bash
+VITE_CLOUDINARY_CLOUD_NAME=
+VITE_CLOUDINARY_UPLOAD_PRESET=
+```
+
 ## Firebase Setup (Required)
 
 ### Enable Authentication Providers
@@ -123,6 +131,10 @@ In Firebase Console → Authentication → Sign-in method, enable:
 - Email/Password
 - Google
 
+Also enable:
+
+- Anonymous (used by “Continue Without Login”)
+
 If using Google sign-in on Vercel, also add your domain:
 
 - Firebase Console → Authentication → Settings → Authorized domains
@@ -130,7 +142,7 @@ If using Google sign-in on Vercel, also add your domain:
 
 ### Firestore Security Rules
 
-Kids features require Firestore rules that allow authenticated kids to read/write their own data.
+The app requires Firestore rules that allow authenticated users to read/write their own data (`users/{uid}`, `exam_results/*`) and authenticated kids to read/write their own kids collections.
 
 Note: this project also currently allows public reads (for convenience) and has a temporary open write rule for `questions` during initial upload.
 

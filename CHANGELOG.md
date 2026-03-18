@@ -25,12 +25,20 @@ All notable changes to this project will be documented in this file.
   - Grade topper (top 1 per grade)
 - Kids country selection (country + flag) with searchable picker
 
+- Main app authentication switched to Firebase Auth (Email/Password + Anonymous).
+- Firestore storage for main app:
+  - `users/{uid}` profile documents
+  - `exam_results/*` exam result documents
+  - questions loaded from Firestore `questions` collection
+- Cloudinary client upload support for question images (via unsigned upload preset).
+
 ### Fixed
 - Setup page scrolling and bottom button visibility.
 - Admin page TypeScript build issues.
 - KidsDashboard TypeScript unused variable build errors.
 - Kids games: integrated rewards + sounds across existing games.
 - Kids signup error messaging (name-taken vs permissions/setup failures)
+- Firestore sync robustness: avoid writing undefined values.
 
 ## [2026-03-15]
 

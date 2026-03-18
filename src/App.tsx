@@ -34,14 +34,24 @@ import { MegaGame } from './games/MegaGame'
 import { GameExitWrapper } from './components/GameExitWrapper'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { onAuthStateChanged } from 'firebase/auth'
+import { auth } from './lib/firebase'
 
 function App() {
-  const { isSetupComplete, hasHydrated, userId } = useUserStore()
+  const { isSetupComplete, hasHydrated, firebaseUser } = useUserStore()
   const [isAuthed, setIsAuthed] = useState(false)
   
   useEffect(() => {
-    setIsAuthed(!!userId)
-  }, [userId])
+    setIsAuthed(!!firebaseUser)
+  }, [firebaseUser])
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setIsAuthed(!!user)
+    })
+    return unsubscribe
+  }, [])
+
   
   // Wait for store to rehydrate from localStorage before making routing decisions
   if (!hasHydrated) {

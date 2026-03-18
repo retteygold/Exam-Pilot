@@ -1,5 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import { onAuthStateChanged, type User as FirebaseUser } from 'firebase/auth'
+import { auth } from '../lib/firebase'
 import { saveUser, getUser, type FirestoreUser } from '../services/firebaseQuestions'
 
 export interface UserProfile {
@@ -12,7 +14,7 @@ export interface UserProfile {
 }
 
 interface UserState {
-  userId: string | null
+  firebaseUser: FirebaseUser | null
   profile: UserProfile | null
   isSetupComplete: boolean
   hasHydrated: boolean
@@ -22,7 +24,7 @@ interface UserState {
   setProfile: (profile: UserProfile) => Promise<void>
   updateProfile: (updates: Partial<UserProfile>) => Promise<void>
   clearProfile: () => Promise<void>
-  setUserId: (userId: string | null) => void
+  setFirebaseUser: (user: FirebaseUser | null) => void
   setHasHydrated: (value: boolean) => void
   syncToFirebase: () => Promise<void>
   loadFromFirebase: () => Promise<void>
@@ -31,12 +33,14 @@ interface UserState {
   getRecommendedDifficulty: () => 'easy' | 'medium' | 'hard'
   // Helper to check if user can access exam
   canAccessExam: (examCode: string) => boolean
+  // Get user ID (Firebase UID or null)
+  getUserId: () => string | null
 }
 
 export const useUserStore = create<UserState>()(
   persist(
     (set, get) => ({
-      userId: null,
+      firebaseUser: null,
       profile: null,
       isSetupComplete: false,
       hasHydrated: false,
@@ -62,34 +66,32 @@ export const useUserStore = create<UserState>()(
 
       clearProfile: async () => {
         set({
-          userId: null,
+          firebaseUser: null,
           profile: null,
           isSetupComplete: false,
           lastSyncAt: null
         })
       },
 
-      setUserId: (userId) => set({ userId }),
+      setFirebaseUser: (user) => set({ firebaseUser: user }),
 
       setHasHydrated: (value) => set({ hasHydrated: value }),
 
       syncToFirebase: async () => {
-        const { userId, profile, isSyncing } = get()
+        const { firebaseUser, profile, isSyncing } = get()
         
-        if (!userId || !profile || isSyncing) return
+        if (!firebaseUser?.uid || !profile || isSyncing) return
         
         set({ isSyncing: true })
         
         try {
-          // Build user object, filtering out empty/undefined values
           const firestoreUser: FirestoreUser = {
-            id: userId,
+            id: firebaseUser.uid,
             name: profile.name || '',
             grade: profile.grade || '',
             role: 'student'
           }
           
-          // Only add optional fields if they have values
           if (profile.skillLevel) firestoreUser.skillLevel = profile.skillLevel
           if (profile.exam) firestoreUser.exam = profile.exam
           if (profile.gender) firestoreUser.gender = profile.gender
@@ -104,12 +106,12 @@ export const useUserStore = create<UserState>()(
       },
 
       loadFromFirebase: async () => {
-        const { userId } = get()
+        const { firebaseUser } = get()
         
-        if (!userId) return
+        if (!firebaseUser?.uid) return
         
         try {
-          const firestoreUser = await getUser(userId)
+          const firestoreUser = await getUser(firebaseUser.uid)
           
           if (firestoreUser) {
             const profile: UserProfile = {
@@ -148,6 +150,11 @@ export const useUserStore = create<UserState>()(
         const { profile } = get()
         if (!profile) return false
         return profile.exam === examCode || profile.exam === ''
+      },
+
+      getUserId: () => {
+        const { firebaseUser } = get()
+        return firebaseUser?.uid || null
       }
     }),
     {
@@ -167,6 +174,15 @@ export const useUserStore = create<UserState>()(
             state.isSetupComplete = true
           }
           state.setHasHydrated(true)
+          
+          // Listen for Firebase auth state changes
+          onAuthStateChanged(auth, (user) => {
+            state.setFirebaseUser(user)
+            if (user) {
+              // User is signed in, load profile from Firebase
+              state.loadFromFirebase()
+            }
+          })
         }
       }
     }

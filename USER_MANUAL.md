@@ -151,6 +151,17 @@ service cloud.firestore {
       allow write: if true;
     }
 
+    // Users collection
+    match /users/{userId} {
+      allow create, read, update, delete: if signedIn() && request.auth.uid == userId;
+    }
+
+    // Exam results collection
+    match /exam_results/{docId} {
+      allow create: if signedIn() && request.resource.data.userId == request.auth.uid;
+      allow read, update, delete: if signedIn() && resource.data.userId == request.auth.uid;
+    }
+
     // Kids profile stored at kidsProfiles/{uid}
     match /kidsProfiles/{kidId} {
       allow create, read, update, delete: if signedIn() && request.auth.uid == kidId;

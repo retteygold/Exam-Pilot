@@ -44,12 +44,12 @@ Show that Exam Pilot makes studying feel like a game for kids + serious exam pra
 ### 0:16–0:22 — Show older students flow (serious)
 **Shots:** Switch to Grade 9–12 → Papers → Quiz → Results
 **On-screen text:** “Grade 9–12: Past paper MCQs”
-**Voiceover:** “And for Grade 9 to 12, it’s real Cambridge past-paper MCQ practice.”
+**Voiceover:** “And for Grade 9 to 12, it’s real Cambridge past-paper MCQ practice—with secure sign-in and progress saved.”
 
 ### 0:22–0:27 — Trust + progress
 **Shot:** Stats page / results summary
 **On-screen text:** “Track progress”
-**Voiceover:** “You can track accuracy and improvement over time.”
+**Voiceover:** “You can track accuracy and improvement over time—across devices.”
 
 **Quick cut (optional):** Kids leaderboard
 **On-screen text:** “Leaderboards + flags”
