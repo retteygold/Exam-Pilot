@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Gamepad2, Puzzle, Brain, Grid3X3, Zap, Trophy, Star, ArrowRight, Search, Eye, HelpCircle, BookOpen, Sparkles, Target } from 'lucide-react'
+import { Gamepad2, Puzzle, Brain, Grid3X3, Zap, Trophy, Star, ArrowRight, Search, Eye, HelpCircle, BookOpen, Sparkles, Target, PenTool, Ear, Mic } from 'lucide-react'
 
 interface GameCard {
   id: string
@@ -12,6 +12,7 @@ interface GameCard {
 }
 
 const games: GameCard[] = [
+  // Math & Logic
   {
     id: 'math-blaster',
     title: 'Math Blaster',
@@ -20,6 +21,25 @@ const games: GameCard[] = [
     color: 'text-red-400',
     bgGradient: 'from-red-500/20 to-orange-500/20',
     points: 40
+  },
+  // Language & Reading
+  {
+    id: 'reading-comprehension',
+    title: 'Reading Fun',
+    description: 'Read stories!',
+    icon: BookOpen,
+    color: 'text-amber-400',
+    bgGradient: 'from-amber-500/20 to-orange-500/20',
+    points: 35
+  },
+  {
+    id: 'story-builder',
+    title: 'Story Builder',
+    description: 'Create stories!',
+    icon: PenTool,
+    color: 'text-fuchsia-400',
+    bgGradient: 'from-fuchsia-500/20 to-purple-500/20',
+    points: 35
   },
   {
     id: 'spelling-sprint',
@@ -39,6 +59,26 @@ const games: GameCard[] = [
     bgGradient: 'from-indigo-500/20 to-purple-500/20',
     points: 35
   },
+  // Listening & Speaking
+  {
+    id: 'sound-detective',
+    title: 'Sound Detective',
+    description: 'Guess sounds!',
+    icon: Ear,
+    color: 'text-teal-400',
+    bgGradient: 'from-teal-500/20 to-cyan-500/20',
+    points: 30
+  },
+  {
+    id: 'speak-up',
+    title: 'Speak Up',
+    description: 'Practice speaking!',
+    icon: Mic,
+    color: 'text-rose-400',
+    bgGradient: 'from-rose-500/20 to-pink-500/20',
+    points: 40
+  },
+  // Science & Geography
   {
     id: 'science-lab',
     title: 'Science Lab',
@@ -57,6 +97,7 @@ const games: GameCard[] = [
     bgGradient: 'from-blue-500/20 to-indigo-500/20',
     points: 35
   },
+  // Classic Games
   {
     id: 'word-search',
     title: 'Word Search',
@@ -128,7 +169,11 @@ export function KidsQuickPlay() {
       'spelling-sprint': '/game/spelling-sprint',
       'grammar-builder': '/game/grammar-builder',
       'science-lab': '/game/science-lab',
-      'geography-map': '/game/geography-map'
+      'geography-map': '/game/geography-map',
+      'reading-comprehension': '/game/reading-comprehension',
+      'story-builder': '/game/story-builder',
+      'sound-detective': '/game/sound-detective',
+      'speak-up': '/game/speak-up'
     }
     const route = routes[gameId]
     if (route) navigate(route)

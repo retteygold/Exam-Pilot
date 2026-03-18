@@ -19,6 +19,10 @@ import { SpellingSprint } from './games/SpellingSprint'
 import { GrammarBuilder } from './games/GrammarBuilder'
 import { ScienceLab } from './games/ScienceLab'
 import { MapExplorer } from './games/MapExplorer'
+import { ReadingComprehension } from './games/ReadingComprehension'
+import { StoryBuilder } from './games/StoryBuilder'
+import { SoundDetective } from './games/SoundDetective'
+import { SpeakUp } from './games/SpeakUp'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { auth } from './lib/firebase'
@@ -255,6 +259,46 @@ function App() {
         element={
           isAuthed && isSetupComplete ? (
             <MapExplorer onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/reading-comprehension" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <ReadingComprehension onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/story-builder" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <StoryBuilder onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/sound-detective" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <SoundDetective onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/speak-up" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <SpeakUp onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
           )
