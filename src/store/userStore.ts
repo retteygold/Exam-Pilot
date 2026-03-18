@@ -81,16 +81,19 @@ export const useUserStore = create<UserState>()(
         set({ isSyncing: true })
         
         try {
+          // Build user object, filtering out empty/undefined values
           const firestoreUser: FirestoreUser = {
             id: userId,
-            name: profile.name,
-            grade: profile.grade,
-            skillLevel: profile.skillLevel || undefined,
-            exam: profile.exam || undefined,
-            gender: profile.gender || undefined,
-            age: profile.age || undefined,
+            name: profile.name || '',
+            grade: profile.grade || '',
             role: 'student'
           }
+          
+          // Only add optional fields if they have values
+          if (profile.skillLevel) firestoreUser.skillLevel = profile.skillLevel
+          if (profile.exam) firestoreUser.exam = profile.exam
+          if (profile.gender) firestoreUser.gender = profile.gender
+          if (profile.age) firestoreUser.age = profile.age
           
           await saveUser(firestoreUser)
           set({ lastSyncAt: new Date(), isSyncing: false })
