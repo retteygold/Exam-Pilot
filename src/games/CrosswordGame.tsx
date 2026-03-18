@@ -327,8 +327,8 @@ export function CrosswordGame({ onComplete, onExit }: CrosswordGameProps) {
             </div>
           </div>
 
-          {/* Clues - Always visible with proper height on mobile */}
-          <div className="order-2 space-y-3">
+          {/* Clues - Scrollable on mobile when long */}
+          <div className="order-2 space-y-3 max-h-[55vh] overflow-y-auto pr-1 md:max-h-none md:overflow-visible md:pr-0">
             {/* Across Clues */}
             <div className="bg-slate-800/50 rounded-2xl p-3 border border-slate-700">
               <h3 className="font-bold text-white mb-2 flex items-center gap-2 text-sm">

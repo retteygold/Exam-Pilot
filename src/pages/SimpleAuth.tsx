@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { User, GraduationCap } from 'lucide-react'
+import { signInAnonymously } from 'firebase/auth'
+import { auth } from '../lib/firebase'
 import { useUserStore } from '../store/userStore'
 
 const grades = ['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade 5', 'Grade 6', 'Grade 7', 'Grade 8', 'Grade 9', 'Grade 10', 'Grade 11', 'Grade 12']
@@ -8,7 +10,6 @@ const grades = ['LKG', 'UKG', 'Grade 1', 'Grade 2', 'Grade 3', 'Grade 4', 'Grade
 export function SimpleAuth() {
   const navigate = useNavigate()
   const setProfile = useUserStore((s) => s.setProfile)
-  const setUserId = useUserStore((s) => s.setUserId)
   const [name, setName] = useState('')
   const [step, setStep] = useState<'name' | 'grade'>('name')
 
@@ -19,17 +20,22 @@ export function SimpleAuth() {
     }
   }
 
-  const handleGradeSelect = (grade: string) => {
-    const userId = `user_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`
-    setUserId(userId)
-    setProfile({
-      gender: '',
-      age: '',
-      grade,
-      skillLevel: 'Beginner',
-      exam: ''
-    })
-    navigate('/')
+  const handleGradeSelect = async (grade: string) => {
+    try {
+      await signInAnonymously(auth)
+      await setProfile({
+        name: name.trim(),
+        gender: '',
+        age: '',
+        grade,
+        skillLevel: 'Beginner',
+        exam: ''
+      })
+      navigate('/')
+    } catch (e) {
+      // If auth fails, do not navigate
+      console.error(e)
+    }
   }
 
   if (step === 'name') {

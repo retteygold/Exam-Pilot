@@ -75,7 +75,7 @@ export const useExamStore = create<ExamState>()(
 
       finishExam: async () => {
         const state = get()
-        const userId = useUserStore.getState().userId
+        const userId = useUserStore.getState().getUserId()
         
         // Save to local state
         set({ isComplete: true })
