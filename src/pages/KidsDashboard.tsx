@@ -259,6 +259,8 @@ export function KidsDashboard() {
 
   const {
     currentKid,
+    kidsAuthReady,
+    bootstrapKidsAuth,
     logout,
     getKidStats,
     recordSession,
@@ -270,6 +272,10 @@ export function KidsDashboard() {
     getOverallLeaderboard,
     getGradeTopper
   } = useKidsStore()
+
+  useEffect(() => {
+    void bootstrapKidsAuth()
+  }, [bootstrapKidsAuth])
 
   const [activeGame, setActiveGame] = useState<string | null>(null)
   const [activeLevel, setActiveLevel] = useState<number>(1)
@@ -464,6 +470,21 @@ export function KidsDashboard() {
   }
 
   const stats = currentKid ? getKidStats(currentKid.id) : { totalStars: 0, totalSessions: 0, bestStreak: 0 }
+
+  if (!kidsAuthReady) {
+    if (debugKidsAuth) {
+      console.log('[KidsAuth] KidsDashboard: waiting for kidsAuthReady', {
+        hasFirebaseUser: !!auth.currentUser,
+        uid: auth.currentUser?.uid,
+        hasCurrentKid: !!currentKid
+      })
+    }
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
+      </div>
+    )
+  }
 
   // Show login if not authenticated
   if (!currentKid) {

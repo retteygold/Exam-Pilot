@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { GoogleAuthProvider, createUserWithEmailAndPassword, getRedirectResult, signInWithEmailAndPassword, signInWithRedirect, signOut } from 'firebase/auth'
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getRedirectResult, onAuthStateChanged, signInWithEmailAndPassword, signInWithRedirect, signOut } from 'firebase/auth'
 import { auth } from '../lib/firebase'
 import {
   createKidProfile,
@@ -118,6 +118,7 @@ export interface Achievement {
 export interface KidsState {
   currentKid: KidsProfile | null
   isKidsLoggedIn: boolean
+  kidsAuthReady: boolean
   profiles: KidsProfile[]
   sessions: GameSession[]
   achievements: Achievement[]
@@ -125,6 +126,7 @@ export interface KidsState {
   skillPath: KidSkillPath | null
   activeGame: ActiveGameProgress | null  // Track ongoing game
   
+  bootstrapKidsAuth: () => Promise<void>
   login: (name: string, secretCode: string) => Promise<KidsProfile | null>
   register: (name: string, secretCode: string, grade: string, avatar: string, countryName?: string, countryFlag?: string) => Promise<KidsProfile | null>
   loginWithEmail: (email: string, password: string) => Promise<KidsProfile | null>
@@ -169,12 +171,101 @@ export const useKidsStore = create<KidsState>()(
     (set, get) => ({
       currentKid: null,
       isKidsLoggedIn: false,
+      kidsAuthReady: false,
       profiles: [],
       sessions: [],
       achievements: [],
       gameProgress: {},
       skillPath: null,
       activeGame: null,
+
+      bootstrapKidsAuth: async () => {
+        const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+        if (get().kidsAuthReady) {
+          if (debugKidsAuth) console.log('[KidsAuth] store.bootstrapKidsAuth: already ready')
+          return
+        }
+
+        if (debugKidsAuth) {
+          console.log('[KidsAuth] store.bootstrapKidsAuth: starting', {
+            hasAuthUserAtStart: !!auth.currentUser,
+            uid: auth.currentUser?.uid,
+            hasCurrentKid: !!get().currentKid
+          })
+        }
+
+        await new Promise<void>((resolve) => {
+          const unsub = onAuthStateChanged(auth, async (user) => {
+            try {
+              if (debugKidsAuth) console.log('[KidsAuth] store.bootstrapKidsAuth: onAuthStateChanged', { hasUser: !!user, uid: user?.uid })
+
+              if (!user) {
+                set({ kidsAuthReady: true, isKidsLoggedIn: false, currentKid: null })
+                resolve()
+                unsub()
+                return
+              }
+
+              const uid = user.uid
+              const profile = await getKidProfileById(uid)
+              if (!profile) {
+                set({ kidsAuthReady: true, isKidsLoggedIn: false, currentKid: null })
+                resolve()
+                unsub()
+                return
+              }
+
+              const sessions = await getKidSessions(uid)
+              const achievements = await getKidAchievements(uid)
+              const progress = await getKidGameProgressDB(uid)
+              const skillPathDB = await getKidSkillPathDB(uid)
+
+              const progressByGame: Record<string, KidGameProgress> = {}
+              for (const p of progress) {
+                progressByGame[p.gameId] = {
+                  gameId: p.gameId,
+                  highestLevelUnlocked: p.highestLevelUnlocked ?? 1,
+                  lastPlayedLevel: p.lastPlayedLevel ?? 1,
+                  bestScore: p.bestScore ?? 0,
+                  updatedAt: p.updatedAt ?? Date.now()
+                }
+              }
+
+              const skillPath: KidSkillPath = skillPathDB
+                ? {
+                    mode: skillPathDB.mode,
+                    gameIds: Array.isArray(skillPathDB.gameIds) && skillPathDB.gameIds.length > 0 ? skillPathDB.gameIds : DEFAULT_SKILL_PATH_GAME_IDS,
+                    currentIndex: typeof skillPathDB.currentIndex === 'number' ? skillPathDB.currentIndex : 0,
+                    updatedAt: skillPathDB.updatedAt ?? Date.now()
+                  }
+                : {
+                    mode: 'free',
+                    gameIds: DEFAULT_SKILL_PATH_GAME_IDS,
+                    currentIndex: 0,
+                    updatedAt: Date.now()
+                  }
+
+              set({
+                kidsAuthReady: true,
+                currentKid: profile,
+                isKidsLoggedIn: true,
+                sessions,
+                achievements,
+                gameProgress: progressByGame,
+                skillPath
+              })
+
+              resolve()
+              unsub()
+            } catch (err: unknown) {
+              if (debugKidsAuth) console.log('[KidsAuth] store.bootstrapKidsAuth: error', err)
+              set({ kidsAuthReady: true, isKidsLoggedIn: false, currentKid: null })
+              resolve()
+              unsub()
+            }
+          })
+        })
+      },
 
       login: async (name: string, secretCode: string) => {
         const normalizedNameKey = name.trim().toLowerCase()
@@ -229,6 +320,7 @@ export const useKidsStore = create<KidsState>()(
           set(state => ({
             currentKid: profile,
             isKidsLoggedIn: true,
+            kidsAuthReady: true,
             sessions: [...state.sessions.filter((s: GameSession) => s.kidId !== profile.id), ...sessions],
             achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements],
             gameProgress: progressByGame,
@@ -268,11 +360,13 @@ export const useKidsStore = create<KidsState>()(
           set(state => ({
             profiles: [...state.profiles, newProfile],
             currentKid: newProfile,
-            isKidsLoggedIn: true
+            isKidsLoggedIn: true,
+            kidsAuthReady: true
           }))
 
           return newProfile
         } catch (error: unknown) {
+          set({ kidsAuthReady: true })
           const message = error instanceof Error ? error.message : String(error)
           if (message.includes('email-already-in-use') || message.includes('KID_NAME_TAKEN')) throw new Error('KID_NAME_TAKEN')
           throw new Error('KID_REGISTRATION_FAILED')
@@ -330,6 +424,7 @@ export const useKidsStore = create<KidsState>()(
           set(state => ({
             currentKid: profile,
             isKidsLoggedIn: true,
+            kidsAuthReady: true,
             sessions: [...state.sessions.filter((s: GameSession) => s.kidId !== profile.id), ...sessions],
             achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements],
             gameProgress: progressByGame,
@@ -338,6 +433,7 @@ export const useKidsStore = create<KidsState>()(
 
           return profile
         } catch {
+          set({ kidsAuthReady: true })
           return null
         }
       },
@@ -477,15 +573,20 @@ export const useKidsStore = create<KidsState>()(
         set(state => ({
           profiles: [...state.profiles, newProfile],
           currentKid: newProfile,
-          isKidsLoggedIn: true
+          isKidsLoggedIn: true,
+          kidsAuthReady: true
         }))
 
         return newProfile
       },
 
       logout: () => {
-        void signOut(auth)
-        set({ currentKid: null, isKidsLoggedIn: false, skillPath: null })
+        try {
+          void signOut(auth)
+        } catch {
+          // ignore
+        }
+        set({ currentKid: null, isKidsLoggedIn: false, kidsAuthReady: true })
       },
 
       recordSession: async (session) => {

@@ -1,5 +1,7 @@
+import { useEffect } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useUserStore } from './store/userStore'
+import { useKidsStore } from './store/kidsStore'
 import { Layout } from './components/Layout'
 import { ProfileSetup } from './pages/ProfileSetup'
 import { Home } from './pages/Home'
@@ -18,6 +20,7 @@ import { Quiz } from './pages/Quiz'
 
 function App() {
   const { profile, isSetupComplete, hasHydrated } = useUserStore()
+  const { bootstrapKidsAuth } = useKidsStore()
   
   // Wait for store to rehydrate from localStorage before making routing decisions
   if (!hasHydrated) {
@@ -27,6 +30,10 @@ function App() {
       </div>
     )
   }
+
+  useEffect(() => {
+    void bootstrapKidsAuth()
+  }, [bootstrapKidsAuth])
   
   // Determine if user should see kids dashboard (Grades LKG-8)
   const isYoungStudent = profile?.grade && (
