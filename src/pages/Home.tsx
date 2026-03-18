@@ -1,12 +1,28 @@
 import { useNavigate } from 'react-router-dom'
-import { BookOpen, Target, Award, ArrowRight, GraduationCap, RefreshCw } from 'lucide-react'
+import { BookOpen, Target, Award, ArrowRight, GraduationCap, RefreshCw, LogOut } from 'lucide-react'
 import { useExamStore } from '../store/examStore'
+import { useUserStore } from '../store/userStore'
+import { auth } from '../lib/firebase'
+import { signOut } from 'firebase/auth'
 
 export function Home() {
   const navigate = useNavigate()
   const { getScore } = useExamStore()
+  const profile = useUserStore((s) => s.profile)
+  const clearProfile = useUserStore((s) => s.clearProfile)
 
   const stats = getScore()
+
+  const isKidsMode = (() => {
+    const g = profile?.grade?.trim() ?? ''
+    if (!g) return false
+    if (g.toUpperCase() === 'LKG' || g.toUpperCase() === 'UKG') return true
+    if (g.startsWith('Grade ')) {
+      const n = parseInt(g.replace('Grade ', ''))
+      return !Number.isNaN(n) && n <= 8
+    }
+    return false
+  })()
 
   return (
     <div className="p-4 space-y-6">
@@ -21,15 +37,33 @@ export function Home() {
               Exam Pilot
             </h1>
             <p className="text-xs text-slate-400">Cambridge Past Papers</p>
+            {isKidsMode && (
+              <div className="inline-flex mt-1 px-2 py-0.5 rounded-full bg-emerald-500/15 border border-emerald-500/30">
+                <span className="text-[10px] font-semibold text-emerald-300">Kids Mode</span>
+              </div>
+            )}
           </div>
         </div>
-        <button
-          onClick={() => window.location.reload()}
-          className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
-          title="Refresh to see latest uploads"
-        >
-          <RefreshCw className="w-5 h-5" />
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => window.location.reload()}
+            className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
+            title="Refresh to see latest uploads"
+          >
+            <RefreshCw className="w-5 h-5" />
+          </button>
+          <button
+            onClick={async () => {
+              await signOut(auth)
+              clearProfile()
+              navigate('/')
+            }}
+            className="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
+            title="Logout"
+          >
+            <LogOut className="w-5 h-5" />
+          </button>
+        </div>
       </div>
 
       {/* Hero with Storyset Image */}

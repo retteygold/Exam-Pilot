@@ -1,6 +1,16 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Chrome, LogIn, Mail, UserPlus } from 'lucide-react'
-import { GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithRedirect, createUserWithEmailAndPassword } from 'firebase/auth'
+import {
+  GoogleAuthProvider,
+  browserLocalPersistence,
+  createUserWithEmailAndPassword,
+  getRedirectResult,
+  onAuthStateChanged,
+  sendPasswordResetEmail,
+  setPersistence,
+  signInWithEmailAndPassword,
+  signInWithRedirect
+} from 'firebase/auth'
 import { auth } from '../lib/firebase'
 
 interface AuthProps {
@@ -9,6 +19,7 @@ interface AuthProps {
 
 export function Auth({ onSuccess }: AuthProps) {
   const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
+  const didCallSuccessRef = useRef(false)
   const [mode, setMode] = useState<'login' | 'signup'>('login')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -18,11 +29,40 @@ export function Auth({ onSuccess }: AuthProps) {
   const canSubmit = useMemo(() => email.trim().length > 0 && password.length >= 6, [email, password])
 
   useEffect(() => {
+    let mounted = true
+
+    ;(async () => {
+      try {
+        await setPersistence(auth, browserLocalPersistence)
+        if (debugKidsAuth) console.log('[Auth] setPersistence(browserLocalPersistence) ok')
+      } catch (e) {
+        if (debugKidsAuth) console.log('[Auth] setPersistence error', e)
+      }
+
+      try {
+        const res = await getRedirectResult(auth)
+        if (debugKidsAuth) console.log('[Auth] getRedirectResult', { hasResult: !!res, uid: res?.user?.uid })
+        if (mounted && res?.user && !didCallSuccessRef.current) {
+          didCallSuccessRef.current = true
+          onSuccess?.()
+        }
+      } catch (e) {
+        if (debugKidsAuth) console.log('[Auth] getRedirectResult error', e)
+      }
+    })()
+
     const unsub = onAuthStateChanged(auth, (user) => {
       if (debugKidsAuth) console.log('[Auth] onAuthStateChanged', { hasUser: !!user, uid: user?.uid })
-      if (user) onSuccess?.()
+      if (user && !didCallSuccessRef.current) {
+        didCallSuccessRef.current = true
+        onSuccess?.()
+      }
     })
-    return () => unsub()
+
+    return () => {
+      mounted = false
+      unsub()
+    }
   }, [onSuccess])
 
   const mapErr = (err: unknown) => {
@@ -39,6 +79,7 @@ export function Auth({ onSuccess }: AuthProps) {
     setSuccess('')
 
     try {
+      await setPersistence(auth, browserLocalPersistence)
       const normalizedEmail = email.trim().toLowerCase()
       if (mode === 'login') {
         await signInWithEmailAndPassword(auth, normalizedEmail, password)
@@ -47,7 +88,10 @@ export function Auth({ onSuccess }: AuthProps) {
         await createUserWithEmailAndPassword(auth, normalizedEmail, password)
         setSuccess('Account created!')
       }
-      onSuccess?.()
+      if (!didCallSuccessRef.current) {
+        didCallSuccessRef.current = true
+        onSuccess?.()
+      }
     } catch (err: unknown) {
       if (debugKidsAuth) console.log('[Auth] email auth error', err)
       setError(mapErr(err))
@@ -58,6 +102,7 @@ export function Auth({ onSuccess }: AuthProps) {
     setError('')
     setSuccess('')
     try {
+      await setPersistence(auth, browserLocalPersistence)
       const provider = new GoogleAuthProvider()
       await signInWithRedirect(auth, provider)
       setSuccess('Opening Google sign-in...')

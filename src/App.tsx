@@ -37,7 +37,7 @@ function App() {
       {/* Profile setup - shown first if not complete */}
       <Route 
         path="/setup" 
-        element={isSetupComplete ? <Navigate to="/" replace /> : <ProfileSetup />} 
+        element={<ProfileSetup />}
       />
       
       {/* Main app routes - KidsDashboard for young students, Home for older */}

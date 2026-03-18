@@ -70,6 +70,18 @@ export const useUserStore = create<UserState>()(
       name: 'user-profile',
       onRehydrateStorage: () => (state) => {
         if (state) {
+          const p = state.profile
+          const derivedComplete =
+            !!p &&
+            !!p.gender &&
+            !!p.age &&
+            !!p.grade &&
+            !!p.skillLevel &&
+            !!p.exam
+
+          if (derivedComplete && !state.isSetupComplete) {
+            state.isSetupComplete = true
+          }
           state.setHasHydrated(true)
         }
       }
