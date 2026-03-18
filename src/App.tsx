@@ -3,7 +3,6 @@ import { useUserStore } from './store/userStore'
 import { Layout } from './components/Layout'
 import { ProfileSetup } from './pages/ProfileSetup'
 import { Home } from './pages/Home'
-import { KidsDashboard } from './pages/KidsDashboard'
 import { PaperSelect } from './pages/PaperSelect'
 import { Exam } from './pages/Exam'
 import { Results } from './pages/Results'
@@ -17,7 +16,7 @@ import { MemoryGame } from './games/MemoryGame'
 import { Quiz } from './pages/Quiz'
 
 function App() {
-  const { profile, isSetupComplete, hasHydrated } = useUserStore()
+  const { isSetupComplete, hasHydrated } = useUserStore()
   
   // Wait for store to rehydrate from localStorage before making routing decisions
   if (!hasHydrated) {
@@ -27,13 +26,6 @@ function App() {
       </div>
     )
   }
-
-  // Determine if user should see kids dashboard (Grades LKG-8)
-  const isYoungStudent = profile?.grade && (
-    profile.grade.includes('LKG') || 
-    profile.grade.includes('UKG') ||
-    (profile.grade.includes('Grade') && parseInt(profile.grade.replace('Grade ', '')) <= 8)
-  )
 
   return (
     <Routes>
@@ -54,7 +46,7 @@ function App() {
         element={
           isSetupComplete ? (
             <Layout>
-              {isYoungStudent ? <KidsDashboard /> : <Home />}
+              <Home />
             </Layout>
           ) : (
             <ProfileSetup />
@@ -127,7 +119,7 @@ function App() {
       <Route 
         path="/game/word-search" 
         element={
-          isSetupComplete && isYoungStudent ? (
+          isSetupComplete ? (
             <WordSearchGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
@@ -137,7 +129,7 @@ function App() {
       <Route 
         path="/game/crossword" 
         element={
-          isSetupComplete && isYoungStudent ? (
+          isSetupComplete ? (
             <CrosswordGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
@@ -147,7 +139,7 @@ function App() {
       <Route 
         path="/game/find-odd" 
         element={
-          isSetupComplete && isYoungStudent ? (
+          isSetupComplete ? (
             <FindOddOneOut onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
@@ -157,7 +149,7 @@ function App() {
       <Route 
         path="/game/which-can" 
         element={
-          isSetupComplete && isYoungStudent ? (
+          isSetupComplete ? (
             <WhichOneCan onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
@@ -167,7 +159,7 @@ function App() {
       <Route 
         path="/game/memory" 
         element={
-          isSetupComplete && isYoungStudent ? (
+          isSetupComplete ? (
             <MemoryGame onComplete={() => {}} onExit={() => window.location.href = '/'} />
           ) : (
             <Navigate to="/" replace />
