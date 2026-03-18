@@ -125,7 +125,8 @@ export function Auth({ onSuccess }: AuthProps) {
         }
       } catch (popupErr: unknown) {
         if (debugKidsAuth) console.log('[Auth] google popup fallback error', popupErr)
-        // Keep the original error shown; popup errors are usually secondary.
+        const popupMapped = mapErr(popupErr)
+        setError(`${mapped} | ${popupMapped}`)
       }
     }
   }
