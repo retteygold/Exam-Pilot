@@ -112,7 +112,7 @@ export function GrammarBuilder({ onExit }: GrammarBuilderProps) {
   const isComplete = userOrder.length === currentQ.parts.length
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900 p-4 overflow-y-auto">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <button onClick={onExit} className="p-2 bg-slate-800/50 rounded-full"><ArrowLeft className="w-6 h-6 text-white" /></button>

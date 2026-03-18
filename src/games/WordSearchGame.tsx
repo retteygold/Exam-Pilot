@@ -263,8 +263,8 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 p-4">
-      <div className="max-w-2xl mx-auto">
+    <div className="min-h-screen bg-gradient-to-br from-emerald-900 via-teal-900 to-cyan-900 p-4 overflow-y-auto">
+      <div className="max-w-2xl mx-auto pb-20">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <button onClick={onExit} className="p-2 bg-slate-700/50 rounded-full hover:bg-slate-700 text-white">

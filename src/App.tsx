@@ -23,6 +23,7 @@ import { ReadingComprehension } from './games/ReadingComprehension'
 import { StoryBuilder } from './games/StoryBuilder'
 import { SoundDetective } from './games/SoundDetective'
 import { SpeakUp } from './games/SpeakUp'
+import { GameExitWrapper } from './components/GameExitWrapper'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
@@ -31,7 +32,6 @@ function App() {
   const [isAuthed, setIsAuthed] = useState(false)
   
   useEffect(() => {
-    // Check if user is authenticated based on local userId
     setIsAuthed(!!userId)
   }, [userId])
   
@@ -157,7 +157,9 @@ function App() {
         path="/game/word-search" 
         element={
           isAuthed && isSetupComplete ? (
-            <WordSearchGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <WordSearchGame onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -167,7 +169,9 @@ function App() {
         path="/game/crossword" 
         element={
           isAuthed && isSetupComplete ? (
-            <CrosswordGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <CrosswordGame onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -177,7 +181,9 @@ function App() {
         path="/game/find-odd" 
         element={
           isAuthed && isSetupComplete ? (
-            <FindOddOneOut onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <FindOddOneOut onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -187,7 +193,9 @@ function App() {
         path="/game/which-can" 
         element={
           isAuthed && isSetupComplete ? (
-            <WhichOneCan onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <WhichOneCan onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -197,7 +205,9 @@ function App() {
         path="/game/memory" 
         element={
           isAuthed && isSetupComplete ? (
-            <MemoryGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <MemoryGame onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -207,7 +217,9 @@ function App() {
         path="/game/math-blaster" 
         element={
           isAuthed && isSetupComplete ? (
-            <MathBlaster onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <MathBlaster onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -217,7 +229,9 @@ function App() {
         path="/game/spelling-sprint" 
         element={
           isAuthed && isSetupComplete ? (
-            <SpellingSprint onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <SpellingSprint onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -227,7 +241,9 @@ function App() {
         path="/game/grammar-builder" 
         element={
           isAuthed && isSetupComplete ? (
-            <GrammarBuilder onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <GrammarBuilder onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -237,7 +253,9 @@ function App() {
         path="/game/science-lab" 
         element={
           isAuthed && isSetupComplete ? (
-            <ScienceLab onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <ScienceLab onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -247,7 +265,9 @@ function App() {
         path="/game/geography-map" 
         element={
           isAuthed && isSetupComplete ? (
-            <MapExplorer onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <MapExplorer onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -257,7 +277,9 @@ function App() {
         path="/game/reading-comprehension" 
         element={
           isAuthed && isSetupComplete ? (
-            <ReadingComprehension onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <ReadingComprehension onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -267,7 +289,9 @@ function App() {
         path="/game/story-builder" 
         element={
           isAuthed && isSetupComplete ? (
-            <StoryBuilder onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <StoryBuilder onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -277,7 +301,9 @@ function App() {
         path="/game/sound-detective" 
         element={
           isAuthed && isSetupComplete ? (
-            <SoundDetective onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <SoundDetective onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
@@ -287,7 +313,9 @@ function App() {
         path="/game/speak-up" 
         element={
           isAuthed && isSetupComplete ? (
-            <SpeakUp onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+            <GameExitWrapper>
+              {({ onExit }) => <SpeakUp onComplete={() => {}} onExit={onExit} />}
+            </GameExitWrapper>
           ) : (
             <Navigate to="/" replace />
           )
