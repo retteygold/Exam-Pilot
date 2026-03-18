@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import { Gamepad2, Puzzle, Brain, Grid3X3, Zap, Trophy, Star, ArrowRight, Search, Eye, HelpCircle, BookOpen } from 'lucide-react'
+import { Gamepad2, Puzzle, Brain, Grid3X3, Zap, Trophy, Star, ArrowRight, Search, Eye, HelpCircle, BookOpen, Sparkles, Target } from 'lucide-react'
 
 interface GameCard {
   id: string
@@ -13,6 +13,51 @@ interface GameCard {
 
 const games: GameCard[] = [
   {
+    id: 'math-blaster',
+    title: 'Math Blaster',
+    description: 'Arcade math fun!',
+    icon: Gamepad2,
+    color: 'text-red-400',
+    bgGradient: 'from-red-500/20 to-orange-500/20',
+    points: 40
+  },
+  {
+    id: 'spelling-sprint',
+    title: 'Spelling Sprint',
+    description: 'Speed spelling!',
+    icon: Zap,
+    color: 'text-emerald-400',
+    bgGradient: 'from-emerald-500/20 to-teal-500/20',
+    points: 35
+  },
+  {
+    id: 'grammar-builder',
+    title: 'Grammar Builder',
+    description: 'Build sentences!',
+    icon: Puzzle,
+    color: 'text-indigo-400',
+    bgGradient: 'from-indigo-500/20 to-purple-500/20',
+    points: 35
+  },
+  {
+    id: 'science-lab',
+    title: 'Science Lab',
+    description: 'Fun experiments!',
+    icon: Sparkles,
+    color: 'text-cyan-400',
+    bgGradient: 'from-cyan-500/20 to-sky-500/20',
+    points: 35
+  },
+  {
+    id: 'geography-map',
+    title: 'Map Explorer',
+    description: 'Explore the world!',
+    icon: Target,
+    color: 'text-blue-400',
+    bgGradient: 'from-blue-500/20 to-indigo-500/20',
+    points: 35
+  },
+  {
     id: 'word-search',
     title: 'Word Search',
     description: 'Find hidden words!',
@@ -24,7 +69,7 @@ const games: GameCard[] = [
   {
     id: 'crossword',
     title: 'Crossword',
-    description: 'Solve word puzzles!',
+    description: 'Solve puzzles!',
     icon: Grid3X3,
     color: 'text-blue-400',
     bgGradient: 'from-blue-500/20 to-indigo-500/20',
@@ -42,7 +87,7 @@ const games: GameCard[] = [
   {
     id: 'find-odd',
     title: 'Find Odd One',
-    description: 'Spot the difference!',
+    description: 'Spot different!',
     icon: Eye,
     color: 'text-orange-400',
     bgGradient: 'from-orange-500/20 to-amber-500/20',
@@ -51,7 +96,7 @@ const games: GameCard[] = [
   {
     id: 'which-can',
     title: 'Which One Can?',
-    description: 'Pick what works!',
+    description: 'Pick correct!',
     icon: HelpCircle,
     color: 'text-violet-400',
     bgGradient: 'from-violet-500/20 to-fuchsia-500/20',
@@ -78,7 +123,13 @@ export function KidsQuickPlay() {
       'memory': '/game/memory',
       'find-odd': '/game/find-odd',
       'which-can': '/game/which-can',
-      'quiz': '/quiz'
+      'quiz': '/quiz',
+      // New games route to quiz for now
+      'math-blaster': '/quiz',
+      'spelling-sprint': '/quiz',
+      'grammar-builder': '/quiz',
+      'science-lab': '/quiz',
+      'geography-map': '/quiz'
     }
     const route = routes[gameId]
     if (route) navigate(route)

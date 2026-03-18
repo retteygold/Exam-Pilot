@@ -1,28 +1,22 @@
-import { useEffect } from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { SimpleAuth } from './pages/SimpleAuth'
 import { useUserStore } from './store/userStore'
-import { Layout } from './components/Layout'
-import { ProfileSetup } from './pages/ProfileSetup'
 import { Home } from './pages/Home'
+import { KidsQuickPlay } from './pages/KidsQuickPlay'
+import { Layout } from './components/Layout'
 import { PaperSelect } from './pages/PaperSelect'
 import { Exam } from './pages/Exam'
 import { Results } from './pages/Results'
 import { Stats } from './pages/Stats'
-import { Admin } from './pages/Admin'
-import { auth } from './lib/firebase'
-import { onAuthStateChanged } from 'firebase/auth'
-import { useState } from 'react'
 import { WordSearchGame } from './games/WordSearchGame'
 import { CrosswordGame } from './games/CrosswordGame'
 import { FindOddOneOut } from './games/FindOddOneOut'
 import { WhichOneCan } from './games/WhichOneCan'
 import { MemoryGame } from './games/MemoryGame'
 import { Quiz } from './pages/Quiz'
-import { KidsQuickPlay } from './pages/KidsQuickPlay'
+import { Routes, Route, Navigate } from 'react-router-dom'
 
 function App() {
-  const { userId, isSetupComplete, hasHydrated, setUserId, clearProfile } = useUserStore()
-  const [isAuthed, setIsAuthed] = useState<boolean>(!!auth.currentUser)
+  const { isSetupComplete, hasHydrated } = useUserStore()
   
   // Wait for store to rehydrate from localStorage before making routing decisions
   if (!hasHydrated) {
@@ -33,54 +27,17 @@ function App() {
     )
   }
 
-  useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (user) => {
-      const uid = user?.uid ?? null
-      setIsAuthed(!!uid)
-
-      if (!uid) {
-        // Logged out: keep local setup/profile so the same user doesn't redo setup after re-login.
-        setUserId(null)
-        return
-      }
-
-      // If a different account signs in, require setup again for that account.
-      if (userId && userId !== uid) {
-        clearProfile()
-        setUserId(uid)
-        return
-      }
-
-      // First login on this device
-      if (!userId) setUserId(uid)
-    })
-
-    return () => unsub()
-  }, [clearProfile, setUserId, userId])
-
   return (
     <Routes>
       <Route 
-        path="/admin"
-        element={<Admin />}
-      />
-
-      {/* Profile setup - shown first if not complete */}
-      <Route 
-        path="/setup" 
-        element={<ProfileSetup />}
-      />
-      
-      {/* Main app routes - KidsDashboard for young students, Home for older */}
-      <Route 
         path="/" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <Layout>
               <Home />
             </Layout>
           ) : (
-            <ProfileSetup />
+            <SimpleAuth />
           )
         } 
       />
@@ -88,7 +45,7 @@ function App() {
       <Route
         path="/kids"
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <Layout>
               <KidsQuickPlay />
             </Layout>
@@ -100,48 +57,48 @@ function App() {
       <Route 
         path="/papers" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <Layout>
               <PaperSelect />
             </Layout>
           ) : (
-            <Navigate to="/setup" replace />
+            <Navigate to="/" replace />
           )
         } 
       />
       <Route 
         path="/exam" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <Layout>
               <Exam />
             </Layout>
           ) : (
-            <Navigate to="/setup" replace />
+            <Navigate to="/" replace />
           )
         } 
       />
       <Route 
         path="/results" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <Layout>
               <Results />
             </Layout>
           ) : (
-            <Navigate to="/setup" replace />
+            <Navigate to="/" replace />
           )
         } 
       />
       <Route 
         path="/stats" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <Layout>
               <Stats />
             </Layout>
           ) : (
-            <Navigate to="/setup" replace />
+            <Navigate to="/" replace />
           )
         } 
       />
@@ -149,12 +106,12 @@ function App() {
       <Route 
         path="/quiz" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <Layout>
               <Quiz />
             </Layout>
           ) : (
-            <Navigate to="/setup" replace />
+            <Navigate to="/" replace />
           )
         } 
       />
@@ -163,7 +120,7 @@ function App() {
       <Route 
         path="/game/word-search" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <WordSearchGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
@@ -173,7 +130,7 @@ function App() {
       <Route 
         path="/game/crossword" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <CrosswordGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
@@ -183,7 +140,7 @@ function App() {
       <Route 
         path="/game/find-odd" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <FindOddOneOut onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
@@ -193,7 +150,7 @@ function App() {
       <Route 
         path="/game/which-can" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <WhichOneCan onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
@@ -203,7 +160,7 @@ function App() {
       <Route 
         path="/game/memory" 
         element={
-          isAuthed && isSetupComplete ? (
+          isSetupComplete ? (
             <MemoryGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
