@@ -124,12 +124,11 @@ export function KidsQuickPlay() {
       'find-odd': '/game/find-odd',
       'which-can': '/game/which-can',
       'quiz': '/quiz',
-      // New games route to quiz for now
-      'math-blaster': '/quiz',
-      'spelling-sprint': '/quiz',
-      'grammar-builder': '/quiz',
-      'science-lab': '/quiz',
-      'geography-map': '/quiz'
+      'math-blaster': '/game/math-blaster',
+      'spelling-sprint': '/game/spelling-sprint',
+      'grammar-builder': '/game/grammar-builder',
+      'science-lab': '/game/science-lab',
+      'geography-map': '/game/geography-map'
     }
     const route = routes[gameId]
     if (route) navigate(route)

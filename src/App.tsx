@@ -14,6 +14,11 @@ import { FindOddOneOut } from './games/FindOddOneOut'
 import { WhichOneCan } from './games/WhichOneCan'
 import { MemoryGame } from './games/MemoryGame'
 import { Quiz } from './pages/Quiz'
+import { MathBlaster } from './games/MathBlaster'
+import { SpellingSprint } from './games/SpellingSprint'
+import { GrammarBuilder } from './games/GrammarBuilder'
+import { ScienceLab } from './games/ScienceLab'
+import { MapExplorer } from './games/MapExplorer'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { auth } from './lib/firebase'
@@ -200,6 +205,56 @@ function App() {
         element={
           isAuthed && isSetupComplete ? (
             <MemoryGame onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/math-blaster" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <MathBlaster onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/spelling-sprint" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <SpellingSprint onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/grammar-builder" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <GrammarBuilder onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/science-lab" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <ScienceLab onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+      <Route 
+        path="/game/geography-map" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <MapExplorer onComplete={() => {}} onExit={() => window.location.href = '/kids'} />
           ) : (
             <Navigate to="/" replace />
           )
