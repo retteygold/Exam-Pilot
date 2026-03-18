@@ -73,6 +73,9 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
 
   const [success, setSuccess] = useState('')
 
+  const isProfileCompletion = authMode === 'google_profile'
+  const isSignupFlow = isRegistering || isProfileCompletion
+
   const { currentKid, loginWithEmail, registerWithEmail, loginWithGoogle, finishGoogleRedirectLogin, completeKidProfileForCurrentUser } = useKidsStore()
 
   useEffect(() => {
@@ -235,12 +238,12 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
             <Sparkles className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-3xl font-bold text-white mb-2">
-            {isRegistering ? 'Create Account' : 'Welcome Back!'}
+            {isSignupFlow ? 'Create Account' : 'Welcome Back!'}
           </h1>
           <p className="text-purple-200">
             {authMode === 'google_profile'
               ? 'Complete your profile to continue'
-              : (isRegistering ? 'Create an account with email or Google' : 'Sign in with email or Google')}
+              : (isSignupFlow ? 'Create an account with email or Google' : 'Sign in with email or Google')}
           </p>
         </div>
 
@@ -257,7 +260,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
             </div>
           )}
 
-          <form onSubmit={isRegistering ? handleRegister : handleLogin} className="space-y-4">
+          <form onSubmit={isSignupFlow ? handleRegister : handleLogin} className="space-y-4">
             <button
               type="button"
               onClick={handleGoogleLogin}
@@ -295,7 +298,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
               </>
             )}
 
-            {isRegistering && (
+            {isSignupFlow && (
               <>
                 <div>
                   <label className="block text-sm font-medium text-slate-300 mb-2">
@@ -376,7 +379,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
               type="submit"
               className="w-full py-4 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 rounded-2xl font-bold text-white text-lg flex items-center justify-center gap-2 transition-all duration-200 transform hover:scale-105 shadow-lg shadow-purple-500/30"
             >
-              {isRegistering ? (
+              {isSignupFlow ? (
                 <>
                   <UserPlus className="w-6 h-6" />
                   Create Account
@@ -400,7 +403,7 @@ export function KidsLogin({ onLogin, onBack }: KidsLoginProps) {
                 }}
                 className="w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-2xl font-bold text-white flex items-center justify-center gap-2 border border-slate-600 transition-colors"
               >
-                {isRegistering ? (
+                {isSignupFlow ? (
                   <>
                     <LogIn className="w-5 h-5" />
                     Already have an account? Login
