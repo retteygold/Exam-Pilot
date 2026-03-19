@@ -542,6 +542,24 @@ export function KidsDashboard() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-4">
+      {/* Cache Clear Button - Force Reload */}
+      <button
+        onClick={() => {
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.getRegistrations().then(regs => {
+              regs.forEach(r => r.unregister())
+            })
+          }
+          caches.keys().then(names => {
+            names.forEach(name => caches.delete(name))
+          })
+          window.location.reload(true)
+        }}
+        className="w-full mb-4 py-2 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg text-sm"
+      >
+        ⚠️ CLICK TO UPDATE - Load New Version ⚠️
+      </button>
+
       {/* Header with Stars & Streak */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-3">
