@@ -53,6 +53,9 @@ build/
 # Scripts (exclude from deploy)
 scripts/
 
+!scripts/migrateToFirebase.ts
+!scripts/upload_to_firebase.mjs
+
 # Questions data (now in Firebase)
 public/questions/
 
