@@ -472,13 +472,14 @@ export function KidsDashboard() {
 
   const stats = currentKid ? getKidStats(currentKid.id) : { totalStars: 0, totalSessions: 0, bestStreak: 0 }
 
+  const sessions = useKidsStore((state) => state.sessions)
+
   const kidXp = useMemo(() => {
     if (!currentKid) return 0
-    const all = useKidsStore.getState().sessions
-    return all
+    return sessions
       .filter(s => s.kidId === currentKid.id)
       .reduce((sum, s) => sum + (s.score || 0), 0)
-  }, [currentKid, useKidsStore.getState().sessions.length])
+  }, [currentKid, sessions])
 
   const xpPerLevel = 500
   const xpLevel = Math.max(1, Math.floor(kidXp / xpPerLevel) + 1)
