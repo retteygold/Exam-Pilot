@@ -285,16 +285,23 @@ export function KidsDashboard() {
   const [gradeTopper, setGradeTopper] = useState<{ kidName: string; kidAvatar: string; kidFlag?: string; overallScore: number } | null>(null)
 
   const handleGameComplete = async (score: number, stars: number) => {
+    console.log('[DEBUG] handleGameComplete called - score:', score, 'stars:', stars, 'activeGame:', activeGame)
     if (currentKid && recordSession) {
-      await recordSession({
-        gameType: activeGame || 'unknown',
-        level: activeLevel,
-        score,
-        starsEarned: stars,
-        correctAnswers: Math.floor(score / 10),
-        totalQuestions: 10,
-        durationSeconds: 120
-      })
+      console.log('[DEBUG] Recording session for kid:', currentKid.id)
+      try {
+        await recordSession({
+          gameType: activeGame || 'unknown',
+          level: activeLevel,
+          score,
+          starsEarned: stars,
+          correctAnswers: Math.floor(score / 10),
+          totalQuestions: 10,
+          durationSeconds: 120
+        })
+        console.log('[DEBUG] Session recorded successfully')
+      } catch (error) {
+        console.error('[DEBUG] Failed to record session:', error)
+      }
 
       if (skillPath?.mode === 'skill_path_rotate') {
         const nextGameId = getSkillPathCurrentGameId()
@@ -307,6 +314,8 @@ export function KidsDashboard() {
           return
         }
       }
+    } else {
+      console.log('[DEBUG] Cannot record session - currentKid:', !!currentKid, 'recordSession:', !!recordSession)
     }
     setActiveGame(null)
   }
@@ -474,11 +483,19 @@ export function KidsDashboard() {
 
   const sessions = useKidsStore((state) => state.sessions)
 
+  // Debug logging
+  useEffect(() => {
+    console.log('[DEBUG] KidsDashboard - currentKid:', currentKid?.id, currentKid?.name)
+    console.log('[DEBUG] KidsDashboard - sessions count:', sessions.length)
+    console.log('[DEBUG] KidsDashboard - sessions for current kid:', sessions.filter(s => s.kidId === currentKid?.id).length)
+  }, [currentKid, sessions])
+
   const kidXp = useMemo(() => {
     if (!currentKid) return 0
-    return sessions
-      .filter(s => s.kidId === currentKid.id)
-      .reduce((sum, s) => sum + (s.score || 0), 0)
+    const kidSessions = sessions.filter(s => s.kidId === currentKid.id)
+    const total = kidSessions.reduce((sum, s) => sum + (s.score || 0), 0)
+    console.log('[DEBUG] Calculating XP - kidId:', currentKid.id, 'sessions:', kidSessions.length, 'totalXP:', total)
+    return total
   }, [currentKid, sessions])
 
   const xpPerLevel = 500
@@ -573,39 +590,51 @@ export function KidsDashboard() {
         </div>
       </button>
 
-      {/* Online Challenge Buttons */}
+      {/* Online Challenge Section */}
+      <div className="mb-2">
+        <h2 className="text-sm font-bold text-white mb-2 flex items-center gap-2">
+          <Zap className="w-4 h-4 text-yellow-400" />
+          Online Challenge
+        </h2>
+      </div>
       <div className="grid grid-cols-2 gap-3 mb-6">
         <button
           type="button"
-          onClick={() => navigate('/challenge?mode=friends')}
-          className="p-4 rounded-2xl bg-gradient-to-br from-yellow-500/20 to-orange-500/20 border border-yellow-500/30 hover:border-yellow-400/60 transition-colors text-left"
+          onClick={() => {
+            console.log('[DEBUG] Navigating to Friend Battle')
+            navigate('/challenge?mode=friends')
+          }}
+          className="p-4 rounded-2xl bg-gradient-to-br from-yellow-500 to-orange-500 border-2 border-yellow-400 hover:scale-105 transition-all text-left shadow-lg shadow-yellow-500/20"
         >
           <div className="flex items-center gap-3 mb-2">
-            <div className="w-10 h-10 bg-yellow-500/30 rounded-xl flex items-center justify-center">
-              <Users className="w-5 h-5 text-yellow-400" />
+            <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+              <Users className="w-5 h-5 text-white" />
             </div>
             <div className="text-right flex-1">
-              <span className="text-xs text-yellow-300">Challenge</span>
+              <span className="text-xs text-white/80 font-bold">BATTLE</span>
             </div>
           </div>
           <h3 className="font-bold text-white text-sm">Friend Battle</h3>
-          <p className="text-xs text-white/60 mt-1">Invite & compete</p>
+          <p className="text-xs text-white/80 mt-1">Invite & compete</p>
         </button>
         <button
           type="button"
-          onClick={() => navigate('/challenge?mode=random')}
-          className="p-4 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 border border-purple-500/30 hover:border-purple-400/60 transition-colors text-left"
+          onClick={() => {
+            console.log('[DEBUG] Navigating to Random Match')
+            navigate('/challenge?mode=random')
+          }}
+          className="p-4 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 border-2 border-purple-400 hover:scale-105 transition-all text-left shadow-lg shadow-purple-500/20"
         >
           <div className="flex items-center gap-3 mb-2">
-            <div className="w-10 h-10 bg-purple-500/30 rounded-xl flex items-center justify-center">
-              <Zap className="w-5 h-5 text-purple-400" />
+            <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
+              <Zap className="w-5 h-5 text-white" />
             </div>
             <div className="text-right flex-1">
-              <span className="text-xs text-purple-300">Quick</span>
+              <span className="text-xs text-white/80 font-bold">QUICK</span>
             </div>
           </div>
           <h3 className="font-bold text-white text-sm">Random Match</h3>
-          <p className="text-xs text-white/60 mt-1">Play vs stranger</p>
+          <p className="text-xs text-white/80 mt-1">Play vs stranger</p>
         </button>
       </div>
 
