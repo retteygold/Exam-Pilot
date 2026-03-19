@@ -24,6 +24,11 @@ A **React + TypeScript** web app for students from **LKG/UKG through Grade 12**.
     - Overall leaderboard (all games combined)
     - Grade topper (top 1 per grade)
   - Country selection on kids profile (country + flag)
+  - **Online Challenge (NEW)**
+    - Friend Battle: Generate invite code, share, compete in real-time
+    - Random Match: Get matched with online players of similar skill
+    - Real-time score sync during gameplay
+    - Live opponent progress bar
 - **Exam practice (Grade 9–12)**
   - Practice / exam-style quiz flow
   - Results + stats

@@ -32,6 +32,14 @@ All notable changes to this project will be documented in this file.
   - questions loaded from Firestore `questions` collection
 - Cloudinary client upload support for question images (via unsigned upload preset).
 
+### Online Challenge (Phase 1)
+- Real-time multiplayer challenge system architecture.
+- Firestore collections: `challengeRooms`, `matchmakingQueue`, `challengeResults`.
+- Challenge service with invite codes, room management, and matchmaking.
+- ChallengeLobby UI component for pre-game lobby (friends + random modes).
+- Firestore security rules for challenge collections.
+- KidsDashboard integration with "Friend Battle" and "Random Match" buttons.
+
 ### Fixed
 - Setup page scrolling and bottom button visibility.
 - Admin page TypeScript build issues.
