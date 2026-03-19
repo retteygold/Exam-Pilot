@@ -567,8 +567,8 @@ export function KidsDashboard() {
             {currentKid!.avatar}
           </div>
           <div>
-            <h1 className="text-xl font-bold text-white">Hi {currentKid!.name}!</h1>
-            <p className="text-xs text-purple-200">{gradeLabel} <span className="text-[10px] text-slate-400 ml-2">v2.1</span></p>
+            <h1 className="text-xl font-bold text-white">Kids Zone v2.1</h1>
+            <p className="text-xs text-purple-200">Fun learning games! [UPDATED]</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
