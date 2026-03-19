@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { BookOpen, Clock, Target, Award, FileText, Calendar, User, Beaker, Calculator, CheckCircle } from 'lucide-react'
 import { useExamStore } from '../store/examStore'
@@ -41,6 +41,11 @@ function normalizeSubjectKey(subject: string | undefined | null): string {
   
   // Remove "unknown" prefix and clean up
   s = s.replace(/^unknown\s+/, '')
+
+  // Normalize common separators early
+  s = s.replace(/-/g, '_')
+  s = s.replace(/\s+/g, '_')
+  s = s.replace(/_+/g, '_')
   
   // Handle olevel/igcse/as variations with/without underscore
   if (s.includes('olevel')) {
@@ -53,12 +58,10 @@ function normalizeSubjectKey(subject: string | undefined | null): string {
     s = s.replace('as ', 'as_')
   }
   
-  // Handle hyphen to underscore
-  s = s.replace(/-/g, '_')
-
-  // Normalize spaces and multiple underscores
-  s = s.replace(/\s+/g, '_')
-  s = s.replace(/_+/g, '_')
+  // Canonicalize: if subject has no level prefix, treat it as O-Level
+  if (!s.startsWith('o_level_') && !s.startsWith('igcse_') && !s.startsWith('as_')) {
+    s = `o_level_${s}`
+  }
   
   return s
 }
@@ -71,6 +74,7 @@ export function PaperSelect() {
   
   const [papers, setPapers] = useState<Paper[]>([])
   const [questions, setQuestions] = useState<Question[]>([])
+  const [allQuestions, setAllQuestions] = useState<Question[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedMode, setSelectedMode] = useState<'practice' | 'exam'>('practice')
   const [recommendedDifficulty, setRecommendedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium')
@@ -85,79 +89,12 @@ export function PaperSelect() {
 
   useEffect(() => {
     setRecommendedDifficulty(getRecommendedDifficulty())
- 
-    const compute = (allQuestions: Question[]) => {
-      console.log('[DEBUG] PaperSelect compute - total questions:', allQuestions.length)
-      if (allQuestions.length > 0) {
-        console.log('[DEBUG] First question subject:', allQuestions[0].subject)
-        console.log('[DEBUG] First question source:', allQuestions[0].source)
-      }
-      
-      const stats: {[key: string]: {total: number, verified: number}} = {}
-      const bySubject: {[key: string]: Question[]} = {}
-      allQuestions.forEach((q) => {
-        const s = normalizeSubjectKey(q.subject)
-        bySubject[s] = bySubject[s] || []
-        bySubject[s].push(q)
-      })
-      
-      console.log('[DEBUG] bySubject keys:', Object.keys(bySubject))
-      console.log('[DEBUG] SUBJECT_META keys:', Object.keys(SUBJECT_META))
+  }, [getRecommendedDifficulty])
 
-      ;(Object.keys(SUBJECT_META) as Array<keyof typeof SUBJECT_META>).forEach((s) => {
-        const list = bySubject[s] || []
-        stats[String(s)] = {
-          total: list.length,
-          verified: list.filter((q) => q.verified).length
-        }
-      })
-
-      const filtered = allQuestions.filter((q: Question) => {
-        const questionDifficulty = q.difficulty || 'medium'
-        const difficultyMatch = selectedMode === 'exam' ? true :
-          recommendedDifficulty === 'easy' ? questionDifficulty === 'easy' :
-          recommendedDifficulty === 'hard' ? questionDifficulty !== 'easy' :
-          true
-        return difficultyMatch
-      })
-
-      setQuestions(filtered)
-      setSubjectData(stats)
-
-      const paperMap = new Map<string, Paper>()
-      filtered.forEach((q: Question) => {
-        const source = q.source || {}
-        const subject = normalizeSubjectKey(q.subject)
-        const meta = SUBJECT_META[subject] || { name: subject, code: subject, timeAllowed: 60 }
-        const code = meta.code
-        const key = `${subject}_${source.pdf || 'unknown'}_${source.year}_${source.session}_${source.paper}`
-
-        if (!paperMap.has(key)) {
-          paperMap.set(key, {
-            id: key,
-            subject: subject,
-            subjectName: meta.name,
-            code: code,
-            year: source.year || 2020,
-            session: source.session || 'May/June',
-            paper: source.paper || '11',
-            totalQuestions: 0,
-            timeAllowed: meta.timeAllowed,
-            verifiedCount: 0
-          })
-        }
-
-        const paper = paperMap.get(key)!
-        paper.totalQuestions++
-        if (q.verified) paper.verifiedCount++
-      })
-
-      setPapers(Array.from(paperMap.values()).sort((a, b) => b.year - a.year))
-      setLoading(false)
-    }
-
+  useEffect(() => {
     const loadQuestions = async () => {
       try {
+        setLoading(true)
         const pageSize = 1000
         const all: Question[] = []
         let lastDoc: any = undefined
@@ -170,18 +107,95 @@ export function PaperSelect() {
           if (all.length >= 30000) break
         }
 
-        compute(all)
+        setAllQuestions(all)
       } catch (error) {
         console.error('Failed to load questions from Firebase:', error)
-        // Fallback to empty state
-        setQuestions([])
-        setPapers([])
+        setAllQuestions([])
+      } finally {
         setLoading(false)
       }
     }
-    
+
     loadQuestions()
-  }, [getRecommendedDifficulty, recommendedDifficulty, selectedMode])
+  }, [])
+
+  const computed = useMemo(() => {
+    console.log('[DEBUG] PaperSelect compute - total questions:', allQuestions.length)
+    if (allQuestions.length > 0) {
+      console.log('[DEBUG] First question subject:', allQuestions[0].subject)
+      console.log('[DEBUG] First question source:', allQuestions[0].source)
+    }
+
+    const stats: { [key: string]: { total: number; verified: number } } = {}
+    const bySubject: { [key: string]: Question[] } = {}
+    allQuestions.forEach((q) => {
+      const s = normalizeSubjectKey(q.subject)
+      bySubject[s] = bySubject[s] || []
+      bySubject[s].push(q)
+    })
+
+    console.log('[DEBUG] bySubject keys:', Object.keys(bySubject))
+    console.log('[DEBUG] SUBJECT_META keys:', Object.keys(SUBJECT_META))
+
+    ;(Object.keys(SUBJECT_META) as Array<keyof typeof SUBJECT_META>).forEach((s) => {
+      const list = bySubject[s] || []
+      stats[String(s)] = {
+        total: list.length,
+        verified: list.filter((q) => q.verified).length
+      }
+    })
+
+    const filtered = allQuestions.filter((q: Question) => {
+      const questionDifficulty = q.difficulty || 'medium'
+      const difficultyMatch =
+        selectedMode === 'exam'
+          ? true
+          : recommendedDifficulty === 'easy'
+            ? questionDifficulty === 'easy'
+            : recommendedDifficulty === 'hard'
+              ? questionDifficulty !== 'easy'
+              : true
+      return difficultyMatch
+    })
+
+    const paperMap = new Map<string, Paper>()
+    filtered.forEach((q: Question) => {
+      const source = q.source || {}
+      const subject = normalizeSubjectKey(q.subject)
+      const meta = SUBJECT_META[subject] || { name: subject, code: subject, timeAllowed: 60 }
+      const code = meta.code
+      const key = `${subject}_${source.pdf || 'unknown'}_${source.year}_${source.session}_${source.paper}`
+
+      if (!paperMap.has(key)) {
+        paperMap.set(key, {
+          id: key,
+          subject: subject,
+          subjectName: meta.name,
+          code: code,
+          year: source.year || 2020,
+          session: source.session || 'May/June',
+          paper: source.paper || '11',
+          totalQuestions: 0,
+          timeAllowed: meta.timeAllowed,
+          verifiedCount: 0
+        })
+      }
+
+      const paper = paperMap.get(key)!
+      paper.totalQuestions++
+      if (q.verified) paper.verifiedCount++
+    })
+
+    const papers = Array.from(paperMap.values()).sort((a, b) => b.year - a.year)
+
+    return { stats, filtered, papers }
+  }, [allQuestions, recommendedDifficulty, selectedMode])
+
+  useEffect(() => {
+    setQuestions(computed.filtered)
+    setSubjectData(computed.stats)
+    setPapers(computed.papers)
+  }, [computed])
 
   const handleStart = (paper: Paper) => {
     const paperQuestions = questions.filter((q: Question) => {
