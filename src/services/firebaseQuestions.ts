@@ -109,6 +109,8 @@ export async function getQuestions(
   pageSize: number = 100,
   lastDoc?: QueryDocumentSnapshot
 ): Promise<{ questions: Question[]; lastDoc: QueryDocumentSnapshot | null }> {
+  console.log('[DEBUG] getQuestions called with filters:', filters)
+  
   let q = query(
     collection(db, QUESTIONS_COLLECTION),
     orderBy('createdAt', 'desc'),
@@ -117,15 +119,19 @@ export async function getQuestions(
   
   // Apply filters
   if (filters?.subject) {
+    console.log('[DEBUG] Adding subject filter:', filters.subject)
     q = query(q, where('subject', '==', filters.subject))
   }
   if (filters?.yearGroup) {
+    console.log('[DEBUG] Adding yearGroup filter:', filters.yearGroup)
     q = query(q, where('yearGroup', '==', filters.yearGroup))
   }
   if (filters?.difficulty) {
+    console.log('[DEBUG] Adding difficulty filter:', filters.difficulty)
     q = query(q, where('difficulty', '==', filters.difficulty))
   }
   if (filters?.verified !== undefined) {
+    console.log('[DEBUG] Adding verified filter:', filters.verified)
     q = query(q, where('verified', '==', filters.verified))
   }
   
@@ -133,15 +139,25 @@ export async function getQuestions(
     q = query(q, startAfter(lastDoc))
   }
   
-  const snapshot = await getDocs(q)
-  const questions = snapshot.docs.map((doc) => ({
-    ...doc.data(),
-    id: doc.id
-  })) as Question[]
-  
-  const newLastDoc = snapshot.docs[snapshot.docs.length - 1] || null
-  
-  return { questions, lastDoc: newLastDoc }
+  try {
+    console.log('[DEBUG] Executing Firestore query...')
+    const snapshot = await getDocs(q)
+    console.log('[DEBUG] Query returned', snapshot.docs.length, 'documents')
+    
+    const questions = snapshot.docs.map((doc) => ({
+      ...doc.data(),
+      id: doc.id
+    })) as Question[]
+    
+    console.log('[DEBUG] First 3 questions:', questions.slice(0, 3))
+    
+    const newLastDoc = snapshot.docs[snapshot.docs.length - 1] || null
+    
+    return { questions, lastDoc: newLastDoc }
+  } catch (error) {
+    console.error('[DEBUG] Firestore query error:', error)
+    throw error
+  }
 }
 
 /**
