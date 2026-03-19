@@ -248,6 +248,17 @@ const achievements = [
 ]
 
 export function KidsDashboard() {
+  // Force unregister service worker to clear stale cache
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(regs => {
+        for (const reg of regs) {
+          console.log('[VERSION] Unregistering service worker to force update')
+          reg.unregister()
+        }
+      })
+    }
+  }, [])
   const debugKidsAuth = typeof window !== 'undefined' && window.localStorage?.getItem('debugKidsAuth') === '1'
   const navigate = useNavigate()
   const { profile } = useUserStore()
@@ -539,7 +550,7 @@ export function KidsDashboard() {
           </div>
           <div>
             <h1 className="text-xl font-bold text-white">Hi {currentKid!.name}!</h1>
-            <p className="text-xs text-purple-200">{gradeLabel}</p>
+            <p className="text-xs text-purple-200">{gradeLabel} <span className="text-[10px] text-slate-400 ml-2">v2.1</span></p>
           </div>
         </div>
         <div className="flex items-center gap-2">
