@@ -24,11 +24,16 @@ const SUBJECT_META: Record<string, { name: string; code: string; timeAllowed: nu
   o_level_accounting: { name: 'Accounting', code: '7707', timeAllowed: 45, badge: 'O-Level' },
   biology: { name: 'Biology', code: '5090', timeAllowed: 60, badge: 'O-Level' },
   o_level_biology: { name: 'Biology', code: '5090', timeAllowed: 60, badge: 'O-Level' },
+  o_level_mathematics: { name: 'Mathematics', code: '0580', timeAllowed: 90, badge: 'O-Level' },
+  o_level_physics: { name: 'Physics', code: '0625', timeAllowed: 60, badge: 'O-Level' },
+  as_accounting: { name: 'Accounting', code: 'WAC11', timeAllowed: 75, badge: 'AS' },
+  as_business: { name: 'Business', code: 'WBS11', timeAllowed: 75, badge: 'AS' },
+  as_economics: { name: 'Economics', code: 'WEC11', timeAllowed: 75, badge: 'AS' },
+  as_mathematics: { name: 'Mathematics', code: 'WMA11', timeAllowed: 75, badge: 'AS' },
+  as_physics: { name: 'Physics', code: 'WPH11', timeAllowed: 75, badge: 'AS' },
+  as_travel_tourism: { name: 'Travel & Tourism', code: '9395', timeAllowed: 75, badge: 'AS' },
   igcse_biology: { name: 'Biology', code: '0610', timeAllowed: 45, badge: 'IGCSE' },
   as_biology: { name: 'Biology', code: 'WBI11', timeAllowed: 75, badge: 'AS' },
-  as_economics: { name: 'Economics', code: '9708', timeAllowed: 75, badge: 'AS' },
-  as_mathematics: { name: 'Mathematics', code: '9709', timeAllowed: 75, badge: 'AS' },
-  as_physics: { name: 'Physics', code: '9702', timeAllowed: 75, badge: 'AS' },
 }
 
 function normalizeSubjectKey(subject: string | undefined | null): string {
@@ -50,6 +55,10 @@ function normalizeSubjectKey(subject: string | undefined | null): string {
   
   // Handle hyphen to underscore
   s = s.replace(/-/g, '_')
+
+  // Normalize spaces and multiple underscores
+  s = s.replace(/\s+/g, '_')
+  s = s.replace(/_+/g, '_')
   
   return s
 }
@@ -149,9 +158,19 @@ export function PaperSelect() {
 
     const loadQuestions = async () => {
       try {
-        const { questions: firebaseQuestions } = await getQuestions({}, 500)
-        
-        compute(firebaseQuestions)
+        const pageSize = 1000
+        const all: Question[] = []
+        let lastDoc: any = undefined
+
+        for (;;) {
+          const res = await getQuestions({}, pageSize, lastDoc)
+          all.push(...res.questions)
+          lastDoc = res.lastDoc || undefined
+          if (res.questions.length < pageSize || !lastDoc) break
+          if (all.length >= 30000) break
+        }
+
+        compute(all)
       } catch (error) {
         console.error('Failed to load questions from Firebase:', error)
         // Fallback to empty state
@@ -267,117 +286,28 @@ export function PaperSelect() {
       <div className="p-4 bg-slate-800 rounded-2xl">
         <h2 className="text-lg font-semibold mb-4">Select Subject</h2>
         <div className="grid grid-cols-2 gap-3">
-          <button
-            onClick={() => setSelectedSubject('o_level_accounting')}
-            className={`p-4 rounded-xl text-left transition-colors ${
-              selectedSubject === 'o_level_accounting'
-                ? 'bg-blue-500 text-white'
-                : 'bg-slate-700 hover:bg-slate-600'
-            }`}
-          >
-            <Calculator className="w-5 h-5 mb-2" />
-            <div className="font-semibold">Accounting</div>
-            <div className="text-xs opacity-60 mt-1">
-              {subjectData.o_level_accounting?.total || 0} questions • {subjectData.o_level_accounting?.verified || 0} verified
-            </div>
-            <div className="text-[10px] opacity-60 mt-1">O-Level • 7707</div>
-          </button>
-          
-          <button
-            onClick={() => setSelectedSubject('o_level_biology')}
-            className={`p-4 rounded-xl text-left transition-colors ${
-              selectedSubject === 'o_level_biology'
-                ? 'bg-green-500 text-white'
-                : 'bg-slate-700 hover:bg-slate-600'
-            }`}
-          >
-            <Beaker className="w-5 h-5 mb-2" />
-            <div className="font-semibold">Biology</div>
-            <div className="text-xs opacity-60 mt-1">
-              {subjectData.o_level_biology?.total || 0} questions • {subjectData.o_level_biology?.verified || 0} verified
-            </div>
-            <div className="text-[10px] opacity-60 mt-1">O-Level • 5090</div>
-          </button>
-
-          <button
-            onClick={() => setSelectedSubject('igcse_biology')}
-            className={`p-4 rounded-xl text-left transition-colors ${
-              selectedSubject === 'igcse_biology'
-                ? 'bg-emerald-500 text-white'
-                : 'bg-slate-700 hover:bg-slate-600'
-            }`}
-          >
-            <Beaker className="w-5 h-5 mb-2" />
-            <div className="font-semibold">Biology</div>
-            <div className="text-xs opacity-60 mt-1">
-              {subjectData.igcse_biology?.total || 0} questions • {subjectData.igcse_biology?.verified || 0} verified
-            </div>
-            <div className="text-[10px] opacity-60 mt-1">IGCSE • 0610</div>
-          </button>
-
-          <button
-            onClick={() => setSelectedSubject('as_biology')}
-            className={`p-4 rounded-xl text-left transition-colors ${
-              selectedSubject === 'as_biology'
-                ? 'bg-purple-500 text-white'
-                : 'bg-slate-700 hover:bg-slate-600'
-            }`}
-          >
-            <Beaker className="w-5 h-5 mb-2" />
-            <div className="font-semibold">Biology</div>
-            <div className="text-xs opacity-60 mt-1">
-              {subjectData.as_biology?.total || 0} questions • {subjectData.as_biology?.verified || 0} verified
-            </div>
-            <div className="text-[10px] opacity-60 mt-1">AS • WBI11</div>
-          </button>
-
-          <button
-            onClick={() => setSelectedSubject('as_mathematics')}
-            className={`p-4 rounded-xl text-left transition-colors ${
-              selectedSubject === 'as_mathematics'
-                ? 'bg-indigo-500 text-white'
-                : 'bg-slate-700 hover:bg-slate-600'
-            }`}
-          >
-            <Calculator className="w-5 h-5 mb-2" />
-            <div className="font-semibold">Mathematics</div>
-            <div className="text-xs opacity-60 mt-1">
-              {subjectData.as_mathematics?.total || 0} questions • {subjectData.as_mathematics?.verified || 0} verified
-            </div>
-            <div className="text-[10px] opacity-60 mt-1">AS • 9709</div>
-          </button>
-
-          <button
-            onClick={() => setSelectedSubject('as_physics')}
-            className={`p-4 rounded-xl text-left transition-colors ${
-              selectedSubject === 'as_physics'
-                ? 'bg-cyan-500 text-white'
-                : 'bg-slate-700 hover:bg-slate-600'
-            }`}
-          >
-            <Beaker className="w-5 h-5 mb-2" />
-            <div className="font-semibold">Physics</div>
-            <div className="text-xs opacity-60 mt-1">
-              {subjectData.as_physics?.total || 0} questions • {subjectData.as_physics?.verified || 0} verified
-            </div>
-            <div className="text-[10px] opacity-60 mt-1">AS • 9702</div>
-          </button>
-
-          <button
-            onClick={() => setSelectedSubject('as_economics')}
-            className={`p-4 rounded-xl text-left transition-colors ${
-              selectedSubject === 'as_economics'
-                ? 'bg-amber-500 text-white'
-                : 'bg-slate-700 hover:bg-slate-600'
-            }`}
-          >
-            <BookOpen className="w-5 h-5 mb-2" />
-            <div className="font-semibold">Economics</div>
-            <div className="text-xs opacity-60 mt-1">
-              {subjectData.as_economics?.total || 0} questions • {subjectData.as_economics?.verified || 0} verified
-            </div>
-            <div className="text-[10px] opacity-60 mt-1">AS • 9708</div>
-          </button>
+          {Object.entries(SUBJECT_META).map(([key, meta]) => {
+            const Icon = key.includes('accounting') || key.includes('math') ? Calculator : key.includes('economics') || key.includes('business') || key.includes('travel') ? BookOpen : Beaker
+            const activeColor = key.includes('accounting') ? 'bg-blue-500' : key.includes('math') ? 'bg-indigo-500' : key.includes('economics') ? 'bg-amber-500' : key.includes('physics') ? 'bg-cyan-500' : key.includes('travel') ? 'bg-pink-500' : 'bg-green-500'
+            return (
+              <button
+                key={key}
+                onClick={() => setSelectedSubject(key)}
+                className={`p-4 rounded-xl text-left transition-colors ${
+                  selectedSubject === key
+                    ? `${activeColor} text-white`
+                    : 'bg-slate-700 hover:bg-slate-600'
+                }`}
+              >
+                <Icon className="w-5 h-5 mb-2" />
+                <div className="font-semibold">{meta.name}</div>
+                <div className="text-xs opacity-60 mt-1">
+                  {subjectData[key]?.total || 0} questions • {subjectData[key]?.verified || 0} verified
+                </div>
+                <div className="text-[10px] opacity-60 mt-1">{meta.badge || 'Subject'} • {meta.code}</div>
+              </button>
+            )
+          })}
         </div>
       </div>
       <div className="p-4 bg-slate-800 rounded-2xl">
