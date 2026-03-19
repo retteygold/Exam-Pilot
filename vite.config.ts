@@ -7,6 +7,11 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
+      workbox: {
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true
+      },
       manifest: {
         name: 'Exam Pilot',
         short_name: 'Exam Pilot',
