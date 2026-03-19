@@ -20,20 +20,20 @@ interface Paper {
 }
 
 const SUBJECT_META: Record<string, { name: string; code: string; timeAllowed: number; badge?: string }> = {
-  accounting: { name: 'Accounting', code: '7707', timeAllowed: 45, badge: 'O-Level' },
+  // O-Level (4 subjects)
   o_level_accounting: { name: 'Accounting', code: '7707', timeAllowed: 45, badge: 'O-Level' },
-  biology: { name: 'Biology', code: '5090', timeAllowed: 60, badge: 'O-Level' },
   o_level_biology: { name: 'Biology', code: '5090', timeAllowed: 60, badge: 'O-Level' },
   o_level_mathematics: { name: 'Mathematics', code: '0580', timeAllowed: 90, badge: 'O-Level' },
   o_level_physics: { name: 'Physics', code: '0625', timeAllowed: 60, badge: 'O-Level' },
-  as_accounting: { name: 'Accounting', code: 'WAC11', timeAllowed: 75, badge: 'AS' },
-  as_business: { name: 'Business', code: 'WBS11', timeAllowed: 75, badge: 'AS' },
-  as_economics: { name: 'Economics', code: 'WEC11', timeAllowed: 75, badge: 'AS' },
-  as_mathematics: { name: 'Mathematics', code: 'WMA11', timeAllowed: 75, badge: 'AS' },
-  as_physics: { name: 'Physics', code: 'WPH11', timeAllowed: 75, badge: 'AS' },
-  as_travel_tourism: { name: 'Travel & Tourism', code: '9395', timeAllowed: 75, badge: 'AS' },
-  igcse_biology: { name: 'Biology', code: '0610', timeAllowed: 45, badge: 'IGCSE' },
-  as_biology: { name: 'Biology', code: 'WBI11', timeAllowed: 75, badge: 'AS' },
+
+  // AS/A-Level (7 subjects)
+  as_accounting: { name: 'Accounting', code: 'WAC11-14', timeAllowed: 75, badge: 'AS/A-Level' },
+  as_biology: { name: 'Biology', code: 'WBI11-12', timeAllowed: 75, badge: 'AS/A-Level' },
+  as_business: { name: 'Business', code: 'WBS11-14', timeAllowed: 75, badge: 'AS/A-Level' },
+  as_economics: { name: 'Economics', code: 'WEC11-14', timeAllowed: 75, badge: 'AS/A-Level' },
+  as_mathematics: { name: 'Mathematics', code: 'WMA11', timeAllowed: 75, badge: 'AS/A-Level' },
+  as_physics: { name: 'Physics', code: 'WPH11', timeAllowed: 75, badge: 'AS/A-Level' },
+  as_travel_tourism: { name: 'Travel & Tourism', code: '9395', timeAllowed: 75, badge: 'AS/A-Level' }
 }
 
 function normalizeSubjectKey(subject: string | undefined | null): string {
@@ -57,11 +57,34 @@ function normalizeSubjectKey(subject: string | undefined | null): string {
   if (s.includes('as ') && !s.startsWith('as_')) {
     s = s.replace('as ', 'as_')
   }
+
+  // Normalize legacy patterns coming from imports
+  if (s.startsWith('as_a_level_')) {
+    s = s.replace('as_a_level_', 'as_')
+  }
+
+  // Remove extra suffixes that create duplicates (e.g. as_biology_oct, as_chemistry_oct)
+  s = s.replace(/_oct$/g, '')
+
+  // Collapse subject variants like as_biology_wbi11 -> as_biology
+  if (s.startsWith('as_biology')) s = 'as_biology'
+  if (s.startsWith('as_accounting')) s = 'as_accounting'
+  if (s.startsWith('as_business')) s = 'as_business'
+  if (s.startsWith('as_economics')) s = 'as_economics'
+  if (s.startsWith('as_mathematics')) s = 'as_mathematics'
+  if (s.startsWith('as_physics')) s = 'as_physics'
+  if (s.startsWith('as_travel') || s.startsWith('as_tourism') || s.startsWith('as_travel_tourism')) s = 'as_travel_tourism'
   
   // Canonicalize: if subject has no level prefix, treat it as O-Level
   if (!s.startsWith('o_level_') && !s.startsWith('igcse_') && !s.startsWith('as_')) {
     s = `o_level_${s}`
   }
+
+  // Collapse O-Level variants like o_level_biology_5090 -> o_level_biology
+  if (s.startsWith('o_level_accounting')) s = 'o_level_accounting'
+  if (s.startsWith('o_level_biology')) s = 'o_level_biology'
+  if (s.startsWith('o_level_mathematics') || s.startsWith('o_level_math')) s = 'o_level_mathematics'
+  if (s.startsWith('o_level_physics')) s = 'o_level_physics'
   
   return s
 }
