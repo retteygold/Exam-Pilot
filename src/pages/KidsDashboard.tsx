@@ -553,7 +553,7 @@ export function KidsDashboard() {
           caches.keys().then(names => {
             names.forEach(name => caches.delete(name))
           })
-          window.location.reload(true)
+          window.location.reload()
         }}
         className="w-full mb-4 py-2 bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg text-sm"
       >
