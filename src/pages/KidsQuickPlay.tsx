@@ -270,8 +270,8 @@ export function KidsQuickPlay() {
             <Gamepad2 className="w-7 h-7 text-white" />
           </div>
           <div>
-            <h1 className="text-xl font-bold text-white">Kids Zone</h1>
-            <p className="text-xs text-emerald-300">Fun learning games!</p>
+            <h1 className="text-xl font-bold text-white">Kids Zone v2.1</h1>
+            <p className="text-xs text-emerald-300">Fun learning games! [UPDATED]</p>
           </div>
         </div>
         <button
@@ -304,6 +304,33 @@ export function KidsQuickPlay() {
           </div>
         </div>
       </button>
+
+      <div className="mb-6">
+        <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+          <Crown className="w-5 h-5 text-yellow-300" />
+          Online Challenge
+        </h2>
+
+        <div className="grid grid-cols-2 gap-3">
+          <button
+            type="button"
+            onClick={() => navigate('/challenge?mode=friend')}
+            className="p-4 rounded-2xl bg-gradient-to-br from-yellow-500/25 to-orange-500/25 border border-yellow-400/30 hover:border-yellow-300/60 transition-all text-left"
+          >
+            <div className="text-sm font-bold text-yellow-200">Friend Battle</div>
+            <div className="text-xs text-yellow-200/70 mt-1">Play with a friend</div>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => navigate('/challenge?mode=random')}
+            className="p-4 rounded-2xl bg-gradient-to-br from-purple-500/25 to-pink-500/25 border border-purple-400/30 hover:border-purple-300/60 transition-all text-left"
+          >
+            <div className="text-sm font-bold text-purple-200">Random Match</div>
+            <div className="text-xs text-purple-200/70 mt-1">Find an opponent</div>
+          </button>
+        </div>
+      </div>
 
       {/* Games Grid */}
       <div className="mb-6">
