@@ -30,6 +30,7 @@ import { PictureWordMatch } from './games/PictureWordMatch'
 import { SpeedMath } from './games/SpeedMath'
 import { ColorMatch } from './games/ColorMatch'
 import { PatternRecognition } from './games/PatternRecognition'
+import { ChallengeMode } from './pages/ChallengeMode'
 import { MegaGame } from './games/MegaGame'
 import { GameExitWrapper } from './components/GameExitWrapper'
 import { Routes, Route, Navigate } from 'react-router-dom'
@@ -164,6 +165,17 @@ function App() {
             <Layout>
               <Quiz />
             </Layout>
+          ) : (
+            <Navigate to="/" replace />
+          )
+        } 
+      />
+
+      <Route 
+        path="/challenge" 
+        element={
+          isAuthed && isSetupComplete ? (
+            <ChallengeMode />
           ) : (
             <Navigate to="/" replace />
           )
