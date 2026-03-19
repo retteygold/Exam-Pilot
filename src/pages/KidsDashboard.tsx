@@ -336,8 +336,6 @@ export function KidsDashboard() {
   }
 
   // Use kids profile grade if logged in
-  const gradeLabel = currentKid?.grade || profile?.grade || 'Grade 1'
-  
   const gradeKey = useMemo(() => {
     const g = (currentKid?.grade || profile?.grade || '').trim()
     if (!g) return 'grade1'
