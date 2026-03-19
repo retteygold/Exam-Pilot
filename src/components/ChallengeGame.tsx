@@ -3,7 +3,7 @@
  * Wraps existing games and adds real-time score sync + opponent progress
  */
 
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useKidsStore } from '../store/kidsStore'
 import {
   subscribeToRoom,
@@ -68,33 +68,34 @@ export function ChallengeGame({
     return unsub
   }, [roomId, currentKid])
 
-  // These are called by the wrapped game component
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const updateScore = useCallback((score: number, progress: number) => {
-    if (!roomId || !currentKid) return
+  // Expose challenge controls via ref pattern for child games
+  const challengeRef = useRef({
+    updateScore: (_score: number, _progress: number) => {},
+    complete: (_finalScore: number) => {}
+  })
 
-    setMyScore(score)
-    setMyProgress(progress)
-
-    // Throttle: max 1 update per second
-    const now = Date.now()
-    if (now - scoreThrottleRef.current > 1000) {
-      scoreThrottleRef.current = now
-      updatePlayerProgress(roomId, currentKid.id, score, progress)
+  // Register callbacks in ref so child can access via context or props
+  useEffect(() => {
+    challengeRef.current.updateScore = (score: number, progress: number) => {
+      if (!roomId || !currentKid) return
+      setMyScore(score)
+      setMyProgress(progress)
+      const now = Date.now()
+      if (now - scoreThrottleRef.current > 1000) {
+        scoreThrottleRef.current = now
+        updatePlayerProgress(roomId, currentKid.id, score, progress)
+      }
+      onGameScore(score, progress)
     }
 
-    onGameScore(score, progress)
-  }, [roomId, currentKid, onGameScore])
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const handleComplete = useCallback((finalScore: number) => {
-    if (!roomId || !currentKid || gameEnded) return
-
-    setMyScore(finalScore)
-    setMyProgress(100)
-    finishChallenge(roomId, currentKid.id, finalScore)
-    onGameComplete(finalScore)
-  }, [roomId, currentKid, gameEnded, onGameComplete])
+    challengeRef.current.complete = (finalScore: number) => {
+      if (!roomId || !currentKid || gameEnded) return
+      setMyScore(finalScore)
+      setMyProgress(100)
+      finishChallenge(roomId, currentKid.id, finalScore)
+      onGameComplete(finalScore)
+    }
+  }, [roomId, currentKid, gameEnded, onGameScore, onGameComplete])
 
   if (!room) {
     return (

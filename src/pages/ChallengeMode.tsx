@@ -20,10 +20,6 @@ export function ChallengeMode() {
   
   const [stage, setStage] = useState<'lobby' | 'game' | 'results'>('lobby')
   const [roomId, setRoomId] = useState<string | null>(null)
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [finalScore, setFinalScore] = useState(0)
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [stars, setStars] = useState(0)
 
   const handleGameStart = (id: string) => {
     setRoomId(id)
@@ -31,10 +27,7 @@ export function ChallengeMode() {
   }
 
   const handleGameComplete = (score: number, earnedStars: number) => {
-    setFinalScore(score)
-    setStars(earnedStars)
-    
-    // Save session
+    // Save session - no need to track state, just save directly
     if (currentKid) {
       recordSession({
         gameType,
@@ -74,11 +67,11 @@ export function ChallengeMode() {
             onExit={handleExit}
           />
         }
-        onGameScore={(score, progress) => {
+        onGameScore={(score: number, progress: number) => {
           // Real-time score updates handled by ChallengeGame wrapper
           console.log('Score update:', score, progress)
         }}
-        onGameComplete={(finalScore) => {
+        onGameComplete={(finalScore: number) => {
           handleGameComplete(finalScore, Math.floor(finalScore / 100))
         }}
         onExit={handleExit}
