@@ -124,9 +124,7 @@ export function PaperSelect() {
 
     const loadQuestions = async () => {
       try {
-        const { questions: firebaseQuestions } = await getQuestions({
-          verified: true
-        }, 500)
+        const { questions: firebaseQuestions } = await getQuestions({}, 500)
         
         compute(firebaseQuestions)
       } catch (error) {
