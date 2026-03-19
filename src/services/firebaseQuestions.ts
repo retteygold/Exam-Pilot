@@ -110,44 +110,62 @@ export async function getQuestions(
   lastDoc?: QueryDocumentSnapshot
 ): Promise<{ questions: Question[]; lastDoc: QueryDocumentSnapshot | null }> {
   console.log('[DEBUG] getQuestions called with filters:', filters)
-  
-  let q = query(
-    collection(db, QUESTIONS_COLLECTION),
-    orderBy('createdAt', 'desc'),
-    limitQuery(pageSize)
-  )
-  
-  // Apply filters
-  if (filters?.subject) {
-    console.log('[DEBUG] Adding subject filter:', filters.subject)
-    q = query(q, where('subject', '==', filters.subject))
+
+  const baseCol = collection(db, QUESTIONS_COLLECTION)
+
+  const buildQuery = (orderField: 'uploadedAt' | 'createdAt') => {
+    let q = query(baseCol, orderBy(orderField, 'desc'), limitQuery(pageSize))
+
+    // Apply filters
+    if (filters?.subject) {
+      console.log('[DEBUG] Adding subject filter:', filters.subject)
+      q = query(q, where('subject', '==', filters.subject))
+    }
+    if (filters?.yearGroup) {
+      console.log('[DEBUG] Adding yearGroup filter:', filters.yearGroup)
+      q = query(q, where('yearGroup', '==', filters.yearGroup))
+    }
+    if (filters?.difficulty) {
+      console.log('[DEBUG] Adding difficulty filter:', filters.difficulty)
+      q = query(q, where('difficulty', '==', filters.difficulty))
+    }
+    if (filters?.verified !== undefined) {
+      console.log('[DEBUG] Adding verified filter:', filters.verified)
+      q = query(q, where('verified', '==', filters.verified))
+    }
+
+    if (lastDoc) {
+      q = query(q, startAfter(lastDoc))
+    }
+
+    return q
   }
-  if (filters?.yearGroup) {
-    console.log('[DEBUG] Adding yearGroup filter:', filters.yearGroup)
-    q = query(q, where('yearGroup', '==', filters.yearGroup))
-  }
-  if (filters?.difficulty) {
-    console.log('[DEBUG] Adding difficulty filter:', filters.difficulty)
-    q = query(q, where('difficulty', '==', filters.difficulty))
-  }
-  if (filters?.verified !== undefined) {
-    console.log('[DEBUG] Adding verified filter:', filters.verified)
-    q = query(q, where('verified', '==', filters.verified))
-  }
-  
-  if (lastDoc) {
-    q = query(q, startAfter(lastDoc))
-  }
+
+  // Existing production docs use uploadedAt; keep createdAt as fallback for newer docs.
+  let q = buildQuery('uploadedAt')
   
   try {
     console.log('[DEBUG] Executing Firestore query...')
-    const snapshot = await getDocs(q)
+    let snapshot = await getDocs(q)
+
+    if (snapshot.docs.length === 0) {
+      // Fallback for legacy/new data: try createdAt ordering.
+      try {
+        const fallbackQ = buildQuery('createdAt')
+        const fallbackSnap = await getDocs(fallbackQ)
+        if (fallbackSnap.docs.length > 0) {
+          snapshot = fallbackSnap
+        }
+      } catch (fallbackErr) {
+        console.error('[DEBUG] Fallback query error:', fallbackErr)
+      }
+    }
     console.log('[DEBUG] Query returned', snapshot.docs.length, 'documents')
 
     if (snapshot.docs.length === 0) {
       try {
         const probe = query(
-          collection(db, QUESTIONS_COLLECTION),
+          baseCol,
           limitQuery(Math.min(pageSize, 20))
         )
         const probeSnap = await getDocs(probe)
