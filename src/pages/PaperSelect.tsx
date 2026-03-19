@@ -101,6 +101,7 @@ export function PaperSelect() {
   const [loading, setLoading] = useState(true)
   const [selectedMode, setSelectedMode] = useState<'practice' | 'exam'>('practice')
   const [recommendedDifficulty, setRecommendedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium')
+  const [selectedLevel, setSelectedLevel] = useState<'o_level' | 'as'>('o_level')
   
   // Filters
   const [selectedSubject, setSelectedSubject] = useState<string>('all')
@@ -322,8 +323,43 @@ export function PaperSelect() {
       {/* Subject Selector */}
       <div className="p-4 bg-slate-800 rounded-2xl">
         <h2 className="text-lg font-semibold mb-4">Select Subject</h2>
+        <div className="grid grid-cols-2 gap-3 mb-4">
+          <button
+            type="button"
+            onClick={() => {
+              setSelectedLevel('o_level')
+              setSelectedSubject('all')
+            }}
+            className={`p-3 rounded-xl text-left transition-colors ${
+              selectedLevel === 'o_level'
+                ? 'bg-slate-600 text-white'
+                : 'bg-slate-700 hover:bg-slate-600'
+            }`}
+          >
+            <div className="font-semibold">O-Level</div>
+            <div className="text-xs opacity-60 mt-1">7707 • 5090 • 0580 • 0625</div>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => {
+              setSelectedLevel('as')
+              setSelectedSubject('all')
+            }}
+            className={`p-3 rounded-xl text-left transition-colors ${
+              selectedLevel === 'as'
+                ? 'bg-slate-600 text-white'
+                : 'bg-slate-700 hover:bg-slate-600'
+            }`}
+          >
+            <div className="font-semibold">AS/A-Level</div>
+            <div className="text-xs opacity-60 mt-1">WAC • WBI • WBS • WEC • WMA • WPH • 9395</div>
+          </button>
+        </div>
         <div className="grid grid-cols-2 gap-3">
           {Object.entries(SUBJECT_META).map(([key, meta]) => {
+            if (selectedLevel === 'o_level' && !key.startsWith('o_level_')) return null
+            if (selectedLevel === 'as' && !key.startsWith('as_')) return null
             const Icon = key.includes('accounting') || key.includes('math') ? Calculator : key.includes('economics') || key.includes('business') || key.includes('travel') ? BookOpen : Beaker
             const activeColor = key.includes('accounting') ? 'bg-blue-500' : key.includes('math') ? 'bg-indigo-500' : key.includes('economics') ? 'bg-amber-500' : key.includes('physics') ? 'bg-cyan-500' : key.includes('travel') ? 'bg-pink-500' : 'bg-green-500'
             return (
