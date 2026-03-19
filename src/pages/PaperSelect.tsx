@@ -32,9 +32,25 @@ const SUBJECT_META: Record<string, { name: string; code: string; timeAllowed: nu
 }
 
 function normalizeSubjectKey(subject: string | undefined | null): string {
-  const s = (subject || 'accounting').toLowerCase()
-  if (s === 'o-level_accounting') return 'o_level_accounting'
-  if (s === 'o-level_biology') return 'o_level_biology'
+  let s = (subject || 'accounting').toLowerCase().trim()
+  
+  // Remove "unknown" prefix and clean up
+  s = s.replace(/^unknown\s+/, '')
+  
+  // Handle olevel/igcse/as variations with/without underscore
+  if (s.includes('olevel')) {
+    s = s.replace('olevel', 'o_level')
+  }
+  if (s.includes('igcse')) {
+    s = s.replace('igcse', 'igcse_')
+  }
+  if (s.includes('as ') && !s.startsWith('as_')) {
+    s = s.replace('as ', 'as_')
+  }
+  
+  // Handle hyphen to underscore
+  s = s.replace(/-/g, '_')
+  
   return s
 }
 
