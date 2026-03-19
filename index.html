@@ -7,10 +7,48 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <title>Exam Pilot - Navigate Your Way to Top Grades</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Exam Pilot v2.1 - Navigate Your Way to Top Grades</title>
+  <script>
+    // Nuclear cache clear - runs before anything else
+    (function() {
+      console.log('[CACHE] Starting nuclear cache clear...')
+      
+      // Unregister all service workers
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(regs) {
+          regs.forEach(function(reg) {
+            console.log('[CACHE] Unregistering SW:', reg.scope)
+            reg.unregister()
+          })
+        })
+      }
+      
+      // Clear all caches
+      if ('caches' in window) {
+        caches.keys().then(function(names) {
+          names.forEach(function(name) {
+            console.log('[CACHE] Deleting cache:', name)
+            caches.delete(name)
+          })
+        })
+      }
+      
+      // Clear localStorage and sessionStorage
+      try {
+        localStorage.clear()
+        sessionStorage.clear()
+        console.log('[CACHE] Storage cleared')
+      } catch(e) {}
+      
+      console.log('[CACHE] Nuclear clear complete')
+    })()
+  </script>
 </head>
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/src/main.tsx?v=2.1"></script>
 </body>
 </html>
