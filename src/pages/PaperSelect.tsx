@@ -62,6 +62,12 @@ export function PaperSelect() {
     setRecommendedDifficulty(getRecommendedDifficulty())
  
     const compute = (allQuestions: Question[]) => {
+      console.log('[DEBUG] PaperSelect compute - total questions:', allQuestions.length)
+      if (allQuestions.length > 0) {
+        console.log('[DEBUG] First question subject:', allQuestions[0].subject)
+        console.log('[DEBUG] First question source:', allQuestions[0].source)
+      }
+      
       const stats: {[key: string]: {total: number, verified: number}} = {}
       const bySubject: {[key: string]: Question[]} = {}
       allQuestions.forEach((q) => {
@@ -69,6 +75,9 @@ export function PaperSelect() {
         bySubject[s] = bySubject[s] || []
         bySubject[s].push(q)
       })
+      
+      console.log('[DEBUG] bySubject keys:', Object.keys(bySubject))
+      console.log('[DEBUG] SUBJECT_META keys:', Object.keys(SUBJECT_META))
 
       ;(Object.keys(SUBJECT_META) as Array<keyof typeof SUBJECT_META>).forEach((s) => {
         const list = bySubject[s] || []
