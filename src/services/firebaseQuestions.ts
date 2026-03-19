@@ -143,6 +143,27 @@ export async function getQuestions(
     console.log('[DEBUG] Executing Firestore query...')
     const snapshot = await getDocs(q)
     console.log('[DEBUG] Query returned', snapshot.docs.length, 'documents')
+
+    if (snapshot.docs.length === 0) {
+      try {
+        const probe = query(
+          collection(db, QUESTIONS_COLLECTION),
+          limitQuery(Math.min(pageSize, 20))
+        )
+        const probeSnap = await getDocs(probe)
+        console.log(
+          '[DEBUG] Probe query (no orderBy) returned',
+          probeSnap.docs.length,
+          'documents'
+        )
+        if (probeSnap.docs.length > 0) {
+          const sample = probeSnap.docs[0]?.data() as any
+          console.log('[DEBUG] Probe sample keys:', Object.keys(sample || {}))
+        }
+      } catch (probeErr) {
+        console.error('[DEBUG] Probe query error:', probeErr)
+      }
+    }
     
     const questions = snapshot.docs.map((doc) => ({
       ...doc.data(),
