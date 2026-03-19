@@ -8,6 +8,32 @@ interface AuthProps {
   onSuccess?: () => void
 }
 
+// Map Firebase error codes to user-friendly messages
+function getAuthErrorMessage(error: any): string {
+  const code = error?.code || ''
+  
+  switch (code) {
+    case 'auth/email-already-in-use':
+      return 'This email is already registered. Please log in instead.'
+    case 'auth/invalid-credential':
+      return 'Invalid email or password. Please try again.'
+    case 'auth/wrong-password':
+      return 'Incorrect password. Please try again.'
+    case 'auth/user-not-found':
+      return 'No account found with this email. Please sign up first.'
+    case 'auth/invalid-email':
+      return 'Please enter a valid email address.'
+    case 'auth/weak-password':
+      return 'Password is too weak. Use at least 6 characters.'
+    case 'auth/network-request-failed':
+      return 'Network error. Please check your connection.'
+    case 'auth/too-many-requests':
+      return 'Too many attempts. Please try again later.'
+    default:
+      return error?.message?.replace('Firebase: ', '') || 'Something went wrong. Please try again.'
+  }
+}
+
 export function Auth({ onSuccess }: AuthProps) {
   const [mode, setMode] = useState<'main' | 'email' | 'guest' | 'signup'>('main')
   const [email, setEmail] = useState('')
@@ -42,7 +68,7 @@ export function Auth({ onSuccess }: AuthProps) {
       })
       onSuccess?.()
     } catch (err: any) {
-      setError(err.message || 'Login failed')
+      setError(getAuthErrorMessage(err))
       setLoading(false)
     }
   }
@@ -78,7 +104,7 @@ export function Auth({ onSuccess }: AuthProps) {
       })
       onSuccess?.()
     } catch (err: any) {
-      setError(err.message || 'Signup failed')
+      setError(getAuthErrorMessage(err))
       setLoading(false)
     }
   }
@@ -107,7 +133,7 @@ export function Auth({ onSuccess }: AuthProps) {
       })
       onSuccess?.()
     } catch (err: any) {
-      setError(err.message || 'Guest login failed')
+      setError(getAuthErrorMessage(err))
       setLoading(false)
     }
   }
