@@ -611,8 +611,13 @@ export const useKidsStore = create<KidsState>()(
       },
 
       recordSession: async (session) => {
+        console.log('[DEBUG] recordSession called with:', session)
         const currentKid = get().currentKid
-        if (!currentKid) return
+        console.log('[DEBUG] currentKid:', currentKid?.id, currentKid?.name)
+        if (!currentKid) {
+          console.error('[DEBUG] recordSession - NO currentKid, aborting')
+          return
+        }
         
         const newSession: GameSession = {
           ...session,
@@ -684,6 +689,8 @@ export const useKidsStore = create<KidsState>()(
           },
           sessions: [...state.sessions, newSession]
         }))
+        console.log('[DEBUG] recordSession - state updated, new session added:', newSession.id, 'score:', newSession.score)
+        console.log('[DEBUG] recordSession - total sessions now:', get().sessions.length)
 
         const skillPath = get().skillPath
         if (skillPath?.mode === 'skill_path_rotate') {

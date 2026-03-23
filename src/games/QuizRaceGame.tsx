@@ -102,10 +102,12 @@ export function QuizRaceGame({ onComplete, onExit }: QuizRaceGameProps) {
   }
 
   const endGame = () => {
+    console.log('[DEBUG] QuizRaceGame endGame called, final score:', score)
     setIsGameActive(false)
     
     // Calculate stars based on score
     const stars = Math.min(5, Math.floor(score / 20) + 1)
+    console.log('[DEBUG] QuizRaceGame calculated stars:', stars)
     
     // Show final reward
     setTimeout(() => {
@@ -121,6 +123,7 @@ export function QuizRaceGame({ onComplete, onExit }: QuizRaceGameProps) {
 
     // Complete after showing reward
     setTimeout(() => {
+      console.log('[DEBUG] QuizRaceGame calling onComplete with score:', score, 'stars:', stars)
       onComplete(score, stars)
     }, 3000)
   }
