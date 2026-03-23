@@ -19,7 +19,11 @@ import {
   getOverallLeaderboard as getOverallLeaderboardDB,
   getGradeTopper as getGradeTopperDB,
   deleteKidProfile,
-  updateKidProfile
+  updateKidProfile,
+  saveActiveGame as saveActiveGameDB,
+  getActiveGame as getActiveGameDB,
+  clearActiveGame as clearActiveGameDB,
+  type ActiveGameDB
 } from '../services/kidsFirestore'
 
 const kidsAuthErrorMessage = (err: unknown) => {
@@ -168,6 +172,7 @@ export interface KidsState {
   updateGameProgress: (level: number, score: number, extraData?: Record<string, any>) => void
   clearActiveGame: () => void
   getActiveGame: () => ActiveGameProgress | null
+  loadActiveGame: () => Promise<ActiveGameProgress | null>
   // Admin functions
   deleteKid: (kidId: string) => void
   resetKidStats: (kidId: string) => void
@@ -257,6 +262,19 @@ export const useKidsStore = create<KidsState>()(
                     updatedAt: Date.now()
                   }
 
+              // Load active game from Firestore
+              const activeGameDB = await getActiveGameDB(uid)
+              let activeGame: ActiveGameProgress | null = null
+              if (activeGameDB && !activeGameDB.deleted) {
+                activeGame = {
+                  gameType: activeGameDB.gameType,
+                  level: activeGameDB.level,
+                  score: activeGameDB.score,
+                  startTime: activeGameDB.startTime,
+                  extraData: activeGameDB.extraData
+                }
+              }
+
               set({
                 kidsAuthReady: true,
                 currentKid: profile,
@@ -264,7 +282,8 @@ export const useKidsStore = create<KidsState>()(
                 sessions,
                 achievements,
                 gameProgress: progressByGame,
-                skillPath
+                skillPath,
+                activeGame
               })
 
               resolve()
@@ -774,33 +793,65 @@ export const useKidsStore = create<KidsState>()(
         const currentKid = get().currentKid
         if (!currentKid) return
         
-        set({
-          activeGame: {
-            gameType,
-            level,
-            score: 0,
-            startTime: Date.now(),
-            extraData
-          }
-        })
+        const activeGame: ActiveGameProgress = {
+          gameType,
+          level,
+          score: 0,
+          startTime: Date.now(),
+          extraData
+        }
+        
+        set({ activeGame })
+        
+        // Save to Firestore for persistence
+        void saveActiveGameDB(currentKid.id, gameType, level, 0, extraData)
       },
 
       updateGameProgress: (level: number, score: number, extraData?: Record<string, any>) => {
         const currentKid = get().currentKid
-        if (!currentKid || !get().activeGame) return
+        const activeGame = get().activeGame
+        if (!currentKid || !activeGame) return
         
-        set(state => ({
-          activeGame: state.activeGame ? {
-            ...state.activeGame,
-            level,
-            score,
-            extraData: { ...state.activeGame.extraData, ...extraData }
-          } : null
-        }))
+        const updatedGame: ActiveGameProgress = {
+          ...activeGame,
+          level,
+          score,
+          extraData: { ...activeGame.extraData, ...extraData }
+        }
+        
+        set({ activeGame: updatedGame })
+        
+        // Save to Firestore for persistence
+        void saveActiveGameDB(currentKid.id, activeGame.gameType, level, score, updatedGame.extraData)
       },
 
       clearActiveGame: () => {
+        const currentKid = get().currentKid
         set({ activeGame: null })
+        
+        // Clear from Firestore
+        if (currentKid) {
+          void clearActiveGameDB(currentKid.id)
+        }
+      },
+
+      loadActiveGame: async () => {
+        const currentKid = get().currentKid
+        if (!currentKid) return null
+        
+        const activeGameFromDB = await getActiveGameDB(currentKid.id)
+        if (activeGameFromDB && !activeGameFromDB.deleted) {
+          const activeGame: ActiveGameProgress = {
+            gameType: activeGameFromDB.gameType,
+            level: activeGameFromDB.level,
+            score: activeGameFromDB.score,
+            startTime: activeGameFromDB.startTime,
+            extraData: activeGameFromDB.extraData
+          }
+          set({ activeGame })
+          return activeGame
+        }
+        return null
       },
 
       getActiveGame: () => {

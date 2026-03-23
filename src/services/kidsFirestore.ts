@@ -13,6 +13,7 @@ const GAME_PROGRESS_COLLECTION = 'kidsGameProgress'
 const GAME_BEST_SCORES_COLLECTION = 'kidsGameBestScores'
 const SKILL_PATH_COLLECTION = 'kidsSkillPath'
 const OVERALL_SCORES_COLLECTION = 'kidsOverallScores'
+const ACTIVE_GAME_COLLECTION = 'kidsActiveGames'
 
 export type KidGameProgressDB = {
   id: string
@@ -599,5 +600,67 @@ export async function getAllKidsProfiles(): Promise<KidsProfileDB[]> {
   } catch (error) {
     console.error('Error getting all kids profiles:', error)
     return []
+  }
+}
+
+// Active Game Progress - for resume functionality
+export type ActiveGameDB = {
+  id: string
+  kidId: string
+  gameType: string
+  level: number
+  score: number
+  startTime: number
+  extraData?: Record<string, any>
+  updatedAt: number
+  deleted?: boolean
+}
+
+export async function saveActiveGame(kidId: string, gameType: string, level: number, score: number, extraData?: Record<string, any>): Promise<void> {
+  try {
+    const docRef = doc(db, ACTIVE_GAME_COLLECTION, kidId)
+    await setDoc(docRef, {
+      kidId,
+      gameType,
+      level,
+      score,
+      startTime: Date.now(),
+      extraData: extraData || {},
+      updatedAt: serverTimestamp()
+    })
+  } catch (error) {
+    console.error('Error saving active game:', error)
+  }
+}
+
+export async function getActiveGame(kidId: string): Promise<ActiveGameDB | null> {
+  try {
+    const docRef = doc(db, ACTIVE_GAME_COLLECTION, kidId)
+    const snap = await getDoc(docRef)
+    if (!snap.exists()) return null
+
+    const data = snap.data()
+    return {
+      id: snap.id,
+      kidId: data.kidId,
+      gameType: data.gameType,
+      level: data.level,
+      score: data.score,
+      startTime: data.startTime,
+      extraData: data.extraData,
+      updatedAt: data.updatedAt?.toMillis?.() || Date.now()
+    } as ActiveGameDB
+  } catch (error) {
+    console.error('Error getting active game:', error)
+    return null
+  }
+}
+
+export async function clearActiveGame(kidId: string): Promise<void> {
+  try {
+    const docRef = doc(db, ACTIVE_GAME_COLLECTION, kidId)
+    await setDoc(docRef, { deleted: true, updatedAt: serverTimestamp() }, { merge: true })
+  } catch (error) {
+    console.error('Error clearing active game:', error)
   }
 }

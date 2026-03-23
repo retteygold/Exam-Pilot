@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Star, ArrowLeft, Zap, Timer, Trophy, Flame } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface SpeedMathProps {
   onComplete?: (score: number, stars: number) => void
@@ -17,14 +18,26 @@ interface Question {
 }
 
 export function SpeedMath({ onComplete: _onComplete, onExit }: SpeedMathProps) {
-  const [level, setLevel] = useState(1)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+  
+  const [level, setLevel] = useState(activeGame?.gameType === 'speed-math' ? activeGame.level : 1)
+  const [score, setScore] = useState(activeGame?.gameType === 'speed-math' ? activeGame.score : 0)
   const [currentQ, setCurrentQ] = useState<Question | null>(null)
   const [timeLeft, setTimeLeft] = useState(60)
   const [gameOver, setGameOver] = useState(false)
   const [streak, setStreak] = useState(0)
   const [showCorrect, setShowCorrect] = useState<number | null>(null)
   const [totalCorrect, setTotalCorrect] = useState(0)
+  const [initialized, setInitialized] = useState(false)
+
+  // Start game session on mount
+  useEffect(() => {
+    if (!initialized) {
+      startGameSession('speed-math', level, { timeLeft })
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, level, timeLeft])
 
   const generateQuestion = useCallback((lvl: number): Question => {
     const operations: Operation[] = lvl <= 3 ? ['+', '-'] : lvl <= 6 ? ['+', '-', '×'] : ['+', '-', '×', '÷']
@@ -72,6 +85,13 @@ export function SpeedMath({ onComplete: _onComplete, onExit }: SpeedMathProps) {
     setCurrentQ(generateQuestion(level))
   }, [level, generateQuestion])
 
+  // Save progress whenever level or score changes
+  useEffect(() => {
+    if (initialized && !gameOver) {
+      updateGameProgress(level, score, { timeLeft })
+    }
+  }, [initialized, level, score, timeLeft, gameOver, updateGameProgress])
+
   useEffect(() => {
     if (timeLeft > 0 && !gameOver) {
       const t = setTimeout(() => setTimeLeft(t => t - 1), 1000)
@@ -79,14 +99,15 @@ export function SpeedMath({ onComplete: _onComplete, onExit }: SpeedMathProps) {
     } else if (timeLeft === 0 && !gameOver) {
       console.log('[DEBUG] SpeedMath time up, ending game with score:', score)
       setGameOver(true)
-      // Call onComplete to record session
+      // Clear active game and call onComplete to record session
+      clearActiveGame()
       if (_onComplete) {
         const stars = Math.min(Math.floor(score / 100), 5)
         console.log('[DEBUG] SpeedMath calling onComplete with score:', score, 'stars:', stars)
         _onComplete(score, stars)
       }
     }
-  }, [timeLeft, gameOver, score, _onComplete])
+  }, [timeLeft, gameOver, score, _onComplete, clearActiveGame])
 
   const handleAnswer = (ans: number) => {
     if (!currentQ || gameOver) return

@@ -281,7 +281,9 @@ export function KidsDashboard() {
     getGameProgress,
     getGameLeaderboard,
     getOverallLeaderboard,
-    getGradeTopper
+    getGradeTopper,
+    getActiveGame,
+    clearActiveGame
   } = useKidsStore()
 
   useEffect(() => {
@@ -587,6 +589,47 @@ export function KidsDashboard() {
           </button>
         </div>
       </div>
+
+      {/* Resume Game Banner - Shows if there's an active game in progress */}
+      {getActiveGame() && (
+        <div className="mb-4 p-4 rounded-2xl bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/40">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 bg-blue-500/30 rounded-xl flex items-center justify-center">
+                <Gamepad2 className="w-6 h-6 text-blue-300" />
+              </div>
+              <div>
+                <h3 className="font-bold text-blue-200">Continue Playing?</h3>
+                <p className="text-xs text-blue-300/70">
+                  {getActiveGame()?.gameType} - Level {getActiveGame()?.level} ({getActiveGame()?.score} pts)
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={() => {
+                  const ag = getActiveGame()
+                  if (ag) {
+                    setActiveGame(ag.gameType)
+                    setActiveLevel(ag.level)
+                  }
+                }}
+                className="px-4 py-2 bg-blue-500 hover:bg-blue-400 rounded-xl font-bold text-white text-sm"
+              >
+                Resume
+              </button>
+              <button
+                onClick={() => {
+                  clearActiveGame()
+                }}
+                className="px-3 py-2 bg-slate-700 hover:bg-slate-600 rounded-xl text-slate-300 text-sm"
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Daily Challenge Banner */}
       <button
