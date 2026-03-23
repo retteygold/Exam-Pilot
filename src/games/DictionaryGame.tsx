@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Star, ArrowLeft, BookOpen, Volume2, Check, X, Lightbulb, Search } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface DictionaryGameProps {
   onComplete?: (score: number, stars: number) => void
@@ -39,8 +40,11 @@ const wordBank: WordEntry[] = [
 ]
 
 export function DictionaryGame({ onComplete: _onComplete, onExit }: DictionaryGameProps) {
-  const [level, setLevel] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+
+  const [level, setLevel] = useState(activeGame?.gameType === 'dictionary-game' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'dictionary-game' ? activeGame.score : 0)
   const [gameOver, setGameOver] = useState(false)
   const [shuffledWords, setShuffledWords] = useState<WordEntry[]>([])
   const [currentQ, setCurrentQ] = useState<{word: WordEntry; type: QuestionType; options: string[]; answer: number; question: string} | null>(null)
@@ -48,12 +52,22 @@ export function DictionaryGame({ onComplete: _onComplete, onExit }: DictionaryGa
   const [showCorrect, setShowCorrect] = useState(false)
   const [streak, setStreak] = useState(0)
   const [showHint, setShowHint] = useState(false)
-  const [masteredWords, setMasteredWords] = useState<string[]>([])
+  const [masteredWords, setMasteredWords] = useState<string[]>(
+    activeGame?.gameType === 'dictionary-game' ? (activeGame.extraData?.masteredWords ?? []) : []
+  )
+  const [initialized, setInitialized] = useState(false)
 
   useEffect(() => {
     const shuffled = [...wordBank].sort(() => Math.random() - 0.5)
     setShuffledWords(shuffled)
   }, [])
+
+  useEffect(() => {
+    if (!initialized) {
+      startGameSession('dictionary-game', level, { masteredWords })
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, level, masteredWords])
 
   const generateQuestion = useCallback((wordEntry: WordEntry) => {
     const types: QuestionType[] = ['definition', 'synonym', 'antonym']
@@ -119,6 +133,12 @@ export function DictionaryGame({ onComplete: _onComplete, onExit }: DictionaryGa
     }
   }, [level, shuffledWords, generateQuestion])
 
+  useEffect(() => {
+    if (initialized && !gameOver) {
+      updateGameProgress(level, score, { masteredWords })
+    }
+  }, [initialized, gameOver, updateGameProgress, level, score, masteredWords])
+
   const speakWord = (text: string) => {
     const utterance = new SpeechSynthesisUtterance(text)
     utterance.rate = 0.8
@@ -149,6 +169,7 @@ export function DictionaryGame({ onComplete: _onComplete, onExit }: DictionaryGa
       if (level >= 9) {
         console.log('[DEBUG] DictionaryGame game complete, score:', score)
         setGameOver(true)
+        clearActiveGame()
         // Call onComplete to record session
         if (_onComplete) {
           const stars = Math.min(Math.floor(score / 50), 5)

@@ -103,6 +103,13 @@ export function ColorMatch({ onComplete: _onComplete, onExit }: ColorMatchProps)
     setTimeout(() => {
       if (level >= 14) {
         setGameOver(true)
+        // Clear active game and call onComplete to record session
+        clearActiveGame()
+        if (_onComplete) {
+          const finalStars = Math.min(Math.floor(score / 50), 5)
+          console.log('[DEBUG] ColorMatch calling onComplete with score:', score, 'stars:', finalStars)
+          _onComplete(score, finalStars)
+        }
       } else {
         setLevel(l => l + 1)
       }
