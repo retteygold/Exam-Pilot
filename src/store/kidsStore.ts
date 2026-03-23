@@ -22,8 +22,7 @@ import {
   updateKidProfile,
   saveActiveGame as saveActiveGameDB,
   getActiveGame as getActiveGameDB,
-  clearActiveGame as clearActiveGameDB,
-  type ActiveGameDB
+  clearActiveGame as clearActiveGameDB
 } from '../services/kidsFirestore'
 
 const kidsAuthErrorMessage = (err: unknown) => {

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Star, ArrowLeft, PenTool, Check, Clock } from 'lucide-react'
 import { useKidsStore } from '../store/kidsStore'
+// Debug logging enabled v2.1
 
 interface StoryBuilderProps {
   onComplete?: (score: number, stars: number) => void

@@ -102,7 +102,7 @@ export function WordScramble({ onComplete: _onComplete, onExit }: WordScramblePr
 
   useEffect(() => {
     if (timeLeft > 0 && !gameOver && feedback !== 'correct') {
-      const t = setTimeout(() => setTimeLeft(t => t - 1), 1000)
+      const t = setTimeout(() => setTimeLeft((prev: number) => prev - 1), 1000)
       return () => clearTimeout(t)
     } else if (timeLeft === 0) {
       setFeedback('wrong')
