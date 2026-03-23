@@ -314,6 +314,20 @@ export const useKidsStore = create<KidsState>()(
           const progress = await getKidGameProgressDB(uid)
           const skillPathDB = await getKidSkillPathDB(uid)
 
+          // Load active game for resume functionality
+          const activeGameFromDB = await getActiveGameDB(uid)
+          let activeGame: ActiveGameProgress | null = null
+          if (activeGameFromDB && !activeGameFromDB.deleted) {
+            activeGame = {
+              gameType: activeGameFromDB.gameType,
+              level: activeGameFromDB.level,
+              score: activeGameFromDB.score,
+              startTime: activeGameFromDB.startTime,
+              extraData: activeGameFromDB.extraData
+            }
+            console.log('[DEBUG] login - loaded activeGame:', activeGame.gameType, 'level:', activeGame.level, 'score:', activeGame.score)
+          }
+
           const progressByGame: Record<string, KidGameProgress> = {}
           for (const p of progress) {
             progressByGame[p.gameId] = {
@@ -456,6 +470,20 @@ export const useKidsStore = create<KidsState>()(
             })
           }
 
+          // Load active game for resume functionality
+          const activeGameFromDB = await getActiveGameDB(uid)
+          let activeGame: ActiveGameProgress | null = null
+          if (activeGameFromDB && !activeGameFromDB.deleted) {
+            activeGame = {
+              gameType: activeGameFromDB.gameType,
+              level: activeGameFromDB.level,
+              score: activeGameFromDB.score,
+              startTime: activeGameFromDB.startTime,
+              extraData: activeGameFromDB.extraData
+            }
+            console.log('[DEBUG] loginWithEmail - loaded activeGame:', activeGame.gameType, 'level:', activeGame.level, 'score:', activeGame.score)
+          }
+
           set(state => ({
             currentKid: profile,
             isKidsLoggedIn: true,
@@ -463,7 +491,8 @@ export const useKidsStore = create<KidsState>()(
             sessions: [...state.sessions.filter((s: GameSession) => s.kidId !== profile.id), ...sessions],
             achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements],
             gameProgress: progressByGame,
-            skillPath
+            skillPath,
+            activeGame
           }))
 
           return profile
@@ -575,13 +604,28 @@ export const useKidsStore = create<KidsState>()(
             })
           }
 
+          // Load active game for resume functionality
+          const activeGameFromDB = await getActiveGameDB(uid)
+          let activeGame: ActiveGameProgress | null = null
+          if (activeGameFromDB && !activeGameFromDB.deleted) {
+            activeGame = {
+              gameType: activeGameFromDB.gameType,
+              level: activeGameFromDB.level,
+              score: activeGameFromDB.score,
+              startTime: activeGameFromDB.startTime,
+              extraData: activeGameFromDB.extraData
+            }
+            console.log('[DEBUG] finishGoogleRedirectLogin - loaded activeGame:', activeGame.gameType, 'level:', activeGame.level, 'score:', activeGame.score)
+          }
+
           set(state => ({
             currentKid: profile,
             isKidsLoggedIn: true,
             sessions: [...state.sessions.filter((s: GameSession) => s.kidId !== profile.id), ...sessions],
             achievements: [...state.achievements.filter((a: Achievement) => a.kidId !== profile.id), ...achievements],
             gameProgress: progressByGame,
-            skillPath
+            skillPath,
+            activeGame
           }))
 
           return profile
