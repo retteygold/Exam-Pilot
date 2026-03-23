@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Star, Trophy, Volume2, ArrowLeft, Brain } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface SpellingSprintProps {
   onComplete?: (score: number, stars: number) => void
@@ -49,26 +50,40 @@ const words: Word[] = [
 ]
 
 export function SpellingSprint({ onComplete: _onComplete, onExit }: SpellingSprintProps) {
-  const [level, setLevel] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+  
+  const [level, setLevel] = useState(activeGame?.gameType === 'spelling-sprint' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'spelling-sprint' ? activeGame.score : 0)
   const [currentWord, setCurrentWord] = useState<Word | null>(null)
   const [input, setInput] = useState('')
   const [showHint, setShowHint] = useState(false)
   const [gameOver, setGameOver] = useState(false)
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null)
   const [shuffledWords, setShuffledWords] = useState<Word[]>([])
+  const [initialized, setInitialized] = useState(false)
 
+  // Start game session on mount
   useEffect(() => {
-    const shuffled = [...words].sort(() => Math.random() - 0.5)
-    setShuffledWords(shuffled)
-    setCurrentWord(shuffled[0])
-  }, [])
-
-  useEffect(() => {
-    if (shuffledWords.length > 0) {
-      setCurrentWord(shuffledWords[level])
+    if (!initialized) {
+      const shuffled = [...words].sort(() => Math.random() - 0.5)
+      setShuffledWords(shuffled)
+      const startLevel = activeGame?.gameType === 'spelling-sprint' ? activeGame.level : 0
+      setCurrentWord(shuffled[startLevel] || shuffled[0])
+      startGameSession('spelling-sprint', startLevel, {})
+      setInitialized(true)
     }
-  }, [level, shuffledWords])
+  }, [initialized, startGameSession, activeGame])
+
+  useEffect(() => {
+    if (initialized && shuffledWords.length > 0) {
+      setCurrentWord(shuffledWords[level])
+      // Save progress whenever level or score changes
+      if (!gameOver) {
+        updateGameProgress(level, score, {})
+      }
+    }
+  }, [initialized, level, score, shuffledWords, gameOver, updateGameProgress])
 
   const handleSubmit = () => {
     if (!currentWord || !input.trim()) return
@@ -86,7 +101,8 @@ export function SpellingSprint({ onComplete: _onComplete, onExit }: SpellingSpri
       if (level >= 9) {
         console.log('[DEBUG] SpellingSprint game complete, score:', score)
         setGameOver(true)
-        // Call onComplete to record session
+        // Clear active game and call onComplete to record session
+        clearActiveGame()
         if (_onComplete) {
           const stars = Math.min(Math.floor(score / 50), 5)
           console.log('[DEBUG] SpellingSprint calling onComplete with score:', score, 'stars:', stars)
