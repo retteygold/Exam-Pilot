@@ -86,10 +86,17 @@ export function MathBlaster({ onComplete: _onComplete, onExit }: MathBlasterProp
     if (timeLeft > 0 && !gameOver) {
       const t = setTimeout(() => setTimeLeft(t => t - 1), 1000)
       return () => clearTimeout(t)
-    } else if (timeLeft === 0) {
+    } else if (timeLeft === 0 && !gameOver) {
+      console.log('[DEBUG] MathBlaster time up, ending game with score:', score)
       setGameOver(true)
+      // Call onComplete to record session
+      if (_onComplete) {
+        const finalStars = Math.min(Math.floor(score / 50), 5)
+        console.log('[DEBUG] MathBlaster calling onComplete with score:', score, 'stars:', finalStars)
+        _onComplete(score, finalStars)
+      }
     }
-  }, [timeLeft, gameOver])
+  }, [timeLeft, gameOver, score, _onComplete])
 
   const handleAnswer = (ans: number) => {
     if (!currentQ || gameOver) return

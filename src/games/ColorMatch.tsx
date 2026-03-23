@@ -42,10 +42,17 @@ export function ColorMatch({ onComplete: _onComplete, onExit }: ColorMatchProps)
     if (timeLeft > 0 && !gameOver && !showCorrect) {
       const t = setTimeout(() => setTimeLeft(t => t - 1), 1000)
       return () => clearTimeout(t)
-    } else if (timeLeft === 0) {
+    } else if (timeLeft === 0 && !gameOver) {
+      console.log('[DEBUG] ColorMatch time up, ending game with score:', score)
       setGameOver(true)
+      // Call onComplete to record session
+      if (_onComplete) {
+        const stars = Math.min(Math.floor(score / 50), 5)
+        console.log('[DEBUG] ColorMatch calling onComplete with score:', score, 'stars:', stars)
+        _onComplete(score, stars)
+      }
     }
-  }, [timeLeft, gameOver, showCorrect])
+  }, [timeLeft, gameOver, showCorrect, score, _onComplete])
 
   const generateLevel = () => {
     const shuffled = [...colors].sort(() => Math.random() - 0.5)

@@ -84,7 +84,14 @@ export function SpellingSprint({ onComplete: _onComplete, onExit }: SpellingSpri
 
     setTimeout(() => {
       if (level >= 9) {
+        console.log('[DEBUG] SpellingSprint game complete, score:', score)
         setGameOver(true)
+        // Call onComplete to record session
+        if (_onComplete) {
+          const stars = Math.min(Math.floor(score / 50), 5)
+          console.log('[DEBUG] SpellingSprint calling onComplete with score:', score, 'stars:', stars)
+          _onComplete(score, stars)
+        }
       } else {
         setLevel(l => l + 1)
         setInput('')
