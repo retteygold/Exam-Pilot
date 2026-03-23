@@ -120,7 +120,14 @@ export function ReadingComprehension({ onComplete: _onComplete, onExit }: Readin
         setShowHint(false)
       } else {
         if (level >= Math.min(2, shuffledPassages.length - 1)) {
+          console.log('[DEBUG] ReadingComprehension game complete, score:', score)
           setGameOver(true)
+          // Call onComplete to record session
+          if (_onComplete) {
+            const stars = Math.min(Math.floor(score / 50), 5)
+            console.log('[DEBUG] ReadingComprehension calling onComplete with score:', score, 'stars:', stars)
+            _onComplete(score, stars)
+          }
         } else {
           setLevel(l => l + 1)
           setShowCorrect(null)
