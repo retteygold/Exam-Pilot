@@ -32,7 +32,7 @@ const questions: Question[] = [
   { parts: ['The', 'book', 'that', 'I', 'read', 'was', 'very', 'interesting'], correctOrder: [0, 1, 2, 3, 4, 5, 6, 7], hint: 'Describing which book', difficulty: 'hard' },
 ]
 
-export function GrammarBuilder({ onExit }: GrammarBuilderProps) {
+export function GrammarBuilder({ onComplete, onExit }: GrammarBuilderProps) {
   const [level, setLevel] = useState(0)
   const [score, setScore] = useState(0)
   const [currentQ, setCurrentQ] = useState<Question | null>(null)
@@ -77,7 +77,14 @@ export function GrammarBuilder({ onExit }: GrammarBuilderProps) {
 
     setTimeout(() => {
       if (level >= questions.length - 1) {
+        console.log('[DEBUG] GrammarBuilder game complete, score:', score)
         setGameOver(true)
+        // Call onComplete to record session
+        if (onComplete) {
+          const stars = Math.min(Math.floor(score / 50), 5)
+          console.log('[DEBUG] GrammarBuilder calling onComplete with score:', score, 'stars:', stars)
+          onComplete(score, stars)
+        }
       } else {
         setLevel(l => l + 1)
       }
