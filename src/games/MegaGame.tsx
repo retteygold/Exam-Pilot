@@ -81,6 +81,16 @@ export function MegaGame({ onComplete: _onComplete, onExit }: MegaGameProps) {
   const [timeLeft, setTimeLeft] = useState(20)
   const [completedGames, setCompletedGames] = useState<Set<GameType>>(new Set())
 
+  // Call onComplete when game ends
+  useEffect(() => {
+    if (gameOver && _onComplete) {
+      console.log('[DEBUG] MegaGame game complete, score:', score)
+      const stars = Math.min(Math.floor(score / 150), 5)
+      console.log('[DEBUG] MegaGame calling onComplete with score:', score, 'stars:', stars)
+      _onComplete(score, stars)
+    }
+  }, [gameOver, score, _onComplete])
+
   useEffect(() => {
     // Shuffle and pick 15 random challenges
     const shuffled = [...allChallenges].sort(() => Math.random() - 0.5).slice(0, 15)
