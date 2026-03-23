@@ -76,10 +76,17 @@ export function SpeedMath({ onComplete: _onComplete, onExit }: SpeedMathProps) {
     if (timeLeft > 0 && !gameOver) {
       const t = setTimeout(() => setTimeLeft(t => t - 1), 1000)
       return () => clearTimeout(t)
-    } else if (timeLeft === 0) {
+    } else if (timeLeft === 0 && !gameOver) {
+      console.log('[DEBUG] SpeedMath time up, ending game with score:', score)
       setGameOver(true)
+      // Call onComplete to record session
+      if (_onComplete) {
+        const stars = Math.min(Math.floor(score / 100), 5)
+        console.log('[DEBUG] SpeedMath calling onComplete with score:', score, 'stars:', stars)
+        _onComplete(score, stars)
+      }
     }
-  }, [timeLeft, gameOver])
+  }, [timeLeft, gameOver, score, _onComplete])
 
   const handleAnswer = (ans: number) => {
     if (!currentQ || gameOver) return
@@ -104,6 +111,7 @@ export function SpeedMath({ onComplete: _onComplete, onExit }: SpeedMathProps) {
   const stars = Math.min(Math.floor(score / 100), 5)
 
   if (gameOver) {
+    const stars = Math.min(Math.floor(score / 100), 5)
     return (
       <div className="min-h-screen bg-gradient-to-br from-red-900 via-orange-900 to-slate-900 p-4 overflow-y-auto flex items-center justify-center">
         <div className="bg-slate-800/80 rounded-3xl p-8 max-w-md w-full text-center">
