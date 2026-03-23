@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Star, Trophy, ArrowLeft, Puzzle, Check } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface GrammarBuilderProps {
   onComplete: (score: number, stars: number) => void
@@ -33,13 +34,36 @@ const questions: Question[] = [
 ]
 
 export function GrammarBuilder({ onComplete, onExit }: GrammarBuilderProps) {
-  const [level, setLevel] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+
+  const [level, setLevel] = useState(activeGame?.gameType === 'grammar-builder' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'grammar-builder' ? activeGame.score : 0)
   const [currentQ, setCurrentQ] = useState<Question | null>(null)
   const [userOrder, setUserOrder] = useState<number[]>([])
   const [shuffledParts, setShuffledParts] = useState<{text: string, originalIndex: number}[]>([])
   const [gameOver, setGameOver] = useState(false)
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null)
+  const [initialized, setInitialized] = useState(false)
+
+  // Start game session on mount
+  useEffect(() => {
+    if (!initialized) {
+      const startLevel = activeGame?.gameType === 'grammar-builder' ? activeGame.level : 0
+      console.log('[DEBUG] GrammarBuilder starting - restored level:', startLevel, 'restored score:', activeGame?.score || 0)
+      startGameSession('grammar-builder', startLevel, {})
+      console.log('[DEBUG] GrammarBuilder game session started')
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, activeGame])
+
+  // Save progress whenever level or score changes
+  useEffect(() => {
+    if (initialized && !gameOver) {
+      console.log('[DEBUG] GrammarBuilder saving progress - level:', level, 'score:', score)
+      updateGameProgress(level, score, {})
+    }
+  }, [initialized, level, score, gameOver, updateGameProgress])
 
   useEffect(() => {
     const q = questions[level]
@@ -79,7 +103,8 @@ export function GrammarBuilder({ onComplete, onExit }: GrammarBuilderProps) {
       if (level >= questions.length - 1) {
         console.log('[DEBUG] GrammarBuilder game complete, score:', score)
         setGameOver(true)
-        // Call onComplete to record session
+        // Clear active game and call onComplete to record session
+        clearActiveGame()
         if (onComplete) {
           const stars = Math.min(Math.floor(score / 50), 5)
           console.log('[DEBUG] GrammarBuilder calling onComplete with score:', score, 'stars:', stars)
