@@ -71,7 +71,14 @@ export function ScienceLab({ onComplete: _onComplete, onExit }: ScienceLabProps)
 
     setTimeout(() => {
       if (level >= 9) {
+        console.log('[DEBUG] ScienceLab game complete, score:', score)
         setGameOver(true)
+        // Call onComplete to record session
+        if (_onComplete) {
+          const stars = Math.min(Math.floor(score / 50), 5)
+          console.log('[DEBUG] ScienceLab calling onComplete with score:', score, 'stars:', stars)
+          _onComplete(score, stars)
+        }
       } else {
         setLevel(l => l + 1)
         setSelected(null)

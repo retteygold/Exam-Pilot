@@ -143,10 +143,17 @@ export function StoryBuilder({ onComplete: _onComplete, onExit }: StoryBuilderPr
     if (timeLeft > 0 && !gameOver && stage !== 'complete') {
       const t = setTimeout(() => setTimeLeft(t => t - 1), 1000)
       return () => clearTimeout(t)
-    } else if (timeLeft === 0) {
+    } else if (timeLeft === 0 && !gameOver) {
+      console.log('[DEBUG] StoryBuilder time up, ending game with score:', score)
       setGameOver(true)
+      // Call onComplete to record session
+      if (_onComplete) {
+        const stars = Math.min(Math.floor(score / 50), 5)
+        console.log('[DEBUG] StoryBuilder calling onComplete with score:', score, 'stars:', stars)
+        _onComplete(score, stars)
+      }
     }
-  }, [timeLeft, gameOver, stage])
+  }, [timeLeft, gameOver, stage, score, _onComplete])
 
   const handleMiddleSelect = (idx: number) => {
     if (feedback) return
@@ -176,7 +183,14 @@ export function StoryBuilder({ onComplete: _onComplete, onExit }: StoryBuilderPr
 
     setTimeout(() => {
       if (level >= prompts.length - 1) {
+        console.log('[DEBUG] StoryBuilder game complete, score:', score)
         setGameOver(true)
+        // Call onComplete to record session
+        if (_onComplete) {
+          const stars = Math.min(Math.floor(score / 50), 5)
+          console.log('[DEBUG] StoryBuilder calling onComplete with score:', score, 'stars:', stars)
+          _onComplete(score, stars)
+        }
       } else {
         setLevel(l => l + 1)
       }
