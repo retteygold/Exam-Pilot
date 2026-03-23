@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Star, ArrowLeft, Palette, Check, Sparkles } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface ColorMatchProps {
   onComplete?: (score: number, stars: number) => void
@@ -24,8 +25,11 @@ const colors: Color[] = [
 ]
 
 export function ColorMatch({ onComplete: _onComplete, onExit }: ColorMatchProps) {
-  const [level, setLevel] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+  
+  const [level, setLevel] = useState(activeGame?.gameType === 'color-match' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'color-match' ? activeGame.score : 0)
   const [targetColor, setTargetColor] = useState<Color | null>(null)
   const [options, setOptions] = useState<Color[]>([])
   const [gameOver, setGameOver] = useState(false)
@@ -33,6 +37,22 @@ export function ColorMatch({ onComplete: _onComplete, onExit }: ColorMatchProps)
   const [showCorrect, setShowCorrect] = useState(false)
   const [streak, setStreak] = useState(0)
   const [timeLeft, setTimeLeft] = useState(30)
+  const [initialized, setInitialized] = useState(false)
+
+  // Start game session on mount
+  useEffect(() => {
+    if (!initialized) {
+      startGameSession('color-match', level, { timeLeft })
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, level, timeLeft])
+
+  // Save progress whenever level or score changes
+  useEffect(() => {
+    if (initialized && !gameOver) {
+      updateGameProgress(level, score, { timeLeft })
+    }
+  }, [initialized, level, score, timeLeft, gameOver, updateGameProgress])
 
   useEffect(() => {
     generateLevel()
@@ -45,14 +65,15 @@ export function ColorMatch({ onComplete: _onComplete, onExit }: ColorMatchProps)
     } else if (timeLeft === 0 && !gameOver) {
       console.log('[DEBUG] ColorMatch time up, ending game with score:', score)
       setGameOver(true)
-      // Call onComplete to record session
+      // Clear active game and call onComplete to record session
+      clearActiveGame()
       if (_onComplete) {
         const stars = Math.min(Math.floor(score / 50), 5)
         console.log('[DEBUG] ColorMatch calling onComplete with score:', score, 'stars:', stars)
         _onComplete(score, stars)
       }
     }
-  }, [timeLeft, gameOver, showCorrect, score, _onComplete])
+  }, [timeLeft, gameOver, showCorrect, score, _onComplete, clearActiveGame])
 
   const generateLevel = () => {
     const shuffled = [...colors].sort(() => Math.random() - 0.5)
