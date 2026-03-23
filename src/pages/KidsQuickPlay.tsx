@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom'
+import { useMemo } from 'react'
+import { useKidsStore } from '../store/kidsStore'
 import { Gamepad2, Puzzle, Brain, Grid3X3, Zap, Trophy, Star, ArrowRight, Search, Eye, HelpCircle, BookOpen, Sparkles, Target, PenTool, Ear, Mic, BookMarked, Shuffle, Music, Image, Calculator, Palette, Shapes, Crown } from 'lucide-react'
 
 interface GameCard {
@@ -231,6 +233,22 @@ const games: GameCard[] = [
 
 export function KidsQuickPlay() {
   const navigate = useNavigate()
+  const { currentKid, sessions } = useKidsStore()
+
+  // Calculate XP from sessions
+  const kidXp = useMemo(() => {
+    if (!currentKid) return 0
+    const kidSessions = sessions.filter(s => s.kidId === currentKid.id)
+    const total = kidSessions.reduce((sum, s) => sum + (s.score || 0), 0)
+    return total
+  }, [currentKid, sessions])
+
+  const xpPerLevel = 500
+  const xpLevel = Math.max(1, Math.floor(kidXp / xpPerLevel) + 1)
+  const xpInLevel = kidXp % xpPerLevel
+  const xpProgressPct = Math.min(100, Math.round((xpInLevel / xpPerLevel) * 100))
+  const levelNames = ['Explorer', 'Adventurer', 'Champion', 'Master', 'Legend']
+  const levelName = levelNames[Math.min(xpLevel - 1, 4)] || 'Legend'
 
   const startGame = (gameId: string) => {
     const routes: Record<string, string> = {
@@ -372,19 +390,30 @@ export function KidsQuickPlay() {
         </h2>
         <div className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700">
           <div className="flex items-center justify-between mb-4">
-            <span className="text-sm text-slate-300">Level 1: Explorer</span>
-            <span className="text-xs text-purple-400 font-bold">0/100 XP</span>
+            <span className="text-sm text-slate-300">Level {xpLevel}: {levelName}</span>
+            <span className="text-xs text-purple-400 font-bold">{xpInLevel}/{xpPerLevel} XP</span>
           </div>
           <div className="h-3 bg-slate-700 rounded-full overflow-hidden mb-4">
-            <div className="h-full w-0 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full" />
+            <div
+              className="h-full bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 rounded-full"
+              style={{ width: `${xpProgressPct}%` }}
+            />
           </div>
           <div className="grid grid-cols-5 gap-2">
             {[1, 2, 3, 4, 5].map((level) => (
               <div
                 key={level}
-                className="aspect-square rounded-xl flex items-center justify-center bg-slate-700/50 border border-slate-600"
+                className={`aspect-square rounded-xl flex items-center justify-center ${
+                  level <= Math.min(5, xpLevel)
+                    ? 'bg-gradient-to-br from-purple-500 to-pink-500'
+                    : 'bg-slate-700/50 border border-slate-600'
+                }`}
               >
-                <span className="text-xs text-slate-500">{level}</span>
+                {level <= Math.min(5, xpLevel) ? (
+                  <Star className="w-4 h-4 text-white fill-white" />
+                ) : (
+                  <span className="text-xs text-slate-500">{level}</span>
+                )}
               </div>
             ))}
           </div>

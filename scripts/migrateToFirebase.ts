@@ -4,13 +4,25 @@
  */
 
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, doc, writeBatch } from 'firebase/firestore'
+import { getFirestore, collection, doc, writeBatch, getDocs, query, limit, startAfter, orderBy } from 'firebase/firestore'
 import { config } from 'dotenv'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
 config()
+
+// Helper to clean undefined values for Firestore (Firestore rejects undefined)
+function cleanForFirestore(obj: any): any {
+  if (obj === undefined) return null
+  if (obj === null || typeof obj !== 'object') return obj
+  if (Array.isArray(obj)) return obj.map(cleanForFirestore)
+  const cleaned: any = {}
+  for (const [k, v] of Object.entries(obj)) {
+    cleaned[k] = cleanForFirestore(v)
+  }
+  return cleaned
+}
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -152,7 +164,7 @@ function toUploadQuestions(data: any, filePath: string): any[] {
         const correctLetter = String(q?.correct_answer || q?.correctAnswer || 'A')
         const correctAnswer = Math.max(0, Math.min(3, correctLetter.toUpperCase().charCodeAt(0) - 'A'.charCodeAt(0)))
 
-        out.push({
+        out.push(cleanForFirestore({
           id: uniqueId,
           subject,
           yearGroup: subject.startsWith('o_') ? 'year11' : 'year12',
@@ -177,7 +189,7 @@ function toUploadQuestions(data: any, filePath: string): any[] {
             page: pageNumber
           },
           sourceFile: path.relative(path.resolve(__dirname, '..'), filePath)
-        })
+        }))
       }
     }
     return out
@@ -227,47 +239,104 @@ async function migrateQuestions() {
     return
   }
   
-  // Upload in batches
+  // Upload in batches (fast resume: fetch all existing IDs first)
   const BATCH_SIZE = 500
   const questionsRef = collection(db, 'questions')
   
-  for (let i = 0; i < unique.length; i += BATCH_SIZE) {
-    const batch = writeBatch(db)
-    const chunk = unique.slice(i, i + BATCH_SIZE)
-    
-    chunk.forEach((q: any) => {
-      const subjectKey = toCanonicalSubjectKey(q.subject)
-      const mapped = subjectMap[q.subject] || subjectMap[subjectKey] || { name: q.subject, level: 'Unknown' }
-      const displaySubject = mapped.level === 'Unknown' ? String(q.subject) : `${mapped.level} ${mapped.name}`
+  // Step 1: Fetch all existing document IDs in batches
+  console.log('🔍 Fetching existing document IDs from Firestore...')
+  const existingIds = new Set<string>()
+  let lastDoc: any = null
+  let fetchCount = 0
+  
+  while (true) {
+    try {
+      let q
+      if (lastDoc) {
+        q = query(questionsRef, orderBy('__name__'), startAfter(lastDoc), limit(1000))
+      } else {
+        q = query(questionsRef, orderBy('__name__'), limit(1000))
+      }
       
-      const docRef = doc(questionsRef, q.id)
-      batch.set(docRef, {
-        ...q,
-        subject: subjectKey,
-        subjectDisplay: displaySubject,
-        normalizedSubject: subjectKey,
-        uploadedAt: new Date().toISOString()
-      })
-    })
+      const snapshot = await getDocs(q)
+      if (snapshot.empty) break
+      
+      snapshot.docs.forEach(d => existingIds.add(d.id))
+      fetchCount += snapshot.docs.length
+      
+      if (fetchCount % 5000 === 0) {
+        console.log(`  … fetched ${fetchCount} existing IDs`)
+      }
+      
+      if (snapshot.docs.length < 1000) break
+      lastDoc = snapshot.docs[snapshot.docs.length - 1]
+    } catch (err) {
+      console.error('  ⚠️ Error fetching existing IDs, continuing with empty set:', err)
+      break
+    }
+  }
+  
+  console.log(`✓ Found ${existingIds.size} existing documents in Firestore\n`)
+  
+  // Step 2: Filter out already uploaded questions
+  const toUpload = unique.filter(q => !existingIds.has(q.id))
+  const alreadyUploaded = unique.filter(q => existingIds.has(q.id))
+  
+  console.log(`📤 Need to upload: ${toUpload.length} new questions`)
+  console.log(`⏭️  Already uploaded: ${alreadyUploaded.length} questions\n`)
+  
+  if (toUpload.length === 0) {
+    console.log('✅ All questions already uploaded!')
+    return
+  }
+  
+  // Step 3: Upload new questions in batches
+  let uploaded = 0
+  let batch = writeBatch(db)
+  
+  for (let i = 0; i < toUpload.length; i++) {
+    const q = toUpload[i]
+    const docRef = doc(questionsRef, q.id)
     
-    await batch.commit()
-    console.log(`✓ Batch ${Math.floor(i / BATCH_SIZE) + 1}: ${chunk.length} uploaded`)
+    const subjectKey = toCanonicalSubjectKey(q.subject)
+    const mapped = subjectMap[q.subject] || subjectMap[subjectKey] || { name: q.subject, level: 'Unknown' }
+    const displaySubject = mapped.level === 'Unknown' ? String(q.subject) : `${mapped.level} ${mapped.name}`
     
-    if (i + BATCH_SIZE < unique.length) {
+    batch.set(docRef, cleanForFirestore({
+      ...q,
+      subject: subjectKey,
+      subjectDisplay: displaySubject,
+      normalizedSubject: subjectKey,
+      uploadedAt: new Date().toISOString()
+    }))
+    
+    uploaded++
+    
+    // Commit batch when full
+    if (uploaded % BATCH_SIZE === 0) {
+      await batch.commit()
+      console.log(`✓ Batch committed: ${uploaded}/${toUpload.length} uploaded`)
+      batch = writeBatch(db)
       await new Promise(r => setTimeout(r, 500))
     }
   }
   
-  console.log(`\n✅ Migration complete! Uploaded ${unique.length} questions`)
+  // Commit any remaining
+  if (uploaded % BATCH_SIZE !== 0) {
+    await batch.commit()
+  }
   
-  // Show breakdown
+  console.log(`\n✅ Migration complete! ${uploaded} new questions uploaded`)
+  console.log(`   ${alreadyUploaded.length} were already in Firestore`)
+  
+  // Show breakdown of newly uploaded
   const counts: Record<string, number> = {}
-  unique.forEach((q: any) => {
+  toUpload.forEach((q: any) => {
     const s = subjectMap[q.subject]?.name || q.subject
     counts[s] = (counts[s] || 0) + 1
   })
   
-  console.log('\n📚 By subject:')
+  console.log('\n📚 New uploads by subject:')
   Object.entries(counts)
     .sort((a, b) => b[1] - a[1])
     .forEach(([s, c]) => console.log(`  • ${s}: ${c}`))

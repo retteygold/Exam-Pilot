@@ -681,10 +681,7 @@ export const useKidsStore = create<KidsState>()(
               bestScore,
               updatedAt: Date.now()
             }
-          }
-        }))
-        
-        set(state => ({
+          },
           sessions: [...state.sessions, newSession]
         }))
 
