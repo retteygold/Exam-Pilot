@@ -3,6 +3,7 @@ import { Search, RotateCcw, Trophy, Star, ChevronRight } from 'lucide-react'
 import { WORD_SEARCH_LEVELS } from './wordSearchLevels'
 import { soundManager } from '../utils/soundManager'
 import { RewardPopup } from '../components/RewardPopup'
+import { useKidsStore } from '../store/kidsStore'
 
 interface WordSearchGameProps {
   onComplete: (score: number, stars: number) => void
@@ -12,17 +13,21 @@ interface WordSearchGameProps {
 const GRID_SIZE = 10
 
 export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
-  const [currentLevel, setCurrentLevel] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+
+  const [currentLevel, setCurrentLevel] = useState(activeGame?.gameType === 'word-search' ? activeGame.level : 0)
   const [grid, setGrid] = useState<string[][]>([])
   const [foundWords, setFoundWords] = useState<string[]>([])
   const [selectedCells, setSelectedCells] = useState<{row: number, col: number}[]>([])
   const [isSelecting, setIsSelecting] = useState(false)
   const [currentWord, setCurrentWord] = useState('')
-  const [score, setScore] = useState(0)
+  const [score, setScore] = useState(activeGame?.gameType === 'word-search' ? activeGame.score : 0)
   const [totalScore, setTotalScore] = useState(0)
   const [wordPositions, setWordPositions] = useState<Map<string, {row: number, col: number}[]>>(new Map())
   const [pointerId, setPointerId] = useState<number | null>(null)
   const [showLevelComplete, setShowLevelComplete] = useState(false)
+  const [initialized, setInitialized] = useState(false)
 
   const [showReward, setShowReward] = useState(false)
   const [rewardData, setRewardData] = useState({
@@ -36,8 +41,19 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
   const WORDS = levelData.words
 
   useEffect(() => {
-    generateGrid()
-  }, [currentLevel])
+    if (!initialized) {
+      generateGrid()
+      startGameSession('word-search', currentLevel, {})
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, currentLevel])
+
+  // Save progress whenever level or score changes
+  useEffect(() => {
+    if (initialized) {
+      updateGameProgress(currentLevel, score, {})
+    }
+  }, [initialized, currentLevel, score, updateGameProgress])
 
   const showRewardPopup = (
     title: string,
@@ -235,6 +251,7 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
       const stars = Math.min(3, Math.floor(totalScore / 100) + 1)
       showRewardPopup('Word Wizard! 🏆', `You earned ${stars} stars!`, 'win', stars)
       soundManager.play('win')
+      clearActiveGame()
       setTimeout(() => {
         onComplete(totalScore, stars)
       }, 2500)

@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { Timer, Zap, Flame } from 'lucide-react'
 import { soundManager } from '../utils/soundManager'
 import { RewardPopup } from '../components/RewardPopup'
+import { useKidsStore } from '../store/kidsStore'
 
 interface SpeedChallengeGameProps {
   onComplete: (score: number, stars: number) => void
@@ -20,8 +21,11 @@ const CHALLENGES = [
 ]
 
 export function SpeedChallengeGame({ onComplete, onExit }: SpeedChallengeGameProps) {
-  const [currentChallenge, setCurrentChallenge] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+
+  const [currentChallenge, setCurrentChallenge] = useState(activeGame?.gameType === 'speed-challenge' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'speed-challenge' ? activeGame.score : 0)
   const [timeLeft, setTimeLeft] = useState(30)
   const [isGameActive, setIsGameActive] = useState(true)
   const [streak, setStreak] = useState(0)
@@ -35,8 +39,23 @@ export function SpeedChallengeGame({ onComplete, onExit }: SpeedChallengeGamePro
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
   const [showResult, setShowResult] = useState(false)
   const [difficulty, setDifficulty] = useState(1)
+  const [initialized, setInitialized] = useState(false)
 
   // Timer - faster than quiz race
+  useEffect(() => {
+    if (!initialized) {
+      startGameSession('speed-challenge', currentChallenge, {})
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, currentChallenge])
+
+  // Save progress whenever challenge or score changes
+  useEffect(() => {
+    if (initialized && isGameActive) {
+      updateGameProgress(currentChallenge, score, {})
+    }
+  }, [initialized, currentChallenge, score, isGameActive, updateGameProgress])
+
   useEffect(() => {
     if (!isGameActive || timeLeft <= 0) return
 
@@ -123,6 +142,7 @@ export function SpeedChallengeGame({ onComplete, onExit }: SpeedChallengeGamePro
       soundManager.play('win')
     }, 500)
 
+    clearActiveGame()
     setTimeout(() => {
       onComplete(score, stars)
     }, 3000)

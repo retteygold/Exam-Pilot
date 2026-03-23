@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Star, ArrowLeft, FlaskConical, Microscope, Atom, Brain } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface ScienceLabProps {
   onComplete: (score: number, stars: number) => void
@@ -38,19 +39,35 @@ const questions: Question[] = [
 ]
 
 export function ScienceLab({ onComplete: _onComplete, onExit }: ScienceLabProps) {
-  const [level, setLevel] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+
+  const [level, setLevel] = useState(activeGame?.gameType === 'science-lab' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'science-lab' ? activeGame.score : 0)
   const [currentQ, setCurrentQ] = useState<Question | null>(null)
   const [gameOver, setGameOver] = useState(false)
   const [shuffled, setShuffled] = useState<Question[]>([])
   const [selected, setSelected] = useState<number | null>(null)
   const [showCorrect, setShowCorrect] = useState(false)
+  const [initialized, setInitialized] = useState(false)
 
   useEffect(() => {
-    const shuffledQ = [...questions].sort(() => Math.random() - 0.5).slice(0, 10)
-    setShuffled(shuffledQ)
-    setCurrentQ(shuffledQ[0])
-  }, [])
+    if (!initialized) {
+      const shuffledQ = [...questions].sort(() => Math.random() - 0.5).slice(0, 10)
+      setShuffled(shuffledQ)
+      const startLevel = activeGame?.gameType === 'science-lab' ? activeGame.level : 0
+      setCurrentQ(shuffledQ[startLevel] || shuffledQ[0])
+      startGameSession('science-lab', startLevel, {})
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, activeGame])
+
+  // Save progress whenever level or score changes
+  useEffect(() => {
+    if (initialized && !gameOver) {
+      updateGameProgress(level, score, {})
+    }
+  }, [initialized, level, score, gameOver, updateGameProgress])
 
   useEffect(() => {
     if (shuffled.length > 0) {
@@ -73,7 +90,8 @@ export function ScienceLab({ onComplete: _onComplete, onExit }: ScienceLabProps)
       if (level >= 9) {
         console.log('[DEBUG] ScienceLab game complete, score:', score)
         setGameOver(true)
-        // Call onComplete to record session
+        // Clear active game and call onComplete to record session
+        clearActiveGame()
         if (_onComplete) {
           const stars = Math.min(Math.floor(score / 50), 5)
           console.log('[DEBUG] ScienceLab calling onComplete with score:', score, 'stars:', stars)

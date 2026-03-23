@@ -3,6 +3,7 @@ import { HelpCircle, RotateCcw, Star, ArrowRight } from 'lucide-react'
 import { WHICH_CAN_LEVELS } from './whichCanLevels'
 import { soundManager } from '../utils/soundManager'
 import { RewardPopup } from '../components/RewardPopup'
+import { useKidsStore } from '../store/kidsStore'
 
 interface WhichOneCanProps {
   onComplete: (score: number, stars: number) => void
@@ -10,12 +11,20 @@ interface WhichOneCanProps {
 }
 
 export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
-  const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+
+  const [currentQuestion, setCurrentQuestion] = useState(activeGame?.gameType === 'which-one-can' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'which-one-can' ? activeGame.score : 0)
   const [selected, setSelected] = useState<number | null>(null)
   const [showResult, setShowResult] = useState(false)
   const [streak, setStreak] = useState(0)
   const [correctCount, setCorrectCount] = useState(0)
+  const [initialized] = useState(() => {
+    const level = activeGame?.gameType === 'which-one-can' ? activeGame.level : 0
+    startGameSession('which-one-can', level, {})
+    return true
+  })
 
   const [showReward, setShowReward] = useState(false)
   const [rewardData, setRewardData] = useState({
@@ -60,6 +69,8 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
       } else if (newStreak === 5) {
         showRewardPopup('Unstoppable! ⚡', '5 correct in a row!', 'milestone', 20)
       }
+      // Save progress after correct answer
+      updateGameProgress(currentQuestion, score + points, {})
     } else {
       soundManager.play('wrong')
       setStreak(0)
@@ -73,10 +84,13 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
       setCurrentQuestion(currentQuestion + 1)
       setSelected(null)
       setShowResult(false)
+      // Save progress when moving to next question
+      updateGameProgress(currentQuestion + 1, score, {})
     } else {
       const stars = Math.min(3, Math.floor((correctCount / WHICH_CAN_LEVELS.length) * 3) + (correctCount === WHICH_CAN_LEVELS.length ? 0 : 1))
       showRewardPopup('Logic Legend! 🏆', `You earned ${stars} stars!`, 'win', stars)
       soundManager.play('win')
+      clearActiveGame()
       setTimeout(() => {
         onComplete(score, stars)
       }, 2500)
