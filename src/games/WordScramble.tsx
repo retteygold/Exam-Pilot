@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { Star, ArrowLeft, Shuffle, Check, RotateCcw, Timer, Zap } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface WordScrambleProps {
   onComplete?: (score: number, stars: number) => void
@@ -45,8 +46,11 @@ const words: Word[] = [
 ]
 
 export function WordScramble({ onComplete: _onComplete, onExit }: WordScrambleProps) {
-  const [level, setLevel] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+  
+  const [level, setLevel] = useState(activeGame?.gameType === 'word-scramble' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'word-scramble' ? activeGame.score : 0)
   const [currentWord, setCurrentWord] = useState<Word | null>(null)
   const [scrambled, setScrambled] = useState<string[]>([])
   const [userAnswer, setUserAnswer] = useState<string[]>([])
@@ -54,7 +58,10 @@ export function WordScramble({ onComplete: _onComplete, onExit }: WordScramblePr
   const [shuffledWords, setShuffledWords] = useState<Word[]>([])
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null)
   const [streak, setStreak] = useState(0)
-  const [timeLeft, setTimeLeft] = useState(45)
+  const [timeLeft, setTimeLeft] = useState(
+    activeGame?.gameType === 'word-scramble' ? (activeGame.extraData?.timeLeft ?? 45) : 45
+  )
+  const [initialized, setInitialized] = useState(false)
 
   const scrambleWord = useCallback((word: string): string[] => {
     const letters = word.split('')
@@ -66,20 +73,32 @@ export function WordScramble({ onComplete: _onComplete, onExit }: WordScramblePr
     return scrambled
   }, [])
 
+  // Start game session on mount
   useEffect(() => {
-    const shuffled = [...words].sort(() => Math.random() - 0.5)
-    setShuffledWords(shuffled)
-    setCurrentWord(shuffled[0])
-  }, [])
+    if (!initialized) {
+      const shuffled = [...words].sort(() => Math.random() - 0.5)
+      setShuffledWords(shuffled)
+      const startLevel = activeGame?.gameType === 'word-scramble' ? activeGame.level : 0
+      setCurrentWord(shuffled[startLevel] || shuffled[0])
+      startGameSession('word-scramble', startLevel, { timeLeft })
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, activeGame, timeLeft])
 
   useEffect(() => {
     if (currentWord) {
       setScrambled(scrambleWord(currentWord.word))
       setUserAnswer([])
       setFeedback(null)
-      setTimeLeft(45)
     }
   }, [currentWord, scrambleWord])
+
+  // Save progress whenever level or score changes
+  useEffect(() => {
+    if (initialized && !gameOver) {
+      updateGameProgress(level, score, { timeLeft })
+    }
+  }, [initialized, level, score, timeLeft, gameOver, updateGameProgress])
 
   useEffect(() => {
     if (timeLeft > 0 && !gameOver && feedback !== 'correct') {
@@ -91,13 +110,16 @@ export function WordScramble({ onComplete: _onComplete, onExit }: WordScramblePr
       setTimeout(() => {
         if (level >= 9) {
           setGameOver(true)
+          // Clear active game when game ends
+          clearActiveGame()
         } else {
           setLevel(l => l + 1)
           setCurrentWord(shuffledWords[level + 1])
+          setTimeLeft(45)
         }
       }, 1500)
     }
-  }, [timeLeft, gameOver, feedback, level, shuffledWords])
+  }, [timeLeft, gameOver, feedback, level, shuffledWords, clearActiveGame])
 
   const handleLetterClick = (letter: string, index: number) => {
     if (feedback) return
@@ -128,6 +150,8 @@ export function WordScramble({ onComplete: _onComplete, onExit }: WordScramblePr
         if (level >= 9) {
           console.log('[DEBUG] WordScramble game complete, score:', score)
           setGameOver(true)
+          // Clear active game and call onComplete to record session
+          clearActiveGame()
           // Call onComplete to record session
           if (_onComplete) {
             const stars = Math.min(Math.floor(score / 50), 5)
@@ -137,6 +161,7 @@ export function WordScramble({ onComplete: _onComplete, onExit }: WordScramblePr
         } else {
           setLevel(l => l + 1)
           setCurrentWord(shuffledWords[level + 1])
+          setTimeLeft(45)
         }
       }, 1500)
     }
