@@ -157,13 +157,16 @@ export function SoundDetective({ onComplete: _onComplete, onExit }: SoundDetecti
     }
   }
 
+  // Start game session on mount
   useEffect(() => {
     if (!initialized) {
       const shuffledS = [...sounds].sort(() => Math.random() - 0.5).slice(0, 10)
       setShuffled(shuffledS)
       const startLevel = activeGame?.gameType === 'sound-detective' ? activeGame.level : 0
+      console.log('[DEBUG] SoundDetective starting - restored level:', startLevel, 'restored score:', activeGame?.score || 0)
       setCurrentSound(shuffledS[startLevel] || shuffledS[0])
       startGameSession('sound-detective', startLevel, {})
+      console.log('[DEBUG] SoundDetective game session started')
       setInitialized(true)
     }
   }, [initialized, startGameSession, activeGame])
@@ -171,6 +174,7 @@ export function SoundDetective({ onComplete: _onComplete, onExit }: SoundDetecti
   // Save progress whenever level or score changes
   useEffect(() => {
     if (initialized && !gameOver) {
+      console.log('[DEBUG] SoundDetective saving progress - level:', level, 'score:', score)
       updateGameProgress(level, score, {})
     }
   }, [initialized, level, score, gameOver, updateGameProgress])

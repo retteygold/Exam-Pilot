@@ -135,8 +135,10 @@ export function StoryBuilder({ onComplete: _onComplete, onExit }: StoryBuilderPr
       const shuffledP = [...prompts].sort(() => Math.random() - 0.5)
       setShuffled(shuffledP)
       const startLevel = activeGame?.gameType === 'story-builder' ? activeGame.level : 0
+      console.log('[DEBUG] StoryBuilder starting - restored level:', startLevel, 'restored score:', activeGame?.score || 0)
       setCurrentPrompt(shuffledP[startLevel] || shuffledP[0])
       startGameSession('story-builder', startLevel, { timeLeft })
+      console.log('[DEBUG] StoryBuilder game session started')
       setInitialized(true)
     }
   }, [initialized, startGameSession, activeGame, timeLeft])

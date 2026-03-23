@@ -43,7 +43,9 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
   useEffect(() => {
     if (!initialized) {
       generateGrid()
+      console.log('[DEBUG] WordSearchGame starting - restored level:', currentLevel, 'restored score:', score)
       startGameSession('word-search', currentLevel, {})
+      console.log('[DEBUG] WordSearchGame game session started')
       setInitialized(true)
     }
   }, [initialized, startGameSession, currentLevel])
@@ -51,6 +53,7 @@ export function WordSearchGame({ onComplete, onExit }: WordSearchGameProps) {
   // Save progress whenever level or score changes
   useEffect(() => {
     if (initialized) {
+      console.log('[DEBUG] WordSearchGame saving progress - level:', currentLevel, 'score:', score)
       updateGameProgress(currentLevel, score, {})
     }
   }, [initialized, currentLevel, score, updateGameProgress])

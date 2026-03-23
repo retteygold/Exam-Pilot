@@ -20,10 +20,13 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
   const [showResult, setShowResult] = useState(false)
   const [streak, setStreak] = useState(0)
   const [correctCount, setCorrectCount] = useState(0)
-  const [initialized] = useState(() => {
+  useState(() => {
     const level = activeGame?.gameType === 'which-one-can' ? activeGame.level : 0
+    const restoredScore = activeGame?.gameType === 'which-one-can' ? activeGame.score : 0
+    console.log('[DEBUG] WhichOneCan starting - restored level:', level, 'restored score:', restoredScore)
     startGameSession('which-one-can', level, {})
-    return true
+    console.log('[DEBUG] WhichOneCan game session started')
+    return null
   })
 
   const [showReward, setShowReward] = useState(false)
@@ -70,6 +73,7 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
         showRewardPopup('Unstoppable! ⚡', '5 correct in a row!', 'milestone', 20)
       }
       // Save progress after correct answer
+      console.log('[DEBUG] WhichOneCan saving progress - question:', currentQuestion, 'score:', score + points)
       updateGameProgress(currentQuestion, score + points, {})
     } else {
       soundManager.play('wrong')
@@ -85,6 +89,7 @@ export function WhichOneCan({ onComplete, onExit }: WhichOneCanProps) {
       setSelected(null)
       setShowResult(false)
       // Save progress when moving to next question
+      console.log('[DEBUG] WhichOneCan saving progress - question:', currentQuestion + 1, 'score:', score)
       updateGameProgress(currentQuestion + 1, score, {})
     } else {
       const stars = Math.min(3, Math.floor((correctCount / WHICH_CAN_LEVELS.length) * 3) + (correctCount === WHICH_CAN_LEVELS.length ? 0 : 1))

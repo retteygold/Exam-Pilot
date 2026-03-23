@@ -34,10 +34,14 @@ export function SpeedMath({ onComplete: _onComplete, onExit }: SpeedMathProps) {
   // Start game session on mount
   useEffect(() => {
     if (!initialized) {
-      startGameSession('speed-math', level, { timeLeft })
+      const restoredLevel = activeGame?.gameType === 'speed-math' ? activeGame.level : 1
+      const restoredScore = activeGame?.gameType === 'speed-math' ? activeGame.score : 0
+      console.log('[DEBUG] SpeedMath starting - restored level:', restoredLevel, 'restored score:', restoredScore)
+      startGameSession('speed-math', restoredLevel, { timeLeft })
+      console.log('[DEBUG] SpeedMath game session started')
       setInitialized(true)
     }
-  }, [initialized, startGameSession, level, timeLeft])
+  }, [initialized, startGameSession, activeGame, timeLeft])
 
   const generateQuestion = useCallback((lvl: number): Question => {
     const operations: Operation[] = lvl <= 3 ? ['+', '-'] : lvl <= 6 ? ['+', '-', '×'] : ['+', '-', '×', '÷']
@@ -88,6 +92,7 @@ export function SpeedMath({ onComplete: _onComplete, onExit }: SpeedMathProps) {
   // Save progress whenever level or score changes
   useEffect(() => {
     if (initialized && !gameOver) {
+      console.log('[DEBUG] SpeedMath saving progress - level:', level, 'score:', score, 'timeLeft:', timeLeft)
       updateGameProgress(level, score, { timeLeft })
     }
   }, [initialized, level, score, timeLeft, gameOver, updateGameProgress])
@@ -128,8 +133,6 @@ export function SpeedMath({ onComplete: _onComplete, onExit }: SpeedMathProps) {
       setShowCorrect(null)
     }, 600)
   }
-
-  const stars = Math.min(Math.floor(score / 100), 5)
 
   if (gameOver) {
     const stars = Math.min(Math.floor(score / 100), 5)

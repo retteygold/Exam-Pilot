@@ -98,9 +98,10 @@ export function MathBlaster({ onComplete: _onComplete, onExit }: MathBlasterProp
   // Save progress whenever level or score changes
   useEffect(() => {
     if (initialized && !gameOver) {
-      updateGameProgress(level, score, { timeLeft })
+      console.log('[DEBUG] MathBlaster saving progress - level:', level, 'score:', score)
+      updateGameProgress(level, score, {})
     }
-  }, [initialized, level, score, timeLeft, gameOver, updateGameProgress])
+  }, [initialized, level, score, gameOver, updateGameProgress])
 
   useEffect(() => {
     if (timeLeft > 0 && !gameOver) {

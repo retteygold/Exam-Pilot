@@ -44,14 +44,19 @@ export function SpeedChallengeGame({ onComplete, onExit }: SpeedChallengeGamePro
   // Timer - faster than quiz race
   useEffect(() => {
     if (!initialized) {
-      startGameSession('speed-challenge', currentChallenge, {})
+      const restoredLevel = activeGame?.gameType === 'speed-challenge' ? activeGame.level : 0
+      const restoredScore = activeGame?.gameType === 'speed-challenge' ? activeGame.score : 0
+      console.log('[DEBUG] SpeedChallengeGame starting - restored challenge:', restoredLevel, 'restored score:', restoredScore)
+      startGameSession('speed-challenge', restoredLevel, {})
+      console.log('[DEBUG] SpeedChallengeGame game session started')
       setInitialized(true)
     }
-  }, [initialized, startGameSession, currentChallenge])
+  }, [initialized, startGameSession, activeGame])
 
   // Save progress whenever challenge or score changes
   useEffect(() => {
     if (initialized && isGameActive) {
+      console.log('[DEBUG] SpeedChallengeGame saving progress - challenge:', currentChallenge, 'score:', score)
       updateGameProgress(currentChallenge, score, {})
     }
   }, [initialized, currentChallenge, score, isGameActive, updateGameProgress])

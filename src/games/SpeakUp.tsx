@@ -57,8 +57,10 @@ export function SpeakUp({ onComplete: _onComplete, onExit }: SpeakUpProps) {
       const shuffledW = [...words].sort(() => Math.random() - 0.5)
       setShuffled(shuffledW)
       const startLevel = activeGame?.gameType === 'speak-up' ? activeGame.level : 0
+      console.log('[DEBUG] SpeakUp starting - restored level:', startLevel, 'restored score:', activeGame?.score || 0)
       setCurrentWord(shuffledW[startLevel] || shuffledW[0])
       startGameSession('speak-up', startLevel, {})
+      console.log('[DEBUG] SpeakUp game session started')
       setInitialized(true)
     }
   }, [initialized, startGameSession, activeGame])

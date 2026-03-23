@@ -56,8 +56,10 @@ export function ScienceLab({ onComplete: _onComplete, onExit }: ScienceLabProps)
       const shuffledQ = [...questions].sort(() => Math.random() - 0.5).slice(0, 10)
       setShuffled(shuffledQ)
       const startLevel = activeGame?.gameType === 'science-lab' ? activeGame.level : 0
+      console.log('[DEBUG] ScienceLab starting - restored level:', startLevel, 'restored score:', activeGame?.score || 0)
       setCurrentQ(shuffledQ[startLevel] || shuffledQ[0])
       startGameSession('science-lab', startLevel, {})
+      console.log('[DEBUG] ScienceLab game session started')
       setInitialized(true)
     }
   }, [initialized, startGameSession, activeGame])
@@ -65,6 +67,7 @@ export function ScienceLab({ onComplete: _onComplete, onExit }: ScienceLabProps)
   // Save progress whenever level or score changes
   useEffect(() => {
     if (initialized && !gameOver) {
+      console.log('[DEBUG] ScienceLab saving progress - level:', level, 'score:', score)
       updateGameProgress(level, score, {})
     }
   }, [initialized, level, score, gameOver, updateGameProgress])
