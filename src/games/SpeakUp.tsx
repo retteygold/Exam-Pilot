@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Star, ArrowLeft, Mic, Volume2, Check, AlertCircle } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface SpeakUpProps {
   onComplete?: (score: number, stars: number) => void
@@ -36,8 +37,11 @@ const words: WordChallenge[] = [
 ]
 
 export function SpeakUp({ onComplete: _onComplete, onExit }: SpeakUpProps) {
-  const [level, setLevel] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+
+  const [level, setLevel] = useState(activeGame?.gameType === 'speak-up' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'speak-up' ? activeGame.score : 0)
   const [currentWord, setCurrentWord] = useState<WordChallenge | null>(null)
   const [gameOver, setGameOver] = useState(false)
   const [shuffled, setShuffled] = useState<WordChallenge[]>([])
@@ -45,12 +49,19 @@ export function SpeakUp({ onComplete: _onComplete, onExit }: SpeakUpProps) {
   const [transcript, setTranscript] = useState('')
   const [isListening, setIsListening] = useState(false)
   const [supportMessage, setSupportMessage] = useState('')
+  const [initialized, setInitialized] = useState(false)
 
+  // Start game session on mount
   useEffect(() => {
-    const shuffledW = [...words].sort(() => Math.random() - 0.5)
-    setShuffled(shuffledW)
-    setCurrentWord(shuffledW[0])
-  }, [])
+    if (!initialized) {
+      const shuffledW = [...words].sort(() => Math.random() - 0.5)
+      setShuffled(shuffledW)
+      const startLevel = activeGame?.gameType === 'speak-up' ? activeGame.level : 0
+      setCurrentWord(shuffledW[startLevel] || shuffledW[0])
+      startGameSession('speak-up', startLevel, {})
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, activeGame])
 
   useEffect(() => {
     if (shuffled.length > 0) {
@@ -59,6 +70,13 @@ export function SpeakUp({ onComplete: _onComplete, onExit }: SpeakUpProps) {
       setFeedback(null)
     }
   }, [level, shuffled])
+
+  // Save progress whenever level or score changes
+  useEffect(() => {
+    if (initialized && !gameOver) {
+      updateGameProgress(level, score, {})
+    }
+  }, [initialized, level, score, gameOver, updateGameProgress])
 
   const speakWord = () => {
     if (!currentWord) return
@@ -106,7 +124,8 @@ export function SpeakUp({ onComplete: _onComplete, onExit }: SpeakUpProps) {
         if (level >= 9) {
           console.log('[DEBUG] SpeakUp game complete, score:', score)
           setGameOver(true)
-          // Call onComplete to record session
+          // Clear active game and call onComplete to record session
+          clearActiveGame()
           if (_onComplete) {
             const stars = Math.min(Math.floor(score / 50), 5)
             console.log('[DEBUG] SpeakUp calling onComplete with score:', score, 'stars:', stars)

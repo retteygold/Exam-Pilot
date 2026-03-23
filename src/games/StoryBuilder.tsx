@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Star, ArrowLeft, PenTool, Check, Clock } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface StoryBuilderProps {
   onComplete?: (score: number, stars: number) => void
@@ -111,8 +112,11 @@ const prompts: StoryPrompt[] = [
 ]
 
 export function StoryBuilder({ onComplete: _onComplete, onExit }: StoryBuilderProps) {
-  const [level, setLevel] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+
+  const [level, setLevel] = useState(activeGame?.gameType === 'story-builder' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'story-builder' ? activeGame.score : 0)
   const [currentPrompt, setCurrentPrompt] = useState<StoryPrompt | null>(null)
   const [selectedMiddle, setSelectedMiddle] = useState<number | null>(null)
   const [selectedEnd, setSelectedEnd] = useState<number | null>(null)
@@ -120,13 +124,22 @@ export function StoryBuilder({ onComplete: _onComplete, onExit }: StoryBuilderPr
   const [gameOver, setGameOver] = useState(false)
   const [shuffled, setShuffled] = useState<StoryPrompt[]>([])
   const [feedback, setFeedback] = useState<'correct' | 'wrong' | null>(null)
-  const [timeLeft, setTimeLeft] = useState(60)
+  const [timeLeft, setTimeLeft] = useState(
+    activeGame?.gameType === 'story-builder' ? (activeGame.extraData?.timeLeft ?? 60) : 60
+  )
+  const [initialized, setInitialized] = useState(false)
 
+  // Start game session on mount
   useEffect(() => {
-    const shuffledP = [...prompts].sort(() => Math.random() - 0.5)
-    setShuffled(shuffledP)
-    setCurrentPrompt(shuffledP[0])
-  }, [])
+    if (!initialized) {
+      const shuffledP = [...prompts].sort(() => Math.random() - 0.5)
+      setShuffled(shuffledP)
+      const startLevel = activeGame?.gameType === 'story-builder' ? activeGame.level : 0
+      setCurrentPrompt(shuffledP[startLevel] || shuffledP[0])
+      startGameSession('story-builder', startLevel, { timeLeft })
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, activeGame, timeLeft])
 
   useEffect(() => {
     if (shuffled.length > 0) {
@@ -139,21 +152,29 @@ export function StoryBuilder({ onComplete: _onComplete, onExit }: StoryBuilderPr
     }
   }, [level, shuffled])
 
+  // Save progress whenever level or score changes
+  useEffect(() => {
+    if (initialized && !gameOver) {
+      updateGameProgress(level, score, { timeLeft })
+    }
+  }, [initialized, level, score, timeLeft, gameOver, updateGameProgress])
+
   useEffect(() => {
     if (timeLeft > 0 && !gameOver && stage !== 'complete') {
-      const t = setTimeout(() => setTimeLeft(t => t - 1), 1000)
+      const t = setTimeout(() => setTimeLeft((prev: number) => prev - 1), 1000)
       return () => clearTimeout(t)
     } else if (timeLeft === 0 && !gameOver) {
       console.log('[DEBUG] StoryBuilder time up, ending game with score:', score)
       setGameOver(true)
-      // Call onComplete to record session
+      // Clear active game and call onComplete to record session
+      clearActiveGame()
       if (_onComplete) {
         const stars = Math.min(Math.floor(score / 50), 5)
         console.log('[DEBUG] StoryBuilder calling onComplete with score:', score, 'stars:', stars)
         _onComplete(score, stars)
       }
     }
-  }, [timeLeft, gameOver, stage, score, _onComplete])
+  }, [timeLeft, gameOver, stage, score, _onComplete, clearActiveGame])
 
   const handleMiddleSelect = (idx: number) => {
     if (feedback) return
@@ -185,7 +206,8 @@ export function StoryBuilder({ onComplete: _onComplete, onExit }: StoryBuilderPr
       if (level >= prompts.length - 1) {
         console.log('[DEBUG] StoryBuilder game complete, score:', score)
         setGameOver(true)
-        // Call onComplete to record session
+        // Clear active game and call onComplete to record session
+        clearActiveGame()
         if (_onComplete) {
           const stars = Math.min(Math.floor(score / 50), 5)
           console.log('[DEBUG] StoryBuilder calling onComplete with score:', score, 'stars:', stars)
