@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { Star, ArrowLeft, Volume2, Play, Ear, Check } from 'lucide-react'
+import { useKidsStore } from '../store/kidsStore'
 
 interface SoundDetectiveProps {
   onComplete?: (score: number, stars: number) => void
@@ -39,8 +40,11 @@ const sounds: SoundQuestion[] = [
 ]
 
 export function SoundDetective({ onComplete: _onComplete, onExit }: SoundDetectiveProps) {
-  const [level, setLevel] = useState(0)
-  const [score, setScore] = useState(0)
+  const { startGameSession, updateGameProgress, clearActiveGame, getActiveGame } = useKidsStore()
+  const activeGame = getActiveGame()
+
+  const [level, setLevel] = useState(activeGame?.gameType === 'sound-detective' ? activeGame.level : 0)
+  const [score, setScore] = useState(activeGame?.gameType === 'sound-detective' ? activeGame.score : 0)
   const [currentSound, setCurrentSound] = useState<SoundQuestion | null>(null)
   const [gameOver, setGameOver] = useState(false)
   const [shuffled, setShuffled] = useState<SoundQuestion[]>([])
@@ -48,6 +52,7 @@ export function SoundDetective({ onComplete: _onComplete, onExit }: SoundDetecti
   const [showCorrect, setShowCorrect] = useState(false)
   const [isPlaying, setIsPlaying] = useState(false)
   const audioCtxRef = useRef<AudioContext | null>(null)
+  const [initialized, setInitialized] = useState(false)
 
   const getAudioCtx = async () => {
     if (!audioCtxRef.current) {
@@ -153,10 +158,22 @@ export function SoundDetective({ onComplete: _onComplete, onExit }: SoundDetecti
   }
 
   useEffect(() => {
-    const shuffledS = [...sounds].sort(() => Math.random() - 0.5).slice(0, 10)
-    setShuffled(shuffledS)
-    setCurrentSound(shuffledS[0])
-  }, [])
+    if (!initialized) {
+      const shuffledS = [...sounds].sort(() => Math.random() - 0.5).slice(0, 10)
+      setShuffled(shuffledS)
+      const startLevel = activeGame?.gameType === 'sound-detective' ? activeGame.level : 0
+      setCurrentSound(shuffledS[startLevel] || shuffledS[0])
+      startGameSession('sound-detective', startLevel, {})
+      setInitialized(true)
+    }
+  }, [initialized, startGameSession, activeGame])
+
+  // Save progress whenever level or score changes
+  useEffect(() => {
+    if (initialized && !gameOver) {
+      updateGameProgress(level, score, {})
+    }
+  }, [initialized, level, score, gameOver, updateGameProgress])
 
   useEffect(() => {
     if (shuffled.length > 0) {
@@ -191,7 +208,8 @@ export function SoundDetective({ onComplete: _onComplete, onExit }: SoundDetecti
       if (level >= 9) {
         console.log('[DEBUG] SoundDetective game complete, score:', score)
         setGameOver(true)
-        // Call onComplete to record session
+        // Clear active game and call onComplete to record session
+        clearActiveGame()
         if (_onComplete) {
           const stars = Math.min(Math.floor(score / 50), 5)
           console.log('[DEBUG] SoundDetective calling onComplete with score:', score, 'stars:', stars)
