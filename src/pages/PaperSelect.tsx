@@ -19,21 +19,32 @@ interface Paper {
   verifiedCount: number
 }
 
-const SUBJECT_META: Record<string, { name: string; code: string; timeAllowed: number; badge?: string }> = {
-  // O-Level (4 subjects)
-  o_level_accounting: { name: 'Accounting', code: '7707', timeAllowed: 45, badge: 'O-Level' },
-  o_level_biology: { name: 'Biology', code: '5090', timeAllowed: 60, badge: 'O-Level' },
-  o_level_mathematics: { name: 'Mathematics', code: '0580', timeAllowed: 90, badge: 'O-Level' },
-  o_level_physics: { name: 'Physics', code: '0625', timeAllowed: 60, badge: 'O-Level' },
+const SUBJECT_META: Record<string, { name: string; code: string; timeAllowed: number; badge?: string; examBoard?: string }> = {
+  // === CAMBRIDGE IGCSE (O Level) ===
+  igcse_biology: { name: 'Biology', code: '0610', timeAllowed: 60, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_chemistry: { name: 'Chemistry', code: '0620', timeAllowed: 60, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_physics: { name: 'Physics', code: '0625', timeAllowed: 60, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_mathematics: { name: 'Mathematics', code: '0580', timeAllowed: 90, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_accounting: { name: 'Accounting', code: '0452', timeAllowed: 60, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_economics: { name: 'Economics', code: '0455', timeAllowed: 60, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_business_studies: { name: 'Business Studies', code: '0450', timeAllowed: 60, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_computer_science: { name: 'Computer Science', code: '0478', timeAllowed: 60, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_english_first: { name: 'English (First Language)', code: '0500', timeAllowed: 90, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_english_second: { name: 'English (Second Language)', code: '0510', timeAllowed: 90, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
+  igcse_travel_tourism: { name: 'Travel & Tourism', code: '0471', timeAllowed: 60, badge: 'O-Level', examBoard: 'Cambridge IGCSE' },
 
-  // AS/A-Level (7 subjects)
-  as_accounting: { name: 'Accounting', code: 'WAC11-14', timeAllowed: 75, badge: 'AS/A-Level' },
-  as_biology: { name: 'Biology', code: 'WBI11-12', timeAllowed: 75, badge: 'AS/A-Level' },
-  as_business: { name: 'Business', code: 'WBS11-14', timeAllowed: 75, badge: 'AS/A-Level' },
-  as_economics: { name: 'Economics', code: 'WEC11-14', timeAllowed: 75, badge: 'AS/A-Level' },
-  as_mathematics: { name: 'Mathematics', code: 'WMA11', timeAllowed: 75, badge: 'AS/A-Level' },
-  as_physics: { name: 'Physics', code: 'WPH11', timeAllowed: 75, badge: 'AS/A-Level' },
-  as_travel_tourism: { name: 'Travel & Tourism', code: '9395', timeAllowed: 75, badge: 'AS/A-Level' }
+  // === PEARSON EDEXCEL IAL (A Level) ===
+  ial_biology: { name: 'Biology', code: 'WBI11', timeAllowed: 75, badge: 'A-Level', examBoard: 'Edexcel IAL' },
+  ial_chemistry: { name: 'Chemistry', code: 'WCH11', timeAllowed: 75, badge: 'A-Level', examBoard: 'Edexcel IAL' },
+  ial_physics: { name: 'Physics', code: 'WPH11', timeAllowed: 75, badge: 'A-Level', examBoard: 'Edexcel IAL' },
+  ial_mathematics: { name: 'Mathematics', code: 'WMA11', timeAllowed: 75, badge: 'A-Level', examBoard: 'Edexcel IAL' },
+  ial_accounting: { name: 'Accounting', code: 'WAC11', timeAllowed: 75, badge: 'A-Level', examBoard: 'Edexcel IAL' },
+  ial_economics: { name: 'Economics', code: 'WEC11', timeAllowed: 75, badge: 'A-Level', examBoard: 'Edexcel IAL' },
+  ial_business: { name: 'Business', code: 'WBS11', timeAllowed: 75, badge: 'A-Level', examBoard: 'Edexcel IAL' },
+
+  // === CAMBRIDGE IAL (A Level) ===
+  cambridge_ial_travel_tourism: { name: 'Travel & Tourism', code: '9395', timeAllowed: 75, badge: 'A-Level', examBoard: 'Cambridge IAL' },
+  cambridge_ial_computer_science: { name: 'Computer Science', code: '9618', timeAllowed: 75, badge: 'A-Level', examBoard: 'Cambridge IAL' },
 }
 
 function normalizeSubjectKey(subject: string | undefined | null): string {
@@ -47,45 +58,122 @@ function normalizeSubjectKey(subject: string | undefined | null): string {
   s = s.replace(/\s+/g, '_')
   s = s.replace(/_+/g, '_')
   
-  // Handle olevel/igcse/as variations with/without underscore
-  if (s.includes('olevel')) {
-    s = s.replace('olevel', 'o_level')
+  // === CAMBRIDGE IGCSE NORMALIZATION ===
+  // Biology 0610
+  if (s.includes('biology') && (s.includes('0610') || s.includes('igcse'))) {
+    return 'igcse_biology'
   }
-  if (s.includes('igcse')) {
-    s = s.replace('igcse', 'igcse_')
+  // Chemistry 0620
+  if (s.includes('chemistry') && (s.includes('0620') || s.includes('igcse'))) {
+    return 'igcse_chemistry'
   }
-  if (s.includes('as ') && !s.startsWith('as_')) {
-    s = s.replace('as ', 'as_')
+  // Physics 0625
+  if (s.includes('physics') && (s.includes('0625') || s.includes('igcse'))) {
+    return 'igcse_physics'
+  }
+  // Mathematics 0580
+  if ((s.includes('mathematics') || s.includes('math')) && (s.includes('0580') || s.includes('igcse'))) {
+    return 'igcse_mathematics'
+  }
+  // Accounting 0452
+  if (s.includes('accounting') && (s.includes('0452') || s.includes('igcse'))) {
+    return 'igcse_accounting'
+  }
+  // Economics 0455
+  if (s.includes('economics') && (s.includes('0455') || s.includes('igcse'))) {
+    return 'igcse_economics'
+  }
+  // Business Studies 0450
+  if (s.includes('business') && (s.includes('0450') || s.includes('igcse'))) {
+    return 'igcse_business_studies'
+  }
+  // Computer Science 0478
+  if ((s.includes('computer') || s.includes('cs')) && (s.includes('0478') || s.includes('igcse'))) {
+    return 'igcse_computer_science'
+  }
+  // English First 0500
+  if (s.includes('english') && s.includes('0500')) {
+    return 'igcse_english_first'
+  }
+  // English Second 0510
+  if (s.includes('english') && s.includes('0510')) {
+    return 'igcse_english_second'
+  }
+  // Travel & Tourism 0471
+  if ((s.includes('travel') || s.includes('tourism')) && (s.includes('0471') || s.includes('igcse'))) {
+    return 'igcse_travel_tourism'
   }
 
-  // Normalize legacy patterns coming from imports
-  if (s.startsWith('as_a_level_')) {
-    s = s.replace('as_a_level_', 'as_')
+  // === PEARSON EDEXCEL IAL NORMALIZATION ===
+  // Biology WBI11
+  if (s.includes('biology') && s.includes('wbi')) {
+    return 'ial_biology'
+  }
+  // Chemistry WCH11
+  if (s.includes('chemistry') && s.includes('wch')) {
+    return 'ial_chemistry'
+  }
+  // Physics WPH11
+  if (s.includes('physics') && s.includes('wph')) {
+    return 'ial_physics'
+  }
+  // Mathematics WMA11
+  if ((s.includes('mathematics') || s.includes('math')) && s.includes('wma')) {
+    return 'ial_mathematics'
+  }
+  // Accounting WAC11
+  if (s.includes('accounting') && s.includes('wac')) {
+    return 'ial_accounting'
+  }
+  // Economics WEC11
+  if (s.includes('economics') && s.includes('wec')) {
+    return 'ial_economics'
+  }
+  // Business WBS11
+  if (s.includes('business') && s.includes('wbs')) {
+    return 'ial_business'
   }
 
-  // Remove extra suffixes that create duplicates (e.g. as_biology_oct, as_chemistry_oct)
-  s = s.replace(/_oct$/g, '')
-
-  // Collapse subject variants like as_biology_wbi11 -> as_biology
-  if (s.startsWith('as_biology')) s = 'as_biology'
-  if (s.startsWith('as_accounting')) s = 'as_accounting'
-  if (s.startsWith('as_business')) s = 'as_business'
-  if (s.startsWith('as_economics')) s = 'as_economics'
-  if (s.startsWith('as_mathematics')) s = 'as_mathematics'
-  if (s.startsWith('as_physics')) s = 'as_physics'
-  if (s.startsWith('as_travel') || s.startsWith('as_tourism') || s.startsWith('as_travel_tourism')) s = 'as_travel_tourism'
-  
-  // Canonicalize: if subject has no level prefix, treat it as O-Level
-  if (!s.startsWith('o_level_') && !s.startsWith('igcse_') && !s.startsWith('as_')) {
-    s = `o_level_${s}`
+  // === CAMBRIDGE IAL NORMALIZATION ===
+  // Travel & Tourism 9395
+  if ((s.includes('travel') || s.includes('tourism')) && s.includes('9395')) {
+    return 'cambridge_ial_travel_tourism'
+  }
+  // Computer Science 9618
+  if ((s.includes('computer') || s.includes('cs')) && s.includes('9618')) {
+    return 'cambridge_ial_computer_science'
   }
 
-  // Collapse O-Level variants like o_level_biology_5090 -> o_level_biology
-  if (s.startsWith('o_level_accounting')) s = 'o_level_accounting'
-  if (s.startsWith('o_level_biology')) s = 'o_level_biology'
-  if (s.startsWith('o_level_mathematics') || s.startsWith('o_level_math')) s = 'o_level_mathematics'
-  if (s.startsWith('o_level_physics')) s = 'o_level_physics'
-  
+  // Legacy fallback patterns
+  if (s.startsWith('o_level_')) {
+    if (s.includes('accounting')) return 'igcse_accounting'
+    if (s.includes('biology')) return 'igcse_biology'
+    if (s.includes('mathematics') || s.includes('math')) return 'igcse_mathematics'
+    if (s.includes('physics')) return 'igcse_physics'
+  }
+
+  if (s.startsWith('as_')) {
+    if (s.includes('accounting')) return 'ial_accounting'
+    if (s.includes('biology')) return 'ial_biology'
+    if (s.includes('business')) return 'ial_business'
+    if (s.includes('economics')) return 'ial_economics'
+    if (s.includes('mathematics') || s.includes('math')) return 'ial_mathematics'
+    if (s.includes('physics')) return 'ial_physics'
+    if (s.includes('travel') || s.includes('tourism')) return 'cambridge_ial_travel_tourism'
+  }
+
+  // Default: try to infer from subject name alone
+  if (s.includes('biology')) return 'igcse_biology'
+  if (s.includes('chemistry')) return 'igcse_chemistry'
+  if (s.includes('physics')) return 'igcse_physics'
+  if (s.includes('mathematics') || s.includes('math')) return 'igcse_mathematics'
+  if (s.includes('accounting')) return 'igcse_accounting'
+  if (s.includes('economics')) return 'igcse_economics'
+  if (s.includes('business')) return 'igcse_business_studies'
+  if (s.includes('computer')) return 'igcse_computer_science'
+  if (s.includes('english')) return 'igcse_english_first'
+  if (s.includes('travel') || s.includes('tourism')) return 'igcse_travel_tourism'
+
   return s
 }
 
@@ -101,7 +189,7 @@ export function PaperSelect() {
   const [loading, setLoading] = useState(true)
   const [selectedMode, setSelectedMode] = useState<'practice' | 'exam'>('practice')
   const [recommendedDifficulty, setRecommendedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium')
-  const [selectedLevel, setSelectedLevel] = useState<'o_level' | 'as'>('o_level')
+  const [selectedLevel, setSelectedLevel] = useState<'igcse' | 'ial'>('igcse')
   
   // Filters
   const [selectedSubject, setSelectedSubject] = useState<string>('all')
@@ -237,7 +325,6 @@ export function PaperSelect() {
   }
 
   // Get unique filter values from all papers
-  const subjects = ['all', ...Array.from(new Set(papers.map(p => p.subject)))]
   const years = ['all', ...Array.from(new Set(papers.map(p => p.year.toString()))).sort((a: string, b: string) => parseInt(b) - parseInt(a))]
   const paperNumbers = ['all', ...Array.from(new Set(papers.map(p => p.paper)))]
   
@@ -320,64 +407,86 @@ export function PaperSelect() {
         </p>
       </div>
 
-      {/* Subject Selector */}
+      {/* Level Selector - Step 1 */}
       <div className="p-4 bg-slate-800 rounded-2xl">
-        <h2 className="text-lg font-semibold mb-4">Select Subject</h2>
-        <div className="grid grid-cols-2 gap-3 mb-4">
+        <h2 className="text-lg font-semibold mb-4">1. Select Exam Level</h2>
+        <div className="grid grid-cols-2 gap-3">
           <button
             type="button"
             onClick={() => {
-              setSelectedLevel('o_level')
+              setSelectedLevel('igcse')
               setSelectedSubject('all')
+              setSelectedYear('all')
+              setSelectedPaper('all')
             }}
-            className={`p-3 rounded-xl text-left transition-colors ${
-              selectedLevel === 'o_level'
-                ? 'bg-slate-600 text-white'
+            className={`p-4 rounded-xl text-left transition-colors ${
+              selectedLevel === 'igcse'
+                ? 'bg-blue-600 text-white'
                 : 'bg-slate-700 hover:bg-slate-600'
             }`}
           >
-            <div className="font-semibold">O-Level</div>
-            <div className="text-xs opacity-60 mt-1">7707 • 5090 • 0580 • 0625</div>
+            <div className="font-semibold text-lg">O Level (IGCSE)</div>
+            <div className="text-xs opacity-80 mt-1">Cambridge IGCSE • 11 Subjects</div>
+            <div className="text-[10px] opacity-60 mt-2">Grades 9-11 • Foundation Level</div>
           </button>
 
           <button
             type="button"
             onClick={() => {
-              setSelectedLevel('as')
+              setSelectedLevel('ial')
               setSelectedSubject('all')
+              setSelectedYear('all')
+              setSelectedPaper('all')
             }}
-            className={`p-3 rounded-xl text-left transition-colors ${
-              selectedLevel === 'as'
-                ? 'bg-slate-600 text-white'
+            className={`p-4 rounded-xl text-left transition-colors ${
+              selectedLevel === 'ial'
+                ? 'bg-purple-600 text-white'
                 : 'bg-slate-700 hover:bg-slate-600'
             }`}
           >
-            <div className="font-semibold">AS/A-Level</div>
-            <div className="text-xs opacity-60 mt-1">WAC • WBI • WBS • WEC • WMA • WPH • 9395</div>
+            <div className="font-semibold text-lg">A Level (IAL)</div>
+            <div className="text-xs opacity-80 mt-1">Edexcel & Cambridge • 9 Subjects</div>
+            <div className="text-[10px] opacity-60 mt-2">Grades 11-13 • Advanced Level</div>
           </button>
         </div>
+      </div>
+
+      {/* Subject Selector - Step 2 */}
+      <div className="p-4 bg-slate-800 rounded-2xl">
+        <h2 className="text-lg font-semibold mb-4">2. Select Subject</h2>
         <div className="grid grid-cols-2 gap-3">
           {Object.entries(SUBJECT_META).map(([key, meta]) => {
-            if (selectedLevel === 'o_level' && !key.startsWith('o_level_')) return null
-            if (selectedLevel === 'as' && !key.startsWith('as_')) return null
-            const Icon = key.includes('accounting') || key.includes('math') ? Calculator : key.includes('economics') || key.includes('business') || key.includes('travel') ? BookOpen : Beaker
-            const activeColor = key.includes('accounting') ? 'bg-blue-500' : key.includes('math') ? 'bg-indigo-500' : key.includes('economics') ? 'bg-amber-500' : key.includes('physics') ? 'bg-cyan-500' : key.includes('travel') ? 'bg-pink-500' : 'bg-green-500'
+            // Filter subjects based on selected level
+            if (selectedLevel === 'igcse' && !key.startsWith('igcse_')) return null
+            if (selectedLevel === 'ial' && (!key.startsWith('ial_') && !key.startsWith('cambridge_ial_'))) return null
+            
+            const Icon = key.includes('accounting') || key.includes('math') ? Calculator : key.includes('economics') || key.includes('business') || key.includes('travel') ? BookOpen : key.includes('english') ? BookOpen : Beaker
+            const activeColor = key.includes('accounting') ? 'bg-blue-500' : key.includes('math') ? 'bg-indigo-500' : key.includes('economics') ? 'bg-amber-500' : key.includes('physics') ? 'bg-cyan-500' : key.includes('chemistry') ? 'bg-teal-500' : key.includes('english') ? 'bg-rose-500' : key.includes('computer') ? 'bg-violet-500' : key.includes('travel') ? 'bg-pink-500' : 'bg-green-500'
             return (
               <button
                 key={key}
-                onClick={() => setSelectedSubject(key)}
+                onClick={() => {
+                  setSelectedSubject(key)
+                  setSelectedYear('all')
+                  setSelectedPaper('all')
+                }}
                 className={`p-4 rounded-xl text-left transition-colors ${
                   selectedSubject === key
                     ? `${activeColor} text-white`
                     : 'bg-slate-700 hover:bg-slate-600'
                 }`}
               >
-                <Icon className="w-5 h-5 mb-2" />
-                <div className="font-semibold">{meta.name}</div>
-                <div className="text-xs opacity-60 mt-1">
+                <div className="flex items-start justify-between">
+                  <Icon className="w-5 h-5 mb-2" />
+                  <span className="text-[10px] opacity-70 bg-black/20 px-2 py-0.5 rounded">{meta.code}</span>
+                </div>
+                <div className="font-semibold text-sm">{meta.name}</div>
+                <div className="text-[10px] opacity-60 mt-1">
+                  {meta.examBoard}
+                </div>
+                <div className="text-[10px] opacity-50 mt-1">
                   {subjectData[key]?.total || 0} questions • {subjectData[key]?.verified || 0} verified
                 </div>
-                <div className="text-[10px] opacity-60 mt-1">{meta.badge || 'Subject'} • {meta.code}</div>
               </button>
             )
           })}
@@ -414,58 +523,56 @@ export function PaperSelect() {
         </div>
       </div>
 
-      {/* Filters */}
+      {/* Year & Paper Selector - Step 3 */}
       <div className="p-4 bg-slate-800 rounded-2xl">
-        <h2 className="text-lg font-semibold mb-4">Filters</h2>
+        <h2 className="text-lg font-semibold mb-4">3. Select Year & Paper</h2>
         <div className="grid grid-cols-2 gap-3 mb-3">
-          {/* Subject Filter */}
-          <select 
-            className="p-3 rounded-lg bg-slate-700 text-sm"
-            value={selectedSubject}
-            onChange={(e) => setSelectedSubject(e.target.value)}
-          >
-            <option value="all">All Subjects</option>
-            {subjects.filter(s => s !== 'all').map(s => (
-              <option key={s} value={s}>{s}</option>
-            ))}
-          </select>
-          
           {/* Year Filter */}
-          <select 
-            className="p-3 rounded-lg bg-slate-700 text-sm"
-            value={selectedYear}
-            onChange={(e) => setSelectedYear(e.target.value)}
-          >
-            <option value="all">All Years</option>
-            {years.filter(y => y !== 'all').map(y => (
-              <option key={y} value={y}>{y}</option>
-            ))}
-          </select>
+          <div className="col-span-2 sm:col-span-1">
+            <label className="text-xs text-slate-400 mb-1 block">Year</label>
+            <select 
+              className="w-full p-3 rounded-lg bg-slate-700 text-sm"
+              value={selectedYear}
+              onChange={(e) => {
+                setSelectedYear(e.target.value)
+                setSelectedPaper('all')
+              }}
+            >
+              <option value="all">All Years</option>
+              {years.filter(y => y !== 'all').map(y => (
+                <option key={y} value={y}>{y}</option>
+              ))}
+            </select>
+          </div>
           
           {/* Paper Filter */}
-          <select 
-            className="p-3 rounded-lg bg-slate-700 text-sm"
-            value={selectedPaper}
-            onChange={(e) => setSelectedPaper(e.target.value)}
-          >
-            <option value="all">All Papers</option>
-            {paperNumbers.filter(p => p !== 'all').map(p => (
-              <option key={p} value={p}>Paper {p}</option>
-            ))}
-          </select>
-          
-          {/* Verified Toggle */}
-          <label className="flex items-center gap-2 p-3 rounded-lg bg-slate-700 cursor-pointer">
-            <input 
-              type="checkbox" 
-              checked={showVerifiedOnly}
-              onChange={(e) => setShowVerifiedOnly(e.target.checked)}
-              className="rounded bg-slate-600"
-            />
-            <span className="text-sm">Verified only</span>
-          </label>
+          <div className="col-span-2 sm:col-span-1">
+            <label className="text-xs text-slate-400 mb-1 block">Paper</label>
+            <select 
+              className="w-full p-3 rounded-lg bg-slate-700 text-sm"
+              value={selectedPaper}
+              onChange={(e) => setSelectedPaper(e.target.value)}
+            >
+              <option value="all">All Papers</option>
+              {paperNumbers.filter(p => p !== 'all').map(p => (
+                <option key={p} value={p}>Paper {p}</option>
+              ))}
+            </select>
+          </div>
         </div>
-        <div className="flex items-center justify-between text-sm">
+
+        {/* Verified Toggle */}
+        <label className="flex items-center gap-2 p-3 rounded-lg bg-slate-700/50 cursor-pointer">
+          <input 
+            type="checkbox" 
+            checked={showVerifiedOnly}
+            onChange={(e) => setShowVerifiedOnly(e.target.checked)}
+            className="rounded bg-slate-600"
+          />
+          <span className="text-sm">Show verified questions only</span>
+        </label>
+
+        <div className="flex items-center justify-between text-sm mt-3">
           <span className="text-slate-400">{filteredPapers.length} papers • {totalQuestions} questions • {totalVerified} verified</span>
           <button 
             onClick={() => {
