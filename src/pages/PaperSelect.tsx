@@ -1,10 +1,9 @@
-import { useState, useEffect, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Target, Award, Calendar, CheckCircle, Play, ChevronLeft, Filter } from 'lucide-react'
 import { useExamStore } from '../store/examStore'
-import { useUserStore } from '../store/userStore'
 import { getQuestions } from '../services/firebaseQuestions'
 import type { Question } from '../types'
+import { useState, useEffect, useMemo } from 'react'
 
 interface Paper {
   id: string
