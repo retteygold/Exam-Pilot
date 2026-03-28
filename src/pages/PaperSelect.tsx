@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { BookOpen, Clock, Target, Award, Calendar, CheckCircle, Play, ChevronLeft, Filter, RotateCcw, GraduationCap } from 'lucide-react'
+import { Target, Award, Calendar, CheckCircle, Play, ChevronLeft, Filter } from 'lucide-react'
 import { useExamStore } from '../store/examStore'
 import { useUserStore } from '../store/userStore'
 import { getQuestions } from '../services/firebaseQuestions'
@@ -111,20 +111,20 @@ export function PaperSelect() {
   const navigate = useNavigate()
   const startExam = useExamStore((state) => state.startExam)
   const completedPapers = useExamStore((state) => state.completedPapers)
-  const { profile, getRecommendedDifficulty } = useUserStore()
+  const { getRecommendedDifficulty } = useUserStore()
   
   const [papers, setPapers] = useState<Paper[]>([])
   const [questions, setQuestions] = useState<Question[]>([])
   const [allQuestions, setAllQuestions] = useState<Question[]>([])
   const [loading, setLoading] = useState(true)
-  const [selectedMode, setSelectedMode] = useState<'practice' | 'exam'>('practice')
+  const [selectedMode] = useState<'exam'>('exam')
   const [recommendedDifficulty, setRecommendedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium')
   const [selectedLevel, setSelectedLevel] = useState<'igcse' | 'ial'>('igcse')
   const [selectedSubject, setSelectedSubject] = useState<string>('igcse_biology')
   const [selectedYear, setSelectedYear] = useState<number | 'all'>('all')
   const [showFilters, setShowFilters] = useState(false)
   const [selectedPaper, setSelectedPaper] = useState<string>('all')
-  const [showVerifiedOnly, setShowVerifiedOnly] = useState(false)
+  const [showVerifiedOnly] = useState(false)
 
   useEffect(() => {
     setRecommendedDifficulty(getRecommendedDifficulty())
@@ -369,34 +369,6 @@ export function PaperSelect() {
           </div>
         </div>
 
-        {/* Mode Selection */}
-        <div className="grid grid-cols-2 gap-3">
-          <button
-            onClick={() => setSelectedMode('practice')}
-            className={`p-4 rounded-xl text-left transition-all ${
-              selectedMode === 'practice'
-                ? 'bg-blue-500 text-white'
-                : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
-            }`}
-          >
-            <BookOpen className="w-5 h-5 mb-2" />
-            <div className="font-semibold text-sm">Practice</div>
-            <div className="text-xs opacity-80">Study mode</div>
-          </button>
-          <button
-            onClick={() => setSelectedMode('exam')}
-            className={`p-4 rounded-xl text-left transition-all ${
-              selectedMode === 'exam'
-                ? 'bg-amber-500 text-white'
-                : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
-            }`}
-          >
-            <Clock className="w-5 h-5 mb-2" />
-            <div className="font-semibold text-sm">Exam</div>
-            <div className="text-xs opacity-80">Timed mode</div>
-          </button>
-        </div>
-
         {/* Year Filter */}
         <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
           <button
@@ -440,7 +412,6 @@ export function PaperSelect() {
                     paper={paper} 
                     completed={completedPapers.includes(paper.id)}
                     onClick={() => handleStart(paper)}
-                    mode={selectedMode}
                   />
                 ))}
               </div>
@@ -455,7 +426,6 @@ export function PaperSelect() {
                 paper={paper} 
                 completed={completedPapers.includes(paper.id)}
                 onClick={() => handleStart(paper)}
-                mode={selectedMode}
               />
             ))}
           </div>
@@ -506,13 +476,11 @@ export function PaperSelect() {
 function PaperCard({ 
   paper, 
   completed, 
-  onClick,
-  mode 
+  onClick
 }: { 
   paper: Paper
   completed: boolean
   onClick: () => void
-  mode: 'practice' | 'exam'
 }) {
   return (
     <button
@@ -535,15 +503,13 @@ function PaperCard({
         <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-bold text-lg ${
           completed 
             ? 'bg-emerald-500/20 text-emerald-400' 
-            : mode === 'exam' ? 'bg-amber-500/20 text-amber-400' : 'bg-blue-500/20 text-blue-400'
+            : 'bg-amber-500/20 text-amber-400'
         }`}>
           {paper.paper}
         </div>
-        {mode === 'exam' && (
-          <div className="text-xs text-slate-500">
-            {paper.timeAllowed}m
-          </div>
-        )}
+        <div className="text-xs text-slate-500">
+          {paper.timeAllowed}m
+        </div>
       </div>
 
       {/* Info */}
@@ -562,7 +528,7 @@ function PaperCard({
       <div className="absolute inset-0 bg-gradient-to-t from-blue-600/90 via-blue-600/50 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-all flex items-end justify-center p-3">
         <div className="flex items-center gap-2 text-white font-medium text-sm">
           <Play className="w-4 h-4" />
-          Start {mode === 'exam' ? 'Exam' : 'Practice'}
+          Start Exam
         </div>
       </div>
     </button>
