@@ -84,7 +84,7 @@ export function Home() {
   })
 
   // Calculate progress for each subject
-  const getSubjectProgress = (subjectKey: string) => {
+  const getSubjectProgress = (_subjectKey: string) => {
     // Mock progress - in real app would calculate from completed papers
     return Math.floor(Math.random() * 60) + 20
   }
