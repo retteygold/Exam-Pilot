@@ -111,24 +111,17 @@ export function PaperSelect() {
   const navigate = useNavigate()
   const startExam = useExamStore((state) => state.startExam)
   const completedPapers = useExamStore((state) => state.completedPapers)
-  const { getRecommendedDifficulty } = useUserStore()
-  
   const [papers, setPapers] = useState<Paper[]>([])
   const [questions, setQuestions] = useState<Question[]>([])
   const [allQuestions, setAllQuestions] = useState<Question[]>([])
   const [loading, setLoading] = useState(true)
   const [selectedMode] = useState<'exam'>('exam')
-  const [recommendedDifficulty, setRecommendedDifficulty] = useState<'easy' | 'medium' | 'hard'>('medium')
   const [selectedLevel, setSelectedLevel] = useState<'igcse' | 'ial'>('igcse')
   const [selectedSubject, setSelectedSubject] = useState<string>('igcse_biology')
   const [selectedYear, setSelectedYear] = useState<number | 'all'>('all')
   const [showFilters, setShowFilters] = useState(false)
   const [selectedPaper, setSelectedPaper] = useState<string>('all')
   const [showVerifiedOnly] = useState(false)
-
-  useEffect(() => {
-    setRecommendedDifficulty(getRecommendedDifficulty())
-  }, [getRecommendedDifficulty])
 
   useEffect(() => {
     const loadQuestions = async () => {
@@ -159,18 +152,7 @@ export function PaperSelect() {
   }, [])
 
   const computed = useMemo(() => {
-    const filtered = allQuestions.filter((q: Question) => {
-      const questionDifficulty = q.difficulty || 'medium'
-      const difficultyMatch =
-        selectedMode === 'exam'
-          ? true
-          : recommendedDifficulty === 'easy'
-            ? questionDifficulty === 'easy'
-            : recommendedDifficulty === 'hard'
-              ? questionDifficulty !== 'easy'
-              : true
-      return difficultyMatch
-    })
+    const filtered = allQuestions
 
     const paperMap = new Map<string, Paper>()
     filtered.forEach((q: Question) => {
@@ -202,7 +184,7 @@ export function PaperSelect() {
 
     const papers = Array.from(paperMap.values()).sort((a, b) => b.year - a.year)
     return { filtered, papers }
-  }, [allQuestions, recommendedDifficulty, selectedMode])
+  }, [allQuestions])
 
   useEffect(() => {
     setQuestions(computed.filtered)
